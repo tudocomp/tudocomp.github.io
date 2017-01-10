@@ -1,0 +1,1096 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no"/>
+    <!-- TODO: Meta / OpenGraph / Facebook -->
+    <title>tudocomp &ndash; Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/svg+xml" href="../tudocomp-icon.svg">
+    <!-- Chrome currently doesn't support SVG favicons -->
+    <link rel="icon" type="image/png" href="../tudocomp-icon.png">
+</head>
+<body>
+    <header>
+        <h1>&ndash; The TU Dortmund Compression Framework</h1>
+    </header>
+    <section id="content">
+        <div>
+            <div id="document-info">
+                <div id="title">tudocomp</div>
+                <div id="subtitle">Documentation of the TU Dortmund Compression Framework</div>
+                <div id="author">Dominik K&ouml;ppl, Patrick Dinklage, Marvin L&ouml;bel</div>
+                <div id="date">2016</div>
+            </div>
+
+            <h1>Table of Contents</h1> <!-- Pandoc seems to be missing this -->
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+</head>
+<body>
+<div id="TOC">
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#philosophy">Philosophy</a><ul>
+<li><a href="#compressor-families">Compressor Families</a></li>
+<li><a href="#compressors-and-modularity">Compressors and Modularity</a></li>
+<li><a href="#library-and-driver">Library and Driver</a></li>
+</ul></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#usage">Usage</a><ul>
+<li><a href="#library">Library</a><ul>
+<li><a href="#dependencies">Dependencies</a></li>
+</ul></li>
+<li><a href="#command-line-application">Command-line application</a></li>
+<li><a href="#building-on-windows">Building on Windows</a></li>
+<li><a href="#license">License</a></li>
+</ul></li>
+<li><a href="#tutorial">Tutorial</a><ul>
+<li><a href="#building-the-framework">Building the framework</a></li>
+<li><a href="#the-frameworks-file-structure">The framework's file structure</a></li>
+<li><a href="#input-and-output">Input and Output</a><ul>
+<li><a href="#reading-an-input">Reading an Input</a></li>
+<li><a href="#producing-an-output">Producing an Output</a></li>
+<li><a href="#bitwise-io">Bitwise I/O</a></li>
+</ul></li>
+<li><a href="#a-simple-compressor">A Simple Compressor</a><ul>
+<li><a href="#implementing-the-compressor-interface">Implementing the Compressor interface</a></li>
+<li><a href="#example-run-length-encoding">Example: Run-Length Encoding</a></li>
+<li><a href="#magic">Magic</a></li>
+</ul></li>
+<li><a href="#unit-tests">Unit Tests</a><ul>
+<li><a href="#registering-and-running-unit-tests">Registering and Running unit tests</a></li>
+<li><a href="#implementing-unit-tests">Implementing unit tests</a></li>
+</ul></li>
+<li><a href="#runtime-statistics">Runtime Statistics</a><ul>
+<li><a href="#usage-1">Usage</a></li>
+<li><a href="#charter-web-application">Charter Web Application</a></li>
+</ul></li>
+<li><a href="#options">Options</a><ul>
+<li><a href="#dynamic-options">Dynamic Options</a></li>
+<li><a href="#templated-options">Templated Options</a></li>
+<li><a href="#unit-testing-with-options">Unit Testing with Options</a></li>
+</ul></li>
+<li><a href="#the-registry">The Registry</a></li>
+<li><a href="#the-driver">The Driver</a></li>
+<li><a href="#the-compare-tool">The Compare Tool</a><ul>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#compare-workspace">Compare Workspace</a></li>
+<li><a href="#an-example-config-file">An Example Config File</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#uml-type-overview">UML Type Overview</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+</div>
+<h1 id="abstract">Abstract</h1>
+<p>The <strong>T</strong>echnical <strong>U</strong>niversity of <strong>DO</strong>rtmund <strong>COMP</strong>ression Framework (<em>tudocomp</em>) is a lossless compression framework with the aim to support and facilitate the implementation of novel compression algorithms. It already comprises a range of standard data compression and encoding algorithms. These can be mixed and parameterized with the following uses in mind:</p>
+<ul>
+<li>Baseline implementations of well-known compression schemes.</li>
+<li>Detailed benchmarking and comparison of compression and encoding algorithms.</li>
+<li>Easy integration of new algorithm implementations.</li>
+</ul>
+<h1 id="philosophy">Philosophy</h1>
+<p>The framework offers a solid and extensible base for new implementations. It is designed so that most individual processes are modularized and interchangeable. This way, the user can mix and match algorithms to find the optimal compression strategy for a given input. The framework gives this opportunity while creating as little performance overhead as possible.</p>
+<h2 id="compressor-families">Compressor Families</h2>
+<p>The <em>compressor families</em> form the topmost abstraction level in the framework. Every compression or encoding algorithm belongs to a certain family.</p>
+<p>For instance, the compressor family <em>lzss</em> (named after <em>Lempel-Ziv-Storer-Szymanski</em>) contains various compressors that factorize the input resulting in symbols and the produced Lempel-Ziv factors. This output can then be passed to different encoders specialized for LZSS-type factors to get a binary encoded compressed file.</p>
+<h2 id="compressors-and-modularity">Compressors and Modularity</h2>
+<p>A <em>compressor</em>, in terms of this framework, transforms an input sequence and writes the result to an output. A compressor is the entry point for the driver application.</p>
+<p>Each compressor family has to implement a <em>decompressor</em> that can restore the original input losslessly from a compressed output. Apart from that, there are no strict rules as to <em>what</em> kind of transformation of the input occurs. In that sense, an <em>encoder</em> is also a compressor.</p>
+<p>Compressors and encoders are implemented in a <em>modular</em> way. They are interchangeable and can be chained (ie the output of one becomes the input of another).</p>
+<p>For instance, a factor-based conpressor consists of three main modules:</p>
+<ol style="list-style-type: decimal">
+<li>A <em>factorizer</em> that produces factors,</li>
+<li>a <em>factor encoder</em> that encodes these factors, and</li>
+<li>a <em>raw symbol encoder</em> that encodes the remaining, unfactorized input.</li>
+</ol>
+<p>In this example, the factorizer divides the input into factors that refer to substrings of the input. The encoders then encode the factors and any unfactorized substrings in an independent manner (e.g. human readable or bit-optimal).</p>
+<p>For each of these tasks, there can be different strategies. For instance, the input can be factorized using a classic online sliding window approach, but one can also think of using a data structure that works offline and requires the entire input, such as the suffix array.</p>
+<p>Encoders can use myriad representations for the information they encode (e.g. fixed-width integers, Huffman codes) which may work better or worse for different types of inputs.</p>
+<p>Each of these factorization or encoding strategies can have different sub-strategies in their own right. The goal of this framework is to modularize compression and encoding algorithms as much as possible into strategies.</p>
+<p>The produced output must contain all information necessary for the respective decompressor (or decoder) to restore the original input losslessly.</p>
+<h2 id="library-and-driver">Library and Driver</h2>
+<p>The framework consists of two major components: the compression <em>library</em> (<em>tudocomp</em>) and the command-line application, called the <em>driver</em>. The library contains the core interfaces and provides implementations of various compressors; the driver makes them available in form of an executable that can be used from the command-line.</p>
+<p>The driver uses a <em>registry</em> of compressors, which acts as the link between the driver and the library. The library is a fully functional standalone library such that third party applications can make use of the provided compressors.</p>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: Create a data flow diagram for a whole compression cycle.</p>
+</blockquote>
+</blockquote>
+<h1 id="features">Features</h1>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: We should probably have something like a feature overview.</p>
+</blockquote>
+</blockquote>
+<h1 id="usage">Usage</h1>
+<h2 id="library">Library</h2>
+<p>The library comes as a set of <code>C++</code> headers where most of the implementations are inlined.</p>
+<p>Development of new compression or encoding algorithms is intended to take place within <em>tudocomp</em>'s repository itself. In order to use <em>tudocomp</em> as a library for a third-party application, the custom <code>malloc_count</code> module, which includes overrides of <code>malloc</code>, <code>free</code> etc. for the heap memory usage counters, (<code>libmalloc_count.a</code>) needs to be linked.</p>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: We should probably rename our <code>malloc_count</code> module to avoid confusion.</p>
+</blockquote>
+</blockquote>
+<p>The <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen">Doxygen documentation</a> provides an overview of the available compression and encoding implementations as well as the framework's full API.</p>
+<h3 id="dependencies">Dependencies</h3>
+<p>The framework is built using <a href="https://cmake.org">CMake</a> (2.8 or later). It is written in <code>C++11</code> with GNU extensions and has been tested with the <code>gcc</code> compiler family (version 4.9.2 or later) and <code>clang</code> (version 3.5.2 or later).</p>
+<p>It has the following external dependencies:</p>
+<ul>
+<li><a href="https://github.com/simongog/sdsl-lite">SDSL</a> (2.1 or later).</li>
+<li><a href="https://gflags.github.io/gflags">Gflags</a> (2.1.2 or later).</li>
+<li><a href="https://github.com/google/glog">Google Logging (glog)</a> (0.34 or later).</li>
+</ul>
+<p>Additionally, the tests require <a href="https://github.com/google/googletest">Google Test</a> (1.7.0 or later).</p>
+<p>The CMake build scripts will either find the external dependencies on the build system, or automatically download and build them from their official repositories in case they cannot be found.</p>
+<p>For building the documentation, the following tools are required:</p>
+<ul>
+<li>LATEX (specifically the <code>pdflatex</code> component)</li>
+<li><a href="http://doxygen.org">Doxygen</a> (1.8 or later).</li>
+<li><a href="http://pandoc.org">Pandoc</a> (1.16 or later).</li>
+</ul>
+<h2 id="command-line-application">Command-line application</h2>
+<p>The executable <code>tudocomp_driver</code> is the command-line application that bundles all registered algorithms. It provides a fast and easy way to compress and decompress a file with a specified chain of compressors.</p>
+<p>Every registered compression or encoding algorithm will be listed in the help output of the application when passing the <code>--list</code> argument.</p>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: Maybe add a small example here.</p>
+</blockquote>
+</blockquote>
+<h2 id="building-on-windows">Building on Windows</h2>
+<p>On Windows, the framework can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment. <code>mingw</code> and Microsoft Visual Studio are <em>not</em> supported at this point.</p>
+<blockquote>
+<p><em>Note:</em> In a <em>Cygwin</em> environment, due to its nature of not allowing overrides of <code>malloc</code> and friends, the <code>malloc_count</code> module is not functional, ie. memory heap allocation cannot be measured.</p>
+</blockquote>
+<h2 id="license">License</h2>
+<p>The framework is published under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License, Version 3</a>.</p>
+<h1 id="tutorial">Tutorial</h1>
+<p>This chapter provides a guided tour through the implementation of a compressor, spanning much of the framework's functionality. The following topics will be discussed:</p>
+<ul>
+<li>Building the framework</li>
+<li>Understanding the framework's file structure</li>
+<li>Using the framework's I/O abstractions</li>
+<li>Writing a simple compressor by implementing the <code>Compressor</code> interface</li>
+<li>Implementing unit tests</li>
+<li>Adding basic time and memory statistics tracking</li>
+<li>Adding options to select different behavior</li>
+<li>Making a compressor modular by using sub algorithms and templated options</li>
+<li>Registering a compressor in the registry</li>
+<li>Using the <code>tudocomp_driver</code> command-line application with the newly implemented compressor</li>
+<li>Using the <code>compare_tool</code> for benchmarking the compressor against other compressors for different inputs</li>
+</ul>
+<p>You may also refer to an <a href="#uml-type-overview">UML overview</a> of the framework.</p>
+<h2 id="building-the-framework">Building the framework</h2>
+<p>The tutorial assumes a clean clone of the <a href="about:blank"><em>tudocomp</em> git repository</a>. <em>tudocomp</em> is set up as a CMake project<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<p>The standard procedure to build is to create a directory named <code>build</code> and use this as CMake's workspace to generate Makefiles. The produced binaries will later also be placed in the <code>build</code> directory tree.</p>
+<p>Let us create the build workspace and generate the project Makefiles:</p>
+<pre><code>.../tudocomp&gt; mkdir build
+.../tudocomp&gt; cd build
+.../tudocomp/build&gt; cmake ..</code></pre>
+<p>When successful, the output ends with <code>-- Build files have been written to: [...]</code>. In case of an error, please make sure the required <a href="#dependencies">dependencies</a> are available on the build system.</p>
+<p>By default, the project is configured to build in <em>Debug</em> mode. While this is useful for development and debugging, we recommend running benchmarks with the framework built in <em>Release</em> mode. This is achieved by passing the build configuration to CMake as follows:</p>
+<pre><code>.../build&gt; cmake -DCMAKE_BUILD_TYPE=Release ..</code></pre>
+<p>Debug mode can likewise be configured explicitly:</p>
+<pre><code>.../build&gt; cmake -DCMAKE_BUILD_TYPE=Debug ..</code></pre>
+<p>With the Makefiles generated by CMake, the framework can be built simply by invoking <code>make</code>:</p>
+<pre><code>.../build&gt; make
+[... make output ...]</code></pre>
+<p>To ensure everything is working correctly, the <code>check</code> target will invoke the entire unit test range (which can take a while):</p>
+<pre><code>.../build&gt; make check
+[... gtest output ...]
+All tests were successful!</code></pre>
+<h2 id="the-frameworks-file-structure">The framework's file structure</h2>
+<p><em>tudocomp</em>'s root directory structure follows that of a typical C++ project. The <code>include</code> directory contains the framework's C++ headers, <code>src</code> contains the C++ sources. The unit tests (<em>Google Test</em>) are located in <code>test</code>. The remaining directories help structure the project further, but they are not needed for this tutorial.</p>
+<p>Note that <em>tudocomp</em> is concepted as a header-only library. While the driver application and the <code>malloc_count</code> module need to be implemented in C++ source files, all compression and coding algorithm implementations come in the form of templated classes with inlined functions in the <code>include</code> tree.</p>
+<p>This is a design decision that allows for the compiler to do heavy code optimization. Due to the nature of almost everything being templated, this makes development more convenient as well.</p>
+<h2 id="input-and-output">Input and Output</h2>
+<p>Before going into the details of compressor implementation, this section will present one of the framework's core components in its I/O abstractions.</p>
+<p>As described in the <a href="#philosophy">Philosophy</a> chapter, (de)compression, by means of this framework, processes data by reading from an input and writing to an output. The framework provides an abstraction for this in the two classes <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_input.html"><code>Input</code></a> and <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_output.html"><code>Output</code></a>. Both hide the actual source or sink of the data (e.g. a file or a place in memory).</p>
+<p>This section will describe their usage only briefly, but they will be presented &quot;in action&quot; in the following sections of the tutorial.</p>
+<h3 id="reading-an-input">Reading an Input</h3>
+<p>An <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_input.html"><code>Input</code></a> can be created from different data sources:</p>
+<ul>
+<li>a memory pointer (e.g. a string literal),</li>
+<li>a byte buffer (<code>std::vector&lt;uint8_t&gt;</code>),</li>
+<li>a file or</li>
+<li>an input stream(<code>std::istream</code>)<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</li>
+</ul>
+<p>For each type of data source, the <code>Input</code> class provides a corresponding constructor:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Create an Input from a string literal</span>
+Input input_from_memory(<span class="st">&quot;This is the input data&quot;</span>);
+
+<span class="co">// Create an Input from a given byte buffer (std::vector&lt;uint8_t&gt;)</span>
+Input input_from_buffer(buffer);
+
+<span class="co">// Create an Input from a file</span>
+Input input_from_file(Input::Path{<span class="st">&quot;example.txt&quot;</span>});
+
+<span class="co">// Create an Input from a given std::istream</span>
+Input input_from_stream(std::cin); <span class="co">// from stdin</span></code></pre></div>
+<p>The input can be accessed in two conceptually different ways:</p>
+<ol style="list-style-type: decimal">
+<li>As a <em>stream</em>, requiring bytes to be read sequentially from the input source (the concept of online algorithms) or</li>
+<li>as a <em>view</em>, providing random access to the input source as to an array of bytes (the concept of offline algorithms).</li>
+</ol>
+<p>The choice is done by acquiring the respective object from either the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_input.html#af4579b9d8cfa928fa931038579975860"><code>as_stream</code></a> or the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_input.html#a01b43ae61e9c5097de455407940be1ff"><code>as_view</code></a> function. The stream object returned by <code>as_stream</code> conforms to the <code>std::istream</code> interface and also provides iterator access. The object returned by <code>as_view</code> provides the indexed access <code>[]</code> operator for and the function <code>size()</code> to return the amount of bytes available on the input.</p>
+<p>The following code snippet demonstrates using a given input as a view:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">auto</span> iview = input.as_view(); <span class="co">//retrieve an input view</span>
+<span class="kw">auto</span> iview2 = iview; <span class="co">// create a shallow copy of the view</span>
+
+<span class="co">// compare the view&#39;s content against a certain string</span>
+<span class="co">// the CHECK macro is Google Logging&#39;s &quot;assert&quot;</span>
+CHECK(iview == <span class="st">&quot;foobar&quot;</span>);
+
+<span class="kw">auto</span> sub_view = iview.substr(<span class="dv">1</span>, <span class="dv">5</span>); <span class="co">// create a sub-view for a range within the main view</span>
+CHECK(sub_view == <span class="st">&quot;ooba&quot;</span>); <span class="co">// assertion for the sub-view&#39;s contents</span>
+
+<span class="co">// iterate over the whole view character-wise</span>
+<span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt; iview.size(); i++) {
+    <span class="dt">uint8_t</span> c = iview[i];
+    <span class="co">// ...</span>
+}</code></pre></div>
+<p>Note that copies and sub-views are shallow, ie. they point to the same memory location as the original view and thus have the same content.</p>
+<p>In contrast, The following code snippet demonstrates using an input as a stream:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">auto</span> istream = input.as_stream(); <span class="co">// retrieve an input stream</span>
+<span class="kw">auto</span> istream2 = istream; <span class="co">// create a second stream as a &quot;rewind&quot; position</span>
+
+<span class="co">// read the input character-wise using a C++11 range-based for loop</span>
+<span class="kw">for</span>(<span class="dt">uint8_t</span> c : istream) {
+    <span class="co">// ...</span>
+}
+
+<span class="co">// read the input character-wise using the std::istream interface</span>
+<span class="dt">char</span> c;
+<span class="kw">while</span>(istream2.get(c)) {
+    <span class="co">// ...</span>
+}</code></pre></div>
+<p>Note how the framework uses the <code>uint8_t</code> (unsigned byte) type to represent characters. This is contrary to the <code>std</code> library, which uses C's <code>char</code> type.</p>
+<p>Furthermore, note how <code>istream2</code> is created as a copy of <code>istream</code>. This way, <code>istream2</code> points at the same stream position as <code>istream</code> at the time the copy is created and can be used as a &quot;rewind&quot; point for use independently of <code>istream</code>.</p>
+<h3 id="producing-an-output">Producing an Output</h3>
+<p>An <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_input.html"><code>Output</code></a> can be created for different data sinks:</p>
+<ul>
+<li>a byte buffer (<code>std::vector&lt;uint8_t&gt;</code>),</li>
+<li>a file or</li>
+<li>an output stream (`std::ostream).</li>
+</ul>
+<p>Like <code>Input</code>, it provides a constructor for each type of sink:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Create an Output to a given byte buffer (std::vector&lt;uint8_t&gt;)</span>
+Output output_to_buffer(buffer);
+
+<span class="co">// Create an Output to a file:</span>
+Output output_to_file1(<span class="st">&quot;example.txt&quot;</span>, <span class="kw">false</span>); <span class="co">// do not overwrite if exists (default)</span>
+Output output_to_file2(<span class="st">&quot;example.txt&quot;</span>, <span class="kw">true</span>); <span class="co">// overwrite if exists</span>
+
+<span class="co">// Create an Output to a given std::ostream</span>
+Output output_to_stream(std::cout); <span class="co">// to stdout</span></code></pre></div>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: Creating an output to a file is inconsistent compared to creating an input from a file: for <code>Input</code>, there is <code>Input::Path</code>, while <code>Output</code> takes a string.</p>
+</blockquote>
+</blockquote>
+<p>An output has to be generated sequentially and thus only provides a stream interface. The following code snippet demonstrates this by copying an entire input to an output:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">auto</span> istream = input.as_stream(); <span class="co">// retrieve the input stream</span>
+<span class="kw">auto</span> ostream = output.as_stream(); <span class="co">// retrieve the output stream</span>
+
+<span class="co">// copy the input to the output character by character</span>
+<span class="kw">for</span>(<span class="dt">uint8_t</span> c : istream) {
+    ostream &lt;&lt; c;
+}</code></pre></div>
+<h3 id="bitwise-io">Bitwise I/O</h3>
+<p>The framework provides the classes <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_bit_i_stream.html"><code>BitIStream</code></a> and <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_bit_o_stream.html"><code>BitOStream</code></a> for bitwise input and output. They are wrappers around <code>std::istream</code> and <code>std::ostream</code>, respectively, and provide functionality to read or write bits or fixed-width (MSBF order) integers from their underlying stream.</p>
+<p>The following example performs several bitwise write operations on an output:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">auto</span> ostream = output.as_stream(); <span class="co">// retrieve an output stream</span>
+BitOStream obits(ostream); <span class="co">//construct the bitwise output stream</span>
+
+obits.write_bit(<span class="dv">0</span>);     <span class="co">// write a single unset bit</span>
+obits.write_bit(<span class="dv">1</span>);     <span class="co">// write a single set bit</span>
+obits.write_int(<span class="dv">27</span>, <span class="dv">5</span>); <span class="co">// write the value 27 using 5 bits (11011)</span>
+obits.write_int(<span class="dv">27</span>, <span class="dv">3</span>); <span class="co">// write the value 27 using 3 bits (truncated to 011)</span>
+
+<span class="dt">int</span> a = <span class="dv">27</span>;
+obits.write_int(a); <span class="co">// write the value 27 using 8*sizeof(int) bits (32)</span>
+                    <span class="co">// (00000000000000000000000000011011)</span>
+
+<span class="dt">uint8_t</span> b = <span class="dv">27</span>;
+obits.write_int(b); <span class="co">// write the value 27 using 8*sizeof(uint8_t) bits (8)</span>
+                    <span class="co">// (00011011)</span>
+
+obits.flush(); <span class="co">//(!) flush the buffer byte</span></code></pre></div>
+<p>Note how <code>write_int</code> will use the default size of the passed integer type if no bit width is explicitly given in the second argument.</p>
+<p>The last operation, <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1io_1_1_bit_o_stream.html#af7c97807e79829534ce3234e16ffb1e1"><code>flush()</code></a>, is <em>required</em> after each batch of bitwise write operations (e.g. when <code>ostream</code> is closed or used otherwise). <code>BitOStream</code> internally writes to a buffer byte that is written to the underlying <code>std::ostream</code> whenever it is full (ie. eight bytes have been written). <code>flush</code> will force the buffer byte to be written; its remaining bits will be unset (zero).</p>
+<p>The following example performs several bitwise read operations from an input:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">auto</span> istream = input.as_stream(); <span class="co">// retrieve an input stream</span>
+BitIStream ibits(istream); <span class="co">// construct the bitwise input stream</span>
+
+<span class="dt">bool</span> bit = ibits.read_bit(); <span class="co">// read a single bit</span>
+
+<span class="dt">uint8_t</span>  a = ibits.read_int&lt;<span class="dt">uint8_t</span>&gt;(<span class="dv">5</span>); <span class="co">// read a 5-bit integer into a uint8_t</span>
+<span class="dt">uint16_t</span> b = ibits.read_int&lt;<span class="dt">uint16_t</span>&gt;;   <span class="co">// read a 16-bit integer</span></code></pre></div>
+<p>Note how <code>read_int</code> requires a template parameter in order to &quot;know&quot; into which data type the read integer will be stored. If no bit width is given, the default size of the data type will be used.</p>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: Describe variable-width integers once wording and implementation are correct.</p>
+</blockquote>
+</blockquote>
+<h2 id="a-simple-compressor">A Simple Compressor</h2>
+<p>This section presents the steps necessary to implement a simple compressor. The implementation that is developed here is available in the framework's repository in the <code>/include/tudocomp/example/</code> directory.</p>
+<h3 id="implementing-the-compressor-interface">Implementing the Compressor interface</h3>
+<p>Any compressor needs to implement the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_compressor.html"><code>Compressor</code></a> interface. A complete implementation consists of</p>
+<ul>
+<li>a constructor accepting an rvalue reference to an environment (<code>Env&amp;&amp;</code>),</li>
+<li>implementations of the <code>compress</code> and <code>decompress</code> functions (so that the output of <code>compress</code>, when passed as the input of <code>decompress</code>, will be transformed back to the original input of <code>compress</code>),</li>
+<li>a static function <code>meta()</code> that yields a <code>Meta</code> information object about the compressor.</li>
+</ul>
+<p>Note that while the latter (<code>meta()</code>) is not strictly defined in the <code>Compressor</code> class, it is required due to the nature of templated construction.</p>
+<p>The class <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html"><code>Env</code></a> represents the compressor's runtime environment. It provides access to runtime options as well as the framework's statistics tracking functionality. A compressor conceptually owns<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> its environment, therefore the constructor takes an rvalue reference to it. The reference should always be delegated down to the base constructor (using <code>std::move</code>).</p>
+<p>A <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_meta.html"><code>Meta</code></a> object contains information about an algorithm (e.g. compressors) such as its name and type. This information is used by the generic algorithm constructor <code>create_algo</code>, which will be explained below, as well as for the registry of the command-line application.</p>
+<p>The following example header (<code>/include/tudocomp/example/ExampleCompressor.hpp</code>) contains a minimal <code>Compressor</code> implementation named <code>ExampleCompressor</code>:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// [/include/tudocomp/example/ExampleCompressor.hpp]</span>
+
+<span class="ot">#ifndef _INCLUDED_EXAMPLE_COMPRESSOR_HPP_</span>
+<span class="ot">#define _INCLUDED_EXAMPLE_COMPRESSOR_HPP_</span>
+
+<span class="ot">#include &lt;tudocomp/tudocomp.hpp&gt;</span>
+
+<span class="kw">namespace</span> tdc {
+
+<span class="kw">class</span> ExampleCompressor : <span class="kw">public</span> Compressor {
+<span class="kw">public</span>:
+    <span class="kw">inline</span> <span class="dt">static</span> Meta meta() {
+        Meta m(<span class="st">&quot;compressor&quot;</span>, <span class="st">&quot;example_compressor&quot;</span>,
+               <span class="st">&quot;This is an example compressor.&quot;</span>);
+
+        <span class="kw">return</span> m;
+    }
+
+    <span class="kw">inline</span> ExampleCompressor(Env&amp;&amp; env) : Compressor(std::move(env)) {
+    }
+
+    <span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">void</span> compress(Input&amp; input, Output&amp; output) <span class="kw">override</span> {
+    }
+
+    <span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">void</span> decompress(Input&amp; input, Output&amp; output) <span class="kw">override</span> {
+    }
+};
+
+}
+
+<span class="ot">#endif</span></code></pre></div>
+<p>The <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/namespacetdc.html"><code>tdc</code></a> namespace contains most of the core types required for implementing compressors, including the <code>Compressor</code> interface and the <code>Env</code> and <code>Meta</code> types.</p>
+<p>The <code>Meta</code> object returned by <code>meta()</code> contains the following information:</p>
+<ul>
+<li>The algorithm type (in this case, a <code>&quot;compressor&quot;</code>),</li>
+<li>the algorithm's identifier (for shell compatibility, this should not contain any spaces or special characters) and</li>
+<li>a brief description of the algorithm (which is be displayed in the command-line help output).</li>
+</ul>
+<h3 id="example-run-length-encoding">Example: Run-Length Encoding</h3>
+<p>The following example implements the <code>compress</code> method so that it yields a run-length encoding of the input. In run-length encoding, sequences (runs) of the same character are replaced by one single occurence, followed by the length of the run.</p>
+<p>For example, the input <code>&quot;abcccccccde&quot;</code>, which contains a run of seven <code>c</code> characters, is encoded as <code>&quot;abc%6%de&quot;</code>, where <code>%6%</code> designates that the preceding character is repeated six times. This way, the original input can be restored from the encoded string.</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">void</span> compress(Input&amp; input, Output&amp; output) <span class="kw">override</span> {
+    <span class="kw">auto</span> istream = input.as_stream(); <span class="co">// retrieve the input stream</span>
+    <span class="kw">auto</span> ostream = output.as_stream(); <span class="co">// retrieve the output stream</span>
+
+    <span class="dt">char</span> current; <span class="co">// stores the current character read from the input</span>
+    <span class="dt">char</span> last; <span class="co">//stores the character that preceded the current character</span>
+    size_t counter = <span class="dv">0</span>; <span class="co">// counts the length of the run of the current character</span>
+
+    <span class="co">// writes the current run to the output stream</span>
+    <span class="kw">auto</span> emit_run = [&amp;]() {
+        <span class="kw">if</span> (counter &gt; <span class="dv">3</span>) {
+            <span class="co">// if the run exceeds 3 characters, encode the run using the %% syntax</span>
+            ostream &lt;&lt; last &lt;&lt; <span class="st">&#39;%&#39;</span> &lt;&lt; counter &lt;&lt; <span class="st">&#39;%&#39;</span>;
+        } <span class="kw">else</span> {
+            <span class="co">// otherwise, do not encode and emit the whole run</span>
+            <span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt;= counter; i++) {
+                ostream &lt;&lt; last;
+            }
+        }
+    };
+
+    <span class="co">// retrieve the first character on the stream</span>
+    <span class="kw">if</span> (istream.get(last)) {
+        <span class="co">// continue reading from the stream</span>
+        <span class="kw">while</span>(istream.get(current)) {
+            <span class="kw">if</span> (current == last) {
+                <span class="co">// increase length of the current run</span>
+                counter++;
+            } <span class="kw">else</span> {
+                <span class="co">// emit the previous run</span>
+                emit_run();
+
+                <span class="co">// continue reading from the stream, starting a new run</span>
+                last = current;
+                counter = <span class="dv">0</span>;
+            }
+        }
+
+        <span class="co">// emit the final run</span>
+        emit_run();
+    }
+}</code></pre></div>
+<p>The decoding is handled by the <code>decompress</code> method as follows. It attempts to find patterns of the form <code>c%n%</code> and writes the character <code>c</code> to the output <code>n</code> times. Any character not part of such a pattern will simply be copied to the output.</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">void</span> decompress(Input&amp; input, Output&amp; output) <span class="kw">override</span> {
+    <span class="kw">auto</span> iview = input.as_view(); <span class="co">// retrieve the input as a view (merely for educational reasons)</span>
+    <span class="kw">auto</span> ostream = output.as_stream(); <span class="co">// retrieve the output stream</span>
+
+    <span class="dt">char</span> last = <span class="st">&#39;?&#39;</span>; <span class="co">// stores the last character read before a &quot;%n%&quot; pattern is encountered</span>
+
+    <span class="co">// process the input</span>
+    <span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt; iview.size(); i++) {
+        <span class="kw">if</span> (iview[i] == <span class="st">&#39;%&#39;</span>) {
+            <span class="co">// after encountering the &#39;%&#39; chracter, parse the following characters</span>
+            <span class="co">// as a decimal number until the next &#39;%&#39; is encountered</span>
+            size_t counter = <span class="dv">0</span>;
+            <span class="kw">for</span> (i++; i &lt; iview.size(); i++) {
+                <span class="kw">if</span> (iview[i] == <span class="st">&#39;%&#39;</span>) {
+                    <span class="co">// conclusion of the &quot;%n%&quot; pattern</span>
+                    <span class="kw">break</span>;
+                } <span class="kw">else</span> {
+                    <span class="co">// naive decimal number parser</span>
+                    counter *= <span class="dv">10</span>;
+                    counter += (iview[i] - <span class="st">&#39;0&#39;</span>);
+                }
+            }
+
+            <span class="co">// repeat the previous character according to the parsed length</span>
+            <span class="kw">for</span> (size_t x = <span class="dv">0</span>; x &lt; counter; x++) {
+                ostream &lt;&lt; last;
+            }
+        } <span class="kw">else</span> {
+            <span class="co">// output any character not part of a &quot;c%n%&quot; pattern and continue reading</span>
+            ostream &lt;&lt; iview[i];
+            last = iview[i];
+        }
+    }
+}</code></pre></div>
+<p>Note that this implementation will obviously not work if the original input contained the <code>%</code> character. It merely serves as an example.</p>
+<blockquote>
+<p><em>Exercise</em>: Implement the <code>decompress</code> method using the input as stream rather than a view.</p>
+</blockquote>
+<h3 id="magic">Magic</h3>
+<p>In order to identify what compressor has been used to produce a compressed output, the driver application can prepend a unique identifier (<em>magic keyword</em>) to the output.</p>
+<p>It is important to note that this is <em>not</em> the responsibility of the compressor.</p>
+<h2 id="unit-tests">Unit Tests</h2>
+<p>This section provides a guide to implementing unit tests for the framework. Unit testing is done with the aid of the <a href="https://github.com/google/googletest">Google Test</a> library. The test sources are located in the <code>test</code> directory in the repository root.</p>
+<h3 id="registering-and-running-unit-tests">Registering and Running unit tests</h3>
+<p>The test source files categorize the unit tests into test suites and are registered in the <code>CMakeLists.txt</code> file.</p>
+<p>The generated Makefile contains a target for registered each test suite. For example, <code>make tudocomp_tests</code> invokes the <code>tudocomp_tests</code> suite which is contained in <code>tudocomp_tests.cpp</code>. The <code>check</code> target executes all registered test suites in succession.</p>
+<p>The <code>sandbox_tests</code> suite is ignored by the framework's repository and can be used for quick developmental tests to avoid the registration procedure.</p>
+<p>A test suite consists of including the <em>Google Test</em> library and at least one unit test as follows, starting with an empty <code>example_tests.cpp</code></p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// [/test/example_tests.cpp]</span>
+
+<span class="ot">#include &lt;gtest/gtest.h&gt;</span>
+
+TEST(example, test) {
+    ASSERT_TRUE(<span class="kw">true</span>);
+}</code></pre></div>
+<p>The corresponding registration line in <code>CMakeLists.txt</code> looks as follows:</p>
+<pre><code>run_test(example_tests DEPS ${BASIC_DEPS})</code></pre>
+<p>The Makefile generated by CMake will contain a target <code>example_tests</code> that executes the example test suite.</p>
+<h3 id="implementing-unit-tests">Implementing unit tests</h3>
+<p>The following snippet provides a simple unit test for the <code>ExampleCompressor</code> from the previous chapter, the run-length encoder:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// [/test/example_tests.cpp]</span>
+
+<span class="ot">#include &lt;gtest/gtest.h&gt;</span>
+
+<span class="ot">#include &lt;tudocomp/example/ExampleCompressor.hpp&gt;</span>
+<span class="ot">#include &lt;tudocomp/Algorithm.hpp&gt;</span>
+<span class="ot">#include &lt;tudocomp/Compressor.hpp&gt;</span>
+
+TEST(example, compress) {
+    <span class="co">// instantiate the ExampleCompressor</span>
+    <span class="kw">auto</span> compressor = tdc::create_algo&lt;tdc::ExampleCompressor&gt;();
+
+    <span class="co">// create the input for the test (a string constant)</span>
+    tdc::Input input(<span class="st">&quot;abcccccccde&quot;</span>);
+
+    <span class="co">// create the output for the test (a buffer)</span>
+    std::vector&lt;<span class="dt">uint8_t</span>&gt; buffer;
+    tdc::Output output(buffer);
+
+    <span class="co">// invoke the compress method</span>
+    compressor.compress(input, output);
+
+    <span class="co">// retrieve the output as a string</span>
+    std::string output_str(buffer.begin(), buffer.end());
+
+    <span class="co">// compare the expected result against the output string to determine test failure or success</span>
+    ASSERT_EQ(<span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>, output_str);
+}</code></pre></div>
+<p><em>tudocomp</em> provides the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/namespacetdc.html#ada13e4fa05c07c2350dca7704b5f19dd"><code>create_algo</code></a> function template that properly instantiates compressors (or more precisely: any class inheriting from <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_algorithm.html"><code>Algorithm</code></a>). In this example, the compressor's input is created from a string constant and the output is linked to a byte buffer that will be filled. After invoking <code>compress</code>, the output is tested against the expected result.</p>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: I would like to rename <code>create_algo</code> to something memorable like <code>instantiate</code>.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: Once we have string generators (random, Markov, ...), they should be mentioned here.</p>
+</blockquote>
+</blockquote>
+<p>A typical compression test case should also test that <code>decompress</code> restores the original input when fed the output of <code>compress</code>. <em>tudocomp</em> provides a helper function that performs such a compression cycle, which is presented in the following unit test:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="ot">#include &quot;tudocomp_test_util.hpp&quot;</span>
+
+TEST(example, roundtrip) {
+    test::roundtrip&lt;tdc::ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>);
+}</code></pre></div>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: <code>test::roundtrip</code> is not in Doxygen!</p>
+</blockquote>
+</blockquote>
+<p><a href="about:blank"><code>test::roundtrip</code></a> performs the following operations: It</p>
+<ol style="list-style-type: decimal">
+<li>instantiates the given compressor type (ie. <code>ExampleCompressor</code>),</li>
+<li>passes the input string (ie. <code>&quot;abcccccccde&quot;</code>) to the <code>compress</code> method,</li>
+<li>tests the compression result against the second string (ie. <code>abc%6%de</code>),</li>
+<li>passes the compression result to the <code>decompress</code> method and</li>
+<li>tests the decompression result against the input string.</li>
+</ol>
+<p>This way, it spans an entire compression cycle. Alternatively, since often the compression result is not an ASCII string, the expected compression result can be passed as a vector of bytes like so:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp">TEST(example, roundtrip_bytes) {
+    std::vector&lt;<span class="dt">uint8_t</span>&gt; v { <span class="dv">97</span>, <span class="dv">98</span>, <span class="dv">99</span>, <span class="dv">37</span>, <span class="dv">54</span>, <span class="dv">37</span>, <span class="dv">100</span>, <span class="dv">101</span> };
+    test::roundtrip&lt;tdc::ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, v);
+}</code></pre></div>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: We need to consider if the term <em>roundtrip</em> should be replaced by something more meaningful.</p>
+</blockquote>
+</blockquote>
+<h2 id="runtime-statistics">Runtime Statistics</h2>
+<p><em>tudocomp</em> provides functionality to measure the running time and the peak amount of dynamically allocated memory (e.h. via <code>malloc</code> or <code>new</code>) over the course of a compression or decompression run.</p>
+<p>This functionality is accessible via a compressor's <em>environment</em> (represented by the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html"><code>Env</code></a> class), which can be retrieved using the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2"><code>env()</code></a> function.</p>
+<p>Runtime statistics are tracked in <em>phases</em>, ie. the running time and memory peak can be measured for individual stages during a compression run. These phases may be nested, ie. a phase can consist of multiple other phases. When a compressor is instantiated (using <code>create_algo</code>) it will automatically enter a <em>root phase</em>.</p>
+<p>The measured data can be retrieved as JSON for visualization in the <a href="#charter-web-application"><em>tudocomp Charter</em></a> or processing in a third-party application.</p>
+<blockquote>
+<p><em>Note:</em> In a <em>Cygwin</em> environment, due to its nature of not allowing overrides of <code>malloc</code> and friends, memory allocation cannot be measured.</p>
+</blockquote>
+<h3 id="usage-1">Usage</h3>
+<p>Making use of the statistics tracking functions is as easy as sorrounding single phases with calls to the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html#a8a9903fedbaae6a3563d276a9f5ba46b"><code>begin_stat_phase</code></a> and <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html#aa93c26f58178f2d5aeff37bed631a171"><code>end_stat_phase</code></a> functions like so:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp">env().begin_stat_phase(<span class="st">&quot;Phase 1&quot;</span>);
+    <span class="co">// ... Phase 1</span>
+env().end_stat_phase();
+env().begin_stat_phase(<span class="st">&quot;Phase 2&quot;</span>);
+    <span class="co">// ... Phase 2</span>
+    env().begin_stat_phase(<span class="st">&quot;Phase 2.1&quot;</span>);
+        <span class="co">// ... Phase 2.1, part of Phase 2</span>
+    env().end_stat_phase();
+    <span class="co">// ... Phase 2</span>
+    env().begin_stat_phase(<span class="st">&quot;Phase 2.2&quot;</span>);
+        <span class="co">// ... Phase 2.2, part of Phase 2</span>
+    env().end_stat_phase();
+    <span class="co">// ... Phase 2</span>
+env().end_stat_phase();</code></pre></div>
+<blockquote>
+<p><em>Note</em>: In order to receive meaningful results, each phase should &quot;clean up&quot; properly, ie. it should free any memory that is no longer needed after the phase is finished.</p>
+</blockquote>
+<p>During any phase, custom statistics can be logged using the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html#a5a1646edacfc6464e9cd8cfd560ec29d"><code>log_stat</code></a> method like so:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp">env().log_stat(<span class="st">&quot;A statistic&quot;</span>, <span class="dv">147</span>);
+env().log_stat(<span class="st">&quot;Another statistic&quot;</span>, <span class="fl">0.5</span>);</code></pre></div>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: Currently, there are only overloads for integer types. Overloads for <code>bool</code> and <code>std::string</code> should be added at least.</p>
+</blockquote>
+</blockquote>
+<p>Statistic tracking is concluded using the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html#a31788b1e730974811c3f597921d821d0"><code>finish_stats</code></a> function, which yields a reference to a <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_stat.html"><code>Stat</code></a> object. The JSON can be written to a stream or retrieved as a string using its <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_stat.html#ad96d0fefb2f71bd0398623073b2fb190"><code>to_json</code></a> function overloads:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// finish statistics</span>
+<span class="kw">auto</span>&amp; stats = compressor.env().finish_stats();
+
+<span class="co">// print JSON to a stream directly</span>
+stats.to_json(std::cout);
+
+<span class="co">// retrieve JSON as string</span>
+std::string json = stats.to_json();</code></pre></div>
+<h3 id="charter-web-application">Charter Web Application</h3>
+<p>The <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen">tudocomp Charter</a> is a JavaScript-based web application that visualizes the statistics JSON output. Based on the data, it plots a bar chart that displays the single phases of the compression run with their running time on the X axis and their peak heap memory usage on the Y axis.</p>
+<div class="figure">
+<img src="media/charter_diagram.png" alt="A diagram plotted by the Charter." />
+<p class="caption">A diagram plotted by the Charter.</p>
+</div>
+<p>The dashed line within a phase bar displays the <em>memory offset</em> of the phase, ie. how much memory was already allocated at the beginning of the phase. Ergo, the top border of the bar displays the global, application-wide memory peak during the phase, while the phase's local memory peak is the difference between the top and the dashed line.</p>
+<p>This information is explicitly printed in table view below the diagram. This is also where custom statistics are printed. The table view of a phase will also be displayed as a tooltip when the mouse is moved over its bar in the diagram.</p>
+<div class="figure">
+<img src="media/charter_table.png" alt="The table view of a statistics phase." />
+<p class="caption">The table view of a statistics phase.</p>
+</div>
+<p>The Charter provides several options to customize the chart, as well as exporting it as either a vector graphic (<code>svg</code>) or an image file (<code>png</code>).</p>
+<h2 id="options">Options</h2>
+<p>In <em>tudocomp</em>, algorithms can take runtime <em>options</em> that may alter their behaviour (e.g. the minimum length of a run before it is replaced in the run-length code example above). These options can be passed, for instance, via the command-line when invoking the driver application.</p>
+<p>The framework knows two different types of runtime options, <em>dynamic</em> options and <em>templated</em> options. The options that an algorithm takes are defined in its meta information object.</p>
+<h3 id="dynamic-options">Dynamic Options</h3>
+<p>Dynamic options are options that accept values of any type that can be parsed from a string representation (because options passed from a command-line, for instance, are generally in string representation). For primitive types such as booleans or integers, parsers are predefined in the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_option_value.html"><code>OptionValue</code></a> class.</p>
+<p>In the following examples, two dynamic options are introduced to the <a href="#example-run-length-encoding">run-length encoder</a> example in the <code>Compressor</code>'s meta information object. The <code>minimum_run</code> option will determine the minimum length of a run before it is encoded (3 by default), while the <code>rle_symbol</code> option defines the separation symbol used to use for encoding runs.</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="dt">static</span> Meta meta() {
+    Meta m(<span class="st">&quot;compressor&quot;</span>, <span class="st">&quot;example_compressor&quot;</span>,
+           <span class="st">&quot;This is an example compressor.&quot;</span>);
+
+    <span class="co">//Define options</span>
+    m.option(<span class="st">&quot;minimum_run&quot;</span>).dynamic(<span class="st">&quot;3&quot;</span>);
+    m.option(<span class="st">&quot;rle_symbol&quot;</span>).dynamic(<span class="st">&quot;%&quot;</span>);
+
+    <span class="kw">return</span> m;
+}</code></pre></div>
+<p>The <code>Meta</code>'s <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_meta.html#aa00cbc180eecd9017e247d9bbffbc01e"><code>option</code></a> method introduces a new option. Using <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_meta_1_1_option_builder.html#a41d5ef14d440fc44b6f7ba91fcd7797e"><code>dynamic</code></a>, this option is declared a dynamic option with the specified default value. The default value is used when the option's value was not explicitly passed (ie. via the command line).</p>
+<p>In the following snippet, these options are used to alter the actual run-length encoding done by the <code>emit_run</code> function:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// read the option values</span>
+<span class="kw">auto</span> minimum_run = env().option(<span class="st">&quot;minimum_run&quot;</span>).as_integer();
+<span class="kw">auto</span> rle_symbol = env().option(<span class="st">&quot;rle_symbol&quot;</span>).as_string();
+
+<span class="co">// writes the current run to the output stream</span>
+<span class="kw">auto</span> emit_run = [&amp;]() {
+    <span class="kw">if</span> (counter &gt;= minimum_run) {
+        <span class="co">// if the run exceeds the minimum amount of characters,</span>
+        <span class="co">// encode the run using using the RLE symbol syntax</span>
+        ostream &lt;&lt; last &lt;&lt; rle_symbol &lt;&lt; counter &lt;&lt; rle_symbol;
+    } <span class="kw">else</span> {
+        <span class="co">// otherwise, do not encode and emit the whole run</span>
+        <span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt;= counter; i++) {
+            ostream &lt;&lt; last;
+        }
+    }
+};</code></pre></div>
+<p>Note how options are accessible via the environment's <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html#a30d9029f7cd149e38df2aa108205b8c9"><code>option</code></a> function, which returns the corresponding <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_option_value.html"><code>OptionValue</code></a> object.</p>
+<blockquote>
+<p><em>Exercise</em>: Modify the decompression of the run-length encoder so that it uses the <code>rle_symbol</code> option as well.</p>
+</blockquote>
+<h3 id="templated-options">Templated Options</h3>
+<p>Since algorithms are meant to be modular, the framework provides functionality to pass a sub-algorithm as an option of the main algorithm, which the main algorithm then instantiates at runtime. This is done using templated options.</p>
+<p>The following example declares the main algorithm, <code>TemplatedExampleCompressor</code>, with a template parameter <code>encoder_t</code> and the corresponding templated option:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">template</span> &lt;<span class="kw">typename</span> encoder_t&gt;
+<span class="kw">class</span> TemplatedExampleCompressor : <span class="kw">public</span> Compressor {
+<span class="kw">public</span>:
+    <span class="kw">inline</span> <span class="dt">static</span> Meta meta() {
+        Meta m(<span class="st">&quot;compressor&quot;</span>, <span class="st">&quot;example_compressor&quot;</span>,
+               <span class="st">&quot;This is an example compressor.&quot;</span>);
+
+        <span class="co">//Define options</span>
+        m.option(<span class="st">&quot;encoder&quot;</span>).templated&lt;encoder_t&gt;();
+
+        <span class="kw">return</span> m;
+    }
+
+    <span class="co">// ...</span>
+};</code></pre></div>
+<p>The following snippet shows an alternative implementation of the <a href="#example-run-length-encoding">run-length encoder</a>'s <code>compress</code> function using the templated option:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">void</span> compress(Input&amp; input, Output&amp; output) <span class="kw">override</span> {
+    <span class="kw">auto</span> istream = input.as_stream(); <span class="co">// retrieve the input stream</span>
+    <span class="kw">auto</span> ostream = output.as_stream(); <span class="co">// retrieve the output stream</span>
+
+    <span class="dt">char</span> current; <span class="co">// stores the current character read from the input</span>
+    <span class="dt">char</span> last; <span class="co">//stores the character that preceded the current character</span>
+    size_t counter = <span class="dv">0</span>; <span class="co">// counts the length of the run of the current character</span>
+
+    <span class="co">// create the encoder</span>
+    encoder_t encoder(env().env_for_option(<span class="st">&quot;encoder&quot;</span>));
+
+    <span class="co">// retrieve the first character on the stream</span>
+    <span class="kw">if</span> (istream.get(last)) {
+        <span class="co">// continue reading from the stream</span>
+        <span class="kw">while</span>(istream.get(current)) {
+            <span class="kw">if</span> (current == last) {
+                <span class="co">// increase length of the current run</span>
+                counter++;
+            } <span class="kw">else</span> {
+                <span class="co">// emit the previous run</span>
+                encoder.emit_run(last, counter);
+
+                <span class="co">// continue reading from the stream, starting a new run</span>
+                last = current;
+                counter = <span class="dv">0</span>;
+            }
+        }
+
+        <span class="co">// emit the final run</span>
+        encoder.emit_run(last, counter);
+    }
+}</code></pre></div>
+<p>Note how in this example, the template type <code>encoder_t</code> is used to create an encoder. The function <code>emit_run</code> has been removed, instead the type <code>encoder_t</code> is expected to declare <code>emit_run</code> accepting two parameters: the character and the length of the run. This way, the actual encoding has been made <em>modular</em>.</p>
+<p>The function <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_env.html#aa1553e3b3a62eda47ca27b556ebe0500"><code>env_for_option</code></a> is used to create an environment from the current environment's <code>&quot;encoder&quot;</code> option. <code>encoder_t</code> accepts this in its constructor and get nested options from it.</p>
+<p>For instance, <code>encoder_t</code> could accept the dynamic options <code>minimum_run</code> and <code>rle_symbol</code> and encode a run like in the previous section. However, as long as <code>encoder_t</code> provides the <code>emit_run</code> function, it could use any arbitrary strategy to encode the run. In either scenario, the <code>decompress</code> method would have to use the sub-algorithm as well in order to decode the runs correctly.</p>
+<blockquote>
+<p><em>Exercise</em>: Implement an encoder <code>ExampleRunEmitter</code> for the <code>TemplatedExampleCompressor</code>.</p>
+</blockquote>
+<blockquote>
+<p><em>Exercise</em>: Implement the <code>decompress</code> function for the <code>TemplatedExampleCompressor</code> using the given encoder type (hint: add a <code>decode_run</code> function to the encoder).</p>
+</blockquote>
+<blockquote>
+<p><em>Example</em>: A full example of the <code>TemplatedExampleCompressor</code> is available in the <code>include/tudocomp/example</code> directory in the framework's repository. Most of the framework's compressor implementations follow this scheme and can be viewn as advanced examples as well.</p>
+</blockquote>
+<h3 id="unit-testing-with-options">Unit Testing with Options</h3>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: <code>test::roundtrip</code> is not in Doxygen!</p>
+</blockquote>
+</blockquote>
+<p>In the <a href="#unit-tests">Unit Tests</a> section, the <a href="about:blank"><code>test::roundtrip</code></a> method was introduced for testing a compression cycle. In another overload, additionally to the input and expected encoding, options can be passed as a third argument like so:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp">TEST(example, roundtrip_options) {
+    <span class="kw">using</span> <span class="kw">namespace</span> tdc;
+
+    <span class="co">// Test with options</span>
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc#6#de&quot;</span>,  <span class="st">&quot;minimum_run = &#39;6&#39;, rle_symbol = &#39;#&#39;&quot;</span>);
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abccccccde&quot;</span>,  <span class="st">&quot;abccccccde&quot;</span>, <span class="st">&quot;minimum_run = &#39;6&#39;, rle_symbol = &#39;#&#39;&quot;</span>);
+
+    <span class="co">// Test defaults</span>
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>);
+
+    <span class="co">// Test partially with defaults</span>
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>,  <span class="st">&quot;minimum_run = &#39;6&#39;&quot;</span>);
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abccccccde&quot;</span>,  <span class="st">&quot;abccccccde&quot;</span>, <span class="st">&quot;minimum_run = &#39;6&#39;&quot;</span>);
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abccccde&quot;</span>,    <span class="st">&quot;abc#3#de&quot;</span>,  <span class="st">&quot;rle_symbol = &#39;#&#39;&quot;</span>);
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccde&quot;</span>,     <span class="st">&quot;abcccde&quot;</span>,   <span class="st">&quot;rle_symbol = &#39;#&#39;&quot;</span>);
+}</code></pre></div>
+<p>Note how options that are not passed will take their default values.</p>
+<p>Dynamic options are passed following the simple <code>name = value</code> syntax, separated by <code>,</code>. Options for nested algorithms are grouped in brackets (<code>(</code> and <code>)</code>). The following example shows this for the <code>TemplatedExampleCompressor</code>:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp">test::roundtrip&lt;TemplatedExampleCompressor&lt;ExampleRunEmitter&gt;&gt;
+    (<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc#6#de&quot;</span>,  <span class="st">&quot;encoder(minimum_run = &#39;6&#39;, rle_symbol = &#39;#&#39;)&quot;</span>);</code></pre></div>
+<h2 id="the-registry">The Registry</h2>
+<p>In order to make a compressor available for the driver application, it needs to be registered in the driver's <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_registry.html"><code>Registry</code></a>.</p>
+<p>This is currently possible only by editing the source code file <code>src/tudocomp_driver/tudocmp_algorithms.cpp</code>. Adding the necessary includes and following lines to the body of the <code>register_algorithms</code> function will register the example compressors:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp">r.register_compressor&lt;ExampleCompressor&gt;();
+r.register_compressor&lt;TemplatedExampleCompressor&lt;ExampleRunEmitter&gt;&gt;();</code></pre></div>
+<p>Note how modular compressors with sub algorithms need every possible combination registered explicitly.</p>
+<p>Once registered, the example compressors are available in the command-line application and will be listed in the help output. They are also part of the matrix test when invoking the <code>check</code> make target.</p>
+<h2 id="the-driver">The Driver</h2>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: Do we need this section? A usage example should be provided in the Usage section. Once registered, a self-made compressor can be used in exactly the same way.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>XXX</p>
+</blockquote>
+</blockquote>
+<p>After integrating a compressor into the registry, we can start using it with the command line tool.</p>
+<p>The &quot;Driver&quot; (named this way because it serves as an user interface that drives the underlying tudocomp library) can be compiled with <code>make tudocomp_driver</code>. The executable of the driver is stored in <code>build/src/tudocomp_driver/tudocomp_driver</code> (after compilation).</p>
+<p>As a first step after building it, we can verify that the new compressors exists by listing all known algorithms:</p>
+<pre><code>.../build&gt; ./src/tudocomp_driver/tudocomp_driver --list
+This build supports the following algorithms:
+
+  [Compression algorithms]
+  -------------------------------------------------------------------------------------------------------------------------------
+  | ...                                                            | ...                                                        |
+  -------------------------------------------------------------------------------------------------------------------------------
+  | example_compressor(escape_symbol = &quot;%&quot;, debug_sleep = &quot;false&quot;) | This is an example compressor.                             |
+  |   where `escape_symbol` is one of [string],                    |                                                            |
+  |         `debug_sleep` is one of [string]                       |                                                            |
+  -------------------------------------------------------------------------------------------------------------------------------
+  | templated_example_compressor(encoder, debug_sleep = &quot;false&quot;)   | This is a templated example compressor.                    |
+  |   where `encoder` is one of [example_coder],                   |                                                            |
+  |         `debug_sleep` is one of [string]                       |                                                            |
+  -------------------------------------------------------------------------------------------------------------------------------
+
+  [Argument types]
+    [example_coder]
+    -----------------------------------------------------------------------------------------------------------
+    | debug(escape_symbol = &quot;%&quot;)                 | This is an example debug coder, encoding human readable.   |
+    |   where `escape_symbol` is one of [string] |                                                            |
+    -----------------------------------------------------------------------------------------------------------
+    | bit(escape_byte = &quot;255&quot;)                   | This is an example bit coder, encoding as a binary integer.|
+    |   where `escape_byte` is one of [string]   |                                                            |
+    -----------------------------------------------------------------------------------------------------------
+
+  ...</code></pre>
+<p>Next we will compress something with the tool. Since this is a quick test, we use an already existing file in the build directory, the <code>CMakeCache.txt</code>:</p>
+<pre><code>.../build&gt; ./src/tudocomp_driver/tudocomp_driver -algorithm &quot;example_compressor&quot; CMakeCache.txt -output ./cache.tdc -stats</code></pre>
+<p>This will create a compressed file <code>cache.tdc</code> in the current directory, and print some statistics to the command line, including the JSON data that can be pasted into the previously mentioned web visualizer.</p>
+<blockquote>
+<p><em>Note</em>: The tool will prevent accidental overwrites if a file with the output filename already exists. To bypass this security mechanism, and hence allow overwriting, the <code>-force</code> option has to be used.</p>
+</blockquote>
+<p>The stat output will likely show a very small compression effect, if any at all. But the file format contains a few sections decorated with comments containing repeats of the same character. If you look at the contents of <code>cache.tdc</code>, say with <code>cat cache.tdc | less</code>, you should be able to see some encoding sequences in the file.</p>
+<p>As a point of reference, on the authors' machine it only resulted in a 1% reduction, with 4 actual run length replacements.</p>
+<p>For a last check, we can see if the decompression works as well:</p>
+<pre><code>.../build&gt; ./src/tudocomp_driver/tudocomp_driver -decompress cache.tdc -output cache.orig.txt
+.../build&gt; diff -s CMakeCache.txt cache.orig.txt
+Files CMakeCache.txt and cache.orig.txt are identical</code></pre>
+<p>... which seems to be the case.</p>
+<h2 id="the-compare-tool">The Compare Tool</h2>
+<p>Last but not least, the framework provides a tool for automatically running different command line tools on different input text files.</p>
+<p>This &quot;compare_tool&quot; can be used to compare the effects of a compression algorithm on different classes of input text, or the effects of different algorithms on the same input files. It can be build with <code>make compare_tool</code>.</p>
+<p>It's main purpose is to compare the runtime and compression ratio of compressors combined with different options and input files. However, it does not integrate into the framework's own statistics tracking.</p>
+<blockquote>
+<p><em>Note</em>: There is also a separate, experimental support for measuring the memory footprint with the Valgrind tool massif, but this does not work well with external compression programs. Further, it seems redundant in the light of the memory statistic tracking methods.</p>
+</blockquote>
+<p>The compare tool works as follows: It takes a config file as a parameter and a profile name. The config file contains a number of comparison profiles, where each profile has a name. The compare tool executes the profile in the config file whose name matches with the name passed as the parameter. While executing the profile, the compare tool prints the results to stdout.</p>
+<p>A profile consists of a few options, and two lists. The one list contains the commands to run, and the other contains the input files. The compare tool builds the Cartesian product of both lists, and executes each combination in turn, noting time and compressed size. In the following, we call such a combination a benchmark run.</p>
+<p>The config file obeys the <a href="https://github.com/toml-lang/toml">TOML</a> syntax, and expects one or more profiles defined like this:</p>
+<pre class="toml"><code>[PROFILE_NAME]
+compare_commands = true # or false
+inputs = [
+    &quot;FILE1&quot;,
+    &quot;FILE2&quot;,
+    # ...
+]
+commands = [
+    [&quot;COMMAND1 --WITH_OPTIONS&quot;, &quot;--ADDITIONAL_OPTIONS&quot;],
+    [&quot;COMMAND2 --WITH_OPTIONS&quot;, &quot;--ADDITIONAL_OPTIONS&quot;],
+    # ...
+]
+
+[PROFILE2_NAME]
+# ...</code></pre>
+<p><code>inputs</code> is the list of input files, and <code>commands</code> is the list of command line commands to run. The commands are split into two strings that will be merged by the tool. The reason for this split is that the first part of the command line acts as a label, while the second part contains some boilerplate arguments (e.g., correctly directing the input and the output, while being irrelevant for identifying the tool and algorithm itself).</p>
+<p>You can use in the command strings the two special variables <code>$IN</code> and <code>$OUT</code> that are substituted by the compare tool with file paths to the input and output filename, respectively.</p>
+<p>The <code>compare_commands</code> flag decides how the benchmark runs are grouped. If it is set to <code>true</code>, it will run each command in turn on the same input file; if it is set to <code>false</code>, it will run the same command with all input files:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><code>compare_commands = true</code></th>
+<th align="left"><code>compare_commands = false</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>FILE1</code> run on <code>COMMAND1</code>, <code>COMMAND2</code></td>
+<td align="left"><code>COMMAND1</code> run with <code>FILE1</code>, <code>FILE2</code></td>
+</tr>
+<tr class="even">
+<td align="left"><code>FILE2</code> run on <code>COMMAND1</code>, <code>COMMAND2</code></td>
+<td align="left"><code>COMMAND2</code> run with <code>FILE1</code>, <code>FILE2</code></td>
+</tr>
+<tr class="odd">
+<td align="left">...</td>
+<td align="left">...</td>
+</tr>
+</tbody>
+</table>
+<h3 id="datasets">Datasets</h3>
+<p>Tudocomp provides a target <code>datasets</code> that will download a selection of files, mostly from the <a href="http://pizzachili.dcc.uchile.cl/texts.html">Pizza&amp;Chili Corpus</a>. At the point of writing this document, the datasets take 9.4 GiB of space. Make sure you have enough free storage before doing this!</p>
+<pre><code>.../build&gt; make datasets</code></pre>
+<blockquote>
+<p><em>Note</em> that the make target can be aborted at any time and will resume with what it had already downloaded the next time it gets invoked.</p>
+</blockquote>
+<p>The downloaded files can be found in <code>/etc/datasets/download</code>.</p>
+<p>This example will use some of those texts.</p>
+<h3 id="compare-workspace">Compare Workspace</h3>
+<p>At this point we already can build the compare tool and invoke it with a config file. But this is a bit cumbersome, because:</p>
+<ul>
+<li>The input files and the compare tool can have complex file paths.</li>
+<li>The compare files dumps log files and compression artifacts to the current working directory, so it should run in its own directory.</li>
+</ul>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: what are compare files dumps log files?</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Changes to the tudocomp codebase will not automatically be recognized by the tool.</li>
+</ul>
+<p>To address these (arguably minor) concerns the build system offers the target <code>compare_workspace</code>. It will create the directory <code>/build/compare_workspace</code>, and fill it with a short shell script <code>run.sh</code> that:</p>
+<ul>
+<li>Invokes the make targets <code>tudocomp_driver</code>, <code>compare_tool</code> and <code>compare_workspace</code> to ensure that the built code is up to date.</li>
+<li>Locally appends the binary directory of Tudocomp to<code>$PATH</code> such that it does not have to be installed or be invoked with the relative/full path.</li>
+</ul>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: what is &quot;it&quot;?</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Defines an environment variable <code>$DATASETS</code> pointing to the dataset directory.</li>
+<li>Delegates to the <code>compare_tool</code> with the environment defined above.</li>
+</ul>
+<blockquote>
+<blockquote>
+<p><em>TODO</em>: what will be delegated? The environment variables? Parameters like below?</p>
+</blockquote>
+</blockquote>
+<p>This set-up enables us to quickly create a test environment for different algorithms:</p>
+<pre><code>.../build&gt; make compare_workspace
+.../build&gt; cd compare_workspace
+.../compare_workspace&gt; ./run.sh config.toml example
+...</code></pre>
+<h3 id="an-example-config-file">An Example Config File</h3>
+<p>As the last step of this tutorial, we will create a compare config file in the workspace directory for our running example.</p>
+<p>Our goal is to compare the three compressor variants we had defined with a few different input files: English text, source code, DNA sequences, etc. We use the datasets we downloaded in the previous step.</p>
+<p>We create a new text file <code>/build/compare_workspace/example_config.toml</code>, and give it the following content:</p>
+<pre class="toml"><code>[example]
+compare_commands = true
+inputs = [
+    &quot;$DATASETS/download/real/english.50MB&quot;,
+    &quot;$DATASETS/download/real/sources.50MB&quot;,
+    &quot;$DATASETS/download/real/dblp.xml.50MB&quot;,
+    &quot;$DATASETS/download/real/proteins.50MB&quot;,
+    &quot;$DATASETS/download/real/dna.50MB&quot;,
+]
+commands = [
+    [&quot;tudocomp_driver -algorithm &#39;example_compressor&#39;&quot;,                  &quot;-raw $IN -output $OUT&quot;],
+    [&quot;tudocomp_driver -algorithm &#39;templated_example_compressor(bit)&#39;&quot;,   &quot;-raw $IN -output $OUT&quot;],
+    [&quot;tudocomp_driver -algorithm &#39;templated_example_compressor(debug)&#39;&quot;, &quot;-raw $IN -output $OUT&quot;],
+]</code></pre>
+<p>This content defines a config file with the profile <code>example</code>. The profile <code>example</code> runs the algorithms <code>example_compressor</code>, <code>templated_example_compressor(bit)</code> and <code>templated_example_compressor(debug)</code> on five input texts. The benchmark runs are grouped by the input files since we want to compare the differences between the algorithms on the same text.</p>
+<p>By invoking the run script with this config, we get an output like this:</p>
+<pre><code>.../compare_workspace&gt; ./run.sh example_config.toml example
+[ 13%] Built target malloc_count
+[ 47%] Built target sdsl_external
+[ 82%] Built target gflags_external
+[ 91%] Built target tudocomp_algorithms
+[100%] Built target tudocomp_driver
+[100%] Built target rust_external
+[100%] Built target compare_tool
+[100%] Built target compare_workspace
+
+Profile: example
+
+file | $DATASETS/download/real/english.50MB                             |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmd  | tudocomp_driver -algorithm &#39;example_compressor&#39;                  |~  1.681 s |    50.00 MiB |    49.85 MiB |  99.71 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(bit)&#39;   |~  1.681 s |    50.00 MiB |    49.81 MiB |  99.63 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(debug)&#39; |~  1.680 s |    50.00 MiB |    49.85 MiB |  99.71 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+file | $DATASETS/download/real/sources.50MB                             |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmd  | tudocomp_driver -algorithm &#39;example_compressor&#39;                  |~  1.612 s |    50.00 MiB |    48.49 MiB |  96.97 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(bit)&#39;   |~  1.605 s |    50.00 MiB |    48.10 MiB |  96.20 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(debug)&#39; |~  1.679 s |    50.00 MiB |    48.49 MiB |  96.97 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+file | $DATASETS/download/real/dblp.xml.50MB                            |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmd  | tudocomp_driver -algorithm &#39;example_compressor&#39;                  |~  1.641 s |    50.00 MiB |    50.00 MiB | 100.00 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(bit)&#39;   |~  1.686 s |    50.00 MiB |    50.00 MiB |  99.99 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(debug)&#39; |~  1.772 s |    50.00 MiB |    50.00 MiB | 100.00 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+file | $DATASETS/download/real/proteins.50MB                            |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmd  | tudocomp_driver -algorithm &#39;example_compressor&#39;                  |~  1.717 s |    50.00 MiB |    49.96 MiB |  99.93 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(bit)&#39;   |~  1.637 s |    50.00 MiB |    49.92 MiB |  99.83 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(debug)&#39; |~  1.724 s |    50.00 MiB |    49.96 MiB |  99.93 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+file | $DATASETS/download/real/dna.50MB                                 |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmd  | tudocomp_driver -algorithm &#39;example_compressor&#39;                  |~  1.997 s |    50.00 MiB |    49.31 MiB |  98.62 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(bit)&#39;   |~  1.794 s |    50.00 MiB |    48.21 MiB |  96.41 % |      -
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(debug)&#39; |~  1.852 s |    50.00 MiB |    49.31 MiB |  98.62 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+</code></pre>
+<p>We see that the algorithms are not very effective. As expected, there is no visible difference between the first compressor, and the second one with the debug encoder.</p>
+<p>We can also toggle the <code>compare_commands</code> option to group by the algorithms instead; this allows us to compare how an algorithms performs on different inputs:</p>
+<pre><code>.../compare_workspace&gt; ./run.sh example_config.toml example
+[ 34%] Built target sdsl_external
+[ 60%] Built target malloc_count
+[ 82%] Built target gflags_external
+[ 91%] Built target tudocomp_algorithms
+[100%] Built target tudocomp_driver
+[100%] Built target rust_external
+[100%] Built target compare_tool
+[100%] Built target compare_workspace
+
+Profile: example
+
+cmd  | tudocomp_driver -algorithm &#39;example_compressor&#39;                  |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+file | $DATASETS/download/real/english.50MB                             |~  1.829 s |    50.00 MiB |    49.85 MiB |  99.71 % |      -
+file | $DATASETS/download/real/sources.50MB                             |~  1.697 s |    50.00 MiB |    48.49 MiB |  96.97 % |      -
+file | $DATASETS/download/real/dblp.xml.50MB                            |~  1.787 s |    50.00 MiB |    50.00 MiB | 100.00 % |      -
+file | $DATASETS/download/real/proteins.50MB                            |~  1.643 s |    50.00 MiB |    49.96 MiB |  99.93 % |      -
+file | $DATASETS/download/real/dna.50MB                                 |~  1.874 s |    50.00 MiB |    49.31 MiB |  98.62 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(bit)&#39;   |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+file | $DATASETS/download/real/english.50MB                             |~  1.678 s |    50.00 MiB |    49.81 MiB |  99.63 % |      -
+file | $DATASETS/download/real/sources.50MB                             |~  1.664 s |    50.00 MiB |    48.10 MiB |  96.20 % |      -
+file | $DATASETS/download/real/dblp.xml.50MB                            |~  1.630 s |    50.00 MiB |    50.00 MiB |  99.99 % |      -
+file | $DATASETS/download/real/proteins.50MB                            |~  1.672 s |    50.00 MiB |    49.92 MiB |  99.83 % |      -
+file | $DATASETS/download/real/dna.50MB                                 |~  1.800 s |    50.00 MiB |    48.21 MiB |  96.41 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+cmd  | tudocomp_driver -algorithm &#39;templated_example_compressor(debug)&#39; |   time    |     size     |  comp. size  |  ratio   |     mem
+-------------------------------------------------------------------------------------------------------------------------------------------
+file | $DATASETS/download/real/english.50MB                             |~  1.650 s |    50.00 MiB |    49.85 MiB |  99.71 % |      -
+file | $DATASETS/download/real/sources.50MB                             |~  1.746 s |    50.00 MiB |    48.49 MiB |  96.97 % |      -
+file | $DATASETS/download/real/dblp.xml.50MB                            |~  1.638 s |    50.00 MiB |    50.00 MiB | 100.00 % |      -
+file | $DATASETS/download/real/proteins.50MB                            |~  1.755 s |    50.00 MiB |    49.96 MiB |  99.93 % |      -
+file | $DATASETS/download/real/dna.50MB                                 |~  1.838 s |    50.00 MiB |    49.31 MiB |  98.62 % |      -
+-------------------------------------------------------------------------------------------------------------------------------------------
+</code></pre>
+<p>Regarding the compression ratio, the source code file seems to compress best, presumably due the repetition of indentation characters like tabs and spaces.</p>
+<h1 id="uml-type-overview">UML Type Overview</h1>
+<div class="figure">
+<img src="media/project_setup.png" alt="The Tudocomp API" />
+<p class="caption">The Tudocomp API</p>
+</div>
+<h1 id="credits">Credits</h1>
+<p><em>tudocomp</em> was created with the help of ...</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Dinklage, Patrick</td>
+<td align="left">core development, research, documentation</td>
+</tr>
+<tr class="even">
+<td align="left">Köppl, Dominik</td>
+<td align="left">supervision, advice, research</td>
+</tr>
+<tr class="odd">
+<td align="left">Löbel, Marvin</td>
+<td align="left">core development, documentation</td>
+</tr>
+</tbody>
+</table>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://cmake.org/">CMake</a> processes the <code>CMakeLists.txt</code> files throughout the source tree and produces Makefiles for building with <code>make</code>.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Currently, direct streaming from an <code>std::istream</code> is not supported. When an <code>Input</code> is constructed from an <code>istream</code>, the stream is fully read and buffered in memory. This is an implementation decision that may change in the future. Note that files, on the other hand, are not buffered and will always be streamed from disk directly.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>This refers to the C++11 ownership semantics, ie. a <code>unique_ptr&lt;Env&gt;</code> is stored internally.<a href="#fnref3">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>
+
+        </div>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>
+
