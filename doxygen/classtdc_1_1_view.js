@@ -39,10 +39,11 @@ var classtdc_1_1_view =
     [ "remove_suffix", "classtdc_1_1_view.html#a1edc83998e71ba2b56570d7a76b9a877", null ],
     [ "rend", "classtdc_1_1_view.html#a569e518f250e32f020bb626bcf14d300", null ],
     [ "size", "classtdc_1_1_view.html#ac1ff63d04f0ec8f6270b4b9f71b1bdda", null ],
+    [ "slice", "classtdc_1_1_view.html#a2e01d31deb487658491b3e81ab9a923d", null ],
     [ "starts_with", "classtdc_1_1_view.html#a7c630638aa0793da56bb88c6fa327e0e", null ],
     [ "starts_with", "classtdc_1_1_view.html#a8734f4a4ba870a83a609ae7b493da764", null ],
     [ "starts_with", "classtdc_1_1_view.html#a79de12ef73099f1515cc1f5b5bd38a7f", null ],
-    [ "substr", "classtdc_1_1_view.html#a4567ab7944598fcce39d90f811956bd3", null ],
+    [ "substr", "classtdc_1_1_view.html#a360a88175a9321a550ed8df47a48e8ce", null ],
     [ "swap", "classtdc_1_1_view.html#ac5b0c8dfb097f1e56e93ee2b8656f1b6", null ],
     [ "swap", "classtdc_1_1_view.html#a0438fe38ebda83921dafaca85e0bf0c4", null ]
 ];

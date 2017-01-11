@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"divsufsort__private_8hpp.html#a81ff4283b0f558f524273900e3eaac08":[3,0,29,10],
 "divsufsort__private_8hpp.html#a88f1ff1ac325c41f23cc15bef5422485":[3,0,29,11],
 "divsufsort__private_8hpp.html#a926c1ab4f6ca8b244750377dcdea9ec1":[3,0,29,7],
 "divsufsort__private_8hpp.html#aab513d045e5a285866ec209fe4183dc3":[3,0,29,1],
@@ -163,19 +164,19 @@ var NAVTREEINDEX6 =
 "namespacemembers_type.html":[1,1,3],
 "namespacemembers_vars.html":[1,1,2],
 "namespaces.html":[1,0],
-"namespacestd.html":[2,0,1],
 "namespacestd.html":[1,0,2],
+"namespacestd.html":[2,0,1],
 "namespacetdc.html":[1,0,3],
 "namespacetdc.html":[2,0,2],
 "namespacetdc_1_1bwt.html":[1,0,3,0],
 "namespacetdc_1_1esacomp.html":[1,0,3,1],
 "namespacetdc_1_1esacomp.html":[2,0,2,0],
-"namespacetdc_1_1huff.html":[1,0,3,2],
 "namespacetdc_1_1huff.html":[2,0,2,1],
-"namespacetdc_1_1int__vector.html":[2,0,2,2],
+"namespacetdc_1_1huff.html":[1,0,3,2],
 "namespacetdc_1_1int__vector.html":[1,0,3,3],
-"namespacetdc_1_1io.html":[2,0,2,3],
+"namespacetdc_1_1int__vector.html":[2,0,2,2],
 "namespacetdc_1_1io.html":[1,0,3,4],
+"namespacetdc_1_1io.html":[2,0,2,3],
 "namespacetdc_1_1json.html":[2,0,2,4],
 "namespacetdc_1_1json.html":[1,0,3,5],
 "namespacetdc_1_1libdivsufsort.html":[2,0,2,5],
@@ -186,8 +187,8 @@ var NAVTREEINDEX6 =
 "namespacetdc_1_1lzss.html":[1,0,3,8],
 "namespacetdc_1_1lzw.html":[1,0,3,9],
 "namespacetdc_1_1pattern.html":[1,0,3,10],
-"namespacetdc_1_1plcp.html":[2,0,2,8],
 "namespacetdc_1_1plcp.html":[1,0,3,11],
+"namespacetdc_1_1plcp.html":[2,0,2,8],
 "namespacetdc__algorithms.html":[1,0,4],
 "namespacetdc__driver.html":[1,0,5],
 "pages.html":[],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ab2266a6dfea80b90eb327d56d8ac5fe8":[2,0,1,1,3],
 "structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ab38969c755815b6fdc9416b6a89d40a4":[2,0,1,1,4],
 "structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ac98e215ae1745c268eb498338a7586b8":[2,0,1,1,2],
-"structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#acce7b61981a4d81e866d87df9d306ff0":[2,0,1,1,0],
-"structtdc_1_1___double_hashing_prober.html":[2,0,2,9]
+"structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#acce7b61981a4d81e866d87df9d306ff0":[2,0,1,1,0]
 };

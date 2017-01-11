@@ -1,9 +1,10 @@
 var NAVTREEINDEX7 =
 {
+"structtdc_1_1___double_hashing_prober.html":[2,0,2,9],
 "structtdc_1_1_const_integer_base_trait.html":[2,0,2,22],
 "structtdc_1_1_const_integer_base_trait_1_1type.html":[2,0,2,22,0],
-"structtdc_1_1_const_integer_base_trait_1_1type.html#a83e5f0b085ea6a3e716ef1b0f8213849":[2,0,2,22,0,1],
 "structtdc_1_1_const_integer_base_trait_1_1type.html#a83e5f0b085ea6a3e716ef1b0f8213849":[2,0,2,22,0,2],
+"structtdc_1_1_const_integer_base_trait_1_1type.html#a83e5f0b085ea6a3e716ef1b0f8213849":[2,0,2,22,0,1],
 "structtdc_1_1_const_integer_base_trait_1_1type.html#aa139894af1fc470586d990c9ad09d771":[2,0,2,22,0,0],
 "structtdc_1_1_const_integer_base_trait_3_01dynamic__t_01_4.html":[2,0,2,23],
 "structtdc_1_1_const_integer_base_trait_3_01dynamic__t_01_4.html#ac54304d7bb54a07dbdde61568f4a8bd7":[2,0,2,23,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "uint__t_8hpp.html#a70bb4916cb92325c1bdcfdd977ff641a":[3,0,100,19],
 "uint__t_8hpp.html#a72f20a23e5be9497a59bfed381712841":[3,0,100,18],
 "uint__t_8hpp.html#a76bf5b42b78a2d097d91cc615751f21e":[3,0,100,32],
-"uint__t_8hpp.html#a82ea9b871f9e231ef06fbc9f16ae23da":[3,0,100,27],
-"uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6":[3,0,100,45]
+"uint__t_8hpp.html#a82ea9b871f9e231ef06fbc9f16ae23da":[3,0,100,27]
 };
