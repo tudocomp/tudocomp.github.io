@@ -9,6 +9,9 @@ var files =
     [ "ArrayDS.hpp", "_array_d_s_8hpp.html", [
       [ "ArrayDS", "classtdc_1_1_array_d_s.html", "classtdc_1_1_array_d_s" ]
     ] ],
+    [ "ArrayMaxHeap.hpp", "_array_max_heap_8hpp.html", [
+      [ "ArrayMaxHeap", "classtdc_1_1_array_max_heap.html", "classtdc_1_1_array_max_heap" ]
+    ] ],
     [ "ASCIICoder.hpp", "_a_s_c_i_i_coder_8hpp.html", [
       [ "ASCIICoder", "classtdc_1_1_a_s_c_i_i_coder.html", "classtdc_1_1_a_s_c_i_i_coder" ],
       [ "Encoder", "classtdc_1_1_a_s_c_i_i_coder_1_1_encoder.html", "classtdc_1_1_a_s_c_i_i_coder_1_1_encoder" ],
@@ -32,7 +35,7 @@ var files =
     ] ],
     [ "BitPackingVector.hpp", "_bit_packing_vector_8hpp.html", "_bit_packing_vector_8hpp" ],
     [ "BulldozerStrategy.hpp", "_bulldozer_strategy_8hpp.html", [
-      [ "BulldozerStrategy", "classtdc_1_1esacomp_1_1_bulldozer_strategy.html", "classtdc_1_1esacomp_1_1_bulldozer_strategy" ]
+      [ "BulldozerStrategy", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy" ]
     ] ],
     [ "bwt.hpp", "bwt_8hpp.html", "bwt_8hpp" ],
     [ "BWTCompressor.hpp", "_b_w_t_compressor_8hpp.html", [
@@ -80,7 +83,6 @@ var files =
     ] ],
     [ "Env.hpp", "_env_8hpp.html", null ],
     [ "pre_header/Env.hpp", "pre__header_2_env_8hpp.html", "pre__header_2_env_8hpp" ],
-    [ "ESACompressor.hpp", "_e_s_a_compressor_8hpp.html", "_e_s_a_compressor_8hpp" ],
     [ "Generators.hpp", "_generators_8hpp.html", "_generators_8hpp" ],
     [ "Hash.hpp", "_hash_8hpp.html", [
       [ "MixHasher", "classtdc_1_1_mix_hasher.html", "classtdc_1_1_mix_hasher" ],
@@ -112,12 +114,13 @@ var files =
     [ "Json.hpp", "_json_8hpp.html", "_json_8hpp" ],
     [ "JudyTrie.hpp", "_judy_trie_8hpp.html", null ],
     [ "LazyListStrategy.hpp", "_lazy_list_strategy_8hpp.html", [
-      [ "LazyListStrategy", "classtdc_1_1esacomp_1_1_lazy_list_strategy.html", "classtdc_1_1esacomp_1_1_lazy_list_strategy" ]
+      [ "LazyListStrategy", "classtdc_1_1lcpcomp_1_1_lazy_list_strategy.html", "classtdc_1_1lcpcomp_1_1_lazy_list_strategy" ]
     ] ],
     [ "LazySuccinctListBuffer.hpp", "_lazy_succinct_list_buffer_8hpp.html", [
-      [ "LazyDecoder", "classtdc_1_1esacomp_1_1_lazy_decoder.html", "classtdc_1_1esacomp_1_1_lazy_decoder" ],
-      [ "LazySuccinctListBuffer", "classtdc_1_1esacomp_1_1_lazy_succinct_list_buffer.html", "classtdc_1_1esacomp_1_1_lazy_succinct_list_buffer" ]
+      [ "LazyDecoder", "classtdc_1_1lcpcomp_1_1_lazy_decoder.html", "classtdc_1_1lcpcomp_1_1_lazy_decoder" ],
+      [ "LazySuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer" ]
     ] ],
+    [ "LCPCompressor.hpp", "_l_c_p_compressor_8hpp.html", "_l_c_p_compressor_8hpp" ],
     [ "LCPFromPLCP.hpp", "_l_c_p_from_p_l_c_p_8hpp.html", [
       [ "LCPFromPLCP", "classtdc_1_1_l_c_p_from_p_l_c_p.html", "classtdc_1_1_l_c_p_from_p_l_c_p" ]
     ] ],
@@ -156,23 +159,20 @@ var files =
     [ "LZWFactor.hpp", "_l_z_w_factor_8hpp.html", "_l_z_w_factor_8hpp" ],
     [ "malloc_count.hpp", "malloc__count_8hpp.html", "malloc__count_8hpp" ],
     [ "MarvinBuffer.hpp", "_marvin_buffer_8hpp.html", [
-      [ "MarvinBuffer", "classtdc_1_1esacomp_1_1_marvin_buffer.html", "classtdc_1_1esacomp_1_1_marvin_buffer" ]
+      [ "MarvinBuffer", "classtdc_1_1lcpcomp_1_1_marvin_buffer.html", "classtdc_1_1lcpcomp_1_1_marvin_buffer" ]
     ] ],
     [ "MaxHeapStrategy.hpp", "_max_heap_strategy_8hpp.html", [
-      [ "MaxHeapStrategy", "classtdc_1_1esacomp_1_1_max_heap_strategy.html", "classtdc_1_1esacomp_1_1_max_heap_strategy" ]
-    ] ],
-    [ "MaxLCPHeap.hpp", "_max_l_c_p_heap_8hpp.html", [
-      [ "MaxLCPHeap", "classtdc_1_1esacomp_1_1_max_l_c_p_heap.html", "classtdc_1_1esacomp_1_1_max_l_c_p_heap" ]
+      [ "MaxHeapStrategy", "classtdc_1_1lcpcomp_1_1_max_heap_strategy.html", "classtdc_1_1lcpcomp_1_1_max_heap_strategy" ]
     ] ],
     [ "MaxLCPStrategy.hpp", "_max_l_c_p_strategy_8hpp.html", [
-      [ "MaxLCPStrategy", "classtdc_1_1esacomp_1_1_max_l_c_p_strategy.html", "classtdc_1_1esacomp_1_1_max_l_c_p_strategy" ]
+      [ "MaxLCPStrategy", "classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy" ]
     ] ],
     [ "MaxLCPSuffixList.hpp", "_max_l_c_p_suffix_list_8hpp.html", [
-      [ "MaxLCPSuffixList", "classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html", "classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list" ]
+      [ "MaxLCPSuffixList", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list" ]
     ] ],
     [ "MTFCompressor.hpp", "_m_t_f_compressor_8hpp.html", "_m_t_f_compressor_8hpp" ],
     [ "MultiMapBuffer.hpp", "_multi_map_buffer_8hpp.html", [
-      [ "MultimapBuffer", "classtdc_1_1esacomp_1_1_multimap_buffer.html", "classtdc_1_1esacomp_1_1_multimap_buffer" ]
+      [ "MultimapBuffer", "classtdc_1_1lcpcomp_1_1_multimap_buffer.html", "classtdc_1_1lcpcomp_1_1_multimap_buffer" ]
     ] ],
     [ "MyHashTrie.hpp", "_my_hash_trie_8hpp.html", [
       [ "MyHash", "classtdc_1_1lz78_1_1_my_hash.html", "classtdc_1_1lz78_1_1_my_hash" ],
@@ -180,11 +180,11 @@ var files =
       [ "MyHashTrie", "classtdc_1_1lz78_1_1_my_hash_trie.html", "classtdc_1_1lz78_1_1_my_hash_trie" ]
     ] ],
     [ "MyMapBuffer.hpp", "_my_map_buffer_8hpp.html", [
-      [ "MyHash", "classtdc_1_1esacomp_1_1_my_hash.html", "classtdc_1_1esacomp_1_1_my_hash" ],
-      [ "MyMapBuffer", "classtdc_1_1esacomp_1_1_my_map_buffer.html", "classtdc_1_1esacomp_1_1_my_map_buffer" ]
+      [ "MyHash", "classtdc_1_1lcpcomp_1_1_my_hash.html", "classtdc_1_1lcpcomp_1_1_my_hash" ],
+      [ "MyMapBuffer", "classtdc_1_1lcpcomp_1_1_my_map_buffer.html", "classtdc_1_1lcpcomp_1_1_my_map_buffer" ]
     ] ],
     [ "NaiveStrategy.hpp", "_naive_strategy_8hpp.html", [
-      [ "NaiveStrategy", "classtdc_1_1esacomp_1_1_naive_strategy.html", "classtdc_1_1esacomp_1_1_naive_strategy" ]
+      [ "NaiveStrategy", "classtdc_1_1lcpcomp_1_1_naive_strategy.html", "classtdc_1_1lcpcomp_1_1_naive_strategy" ]
     ] ],
     [ "NoopCompressor.hpp", "_noop_compressor_8hpp.html", [
       [ "NoopCompressor", "classtdc_1_1_noop_compressor.html", "classtdc_1_1_noop_compressor" ]
@@ -218,7 +218,7 @@ var files =
     [ "squeeze_node.hpp", "squeeze__node_8hpp.html", "squeeze__node_8hpp" ],
     [ "Stat.hpp", "_stat_8hpp.html", "_stat_8hpp" ],
     [ "SuccinctListBuffer.hpp", "_succinct_list_buffer_8hpp.html", [
-      [ "SuccinctListBuffer", "classtdc_1_1esacomp_1_1_succinct_list_buffer.html", "classtdc_1_1esacomp_1_1_succinct_list_buffer" ]
+      [ "SuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer" ]
     ] ],
     [ "TernaryTrie.hpp", "_ternary_trie_8hpp.html", [
       [ "TernaryTrie", "classtdc_1_1lz78_1_1_ternary_trie.html", "classtdc_1_1lz78_1_1_ternary_trie" ]

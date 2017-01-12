@@ -8,6 +8,6 @@ var searchData=
   ['length',['length',['../structcedar_1_1da_1_1result__pair__type.html#a58ac4b84f2b1e7222b0fa0abaa4d6b3f',1,'cedar::da::result_pair_type::length()'],['../structcedar_1_1da_1_1result__triple__type.html#ad993bed1a4e6c347676544f0579e5676',1,'cedar::da::result_triple_type::length()']]],
   ['lg_5ftable',['lg_table',['../namespacetdc_1_1libdivsufsort.html#ac2fb333c0d8ac34d4df4b8532651d810',1,'tdc::libdivsufsort']]],
   ['literal_5fr',['literal_r',['../namespacetdc.html#a247a904fd8b4d4245d6f5c53b6a5d6dd',1,'tdc']]],
-  ['load_5ffactor',['load_factor',['../classtdc_1_1esacomp_1_1_my_hash.html#a6af32f83fbae0402d91443f0b6d3372f',1,'tdc::esacomp::MyHash::load_factor()'],['../classtdc_1_1lz78_1_1_my_hash.html#a267b7e9a0163f4c575c37c0c3f560938',1,'tdc::lz78::MyHash::load_factor()']]],
+  ['load_5ffactor',['load_factor',['../classtdc_1_1lcpcomp_1_1_my_hash.html#afe9c8b21d1b8d449d400196554b46fab',1,'tdc::lcpcomp::MyHash::load_factor()'],['../classtdc_1_1lz78_1_1_my_hash.html#a267b7e9a0163f4c575c37c0c3f560938',1,'tdc::lz78::MyHash::load_factor()']]],
   ['longest',['longest',['../structtdc_1_1huff_1_1huffmantable.html#a1e48cbdf35cfd829b849afe954c14197',1,'tdc::huff::huffmantable']]]
 ];

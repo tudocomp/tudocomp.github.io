@@ -56,7 +56,7 @@ var searchData=
   ['bufferwrapper',['BufferWrapper',['../classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html',1,'tdc::libdivsufsort']]],
   ['bufferwrapper',['BufferWrapper',['../classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html#abaa2184c35f08abc320b7c53dcac1f81',1,'tdc::libdivsufsort::BufferWrapper']]],
   ['build',['build',['../classcedar_1_1da.html#a626f352688bc69594e056e9d54e923e6',1,'cedar::da']]],
-  ['bulldozerstrategy',['BulldozerStrategy',['../classtdc_1_1esacomp_1_1_bulldozer_strategy.html',1,'tdc::esacomp']]],
+  ['bulldozerstrategy',['BulldozerStrategy',['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html',1,'tdc::lcpcomp']]],
   ['bulldozerstrategy_2ehpp',['BulldozerStrategy.hpp',['../_bulldozer_strategy_8hpp.html',1,'']]],
   ['bwt',['bwt',['../namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb',1,'tdc::bwt']]],
   ['bwt_2ehpp',['bwt.hpp',['../bwt_8hpp.html',1,'']]],

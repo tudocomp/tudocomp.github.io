@@ -11,6 +11,7 @@ var searchData=
   ['arguments',['arguments',['../classtdc_1_1_algorithm_value.html#ac20152879622db37db717ebec41fd764',1,'tdc::AlgorithmValue']]],
   ['arr_5fto_5fdebug_5fstring',['arr_to_debug_string',['../namespacetdc.html#ae1a7cd30a5d626de172ab914d7fb1fce',1,'tdc']]],
   ['array',['array',['../classcedar_1_1da.html#a6319ce6dad2768f8bec36de815191939',1,'cedar::da']]],
+  ['arraymaxheap',['ArrayMaxHeap',['../classtdc_1_1_array_max_heap.html#a407bcb5a2be91b48052cb612c1e6b4c1',1,'tdc::ArrayMaxHeap']]],
   ['as',['as',['../classtdc_1_1_option_value.html#afd3a8773306b057d21a477669341b0fd',1,'tdc::OptionValue']]],
   ['as_5falgorithm',['as_algorithm',['../classtdc_1_1_option_value.html#a12a6f5b6534af35d9216b7775bc686dd',1,'tdc::OptionValue']]],
   ['as_5fbool',['as_bool',['../classtdc_1_1_option_value.html#ac75ad553248a0ff612db8e6b53aa2250',1,'tdc::OptionValue']]],

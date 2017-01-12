@@ -2,7 +2,7 @@ var searchData=
 [
   ['n1',['N1',['../structcedar_1_1_na_n.html#a1dae8976ca814012d8d8c50329954640ac6f5058ead0bb64a824685edff68a0d7',1,'cedar::NaN::N1()'],['../structcedar_1_1_na_n_3_01float_01_4.html#a4d357e6078e735302ac3539ed38da3e8ac4922574a8d1f2312bad7d26a9af96ba',1,'cedar::NaN&lt; float &gt;::N1()']]],
   ['n2',['N2',['../structcedar_1_1_na_n.html#a1dae8976ca814012d8d8c50329954640a887d70f51391b5cc17cd87826f1099c2',1,'cedar::NaN::N2()'],['../structcedar_1_1_na_n_3_01float_01_4.html#a4d357e6078e735302ac3539ed38da3e8a5f6ec0db995a89cd022e8d1864a59071',1,'cedar::NaN&lt; float &gt;::N2()']]],
-  ['naivestrategy',['NaiveStrategy',['../classtdc_1_1esacomp_1_1_naive_strategy.html',1,'tdc::esacomp']]],
+  ['naivestrategy',['NaiveStrategy',['../classtdc_1_1lcpcomp_1_1_naive_strategy.html',1,'tdc::lcpcomp']]],
   ['naivestrategy_2ehpp',['NaiveStrategy.hpp',['../_naive_strategy_8hpp.html',1,'']]],
   ['name',['name',['../classtdc_1_1_meta.html#a000095b92c5323b14917a5d3b60dc066',1,'tdc::Meta::name()'],['../classtdc_1_1_algorithm_value.html#a8dd2b3c30d42519f81ad2eed7891add1',1,'tdc::AlgorithmValue::name()']]],
   ['nan',['NaN',['../structcedar_1_1_na_n.html',1,'cedar']]],

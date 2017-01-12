@@ -9,8 +9,8 @@ var searchData=
   ['_7eenvroot',['~EnvRoot',['../classtdc_1_1_env_root.html#ad02c8a1ee7c138de9802fc7018939f16',1,'tdc::EnvRoot']]],
   ['_7eextended_5fhuffmantable',['~extended_huffmantable',['../structtdc_1_1huff_1_1extended__huffmantable.html#aa882ae6f6c8fbbba72445bfba82f9c5e',1,'tdc::huff::extended_huffmantable']]],
   ['_7ehuffmantable',['~huffmantable',['../structtdc_1_1huff_1_1huffmantable.html#ae3a0dd9ed1cf55c6ea0d6da4467421aa',1,'tdc::huff::huffmantable']]],
-  ['_7elazydecoder',['~LazyDecoder',['../classtdc_1_1esacomp_1_1_lazy_decoder.html#a34940694a328d7f97db9c6a2da0d2f32',1,'tdc::esacomp::LazyDecoder']]],
-  ['_7emyhash',['~MyHash',['../classtdc_1_1esacomp_1_1_my_hash.html#a37977c7afcbab09a8c8f0dc7c21f5518',1,'tdc::esacomp::MyHash::~MyHash()'],['../classtdc_1_1lz78_1_1_my_hash.html#aca6e777a14cb8a77e2f6c662e38774a3',1,'tdc::lz78::MyHash::~MyHash()']]],
+  ['_7elazydecoder',['~LazyDecoder',['../classtdc_1_1lcpcomp_1_1_lazy_decoder.html#abdcb199ef6c07e64d417df49414c54eb',1,'tdc::lcpcomp::LazyDecoder']]],
+  ['_7emyhash',['~MyHash',['../classtdc_1_1lcpcomp_1_1_my_hash.html#a57fc31eed2a1e7d0155811c03f23ce1e',1,'tdc::lcpcomp::MyHash::~MyHash()'],['../classtdc_1_1lz78_1_1_my_hash.html#aca6e777a14cb8a77e2f6c662e38774a3',1,'tdc::lz78::MyHash::~MyHash()']]],
   ['_7eoptionvalue',['~OptionValue',['../classtdc_1_1_option_value.html#ab9510ee6f2767e2d667f24cf17da6bff',1,'tdc::OptionValue']]],
-  ['_7esuccinctlistbuffer',['~SuccinctListBuffer',['../classtdc_1_1esacomp_1_1_succinct_list_buffer.html#a2b4a6f42ebdf17babd3c0bb1994f8d92',1,'tdc::esacomp::SuccinctListBuffer']]]
+  ['_7esuccinctlistbuffer',['~SuccinctListBuffer',['../classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html#abd36ae8464463edab163eb7f306b924a',1,'tdc::lcpcomp::SuccinctListBuffer']]]
 ];

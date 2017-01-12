@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['lazydecoder',['LazyDecoder',['../classtdc_1_1esacomp_1_1_lazy_decoder.html',1,'tdc::esacomp']]],
-  ['lazyliststrategy',['LazyListStrategy',['../classtdc_1_1esacomp_1_1_lazy_list_strategy.html',1,'tdc::esacomp']]],
-  ['lazysuccinctlistbuffer',['LazySuccinctListBuffer',['../classtdc_1_1esacomp_1_1_lazy_succinct_list_buffer.html',1,'tdc::esacomp']]],
+  ['lazydecoder',['LazyDecoder',['../classtdc_1_1lcpcomp_1_1_lazy_decoder.html',1,'tdc::lcpcomp']]],
+  ['lazyliststrategy',['LazyListStrategy',['../classtdc_1_1lcpcomp_1_1_lazy_list_strategy.html',1,'tdc::lcpcomp']]],
+  ['lazysuccinctlistbuffer',['LazySuccinctListBuffer',['../classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html',1,'tdc::lcpcomp']]],
+  ['lcpcompressor',['LCPCompressor',['../classtdc_1_1_l_c_p_compressor.html',1,'tdc']]],
   ['lcpfromplcp',['LCPFromPLCP',['../classtdc_1_1_l_c_p_from_p_l_c_p.html',1,'tdc']]],
   ['lengthrange',['LengthRange',['../classtdc_1_1_length_range.html',1,'tdc']]],
   ['linearprober',['LinearProber',['../classtdc_1_1_linear_prober.html',1,'tdc']]],
