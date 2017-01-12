@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"divsufsort__private_8hpp.html#a6572f1706059832f94025fa12c6c45ed":[3,0,29,0],
+"divsufsort__private_8hpp.html#a65c54022c6abbad80d3a5decad9a5f6d":[3,0,29,4],
 "divsufsort__private_8hpp.html#a81ff4283b0f558f524273900e3eaac08":[3,0,29,10],
 "divsufsort__private_8hpp.html#a88f1ff1ac325c41f23cc15bef5422485":[3,0,29,11],
 "divsufsort__private_8hpp.html#a926c1ab4f6ca8b244750377dcdea9ec1":[3,0,29,7],
@@ -86,8 +88,8 @@ var NAVTREEINDEX6 =
 "dynamic__t_8hpp.html#af5cd28fd8ea0039bdc775236cc3a6395":[3,0,32,35],
 "dynamic__t_8hpp_source.html":[3,0,32],
 "files.html":[3,0],
-"functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
+"functions.html":[2,3,0],
 "functions_0x7e.html":[2,3,0,21],
 "functions_b.html":[2,3,0,1],
 "functions_c.html":[2,3,0,2],
@@ -171,8 +173,8 @@ var NAVTREEINDEX6 =
 "namespacetdc_1_1bwt.html":[1,0,3,0],
 "namespacetdc_1_1esacomp.html":[1,0,3,1],
 "namespacetdc_1_1esacomp.html":[2,0,2,0],
-"namespacetdc_1_1huff.html":[2,0,2,1],
 "namespacetdc_1_1huff.html":[1,0,3,2],
+"namespacetdc_1_1huff.html":[2,0,2,1],
 "namespacetdc_1_1int__vector.html":[1,0,3,3],
 "namespacetdc_1_1int__vector.html":[2,0,2,2],
 "namespacetdc_1_1io.html":[1,0,3,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html":[2,0,1,1],
 "structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#a98c023894c953bbe567ac495fd296927":[2,0,1,1,1],
 "structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ab2266a6dfea80b90eb327d56d8ac5fe8":[2,0,1,1,3],
-"structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ab38969c755815b6fdc9416b6a89d40a4":[2,0,1,1,4],
-"structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ac98e215ae1745c268eb498338a7586b8":[2,0,1,1,2],
-"structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#acce7b61981a4d81e866d87df9d306ff0":[2,0,1,1,0]
+"structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ab38969c755815b6fdc9416b6a89d40a4":[2,0,1,1,4]
 };

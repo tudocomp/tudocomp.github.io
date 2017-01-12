@@ -11,6 +11,7 @@ var namespacetdc_1_1int__vector =
     [ "GenericIntRef", "classtdc_1_1int__vector_1_1_generic_int_ref.html", "classtdc_1_1int__vector_1_1_generic_int_ref" ],
     [ "GenericIntRefAutocast", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast.html", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast" ],
     [ "GenericIntRefAutocast< dynamic_t >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01dynamic__t_01_4.html", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01dynamic__t_01_4" ],
+    [ "GenericIntRefAutocast< uint_t< 1 > >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01uint__t_3_011_01_4_01_4.html", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01uint__t_3_011_01_4_01_4" ],
     [ "IntPtr", "classtdc_1_1int__vector_1_1_int_ptr.html", "classtdc_1_1int__vector_1_1_int_ptr" ],
     [ "IntPtrTrait", "structtdc_1_1int__vector_1_1_int_ptr_trait.html", null ],
     [ "IntPtrTrait< ConstIntPtr< dynamic_t > >", "structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4.html", [

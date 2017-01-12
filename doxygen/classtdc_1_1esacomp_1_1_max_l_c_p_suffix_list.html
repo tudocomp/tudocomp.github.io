@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170111-jenkins-15</span>
+   &#160;<span id="projectnumber">0.170112-jenkins-16</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -128,12 +128,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6e61bb536e50749960d8ca280a628b50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html#a6e61bb536e50749960d8ca280a628b50">MaxLCPSuffixList</a> (const lcp_t &amp;lcp, size_t min_lcp, size_t max_lcp)</td></tr>
 <tr class="memdesc:a6e61bb536e50749960d8ca280a628b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a6e61bb536e50749960d8ca280a628b50">More...</a><br /></td></tr>
 <tr class="separator:a6e61bb536e50749960d8ca280a628b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af581e081ae81c433722fb5c44f497e48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html#af581e081ae81c433722fb5c44f497e48">insert</a> (size_t i)</td></tr>
-<tr class="memdesc:af581e081ae81c433722fb5c44f497e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert suffix array item with index i.  <a href="#af581e081ae81c433722fb5c44f497e48">More...</a><br /></td></tr>
-<tr class="separator:af581e081ae81c433722fb5c44f497e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c59182dfbf144c267e90ca230d0820"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html#a29c59182dfbf144c267e90ca230d0820">remove</a> (size_t i)</td></tr>
 <tr class="memdesc:a29c59182dfbf144c267e90ca230d0820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove suffix array item with index i.  <a href="#a29c59182dfbf144c267e90ca230d0820">More...</a><br /></td></tr>
 <tr class="separator:a29c59182dfbf144c267e90ca230d0820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af877c4e15e5a922174d3962c9297ecd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html#af877c4e15e5a922174d3962c9297ecd1">decrease_key</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> i)</td></tr>
+<tr class="memdesc:af877c4e15e5a922174d3962c9297ecd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease key on array item with index i.  <a href="#af877c4e15e5a922174d3962c9297ecd1">More...</a><br /></td></tr>
+<tr class="separator:af877c4e15e5a922174d3962c9297ecd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a285713245117c9165e527cbe4beedf45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html#a285713245117c9165e527cbe4beedf45">contains</a> (size_t i) const </td></tr>
 <tr class="memdesc:a285713245117c9165e527cbe4beedf45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether or not suffix array entry i is contained in this list.  <a href="#a285713245117c9165e527cbe4beedf45">More...</a><br /></td></tr>
 <tr class="separator:a285713245117c9165e527cbe4beedf45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,7 +198,7 @@ template&lt;class lcp_t &gt; </div>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00055">55</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00054">54</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,37 @@ template&lt;class lcp_t &gt; </div>
 
 <p>Checks whether or not suffix array entry i is contained in this list. </p>
 
-<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00161">161</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00168">168</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af877c4e15e5a922174d3962c9297ecd1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class lcp_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html">tdc::esacomp::MaxLCPSuffixList</a>&lt; lcp_t &gt;::decrease_key </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrease key on array item with index i. </p>
+
+<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00162">162</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
 
 </div>
 </div>
@@ -258,7 +288,7 @@ template&lt;class lcp_t &gt; </div>
 
 <p>Test if list is empty. </p>
 
-<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00171">171</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00178">178</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
 
 </div>
 </div>
@@ -287,37 +317,7 @@ template&lt;class lcp_t &gt; </div>
 
 <p>Get first item (suffix array index with highest LCP) </p>
 
-<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00176">176</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af581e081ae81c433722fb5c44f497e48"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class lcp_t &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classtdc_1_1esacomp_1_1_max_l_c_p_suffix_list.html">tdc::esacomp::MaxLCPSuffixList</a>&lt; lcp_t &gt;::insert </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Insert suffix array item with index i. </p>
-
-<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00080">80</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00183">183</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ template&lt;class lcp_t &gt; </div>
 
 <p>Remove suffix array item with index i. </p>
 
-<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00126">126</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00127">127</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +376,7 @@ template&lt;class lcp_t &gt; </div>
 
 <p>Get number of contained entries. </p>
 
-<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00166">166</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html#l00173">173</a> of file <a class="el" href="_max_l_c_p_suffix_list_8hpp_source.html">MaxLCPSuffixList.hpp</a>.</p>
 
 </div>
 </div>

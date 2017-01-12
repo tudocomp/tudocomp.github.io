@@ -149,6 +149,7 @@ var hierarchy =
     ] ],
     [ "tdc::int_vector::GenericIntRefAutocast< T >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast.html", null ],
     [ "tdc::int_vector::GenericIntRefAutocast< dynamic_t >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01dynamic__t_01_4.html", null ],
+    [ "tdc::int_vector::GenericIntRefAutocast< uint_t< 1 > >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01uint__t_3_011_01_4_01_4.html", null ],
     [ "tdc::huff::huffmantable", "structtdc_1_1huff_1_1huffmantable.html", [
       [ "tdc::huff::extended_huffmantable", "structtdc_1_1huff_1_1extended__huffmantable.html", null ]
     ] ],
@@ -210,8 +211,8 @@ var hierarchy =
     [ "tdc::plcp::MaxPLCPHeap< lcp_t >", "classtdc_1_1plcp_1_1_max_p_l_c_p_heap.html", null ],
     [ "tdc::Meta", "classtdc_1_1_meta.html", null ],
     [ "tdc::MixHasher", "classtdc_1_1_mix_hasher.html", null ],
-    [ "tdc::esacomp::MyHash< Key, Value, HashFcn, EqualKey, SizeManager, empty_val >", "classtdc_1_1esacomp_1_1_my_hash.html", null ],
     [ "tdc::lz78::MyHash< Key, Value, HashFcn, EqualKey, ProbeFcn, SizeManager >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
+    [ "tdc::esacomp::MyHash< Key, Value, HashFcn, EqualKey, SizeManager, empty_val >", "classtdc_1_1esacomp_1_1_my_hash.html", null ],
     [ "tdc::esacomp::MyHash< len_t, len_t, tdc::MixHasher >", "classtdc_1_1esacomp_1_1_my_hash.html", null ],
     [ "tdc::lz78::MyHash< squeeze_node_t, factorid_t, tdc::MixHasher, std::equal_to< squeeze_node_t >, tdc::LinearProber< squeeze_node_t > >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
     [ "cedar::NaN< T >", "structcedar_1_1_na_n.html", null ],
