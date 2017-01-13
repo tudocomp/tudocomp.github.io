@@ -12,7 +12,6 @@ var searchData=
   ['title',['title',['../classtdc_1_1_stat.html#a1f420a303659451c4a6d2b44ca50a7ab',1,'tdc::Stat']]],
   ['to_5falgorithm',['to_algorithm',['../classtdc_1_1_option_value.html#a65e2219c61e6589dae65098faf99217a',1,'tdc::OptionValue']]],
   ['to_5fjson',['to_json',['../classtdc_1_1_stat.html#ad189cbc9ad2c2e292f74acdeaade3363',1,'tdc::Stat']]],
-  ['top',['top',['../classtdc_1_1plcp_1_1_max_p_l_c_p_heap.html#abf68d05dd08b0cd34a3e967172940f9d',1,'tdc::plcp::MaxPLCPHeap']]],
   ['total_5fsize',['total_size',['../classcedar_1_1da.html#a09210838350134b687577d3bd2f3c8cf',1,'cedar::da']]],
   ['tr_5fcopy',['tr_copy',['../namespacetdc_1_1libdivsufsort.html#a7a4c01071d903aee03fe031878eb6b1c',1,'tdc::libdivsufsort']]],
   ['tr_5ffixdown',['tr_fixdown',['../namespacetdc_1_1libdivsufsort.html#a8670aa761e6c788af0642311f168680b',1,'tdc::libdivsufsort']]],

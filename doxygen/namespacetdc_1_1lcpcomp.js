@@ -13,5 +13,7 @@ var namespacetdc_1_1lcpcomp =
     [ "MyHash", "classtdc_1_1lcpcomp_1_1_my_hash.html", "classtdc_1_1lcpcomp_1_1_my_hash" ],
     [ "MyMapBuffer", "classtdc_1_1lcpcomp_1_1_my_map_buffer.html", "classtdc_1_1lcpcomp_1_1_my_map_buffer" ],
     [ "NaiveStrategy", "classtdc_1_1lcpcomp_1_1_naive_strategy.html", "classtdc_1_1lcpcomp_1_1_naive_strategy" ],
+    [ "PLCPPeaksStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy" ],
+    [ "PLCPStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy" ],
     [ "SuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer" ]
 ];

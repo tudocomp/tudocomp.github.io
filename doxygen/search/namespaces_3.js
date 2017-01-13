@@ -11,7 +11,6 @@ var searchData=
   ['lzss',['lzss',['../namespacetdc_1_1lzss.html',1,'tdc']]],
   ['lzw',['lzw',['../namespacetdc_1_1lzw.html',1,'tdc']]],
   ['pattern',['pattern',['../namespacetdc_1_1pattern.html',1,'tdc']]],
-  ['plcp',['plcp',['../namespacetdc_1_1plcp.html',1,'tdc']]],
   ['tdc',['tdc',['../namespacetdc.html',1,'']]],
   ['tdc_5falgorithms',['tdc_algorithms',['../namespacetdc__algorithms.html',1,'']]],
   ['tdc_5fdriver',['tdc_driver',['../namespacetdc__driver.html',1,'']]]

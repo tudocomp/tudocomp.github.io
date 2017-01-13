@@ -4,7 +4,6 @@ var searchData=
   ['maxheapstrategy',['MaxHeapStrategy',['../classtdc_1_1lcpcomp_1_1_max_heap_strategy.html',1,'tdc::lcpcomp']]],
   ['maxlcpstrategy',['MaxLCPStrategy',['../classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html',1,'tdc::lcpcomp']]],
   ['maxlcpsuffixlist',['MaxLCPSuffixList',['../classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html',1,'tdc::lcpcomp']]],
-  ['maxplcpheap',['MaxPLCPHeap',['../classtdc_1_1plcp_1_1_max_p_l_c_p_heap.html',1,'tdc::plcp']]],
   ['meta',['Meta',['../classtdc_1_1_meta.html',1,'tdc']]],
   ['mindistributedrange',['MinDistributedRange',['../classtdc_1_1_min_distributed_range.html',1,'tdc']]],
   ['mixhasher',['MixHasher',['../classtdc_1_1_mix_hasher.html',1,'tdc']]],

@@ -198,9 +198,14 @@ var files =
     [ "PhiFromSA.hpp", "_phi_from_s_a_8hpp.html", [
       [ "PhiFromSA", "classtdc_1_1_phi_from_s_a.html", "classtdc_1_1_phi_from_s_a" ]
     ] ],
-    [ "PLCPCompressor.hpp", "_p_l_c_p_compressor_8hpp.html", "_p_l_c_p_compressor_8hpp" ],
     [ "PLCPFromPhi.hpp", "_p_l_c_p_from_phi_8hpp.html", [
       [ "PLCPFromPhi", "classtdc_1_1_p_l_c_p_from_phi.html", "classtdc_1_1_p_l_c_p_from_phi" ]
+    ] ],
+    [ "PLCPPeaksStrategy.hpp", "_p_l_c_p_peaks_strategy_8hpp.html", [
+      [ "PLCPPeaksStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy" ]
+    ] ],
+    [ "PLCPStrategy.hpp", "_p_l_c_p_strategy_8hpp.html", [
+      [ "PLCPStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy" ]
     ] ],
     [ "Range.hpp", "_range_8hpp.html", "_range_8hpp" ],
     [ "pre_header/Registry.hpp", "pre__header_2_registry_8hpp.html", "pre__header_2_registry_8hpp" ],
