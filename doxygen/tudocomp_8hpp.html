@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170116-jenkins-24</span>
+   &#160;<span id="projectnumber">0.170117-jenkins-30</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -120,35 +120,34 @@ $(document).ready(function(){initNavTree('tudocomp_8hpp.html','');});
 <code>#include &lt;<a class="el" href="_elias_delta_coder_8hpp_source.html">tudocomp/coders/EliasDeltaCoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_elias_gamma_coder_8hpp_source.html">tudocomp/coders/EliasGammaCoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_huffman_coder_8hpp_source.html">tudocomp/coders/HuffmanCoder.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_b_w_t_compressor_8hpp_source.html">tudocomp/compressors/BWTCompressor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_chain_compressor_8hpp_source.html">tudocomp/compressors/ChainCompressor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_easy_r_l_e_compressor_8hpp_source.html">tudocomp/compressors/EasyRLECompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_l_c_p_compressor_8hpp_source.html">tudocomp/compressors/LCPCompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_l_z78_compressor_8hpp_source.html">tudocomp/compressors/LZ78Compressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_l_z_s_s_l_c_p_compressor_8hpp_source.html">tudocomp/compressors/LZSSLCPCompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_l_z_s_s_sliding_window_compressor_8hpp_source.html">tudocomp/compressors/LZSSSlidingWindowCompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_l_z_w_compressor_8hpp_source.html">tudocomp/compressors/LZWCompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_literal_encoder_8hpp_source.html">tudocomp/compressors/LiteralEncoder.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_m_t_f_compressor_8hpp_source.html">tudocomp/compressors/MTFCompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_noop_compressor_8hpp_source.html">tudocomp/compressors/NoopCompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_re_pair_compressor_8hpp_source.html">tudocomp/compressors/RePairCompressor.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_run_length_encoder_8hpp_source.html">tudocomp/compressors/RunLengthEncoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_decode_queue_list_buffer_8hpp_source.html">tudocomp/compressors/lcpcomp/decoding/DecodeQueueListBuffer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_lazy_succinct_list_buffer_8hpp_source.html">tudocomp/compressors/lcpcomp/decoding/LazySuccinctListBuffer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_multi_map_buffer_8hpp_source.html">tudocomp/compressors/lcpcomp/decoding/MultiMapBuffer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_my_map_buffer_8hpp_source.html">tudocomp/compressors/lcpcomp/decoding/MyMapBuffer.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_succinct_list_buffer_8hpp_source.html">tudocomp/compressors/lcpcomp/decoding/SuccinctListBuffer.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_l_c_p_compressor_8hpp_source.html">tudocomp/compressors/LCPCompressor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_lazy_list_strategy_8hpp_source.html">tudocomp/compressors/lcpcomp/strategies/LazyListStrategy.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_max_heap_strategy_8hpp_source.html">tudocomp/compressors/lcpcomp/strategies/MaxHeapStrategy.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_max_l_c_p_strategy_8hpp_source.html">tudocomp/compressors/lcpcomp/strategies/MaxLCPStrategy.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_p_l_c_p_peaks_strategy_8hpp_source.html">tudocomp/compressors/lcpcomp/strategies/PLCPPeaksStrategy.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_p_l_c_p_strategy_8hpp_source.html">tudocomp/compressors/lcpcomp/strategies/PLCPStrategy.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_literal_encoder_8hpp_source.html">tudocomp/compressors/LiteralEncoder.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_binary_sorted_trie_8hpp_source.html">tudocomp/compressors/lz78/BinarySortedTrie.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_binary_trie_8hpp_source.html">tudocomp/compressors/lz78/BinaryTrie.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_cedar_trie_8hpp_source.html">tudocomp/compressors/lz78/CedarTrie.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_l_z78_compressor_8hpp_source.html">tudocomp/compressors/LZ78Compressor.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_hash_trie_8hpp_source.html">tudocomp/compressors/lz78/HashTrie.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_my_hash_trie_8hpp_source.html">tudocomp/compressors/lz78/MyHashTrie.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_ternary_trie_8hpp_source.html">tudocomp/compressors/lz78/TernaryTrie.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_l_z_s_s_l_c_p_compressor_8hpp_source.html">tudocomp/compressors/LZSSLCPCompressor.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_l_z_s_s_sliding_window_compressor_8hpp_source.html">tudocomp/compressors/LZSSSlidingWindowCompressor.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_l_z_w_compressor_8hpp_source.html">tudocomp/compressors/LZWCompressor.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_m_t_f_compressor_8hpp_source.html">tudocomp/compressors/MTFCompressor.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_noop_compressor_8hpp_source.html">tudocomp/compressors/NoopCompressor.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_re_pair_compressor_8hpp_source.html">tudocomp/compressors/RePairCompressor.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_run_length_encoder_8hpp_source.html">tudocomp/compressors/RunLengthEncoder.hpp</a>&gt;</code><br />
 </div>
 <p><a href="tudocomp_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">

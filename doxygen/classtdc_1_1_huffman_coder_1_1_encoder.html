@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170116-jenkins-24</span>
+   &#160;<span id="projectnumber">0.170117-jenkins-30</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -175,7 +175,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00521">521</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00522">522</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a900943595cd4b30030127cdbdbf4fdf3"></a>
 <div class="memitem">
@@ -211,7 +211,7 @@ template&lt;typename value_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00555">555</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00556">556</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ template&lt;typename value_t &gt; </div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{ [&amp;] () {</div><div class="line">                <span class="keywordflow">if</span>(<a class="code" href="def_8hpp.html#a2865b00b016adcd456b720ea5eee8063">tdc_likely</a>(!literals.has_next())) <span class="keywordflow">return</span> huff::extended_huffmantable { <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, 0, <span class="keyword">nullptr</span>, 0 };</div><div class="line">                <span class="keyword">const</span> <a class="code" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>*<span class="keyword">const</span> C = <a class="code" href="namespacetdc_1_1huff.html#a2a002fe7cc99c16ec42a6af47b380b5d">huff::count_alphabet_literals</a>(std::move(literals));</div><div class="line">                <span class="keyword">const</span> <a class="code" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> alphabet_size = <a class="code" href="namespacetdc_1_1huff.html#ad50fbec7607011c23f4e5a797327bf1f">huff::effective_alphabet_size</a>(C);</div><div class="line">                <span class="keywordflow">if</span>(<a class="code" href="def_8hpp.html#aa6ca3a64684b20fecfb697c6a5bf728c">tdc_unlikely</a>(alphabet_size == 1)) {</div><div class="line">                    <span class="keyword">delete</span> [] C;</div><div class="line">                    <span class="keywordflow">return</span> huff::extended_huffmantable { <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, 1, <span class="keyword">nullptr</span>, 0 };</div><div class="line">                }</div><div class="line">                <span class="keywordflow">return</span> <a class="code" href="namespacetdc_1_1huff.html#a57054a45e52ecfca0250d177128b1830">huff::gen_huffmantable</a>(C);</div><div class="line">            }() }</div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00526">526</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00527">527</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
 
 </div>
 </div>
@@ -240,7 +240,7 @@ template&lt;typename value_t &gt; </div>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{ m_table.<a class="code" href="structtdc_1_1huff_1_1extended__huffmantable.html#ac48b314844439fc2321de3b78bd9b509">codewords</a> == <span class="keyword">nullptr</span> ? <span class="keyword">nullptr</span> : <a class="code" href="namespacetdc_1_1huff.html#a0f1692a7985778544f1ef39058dd212f">huff::gen_ordered_map_to_effective</a>(m_table.<a class="code" href="structtdc_1_1huff_1_1huffmantable.html#af4b4d7e24730f865c6f922dcd344bb9a">ordered_map_from_effective</a>, m_table.<a class="code" href="structtdc_1_1huff_1_1huffmantable.html#af0da71048b5b2a0f69e6e6779c421569">alphabet_size</a>) }</div><div class="line">        {</div><div class="line">            <span class="keywordflow">if</span>(<a class="code" href="def_8hpp.html#aa6ca3a64684b20fecfb697c6a5bf728c">tdc_unlikely</a>(m_table.<a class="code" href="structtdc_1_1huff_1_1huffmantable.html#af0da71048b5b2a0f69e6e6779c421569">alphabet_size</a> &lt;= 1)) {</div><div class="line">                <a class="code" href="classtdc_1_1_encoder.html#ab7815458dd2b69995e953bd5ff916a04">m_out</a>-&gt;write_bit(0);</div><div class="line">            }</div><div class="line">            <span class="keywordflow">else</span> {</div><div class="line">                <a class="code" href="classtdc_1_1_encoder.html#ab7815458dd2b69995e953bd5ff916a04">m_out</a>-&gt;write_bit(1);</div><div class="line">                <a class="code" href="namespacetdc_1_1huff.html#a5abd0ba06fa9d03e6033c22bdaf4605d">huff::huffmantable_encode</a>(*<a class="code" href="classtdc_1_1_encoder.html#ab7815458dd2b69995e953bd5ff916a04">m_out</a>, m_table);</div><div class="line">            }</div><div class="line">        }</div><div class="line">        <a class="code" href="classtdc_1_1_encoder.html#a9337617f4aa32701ad31aae26a8f2d3f">~Encoder</a>() {</div><div class="line">            <span class="keywordflow">if</span>(<a class="code" href="def_8hpp.html#a2865b00b016adcd456b720ea5eee8063">tdc_likely</a>(ordered_map_to_effective != <span class="keyword">nullptr</span>)) {</div><div class="line">                <span class="keyword">delete</span> [] ordered_map_to_effective;</div><div class="line">            }</div><div class="line">        }</div><div class="line"></div><div class="line">        <span class="keyword">using</span> <a class="code" href="classtdc_1_1_encoder.html#a8c5bb8464e2156db884ad99fa5e5ce55">tdc::Encoder::encode</a></div></div><!-- fragment -->
-<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00536">536</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00537">537</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
 
 </div>
 </div>
