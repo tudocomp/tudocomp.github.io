@@ -1,11 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01dynamic__t_01_4_01_4.html":[2,0,2,24],
-"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01dynamic__t_01_4_01_4.html#ae62577ae2e52770a80594fda65f6d8bf":[2,0,2,24,0],
-"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html":[2,0,2,38],
-"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html#acb7a8d628dca54e07a7f8243e66bb68d":[2,0,2,38,0],
-"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01dynamic__t_01_4_01_4.html":[2,0,2,25],
-"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01dynamic__t_01_4_01_4.html#a2475b1056c169d05e0dd56e6dec97992":[2,0,2,25,0],
 "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html":[2,0,2,37],
 "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html#acb7a8d628dca54e07a7f8243e66bb68d":[2,0,2,37,0],
 "structtdc_1_1_const_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if98931aa7cbfcd97f62e54965a157a76a.html":[2,0,2,40],
@@ -249,5 +243,11 @@ var NAVTREEINDEX7 =
 "uint__t_8hpp.html#a8fc4b25f7bf2b1231aa3bbe175b75567":[3,0,101,38],
 "uint__t_8hpp.html#a97230a3e4361297dcbdf2426fff50b55":[3,0,101,9],
 "uint__t_8hpp.html#abe359113d08b5792c06e837ce6dd8513":[3,0,101,36],
-"uint__t_8hpp.html#ac63a4cf817f3c4a99d97920897a5bb84":[3,0,101,41]
+"uint__t_8hpp.html#ac63a4cf817f3c4a99d97920897a5bb84":[3,0,101,41],
+"uint__t_8hpp.html#ad65fefcb4031e8e09fbc925c8c73012e":[3,0,101,28],
+"uint__t_8hpp.html#ad6be89849aae2ed17ab06d15902c4f47":[3,0,101,37],
+"uint__t_8hpp.html#ad71b0bcb47326f8a61be8b28cac47807":[3,0,101,22],
+"uint__t_8hpp.html#ae1dce80d44a1b2d43a66548cd66fe1a2":[3,0,101,21],
+"uint__t_8hpp.html#aede1051c652cc4f410c5acf20759cc7a":[3,0,101,40],
+"uint__t_8hpp.html#af04d7173c81b7db88932b48d856cee12":[3,0,101,8]
 };

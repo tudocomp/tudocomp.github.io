@@ -1,7 +1,6 @@
 var searchData=
 [
   ['table_5fsize',['table_size',['../classtdc_1_1lz78_1_1_my_hash.html#ac5ea547f8ce7018a8c03438bd4e82586',1,'tdc::lz78::MyHash']]],
-  ['tdc_5fstats',['tdc_stats',['../classtdc_1_1lcpcomp_1_1_multimap_buffer.html#ae02b6745d6b0b908d7b041341789e7c5',1,'tdc::lcpcomp::MultimapBuffer']]],
   ['templated',['templated',['../classtdc_1_1_meta_1_1_option_builder.html#a24ce72265c785c2ecd100f15ca6672c5',1,'tdc::Meta::OptionBuilder::templated()'],['../classtdc_1_1_meta_1_1_option_builder.html#a0a69f7c7871f1f0f5e215bf9cf9d5acb',1,'tdc::Meta::OptionBuilder::templated()']]],
   ['ternarytrie',['TernaryTrie',['../classtdc_1_1lz78_1_1_ternary_trie.html#ab13255aea49f0944f592b3cff08bc506',1,'tdc::lz78::TernaryTrie']]],
   ['test',['test',['../classcedar_1_1da.html#a66c513807f074228059695ef40a2291a',1,'cedar::da']]],

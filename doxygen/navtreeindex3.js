@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classtdc_1_1_range.html#abfebe15a0a9d960de7a88be429577881":[2,0,2,79,0],
 "classtdc_1_1_re_pair_compressor.html":[2,0,2,82],
 "classtdc_1_1_re_pair_compressor.html#a4edbd277de5e626eb81219530f39004f":[2,0,2,82,2],
 "classtdc_1_1_re_pair_compressor.html#a9d539af95630217e63ab5f24e5ed445b":[2,0,2,82,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#a27ce7166d3c2cda69f966436031577e3":[2,0,2,1,16,0,5],
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#a88bcceef79ea415bdbb5734c427d6dae":[2,0,2,1,16,0,3],
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#aa3361975ea3ad12f13e9fc33244e74de":[2,0,2,1,16,0,4],
-"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#abcf867a452eb5f55f80f853e8a34c0f2":[2,0,2,1,16,0,1]
+"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#abcf867a452eb5f55f80f853e8a34c0f2":[2,0,2,1,16,0,1],
+"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#adea64eac6f56fb2e94d04c73b91a935b":[2,0,2,1,16,0,2]
 };

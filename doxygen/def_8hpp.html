@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170117-jenkins-30</span>
+   &#160;<span id="projectnumber">0.170117-jenkins-34</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -138,12 +138,12 @@ Macros</h2></td></tr>
 <tr class="separator:aa6ca3a64684b20fecfb697c6a5bf728c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7e59a6cc79c66e9fd69daba73623e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a8a7e59a6cc79c66e9fd69daba73623e3">tdc_warn_unused_result</a></td></tr>
 <tr class="separator:a8a7e59a6cc79c66e9fd69daba73623e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abafc1f6766549e540de28ae930c02ee7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#abafc1f6766549e540de28ae930c02ee7">tdc_debug</a>(x)&#160;&#160;&#160;x</td></tr>
-<tr class="separator:abafc1f6766549e540de28ae930c02ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe881af126378a9f82112f97d8e5d7f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#afe881af126378a9f82112f97d8e5d7f4">tdc_hdebug</a>(x)</td></tr>
-<tr class="separator:afe881af126378a9f82112f97d8e5d7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3cd3c27e376ebff283d1b181cfddb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#aad3cd3c27e376ebff283d1b181cfddb8">tdc_stats</a>(x)&#160;&#160;&#160;x</td></tr>
-<tr class="separator:aad3cd3c27e376ebff283d1b181cfddb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d3ce89a155cdaf51de371cf03e4a54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a63d3ce89a155cdaf51de371cf03e4a54">IF_DEBUG</a>(x)</td></tr>
+<tr class="separator:a63d3ce89a155cdaf51de371cf03e4a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846f4b36328a1617324bc504d47cd96e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a846f4b36328a1617324bc504d47cd96e">IF_PARANOID</a>(x)</td></tr>
+<tr class="separator:a846f4b36328a1617324bc504d47cd96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8591a43d93e2f1463910bc4c8dfc52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a1e8591a43d93e2f1463910bc4c8dfc52">IF_STATS</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="separator:a1e8591a43d93e2f1463910bc4c8dfc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -165,38 +165,20 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5924c226aa4548f3a249d2f55eb85c41"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a5924c226aa4548f3a249d2f55eb85c41">tdc::uliteral_max</a> = std::numeric_limits&lt;uliteral_t&gt;::max()</td></tr>
-<tr class="separator:a5924c226aa4548f3a249d2f55eb85c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a920f87726ac2ea33688187352607343e"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a920f87726ac2ea33688187352607343e">tdc::LEN_MAX</a> = std::numeric_limits&lt;len_t&gt;::max()</td></tr>
 <tr class="separator:a920f87726ac2ea33688187352607343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aafe2c20214884f91eaa4522ab68e7cb1">tdc::LEN_BITS</a> = 8 * sizeof(len_t)</td></tr>
 <tr class="separator:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5924c226aa4548f3a249d2f55eb85c41"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a5924c226aa4548f3a249d2f55eb85c41">tdc::uliteral_max</a> = std::numeric_limits&lt;uliteral_t&gt;::max()</td></tr>
+<tr class="separator:a5924c226aa4548f3a249d2f55eb85c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="abafc1f6766549e540de28ae930c02ee7"></a>
+<a class="anchor" id="a63d3ce89a155cdaf51de371cf03e4a54"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define tdc_debug</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;x</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00020">20</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afe881af126378a9f82112f97d8e5d7f4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define tdc_hdebug</td>
+          <td class="memname">#define IF_DEBUG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
@@ -205,7 +187,43 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00024">24</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00022">22</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a846f4b36328a1617324bc504d47cd96e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IF_PARANOID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00029">29</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e8591a43d93e2f1463910bc4c8dfc52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IF_STATS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00037">37</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -224,24 +242,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="def_8hpp_source.html#l00013">13</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aad3cd3c27e376ebff283d1b181cfddb8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define tdc_stats</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;x</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00032">32</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>

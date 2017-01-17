@@ -1,9 +1,9 @@
 var def_8hpp =
 [
-    [ "tdc_debug", "def_8hpp.html#abafc1f6766549e540de28ae930c02ee7", null ],
-    [ "tdc_hdebug", "def_8hpp.html#afe881af126378a9f82112f97d8e5d7f4", null ],
+    [ "IF_DEBUG", "def_8hpp.html#a63d3ce89a155cdaf51de371cf03e4a54", null ],
+    [ "IF_PARANOID", "def_8hpp.html#a846f4b36328a1617324bc504d47cd96e", null ],
+    [ "IF_STATS", "def_8hpp.html#a1e8591a43d93e2f1463910bc4c8dfc52", null ],
     [ "tdc_likely", "def_8hpp.html#a2865b00b016adcd456b720ea5eee8063", null ],
-    [ "tdc_stats", "def_8hpp.html#aad3cd3c27e376ebff283d1b181cfddb8", null ],
     [ "tdc_unlikely", "def_8hpp.html#aa6ca3a64684b20fecfb697c6a5bf728c", null ],
     [ "tdc_warn_unused_result", "def_8hpp.html#a8a7e59a6cc79c66e9fd69daba73623e3", null ],
     [ "len_t", "def_8hpp.html#aa6b4c54c0897b49bf3c9e3f9f71ec408", null ],
