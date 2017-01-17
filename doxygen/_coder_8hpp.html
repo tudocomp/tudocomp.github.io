@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170117-jenkins-34</span>
+   &#160;<span id="projectnumber">0.170117-jenkins-35</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -168,9 +168,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">inline</span> Decoder(Env&amp;&amp; env, <a class="code" href="namespacetdc.html#af2a0062baab305ef349a156415dd13e6">Input</a>&amp; in)                 \</div><div class="line">             : Decoder(std::move(env),                       \</div><div class="line">                       std::make_shared&lt;BitIStream&gt;(in)) {}  \</div><div class="line">        inline Decoder(Env&amp;&amp; env, std::shared_ptr&lt;BitIStream&gt; in) \</div><div class="line">            : <a class="code" href="classtdc_1_1_decoder.html">tdc::Decoder</a>(std::move(env), in)</div><div class="ttc" id="namespacetdc_html_af2a0062baab305ef349a156415dd13e6"><div class="ttname"><a href="namespacetdc.html#af2a0062baab305ef349a156415dd13e6">tdc::Input</a></div><div class="ttdeci">io::Input Input</div><div class="ttdef"><b>Definition:</b> <a href="io_8hpp_source.html#l00011">io.hpp:11</a></div></div>
-<div class="ttc" id="classtdc_1_1_decoder_html"><div class="ttname"><a href="classtdc_1_1_decoder.html">tdc::Decoder</a></div><div class="ttdef"><b>Definition:</b> <a href="_coder_8hpp_source.html#l00049">Coder.hpp:49</a></div></div>
+<div class="ttc" id="classtdc_1_1_decoder_html"><div class="ttname"><a href="classtdc_1_1_decoder.html">tdc::Decoder</a></div><div class="ttdef"><b>Definition:</b> <a href="_coder_8hpp_source.html#l00045">Coder.hpp:45</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_coder_8hpp_source.html#l00075">75</a> of file <a class="el" href="_coder_8hpp_source.html">Coder.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_coder_8hpp_source.html#l00071">71</a> of file <a class="el" href="_coder_8hpp_source.html">Coder.hpp</a>.</p>
 
 </div>
 </div>
@@ -206,7 +206,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> literals_t&gt;                                      \</div><div class="line">        inline Encoder(Env&amp;&amp; env, <a class="code" href="namespacetdc.html#aecc3518e34a04f8156c6c14ed45d8d22">Output</a>&amp; out, literals_t&amp;&amp; literals) \</div><div class="line">             : Encoder(std::move(env),                                     \</div><div class="line">                      std::make_shared&lt;BitOStream&gt;(out), std::move(literals)) {}      \</div><div class="line">        template&lt;typename literals_t&gt;                                      \</div><div class="line">        inline Encoder(Env&amp;&amp; env, std::shared_ptr&lt;BitOStream&gt; out, literals_t&amp;&amp; literals) \</div><div class="line">            : <a class="code" href="classtdc_1_1_encoder.html">tdc::Encoder</a>(std::move(env), out)</div><div class="ttc" id="classtdc_1_1_encoder_html"><div class="ttname"><a href="classtdc_1_1_encoder.html">tdc::Encoder</a></div><div class="ttdef"><b>Definition:</b> <a href="_coder_8hpp_source.html#l00011">Coder.hpp:11</a></div></div>
 <div class="ttc" id="namespacetdc_html_aecc3518e34a04f8156c6c14ed45d8d22"><div class="ttname"><a href="namespacetdc.html#aecc3518e34a04f8156c6c14ed45d8d22">tdc::Output</a></div><div class="ttdeci">io::Output Output</div><div class="ttdef"><b>Definition:</b> <a href="io_8hpp_source.html#l00012">io.hpp:12</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="_coder_8hpp_source.html#l00039">39</a> of file <a class="el" href="_coder_8hpp_source.html">Coder.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_coder_8hpp_source.html#l00035">35</a> of file <a class="el" href="_coder_8hpp_source.html">Coder.hpp</a>.</p>
 
 </div>
 </div>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"divsufsort__ssort_8hpp.html#a6423a880df59733d2d9b509c7718d3a9":[3,0,31,0],
 "divsufsort__ssort_8hpp.html#a673d0323afdfccc046f9d5140aac9710":[3,0,31,8],
 "divsufsort__ssort_8hpp.html#a6f296fdc858ae236c6bb8d873b80b10d":[3,0,31,7],
 "divsufsort__ssort_8hpp.html#a9312b3784db6496fbe15b8e588c355f6":[3,0,31,4],
@@ -83,8 +82,8 @@ var NAVTREEINDEX6 =
 "functions_enum.html":[2,3,4],
 "functions_eval.html":[2,3,5],
 "functions_f.html":[2,3,0,5],
-"functions_func.html":[2,3,1,0],
 "functions_func.html":[2,3,1],
+"functions_func.html":[2,3,1,0],
 "functions_func_0x7e.html":[2,3,1,21],
 "functions_func_b.html":[2,3,1,1],
 "functions_func_c.html":[2,3,1,2],
@@ -157,16 +156,16 @@ var NAVTREEINDEX6 =
 "namespacetdc.html":[1,0,3],
 "namespacetdc.html":[2,0,2],
 "namespacetdc_1_1bwt.html":[1,0,3,0],
-"namespacetdc_1_1huff.html":[2,0,2,0],
 "namespacetdc_1_1huff.html":[1,0,3,1],
-"namespacetdc_1_1int__vector.html":[1,0,3,2],
+"namespacetdc_1_1huff.html":[2,0,2,0],
 "namespacetdc_1_1int__vector.html":[2,0,2,1],
+"namespacetdc_1_1int__vector.html":[1,0,3,2],
 "namespacetdc_1_1io.html":[1,0,3,3],
 "namespacetdc_1_1io.html":[2,0,2,2],
-"namespacetdc_1_1json.html":[2,0,2,3],
 "namespacetdc_1_1json.html":[1,0,3,4],
-"namespacetdc_1_1lcpcomp.html":[1,0,3,5],
+"namespacetdc_1_1json.html":[2,0,2,3],
 "namespacetdc_1_1lcpcomp.html":[2,0,2,4],
+"namespacetdc_1_1lcpcomp.html":[1,0,3,5],
 "namespacetdc_1_1libdivsufsort.html":[2,0,2,5],
 "namespacetdc_1_1libdivsufsort.html":[1,0,3,6],
 "namespacetdc_1_1lz78.html":[1,0,3,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html":[2,0,2,38],
 "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html#acb7a8d628dca54e07a7f8243e66bb68d":[2,0,2,38,0],
 "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01dynamic__t_01_4_01_4.html":[2,0,2,25],
-"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01dynamic__t_01_4_01_4.html#a2475b1056c169d05e0dd56e6dec97992":[2,0,2,25,0]
+"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01dynamic__t_01_4_01_4.html#a2475b1056c169d05e0dd56e6dec97992":[2,0,2,25,0],
+"structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html":[2,0,2,37]
 };

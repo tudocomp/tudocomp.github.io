@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#afed88ac1265bd1105af24ed314e539a8":[2,0,2,1,16,0,0],
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html":[2,0,2,1,17,0],
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html#a2f4424e056d88ac2ac7ce6b3195ac667":[2,0,2,1,17,0,0],
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html#a488f4c639eb88716ca2dbb5a4307ecf4":[2,0,2,1,17,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "classtdc_1_1lcpcomp_1_1_my_hash.html#a44d7fe0e887ab3fafc52ab6aa7e4d6fd":[2,0,2,4,10,6],
 "classtdc_1_1lcpcomp_1_1_my_hash.html#a4b04f9f1d834390b01b311b4bac1cbdc":[2,0,2,4,10,1],
 "classtdc_1_1lcpcomp_1_1_my_hash.html#a57fc31eed2a1e7d0155811c03f23ce1e":[2,0,2,4,10,3],
-"classtdc_1_1lcpcomp_1_1_my_hash.html#a65662574bf41dbb3fa39c387caa2953f":[2,0,2,4,10,11]
+"classtdc_1_1lcpcomp_1_1_my_hash.html#a65662574bf41dbb3fa39c387caa2953f":[2,0,2,4,10,11],
+"classtdc_1_1lcpcomp_1_1_my_hash.html#a79563963485782c9146a7b4c7c3a2b32":[2,0,2,4,10,4]
 };
