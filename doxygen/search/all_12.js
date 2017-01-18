@@ -25,7 +25,7 @@ var searchData=
   ['register_5falgorithms',['register_algorithms',['../namespacetdc__algorithms.html#a204ce5dee268192b987725986f977d20',1,'tdc_algorithms']]],
   ['register_5fcompressor',['register_compressor',['../classtdc_1_1_registry.html#af0930ae3ee7a7920f812510bd2ae83a7',1,'tdc::Registry']]],
   ['registry',['Registry',['../classtdc_1_1_registry.html',1,'tdc']]],
-  ['registry',['Registry',['../classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6',1,'tdc::Registry::Registry()'],['../classtdc_1_1_env.html#ad9823ee945752e3097fddb1c21e1c74d',1,'tdc::Env::registry()']]],
+  ['registry',['registry',['../classtdc_1_1_env.html#ad9823ee945752e3097fddb1c21e1c74d',1,'tdc::Env::registry()'],['../classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6',1,'tdc::Registry::Registry()']]],
   ['registry_2ehpp',['Registry.hpp',['../_registry_8hpp.html',1,'']]],
   ['reject',['reject',['../structcedar_1_1da_1_1block.html#a1e1ac4c8a430ac34082a2d6212555ac1',1,'cedar::da::block']]],
   ['release_5fisa',['release_isa',['../classtdc_1_1_text_d_s.html#ad4f92737666aa43aac008e1e1449d440',1,'tdc::TextDS']]],
