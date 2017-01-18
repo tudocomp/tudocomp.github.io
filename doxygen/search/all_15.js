@@ -7,7 +7,7 @@ var searchData=
   ['uinttdispatch',['UinttDispatch',['../structtdc_1_1_uintt_dispatch.html',1,'tdc']]],
   ['uinttdispatch_3c_20uint32_5ft_20_3e',['UinttDispatch&lt; uint32_t &gt;',['../classtdc_1_1uint__t.html#afe2ba594122d28c5788a4b097201e84c',1,'tdc::uint_t::UinttDispatch&lt; uint32_t &gt;()'],['../uint__t_8hpp.html#afe2ba594122d28c5788a4b097201e84c',1,'UinttDispatch&lt; uint32_t &gt;():&#160;uint_t.hpp']]],
   ['uinttdispatch_3c_20uint64_5ft_20_3e',['UinttDispatch&lt; uint64_t &gt;',['../classtdc_1_1uint__t.html#a5b76360ba6e51bc991076e102663873e',1,'tdc::uint_t::UinttDispatch&lt; uint64_t &gt;()'],['../uint__t_8hpp.html#a5b76360ba6e51bc991076e102663873e',1,'UinttDispatch&lt; uint64_t &gt;():&#160;uint_t.hpp']]],
-  ['uliteral_5fmax',['uliteral_max',['../namespacetdc.html#a5924c226aa4548f3a249d2f55eb85c41',1,'tdc']]],
+  ['uliteral_5fmax',['ULITERAL_MAX',['../namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52',1,'tdc']]],
   ['uliteral_5ft',['uliteral_t',['../namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486',1,'tdc']]],
   ['ulong',['ulong',['../malloc__count_8hpp.html#a441b2f7db117201ab36246e7692a5974',1,'malloc_count.hpp']]],
   ['undef_5flen',['undef_len',['../namespacetdc_1_1lcpcomp.html#a04fca1dbf79cb14cc2b0b64b0bf5352b',1,'tdc::lcpcomp']]],

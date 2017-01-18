@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170118-jenkins-37</span>
+   &#160;<span id="projectnumber">0.170118-jenkins-38</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -118,20 +118,27 @@ $(document).ready(function(){initNavTree('classtdc_1_1_view_literals.html','');}
 </div><!--header-->
 <div class="contents">
 
+<p>A literal iterator that yields every character from a <a class="el" href="classtdc_1_1_view.html">View</a>.  
+ <a href="classtdc_1_1_view_literals.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e7ea3602dda6128d567ff4c7fa662fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_view_literals.html#a0e7ea3602dda6128d567ff4c7fa662fc">ViewLiterals</a> (<a class="el" href="classtdc_1_1_view.html">View</a> view)</td></tr>
+<tr class="memdesc:a0e7ea3602dda6128d567ff4c7fa662fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a0e7ea3602dda6128d567ff4c7fa662fc">More...</a><br /></td></tr>
 <tr class="separator:a0e7ea3602dda6128d567ff4c7fa662fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4032a6e18d287baaac605ac81650199"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_view_literals.html#ae4032a6e18d287baaac605ac81650199">has_next</a> () const </td></tr>
+<tr class="memdesc:ae4032a6e18d287baaac605ac81650199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether there are more literals in the stream.  <a href="#ae4032a6e18d287baaac605ac81650199">More...</a><br /></td></tr>
 <tr class="separator:ae4032a6e18d287baaac605ac81650199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3051265d156a7f14dae94bbdeace65d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtdc_1_1_literal.html">Literal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_view_literals.html#ac3051265d156a7f14dae94bbdeace65d">next</a> ()</td></tr>
+<tr class="memdesc:ac3051265d156a7f14dae94bbdeace65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields the next literal from the stream.  <a href="#ac3051265d156a7f14dae94bbdeace65d">More...</a><br /></td></tr>
 <tr class="separator:ac3051265d156a7f14dae94bbdeace65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00021">21</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
+<div class="textblock"><p>A literal iterator that yields every character from a <a class="el" href="classtdc_1_1_view.html">View</a>. </p>
+
+<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00041">41</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0e7ea3602dda6128d567ff4c7fa662fc"></a>
 <div class="memitem">
@@ -155,7 +162,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00027">27</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>The view to iterate over. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00050">50</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
 
 </div>
 </div>
@@ -181,7 +196,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00030">30</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
+<p>Tests whether there are more literals in the stream. </p>
+<dl class="section return"><dt>Returns</dt><dd><em>true</em> if there are more literals in the stream, <em>false</em> otherwise. </dd></dl>
+
+<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00056">56</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
 
 </div>
 </div>
@@ -206,7 +224,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00034">34</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
+<p>Yields the next literal from the stream. </p>
+<dl class="section return"><dt>Returns</dt><dd>The next literal from the stream. </dd></dl>
+
+<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00062">62</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
 
 </div>
 </div>

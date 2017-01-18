@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170118-jenkins-37</span>
+   &#160;<span id="projectnumber">0.170118-jenkins-38</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -127,50 +127,61 @@ $(document).ready(function(){initNavTree('def_8hpp.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacetdc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html">tdc</a></td></tr>
-<tr class="memdesc:namespacetdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">LZ78 Trie Implementation based on Julius Pettersson (MIT/Expat License.) and Juha Nieminen's work. <br /></td></tr>
+<tr class="memdesc:namespacetdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the text compression and encoding framework. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a2865b00b016adcd456b720ea5eee8063"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a2865b00b016adcd456b720ea5eee8063">tdc_likely</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="memdesc:a2865b00b016adcd456b720ea5eee8063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a hint to the compiler that <code>x</code> is expected to resolve to <em>true</em>.  <a href="#a2865b00b016adcd456b720ea5eee8063">More...</a><br /></td></tr>
 <tr class="separator:a2865b00b016adcd456b720ea5eee8063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6ca3a64684b20fecfb697c6a5bf728c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#aa6ca3a64684b20fecfb697c6a5bf728c">tdc_unlikely</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="memdesc:aa6ca3a64684b20fecfb697c6a5bf728c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a hint to the compiler that <code>x</code> is expected to resolve to <em>false</em>.  <a href="#aa6ca3a64684b20fecfb697c6a5bf728c">More...</a><br /></td></tr>
 <tr class="separator:aa6ca3a64684b20fecfb697c6a5bf728c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a7e59a6cc79c66e9fd69daba73623e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a8a7e59a6cc79c66e9fd69daba73623e3">tdc_warn_unused_result</a></td></tr>
-<tr class="separator:a8a7e59a6cc79c66e9fd69daba73623e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63d3ce89a155cdaf51de371cf03e4a54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a63d3ce89a155cdaf51de371cf03e4a54">IF_DEBUG</a>(x)</td></tr>
+<tr class="memdesc:a63d3ce89a155cdaf51de371cf03e4a54"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>x</code> is compiled only in debug builds.  <a href="#a63d3ce89a155cdaf51de371cf03e4a54">More...</a><br /></td></tr>
 <tr class="separator:a63d3ce89a155cdaf51de371cf03e4a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846f4b36328a1617324bc504d47cd96e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a846f4b36328a1617324bc504d47cd96e">IF_PARANOID</a>(x)</td></tr>
+<tr class="memdesc:a846f4b36328a1617324bc504d47cd96e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>x</code> is compiled only in debug builds and when the <code>PARANOID</code> macro is defined.  <a href="#a846f4b36328a1617324bc504d47cd96e">More...</a><br /></td></tr>
 <tr class="separator:a846f4b36328a1617324bc504d47cd96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e8591a43d93e2f1463910bc4c8dfc52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a1e8591a43d93e2f1463910bc4c8dfc52">IF_STATS</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="memdesc:a1e8591a43d93e2f1463910bc4c8dfc52"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>x</code> is compiled only when the <code>STATS_DISABLED</code> macro is undefined.  <a href="#a1e8591a43d93e2f1463910bc4c8dfc52">More...</a><br /></td></tr>
 <tr class="separator:a1e8591a43d93e2f1463910bc4c8dfc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">tdc::len_t</a></td></tr>
+<tr class="memdesc:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent input lengths.  <a href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">More...</a><br /></td></tr>
 <tr class="separator:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe7b473912ea68197e905d0a2059e0a4"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">tdc::literal_t</a></td></tr>
+<tr class="memdesc:afe7b473912ea68197e905d0a2059e0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent signed single literals.  <a href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">More...</a><br /></td></tr>
 <tr class="separator:afe7b473912ea68197e905d0a2059e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a48cf82def7e8690fa0f1c92996486"><td class="memItemLeft" align="right" valign="top">typedef std::make_unsigned&lt; literal_t &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">tdc::uliteral_t</a></td></tr>
+<tr class="memdesc:a83a48cf82def7e8690fa0f1c92996486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent unsigned single literals.  <a href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">More...</a><br /></td></tr>
 <tr class="separator:a83a48cf82def7e8690fa0f1c92996486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a3f8e4bdf3e55a326c43e82c67a201b1a">tdc::literal2int</a> (const T &amp;c)</td></tr>
+<tr class="memdesc:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a literal to an unsigned integer value.  <a href="namespacetdc.html#a3f8e4bdf3e55a326c43e82c67a201b1a">More...</a><br /></td></tr>
 <tr class="separator:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e140382dd6856ccdec03019015281e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:aa0e140382dd6856ccdec03019015281e"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aa0e140382dd6856ccdec03019015281e">tdc::literal2int</a> (const literal_t &amp;c)</td></tr>
+<tr class="memdesc:aa0e140382dd6856ccdec03019015281e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a signed literal to an unsigned integer value.  <a href="namespacetdc.html#aa0e140382dd6856ccdec03019015281e">More...</a><br /></td></tr>
 <tr class="separator:aa0e140382dd6856ccdec03019015281e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a920f87726ac2ea33688187352607343e"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a920f87726ac2ea33688187352607343e">tdc::LEN_MAX</a> = std::numeric_limits&lt;len_t&gt;::max()</td></tr>
+<tr class="memdesc:a920f87726ac2ea33688187352607343e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>.  <a href="namespacetdc.html#a920f87726ac2ea33688187352607343e">More...</a><br /></td></tr>
 <tr class="separator:a920f87726ac2ea33688187352607343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aafe2c20214884f91eaa4522ab68e7cb1">tdc::LEN_BITS</a> = 8 * sizeof(len_t)</td></tr>
+<tr class="memdesc:aafe2c20214884f91eaa4522ab68e7cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of bits required to store the binary representation of a value of type <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>.  <a href="namespacetdc.html#aafe2c20214884f91eaa4522ab68e7cb1">More...</a><br /></td></tr>
 <tr class="separator:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5924c226aa4548f3a249d2f55eb85c41"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a5924c226aa4548f3a249d2f55eb85c41">tdc::uliteral_max</a> = std::numeric_limits&lt;uliteral_t&gt;::max()</td></tr>
-<tr class="separator:a5924c226aa4548f3a249d2f55eb85c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9b7810543e309eaaa60915ff205c52"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52">tdc::ULITERAL_MAX</a> = std::numeric_limits&lt;uliteral_t&gt;::max()</td></tr>
+<tr class="memdesc:a8a9b7810543e309eaaa60915ff205c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>.  <a href="namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52">More...</a><br /></td></tr>
+<tr class="separator:a8a9b7810543e309eaaa60915ff205c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a63d3ce89a155cdaf51de371cf03e4a54"></a>
@@ -187,7 +198,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00022">22</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p><code>x</code> is compiled only in debug builds. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00030">30</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +218,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00029">29</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p><code>x</code> is compiled only in debug builds and when the <code>PARANOID</code> macro is defined. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00041">41</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -223,7 +238,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00037">37</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p><code>x</code> is compiled only when the <code>STATS_DISABLED</code> macro is undefined. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00051">51</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -241,7 +258,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00013">13</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Provides a hint to the compiler that <code>x</code> is expected to resolve to <em>true</em>. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00018">18</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -259,21 +278,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00014">14</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Provides a hint to the compiler that <code>x</code> is expected to resolve to <em>false</em>. </p>
 
-</div>
-</div>
-<a class="anchor" id="a8a7e59a6cc79c66e9fd69daba73623e3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define tdc_warn_unused_result</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00015">15</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00021">21</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>

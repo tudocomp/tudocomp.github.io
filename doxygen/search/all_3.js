@@ -39,7 +39,7 @@ var searchData=
   ['compressor',['Compressor',['../classtdc_1_1_compressor.html',1,'tdc']]],
   ['compressor',['Compressor',['../classtdc_1_1_compressor.html#a4505ee804a1b7e54f1004b3dce213100',1,'tdc::Compressor']]],
   ['compressor_2ehpp',['Compressor.hpp',['../_compressor_8hpp.html',1,'']]],
-  ['compressorconstructor',['CompressorConstructor',['../namespacetdc.html#afe4273a43bb5e51a7bedb1d29852ba9b',1,'tdc']]],
+  ['compressorconstructor',['CompressorConstructor',['../namespacetdc.html#a85556a0ec2df2b00ea0a32c186d71681',1,'tdc']]],
   ['compute_5flf',['compute_LF',['../namespacetdc_1_1bwt.html#a69fd9959c29d70088526b658b4262b13',1,'tdc::bwt']]],
   ['config_2eh',['config.h',['../config_8h.html',1,'']]],
   ['const_5fiterator',['const_iterator',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#a885dd9042887d37ed5102151b2f00574',1,'tdc::int_vector::BitPackingVector::const_iterator()'],['../structtdc_1_1int__vector_1_1_int_vector_trait.html#a2048df238d60f71b3b385d2ed2d746d3',1,'tdc::int_vector::IntVectorTrait::const_iterator()'],['../structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a32165902c5387470d175702fedef48e1',1,'tdc::int_vector::IntVectorTrait&lt; dynamic_t &gt;::const_iterator()'],['../structtdc_1_1int__vector_1_1_int_vector_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1ena47163dac58dc94a7de6746c5b0aec1c4.html#a0479fb9915791a72f1068a39e3388325',1,'tdc::int_vector::IntVectorTrait&lt; uint_t&lt; N &gt;, typename std::enable_if&lt;(N%8)!=0 &gt;::type &gt;::const_iterator()'],['../classtdc_1_1int__vector_1_1_int_vector.html#a61e13ca3b6265a7b8ca2f994febb2043',1,'tdc::int_vector::IntVector::const_iterator()'],['../classtdc_1_1_view.html#a644a40d152022a13197899f8872703a7',1,'tdc::View::const_iterator()']]],

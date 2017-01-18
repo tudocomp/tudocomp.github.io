@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170118-jenkins-37</span>
+   &#160;<span id="projectnumber">0.170118-jenkins-38</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -118,47 +118,59 @@ $(document).ready(function(){initNavTree('classtdc_1_1_array_max_heap.html','');
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a binary max heap backed by an external array of keys.  
+ <a href="classtdc_1_1_array_max_heap.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a407bcb5a2be91b48052cb612c1e6b4c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#a407bcb5a2be91b48052cb612c1e6b4c1">ArrayMaxHeap</a> (array_t &amp;array, const size_t array_size, const size_t heap_size)</td></tr>
-<tr class="memdesc:a407bcb5a2be91b48052cb612c1e6b4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a407bcb5a2be91b48052cb612c1e6b4c1">More...</a><br /></td></tr>
+<tr class="memdesc:a407bcb5a2be91b48052cb612c1e6b4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a407bcb5a2be91b48052cb612c1e6b4c1">More...</a><br /></td></tr>
 <tr class="separator:a407bcb5a2be91b48052cb612c1e6b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941811d6b33f1cf29063487f6c515c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#a941811d6b33f1cf29063487f6c515c3b">insert</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> i)</td></tr>
-<tr class="memdesc:a941811d6b33f1cf29063487f6c515c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert array item with index i into heap.  <a href="#a941811d6b33f1cf29063487f6c515c3b">More...</a><br /></td></tr>
+<tr class="memdesc:a941811d6b33f1cf29063487f6c515c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an item into the heap.  <a href="#a941811d6b33f1cf29063487f6c515c3b">More...</a><br /></td></tr>
 <tr class="separator:a941811d6b33f1cf29063487f6c515c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a069d1f176e55220d02dfe3a29643acea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#a069d1f176e55220d02dfe3a29643acea">remove</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> i)</td></tr>
-<tr class="memdesc:a069d1f176e55220d02dfe3a29643acea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove array item with index i from heap.  <a href="#a069d1f176e55220d02dfe3a29643acea">More...</a><br /></td></tr>
+<tr class="memdesc:a069d1f176e55220d02dfe3a29643acea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an item from the heap.  <a href="#a069d1f176e55220d02dfe3a29643acea">More...</a><br /></td></tr>
 <tr class="separator:a069d1f176e55220d02dfe3a29643acea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd9e2610d189c33eed90ba82ae19f88"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aedd9e2610d189c33eed90ba82ae19f88"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#aedd9e2610d189c33eed90ba82ae19f88">decrease_key</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> i, T value)</td></tr>
-<tr class="memdesc:aedd9e2610d189c33eed90ba82ae19f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease key on array item with index i.  <a href="#aedd9e2610d189c33eed90ba82ae19f88">More...</a><br /></td></tr>
-<tr class="separator:aedd9e2610d189c33eed90ba82ae19f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852141f853097185e5c1ac8565163183"><td class="memTemplParams" colspan="2">template&lt;typename key_t &gt; </td></tr>
+<tr class="memitem:a852141f853097185e5c1ac8565163183"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#a852141f853097185e5c1ac8565163183">decrease_key</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> i, key_t value)</td></tr>
+<tr class="memdesc:a852141f853097185e5c1ac8565163183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decreases the key of item in the heap.  <a href="#a852141f853097185e5c1ac8565163183">More...</a><br /></td></tr>
+<tr class="separator:a852141f853097185e5c1ac8565163183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcab4b9e83008a0edfe9bbecea3e6877"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#afcab4b9e83008a0edfe9bbecea3e6877">contains</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> i) const </td></tr>
-<tr class="memdesc:afcab4b9e83008a0edfe9bbecea3e6877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether or not array item i is contained in this heap.  <a href="#afcab4b9e83008a0edfe9bbecea3e6877">More...</a><br /></td></tr>
+<tr class="memdesc:afcab4b9e83008a0edfe9bbecea3e6877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether or not an item is contained in this heap.  <a href="#afcab4b9e83008a0edfe9bbecea3e6877">More...</a><br /></td></tr>
 <tr class="separator:afcab4b9e83008a0edfe9bbecea3e6877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0042463fb6b1ec37439e4cdf5ff0bb4d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#a0042463fb6b1ec37439e4cdf5ff0bb4d">size</a> () const </td></tr>
-<tr class="memdesc:a0042463fb6b1ec37439e4cdf5ff0bb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of contained entries.  <a href="#a0042463fb6b1ec37439e4cdf5ff0bb4d">More...</a><br /></td></tr>
+<tr class="memdesc:a0042463fb6b1ec37439e4cdf5ff0bb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields the number of items currently stored in the heap.  <a href="#a0042463fb6b1ec37439e4cdf5ff0bb4d">More...</a><br /></td></tr>
 <tr class="separator:a0042463fb6b1ec37439e4cdf5ff0bb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dff86960eb3c68e0116eab282dddbb3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#a0dff86960eb3c68e0116eab282dddbb3">get_max</a> () const </td></tr>
-<tr class="memdesc:a0dff86960eb3c68e0116eab282dddbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get first item (index of array item with highest value)  <a href="#a0dff86960eb3c68e0116eab282dddbb3">More...</a><br /></td></tr>
+<tr class="memdesc:a0dff86960eb3c68e0116eab282dddbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the first (maximum) item from the heap.  <a href="#a0dff86960eb3c68e0116eab282dddbb3">More...</a><br /></td></tr>
 <tr class="separator:a0dff86960eb3c68e0116eab282dddbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31ff4a3d18d0d7afea8755b798c537f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#ae31ff4a3d18d0d7afea8755b798c537f">key</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> value) const </td></tr>
-<tr class="separator:ae31ff4a3d18d0d7afea8755b798c537f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f23a3a5049588de1e30104e0fad513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html#a69f23a3a5049588de1e30104e0fad513">key</a> (<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> i) const </td></tr>
+<tr class="memdesc:a69f23a3a5049588de1e30104e0fad513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an item's key.  <a href="#a69f23a3a5049588de1e30104e0fad513">More...</a><br /></td></tr>
+<tr class="separator:a69f23a3a5049588de1e30104e0fad513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class array_t&gt;<br />
+<div class="textblock"><h3>template&lt;typename array_t&gt;<br />
 class tdc::ArrayMaxHeap&lt; array_t &gt;</h3>
 
+<p>Represents a binary max heap backed by an external array of keys. </p>
+<p>The max heap induces an order on the indices of the key array it is backed by. The first element of the heap is the index of the largest item in the key array.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">array_t</td><td>The key array type. Must support the <code>[]</code> operator. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00010">10</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00017">17</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a407bcb5a2be91b48052cb612c1e6b4c1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -194,9 +206,18 @@ template&lt;class array_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor. </p>
+<p>Default constructor. </p>
+<p>Note that the constructor will not insert any items into the heap and serves merely for initialization.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">array</td><td>The array of keys sorted by this heap. </td></tr>
+    <tr><td class="paramname">array_size</td><td>The size of the key array. </td></tr>
+    <tr><td class="paramname">heap_size</td><td>The maximum amount of items stored in the heap. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00051">51</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00065">65</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +226,7 @@ template&lt;class array_t &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -225,19 +246,26 @@ template&lt;class array_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Checks whether or not array item i is contained in this heap. </p>
+<p>Checks whether or not an item is contained in this heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The index of the item in the key array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><em>true</em> if the item is contained in the heap, <em>false</em> otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00158">158</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00186">186</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aedd9e2610d189c33eed90ba82ae19f88"></a>
+<a class="anchor" id="a852141f853097185e5c1ac8565163183"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename key_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -251,7 +279,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">key_t&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -267,9 +295,22 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Decrease key on array item with index i. </p>
+<p>Decreases the key of item in the heap. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">key_t</td><td>the key type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The index of the item in the key array. The key is retrieved from there. </td></tr>
+    <tr><td class="paramname">value</td><td>The new key value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00140">140</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00165">165</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>
@@ -277,7 +318,7 @@ template&lt;typename T &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -296,9 +337,10 @@ template&lt;class array_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get first item (index of array item with highest value) </p>
+<p>Gets the first (maximum) item from the heap. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index in the key array that points to the largest key. </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00168">168</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00198">198</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>
@@ -306,7 +348,7 @@ template&lt;class array_t &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -326,17 +368,23 @@ template&lt;class array_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Insert array item with index i into heap. </p>
+<p>Inserts an item into the heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The index of the item in the key array. The key is retrieved from there. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00060">60</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00077">77</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae31ff4a3d18d0d7afea8755b798c537f"></a>
+<a class="anchor" id="a69f23a3a5049588de1e30104e0fad513"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -345,7 +393,7 @@ template&lt;class array_t &gt; </div>
           <td class="memname"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> <a class="el" href="classtdc_1_1_array_max_heap.html">tdc::ArrayMaxHeap</a>&lt; array_t &gt;::key </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -356,7 +404,16 @@ template&lt;class array_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00172">172</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Gets an item's key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The index of the item in the key array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The item's key, retrieved from the key array. </dd></dl>
+
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00206">206</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>
@@ -364,7 +421,7 @@ template&lt;class array_t &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -384,9 +441,15 @@ template&lt;class array_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Remove array item with index i from heap. </p>
+<p>Removes an item from the heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>The index of the item in the key array. The key is retrieved from there. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00120">120</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00140">140</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>
@@ -394,7 +457,7 @@ template&lt;class array_t &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class array_t &gt; </div>
+template&lt;typename array_t &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -413,9 +476,10 @@ template&lt;class array_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get number of contained entries. </p>
+<p>Yields the number of items currently stored in the heap. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of items currently stored in the heap. </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00163">163</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_array_max_heap_8hpp_source.html#l00192">192</a> of file <a class="el" href="_array_max_heap_8hpp_source.html">ArrayMaxHeap.hpp</a>.</p>
 
 </div>
 </div>

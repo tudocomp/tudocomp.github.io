@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170118-jenkins-37</span>
+   &#160;<span id="projectnumber">0.170118-jenkins-38</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('namespacetdc.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>LZ78 Trie Implementation based on Julius Pettersson (MIT/Expat License.) and Juha Nieminen's work.  
+<p>Contains the text compression and encoding framework.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -162,10 +162,13 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_algorithm_value.html">AlgorithmValue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_d_s.html">ArrayDS</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base for data structures that use an integer array as a storage.  <a href="classtdc_1_1_array_d_s.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_array_max_heap.html">ArrayMaxHeap</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a binary max heap backed by an external array of keys.  <a href="classtdc_1_1_array_max_heap.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_a_s_c_i_i_coder.html">ASCIICoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines data encoding to and decoding from a stream of ASCII characters.  <a href="classtdc_1_1_a_s_c_i_i_coder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_bit_coder.html">BitCoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +179,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_code2_coder.html">Code2Coder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_compressor.html">Compressor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for a general compressor.  <a href="classtdc_1_1_compressor.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base for data compressors.  <a href="classtdc_1_1_compressor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_const_integer_base_combiner.html">ConstIntegerBaseCombiner</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +205,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A data structure for counting occurences of values of a given type T.  <a href="classtdc_1_1_counter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_decoder.html">Decoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base for data decoders.  <a href="classtdc_1_1_decoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_double_hashing_prober.html">DoubleHashingProber</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +231,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtdc_1_1_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if_3_07_n_3_0A32_08_4_1_1type_01_4.html">enable_if&lt;(N&lt;=32)&gt;::type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_encoder.html">Encoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base for data encoders.  <a href="classtdc_1_1_encoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_env.html">Env</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local environment for a compression/encoding/decompression call.  <a href="classtdc_1_1_env.html#details">More...</a><br /></td></tr>
@@ -271,6 +276,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_linear_prober.html">LinearProber</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtdc_1_1_literal.html">Literal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a literal and its location in the input.  <a href="structtdc_1_1_literal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_literal_encoder.html">LiteralEncoder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +302,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_m_t_f_compressor.html">MTFCompressor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_no_literals.html">NoLiterals</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty literal iterator that yields no literals whatsoever.  <a href="classtdc_1_1_no_literals.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_noop_compressor.html">NoopCompressor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,17 +350,19 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view into a slice of memory.  <a href="classtdc_1_1_view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_view_literals.html">ViewLiterals</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A literal iterator that yields every character from a <a class="el" href="classtdc_1_1_view.html">View</a>.  <a href="classtdc_1_1_view_literals.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:afe4273a43bb5e51a7bedb1d29852ba9b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#afe4273a43bb5e51a7bedb1d29852ba9b">CompressorConstructor</a> = std::function&lt; std::unique_ptr&lt; <a class="el" href="classtdc_1_1_compressor.html">Compressor</a> &gt;(<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;)&gt;</td></tr>
-<tr class="separator:afe4273a43bb5e51a7bedb1d29852ba9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a></td></tr>
+<tr class="memdesc:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent input lengths.  <a href="#aa6b4c54c0897b49bf3c9e3f9f71ec408">More...</a><br /></td></tr>
 <tr class="separator:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe7b473912ea68197e905d0a2059e0a4"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a></td></tr>
+<tr class="memdesc:afe7b473912ea68197e905d0a2059e0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent signed single literals.  <a href="#afe7b473912ea68197e905d0a2059e0a4">More...</a><br /></td></tr>
 <tr class="separator:afe7b473912ea68197e905d0a2059e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a48cf82def7e8690fa0f1c92996486"><td class="memItemLeft" align="right" valign="top">typedef std::make_unsigned&lt; <a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a></td></tr>
+<tr class="memdesc:a83a48cf82def7e8690fa0f1c92996486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent unsigned single literals.  <a href="#a83a48cf82def7e8690fa0f1c92996486">More...</a><br /></td></tr>
 <tr class="separator:a83a48cf82def7e8690fa0f1c92996486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5778c6109ac7c39491d0b539a6f9acd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:ab5778c6109ac7c39491d0b539a6f9acd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ab5778c6109ac7c39491d0b539a6f9acd">BitPackingVector</a> = <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector.html">int_vector::BitPackingVector</a>&lt; T &gt;</td></tr>
@@ -378,13 +387,19 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a52f0bacbb2e33c486c47e8f351545852"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a52f0bacbb2e33c486c47e8f351545852">DynamicIntVector</a> = <a class="el" href="namespacetdc.html#ab6a5da736ccdb00077e52495123953d3">IntVector</a>&lt; <a class="el" href="classtdc_1_1dynamic__t.html">dynamic_t</a> &gt;</td></tr>
 <tr class="separator:a52f0bacbb2e33c486c47e8f351545852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a0062baab305ef349a156415dd13e6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#af2a0062baab305ef349a156415dd13e6">Input</a> = <a class="el" href="classtdc_1_1io_1_1_input.html">io::Input</a></td></tr>
+<tr class="memdesc:af2a0062baab305ef349a156415dd13e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_input.html">io::Input</a>.  <a href="#af2a0062baab305ef349a156415dd13e6">More...</a><br /></td></tr>
 <tr class="separator:af2a0062baab305ef349a156415dd13e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc3518e34a04f8156c6c14ed45d8d22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aecc3518e34a04f8156c6c14ed45d8d22">Output</a> = <a class="el" href="classtdc_1_1io_1_1_output.html">io::Output</a></td></tr>
+<tr class="memdesc:aecc3518e34a04f8156c6c14ed45d8d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_output.html">io::Output</a>.  <a href="#aecc3518e34a04f8156c6c14ed45d8d22">More...</a><br /></td></tr>
 <tr class="separator:aecc3518e34a04f8156c6c14ed45d8d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0a13e1f5aa4e2e4767c78c7a9648eda"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ac0a13e1f5aa4e2e4767c78c7a9648eda">BitIStream</a> = <a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">io::BitIStream</a></td></tr>
+<tr class="memdesc:ac0a13e1f5aa4e2e4767c78c7a9648eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">io::BitIStream</a>.  <a href="#ac0a13e1f5aa4e2e4767c78c7a9648eda">More...</a><br /></td></tr>
 <tr class="separator:ac0a13e1f5aa4e2e4767c78c7a9648eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae237d95e0b72f861584bae69cce5788a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ae237d95e0b72f861584bae69cce5788a">BitOStream</a> = <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">io::BitOStream</a></td></tr>
+<tr class="memdesc:ae237d95e0b72f861584bae69cce5788a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">io::BitOStream</a>.  <a href="#ae237d95e0b72f861584bae69cce5788a">More...</a><br /></td></tr>
 <tr class="separator:ae237d95e0b72f861584bae69cce5788a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85556a0ec2df2b00ea0a32c186d71681"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a85556a0ec2df2b00ea0a32c186d71681">CompressorConstructor</a> = std::function&lt; std::unique_ptr&lt; <a class="el" href="classtdc_1_1_compressor.html">Compressor</a> &gt;(<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;)&gt;</td></tr>
+<tr class="separator:a85556a0ec2df2b00ea0a32c186d71681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d5c7581ed3cba7312a32c14e33d906"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a03d5c7581ed3cba7312a32c14e33d906">BitRange</a> = <a class="el" href="classtdc_1_1_fixed_range.html">FixedRange</a>&lt; 0, 1 &gt;</td></tr>
 <tr class="separator:a03d5c7581ed3cba7312a32c14e33d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4cb5a3ed3183acc4d5743c77bc677c"><td class="memTemplParams" colspan="2">template&lt;class Self &gt; </td></tr>
@@ -440,9 +455,11 @@ Functions</h2></td></tr>
 <tr class="separator:ada13e4fa05c07c2350dca7704b5f19dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a3f8e4bdf3e55a326c43e82c67a201b1a">literal2int</a> (const T &amp;c)</td></tr>
+<tr class="memdesc:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a literal to an unsigned integer value.  <a href="#a3f8e4bdf3e55a326c43e82c67a201b1a">More...</a><br /></td></tr>
 <tr class="separator:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e140382dd6856ccdec03019015281e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:aa0e140382dd6856ccdec03019015281e"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aa0e140382dd6856ccdec03019015281e">literal2int</a> (const <a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a> &amp;c)</td></tr>
+<tr class="memdesc:aa0e140382dd6856ccdec03019015281e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a signed literal to an unsigned integer value.  <a href="#aa0e140382dd6856ccdec03019015281e">More...</a><br /></td></tr>
 <tr class="separator:aa0e140382dd6856ccdec03019015281e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1458b9aa5a82849315785642e03ec41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514">CompressMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ab1458b9aa5a82849315785642e03ec41">cm_select</a> (<a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514">CompressMode</a> in, <a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514">CompressMode</a> sel)</td></tr>
 <tr class="separator:ab1458b9aa5a82849315785642e03ec41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -535,11 +552,14 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a920f87726ac2ea33688187352607343e"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a920f87726ac2ea33688187352607343e">LEN_MAX</a> = std::numeric_limits&lt;<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>&gt;::max()</td></tr>
+<tr class="memdesc:a920f87726ac2ea33688187352607343e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>.  <a href="#a920f87726ac2ea33688187352607343e">More...</a><br /></td></tr>
 <tr class="separator:a920f87726ac2ea33688187352607343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aafe2c20214884f91eaa4522ab68e7cb1">LEN_BITS</a> = 8 * sizeof(<a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>)</td></tr>
+<tr class="memdesc:aafe2c20214884f91eaa4522ab68e7cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of bits required to store the binary representation of a value of type <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>.  <a href="#aafe2c20214884f91eaa4522ab68e7cb1">More...</a><br /></td></tr>
 <tr class="separator:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5924c226aa4548f3a249d2f55eb85c41"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a5924c226aa4548f3a249d2f55eb85c41">uliteral_max</a> = std::numeric_limits&lt;<a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>&gt;::max()</td></tr>
-<tr class="separator:a5924c226aa4548f3a249d2f55eb85c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9b7810543e309eaaa60915ff205c52"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52">ULITERAL_MAX</a> = std::numeric_limits&lt;<a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>&gt;::max()</td></tr>
+<tr class="memdesc:a8a9b7810543e309eaaa60915ff205c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>.  <a href="#a8a9b7810543e309eaaa60915ff205c52">More...</a><br /></td></tr>
+<tr class="separator:a8a9b7810543e309eaaa60915ff205c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6f68308dfd41bde1f5a7caa04fe4ac"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtdc_1_1_ref_dispatch.html">tdc::RefDispatch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a9e6f68308dfd41bde1f5a7caa04fe4ac">__attribute__</a></td></tr>
 <tr class="separator:a9e6f68308dfd41bde1f5a7caa04fe4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af1aa049da3e790a4db31f8606c2473"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classtdc_1_1_type_range.html">TypeRange</a>&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a8af1aa049da3e790a4db31f8606c2473">size_r</a></td></tr>
@@ -552,10 +572,7 @@ Variables</h2></td></tr>
 <tr class="separator:aec12d4210d9d256411da11752a3a6943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>LZ78 Trie Implementation based on Julius Pettersson (MIT/Expat License.) and Juha Nieminen's work. </p>
-<p>Contains the text compression and encoding framework.</p>
-<p>Contains the runtime statistics interface <a class="el" href="classtdc_1_1_stat.html">Stat</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a href="http://www.cplusplus.com/articles/iL18T05o/">http://www.cplusplus.com/articles/iL18T05o/</a></dd></dl>
+<div class="textblock"><p>Contains the text compression and encoding framework. </p>
 <p>This is the framework's central namespace in which text compression and coding algorithms are contained, as well as utilities needed for text compression and coding (e.g. I/O). Families of compressors and encoders or utility groups are contained in the respective sub-namespaces. The namespace <code>tudocomp</code> itself contains types important for all of the framework and its communication. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ac0a13e1f5aa4e2e4767c78c7a9648eda"></a>
@@ -568,7 +585,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="io_8hpp_source.html#l00014">14</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
+<p>Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">io::BitIStream</a>. </p>
+
+<p>Definition at line <a class="el" href="io_8hpp_source.html#l00018">18</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +601,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="io_8hpp_source.html#l00015">15</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
+<p>Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">io::BitOStream</a>. </p>
+
+<p>Definition at line <a class="el" href="io_8hpp_source.html#l00021">21</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
 
 </div>
 </div>
@@ -630,17 +651,17 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afe4273a43bb5e51a7bedb1d29852ba9b"></a>
+<a class="anchor" id="a85556a0ec2df2b00ea0a32c186d71681"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::function&lt; std::unique_ptr&lt; <a class="el" href="classtdc_1_1_compressor.html">Compressor</a> &gt;(<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;)&gt; <a class="el" href="namespacetdc.html#afe4273a43bb5e51a7bedb1d29852ba9b">tdc::CompressorConstructor</a></td>
+          <td class="memname">using <a class="el" href="namespacetdc.html#a85556a0ec2df2b00ea0a32c186d71681">tdc::CompressorConstructor</a> = typedef std::function&lt;std::unique_ptr&lt;<a class="el" href="classtdc_1_1_compressor.html">Compressor</a>&gt;(<a class="el" href="classtdc_1_1_env.html">Env</a>&amp;&amp;)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_compressor_8hpp_source.html#l00031">31</a> of file <a class="el" href="_compressor_8hpp_source.html">Compressor.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pre__header_2_registry_8hpp_source.html#l00009">9</a> of file <a class="el" href="pre__header_2_registry_8hpp_source.html">pre_header/Registry.hpp</a>.</p>
 
 </div>
 </div>
@@ -716,7 +737,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="io_8hpp_source.html#l00011">11</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
+<p>Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_input.html">io::Input</a>. </p>
+
+<p>Definition at line <a class="el" href="io_8hpp_source.html#l00012">12</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
 
 </div>
 </div>
@@ -794,7 +817,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00041">41</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Type to represent input lengths. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00056">56</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -808,7 +833,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00045">45</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Type to represent signed single literals. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00066">66</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -822,7 +849,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="io_8hpp_source.html#l00012">12</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
+<p>Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_output.html">io::Output</a>. </p>
+
+<p>Definition at line <a class="el" href="io_8hpp_source.html#l00015">15</a> of file <a class="el" href="io_8hpp_source.html">io.hpp</a>.</p>
 
 </div>
 </div>
@@ -850,7 +879,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00047">47</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Type to represent unsigned single literals. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00069">69</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -1420,7 +1451,22 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00051">51</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Converts a literal to an unsigned integer value. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">the</td><td>literal type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>the literal. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding unsigned integer value. </dd></dl>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00080">80</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -1448,7 +1494,16 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00056">56</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Converts a signed literal to an unsigned integer value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>the literal. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding unsigned integer value. </dd></dl>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00089">89</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -2456,7 +2511,9 @@ template&lt;class int_t &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00043">43</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>The amount of bits required to store the binary representation of a value of type <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00063">63</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -2470,7 +2527,9 @@ template&lt;class int_t &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00042">42</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>The maximum value of <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00059">59</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -2516,17 +2575,19 @@ template&lt;class int_t &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5924c226aa4548f3a249d2f55eb85c41"></a>
+<a class="anchor" id="a8a9b7810543e309eaaa60915ff205c52"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t tdc::uliteral_max = std::numeric_limits&lt;<a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>&gt;::max()</td>
+          <td class="memname">constexpr size_t tdc::ULITERAL_MAX = std::numeric_limits&lt;<a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>&gt;::max()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00048">48</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>The maximum value of <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>. </p>
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00072">72</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>

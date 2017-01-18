@@ -53,7 +53,9 @@ var files =
     ] ],
     [ "Coder.hpp", "_coder_8hpp.html", "_coder_8hpp" ],
     [ "CompressMode.hpp", "_compress_mode_8hpp.html", "_compress_mode_8hpp" ],
-    [ "Compressor.hpp", "_compressor_8hpp.html", "_compressor_8hpp" ],
+    [ "Compressor.hpp", "_compressor_8hpp.html", [
+      [ "Compressor", "classtdc_1_1_compressor.html", "classtdc_1_1_compressor" ]
+    ] ],
     [ "config.h", "config_8h.html", null ],
     [ "Counter.hpp", "_counter_8hpp.html", [
       [ "Counter", "classtdc_1_1_counter.html", "classtdc_1_1_counter" ]

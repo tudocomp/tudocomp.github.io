@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170118-jenkins-37</span>
+   &#160;<span id="projectnumber">0.170118-jenkins-38</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -118,18 +118,25 @@ $(document).ready(function(){initNavTree('structtdc_1_1_literal.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Contains a literal and its location in the input.  
+ <a href="structtdc_1_1_literal.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1c1ea94b52c8cff441f0cc2c7b76df46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtdc_1_1_literal.html#a1c1ea94b52c8cff441f0cc2c7b76df46">c</a></td></tr>
+<tr class="memdesc:a1c1ea94b52c8cff441f0cc2c7b76df46"><td class="mdescLeft">&#160;</td><td class="mdescRight">The literal.  <a href="#a1c1ea94b52c8cff441f0cc2c7b76df46">More...</a><br /></td></tr>
 <tr class="separator:a1c1ea94b52c8cff441f0cc2c7b76df46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa66a1f0d9712f0a1447a93edcc082fee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtdc_1_1_literal.html#aa66a1f0d9712f0a1447a93edcc082fee">pos</a></td></tr>
+<tr class="memdesc:aa66a1f0d9712f0a1447a93edcc082fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position of the literal in the input.  <a href="#aa66a1f0d9712f0a1447a93edcc082fee">More...</a><br /></td></tr>
 <tr class="separator:aa66a1f0d9712f0a1447a93edcc082fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00009">9</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
+<div class="textblock"><p>Contains a literal and its location in the input. </p>
+<p>This structure is used by encoders to get a glimpse at the literals it will receive. The encoder is given a stream of literals and their occurences in the compressed text. This information can be used to initialize data structures that can be used for efficient encoding, e.g. a Huffman tree or a k-mer dictionary. </p>
+
+<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00016">16</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a1c1ea94b52c8cff441f0cc2c7b76df46"></a>
 <div class="memitem">
@@ -141,7 +148,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00010">10</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
+<p>The literal. </p>
+
+<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00018">18</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
 
 </div>
 </div>
@@ -155,7 +164,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00011">11</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
+<p>The position of the literal in the input. </p>
+
+<p>Definition at line <a class="el" href="_literal_8hpp_source.html#l00021">21</a> of file <a class="el" href="_literal_8hpp_source.html">Literal.hpp</a>.</p>
 
 </div>
 </div>

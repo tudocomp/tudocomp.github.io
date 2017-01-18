@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170118-jenkins-37</span>
+   &#160;<span id="projectnumber">0.170118-jenkins-38</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -126,7 +126,7 @@ Inheritance diagram for tdc::NoopCompressor:</div>
  <div class="center">
   <img src="classtdc_1_1_noop_compressor.png" usemap="#tdc::NoopCompressor_map" alt=""/>
   <map id="tdc::NoopCompressor_map" name="tdc::NoopCompressor_map">
-<area href="classtdc_1_1_compressor.html" title="Interface for a general compressor. " alt="tdc::Compressor" shape="rect" coords="0,56,133,80"/>
+<area href="classtdc_1_1_compressor.html" title="Base for data compressors. " alt="tdc::Compressor" shape="rect" coords="0,56,133,80"/>
 <area href="classtdc_1_1_algorithm.html" title="Interface for algorithms. " alt="tdc::Algorithm" shape="rect" coords="0,0,133,24"/>
 </map>
  </div></div>
@@ -136,19 +136,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5744f2c73c866b86e41336dbb01ef84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_noop_compressor.html#ae5744f2c73c866b86e41336dbb01ef84">NoopCompressor</a> (<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;<a class="el" href="classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2">env</a>)</td></tr>
 <tr class="separator:ae5744f2c73c866b86e41336dbb01ef84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd7059629e180705e15220491484e639"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_noop_compressor.html#abd7059629e180705e15220491484e639">compress</a> (<a class="el" href="namespacetdc.html#af2a0062baab305ef349a156415dd13e6">Input</a> &amp;i, <a class="el" href="namespacetdc.html#aecc3518e34a04f8156c6c14ed45d8d22">Output</a> &amp;o) overridefinal</td></tr>
-<tr class="memdesc:abd7059629e180705e15220491484e639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compress <code>inp</code> into <code>out</code>.  <a href="#abd7059629e180705e15220491484e639">More...</a><br /></td></tr>
+<tr class="memdesc:abd7059629e180705e15220491484e639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compress the given input to the given output.  <a href="#abd7059629e180705e15220491484e639">More...</a><br /></td></tr>
 <tr class="separator:abd7059629e180705e15220491484e639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb15f61fc5b5283965af842a005cecf4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_noop_compressor.html#acb15f61fc5b5283965af842a005cecf4">decompress</a> (<a class="el" href="namespacetdc.html#af2a0062baab305ef349a156415dd13e6">Input</a> &amp;i, <a class="el" href="namespacetdc.html#aecc3518e34a04f8156c6c14ed45d8d22">Output</a> &amp;o) overridefinal</td></tr>
-<tr class="memdesc:acb15f61fc5b5283965af842a005cecf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompress <code>inp</code> into <code>out</code>.  <a href="#acb15f61fc5b5283965af842a005cecf4">More...</a><br /></td></tr>
+<tr class="memdesc:acb15f61fc5b5283965af842a005cecf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decompress the given input to the given output.  <a href="#acb15f61fc5b5283965af842a005cecf4">More...</a><br /></td></tr>
 <tr class="separator:acb15f61fc5b5283965af842a005cecf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtdc_1_1_compressor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtdc_1_1_compressor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtdc_1_1_compressor.html">tdc::Compressor</a></td></tr>
 <tr class="memitem:a4505ee804a1b7e54f1004b3dce213100 inherit pub_methods_classtdc_1_1_compressor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_compressor.html#a4505ee804a1b7e54f1004b3dce213100">Compressor</a> (<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;<a class="el" href="classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2">env</a>)</td></tr>
-<tr class="memdesc:a4505ee804a1b7e54f1004b3dce213100 inherit pub_methods_classtdc_1_1_compressor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the class with an environment.  <a href="#a4505ee804a1b7e54f1004b3dce213100">More...</a><br /></td></tr>
+<tr class="memdesc:a4505ee804a1b7e54f1004b3dce213100 inherit pub_methods_classtdc_1_1_compressor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the compressor with an environment.  <a href="#a4505ee804a1b7e54f1004b3dce213100">More...</a><br /></td></tr>
 <tr class="separator:a4505ee804a1b7e54f1004b3dce213100 inherit pub_methods_classtdc_1_1_compressor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtdc_1_1_algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtdc_1_1_algorithm')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtdc_1_1_algorithm.html">tdc::Algorithm</a></td></tr>
-<tr class="memitem:ac00305626e61ab5d7411638b3cdb0b5f inherit pub_methods_classtdc_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_algorithm.html#ac00305626e61ab5d7411638b3cdb0b5f">Algorithm</a> ()=delete</td></tr>
-<tr class="memdesc:ac00305626e61ab5d7411638b3cdb0b5f inherit pub_methods_classtdc_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor (deleted).  <a href="#ac00305626e61ab5d7411638b3cdb0b5f">More...</a><br /></td></tr>
-<tr class="separator:ac00305626e61ab5d7411638b3cdb0b5f inherit pub_methods_classtdc_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7829ccc7b55c1b5a9192cf1c92091a4d inherit pub_methods_classtdc_1_1_algorithm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_algorithm.html#a7829ccc7b55c1b5a9192cf1c92091a4d">Algorithm</a> (<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;<a class="el" href="classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2">env</a>)</td></tr>
 <tr class="memdesc:a7829ccc7b55c1b5a9192cf1c92091a4d inherit pub_methods_classtdc_1_1_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates an algorithm in the specified environment.  <a href="#a7829ccc7b55c1b5a9192cf1c92091a4d">More...</a><br /></td></tr>
 <tr class="separator:a7829ccc7b55c1b5a9192cf1c92091a4d inherit pub_methods_classtdc_1_1_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,11 +221,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compress <code>inp</code> into <code>out</code>. </p>
+<p>Compress the given input to the given output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inp</td><td>The input stream. </td></tr>
-    <tr><td class="paramname">out</td><td>The output stream. </td></tr>
+    <tr><td class="paramname">input</td><td>The input. </td></tr>
+    <tr><td class="paramname">output</td><td>The output. </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,11 +268,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Decompress <code>inp</code> into <code>out</code>. </p>
+<p>Decompress the given input to the given output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inp</td><td>The input stream. </td></tr>
-    <tr><td class="paramname">out</td><td>The output stream. </td></tr>
+    <tr><td class="paramname">input</td><td>The input. </td></tr>
+    <tr><td class="paramname">output</td><td>The output. </td></tr>
   </table>
   </dd>
 </dl>
