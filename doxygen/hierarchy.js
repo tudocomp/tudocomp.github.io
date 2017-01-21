@@ -211,8 +211,8 @@ var hierarchy =
     [ "tdc::lcpcomp::MaxLCPSuffixList< lcp_t >", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html", null ],
     [ "tdc::Meta", "classtdc_1_1_meta.html", null ],
     [ "tdc::MixHasher", "classtdc_1_1_mix_hasher.html", null ],
-    [ "tdc::lz78::MyHash< Key, Value, HashFcn, EqualKey, ProbeFcn, SizeManager >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
     [ "tdc::lcpcomp::MyHash< Key, Value, HashFcn, EqualKey, SizeManager, empty_val >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
+    [ "tdc::lz78::MyHash< Key, Value, HashFcn, EqualKey, ProbeFcn, SizeManager >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
     [ "tdc::lcpcomp::MyHash< len_t, len_t, tdc::MixHasher >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
     [ "tdc::lz78::MyHash< squeeze_node_t, factorid_t, tdc::MixHasher, std::equal_to< squeeze_node_t >, tdc::LinearProber< squeeze_node_t > >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
     [ "cedar::NaN< T >", "structcedar_1_1_na_n.html", null ],
@@ -221,6 +221,7 @@ var hierarchy =
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::node", "structcedar_1_1da_1_1node.html", null ],
     [ "tdc::NoLiterals", "classtdc_1_1_no_literals.html", null ],
     [ "tdc::Meta::OptionBuilder", "classtdc_1_1_meta_1_1_option_builder.html", null ],
+    [ "tdc_driver::Options", "classtdc__driver_1_1_options.html", null ],
     [ "tdc::OptionValue", "classtdc_1_1_option_value.html", null ],
     [ "ostream", null, [
       [ "tdc::io::OutputStream", "classtdc_1_1io_1_1_output_stream.html", null ]
@@ -260,8 +261,8 @@ var hierarchy =
     [ "tdc::lz78::TrieNode< search_pos_t >", "classtdc_1_1lz78_1_1_trie_node.html", null ],
     [ "tdc::lz78::TrieNode< CedarSearchPos >", "classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html", null ],
     [ "tdc::lz78::TrieNode< factorid_t >", "classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html", null ],
-    [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
     [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
+    [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
     [ "tdc::UinttDispatch< MB >", "structtdc_1_1_uintt_dispatch.html", null ],
     [ "tdc::json::Value", "classtdc_1_1json_1_1_value.html", [
       [ "tdc::json::Array", "classtdc_1_1json_1_1_array.html", null ],

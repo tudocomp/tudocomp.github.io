@@ -12,6 +12,7 @@ var searchData=
   ['finish_5fstats',['finish_stats',['../classtdc_1_1_env_root.html#a249c4fb7147bef47196d8eb448a94f5e',1,'tdc::EnvRoot::finish_stats()'],['../classtdc_1_1_env.html#a31788b1e730974811c3f597921d821d0',1,'tdc::Env::finish_stats()']]],
   ['fixedrange',['FixedRange',['../classtdc_1_1_fixed_range.html#acf8dda3f6fe4b0acf2be008d787aa759',1,'tdc::FixedRange']]],
   ['fixedrange',['FixedRange',['../classtdc_1_1_fixed_range.html',1,'tdc']]],
+  ['force',['force',['../classtdc__driver_1_1_options.html#a18f289293e2c9f7658844e62e4e8d529',1,'tdc_driver::Options']]],
   ['from',['from',['../structtdc_1_1lz78_1_1_cedar_search_pos.html#ae0c6b593a3419d6a93f65eaebebea508',1,'tdc::lz78::CedarSearchPos']]],
   ['from_5fmemory',['from_memory',['../classtdc_1_1io_1_1_input.html#a0146115c9cf657a2540cccabb68c532b',1,'tdc::io::Input::from_memory(const std::vector&lt; uint8_t &gt; &amp;buf)'],['../classtdc_1_1io_1_1_input.html#a85c556e11847fd6516298678538cd24b',1,'tdc::io::Input::from_memory(const string_ref buf)'],['../classtdc_1_1io_1_1_output.html#aa9dbbb5105d0179e824d05d5441408f7',1,'tdc::io::Output::from_memory()']]],
   ['from_5fpath',['from_path',['../classtdc_1_1io_1_1_input.html#a4f842331b075f1c4c18710ed86f3f1fa',1,'tdc::io::Input::from_path()'],['../classtdc_1_1io_1_1_output.html#a652743b9e30f8605bdedb6c06de64151',1,'tdc::io::Output::from_path()']]],

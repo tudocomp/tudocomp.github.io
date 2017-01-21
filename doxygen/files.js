@@ -192,6 +192,7 @@ var files =
       [ "NoopCompressor", "classtdc_1_1_noop_compressor.html", "classtdc_1_1_noop_compressor" ]
     ] ],
     [ "NullEscapingUtil.hpp", "_null_escaping_util_8hpp.html", null ],
+    [ "Options.hpp", "_options_8hpp.html", "_options_8hpp" ],
     [ "OptionValue.hpp", "_option_value_8hpp.html", "_option_value_8hpp" ],
     [ "Output.hpp", "_output_8hpp.html", [
       [ "Output", "classtdc_1_1io_1_1_output.html", "classtdc_1_1io_1_1_output" ],

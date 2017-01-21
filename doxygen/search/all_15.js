@@ -12,6 +12,7 @@ var searchData=
   ['ulong',['ulong',['../malloc__count_8hpp.html#a441b2f7db117201ab36246e7692a5974',1,'malloc_count.hpp']]],
   ['undef_5flen',['undef_len',['../namespacetdc_1_1lcpcomp.html#a04fca1dbf79cb14cc2b0b64b0bf5352b',1,'tdc::lcpcomp']]],
   ['unit_5fsize',['unit_size',['../classcedar_1_1da.html#af68d758159281b51a59be975675a85c6',1,'cedar::da']]],
+  ['unknown_5foptions',['unknown_options',['../classtdc__driver_1_1_options.html#a769749137e236285803bd20482e77d9d',1,'tdc_driver::Options']]],
   ['update',['update',['../classcedar_1_1da.html#a7e457259f6df6838b63922648bc201c8',1,'cedar::da::update(const char *key)'],['../classcedar_1_1da.html#addcabd17c314ab1367a7a3ecf4b01e05',1,'cedar::da::update(const char *key, size_t len, value_type val=value_type(0))'],['../classcedar_1_1da.html#abe491a4a3f6bd6d868f93e91e01a1157',1,'cedar::da::update(const char *key, size_t &amp;from, size_t &amp;pos, size_t len, value_type val=value_type(0))'],['../classcedar_1_1da.html#a614d7f7713abe96dfe3e6f7deadee102',1,'cedar::da::update(const char *key, size_t &amp;from, size_t &amp;pos, size_t len, value_type val, T &amp;cf)']]],
   ['util_2ehpp',['util.hpp',['../util_8hpp.html',1,'']]]
 ];
