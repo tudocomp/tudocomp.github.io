@@ -1,5 +1,7 @@
 var classtdc__driver_1_1_options =
 [
+    [ "Options", "classtdc__driver_1_1_options.html#a1a3dcdc438d4a97d5e7cfa459bcee051", null ],
+    [ "Options", "classtdc__driver_1_1_options.html#ac1fde7c52688dec4e98206166b85456a", null ],
     [ "Options", "classtdc__driver_1_1_options.html#a694d2e2debdf536098237db615ed3e0b", null ],
     [ "algorithm", "classtdc__driver_1_1_options.html#ad6b5cf030d52ada7614d062cdf1b0edc", null ],
     [ "decompress", "classtdc__driver_1_1_options.html#aa137470fc31f06f9717a65c723bf61dd", null ],
@@ -13,5 +15,6 @@ var classtdc__driver_1_1_options =
     [ "stats_title", "classtdc__driver_1_1_options.html#a9f38d28f99a836262a8d21ff04a8759e", null ],
     [ "stdin", "classtdc__driver_1_1_options.html#abcbc89f1490dce54ede208ba7052c72f", null ],
     [ "stdout", "classtdc__driver_1_1_options.html#aab501f4d1235f0ff514f01eb9d9530da", null ],
-    [ "unknown_options", "classtdc__driver_1_1_options.html#a769749137e236285803bd20482e77d9d", null ]
+    [ "unknown_options", "classtdc__driver_1_1_options.html#a769749137e236285803bd20482e77d9d", null ],
+    [ "version", "classtdc__driver_1_1_options.html#a74033751c58b452172802c6f702807e9", null ]
 ];

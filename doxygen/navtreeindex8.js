@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"structtdc_1_1int__vector_1_1_int_ptr_trait.html":[2,0,2,1,13],
+"structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4.html":[2,0,2,1,14],
+"structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4.html":[2,0,2,1,15],
 "structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4.html":[2,0,2,1,16],
 "structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4.html":[2,0,2,1,17],
 "structtdc_1_1int__vector_1_1_int_vector_trait.html":[2,0,2,1,20],
