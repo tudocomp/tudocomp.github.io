@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['parent',['parent',['../structtdc_1_1_suffix_tree.html#a7ef627fc7b45b8c86b810fc2dbf4980d',1,'tdc::SuffixTree']]],
   ['parse_5fnumber_5funtil_5fother',['parse_number_until_other',['../namespacetdc.html#a171f201db5f433e36c061007e771daf7',1,'tdc']]],
   ['pause',['pause',['../classtdc_1_1_stat.html#aa93d4dd7e64edf2ad4dc3afe24ae4708',1,'tdc::Stat']]],
   ['phase',['phase',['../classtdc_1_1_stat.html#aa1fe5f39e5ae19a6b02d8a83f4718962',1,'tdc::Stat']]],

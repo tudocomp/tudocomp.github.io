@@ -12,7 +12,6 @@ var classtdc_1_1_view =
     [ "View", "classtdc_1_1_view.html#ae7a1cedc03e403465fde9cfc1ce1e6db", null ],
     [ "View", "classtdc_1_1_view.html#ae6fb0380baac32cda11e7c5c8d7ffd80", null ],
     [ "View", "classtdc_1_1_view.html#a89b1d2af05ffa651387d751cd37b8ef8", null ],
-    [ "View", "classtdc_1_1_view.html#a5678df2a50b3c9097d2f25d30a4b4452", null ],
     [ "View", "classtdc_1_1_view.html#a251f2a0841f8da926b79cf20719e53b5", null ],
     [ "View", "classtdc_1_1_view.html#a2804ab09e3af8822bf7ca3fa63a10da9", null ],
     [ "at", "classtdc_1_1_view.html#acd4f6fbb3d647d34a50d7202b02ca8d7", null ],

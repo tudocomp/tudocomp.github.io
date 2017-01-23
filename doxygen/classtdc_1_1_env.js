@@ -14,5 +14,6 @@ var classtdc_1_1_env =
     [ "option", "classtdc_1_1_env.html#a30d9029f7cd149e38df2aa108205b8c9", null ],
     [ "registry", "classtdc_1_1_env.html#ad9823ee945752e3097fddb1c21e1c74d", null ],
     [ "restart_stats", "classtdc_1_1_env.html#a2eccf36c677747699f49e090eb66f802", null ],
-    [ "root", "classtdc_1_1_env.html#acce7ac2791542b730cfd2f59d9ec5bba", null ]
+    [ "root", "classtdc_1_1_env.html#acce7ac2791542b730cfd2f59d9ec5bba", null ],
+    [ "stat_phase", "classtdc_1_1_env.html#ad501eeee39c7f7984f1b866075fb0a86", null ]
 ];

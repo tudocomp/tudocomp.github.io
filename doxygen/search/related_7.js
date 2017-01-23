@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['swap',['swap',['../classtdc_1_1int__vector_1_1_int_vector.html#af94a4ab19d3742b9adfcadd3e5781be4',1,'tdc::int_vector::IntVector::swap()'],['../classtdc_1_1_view.html#a0438fe38ebda83921dafaca85e0bf0c4',1,'tdc::View::swap()']]]
+  ['refdispatch_3c_20uint32_5ft_2c_20t_20_3e',['RefDispatch&lt; uint32_t, T &gt;',['../classtdc_1_1int__vector_1_1_generic_int_ptr.html#a8a4945721db67cf88412dff40f9bc74a',1,'tdc::int_vector::GenericIntPtr::RefDispatch&lt; uint32_t, T &gt;()'],['../classtdc_1_1int__vector_1_1_generic_int_ref.html#a8a4945721db67cf88412dff40f9bc74a',1,'tdc::int_vector::GenericIntRef::RefDispatch&lt; uint32_t, T &gt;()']]],
+  ['refdispatch_3c_20uint64_5ft_2c_20t_20_3e',['RefDispatch&lt; uint64_t, T &gt;',['../classtdc_1_1int__vector_1_1_generic_int_ptr.html#ac40ac20af2b569f2c54050cc84f4134c',1,'tdc::int_vector::GenericIntPtr::RefDispatch&lt; uint64_t, T &gt;()'],['../classtdc_1_1int__vector_1_1_generic_int_ref.html#ac40ac20af2b569f2c54050cc84f4134c',1,'tdc::int_vector::GenericIntRef::RefDispatch&lt; uint64_t, T &gt;()']]]
 ];

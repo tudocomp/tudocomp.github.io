@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170121-jenkins-41</span>
+   &#160;<span id="projectnumber">0.170123-jenkins-50</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -166,6 +166,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html#a4d5eae2fe5e6d0d497f9fe7b36164016">tdc::lz78::TrieNode&lt; CedarSearchPos &gt;</a>
 , <a class="el" href="classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#ad7a263cc9cb2be0d294514cf1e6087ac">tdc::lz78::TrieNode&lt; factorid_t &gt;</a>
 </li>
+<li>select_leaf()
+: <a class="el" href="structtdc_1_1_suffix_tree.html#a35060b430a4c17bb48c24d3a9a89db24">tdc::SuffixTree</a>
+</li>
 <li>SelfMaxBit
 : <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a9e32a23e8d934518f924679c6b7d9e60">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with64.html#a08369b30f87c07168546f266a8b03e73">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
@@ -175,7 +178,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 , <a class="el" href="structtdc_1_1_uintt_dispatch.html#a6180930a2dd5c285c8bbddadb8c22755">tdc::UinttDispatch&lt; MB &gt;</a>
 </li>
 <li>set()
-: <a class="el" href="classtdc_1_1json_1_1_object.html#af4a2502115ef88a1b88d49ffbafd5070">tdc::json::Object</a>
+: <a class="el" href="classtdc_1_1json_1_1_object.html#ac2a5c5cdc495fd1c0d0a59b5feb3b7b9">tdc::json::Object</a>
 , <a class="el" href="classtdc_1_1lz78_1_1_lzw_root_search_pos_map.html#aaa7de71cbdbbb92935cfd383475f8d94">tdc::lz78::LzwRootSearchPosMap</a>
 </li>
 <li>set_array()
@@ -232,6 +235,9 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>slice()
 : <a class="el" href="classtdc_1_1_view.html#a2e01d31deb487658491b3e81ab9a923d">tdc::View</a>
 </li>
+<li>smallest_leaf()
+: <a class="el" href="structtdc_1_1_suffix_tree.html#ac807ebacd6831be6b95884478ff33b91">tdc::SuffixTree</a>
+</li>
 <li>sort()
 : <a class="el" href="classtdc_1_1lzss_1_1_factor_buffer.html#a94ff462322c1a193eee53098c79438a3">tdc::lzss::FactorBuffer</a>
 </li>
@@ -242,13 +248,17 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 : <a class="el" href="structtdc_1_1_stat_1_1_phase.html#acc87b982455436938a81184d8dec5d55">tdc::Stat::Phase</a>
 </li>
 <li>starts_with()
-: <a class="el" href="classtdc_1_1_view.html#a7c630638aa0793da56bb88c6fa327e0e">tdc::View</a>
+: <a class="el" href="classtdc_1_1_view.html#a79de12ef73099f1515cc1f5b5bd38a7f">tdc::View</a>
 </li>
 <li>Stat()
 : <a class="el" href="classtdc_1_1_stat.html#a0e2c34a2bb6c16696f912269d3062d1b">tdc::Stat</a>
 </li>
 <li>stat_current()
 : <a class="el" href="classtdc_1_1_env_root.html#aa2a178ef89806cdb1ee72943b2f4e030">tdc::EnvRoot</a>
+</li>
+<li>stat_phase()
+: <a class="el" href="classtdc_1_1_env.html#ad501eeee39c7f7984f1b866075fb0a86">tdc::Env</a>
+, <a class="el" href="classtdc_1_1_env_root.html#a62847ab759c013247093eecd700799c7">tdc::EnvRoot</a>
 </li>
 <li>static_selection()
 : <a class="el" href="classtdc_1_1_algorithm_value.html#a65d8683396fbb3d4eef5298145b6b7ec">tdc::AlgorithmValue</a>
@@ -274,21 +284,35 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>str()
 : <a class="el" href="classtdc_1_1json_1_1_array.html#a39bdc1a0cd2a536233f0acedb2b6d36c">tdc::json::Array</a>
 , <a class="el" href="classtdc_1_1json_1_1_object.html#a51ed9627d478f8381925a7edb922f648">tdc::json::Object</a>
-, <a class="el" href="classtdc_1_1json_1_1_t_value.html#a83a6277fd0663772f3c5723296d5f593">tdc::json::TValue&lt; T &gt;</a>
-, <a class="el" href="classtdc_1_1json_1_1_value.html#afeb45adf173faabf0d18dc420fc824cd">tdc::json::Value</a>
+, <a class="el" href="classtdc_1_1json_1_1_t_value.html#a4fd0963bea515af2b670d601b70373c2">tdc::json::TValue&lt; T &gt;</a>
+, <a class="el" href="classtdc_1_1json_1_1_value.html#a33d8cbfabab62ec57f03185cb22f8bb5">tdc::json::Value</a>
+</li>
+<li>str_depth()
+: <a class="el" href="classtdc_1_1root__childrank__support.html#a1792e51ce2bb5289a20891a4532b5f06">tdc::root_childrank_support</a>
+, <a class="el" href="structtdc_1_1_suffix_tree.html#ae498fab98b5ac19e0674fb924f89a125">tdc::SuffixTree</a>
+</li>
+<li>stream()
+: <a class="el" href="classtdc_1_1_decoder.html#a30b977d40b2f2767752a99f9e0caee5c">tdc::Decoder</a>
+, <a class="el" href="classtdc_1_1_encoder.html#a7f80f215f6d3ffb62377db8228ed35ef">tdc::Encoder</a>
+</li>
+<li>string
+: <a class="el" href="structtdc_1_1lz78u_1_1_factor.html#adc461b4c985bd56b280cce1fb0809791">tdc::lz78u::Factor</a>
 </li>
 <li>substr()
 : <a class="el" href="classtdc_1_1_view.html#a360a88175a9321a550ed8df47a48e8ce">tdc::View</a>
 </li>
 <li>SuccinctListBuffer()
-: <a class="el" href="classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html#a1092e599d5bc47e6969532344d67fa34">tdc::lcpcomp::SuccinctListBuffer</a>
+: <a class="el" href="classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html#aafb5761cf3b544720789c634b1824014">tdc::lcpcomp::SuccinctListBuffer</a>
 </li>
 <li>suffix()
 : <a class="el" href="classcedar_1_1da.html#a5d53bde9e5baefff5f36b6fa9af93b42">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
 </li>
+<li>SuffixTree()
+: <a class="el" href="structtdc_1_1_suffix_tree.html#abd16014a5f609c4bde61ccf2d5a70e4d">tdc::SuffixTree</a>
+</li>
 <li>swap()
 : <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector.html#ad15a8da289be9df9c171bbc7bdf61ae9">tdc::int_vector::BitPackingVector&lt; T &gt;</a>
-, <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#af94a4ab19d3742b9adfcadd3e5781be4">tdc::int_vector::IntVector&lt; T &gt;</a>
+, <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a83c3bb1da120839bb7c285e3e2f2a8bd">tdc::int_vector::IntVector&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_view.html#a0438fe38ebda83921dafaca85e0bf0c4">tdc::View</a>
 </li>
 </ul>

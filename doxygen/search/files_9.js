@@ -9,6 +9,7 @@ var searchData=
   ['lz78common_2ehpp',['LZ78common.hpp',['../_l_z78common_8hpp.html',1,'']]],
   ['lz78compressor_2ehpp',['LZ78Compressor.hpp',['../_l_z78_compressor_8hpp.html',1,'']]],
   ['lz78trie_2ehpp',['LZ78Trie.hpp',['../_l_z78_trie_8hpp.html',1,'']]],
+  ['lz78ucompressor_2ehpp',['LZ78UCompressor.hpp',['../_l_z78_u_compressor_8hpp.html',1,'']]],
   ['lzsscoding_2ehpp',['LZSSCoding.hpp',['../_l_z_s_s_coding_8hpp.html',1,'']]],
   ['lzssdecodebackbuffer_2ehpp',['LZSSDecodeBackBuffer.hpp',['../_l_z_s_s_decode_back_buffer_8hpp.html',1,'']]],
   ['lzssfactors_2ehpp',['LZSSFactors.hpp',['../_l_z_s_s_factors_8hpp.html',1,'']]],

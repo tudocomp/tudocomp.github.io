@@ -34,6 +34,11 @@ var files =
       [ "BitOStream", "classtdc_1_1io_1_1_bit_o_stream.html", "classtdc_1_1io_1_1_bit_o_stream" ]
     ] ],
     [ "BitPackingVector.hpp", "_bit_packing_vector_8hpp.html", "_bit_packing_vector_8hpp" ],
+    [ "BufferingStrategy.hpp", "_buffering_strategy_8hpp.html", [
+      [ "BufferingStrategy", "classtdc_1_1lz78u_1_1_buffering_strategy.html", "classtdc_1_1lz78u_1_1_buffering_strategy" ],
+      [ "Compression", "classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html", "classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression" ],
+      [ "Decompression", "classtdc_1_1lz78u_1_1_buffering_strategy_1_1_decompression.html", "classtdc_1_1lz78u_1_1_buffering_strategy_1_1_decompression" ]
+    ] ],
     [ "BulldozerStrategy.hpp", "_bulldozer_strategy_8hpp.html", [
       [ "BulldozerStrategy", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy" ]
     ] ],
@@ -140,6 +145,10 @@ var files =
       [ "LZ78Compressor", "classtdc_1_1_l_z78_compressor.html", "classtdc_1_1_l_z78_compressor" ]
     ] ],
     [ "LZ78Trie.hpp", "_l_z78_trie_8hpp.html", "_l_z78_trie_8hpp" ],
+    [ "LZ78UCompressor.hpp", "_l_z78_u_compressor_8hpp.html", [
+      [ "Decompressor", "classtdc_1_1lz78u_1_1_decompressor.html", "classtdc_1_1lz78u_1_1_decompressor" ],
+      [ "LZ78UCompressor", "classtdc_1_1_l_z78_u_compressor.html", "classtdc_1_1_l_z78_u_compressor" ]
+    ] ],
     [ "LZSSCoding.hpp", "_l_z_s_s_coding_8hpp.html", "_l_z_s_s_coding_8hpp" ],
     [ "LZSSDecodeBackBuffer.hpp", "_l_z_s_s_decode_back_buffer_8hpp.html", [
       [ "DecodeBackBuffer", "classtdc_1_1lzss_1_1_decode_back_buffer.html", "classtdc_1_1lzss_1_1_decode_back_buffer" ]
@@ -210,6 +219,9 @@ var files =
     [ "PLCPStrategy.hpp", "_p_l_c_p_strategy_8hpp.html", [
       [ "PLCPStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy" ]
     ] ],
+    [ "pre_header.hpp", "pre__header_8hpp.html", [
+      [ "Factor", "structtdc_1_1lz78u_1_1_factor.html", "structtdc_1_1lz78u_1_1_factor" ]
+    ] ],
     [ "Range.hpp", "_range_8hpp.html", "_range_8hpp" ],
     [ "pre_header/Registry.hpp", "pre__header_2_registry_8hpp.html", "pre__header_2_registry_8hpp" ],
     [ "Registry.hpp", "_registry_8hpp.html", null ],
@@ -225,9 +237,15 @@ var files =
     ] ],
     [ "squeeze_node.hpp", "squeeze__node_8hpp.html", "squeeze__node_8hpp" ],
     [ "Stat.hpp", "_stat_8hpp.html", "_stat_8hpp" ],
+    [ "StreamingStrategy.hpp", "_streaming_strategy_8hpp.html", [
+      [ "StreamingStrategy", "classtdc_1_1lz78u_1_1_streaming_strategy.html", "classtdc_1_1lz78u_1_1_streaming_strategy" ],
+      [ "Compression", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression" ],
+      [ "Decompression", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression.html", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression" ]
+    ] ],
     [ "SuccinctListBuffer.hpp", "_succinct_list_buffer_8hpp.html", [
       [ "SuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer" ]
     ] ],
+    [ "SuffixTree.hpp", "_suffix_tree_8hpp.html", "_suffix_tree_8hpp" ],
     [ "TernaryTrie.hpp", "_ternary_trie_8hpp.html", [
       [ "TernaryTrie", "classtdc_1_1lz78_1_1_ternary_trie.html", "classtdc_1_1lz78_1_1_ternary_trie" ]
     ] ],

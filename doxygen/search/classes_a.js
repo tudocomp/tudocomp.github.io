@@ -15,6 +15,7 @@ var searchData=
   ['lz78trie',['LZ78Trie',['../classtdc_1_1lz78_1_1_l_z78_trie.html',1,'tdc::lz78']]],
   ['lz78trie_3c_20cedarsearchpos_20_3e',['LZ78Trie&lt; CedarSearchPos &gt;',['../classtdc_1_1lz78_1_1_l_z78_trie.html',1,'tdc::lz78']]],
   ['lz78trie_3c_20factorid_5ft_20_3e',['LZ78Trie&lt; factorid_t &gt;',['../classtdc_1_1lz78_1_1_l_z78_trie.html',1,'tdc::lz78']]],
+  ['lz78ucompressor',['LZ78UCompressor',['../classtdc_1_1_l_z78_u_compressor.html',1,'tdc']]],
   ['lzsslcpcompressor',['LZSSLCPCompressor',['../classtdc_1_1_l_z_s_s_l_c_p_compressor.html',1,'tdc']]],
   ['lzssslidingwindowcompressor',['LZSSSlidingWindowCompressor',['../classtdc_1_1_l_z_s_s_sliding_window_compressor.html',1,'tdc']]],
   ['lzwcompressor',['LZWCompressor',['../classtdc_1_1_l_z_w_compressor.html',1,'tdc']]],

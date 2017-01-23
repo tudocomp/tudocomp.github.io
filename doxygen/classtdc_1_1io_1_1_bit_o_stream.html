@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170121-jenkins-41</span>
+   &#160;<span id="projectnumber">0.170123-jenkins-50</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -323,7 +323,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Writes a compressed integer to the input. </p>
-<p>The <em>compressed</em> form of an integer <code>n</code> is achieved by splitting up the bit representation of <code>n</code> in blocks of width <code>b</code>. For each non-zero block (in little endian order), a 1-bit and the block itself is written. The compressed integer is finally terminated by a 0-bit.</p>
+<p>The <em>compressed</em> form of an integer <code>n</code> is achieved by splitting up the bit representation of <code>n</code> in blocks of width <code>b</code>. For each non-zero block (in little endian order), a bit flag and the block itself is written.</p>
+<p>The flag is set to 1 if there is another block after the current one, and otherwise set to 0 to mark the block as the last one.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">The</td><td>integer type to write. </td></tr>
@@ -338,7 +339,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00125">125</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00128">128</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>

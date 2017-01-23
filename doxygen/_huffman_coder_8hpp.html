@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170121-jenkins-41</span>
+   &#160;<span id="projectnumber">0.170123-jenkins-50</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -184,9 +184,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f1692a7985778544f1ef39058dd212f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a0f1692a7985778544f1ef39058dd212f">tdc::huff::gen_ordered_map_to_effective</a> (const uint8_t *const ordered_map_from_effective, const size_t alphabet_size)</td></tr>
 <tr class="memdesc:a0f1692a7985778544f1ef39058dd212f"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps from the full alphabet to the effective alphabet  <a href="namespacetdc_1_1huff.html#a0f1692a7985778544f1ef39058dd212f">More...</a><br /></td></tr>
 <tr class="separator:a0f1692a7985778544f1ef39058dd212f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a43aded3f0324d4d46606ef6e36be5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a7a43aded3f0324d4d46606ef6e36be5e">tdc::huff::huffman_encode</a> (literal_t input, <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const uint8_t *const ordered_codelengths, const uint8_t *const ordered_map_to_effective, const size_t alphabet_size, const size_t *const codewords)</td></tr>
-<tr class="memdesc:a7a43aded3f0324d4d46606ef6e36be5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a single literal.  <a href="namespacetdc_1_1huff.html#a7a43aded3f0324d4d46606ef6e36be5e">More...</a><br /></td></tr>
-<tr class="separator:a7a43aded3f0324d4d46606ef6e36be5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401f73490ae05c05dc2834156b4b5526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a401f73490ae05c05dc2834156b4b5526">tdc::huff::huffman_encode</a> (uliteral_t input, <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const uint8_t *const ordered_codelengths, const uint8_t *const ordered_map_to_effective, const size_t alphabet_size, const size_t *const codewords)</td></tr>
+<tr class="memdesc:a401f73490ae05c05dc2834156b4b5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a single literal.  <a href="namespacetdc_1_1huff.html#a401f73490ae05c05dc2834156b4b5526">More...</a><br /></td></tr>
+<tr class="separator:a401f73490ae05c05dc2834156b4b5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d5120200654f035a181e9ccd04a282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a29d5120200654f035a181e9ccd04a282">tdc::huff::huffman_encode</a> (std::basic_istream&lt; literal_t &gt; &amp;input, <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const size_t input_length, const uint8_t *const ordered_map_from_effective, const uint8_t *const ordered_codelengths, const size_t alphabet_size, const size_t *const codewords)</td></tr>
 <tr class="memdesc:a29d5120200654f035a181e9ccd04a282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a stream storing input_length characters.  <a href="namespacetdc_1_1huff.html#a29d5120200654f035a181e9ccd04a282">More...</a><br /></td></tr>
 <tr class="separator:a29d5120200654f035a181e9ccd04a282"><td class="memSeparator" colspan="2">&#160;</td></tr>

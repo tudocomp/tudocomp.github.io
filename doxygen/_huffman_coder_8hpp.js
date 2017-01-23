@@ -22,7 +22,7 @@ var _huffman_coder_8hpp =
     [ "gen_prefix_sum_lengths", "_huffman_coder_8hpp.html#acf47d70743347f21ad7aa500ffbbf0a8", null ],
     [ "huffman_decode", "_huffman_coder_8hpp.html#a3de6cb9b28fdc4c28c4f265dda9c5f7c", null ],
     [ "huffman_decode", "_huffman_coder_8hpp.html#a4373d466fc7d316a865c4c47ca781e13", null ],
-    [ "huffman_encode", "_huffman_coder_8hpp.html#a7a43aded3f0324d4d46606ef6e36be5e", null ],
+    [ "huffman_encode", "_huffman_coder_8hpp.html#a401f73490ae05c05dc2834156b4b5526", null ],
     [ "huffman_encode", "_huffman_coder_8hpp.html#a29d5120200654f035a181e9ccd04a282", null ],
     [ "huffmantable_decode", "_huffman_coder_8hpp.html#a5976e92a82bff612d2031886f243a268", null ],
     [ "huffmantable_encode", "_huffman_coder_8hpp.html#a5abd0ba06fa9d03e6033c22bdaf4605d", null ]

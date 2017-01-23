@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170121-jenkins-41</span>
+   &#160;<span id="projectnumber">0.170123-jenkins-50</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -194,6 +194,8 @@ $(document).ready(function(){initNavTree('functions_func_e.html','');});
 , <a class="el" href="classtdc_1_1_elias_gamma_coder_1_1_encoder.html#aa4a86c9cd5c99b8064a0a88e7a17fe0e">tdc::EliasGammaCoder::Encoder</a>
 , <a class="el" href="classtdc_1_1_encoder.html#a8c5bb8464e2156db884ad99fa5e5ce55">tdc::Encoder</a>
 , <a class="el" href="classtdc_1_1_huffman_coder_1_1_encoder.html#a900943595cd4b30030127cdbdbf4fdf3">tdc::HuffmanCoder::Encoder</a>
+, <a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#ac556b5e4ae60babf68eea1b850ee99b2">tdc::lz78u::BufferingStrategy&lt; string_coder_t &gt;::Compression&lt; ref_coder_t &gt;</a>
+, <a class="el" href="classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html#abe66c1116eb9285c3c121bf12bc9309a">tdc::lz78u::StreamingStrategy&lt; string_coder_t &gt;::Compression&lt; ref_coder_t &gt;</a>
 , <a class="el" href="classtdc_1_1_variant_coder_1_1_encoder.html#a9506e6464398ff1e5471f7001b274faa">tdc::VariantCoder&lt; int_coder_t, lit_coder_t &gt;::Encoder</a>
 </li>
 <li>Encoder()
@@ -212,6 +214,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html','');});
 , <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#adf6b8ff70ffb2009857f1ecccdbd6665">tdc::int_vector::IntVector&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1io_1_1_input_stream.html#ad2448813f9769d601efbe5c34f8466a2">tdc::io::InputStream</a>
 , <a class="el" href="classtdc_1_1_stat.html#a117ad89b85519ee100bcf1ab80c550d5">tdc::Stat</a>
+, <a class="el" href="classtdc_1_1_stat_guard.html#acd770a8ee75c1b23be78dfac58b75c9b">tdc::StatGuard</a>
 , <a class="el" href="classtdc_1_1_view.html#a0490d1eac0086b0bd3a728d1bb4dbcb0">tdc::View</a>
 </li>
 <li>end_stat_phase()
@@ -226,20 +229,23 @@ $(document).ready(function(){initNavTree('functions_func_e.html','');});
 </li>
 <li>env()
 : <a class="el" href="classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2">tdc::Algorithm</a>
+, <a class="el" href="classtdc_1_1_builder.html#a959e724af8ece7df7821c49d825a3d69">tdc::Builder&lt; T &gt;</a>
 </li>
 <li>Env()
-: <a class="el" href="classtdc_1_1_env.html#ad1a52618a8c9ff54b5dec43d8026ffb1">tdc::Env</a>
+: <a class="el" href="classtdc_1_1_env.html#a354f3926dc0dcf16d3dc226c99665d17">tdc::Env</a>
 </li>
 <li>env_for_option()
 : <a class="el" href="classtdc_1_1_env.html#aa1553e3b3a62eda47ca27b556ebe0500">tdc::Env</a>
 </li>
 <li>EnvRoot()
-: <a class="el" href="classtdc_1_1_env_root.html#ae121935c7af5879924a9a756efdd9cc2">tdc::EnvRoot</a>
+: <a class="el" href="classtdc_1_1_env_root.html#a6a8a96f9eef7f3e204e94070cfa24f5d">tdc::EnvRoot</a>
 </li>
 <li>eof()
 : <a class="el" href="classtdc_1_1_code2_coder_1_1_decoder.html#a59a182415aa93037c574d6282f536099">tdc::Code2Coder::Decoder</a>
 , <a class="el" href="classtdc_1_1_decoder.html#a684e81243050cf132ba9fc67f44bcdbc">tdc::Decoder</a>
 , <a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html#ace14321f2a60834ddd9050d503eb3087">tdc::io::BitIStream</a>
+, <a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_decompression.html#ae8d5004eb37a908954e02a692e0041a3">tdc::lz78u::BufferingStrategy&lt; string_coder_t &gt;::Decompression&lt; ref_coder_t &gt;</a>
+, <a class="el" href="classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression.html#acecec02b773d2772dbeda1381e8f473b">tdc::lz78u::StreamingStrategy&lt; string_coder_t &gt;::Decompression&lt; ref_coder_t &gt;</a>
 </li>
 <li>erase()
 : <a class="el" href="classcedar_1_1da.html#a90290057a2d7d6b3ac24e3c8d0ec55f2">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
@@ -250,7 +256,7 @@ $(document).ready(function(){initNavTree('functions_func_e.html','');});
 : <a class="el" href="classtdc_1_1_env.html#aca753d3435654906ca1b4aa751d0105d">tdc::Env</a>
 </li>
 <li>exactMatchSearch()
-: <a class="el" href="classcedar_1_1da.html#a84373926093b9a1a80ae7285be9ce6f4">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
+: <a class="el" href="classcedar_1_1da.html#a345b6a85d2d700f4b8d3e35a7df8de86">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
 </li>
 <li>extended_huffmantable()
 : <a class="el" href="structtdc_1_1huff_1_1extended__huffmantable.html#a66592a041b3b7a3a58942e5e54b3fceb">tdc::huff::extended_huffmantable</a>

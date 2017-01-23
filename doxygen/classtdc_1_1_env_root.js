@@ -9,5 +9,6 @@ var classtdc_1_1_env_root =
     [ "finish_stats", "classtdc_1_1_env_root.html#a249c4fb7147bef47196d8eb448a94f5e", null ],
     [ "log_stat", "classtdc_1_1_env_root.html#af56dabff5a2264d71e5af14955d85523", null ],
     [ "restart_stats", "classtdc_1_1_env_root.html#ac44abf2679aa88f9fbcf225377b940fb", null ],
-    [ "stat_current", "classtdc_1_1_env_root.html#aa2a178ef89806cdb1ee72943b2f4e030", null ]
+    [ "stat_current", "classtdc_1_1_env_root.html#aa2a178ef89806cdb1ee72943b2f4e030", null ],
+    [ "stat_phase", "classtdc_1_1_env_root.html#a62847ab759c013247093eecd700799c7", null ]
 ];

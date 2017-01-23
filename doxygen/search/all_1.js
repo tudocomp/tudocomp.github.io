@@ -5,7 +5,7 @@ var searchData=
   ['add_5fstat',['add_stat',['../classtdc_1_1_stat.html#a16610cae5ded2955e9c13e245e2f48a5',1,'tdc::Stat']]],
   ['add_5fsub',['add_sub',['../classtdc_1_1_stat.html#ae25decab27fdfa443062ae44466134e8',1,'tdc::Stat']]],
   ['algo_5fvalue',['algo_value',['../classtdc_1_1_env_root.html#a4c885352c3a02f14e90b4bc9b1c8b6b9',1,'tdc::EnvRoot']]],
-  ['algorithm',['algorithm',['../classtdc__driver_1_1_options.html#ad6b5cf030d52ada7614d062cdf1b0edc',1,'tdc_driver::Options::algorithm()'],['../classtdc_1_1_algorithm.html#a7829ccc7b55c1b5a9192cf1c92091a4d',1,'tdc::Algorithm::Algorithm()']]],
+  ['algorithm',['Algorithm',['../classtdc_1_1_algorithm.html#a7829ccc7b55c1b5a9192cf1c92091a4d',1,'tdc::Algorithm::Algorithm()'],['../classtdc__driver_1_1_options.html#ad6b5cf030d52ada7614d062cdf1b0edc',1,'tdc_driver::Options::algorithm()']]],
   ['algorithm',['Algorithm',['../classtdc_1_1_algorithm.html',1,'tdc']]],
   ['algorithm_2ehpp',['Algorithm.hpp',['../_algorithm_8hpp.html',1,'']]],
   ['algorithm_5fmap',['algorithm_map',['../classtdc_1_1_registry.html#a961b331e881e5d42335cdae7441f13f4',1,'tdc::Registry::algorithm_map()'],['../classtdc_1_1_registry.html#a7ab0f10eb4edd412427ed59e6e30d1b3',1,'tdc::Registry::algorithm_map() const ']]],
