@@ -68,7 +68,7 @@ var NAVTREEINDEX5 =
 "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html":[2,0,2,4,13],
 "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html#a1f76a67f26580672a113977c74354343":[2,0,2,4,13,0],
 "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html":[2,0,2,4,14],
-"classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html#a0f5af56e27352b2d6ff2befef0d95ed5":[2,0,2,4,14,0],
+"classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html#af916315f3bcdc2691702e180b286ce92":[2,0,2,4,14,0],
 "classtdc_1_1lcpcomp_1_1_scan_dec.html":[2,0,2,4,15],
 "classtdc_1_1lcpcomp_1_1_scan_dec.html#a07a60ef941b33e8e8491b4555e70ecc7":[2,0,2,4,15,1],
 "classtdc_1_1lcpcomp_1_1_scan_dec.html#a347ec8b77542c2ea11f54ff61b2083e6":[2,0,2,4,15,4],
