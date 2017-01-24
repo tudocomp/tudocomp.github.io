@@ -15,6 +15,7 @@ var util_8hpp =
     [ "make_table", "util_8hpp.html#ac2a10387b70657216645cea709e9e896", null ],
     [ "parse_number_until_other", "util_8hpp.html#a171f201db5f433e36c061007e771daf7", null ],
     [ "split_lines", "util_8hpp.html#a73c1223b1b18959f190ceced8714c17a", null ],
+    [ "to_str", "util_8hpp.html#aa2239ba97875cc0883cf1423a3fcc821", null ],
     [ "vec_as_lossy_string", "util_8hpp.html#a771e16ce84612405ce15071783a40b9b", null ],
     [ "vec_to_debug_string", "util_8hpp.html#a01422de40a3cec8d977061bd171abb58", null ]
 ];

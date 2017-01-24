@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['eagerscandec',['EagerScanDec',['../classtdc_1_1lcpcomp_1_1_eager_scan_dec.html',1,'tdc::lcpcomp']]],
   ['easyrlecompressor',['EasyRLECompressor',['../classtdc_1_1_easy_r_l_e_compressor.html',1,'tdc']]],
   ['eliasdeltacoder',['EliasDeltaCoder',['../classtdc_1_1_elias_delta_coder.html',1,'tdc']]],
   ['eliasgammacoder',['EliasGammaCoder',['../classtdc_1_1_elias_gamma_coder.html',1,'tdc']]],
@@ -9,14 +10,14 @@ var searchData=
   ['enable_5fif_3c_28n_3c_3d32_29_3e_3a_3atype_20_3e',['enable_if&lt;(N&lt;=32)&gt;::type &gt;',['../structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html',1,'tdc']]],
   ['enable_5fif_3c_28n_3c_3d32_29_3e_3a_3atype_20_3e',['enable_if&lt;(N&lt;=32)&gt;::type &gt;',['../structtdc_1_1_const_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if98931aa7cbfcd97f62e54965a157a76a.html',1,'tdc']]],
   ['enable_5fif_3c_28n_3c_3d32_29_3e_3a_3atype_20_3e',['enable_if&lt;(N&lt;=32)&gt;::type &gt;',['../structtdc_1_1_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if_3_07_n_3_0A32_08_4_1_1type_01_4.html',1,'tdc']]],
-  ['encoder',['Encoder',['../classtdc_1_1_code2_coder_1_1_encoder.html',1,'tdc::Code2Coder']]],
-  ['encoder',['Encoder',['../classtdc_1_1_elias_gamma_coder_1_1_encoder.html',1,'tdc::EliasGammaCoder']]],
-  ['encoder',['Encoder',['../classtdc_1_1_a_s_c_i_i_coder_1_1_encoder.html',1,'tdc::ASCIICoder']]],
-  ['encoder',['Encoder',['../classtdc_1_1_variant_coder_1_1_encoder.html',1,'tdc::VariantCoder']]],
-  ['encoder',['Encoder',['../classtdc_1_1_elias_delta_coder_1_1_encoder.html',1,'tdc::EliasDeltaCoder']]],
   ['encoder',['Encoder',['../classtdc_1_1_huffman_coder_1_1_encoder.html',1,'tdc::HuffmanCoder']]],
-  ['encoder',['Encoder',['../classtdc_1_1_bit_coder_1_1_encoder.html',1,'tdc::BitCoder']]],
+  ['encoder',['Encoder',['../classtdc_1_1_variant_coder_1_1_encoder.html',1,'tdc::VariantCoder']]],
+  ['encoder',['Encoder',['../classtdc_1_1_code2_coder_1_1_encoder.html',1,'tdc::Code2Coder']]],
+  ['encoder',['Encoder',['../classtdc_1_1_a_s_c_i_i_coder_1_1_encoder.html',1,'tdc::ASCIICoder']]],
+  ['encoder',['Encoder',['../classtdc_1_1_elias_delta_coder_1_1_encoder.html',1,'tdc::EliasDeltaCoder']]],
   ['encoder',['Encoder',['../classtdc_1_1_encoder.html',1,'tdc']]],
+  ['encoder',['Encoder',['../classtdc_1_1_elias_gamma_coder_1_1_encoder.html',1,'tdc::EliasGammaCoder']]],
+  ['encoder',['Encoder',['../classtdc_1_1_bit_coder_1_1_encoder.html',1,'tdc::BitCoder']]],
   ['env',['Env',['../classtdc_1_1_env.html',1,'tdc']]],
   ['envroot',['EnvRoot',['../classtdc_1_1_env_root.html',1,'tdc']]],
   ['extended_5fhuffmantable',['extended_huffmantable',['../structtdc_1_1huff_1_1extended__huffmantable.html',1,'tdc::huff']]]

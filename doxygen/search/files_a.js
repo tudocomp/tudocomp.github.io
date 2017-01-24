@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['lazyliststrategy_2ehpp',['LazyListStrategy.hpp',['../_lazy_list_strategy_8hpp.html',1,'']]],
-  ['lazysuccinctlistbuffer_2ehpp',['LazySuccinctListBuffer.hpp',['../_lazy_succinct_list_buffer_8hpp.html',1,'']]],
   ['lcpcompressor_2ehpp',['LCPCompressor.hpp',['../_l_c_p_compressor_8hpp.html',1,'']]],
   ['lcpfromplcp_2ehpp',['LCPFromPLCP.hpp',['../_l_c_p_from_p_l_c_p_8hpp.html',1,'']]],
   ['literal_2ehpp',['Literal.hpp',['../_literal_8hpp.html',1,'']]],

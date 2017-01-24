@@ -12,6 +12,9 @@ var files =
     [ "ArrayMaxHeap.hpp", "_array_max_heap_8hpp.html", [
       [ "ArrayMaxHeap", "classtdc_1_1_array_max_heap.html", "classtdc_1_1_array_max_heap" ]
     ] ],
+    [ "ArraysComp.hpp", "_arrays_comp_8hpp.html", [
+      [ "ArraysComp", "classtdc_1_1lcpcomp_1_1_arrays_comp.html", "classtdc_1_1lcpcomp_1_1_arrays_comp" ]
+    ] ],
     [ "ASCIICoder.hpp", "_a_s_c_i_i_coder_8hpp.html", [
       [ "ASCIICoder", "classtdc_1_1_a_s_c_i_i_coder.html", "classtdc_1_1_a_s_c_i_i_coder" ],
       [ "Encoder", "classtdc_1_1_a_s_c_i_i_coder_1_1_encoder.html", "classtdc_1_1_a_s_c_i_i_coder_1_1_encoder" ],
@@ -59,6 +62,9 @@ var files =
       [ "Decoder", "classtdc_1_1_code2_coder_1_1_decoder.html", "classtdc_1_1_code2_coder_1_1_decoder" ]
     ] ],
     [ "Coder.hpp", "_coder_8hpp.html", "_coder_8hpp" ],
+    [ "CompactDec.hpp", "_compact_dec_8hpp.html", [
+      [ "CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", "classtdc_1_1lcpcomp_1_1_compact_dec" ]
+    ] ],
     [ "CompressMode.hpp", "_compress_mode_8hpp.html", "_compress_mode_8hpp" ],
     [ "Compressor.hpp", "_compressor_8hpp.html", [
       [ "Compressor", "classtdc_1_1_compressor.html", "classtdc_1_1_compressor" ]
@@ -127,13 +133,6 @@ var files =
     ] ],
     [ "Json.hpp", "_json_8hpp.html", "_json_8hpp" ],
     [ "JudyTrie.hpp", "_judy_trie_8hpp.html", null ],
-    [ "LazyListStrategy.hpp", "_lazy_list_strategy_8hpp.html", [
-      [ "LazyListStrategy", "classtdc_1_1lcpcomp_1_1_lazy_list_strategy.html", "classtdc_1_1lcpcomp_1_1_lazy_list_strategy" ]
-    ] ],
-    [ "LazySuccinctListBuffer.hpp", "_lazy_succinct_list_buffer_8hpp.html", [
-      [ "LazyDecoder", "classtdc_1_1lcpcomp_1_1_lazy_decoder.html", "classtdc_1_1lcpcomp_1_1_lazy_decoder" ],
-      [ "LazySuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer" ]
-    ] ],
     [ "LCPCompressor.hpp", "_l_c_p_compressor_8hpp.html", "_l_c_p_compressor_8hpp" ],
     [ "LCPFromPLCP.hpp", "_l_c_p_from_p_l_c_p_8hpp.html", [
       [ "LCPFromPLCP", "classtdc_1_1_l_c_p_from_p_l_c_p.html", "classtdc_1_1_l_c_p_from_p_l_c_p" ]
@@ -248,15 +247,16 @@ var files =
     [ "SADivSufSort.hpp", "_s_a_div_suf_sort_8hpp.html", [
       [ "SADivSufSort", "classtdc_1_1_s_a_div_suf_sort.html", "classtdc_1_1_s_a_div_suf_sort" ]
     ] ],
+    [ "ScanDec.hpp", "_scan_dec_8hpp.html", [
+      [ "EagerScanDec", "classtdc_1_1lcpcomp_1_1_eager_scan_dec.html", "classtdc_1_1lcpcomp_1_1_eager_scan_dec" ],
+      [ "ScanDec", "classtdc_1_1lcpcomp_1_1_scan_dec.html", "classtdc_1_1lcpcomp_1_1_scan_dec" ]
+    ] ],
     [ "squeeze_node.hpp", "squeeze__node_8hpp.html", "squeeze__node_8hpp" ],
     [ "Stat.hpp", "_stat_8hpp.html", "_stat_8hpp" ],
     [ "StreamingStrategy.hpp", "_streaming_strategy_8hpp.html", [
       [ "StreamingStrategy", "classtdc_1_1lz78u_1_1_streaming_strategy.html", "classtdc_1_1lz78u_1_1_streaming_strategy" ],
       [ "Compression", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression" ],
       [ "Decompression", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression.html", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression" ]
-    ] ],
-    [ "SuccinctListBuffer.hpp", "_succinct_list_buffer_8hpp.html", [
-      [ "SuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer" ]
     ] ],
     [ "SuffixTree.hpp", "_suffix_tree_8hpp.html", "_suffix_tree_8hpp" ],
     [ "TernaryTrie.hpp", "_ternary_trie_8hpp.html", [

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['eagerscandec',['EagerScanDec',['../classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#aa84a5ca4dda12b1954aded9fda3d6605',1,'tdc::lcpcomp::EagerScanDec']]],
   ['easyrlecompressor',['EasyRLECompressor',['../classtdc_1_1_easy_r_l_e_compressor.html#affd4d8891952341856edc7ac392675e1',1,'tdc::EasyRLECompressor']]],
   ['effective_5falphabet_5fsize',['effective_alphabet_size',['../namespacetdc_1_1huff.html#ad50fbec7607011c23f4e5a797327bf1f',1,'tdc::huff']]],
   ['elem2bits',['elem2bits',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#ac93e6e62dd2e2c97154c46e812c98a1f',1,'tdc::int_vector::BitPackingVector']]],

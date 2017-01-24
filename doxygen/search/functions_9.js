@@ -2,7 +2,7 @@ var searchData=
 [
   ['id',['id',['../classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html#a196cbe2df29e601b11728074be28dd40',1,'tdc::lz78::TrieNode&lt; CedarSearchPos &gt;::id()'],['../classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#a50e9865f2c9c93e2d19303c4e50082bf',1,'tdc::lz78::TrieNode&lt; factorid_t &gt;::id()']]],
   ['idiv_5fceil',['idiv_ceil',['../namespacetdc.html#a7ec63fd837b6b882343204753d47648a',1,'tdc']]],
-  ['if_5fstats',['IF_STATS',['../classtdc_1_1lcpcomp_1_1_lazy_decoder.html#a4432084fd6db2d7760f5bc07d240d942',1,'tdc::lcpcomp::LazyDecoder::IF_STATS()'],['../classtdc_1_1lcpcomp_1_1_multimap_buffer.html#a6a769a56e54c7ae7dae5104ad0c7c3f9',1,'tdc::lcpcomp::MultimapBuffer::IF_STATS()']]],
+  ['if_5fstats',['IF_STATS',['../classtdc_1_1lcpcomp_1_1_multimap_buffer.html#a6a769a56e54c7ae7dae5104ad0c7c3f9',1,'tdc::lcpcomp::MultimapBuffer::IF_STATS()'],['../classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a5d9b13df76ef721a5d2c022a2c14ad0d',1,'tdc::lcpcomp::EagerScanDec::IF_STATS()']]],
   ['ilg',['ilg',['../namespacetdc_1_1libdivsufsort.html#ab2cc2462b272f3cef126f3973be7d625',1,'tdc::libdivsufsort']]],
   ['ilg_3c_20int32_5ft_20_3e',['ilg&lt; int32_t &gt;',['../namespacetdc_1_1libdivsufsort.html#a8495000f49b5ad820f7ca280174a2912',1,'tdc::libdivsufsort']]],
   ['ilg_3c_20int64_5ft_20_3e',['ilg&lt; int64_t &gt;',['../namespacetdc_1_1libdivsufsort.html#ac357e585c384fc81bf5851bd447e1cb3',1,'tdc::libdivsufsort']]],

@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170124-jenkins-54</span>
+   &#160;<span id="projectnumber">0.170124-jenkins-55</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -139,10 +139,10 @@ Inheritance diagram for tdc::Algorithm:</div>
 <area href="classtdc_1_1_encoder.html" title="Base for data encoders. " alt="tdc::Encoder" shape="rect" coords="472,504,934,528"/>
 <area href="classtdc_1_1_generator.html" title="Base for string generators. " alt="tdc::Generator" shape="rect" coords="472,560,934,584"/>
 <area href="classtdc_1_1_huffman_coder.html" alt="tdc::HuffmanCoder" shape="rect" coords="472,616,934,640"/>
-<area href="classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html" title="Implements the &quot;Bulldozer&quot; selection strategy for LCPComp. " alt="tdc::lcpcomp::BulldozerStrategy" shape="rect" coords="472,672,934,696"/>
-<area href="classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html" alt="tdc::lcpcomp::DecodeForwardQueueListBuffer" shape="rect" coords="472,728,934,752"/>
-<area href="classtdc_1_1lcpcomp_1_1_lazy_list_strategy.html" title="Creates arrays instead of an LCP-heap Each array corresponds to one LCP value We do not eagerly invok..." alt="tdc::lcpcomp::LazyListStrategy" shape="rect" coords="472,784,934,808"/>
-<area href="classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html" alt="tdc::lcpcomp::LazySuccinctListBuffer" shape="rect" coords="472,840,934,864"/>
+<area href="classtdc_1_1lcpcomp_1_1_arrays_comp.html" title="Creates arrays instead of an LCP-heap Each array corresponds to one LCP value We do not eagerly invok..." alt="tdc::lcpcomp::ArraysComp" shape="rect" coords="472,672,934,696"/>
+<area href="classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html" title="Implements the &quot;Bulldozer&quot; selection strategy for LCPComp. " alt="tdc::lcpcomp::BulldozerStrategy" shape="rect" coords="472,728,934,752"/>
+<area href="classtdc_1_1lcpcomp_1_1_compact_dec.html" alt="tdc::lcpcomp::CompactDec" shape="rect" coords="472,784,934,808"/>
+<area href="classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html" alt="tdc::lcpcomp::DecodeForwardQueueListBuffer" shape="rect" coords="472,840,934,864"/>
 <area href="classtdc_1_1lcpcomp_1_1_marvin_buffer.html" alt="tdc::lcpcomp::MarvinBuffer" shape="rect" coords="472,896,934,920"/>
 <area href="classtdc_1_1lcpcomp_1_1_max_heap_strategy.html" title="Implements the original &quot;Max LCP&quot; selection strategy for LCPComp. " alt="tdc::lcpcomp::MaxHeapStrategy" shape="rect" coords="472,952,934,976"/>
 <area href="classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html" title="Implements the original &quot;Max LCP&quot; selection strategy for LCPComp. " alt="tdc::lcpcomp::MaxLCPStrategy" shape="rect" coords="472,1008,934,1032"/>
@@ -151,7 +151,7 @@ Inheritance diagram for tdc::Algorithm:</div>
 <area href="classtdc_1_1lcpcomp_1_1_naive_strategy.html" title="A very naive selection strategy for LCPComp. " alt="tdc::lcpcomp::NaiveStrategy" shape="rect" coords="472,1176,934,1200"/>
 <area href="classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html" title="A very naive selection strategy for LCPComp. " alt="tdc::lcpcomp::PLCPPeaksStrategy" shape="rect" coords="472,1232,934,1256"/>
 <area href="classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html" title="A very naive selection strategy for LCPComp. " alt="tdc::lcpcomp::PLCPStrategy" shape="rect" coords="472,1288,934,1312"/>
-<area href="classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html" alt="tdc::lcpcomp::SuccinctListBuffer" shape="rect" coords="472,1344,934,1368"/>
+<area href="classtdc_1_1lcpcomp_1_1_scan_dec.html" title="Runs a number of scans of the factors. " alt="tdc::lcpcomp::ScanDec" shape="rect" coords="472,1344,934,1368"/>
 <area href="classtdc_1_1lz78_1_1_binary_sorted_trie.html" alt="tdc::lz78::BinarySortedTrie" shape="rect" coords="472,1400,934,1424"/>
 <area href="classtdc_1_1lz78_1_1_binary_trie.html" alt="tdc::lz78::BinaryTrie" shape="rect" coords="472,1456,934,1480"/>
 <area href="classtdc_1_1lz78_1_1_cedar_trie.html" alt="tdc::lz78::CedarTrie" shape="rect" coords="472,1512,934,1536"/>
@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
 <p>This is the base for classes that use an environment (<a class="el" href="classtdc_1_1_env.html">Env</a>) to receive options or communicate with the framework in different ways.</p>
 <p>Algorithms are required to implement also a static function <code>meta()</code> that returns a <a class="el" href="classtdc_1_1_meta.html" title="Provides meta information about an Algorithm. ">Meta</a> object, containing information about the algorithm. </p>
 
-<p>Definition at line <a class="el" href="_algorithm_8hpp_source.html#l00018">18</a> of file <a class="el" href="_algorithm_8hpp_source.html">Algorithm.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_algorithm_8hpp_source.html#l00019">19</a> of file <a class="el" href="_algorithm_8hpp_source.html">Algorithm.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7829ccc7b55c1b5a9192cf1c92091a4d"></a>
 <div class="memitem">
@@ -215,7 +215,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_algorithm_8hpp_source.html#l00028">28</a> of file <a class="el" href="_algorithm_8hpp_source.html">Algorithm.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_algorithm_8hpp_source.html#l00029">29</a> of file <a class="el" href="_algorithm_8hpp_source.html">Algorithm.hpp</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ Public Member Functions</h2></td></tr>
 <p>Provides access to the environment that the algorithm works in. </p>
 <dl class="section return"><dt>Returns</dt><dd>The environment that the algorithm works in. </dd></dl>
 
-<p>Definition at line <a class="el" href="_algorithm_8hpp_source.html#l00032">32</a> of file <a class="el" href="_algorithm_8hpp_source.html">Algorithm.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_algorithm_8hpp_source.html#l00033">33</a> of file <a class="el" href="_algorithm_8hpp_source.html">Algorithm.hpp</a>.</p>
 
 </div>
 </div>

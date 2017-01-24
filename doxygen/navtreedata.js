@@ -45,12 +45,12 @@ var NAVTREEINDEX =
 "_a_s_c_i_i_coder_8hpp.html",
 "_options_8hpp.html#a1c454c319c4abe6c6289504aa59a885b",
 "classtdc_1_1_const_integer_base_with64.html#a38d0e88c23e662a2a56f86b02e5ef632",
-"classtdc_1_1_noop_compressor.html#ae5744f2c73c866b86e41336dbb01ef84",
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a195f3f9bd470fad3ba33a43e874bd0e7",
-"classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#ad491eeeaa22c7893be2ce06968201c72",
-"classtdc_1_1uint__t.html#ae6b09101e87adf77bdf82f225240f32a",
-"namespacetdc_1_1lcpcomp.html",
-"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#ae6374af623f413ae2bc3684b148ef978"
+"classtdc_1_1_no_literals.html#ae14cf88168c6e377c9feb88801e81174",
+"classtdc_1_1int__vector_1_1_generic_int_ptr.html#afb99fdf35114b2ba66af0c088799a5e9",
+"classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#aaf7623b4388b0bfe3414de8b89968c00",
+"classtdc_1_1uint__t.html#ad63b2761a80482278297512c6d127fd2",
+"namespacetdc_1_1io.html",
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#aa36418bda14a36e1a8e40d71927adc93"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

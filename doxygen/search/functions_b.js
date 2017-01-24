@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['lazydecoder',['LazyDecoder',['../classtdc_1_1lcpcomp_1_1_lazy_decoder.html#a1a468c1f6dc9cf142be346dc148abaab',1,'tdc::lcpcomp::LazyDecoder']]],
-  ['lazysuccinctlistbuffer',['LazySuccinctListBuffer',['../classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#afa9e5194951cbadc13ad8a65893d5bb2',1,'tdc::lcpcomp::LazySuccinctListBuffer::LazySuccinctListBuffer(LazySuccinctListBuffer &amp;&amp;other)'],['../classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#ae155824f0f2003e029dcd6af8e132d67',1,'tdc::lcpcomp::LazySuccinctListBuffer::LazySuccinctListBuffer(Env &amp;&amp;env, len_t size)']]],
   ['lcpcompressor',['LCPCompressor',['../classtdc_1_1_l_c_p_compressor.html#a8f271ae8db7090759ce7a399e69bf2cf',1,'tdc::LCPCompressor']]],
   ['lcpfromplcp',['LCPFromPLCP',['../classtdc_1_1_l_c_p_from_p_l_c_p.html#aa1999d1f54b11d3a40ca7d10f348bfd7',1,'tdc::LCPFromPLCP']]],
   ['leafrank',['leafrank',['../structtdc_1_1_suffix_tree.html#a48202872edc5a21e0900e1c401b2b274',1,'tdc::SuffixTree']]],

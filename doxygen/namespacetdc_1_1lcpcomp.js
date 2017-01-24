@@ -1,10 +1,10 @@
 var namespacetdc_1_1lcpcomp =
 [
+    [ "ArraysComp", "classtdc_1_1lcpcomp_1_1_arrays_comp.html", "classtdc_1_1lcpcomp_1_1_arrays_comp" ],
     [ "BulldozerStrategy", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy" ],
+    [ "CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", "classtdc_1_1lcpcomp_1_1_compact_dec" ],
     [ "DecodeForwardQueueListBuffer", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer" ],
-    [ "LazyDecoder", "classtdc_1_1lcpcomp_1_1_lazy_decoder.html", "classtdc_1_1lcpcomp_1_1_lazy_decoder" ],
-    [ "LazyListStrategy", "classtdc_1_1lcpcomp_1_1_lazy_list_strategy.html", "classtdc_1_1lcpcomp_1_1_lazy_list_strategy" ],
-    [ "LazySuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer" ],
+    [ "EagerScanDec", "classtdc_1_1lcpcomp_1_1_eager_scan_dec.html", "classtdc_1_1lcpcomp_1_1_eager_scan_dec" ],
     [ "MarvinBuffer", "classtdc_1_1lcpcomp_1_1_marvin_buffer.html", "classtdc_1_1lcpcomp_1_1_marvin_buffer" ],
     [ "MaxHeapStrategy", "classtdc_1_1lcpcomp_1_1_max_heap_strategy.html", "classtdc_1_1lcpcomp_1_1_max_heap_strategy" ],
     [ "MaxLCPStrategy", "classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy" ],
@@ -15,5 +15,5 @@ var namespacetdc_1_1lcpcomp =
     [ "NaiveStrategy", "classtdc_1_1lcpcomp_1_1_naive_strategy.html", "classtdc_1_1lcpcomp_1_1_naive_strategy" ],
     [ "PLCPPeaksStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy" ],
     [ "PLCPStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy" ],
-    [ "SuccinctListBuffer", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer.html", "classtdc_1_1lcpcomp_1_1_succinct_list_buffer" ]
+    [ "ScanDec", "classtdc_1_1lcpcomp_1_1_scan_dec.html", "classtdc_1_1lcpcomp_1_1_scan_dec" ]
 ];

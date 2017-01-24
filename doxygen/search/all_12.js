@@ -6,7 +6,7 @@ var searchData=
   ['range',['Range',['../classtdc_1_1_range.html',1,'tdc']]],
   ['range_2ehpp',['Range.hpp',['../_range_8hpp.html',1,'']]],
   ['range_5fcheck',['range_check',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#aa62c54343ca59a9b81de95b5f1662860',1,'tdc::int_vector::BitPackingVector']]],
-  ['rank',['rank',['../classtdc_1_1lcpcomp_1_1_lazy_decoder.html#a68efbb4bf4fa06ba999fb8c2012a815d',1,'tdc::lcpcomp::LazyDecoder::rank()'],['../classtdc_1_1root__childrank__support.html#a3b96b507d609622bcb876912277f6222',1,'tdc::root_childrank_support::rank()']]],
+  ['rank',['rank',['../classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a324225b6da79f4f04658a96e394a9093',1,'tdc::lcpcomp::EagerScanDec::rank()'],['../classtdc_1_1root__childrank__support.html#a3b96b507d609622bcb876912277f6222',1,'tdc::root_childrank_support::rank()']]],
   ['ranking_5ft',['ranking_t',['../classtdc_1_1_counter.html#a58281fd50a91530e73b644a809f84f64',1,'tdc::Counter']]],
   ['raw',['raw',['../classtdc__driver_1_1_options.html#a26ffa5b835a0ba6d73f6463cea0d6f18',1,'tdc_driver::Options']]],
   ['raw_5fwidth',['raw_width',['../structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01uint__t_3_01_n_01_4_01_4.html#ad64f0c2479ec4dcbe5a5cc66a7cb7bb7',1,'tdc::int_vector::BitPackingVectorBase&lt; uint_t&lt; N &gt; &gt;::raw_width()'],['../structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#ae3d2dc02c2342c96a6dbc3082529b52d',1,'tdc::int_vector::BitPackingVectorBase&lt; dynamic_t &gt;::raw_width()']]],
