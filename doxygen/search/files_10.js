@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['ternarytrie_2ehpp',['TernaryTrie.hpp',['../_ternary_trie_8hpp.html',1,'']]],
-  ['textds_2ehpp',['TextDS.hpp',['../_text_d_s_8hpp.html',1,'']]],
-  ['tudocomp_2ehpp',['tudocomp.hpp',['../tudocomp_8hpp.html',1,'']]]
+  ['sadivsufsort_2ehpp',['SADivSufSort.hpp',['../_s_a_div_suf_sort_8hpp.html',1,'']]],
+  ['squeeze_5fnode_2ehpp',['squeeze_node.hpp',['../squeeze__node_8hpp.html',1,'']]],
+  ['stat_2ehpp',['Stat.hpp',['../_stat_8hpp.html',1,'']]],
+  ['streamingstrategy_2ehpp',['StreamingStrategy.hpp',['../_streaming_strategy_8hpp.html',1,'']]],
+  ['succinctlistbuffer_2ehpp',['SuccinctListBuffer.hpp',['../_succinct_list_buffer_8hpp.html',1,'']]],
+  ['suffixtree_2ehpp',['SuffixTree.hpp',['../_suffix_tree_8hpp.html',1,'']]]
 ];

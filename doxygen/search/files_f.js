@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['sadivsufsort_2ehpp',['SADivSufSort.hpp',['../_s_a_div_suf_sort_8hpp.html',1,'']]],
-  ['squeeze_5fnode_2ehpp',['squeeze_node.hpp',['../squeeze__node_8hpp.html',1,'']]],
-  ['stat_2ehpp',['Stat.hpp',['../_stat_8hpp.html',1,'']]],
-  ['streamingstrategy_2ehpp',['StreamingStrategy.hpp',['../_streaming_strategy_8hpp.html',1,'']]],
-  ['succinctlistbuffer_2ehpp',['SuccinctListBuffer.hpp',['../_succinct_list_buffer_8hpp.html',1,'']]],
-  ['suffixtree_2ehpp',['SuffixTree.hpp',['../_suffix_tree_8hpp.html',1,'']]]
+  ['randomuniformgenerator_2ehpp',['RandomUniformGenerator.hpp',['../_random_uniform_generator_8hpp.html',1,'']]],
+  ['range_2ehpp',['Range.hpp',['../_range_8hpp.html',1,'']]],
+  ['registry_2ehpp',['Registry.hpp',['../_registry_8hpp.html',1,'']]],
+  ['repaircompressor_2ehpp',['RePairCompressor.hpp',['../_re_pair_compressor_8hpp.html',1,'']]],
+  ['runlengthencoder_2ehpp',['RunLengthEncoder.hpp',['../_run_length_encoder_8hpp.html',1,'']]],
+  ['runrichgenerator_2ehpp',['RunRichGenerator.hpp',['../_run_rich_generator_8hpp.html',1,'']]]
 ];

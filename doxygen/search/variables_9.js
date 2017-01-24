@@ -1,14 +1,8 @@
 var searchData=
 [
-  ['lcp',['LCP',['../classtdc_1_1_text_d_s.html#a03915407f300501c84691302b761988f',1,'tdc::TextDS']]],
-  ['len',['len',['../classtdc_1_1lzss_1_1_factor.html#ad04b17434c60ad3b9cde2bb130d92d1a',1,'tdc::lzss::Factor::len()'],['../_l_z_s_s_factors_8hpp.html#a0ace850f65d5318bf76fb93d5901e60b',1,'len():&#160;LZSSFactors.hpp']]],
-  ['len_5fbits',['LEN_BITS',['../namespacetdc.html#aafe2c20214884f91eaa4522ab68e7cb1',1,'tdc']]],
-  ['len_5fmax',['LEN_MAX',['../namespacetdc.html#a920f87726ac2ea33688187352607343e',1,'tdc']]],
-  ['len_5fr',['len_r',['../namespacetdc.html#aec12d4210d9d256411da11752a3a6943',1,'tdc']]],
-  ['length',['length',['../structcedar_1_1da_1_1result__pair__type.html#a58ac4b84f2b1e7222b0fa0abaa4d6b3f',1,'cedar::da::result_pair_type::length()'],['../structcedar_1_1da_1_1result__triple__type.html#ad993bed1a4e6c347676544f0579e5676',1,'cedar::da::result_triple_type::length()']]],
-  ['lg_5ftable',['lg_table',['../namespacetdc_1_1libdivsufsort.html#ac2fb333c0d8ac34d4df4b8532651d810',1,'tdc::libdivsufsort']]],
-  ['list',['list',['../classtdc__driver_1_1_options.html#a8fac196db0db1d0d0924e8af5aa372dc',1,'tdc_driver::Options']]],
-  ['literal_5fr',['literal_r',['../namespacetdc.html#a247a904fd8b4d4245d6f5c53b6a5d6dd',1,'tdc']]],
-  ['load_5ffactor',['load_factor',['../classtdc_1_1lcpcomp_1_1_my_hash.html#afe9c8b21d1b8d449d400196554b46fab',1,'tdc::lcpcomp::MyHash::load_factor()'],['../classtdc_1_1lz78_1_1_my_hash.html#a267b7e9a0163f4c575c37c0c3f560938',1,'tdc::lz78::MyHash::load_factor()']]],
-  ['longest',['longest',['../structtdc_1_1huff_1_1huffmantable.html#a1e48cbdf35cfd829b849afe954c14197',1,'tdc::huff::huffmantable']]]
+  ['id',['id',['../structcedar_1_1da_1_1result__triple__type.html#a6f5972f576c8c74faa31034126fa9fa3',1,'cedar::da::result_triple_type']]],
+  ['incval',['incval',['../structtdc_1_1libdivsufsort_1_1__trbudget__t.html#aadf1afbfa91584339fda8711f86b89fc',1,'tdc::libdivsufsort::_trbudget_t']]],
+  ['initial_5fsize',['initial_size',['../classtdc_1_1lcpcomp_1_1_my_hash.html#a42e9151fd0289e4fb88203dc8285283e',1,'tdc::lcpcomp::MyHash::initial_size()'],['../classtdc_1_1lz78_1_1_my_hash.html#a7e47376ef9678a827211835aa999a676',1,'tdc::lz78::MyHash::initial_size()']]],
+  ['internal_5fnodes',['internal_nodes',['../structtdc_1_1_suffix_tree.html#a28b0bd7d0aa922567161dcd6e68e3abc',1,'tdc::SuffixTree']]],
+  ['isa',['ISA',['../classtdc_1_1_text_d_s.html#a22a3457fb8fc4321a33c6adaa625dfbf',1,'tdc::TextDS']]]
 ];

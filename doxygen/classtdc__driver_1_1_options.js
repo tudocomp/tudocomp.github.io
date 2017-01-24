@@ -6,6 +6,7 @@ var classtdc__driver_1_1_options =
     [ "algorithm", "classtdc__driver_1_1_options.html#ad6b5cf030d52ada7614d062cdf1b0edc", null ],
     [ "decompress", "classtdc__driver_1_1_options.html#aa137470fc31f06f9717a65c723bf61dd", null ],
     [ "force", "classtdc__driver_1_1_options.html#a18f289293e2c9f7658844e62e4e8d529", null ],
+    [ "generator", "classtdc__driver_1_1_options.html#aa736ec3ab82b03caac15e21e06fe96a3", null ],
     [ "help", "classtdc__driver_1_1_options.html#a67db04228eecc33d0e31906f5045136f", null ],
     [ "list", "classtdc__driver_1_1_options.html#a8fac196db0db1d0d0924e8af5aa372dc", null ],
     [ "output", "classtdc__driver_1_1_options.html#aea158e8e1876cd5f49509586d20f127b", null ],

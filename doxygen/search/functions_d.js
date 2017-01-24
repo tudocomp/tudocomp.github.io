@@ -13,6 +13,5 @@ var searchData=
   ['nonzero_5fsize',['nonzero_size',['../classcedar_1_1da.html#acb9010f1eadf4966c65326f280301ca2',1,'cedar::da']]],
   ['noopcompressor',['NoopCompressor',['../classtdc_1_1_noop_compressor.html#ae5744f2c73c866b86e41336dbb01ef84',1,'tdc::NoopCompressor']]],
   ['num_5fkeys',['num_keys',['../classcedar_1_1da.html#a26747289b3a7bae2b3c4168636c6bf3a',1,'cedar::da']]],
-  ['number_5fof_5fleaves',['number_of_leaves',['../structtdc_1_1_suffix_tree.html#ae656deccf5c123a0038b97946e3df6f4',1,'tdc::SuffixTree']]],
-  ['numbers',['numbers',['../namespace_ranges.html#acf9174e4d21d32c47f5312856f84364e',1,'Ranges']]]
+  ['number_5fof_5fleaves',['number_of_leaves',['../structtdc_1_1_suffix_tree.html#ae656deccf5c123a0038b97946e3df6f4',1,'tdc::SuffixTree']]]
 ];

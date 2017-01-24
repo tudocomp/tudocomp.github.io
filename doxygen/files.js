@@ -29,7 +29,9 @@ var files =
       [ "Encoder", "classtdc_1_1_bit_coder_1_1_encoder.html", "classtdc_1_1_bit_coder_1_1_encoder" ],
       [ "Decoder", "classtdc_1_1_bit_coder_1_1_decoder.html", "classtdc_1_1_bit_coder_1_1_decoder" ]
     ] ],
-    [ "BitIStream.hpp", "_bit_i_stream_8hpp.html", "_bit_i_stream_8hpp" ],
+    [ "BitIStream.hpp", "_bit_i_stream_8hpp.html", [
+      [ "BitIStream", "classtdc_1_1io_1_1_bit_i_stream.html", "classtdc_1_1io_1_1_bit_i_stream" ]
+    ] ],
     [ "BitOStream.hpp", "_bit_o_stream_8hpp.html", [
       [ "BitOStream", "classtdc_1_1io_1_1_bit_o_stream.html", "classtdc_1_1io_1_1_bit_o_stream" ]
     ] ],
@@ -90,7 +92,12 @@ var files =
     ] ],
     [ "Env.hpp", "_env_8hpp.html", null ],
     [ "pre_header/Env.hpp", "pre__header_2_env_8hpp.html", "pre__header_2_env_8hpp" ],
-    [ "Generators.hpp", "_generators_8hpp.html", "_generators_8hpp" ],
+    [ "FibonacciGenerator.hpp", "_fibonacci_generator_8hpp.html", [
+      [ "FibonacciGenerator", "classtdc_1_1_fibonacci_generator.html", "classtdc_1_1_fibonacci_generator" ]
+    ] ],
+    [ "Generator.hpp", "_generator_8hpp.html", [
+      [ "Generator", "classtdc_1_1_generator.html", "classtdc_1_1_generator" ]
+    ] ],
     [ "Hash.hpp", "_hash_8hpp.html", [
       [ "MixHasher", "classtdc_1_1_mix_hasher.html", "classtdc_1_1_mix_hasher" ],
       [ "SizeManagerPow2", "structtdc_1_1_size_manager_pow2.html", null ],
@@ -222,6 +229,9 @@ var files =
     [ "pre_header.hpp", "pre__header_8hpp.html", [
       [ "Factor", "structtdc_1_1lz78u_1_1_factor.html", "structtdc_1_1lz78u_1_1_factor" ]
     ] ],
+    [ "RandomUniformGenerator.hpp", "_random_uniform_generator_8hpp.html", [
+      [ "RandomUniformGenerator", "classtdc_1_1_random_uniform_generator.html", "classtdc_1_1_random_uniform_generator" ]
+    ] ],
     [ "Range.hpp", "_range_8hpp.html", "_range_8hpp" ],
     [ "pre_header/Registry.hpp", "pre__header_2_registry_8hpp.html", "pre__header_2_registry_8hpp" ],
     [ "Registry.hpp", "_registry_8hpp.html", null ],
@@ -231,6 +241,9 @@ var files =
     ] ],
     [ "RunLengthEncoder.hpp", "_run_length_encoder_8hpp.html", [
       [ "RunLengthEncoder", "classtdc_1_1_run_length_encoder.html", "classtdc_1_1_run_length_encoder" ]
+    ] ],
+    [ "RunRichGenerator.hpp", "_run_rich_generator_8hpp.html", [
+      [ "RunRichGenerator", "classtdc_1_1_run_rich_generator.html", "classtdc_1_1_run_rich_generator" ]
     ] ],
     [ "SADivSufSort.hpp", "_s_a_div_suf_sort_8hpp.html", [
       [ "SADivSufSort", "classtdc_1_1_s_a_div_suf_sort.html", "classtdc_1_1_s_a_div_suf_sort" ]
@@ -251,6 +264,9 @@ var files =
     ] ],
     [ "TextDS.hpp", "_text_d_s_8hpp.html", [
       [ "TextDS", "classtdc_1_1_text_d_s.html", "classtdc_1_1_text_d_s" ]
+    ] ],
+    [ "ThueMorseGenerator.hpp", "_thue_morse_generator_8hpp.html", [
+      [ "ThueMorseGenerator", "classtdc_1_1_thue_morse_generator.html", "classtdc_1_1_thue_morse_generator" ]
     ] ],
     [ "tudocomp.hpp", "tudocomp_8hpp.html", null ],
     [ "uint_t.hpp", "uint__t_8hpp.html", "uint__t_8hpp" ],

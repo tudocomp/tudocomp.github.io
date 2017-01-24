@@ -1,5 +1,17 @@
 var NAVTREEINDEX4 =
 {
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a195f3f9bd470fad3ba33a43e874bd0e7":[2,0,2,1,8,4],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a25723c1cb637d1b9e0fdbd9eb9bbe359":[2,0,2,1,8,12],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a3aeea0030d826c5dd61751669f2cc9bf":[2,0,2,1,8,8],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a4bbe691a6bd1801b2ca3fea032fdd1d3":[2,0,2,1,8,5],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a74e4c6d7a7b278ba7040699f133fbfb8":[2,0,2,1,8,0],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a8a4945721db67cf88412dff40f9bc74a":[2,0,2,1,8,10],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#ab55b749a442108199d68888ff81ca5d1":[2,0,2,1,8,6],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#ac40ac20af2b569f2c54050cc84f4134c":[2,0,2,1,8,11],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#ad5f981871219c6d76ebfeff5d7effd61":[2,0,2,1,8,9],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#aeb0717eb7e7ff4f5708758dad24318f4":[2,0,2,1,8,7],
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#af11b95f5556586a94196fc530c7836f7":[2,0,2,1,8,3],
+"classtdc_1_1int__vector_1_1_generic_int_ref_autocast.html":[2,0,2,1,9],
 "classtdc_1_1int__vector_1_1_generic_int_ref_autocast.html#ab63cadd281176fe4945ed2ef97aecb4f":[2,0,2,1,9,0],
 "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01dynamic__t_01_4.html":[2,0,2,1,10],
 "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01dynamic__t_01_4.html#afffa18a706b6f3420431caa0f10b8b42":[2,0,2,1,10,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX4 =
 "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html":[2,0,2,4,4],
 "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#a1ab730d64c94a6c25898d6dad95e7cc7":[2,0,2,4,4,2],
 "classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#a406c37e4152c6930edbc600b32967cee":[2,0,2,4,4,4],
-"classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#a6d00da3d8d8cf4dd284732c6018a850a":[2,0,2,4,4,5],
-"classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#ad491eeeaa22c7893be2ce06968201c72":[2,0,2,4,4,3],
-"classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#ae155824f0f2003e029dcd6af8e132d67":[2,0,2,4,4,1],
-"classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#afa9e5194951cbadc13ad8a65893d5bb2":[2,0,2,4,4,0],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html":[2,0,2,4,5],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html#a386df635787fe05b3d0ca5ac651b2527":[2,0,2,4,5,5],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html#a4b812bd124fe7d16c787c6c7c7581fec":[2,0,2,4,5,4],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html#a62de4cbb3d9ddb7027aebed52cb38144":[2,0,2,4,5,3],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html#a8b903519380a403520e28122b843f51a":[2,0,2,4,5,0],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html#aaf85f53365d5857b1b85b8fe7dc6a5b4":[2,0,2,4,5,1],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html#ac7cc9cca6da97cd7339525242488eb81":[2,0,2,4,5,6],
-"classtdc_1_1lcpcomp_1_1_marvin_buffer.html#aeeed5c4a9f716df3e8de38484ee021ff":[2,0,2,4,5,2],
-"classtdc_1_1lcpcomp_1_1_max_heap_strategy.html":[2,0,2,4,6]
+"classtdc_1_1lcpcomp_1_1_lazy_succinct_list_buffer.html#a6d00da3d8d8cf4dd284732c6018a850a":[2,0,2,4,4,5]
 };

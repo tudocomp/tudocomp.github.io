@@ -55,5 +55,5 @@ var _int_ptr_8hpp =
     [ "swap", "_int_ptr_8hpp.html#af2a1e63e0548bd6da81d4ac70e4c4338", null ],
     [ "write_int", "_int_ptr_8hpp.html#a92da4edbbe9909a91046591f975921a3", null ],
     [ "write_int< uint_t< 1 > >", "_int_ptr_8hpp.html#ac6ba0331ba1a101f0879ca843df2d5f3", null ],
-    [ "__attribute__", "_int_ptr_8hpp.html#a9e6f68308dfd41bde1f5a7caa04fe4ac", null ]
+    [ "__attribute__", "_int_ptr_8hpp.html#a852ac44dfe65542d84ae2abd97629a80", null ]
 ];

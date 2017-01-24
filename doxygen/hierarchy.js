@@ -49,6 +49,12 @@ var hierarchy =
         [ "tdc::HuffmanCoder::Encoder", "classtdc_1_1_huffman_coder_1_1_encoder.html", null ],
         [ "tdc::VariantCoder< int_coder_t, lit_coder_t >::Encoder", "classtdc_1_1_variant_coder_1_1_encoder.html", null ]
       ] ],
+      [ "tdc::Generator", "classtdc_1_1_generator.html", [
+        [ "tdc::FibonacciGenerator", "classtdc_1_1_fibonacci_generator.html", null ],
+        [ "tdc::RandomUniformGenerator", "classtdc_1_1_random_uniform_generator.html", null ],
+        [ "tdc::RunRichGenerator", "classtdc_1_1_run_rich_generator.html", null ],
+        [ "tdc::ThueMorseGenerator", "classtdc_1_1_thue_morse_generator.html", null ]
+      ] ],
       [ "tdc::HuffmanCoder", "classtdc_1_1_huffman_coder.html", null ],
       [ "tdc::lcpcomp::BulldozerStrategy", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html", null ],
       [ "tdc::lcpcomp::DecodeForwardQueueListBuffer", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html", null ],
@@ -142,10 +148,10 @@ var hierarchy =
     [ "tdc::DoubleHashingProber< key_t, HashFcn >", "classtdc_1_1_double_hashing_prober.html", null ],
     [ "tdc::DyntDispatch", "structtdc_1_1_dynt_dispatch.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::empty_callback", "structcedar_1_1da_1_1empty__callback.html", null ],
+    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if98931aa7cbfcd97f62e54965a157a76a.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_00_01taa2794a6825e1ee94ecb0ac2b8d96652.html", null ],
-    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html", null ],
     [ "tdc::Env", "classtdc_1_1_env.html", null ],
     [ "tdc::EnvRoot", "classtdc_1_1_env_root.html", null ],
     [ "tdc::lz78u::Factor", "structtdc_1_1lz78u_1_1_factor.html", null ],

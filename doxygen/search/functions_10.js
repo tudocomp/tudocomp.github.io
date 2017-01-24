@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['random_5funiform',['random_uniform',['../_generators_8hpp.html#a70bbb59ddf04c8f94121b5b3f318694e',1,'Generators.hpp']]],
   ['range',['Range',['../classtdc_1_1_range.html#abfebe15a0a9d960de7a88be429577881',1,'tdc::Range::Range(size_t max)'],['../classtdc_1_1_range.html#a1cf6e1afa67806d6e19283884b42e21e',1,'tdc::Range::Range(size_t min, size_t max)']]],
   ['range_5fcheck',['range_check',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#aa62c54343ca59a9b81de95b5f1662860',1,'tdc::int_vector::BitPackingVector']]],
   ['rank',['rank',['../classtdc_1_1lcpcomp_1_1_lazy_decoder.html#a68efbb4bf4fa06ba999fb8c2012a815d',1,'tdc::lcpcomp::LazyDecoder::rank()'],['../classtdc_1_1root__childrank__support.html#a3b96b507d609622bcb876912277f6222',1,'tdc::root_childrank_support::rank()']]],
@@ -16,7 +15,8 @@ var searchData=
   ['read_5fvbyte',['read_vbyte',['../namespacetdc.html#a251cfcf83d3d49335c4bc0590a5176b8',1,'tdc']]],
   ['register_5falgorithms',['register_algorithms',['../namespacetdc__algorithms.html#a204ce5dee268192b987725986f977d20',1,'tdc_algorithms']]],
   ['register_5fcompressor',['register_compressor',['../classtdc_1_1_registry.html#af0930ae3ee7a7920f812510bd2ae83a7',1,'tdc::Registry']]],
-  ['registry',['Registry',['../classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6',1,'tdc::Registry::Registry()'],['../classtdc_1_1_builder.html#a03aa3f296122e6fdb62a12ae6faa71ad',1,'tdc::Builder::registry()'],['../classtdc_1_1_env.html#ad9823ee945752e3097fddb1c21e1c74d',1,'tdc::Env::registry()']]],
+  ['register_5fgenerator',['register_generator',['../classtdc_1_1_registry.html#a56f40db87bf7ccd72721443e94d75401',1,'tdc::Registry']]],
+  ['registry',['registry',['../classtdc_1_1_builder.html#a03aa3f296122e6fdb62a12ae6faa71ad',1,'tdc::Builder::registry()'],['../classtdc_1_1_env.html#ad9823ee945752e3097fddb1c21e1c74d',1,'tdc::Env::registry()'],['../classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6',1,'tdc::Registry::Registry()']]],
   ['release_5fisa',['release_isa',['../classtdc_1_1_text_d_s.html#ad4f92737666aa43aac008e1e1449d440',1,'tdc::TextDS']]],
   ['release_5flcp',['release_lcp',['../classtdc_1_1_text_d_s.html#a631c1ddc47b186cc5bb6df11fd6fc6ac',1,'tdc::TextDS']]],
   ['release_5fphi',['release_phi',['../classtdc_1_1_text_d_s.html#ae680fedb807c1f32af3e97c2f180e785',1,'tdc::TextDS']]],
@@ -44,6 +44,5 @@ var searchData=
   ['rle_5fencode',['rle_encode',['../namespacetdc.html#a599ce0c0e33dad61b532b2d538da2a11',1,'tdc']]],
   ['root',['root',['../classtdc_1_1_env.html#acce7ac2791542b730cfd2f59d9ec5bba',1,'tdc::Env']]],
   ['root_5fchildrank_5fsupport',['root_childrank_support',['../classtdc_1_1root__childrank__support.html#ae1d7b05dc775a65dce9971c1273e11c4',1,'tdc::root_childrank_support']]],
-  ['run_5frich',['run_rich',['../_generators_8hpp.html#a60f1b1badf5d39ddb82d8d93c70ff211',1,'Generators.hpp']]],
   ['runlengthencoder',['RunLengthEncoder',['../classtdc_1_1_run_length_encoder.html#ae195a526e0b42d8e9a0890462a5112ab',1,'tdc::RunLengthEncoder']]]
 ];

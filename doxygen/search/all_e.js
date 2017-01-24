@@ -32,6 +32,5 @@ var searchData=
   ['num',['num',['../structcedar_1_1da_1_1block.html#aa549b437c3231ccc1e4a50bb3b90488c',1,'cedar::da::block']]],
   ['num_5fkeys',['num_keys',['../classcedar_1_1da.html#a26747289b3a7bae2b3c4168636c6bf3a',1,'cedar::da']]],
   ['number_5fof_5fleaves',['number_of_leaves',['../structtdc_1_1_suffix_tree.html#ae656deccf5c123a0038b97946e3df6f4',1,'tdc::SuffixTree']]],
-  ['numbers',['numbers',['../namespace_ranges.html#acf9174e4d21d32c47f5312856f84364e',1,'Ranges']]],
   ['numl',['numl',['../structtdc_1_1huff_1_1huffmantable.html#af29905c6d69bbd25a589464f918f7c1b',1,'tdc::huff::huffmantable']]]
 ];

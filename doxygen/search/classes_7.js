@@ -1,6 +1,7 @@
 var searchData=
 [
   ['gaussprober',['GaussProber',['../classtdc_1_1_gauss_prober.html',1,'tdc']]],
+  ['generator',['Generator',['../classtdc_1_1_generator.html',1,'tdc']]],
   ['genericintptr',['GenericIntPtr',['../classtdc_1_1int__vector_1_1_generic_int_ptr.html',1,'tdc::int_vector']]],
   ['genericintptr_3c_20constintptr_3c_20t_20_3e_2c_20t_20_3e',['GenericIntPtr&lt; ConstIntPtr&lt; T &gt;, T &gt;',['../classtdc_1_1int__vector_1_1_generic_int_ptr.html',1,'tdc::int_vector']]],
   ['genericintptr_3c_20intptr_3c_20t_20_3e_2c_20t_20_3e',['GenericIntPtr&lt; IntPtr&lt; T &gt;, T &gt;',['../classtdc_1_1int__vector_1_1_generic_int_ptr.html',1,'tdc::int_vector']]],

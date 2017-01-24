@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['value',['value',['../structcedar_1_1da_1_1result__pair__type.html#a51211e6b600c4184c84083093d9f1e60',1,'cedar::da::result_pair_type::value()'],['../structcedar_1_1da_1_1result__triple__type.html#a3800299b7d1765caeda7514d8d637456',1,'cedar::da::result_triple_type::value()'],['../structcedar_1_1da_1_1node.html#a43987be43e2dbf8235dd47ed2309a4cc',1,'cedar::da::node::value()']]],
-  ['version',['version',['../classtdc__driver_1_1_options.html#a74033751c58b452172802c6f702807e9',1,'tdc_driver::Options']]]
+  ['uliteral_5fmax',['ULITERAL_MAX',['../namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52',1,'tdc']]],
+  ['undef_5flen',['undef_len',['../namespacetdc_1_1lcpcomp.html#a04fca1dbf79cb14cc2b0b64b0bf5352b',1,'tdc::lcpcomp']]],
+  ['unknown_5foptions',['unknown_options',['../classtdc__driver_1_1_options.html#a769749137e236285803bd20482e77d9d',1,'tdc_driver::Options']]]
 ];

@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170123-jenkins-53</span>
+   &#160;<span id="projectnumber">0.170124-jenkins-54</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -132,6 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0930ae3ee7a7920f812510bd2ae83a7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_registry.html#af0930ae3ee7a7920f812510bd2ae83a7">register_compressor</a> ()</td></tr>
 <tr class="memdesc:af0930ae3ee7a7920f812510bd2ae83a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a <a class="el" href="classtdc_1_1_compressor.html">tdc::Compressor</a>.  <a href="#af0930ae3ee7a7920f812510bd2ae83a7">More...</a><br /></td></tr>
 <tr class="separator:af0930ae3ee7a7920f812510bd2ae83a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f40db87bf7ccd72721443e94d75401"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a56f40db87bf7ccd72721443e94d75401"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_registry.html#a56f40db87bf7ccd72721443e94d75401">register_generator</a> ()</td></tr>
+<tr class="memdesc:a56f40db87bf7ccd72721443e94d75401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a <a class="el" href="classtdc_1_1_generator.html">tdc::Generator</a>.  <a href="#a56f40db87bf7ccd72721443e94d75401">More...</a><br /></td></tr>
+<tr class="separator:a56f40db87bf7ccd72721443e94d75401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a961b331e881e5d42335cdae7441f13f4"><td class="memItemLeft" align="right" valign="top">eval::AlgorithmTypes &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_registry.html#a961b331e881e5d42335cdae7441f13f4">algorithm_map</a> ()</td></tr>
 <tr class="separator:a961b331e881e5d42335cdae7441f13f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab0f10eb4edd412427ed59e6e30d1b3"><td class="memItemLeft" align="right" valign="top">const eval::AlgorithmTypes &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_registry.html#a7ab0f10eb4edd412427ed59e6e30d1b3">algorithm_map</a> () const </td></tr>
@@ -141,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A registry for algorithms to be made available in the driver application. </p>
 <p>For algorithms to be made available in the driver application, they need to be registered in the application's main registry. This is done in the register_algorithms step. Any registered algorithm will also be listed in the utility's help message. </p>
 
-<p>Definition at line <a class="el" href="pre__header_2_registry_8hpp_source.html#l00019">19</a> of file <a class="el" href="pre__header_2_registry_8hpp_source.html">pre_header/Registry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pre__header_2_registry_8hpp_source.html#l00022">22</a> of file <a class="el" href="pre__header_2_registry_8hpp_source.html">pre_header/Registry.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a438e948a74ce035840d3293484a20fb6"></a>
 <div class="memitem">
@@ -164,7 +168,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pre__header_2_registry_8hpp_source.html#l00033">33</a> of file <a class="el" href="pre__header_2_registry_8hpp_source.html">pre_header/Registry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pre__header_2_registry_8hpp_source.html#l00037">37</a> of file <a class="el" href="pre__header_2_registry_8hpp_source.html">pre_header/Registry.hpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +194,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_registry_8hpp_source.html#l00025">25</a> of file <a class="el" href="_registry_8hpp_source.html">Registry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_registry_8hpp_source.html#l00042">42</a> of file <a class="el" href="_registry_8hpp_source.html">Registry.hpp</a>.</p>
 
 </div>
 </div>
@@ -215,7 +219,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_registry_8hpp_source.html#l00029">29</a> of file <a class="el" href="_registry_8hpp_source.html">Registry.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_registry_8hpp_source.html#l00046">46</a> of file <a class="el" href="_registry_8hpp_source.html">Registry.hpp</a>.</p>
 
 </div>
 </div>
@@ -252,6 +256,42 @@ template&lt;class T &gt; </div>
 </dl>
 
 <p>Definition at line <a class="el" href="_registry_8hpp_source.html#l00009">9</a> of file <a class="el" href="_registry_8hpp_source.html">Registry.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56f40db87bf7ccd72721443e94d75401"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tdc::Registry::register_generator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a <a class="el" href="classtdc_1_1_generator.html">tdc::Generator</a>. </p>
+<p>Note that the generator type <code>T</code> needs to implement a static function called <code>meta()</code> that returns a <a class="el" href="classtdc_1_1_meta.html">tdc::Meta</a> information object. This meta information is used to automatically generate the documentation for the driver application's help message.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The generator to register. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_registry_8hpp_source.html#l00026">26</a> of file <a class="el" href="_registry_8hpp_source.html">Registry.hpp</a>.</p>
 
 </div>
 </div>

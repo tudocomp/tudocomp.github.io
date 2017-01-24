@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['random_5funiform',['random_uniform',['../_generators_8hpp.html#a70bbb59ddf04c8f94121b5b3f318694e',1,'Generators.hpp']]],
-  ['range',['Range',['../classtdc_1_1_range.html',1,'tdc']]],
+  ['randomuniformgenerator',['RandomUniformGenerator',['../classtdc_1_1_random_uniform_generator.html',1,'tdc']]],
+  ['randomuniformgenerator_2ehpp',['RandomUniformGenerator.hpp',['../_random_uniform_generator_8hpp.html',1,'']]],
   ['range',['Range',['../classtdc_1_1_range.html#abfebe15a0a9d960de7a88be429577881',1,'tdc::Range::Range(size_t max)'],['../classtdc_1_1_range.html#a1cf6e1afa67806d6e19283884b42e21e',1,'tdc::Range::Range(size_t min, size_t max)']]],
+  ['range',['Range',['../classtdc_1_1_range.html',1,'tdc']]],
   ['range_2ehpp',['Range.hpp',['../_range_8hpp.html',1,'']]],
   ['range_5fcheck',['range_check',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#aa62c54343ca59a9b81de95b5f1662860',1,'tdc::int_vector::BitPackingVector']]],
-  ['ranges',['Ranges',['../namespace_ranges.html',1,'']]],
   ['rank',['rank',['../classtdc_1_1lcpcomp_1_1_lazy_decoder.html#a68efbb4bf4fa06ba999fb8c2012a815d',1,'tdc::lcpcomp::LazyDecoder::rank()'],['../classtdc_1_1root__childrank__support.html#a3b96b507d609622bcb876912277f6222',1,'tdc::root_childrank_support::rank()']]],
   ['ranking_5ft',['ranking_t',['../classtdc_1_1_counter.html#a58281fd50a91530e73b644a809f84f64',1,'tdc::Counter']]],
   ['raw',['raw',['../classtdc__driver_1_1_options.html#a26ffa5b835a0ba6d73f6463cea0d6f18',1,'tdc_driver::Options']]],
@@ -26,7 +26,8 @@ var searchData=
   ['reference',['reference',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#a879e2d1d4923a1ed04dddef89f7ce5fd',1,'tdc::int_vector::BitPackingVector::reference()'],['../structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html#ab2266a6dfea80b90eb327d56d8ac5fe8',1,'std::iterator_traits&lt; tdc::int_vector::IntPtr&lt; T &gt; &gt;::reference()'],['../structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_const_int_ptr_3_01_t_01_4_01_4.html#a9e6e33664ab6974bde064492786f04fb',1,'std::iterator_traits&lt; tdc::int_vector::ConstIntPtr&lt; T &gt; &gt;::reference()'],['../structtdc_1_1int__vector_1_1_int_vector_trait.html#a70267e2304ffc4421082ee2ab6ee95bd',1,'tdc::int_vector::IntVectorTrait::reference()'],['../structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#ade565245ee64dd820986b829fba8b7a0',1,'tdc::int_vector::IntVectorTrait&lt; dynamic_t &gt;::reference()'],['../structtdc_1_1int__vector_1_1_int_vector_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1ena47163dac58dc94a7de6746c5b0aec1c4.html#a59868c88c4496632e2efc479fca49084',1,'tdc::int_vector::IntVectorTrait&lt; uint_t&lt; N &gt;, typename std::enable_if&lt;(N%8)!=0 &gt;::type &gt;::reference()'],['../classtdc_1_1int__vector_1_1_int_vector.html#afffe725cd05b42c8ef29647789cdb3ad',1,'tdc::int_vector::IntVector::reference()']]],
   ['register_5falgorithms',['register_algorithms',['../namespacetdc__algorithms.html#a204ce5dee268192b987725986f977d20',1,'tdc_algorithms']]],
   ['register_5fcompressor',['register_compressor',['../classtdc_1_1_registry.html#af0930ae3ee7a7920f812510bd2ae83a7',1,'tdc::Registry']]],
-  ['registry',['Registry',['../classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6',1,'tdc::Registry::Registry()'],['../classtdc_1_1_builder.html#a03aa3f296122e6fdb62a12ae6faa71ad',1,'tdc::Builder::registry()'],['../classtdc_1_1_env.html#ad9823ee945752e3097fddb1c21e1c74d',1,'tdc::Env::registry()']]],
+  ['register_5fgenerator',['register_generator',['../classtdc_1_1_registry.html#a56f40db87bf7ccd72721443e94d75401',1,'tdc::Registry']]],
+  ['registry',['registry',['../classtdc_1_1_builder.html#a03aa3f296122e6fdb62a12ae6faa71ad',1,'tdc::Builder::registry()'],['../classtdc_1_1_env.html#ad9823ee945752e3097fddb1c21e1c74d',1,'tdc::Env::registry()'],['../classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6',1,'tdc::Registry::Registry()']]],
   ['registry',['Registry',['../classtdc_1_1_registry.html',1,'tdc']]],
   ['registry_2ehpp',['Registry.hpp',['../_registry_8hpp.html',1,'']]],
   ['reject',['reject',['../structcedar_1_1da_1_1block.html#a1e1ac4c8a430ac34082a2d6212555ac1',1,'cedar::da::block']]],
@@ -64,10 +65,11 @@ var searchData=
   ['rle_5fdecode',['rle_decode',['../namespacetdc.html#a45f8327d4415f6ab7bb1a607ee39c964',1,'tdc']]],
   ['rle_5fencode',['rle_encode',['../namespacetdc.html#a599ce0c0e33dad61b532b2d538da2a11',1,'tdc']]],
   ['root',['root',['../structtdc_1_1_suffix_tree.html#a92b65cccd6dd5d24929fed80aef6cb8b',1,'tdc::SuffixTree::root()'],['../classtdc_1_1_env.html#acce7ac2791542b730cfd2f59d9ec5bba',1,'tdc::Env::root()']]],
-  ['root_5fchildrank_5fsupport',['root_childrank_support',['../classtdc_1_1root__childrank__support.html#ae1d7b05dc775a65dce9971c1273e11c4',1,'tdc::root_childrank_support']]],
   ['root_5fchildrank_5fsupport',['root_childrank_support',['../classtdc_1_1root__childrank__support.html',1,'tdc']]],
-  ['run_5frich',['run_rich',['../_generators_8hpp.html#a60f1b1badf5d39ddb82d8d93c70ff211',1,'Generators.hpp']]],
-  ['runlengthencoder',['RunLengthEncoder',['../classtdc_1_1_run_length_encoder.html',1,'tdc']]],
+  ['root_5fchildrank_5fsupport',['root_childrank_support',['../classtdc_1_1root__childrank__support.html#ae1d7b05dc775a65dce9971c1273e11c4',1,'tdc::root_childrank_support']]],
   ['runlengthencoder',['RunLengthEncoder',['../classtdc_1_1_run_length_encoder.html#ae195a526e0b42d8e9a0890462a5112ab',1,'tdc::RunLengthEncoder']]],
-  ['runlengthencoder_2ehpp',['RunLengthEncoder.hpp',['../_run_length_encoder_8hpp.html',1,'']]]
+  ['runlengthencoder',['RunLengthEncoder',['../classtdc_1_1_run_length_encoder.html',1,'tdc']]],
+  ['runlengthencoder_2ehpp',['RunLengthEncoder.hpp',['../_run_length_encoder_8hpp.html',1,'']]],
+  ['runrichgenerator',['RunRichGenerator',['../classtdc_1_1_run_rich_generator.html',1,'tdc']]],
+  ['runrichgenerator_2ehpp',['RunRichGenerator.hpp',['../_run_rich_generator_8hpp.html',1,'']]]
 ];
