@@ -1,5 +1,18 @@
 var NAVTREEINDEX8 =
 {
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#af8bd7bebccfd7dd4d3ce19b7ad8de353":[2,0,2,1,0,20],
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#afcddc89dfaef34a853314514f78a942e":[2,0,2,1,0,66],
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#afefa1c22b55c718fc880ae772b67635a":[2,0,2,1,0,73],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_1_1_pos_and_offset.html":[2,0,2,1,0,0],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_1_1_pos_and_offset.html#a1dd280df96d1d279993ff2859aafe1d2":[2,0,2,1,0,0,1],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_1_1_pos_and_offset.html#a38e2d5033637ac114755059b3037f35c":[2,0,2,1,0,0,0],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base.html":[2,0,2,1,1],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html":[2,0,2,1,2],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#a0e7db23e18dcdaa8556776fc51e59a82":[2,0,2,1,2,2],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#a2652849e928adeb886466be4e45589ef":[2,0,2,1,2,1],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#a5e16c42d88b15c88b2c25efb73df7f0e":[2,0,2,1,2,8],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#a862c6748ec36e4a1a38dc435f49b1bc7":[2,0,2,1,2,6],
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#a886b48002e41dfb54e5bba5350b36ea3":[2,0,2,1,2,9],
 "structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#aa36418bda14a36e1a8e40d71927adc93":[2,0,2,1,2,3],
 "structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#aacf482e2d1da3895a32e553ebcdcb2b3":[2,0,2,1,2,4],
 "structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html#ac06678809f05ba405942aef420b4bd69":[2,0,2,1,2,7],

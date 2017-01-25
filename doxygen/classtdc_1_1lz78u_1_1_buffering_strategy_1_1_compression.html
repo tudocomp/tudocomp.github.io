@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170125-jenkins-59</span>
+   &#160;<span id="projectnumber">0.170126-jenkins-60</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -133,8 +133,14 @@ Inheritance diagram for tdc::lz78u::BufferingStrategy&lt; string_coder_t &gt;::C
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a791b2f7ac4b7fa17dfade36de2d14768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#a791b2f7ac4b7fa17dfade36de2d14768">Compression</a> (<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;<a class="el" href="classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2">env</a>, <a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;ref_env, std::shared_ptr&lt; <a class="el" href="namespacetdc.html#ae237d95e0b72f861584bae69cce5788a">BitOStream</a> &gt; out)</td></tr>
 <tr class="separator:a791b2f7ac4b7fa17dfade36de2d14768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac556b5e4ae60babf68eea1b850ee99b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#ac556b5e4ae60babf68eea1b850ee99b2">encode</a> (<a class="el" href="structtdc_1_1lz78u_1_1_factor.html">Factor</a> fact, size_t ref_range)</td></tr>
-<tr class="separator:ac556b5e4ae60babf68eea1b850ee99b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd597fc923d7bfa49c2b0a3d8d50c9db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#acd597fc923d7bfa49c2b0a3d8d50c9db">encode_ref</a> (size_t ref, <a class="el" href="classtdc_1_1_range.html">Range</a> ref_range)</td></tr>
+<tr class="separator:acd597fc923d7bfa49c2b0a3d8d50c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48535632decdcd9ad293dc1da4b9a45c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#a48535632decdcd9ad293dc1da4b9a45c">encode_sep</a> (bool val)</td></tr>
+<tr class="separator:a48535632decdcd9ad293dc1da4b9a45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bffd2dbfd3bd24bd62b471cc5cf0b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#a4bffd2dbfd3bd24bd62b471cc5cf0b57">encode_char</a> (<a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> c)</td></tr>
+<tr class="separator:a4bffd2dbfd3bd24bd62b471cc5cf0b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f92110820df9bf0c1e2461e0e4bb2a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#a2f92110820df9bf0c1e2461e0e4bb2a4">encode_str</a> (<a class="el" href="classtdc_1_1_view.html">View</a> str)</td></tr>
+<tr class="separator:a2f92110820df9bf0c1e2461e0e4bb2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69243032374b7fda60323f74b2779810"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#a69243032374b7fda60323f74b2779810">~Compression</a> ()</td></tr>
 <tr class="separator:a69243032374b7fda60323f74b2779810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtdc_1_1_algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtdc_1_1_algorithm')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtdc_1_1_algorithm.html">tdc::Algorithm</a></td></tr>
@@ -195,7 +201,7 @@ template&lt;typename ref_coder_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00029">29</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00038">38</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
 
 </div>
 </div>
@@ -224,12 +230,12 @@ template&lt;typename ref_coder_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00046">46</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00068">68</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac556b5e4ae60babf68eea1b850ee99b2"></a>
+<a class="anchor" id="a4bffd2dbfd3bd24bd62b471cc5cf0b57"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -241,15 +247,45 @@ template&lt;typename ref_coder_t &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy.html">tdc::lz78u::BufferingStrategy</a>&lt; string_coder_t &gt;::<a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html">Compression</a>&lt; ref_coder_t &gt;::encode </td>
+          <td class="memname">void <a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy.html">tdc::lz78u::BufferingStrategy</a>&lt; string_coder_t &gt;::<a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html">Compression</a>&lt; ref_coder_t &gt;::encode_char </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structtdc_1_1lz78u_1_1_factor.html">Factor</a>&#160;</td>
-          <td class="paramname"><em>fact</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00056">56</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd597fc923d7bfa49c2b0a3d8d50c9db"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename string_coder_t &gt; </div>
+<div class="memtemplate">
+template&lt;typename ref_coder_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy.html">tdc::lz78u::BufferingStrategy</a>&lt; string_coder_t &gt;::<a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html">Compression</a>&lt; ref_coder_t &gt;::encode_ref </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classtdc_1_1_range.html">Range</a>&#160;</td>
           <td class="paramname"><em>ref_range</em>&#160;</td>
         </tr>
         <tr>
@@ -265,7 +301,67 @@ template&lt;typename ref_coder_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00036">36</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00045">45</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48535632decdcd9ad293dc1da4b9a45c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename string_coder_t &gt; </div>
+<div class="memtemplate">
+template&lt;typename ref_coder_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy.html">tdc::lz78u::BufferingStrategy</a>&lt; string_coder_t &gt;::<a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html">Compression</a>&lt; ref_coder_t &gt;::encode_sep </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00051">51</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f92110820df9bf0c1e2461e0e4bb2a4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename string_coder_t &gt; </div>
+<div class="memtemplate">
+template&lt;typename ref_coder_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy.html">tdc::lz78u::BufferingStrategy</a>&lt; string_coder_t &gt;::<a class="el" href="classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html">Compression</a>&lt; ref_coder_t &gt;::encode_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtdc_1_1_view.html">View</a>&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_buffering_strategy_8hpp_source.html#l00061">61</a> of file <a class="el" href="_buffering_strategy_8hpp_source.html">BufferingStrategy.hpp</a>.</p>
 
 </div>
 </div>

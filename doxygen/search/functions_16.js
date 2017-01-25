@@ -6,7 +6,6 @@ var searchData=
   ['_7ecompression',['~Compression',['../classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#a69243032374b7fda60323f74b2779810',1,'tdc::lz78u::BufferingStrategy::Compression']]],
   ['_7eda',['~da',['../classcedar_1_1da.html#ad8ae1a57d4bd251aced71cacf1e3cbbe',1,'cedar::da']]],
   ['_7edecoder',['~Decoder',['../classtdc_1_1_code2_coder_1_1_decoder.html#a74df9936d56754b45eb6a479a2362a12',1,'tdc::Code2Coder::Decoder::~Decoder()'],['../classtdc_1_1_huffman_coder_1_1_decoder.html#a7c65922aa69344b3348da00389d1246c',1,'tdc::HuffmanCoder::Decoder::~Decoder()']]],
-  ['_7edecompression',['~Decompression',['../classtdc_1_1lz78u_1_1_buffering_strategy_1_1_decompression.html#a82507b18a2aeb87c6990818152adb962',1,'tdc::lz78u::BufferingStrategy::Decompression']]],
   ['_7eencoder',['~Encoder',['../classtdc_1_1_code2_coder_1_1_encoder.html#ae88f41f992d2177c514685b98cce7fda',1,'tdc::Code2Coder::Encoder']]],
   ['_7eenv',['~Env',['../classtdc_1_1_env.html#a70bcb7e3b69ef88b3e87d807a562959c',1,'tdc::Env']]],
   ['_7eenvroot',['~EnvRoot',['../classtdc_1_1_env_root.html#ad02c8a1ee7c138de9802fc7018939f16',1,'tdc::EnvRoot']]],

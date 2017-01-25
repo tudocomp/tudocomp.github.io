@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170125-jenkins-59</span>
+   &#160;<span id="projectnumber">0.170126-jenkins-60</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -760,7 +760,7 @@ Friends</h2></td></tr>
 
 <p>Sets the size to 0. </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00252">252</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00253">253</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -923,7 +923,7 @@ Friends</h2></td></tr>
 
 <p>Returns <code>true</code> if the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a> ends with <code>c</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00279">279</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00280">280</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -951,7 +951,7 @@ Friends</h2></td></tr>
 
 <p>Returns <code>true</code> if the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a> ends with <code>c</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00283">283</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00284">284</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -979,7 +979,7 @@ Friends</h2></td></tr>
 
 <p>Returns <code>true</code> if the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a> ends with <code>x</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00327">327</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00328">328</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1171,7 @@ Friends</h2></td></tr>
 
 <p>Removes the first <code>n</code> elements from the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a>. </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00257">257</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00258">258</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1199,7 +1199,7 @@ Friends</h2></td></tr>
 
 <p>Removes the last <code>n</code> elements from the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a>. </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00262">262</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00263">263</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1290,12 +1290,12 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a> that is a sub view into the current one. </p>
-<p>The returned view will be a "from-to" slice, and cover the bytes starting at <code>from</code> and ending at <code>to</code>.</p>
+<p>The returned view will be a "from-to" slice, and cover the bytes starting at <code>from</code> and ending <em>just before</em> <code>to</code>. T.slice(a,b) gives T[a..b-1]</p>
 <p>Passing <code>npos</code> to <code>to</code> will create a slice until the end of the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a></p>
 <h1>Example</h1>
 <p><code><a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a>("abcd").slice(1, 3) == <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a>("bc")</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00203">203</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00204">204</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1323,7 +1323,7 @@ Friends</h2></td></tr>
 
 <p>Returns <code>true</code> if the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a> starts with <code>c</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00269">269</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00270">270</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1351,7 @@ Friends</h2></td></tr>
 
 <p>Returns <code>true</code> if the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a> starts with <code>c</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00273">273</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00274">274</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1379,7 +1379,7 @@ Friends</h2></td></tr>
 
 <p>Returns <code>true</code> if the <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a> starts with <code>x</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00322">322</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00323">323</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1422,7 @@ Friends</h2></td></tr>
 <h1>Example</h1>
 <p><code><a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a>("abcd").substr(1, 2) == <a class="el" href="classtdc_1_1_view.html" title="A view into a slice of memory. ">View</a>("bc")</code> </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00228">228</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00229">229</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1450,7 @@ Friends</h2></td></tr>
 
 <p>Swap two Views. </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00239">239</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00240">240</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>
@@ -1489,7 +1489,7 @@ Friends</h2></td></tr>
 
 <p>Swap two Views. </p>
 
-<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00247">247</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_view_8hpp_source.html#l00248">248</a> of file <a class="el" href="_view_8hpp_source.html">View.hpp</a>.</p>
 
 </div>
 </div>

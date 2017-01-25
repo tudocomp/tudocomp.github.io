@@ -13,6 +13,7 @@ var searchData=
   ['read_5fint_3c_20uint_5ft_3c_201_20_3e_20_3e',['read_int&lt; uint_t&lt; 1 &gt; &gt;',['../namespacetdc_1_1int__vector.html#ab1aa86e0b9a6f0cf7bcf05fc3a13d271',1,'tdc::int_vector']]],
   ['read_5funary',['read_unary',['../classtdc_1_1io_1_1_bit_i_stream.html#a7a9509a64804ddac5f7dd27256851f8c',1,'tdc::io::BitIStream']]],
   ['read_5fvbyte',['read_vbyte',['../namespacetdc.html#a251cfcf83d3d49335c4bc0590a5176b8',1,'tdc']]],
+  ['ref_5fat',['ref_at',['../classtdc_1_1lz78u_1_1_decompressor.html#adfbb7cf03daac8cdeca35854c7293d90',1,'tdc::lz78u::Decompressor']]],
   ['register_5falgorithms',['register_algorithms',['../namespacetdc__algorithms.html#a204ce5dee268192b987725986f977d20',1,'tdc_algorithms']]],
   ['register_5fcompressor',['register_compressor',['../classtdc_1_1_registry.html#af0930ae3ee7a7920f812510bd2ae83a7',1,'tdc::Registry']]],
   ['register_5fgenerator',['register_generator',['../classtdc_1_1_registry.html#a56f40db87bf7ccd72721443e94d75401',1,'tdc::Registry']]],
