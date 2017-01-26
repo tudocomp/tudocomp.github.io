@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"classtdc_1_1_no_literals.html#a86244ce2cce351b6068727f69e43ca37":[2,0,2,78,0],
 "classtdc_1_1_no_literals.html#ab37d25b0b74cc780f1f78d77d06f73e9":[2,0,2,78,1],
 "classtdc_1_1_no_literals.html#ae14cf88168c6e377c9feb88801e81174":[2,0,2,78,2],
 "classtdc_1_1_noop_compressor.html":[2,0,2,79],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classtdc_1_1int__vector_1_1_generic_int_ptr.html#abff65b57eb412f1e71adf737ae5a34fa":[2,0,2,1,7,4],
 "classtdc_1_1int__vector_1_1_generic_int_ptr.html#ac2dacea6adf0ea7d5adb47a6765e32d6":[2,0,2,1,7,2],
 "classtdc_1_1int__vector_1_1_generic_int_ptr.html#ac40ac20af2b569f2c54050cc84f4134c":[2,0,2,1,7,30],
-"classtdc_1_1int__vector_1_1_generic_int_ptr.html#acade7ab840f029dea527f6a89209b6a1":[2,0,2,1,7,10],
-"classtdc_1_1int__vector_1_1_generic_int_ptr.html#ad12554c912c78d7ef2efaf570a9a474c":[2,0,2,1,7,22]
+"classtdc_1_1int__vector_1_1_generic_int_ptr.html#acade7ab840f029dea527f6a89209b6a1":[2,0,2,1,7,10]
 };

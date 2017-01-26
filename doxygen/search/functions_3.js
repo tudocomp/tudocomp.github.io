@@ -28,6 +28,7 @@ var searchData=
   ['count_5falphabet_5fliterals',['count_alphabet_literals',['../namespacetdc_1_1huff.html#a2a002fe7cc99c16ec42a6af47b380b5d',1,'tdc::huff']]],
   ['crbegin',['crbegin',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#a071465324f159aa5b56b1f7ce347179b',1,'tdc::int_vector::BitPackingVector::crbegin()'],['../classtdc_1_1int__vector_1_1_int_vector.html#a4e38714a4d5281172072e500d17c1e50',1,'tdc::int_vector::IntVector::crbegin()'],['../classtdc_1_1_view.html#a28bff02806ab71d7ec95d04c36f9113c',1,'tdc::View::crbegin()']]],
   ['create_5falgo',['create_algo',['../namespacetdc.html#a69fd23d7f97c90afc49913cb3976c096',1,'tdc::create_algo(const std::string &amp;options, Args &amp;&amp;...args)'],['../namespacetdc.html#ada13e4fa05c07c2350dca7704b5f19dd',1,'tdc::create_algo()']]],
+  ['create_5fenv',['create_env',['../namespacetdc.html#ab69e91eddec3d3f8a2c48afdbe7454d4',1,'tdc']]],
   ['create_5fnode',['create_node',['../namespacetdc_1_1lz78.html#a6dfc3ba5cf68e8f6d001d27a891ceff0',1,'tdc::lz78']]],
   ['createranking',['createRanking',['../classtdc_1_1_counter.html#a8bc2e87f145fc2d6b84c0ebf5d319014',1,'tdc::Counter']]],
   ['crend',['crend',['../structtdc_1_1int__vector_1_1_bit_packing_vector.html#af7f167313d221816efc8bfa62b8f67ef',1,'tdc::int_vector::BitPackingVector::crend()'],['../classtdc_1_1int__vector_1_1_int_vector.html#af4def8c0ea6882dae161c2f191387a69',1,'tdc::int_vector::IntVector::crend()'],['../classtdc_1_1_view.html#aaeeb3c21cdd87552ed4ddbfbc902484c',1,'tdc::View::crend()']]],
