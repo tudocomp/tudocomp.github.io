@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"namespacemembers_func.html":[1,1,1],
 "namespacemembers_type.html":[1,1,3],
 "namespacemembers_vars.html":[1,1,2],
 "namespaces.html":[1,0],
@@ -20,8 +21,8 @@ var NAVTREEINDEX7 =
 "namespacetdc_1_1lcpcomp.html":[1,0,2,5],
 "namespacetdc_1_1libdivsufsort.html":[1,0,2,6],
 "namespacetdc_1_1libdivsufsort.html":[2,0,2,5],
-"namespacetdc_1_1lz78.html":[1,0,2,7],
 "namespacetdc_1_1lz78.html":[2,0,2,6],
+"namespacetdc_1_1lz78.html":[1,0,2,7],
 "namespacetdc_1_1lz78u.html":[2,0,2,7],
 "namespacetdc_1_1lz78u.html":[1,0,2,8],
 "namespacetdc_1_1lzss.html":[1,0,2,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#ae93d6666ac07b4543e1bb24f1ca0edaa":[2,0,2,1,0,4],
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#af2dbd38ebfe48491ef2e3d4a5dafa6a6":[2,0,2,1,0,71],
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#af30a22002004b6385a356222cedf2062":[2,0,2,1,0,15],
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#af422ca5fd60081b71f01d50112cb22e7":[2,0,2,1,0,46],
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#af7f167313d221816efc8bfa62b8f67ef":[2,0,2,1,0,41]
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#af422ca5fd60081b71f01d50112cb22e7":[2,0,2,1,0,46]
 };

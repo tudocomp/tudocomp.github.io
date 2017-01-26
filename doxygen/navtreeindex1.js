@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_options_8hpp.html#a12c0030a22e6e9d8855b875bc9f6333d":[3,0,85,2],
 "_options_8hpp.html#a1c454c319c4abe6c6289504aa59a885b":[3,0,85,1],
 "_options_8hpp.html#a32d71b8eba4b4145faef5a3ca1aecd6f":[3,0,85,5],
 "_options_8hpp.html#a67e72937301f82d54e5d0071cb03ba8c":[3,0,85,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classtdc_1_1_const_integer_base_with64.html#a08369b30f87c07168546f266a8b03e73":[2,0,2,29,0],
 "classtdc_1_1_const_integer_base_with64.html#a09c10e9410fcea11c0f1080a16b6b916":[2,0,2,29,29],
 "classtdc_1_1_const_integer_base_with64.html#a1b76e5ed317670a6b55d64acc637ed35":[2,0,2,29,32],
-"classtdc_1_1_const_integer_base_with64.html#a354c1f7b7cef997b08f10b5415f81ce2":[2,0,2,29,15],
-"classtdc_1_1_const_integer_base_with64.html#a3754c690bd17510c579ee7c485c16bde":[2,0,2,29,3]
+"classtdc_1_1_const_integer_base_with64.html#a354c1f7b7cef997b08f10b5415f81ce2":[2,0,2,29,15]
 };
