@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170126-jenkins-64</span>
+   &#160;<span id="projectnumber">0.170127-jenkins-65</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -118,6 +118,9 @@ $(document).ready(function(){initNavTree('classtdc_1_1_range.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a generic range of positive integers.  
+ <a href="classtdc_1_1_range.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_range_8hpp_source.html">Range.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tdc::Range:</div>
@@ -125,32 +128,39 @@ Inheritance diagram for tdc::Range:</div>
  <div class="center">
   <img src="classtdc_1_1_range.png" usemap="#tdc::Range_map" alt=""/>
   <map id="tdc::Range_map" name="tdc::Range_map">
-<area href="classtdc_1_1_fixed_range.html" alt="tdc::FixedRange&lt; t_min, t_max &gt;" shape="rect" coords="0,56,196,80"/>
-<area href="classtdc_1_1_min_distributed_range.html" alt="tdc::MinDistributedRange" shape="rect" coords="206,56,402,80"/>
-<area href="classtdc_1_1_type_range.html" alt="tdc::TypeRange&lt; T &gt;" shape="rect" coords="412,56,608,80"/>
+<area href="classtdc_1_1_fixed_range.html" title="Represents a compiler-level fixed range. " alt="tdc::FixedRange&lt; t_min, t_max &gt;" shape="rect" coords="0,56,196,80"/>
+<area href="classtdc_1_1_min_distributed_range.html" title="Represents a range of positive integers that tend to be distributed towards the minimum. " alt="tdc::MinDistributedRange" shape="rect" coords="206,56,402,80"/>
+<area href="classtdc_1_1_type_range.html" title="Represents a range of valid values for a certain type. " alt="tdc::TypeRange&lt; T &gt;" shape="rect" coords="412,56,608,80"/>
 <area href="classtdc_1_1_type_range.html" alt="tdc::TypeRange&lt; len_t &gt;" shape="rect" coords="618,56,814,80"/>
 <area href="classtdc_1_1_type_range.html" alt="tdc::TypeRange&lt; uliteral_t &gt;" shape="rect" coords="824,56,1020,80"/>
-<area href="classtdc_1_1_length_range.html" alt="tdc::LengthRange" shape="rect" coords="618,112,814,136"/>
-<area href="classtdc_1_1_literal_range.html" alt="tdc::LiteralRange" shape="rect" coords="824,112,1020,136"/>
+<area href="classtdc_1_1_length_range.html" title="Represents the range of valid tdc::len_t values. " alt="tdc::LengthRange" shape="rect" coords="618,112,814,136"/>
+<area href="classtdc_1_1_literal_range.html" title="Represents the range of valid tdc::uliteral_t values. " alt="tdc::LiteralRange" shape="rect" coords="824,112,1020,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abfebe15a0a9d960de7a88be429577881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_range.html#abfebe15a0a9d960de7a88be429577881">Range</a> (size_t <a class="el" href="classtdc_1_1_range.html#a346c267270e09dba72bcbb74a38f259a">max</a>)</td></tr>
+<tr class="memdesc:abfebe15a0a9d960de7a88be429577881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a range from zero to a maximum value.  <a href="#abfebe15a0a9d960de7a88be429577881">More...</a><br /></td></tr>
 <tr class="separator:abfebe15a0a9d960de7a88be429577881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cf6e1afa67806d6e19283884b42e21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_range.html#a1cf6e1afa67806d6e19283884b42e21e">Range</a> (size_t <a class="el" href="classtdc_1_1_range.html#a55f24f213b216f4a534baf1aecd04542">min</a>, size_t <a class="el" href="classtdc_1_1_range.html#a346c267270e09dba72bcbb74a38f259a">max</a>)</td></tr>
+<tr class="memdesc:a1cf6e1afa67806d6e19283884b42e21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a range.  <a href="#a1cf6e1afa67806d6e19283884b42e21e">More...</a><br /></td></tr>
 <tr class="separator:a1cf6e1afa67806d6e19283884b42e21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55f24f213b216f4a534baf1aecd04542"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_range.html#a55f24f213b216f4a534baf1aecd04542">min</a> () const </td></tr>
+<tr class="memdesc:a55f24f213b216f4a534baf1aecd04542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields the range's minimum value.  <a href="#a55f24f213b216f4a534baf1aecd04542">More...</a><br /></td></tr>
 <tr class="separator:a55f24f213b216f4a534baf1aecd04542"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346c267270e09dba72bcbb74a38f259a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_range.html#a346c267270e09dba72bcbb74a38f259a">max</a> () const </td></tr>
+<tr class="memdesc:a346c267270e09dba72bcbb74a38f259a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields the range's maximum value.  <a href="#a346c267270e09dba72bcbb74a38f259a">More...</a><br /></td></tr>
 <tr class="separator:a346c267270e09dba72bcbb74a38f259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaca808f80e0ccb79f3a752b06c762b5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_range.html#abaca808f80e0ccb79f3a752b06c762b5">delta</a> () const </td></tr>
+<tr class="memdesc:abaca808f80e0ccb79f3a752b06c762b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields the difference between the range's minimum and maximum values.  <a href="#abaca808f80e0ccb79f3a752b06c762b5">More...</a><br /></td></tr>
 <tr class="separator:abaca808f80e0ccb79f3a752b06c762b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00007">7</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
+<div class="textblock"><p>Represents a generic range of positive integers. </p>
+<p>Ranges have a minimum and a maximum value. They are used as hints for a tdc::Coder for it to determine how to encode certain values. Correspondingly implemented coders can use this information to encode more efficiently, therefore it is advised to feed it ranges as precise as possible for every value to encode. </p>
+
+<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00014">14</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="abfebe15a0a9d960de7a88be429577881"></a>
 <div class="memitem">
@@ -174,7 +184,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00013">13</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
+<p>Constructs a range from zero to a maximum value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">max</td><td>the range's maximum value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00022">22</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
 
 </div>
 </div>
@@ -210,7 +228,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00014">14</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
+<p>Constructs a range. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>the range's minimum value </td></tr>
+    <tr><td class="paramname">max</td><td>the range's maximum value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00027">27</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +263,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00017">17</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
+<p>Yields the difference between the range's minimum and maximum values. </p>
+<dl class="section return"><dt>Returns</dt><dd>the difference between the range's minimum and maximum values </dd></dl>
+
+<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00041">41</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +291,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00016">16</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
+<p>Yields the range's maximum value. </p>
+<dl class="section return"><dt>Returns</dt><dd>the range's maximum value </dd></dl>
+
+<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00035">35</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +319,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00015">15</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
+<p>Yields the range's minimum value. </p>
+<dl class="section return"><dt>Returns</dt><dd>the range's minimum value </dd></dl>
+
+<p>Definition at line <a class="el" href="_range_8hpp_source.html#l00031">31</a> of file <a class="el" href="_range_8hpp_source.html">Range.hpp</a>.</p>
 
 </div>
 </div>
