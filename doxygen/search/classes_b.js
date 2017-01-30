@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['marvinbuffer',['MarvinBuffer',['../classtdc_1_1lcpcomp_1_1_marvin_buffer.html',1,'tdc::lcpcomp']]],
   ['maxheapstrategy',['MaxHeapStrategy',['../classtdc_1_1lcpcomp_1_1_max_heap_strategy.html',1,'tdc::lcpcomp']]],
   ['maxlcpstrategy',['MaxLCPStrategy',['../classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html',1,'tdc::lcpcomp']]],
   ['maxlcpsuffixlist',['MaxLCPSuffixList',['../classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html',1,'tdc::lcpcomp']]],

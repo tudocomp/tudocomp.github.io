@@ -12,7 +12,6 @@ var hierarchy =
       ] ],
       [ "tdc::ASCIICoder", "classtdc_1_1_a_s_c_i_i_coder.html", null ],
       [ "tdc::BitCoder", "classtdc_1_1_bit_coder.html", null ],
-      [ "tdc::Code2Coder", "classtdc_1_1_code2_coder.html", null ],
       [ "tdc::Compressor", "classtdc_1_1_compressor.html", [
         [ "tdc::BWTCompressor< text_t >", "classtdc_1_1_b_w_t_compressor.html", null ],
         [ "tdc::ChainCompressor", "classtdc_1_1_chain_compressor.html", null ],
@@ -32,10 +31,10 @@ var hierarchy =
       [ "tdc::Decoder", "classtdc_1_1_decoder.html", [
         [ "tdc::ASCIICoder::Decoder", "classtdc_1_1_a_s_c_i_i_coder_1_1_decoder.html", null ],
         [ "tdc::BitCoder::Decoder", "classtdc_1_1_bit_coder_1_1_decoder.html", null ],
-        [ "tdc::Code2Coder::Decoder", "classtdc_1_1_code2_coder_1_1_decoder.html", null ],
         [ "tdc::EliasDeltaCoder::Decoder", "classtdc_1_1_elias_delta_coder_1_1_decoder.html", null ],
         [ "tdc::EliasGammaCoder::Decoder", "classtdc_1_1_elias_gamma_coder_1_1_decoder.html", null ],
         [ "tdc::HuffmanCoder::Decoder", "classtdc_1_1_huffman_coder_1_1_decoder.html", null ],
+        [ "tdc::SLECoder::Decoder", "classtdc_1_1_s_l_e_coder_1_1_decoder.html", null ],
         [ "tdc::VariantCoder< int_coder_t, lit_coder_t >::Decoder", "classtdc_1_1_variant_coder_1_1_decoder.html", null ]
       ] ],
       [ "tdc::EliasDeltaCoder", "classtdc_1_1_elias_delta_coder.html", null ],
@@ -43,10 +42,10 @@ var hierarchy =
       [ "tdc::Encoder", "classtdc_1_1_encoder.html", [
         [ "tdc::ASCIICoder::Encoder", "classtdc_1_1_a_s_c_i_i_coder_1_1_encoder.html", null ],
         [ "tdc::BitCoder::Encoder", "classtdc_1_1_bit_coder_1_1_encoder.html", null ],
-        [ "tdc::Code2Coder::Encoder", "classtdc_1_1_code2_coder_1_1_encoder.html", null ],
         [ "tdc::EliasDeltaCoder::Encoder", "classtdc_1_1_elias_delta_coder_1_1_encoder.html", null ],
         [ "tdc::EliasGammaCoder::Encoder", "classtdc_1_1_elias_gamma_coder_1_1_encoder.html", null ],
         [ "tdc::HuffmanCoder::Encoder", "classtdc_1_1_huffman_coder_1_1_encoder.html", null ],
+        [ "tdc::SLECoder::Encoder", "classtdc_1_1_s_l_e_coder_1_1_encoder.html", null ],
         [ "tdc::VariantCoder< int_coder_t, lit_coder_t >::Encoder", "classtdc_1_1_variant_coder_1_1_encoder.html", null ]
       ] ],
       [ "tdc::Generator", "classtdc_1_1_generator.html", [
@@ -60,7 +59,6 @@ var hierarchy =
       [ "tdc::lcpcomp::BulldozerStrategy", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html", null ],
       [ "tdc::lcpcomp::CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", null ],
       [ "tdc::lcpcomp::DecodeForwardQueueListBuffer", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html", null ],
-      [ "tdc::lcpcomp::MarvinBuffer", "classtdc_1_1lcpcomp_1_1_marvin_buffer.html", null ],
       [ "tdc::lcpcomp::MaxHeapStrategy", "classtdc_1_1lcpcomp_1_1_max_heap_strategy.html", null ],
       [ "tdc::lcpcomp::MaxLCPStrategy", "classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html", null ],
       [ "tdc::lcpcomp::MultimapBuffer", "classtdc_1_1lcpcomp_1_1_multimap_buffer.html", null ],
@@ -81,6 +79,7 @@ var hierarchy =
       [ "tdc::lz78u::StreamingStrategy< string_coder_t >", "classtdc_1_1lz78u_1_1_streaming_strategy.html", null ],
       [ "tdc::lz78u::StreamingStrategy< string_coder_t >::Compression< ref_coder_t >", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html", null ],
       [ "tdc::lz78u::StreamingStrategy< string_coder_t >::Decompression< ref_coder_t >", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression.html", null ],
+      [ "tdc::SLECoder", "classtdc_1_1_s_l_e_coder.html", null ],
       [ "tdc::TextDS< sa_t, phi_t, plcp_t, lcp_t, isa_t >", "classtdc_1_1_text_d_s.html", null ],
       [ "tdc::VariantCoder< int_coder_t, lit_coder_t >", "classtdc_1_1_variant_coder.html", null ]
     ] ],
@@ -150,8 +149,8 @@ var hierarchy =
     [ "tdc::lcpcomp::EagerScanDec", "classtdc_1_1lcpcomp_1_1_eager_scan_dec.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::empty_callback", "structcedar_1_1da_1_1empty__callback.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if98931aa7cbfcd97f62e54965a157a76a.html", null ],
-    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_00_01taa2794a6825e1ee94ecb0ac2b8d96652.html", null ],
+    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html", null ],
     [ "tdc::Env", "classtdc_1_1_env.html", null ],
     [ "tdc::EnvRoot", "classtdc_1_1_env_root.html", null ],

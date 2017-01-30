@@ -56,11 +56,6 @@ var files =
     [ "ChainCompressor.hpp", "_chain_compressor_8hpp.html", [
       [ "ChainCompressor", "classtdc_1_1_chain_compressor.html", "classtdc_1_1_chain_compressor" ]
     ] ],
-    [ "Code2Coder.hpp", "_code2_coder_8hpp.html", [
-      [ "Code2Coder", "classtdc_1_1_code2_coder.html", "classtdc_1_1_code2_coder" ],
-      [ "Encoder", "classtdc_1_1_code2_coder_1_1_encoder.html", "classtdc_1_1_code2_coder_1_1_encoder" ],
-      [ "Decoder", "classtdc_1_1_code2_coder_1_1_decoder.html", "classtdc_1_1_code2_coder_1_1_decoder" ]
-    ] ],
     [ "Coder.hpp", "_coder_8hpp.html", "_coder_8hpp" ],
     [ "CompactDec.hpp", "_compact_dec_8hpp.html", [
       [ "CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", "classtdc_1_1lcpcomp_1_1_compact_dec" ]
@@ -175,9 +170,6 @@ var files =
     [ "LZWDecoding.hpp", "_l_z_w_decoding_8hpp.html", "_l_z_w_decoding_8hpp" ],
     [ "LZWFactor.hpp", "_l_z_w_factor_8hpp.html", "_l_z_w_factor_8hpp" ],
     [ "malloc_count.hpp", "malloc__count_8hpp.html", "malloc__count_8hpp" ],
-    [ "MarvinBuffer.hpp", "_marvin_buffer_8hpp.html", [
-      [ "MarvinBuffer", "classtdc_1_1lcpcomp_1_1_marvin_buffer.html", "classtdc_1_1lcpcomp_1_1_marvin_buffer" ]
-    ] ],
     [ "MaxHeapStrategy.hpp", "_max_heap_strategy_8hpp.html", [
       [ "MaxHeapStrategy", "classtdc_1_1lcpcomp_1_1_max_heap_strategy.html", "classtdc_1_1lcpcomp_1_1_max_heap_strategy" ]
     ] ],
@@ -250,6 +242,11 @@ var files =
     [ "ScanDec.hpp", "_scan_dec_8hpp.html", [
       [ "EagerScanDec", "classtdc_1_1lcpcomp_1_1_eager_scan_dec.html", "classtdc_1_1lcpcomp_1_1_eager_scan_dec" ],
       [ "ScanDec", "classtdc_1_1lcpcomp_1_1_scan_dec.html", "classtdc_1_1lcpcomp_1_1_scan_dec" ]
+    ] ],
+    [ "SLECoder.hpp", "_s_l_e_coder_8hpp.html", [
+      [ "SLECoder", "classtdc_1_1_s_l_e_coder.html", "classtdc_1_1_s_l_e_coder" ],
+      [ "Encoder", "classtdc_1_1_s_l_e_coder_1_1_encoder.html", "classtdc_1_1_s_l_e_coder_1_1_encoder" ],
+      [ "Decoder", "classtdc_1_1_s_l_e_coder_1_1_decoder.html", "classtdc_1_1_s_l_e_coder_1_1_decoder" ]
     ] ],
     [ "squeeze_node.hpp", "squeeze__node_8hpp.html", "squeeze__node_8hpp" ],
     [ "Stat.hpp", "_stat_8hpp.html", "_stat_8hpp" ],

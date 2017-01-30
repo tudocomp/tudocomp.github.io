@@ -3,7 +3,6 @@ var searchData=
   ['cedarsearchpos',['CedarSearchPos',['../structtdc_1_1lz78_1_1_cedar_search_pos.html',1,'tdc::lz78']]],
   ['cedartrie',['CedarTrie',['../classtdc_1_1lz78_1_1_cedar_trie.html',1,'tdc::lz78']]],
   ['chaincompressor',['ChainCompressor',['../classtdc_1_1_chain_compressor.html',1,'tdc']]],
-  ['code2coder',['Code2Coder',['../classtdc_1_1_code2_coder.html',1,'tdc']]],
   ['compactdec',['CompactDec',['../classtdc_1_1lcpcomp_1_1_compact_dec.html',1,'tdc::lcpcomp']]],
   ['compression',['Compression',['../classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html',1,'tdc::lz78u::BufferingStrategy']]],
   ['compression',['Compression',['../classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html',1,'tdc::lz78u::StreamingStrategy']]],
