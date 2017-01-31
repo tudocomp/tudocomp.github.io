@@ -43,14 +43,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_options_8hpp.html#a67e72937301f82d54e5d0071cb03ba8c",
-"classtdc_1_1_const_integer_base_with64.html#aa49ba4bdf86436c4d9225c84fb3e589c",
-"classtdc_1_1_option_value.html#ac87da2361810978ae0a3c223d082ac13",
-"classtdc_1_1int__vector_1_1_generic_int_ptr.html#afb99fdf35114b2ba66af0c088799a5e9",
-"classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#aaf7623b4388b0bfe3414de8b89968c00",
-"classtdc_1_1uint__t.html#ab86a8fdf5191a824c5cbf33d86b3b39d",
-"namespacemembers_h.html",
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ad15a8da289be9df9c171bbc7bdf61ae9"
+"_p_l_c_p_from_phi_8hpp_source.html",
+"classtdc_1_1_const_integer_base_with64.html#ab8e7ccd598dfbad1b81237ec10a2bdd8",
+"classtdc_1_1_phi_from_s_a.html#a04c488d8bd66964f54e445e5b54d7b33",
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a74e4c6d7a7b278ba7040699f133fbfb8",
+"classtdc_1_1lcpcomp_1_1_max_heap_strategy.html",
+"classtdc_1_1uint__t.html#ae455c8dfe2675d864dfe6b464e592fad",
+"namespacemembers_r.html",
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ae6716914adc213023e33ebf531aad510"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

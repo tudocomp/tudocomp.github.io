@@ -80,7 +80,6 @@ var files =
     [ "divsufsort_ssort.hpp", "divsufsort__ssort_8hpp.html", "divsufsort__ssort_8hpp" ],
     [ "divsufsort_trsort.hpp", "divsufsort__trsort_8hpp.html", "divsufsort__trsort_8hpp" ],
     [ "dynamic_t.hpp", "dynamic__t_8hpp.html", "dynamic__t_8hpp" ],
-    [ "EasyRLECompressor.hpp", "_easy_r_l_e_compressor_8hpp.html", "_easy_r_l_e_compressor_8hpp" ],
     [ "EliasDeltaCoder.hpp", "_elias_delta_coder_8hpp.html", [
       [ "EliasDeltaCoder", "classtdc_1_1_elias_delta_coder.html", "classtdc_1_1_elias_delta_coder" ],
       [ "Encoder", "classtdc_1_1_elias_delta_coder_1_1_encoder.html", "classtdc_1_1_elias_delta_coder_1_1_encoder" ],
@@ -140,7 +139,6 @@ var files =
     [ "LiteralEncoder.hpp", "_literal_encoder_8hpp.html", [
       [ "LiteralEncoder", "classtdc_1_1_literal_encoder.html", "classtdc_1_1_literal_encoder" ]
     ] ],
-    [ "LZ78common.hpp", "_l_z78common_8hpp.html", null ],
     [ "LZ78Compressor.hpp", "_l_z78_compressor_8hpp.html", [
       [ "Decompressor", "classtdc_1_1lz78_1_1_decompressor.html", "classtdc_1_1lz78_1_1_decompressor" ],
       [ "LZ78Compressor", "classtdc_1_1_l_z78_compressor.html", "classtdc_1_1_l_z78_compressor" ]
@@ -230,9 +228,7 @@ var files =
     [ "RePairCompressor.hpp", "_re_pair_compressor_8hpp.html", [
       [ "RePairCompressor", "classtdc_1_1_re_pair_compressor.html", "classtdc_1_1_re_pair_compressor" ]
     ] ],
-    [ "RunLengthEncoder.hpp", "_run_length_encoder_8hpp.html", [
-      [ "RunLengthEncoder", "classtdc_1_1_run_length_encoder.html", "classtdc_1_1_run_length_encoder" ]
-    ] ],
+    [ "RunLengthEncoder.hpp", "_run_length_encoder_8hpp.html", "_run_length_encoder_8hpp" ],
     [ "RunRichGenerator.hpp", "_run_rich_generator_8hpp.html", [
       [ "RunRichGenerator", "classtdc_1_1_run_rich_generator.html", "classtdc_1_1_run_rich_generator" ]
     ] ],

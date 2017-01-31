@@ -15,7 +15,6 @@ var hierarchy =
       [ "tdc::Compressor", "classtdc_1_1_compressor.html", [
         [ "tdc::BWTCompressor< text_t >", "classtdc_1_1_b_w_t_compressor.html", null ],
         [ "tdc::ChainCompressor", "classtdc_1_1_chain_compressor.html", null ],
-        [ "tdc::EasyRLECompressor", "classtdc_1_1_easy_r_l_e_compressor.html", null ],
         [ "tdc::LCPCompressor< coder_t, strategy_t, dec_t, text_t >", "classtdc_1_1_l_c_p_compressor.html", null ],
         [ "tdc::LiteralEncoder< coder_t >", "classtdc_1_1_literal_encoder.html", null ],
         [ "tdc::LZ78Compressor< coder_t, dict_t >", "classtdc_1_1_l_z78_compressor.html", null ],
@@ -26,7 +25,7 @@ var hierarchy =
         [ "tdc::MTFCompressor", "classtdc_1_1_m_t_f_compressor.html", null ],
         [ "tdc::NoopCompressor", "classtdc_1_1_noop_compressor.html", null ],
         [ "tdc::RePairCompressor< coder_t >", "classtdc_1_1_re_pair_compressor.html", null ],
-        [ "tdc::RunLengthEncoder< coder_t >", "classtdc_1_1_run_length_encoder.html", null ]
+        [ "tdc::RunLengthEncoder", "classtdc_1_1_run_length_encoder.html", null ]
       ] ],
       [ "tdc::Decoder", "classtdc_1_1_decoder.html", [
         [ "tdc::ASCIICoder::Decoder", "classtdc_1_1_a_s_c_i_i_coder_1_1_decoder.html", null ],
@@ -149,9 +148,9 @@ var hierarchy =
     [ "tdc::lcpcomp::EagerScanDec", "classtdc_1_1lcpcomp_1_1_eager_scan_dec.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::empty_callback", "structcedar_1_1da_1_1empty__callback.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if98931aa7cbfcd97f62e54965a157a76a.html", null ],
-    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_00_01taa2794a6825e1ee94ecb0ac2b8d96652.html", null ],
-    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html", null ],
+    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html", null ],
+    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_00_01taa2794a6825e1ee94ecb0ac2b8d96652.html", null ],
     [ "tdc::Env", "classtdc_1_1_env.html", null ],
     [ "tdc::EnvRoot", "classtdc_1_1_env_root.html", null ],
     [ "tdc::lz78u::Factor", "structtdc_1_1lz78u_1_1_factor.html", null ],
@@ -226,8 +225,8 @@ var hierarchy =
     [ "tdc::lcpcomp::MaxLCPSuffixList< lcp_t >", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html", null ],
     [ "tdc::Meta", "classtdc_1_1_meta.html", null ],
     [ "tdc::MixHasher", "classtdc_1_1_mix_hasher.html", null ],
-    [ "tdc::lcpcomp::MyHash< Key, Value, HashFcn, EqualKey, SizeManager, empty_val >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
     [ "tdc::lz78::MyHash< Key, Value, HashFcn, EqualKey, ProbeFcn, SizeManager >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
+    [ "tdc::lcpcomp::MyHash< Key, Value, HashFcn, EqualKey, SizeManager, empty_val >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
     [ "tdc::lcpcomp::MyHash< len_t, len_t, tdc::MixHasher >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
     [ "tdc::lz78::MyHash< squeeze_node_t, factorid_t, tdc::MixHasher, std::equal_to< squeeze_node_t >, tdc::LinearProber< squeeze_node_t > >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
     [ "cedar::NaN< T >", "structcedar_1_1_na_n.html", null ],
@@ -279,8 +278,8 @@ var hierarchy =
     [ "tdc::lz78::TrieNode< search_pos_t >", "classtdc_1_1lz78_1_1_trie_node.html", null ],
     [ "tdc::lz78::TrieNode< CedarSearchPos >", "classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html", null ],
     [ "tdc::lz78::TrieNode< factorid_t >", "classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html", null ],
-    [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
     [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
+    [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
     [ "tdc::UinttDispatch< MB >", "structtdc_1_1_uintt_dispatch.html", null ],
     [ "tdc::json::Value", "classtdc_1_1json_1_1_value.html", [
       [ "tdc::json::Array", "classtdc_1_1json_1_1_array.html", null ],

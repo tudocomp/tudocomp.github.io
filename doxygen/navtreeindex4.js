@@ -1,13 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classtdc_1_1int__vector_1_1_generic_int_ptr.html#afb99fdf35114b2ba66af0c088799a5e9":[2,0,2,1,7,21],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html":[2,0,2,1,8],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a0584f0235cbae162c810fc222b2bc799":[2,0,2,1,8,2],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a13675ff14dd5885d815b7170574deaa0":[2,0,2,1,8,1],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a195f3f9bd470fad3ba33a43e874bd0e7":[2,0,2,1,8,4],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a25723c1cb637d1b9e0fdbd9eb9bbe359":[2,0,2,1,8,12],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a3aeea0030d826c5dd61751669f2cc9bf":[2,0,2,1,8,8],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a4bbe691a6bd1801b2ca3fea032fdd1d3":[2,0,2,1,8,5],
 "classtdc_1_1int__vector_1_1_generic_int_ref.html#a74e4c6d7a7b278ba7040699f133fbfb8":[2,0,2,1,8,0],
 "classtdc_1_1int__vector_1_1_generic_int_ref.html#a8a4945721db67cf88412dff40f9bc74a":[2,0,2,1,8,10],
 "classtdc_1_1int__vector_1_1_generic_int_ref.html#ab55b749a442108199d68888ff81ca5d1":[2,0,2,1,8,6],
@@ -249,5 +241,13 @@ var NAVTREEINDEX4 =
 "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#a1fbed5ba674cebbadf265b9522f4363e":[2,0,2,4,3,5],
 "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#a258853701d6470c360f6aaf30a9b7f9a":[2,0,2,4,3,0],
 "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#a96b1cbb6fd2586db7da0bd69e2b071fe":[2,0,2,4,3,2],
-"classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#a987b05f16aa12d07a965f89e686e57e0":[2,0,2,4,3,3]
+"classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#a987b05f16aa12d07a965f89e686e57e0":[2,0,2,4,3,3],
+"classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#aaf7623b4388b0bfe3414de8b89968c00":[2,0,2,4,3,4],
+"classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#ab361e365f8ab96dfe6f9e65c13ff25d6":[2,0,2,4,3,6],
+"classtdc_1_1lcpcomp_1_1_eager_scan_dec.html":[2,0,2,4,4],
+"classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a2af8fa39a5a8b38909f8125dcfc086e6":[2,0,2,4,4,2],
+"classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a324225b6da79f4f04658a96e394a9093":[2,0,2,4,4,4],
+"classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a5d9b13df76ef721a5d2c022a2c14ad0d":[2,0,2,4,4,3],
+"classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a98cc8b6e1e30b6ca29edd4a4fe431e6d":[2,0,2,4,4,1],
+"classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#aa84a5ca4dda12b1954aded9fda3d6605":[2,0,2,4,4,0]
 };
