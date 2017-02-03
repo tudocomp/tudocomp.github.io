@@ -21,7 +21,6 @@ var searchData=
   ['node_5ftype',['node_type',['../structtdc_1_1_suffix_tree.html#ab1cc63e5cd8ed13bbbbc28ea82ef548c',1,'tdc::SuffixTree']]],
   ['noliterals',['NoLiterals',['../classtdc_1_1_no_literals.html',1,'tdc']]],
   ['noliterals',['NoLiterals',['../classtdc_1_1_no_literals.html#a86244ce2cce351b6068727f69e43ca37',1,'tdc::NoLiterals']]],
-  ['none',['none',['../namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514add7095aca38bdba2cec806f17df75d35',1,'tdc']]],
   ['nonzero_5fsize',['nonzero_size',['../classcedar_1_1da.html#acb9010f1eadf4966c65326f280301ca2',1,'cedar::da']]],
   ['noopcompressor',['NoopCompressor',['../classtdc_1_1_noop_compressor.html#ae5744f2c73c866b86e41336dbb01ef84',1,'tdc::NoopCompressor']]],
   ['noopcompressor',['NoopCompressor',['../classtdc_1_1_noop_compressor.html',1,'tdc']]],

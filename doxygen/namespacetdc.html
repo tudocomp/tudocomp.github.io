@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170203-jenkins-71</span>
+   &#160;<span id="projectnumber">0.170203-jenkins-72</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -449,14 +449,14 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a991729ddcd7e56176b9203c9ac8f3514"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514">CompressMode</a> { <br />
-&#160;&#160;<a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514add7095aca38bdba2cec806f17df75d35">none</a> = 0, 
+&#160;&#160;<a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a061fd981825839067e43479a64afb4df">plain</a> = 0, 
 <a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a945fa2420c3af6d76fab0b451ee2fef9">delayed</a> = 1, 
-<a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a47308e6446605b8736a4ce81f0df4c00">direct</a> = 2, 
+<a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a4aec3b21c2b68dc1b839010afe8d14ca">compressed</a> = 2, 
 <a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a31a3788ce68cb8101f63c3e76579c531">coherent_delayed</a> = 254, 
 <br />
 &#160;&#160;<a class="el" href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514acb50d805afc1c9fcf979ef57910ec96c">select</a> = 255
 <br />
- }<tr class="memdesc:a991729ddcd7e56176b9203c9ac8f3514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines when data structures are compressed.  <a href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514">More...</a><br /></td></tr>
+ }<tr class="memdesc:a991729ddcd7e56176b9203c9ac8f3514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines when data structures are bit-compressed.  <a href="namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a991729ddcd7e56176b9203c9ac8f3514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -968,19 +968,19 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Defines when data structures are compressed. </p>
+<p>Defines when data structures are bit-compressed. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a991729ddcd7e56176b9203c9ac8f3514add7095aca38bdba2cec806f17df75d35"></a>none&#160;</td><td class="fielddoc">
-<p>Data structures aren't compressed (fastest, but highest memory usage). </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a991729ddcd7e56176b9203c9ac8f3514a061fd981825839067e43479a64afb4df"></a>plain&#160;</td><td class="fielddoc">
+<p>Data structures are not bit-compressed at all (fastest, but highest memory usage). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a991729ddcd7e56176b9203c9ac8f3514a945fa2420c3af6d76fab0b451ee2fef9"></a>delayed&#160;</td><td class="fielddoc">
-<p>Data structures are compressed after they have been constructed (fast construction, but possibly high memory peak). </p>
+<p>Data structures are bit-compressed after they have been constructed (fast construction, but possibly high memory peak). </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a991729ddcd7e56176b9203c9ac8f3514a47308e6446605b8736a4ce81f0df4c00"></a>direct&#160;</td><td class="fielddoc">
-<p>Data structures are constructed directly in compressed space (slower construction, but smaller memory usage). </p>
+<tr><td class="fieldname"><a class="anchor" id="a991729ddcd7e56176b9203c9ac8f3514a4aec3b21c2b68dc1b839010afe8d14ca"></a>compressed&#160;</td><td class="fielddoc">
+<p>Data structures are constructed directly in bit-compressed space (slower construction, but smaller memory usage). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a991729ddcd7e56176b9203c9ac8f3514a31a3788ce68cb8101f63c3e76579c531"></a>coherent_delayed&#160;</td><td class="fielddoc">
-<p>Special mode that will cause no compression at all during construction, internal use in <a class="el" href="classtdc_1_1_text_d_s.html" title="Manages text related data structures. ">TextDS</a> only. </p>
+<p>Special mode that will cause no bit-compression at all during construction, internal use in <a class="el" href="classtdc_1_1_text_d_s.html" title="Manages text related data structures. ">TextDS</a> only. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a991729ddcd7e56176b9203c9ac8f3514acb50d805afc1c9fcf979ef57910ec96c"></a>select&#160;</td><td class="fielddoc">
 <p>Automatically select compress mode, internal use in <a class="el" href="classtdc_1_1_text_d_s.html" title="Manages text related data structures. ">TextDS</a> only. </p>
