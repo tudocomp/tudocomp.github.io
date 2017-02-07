@@ -39,6 +39,9 @@ var files =
       [ "BitOStream", "classtdc_1_1io_1_1_bit_o_stream.html", "classtdc_1_1io_1_1_bit_o_stream" ]
     ] ],
     [ "BitPackingVector.hpp", "_bit_packing_vector_8hpp.html", "_bit_packing_vector_8hpp" ],
+    [ "BoostHeap.hpp", "_boost_heap_8hpp.html", [
+      [ "BoostHeap", "classtdc_1_1lcpcomp_1_1_boost_heap.html", "classtdc_1_1lcpcomp_1_1_boost_heap" ]
+    ] ],
     [ "BufferingStrategy.hpp", "_buffering_strategy_8hpp.html", [
       [ "BufferingStrategy", "classtdc_1_1lz78u_1_1_buffering_strategy.html", "classtdc_1_1lz78u_1_1_buffering_strategy" ],
       [ "Compression", "classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html", "classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression" ],

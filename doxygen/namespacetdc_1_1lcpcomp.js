@@ -1,6 +1,7 @@
 var namespacetdc_1_1lcpcomp =
 [
     [ "ArraysComp", "classtdc_1_1lcpcomp_1_1_arrays_comp.html", "classtdc_1_1lcpcomp_1_1_arrays_comp" ],
+    [ "BoostHeap", "classtdc_1_1lcpcomp_1_1_boost_heap.html", "classtdc_1_1lcpcomp_1_1_boost_heap" ],
     [ "BulldozerStrategy", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy" ],
     [ "CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", "classtdc_1_1lcpcomp_1_1_compact_dec" ],
     [ "DecodeForwardQueueListBuffer", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer" ],

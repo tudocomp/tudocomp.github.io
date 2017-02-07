@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"classtdc_1_1_p_l_c_p_from_phi.html#a42f99d1f3e63c1bdae8b207a09d2349e":[2,0,2,80,0],
+"classtdc_1_1_phi_from_s_a.html":[2,0,2,79],
 "classtdc_1_1_phi_from_s_a.html#a04c488d8bd66964f54e445e5b54d7b33":[2,0,2,79,0],
 "classtdc_1_1_phi_from_s_a.html#af5c7ba3edb40046375853046fd8b2e42":[2,0,2,79,1],
 "classtdc_1_1_quadratic_prober.html":[2,0,2,81],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classtdc_1_1int__vector_1_1_generic_int_ref.html#a0584f0235cbae162c810fc222b2bc799":[2,0,2,1,8,2],
 "classtdc_1_1int__vector_1_1_generic_int_ref.html#a13675ff14dd5885d815b7170574deaa0":[2,0,2,1,8,1],
 "classtdc_1_1int__vector_1_1_generic_int_ref.html#a195f3f9bd470fad3ba33a43e874bd0e7":[2,0,2,1,8,4],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a25723c1cb637d1b9e0fdbd9eb9bbe359":[2,0,2,1,8,12],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a3aeea0030d826c5dd61751669f2cc9bf":[2,0,2,1,8,8],
-"classtdc_1_1int__vector_1_1_generic_int_ref.html#a4bbe691a6bd1801b2ca3fea032fdd1d3":[2,0,2,1,8,5]
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a25723c1cb637d1b9e0fdbd9eb9bbe359":[2,0,2,1,8,12]
 };

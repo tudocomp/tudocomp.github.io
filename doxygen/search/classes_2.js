@@ -10,6 +10,7 @@ var searchData=
   ['bitpackingvectorbase_3c_20dynamic_5ft_20_3e',['BitPackingVectorBase&lt; dynamic_t &gt;',['../structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01dynamic__t_01_4.html',1,'tdc::int_vector']]],
   ['bitpackingvectorbase_3c_20uint_5ft_3c_20n_20_3e_20_3e',['BitPackingVectorBase&lt; uint_t&lt; N &gt; &gt;',['../structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01uint__t_3_01_n_01_4_01_4.html',1,'tdc::int_vector']]],
   ['block',['block',['../structcedar_1_1da_1_1block.html',1,'cedar::da']]],
+  ['boostheap',['BoostHeap',['../classtdc_1_1lcpcomp_1_1_boost_heap.html',1,'tdc::lcpcomp']]],
   ['bufferingstrategy',['BufferingStrategy',['../classtdc_1_1lz78u_1_1_buffering_strategy.html',1,'tdc::lz78u']]],
   ['bufferwrapper',['BufferWrapper',['../classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html',1,'tdc::libdivsufsort']]],
   ['builder',['Builder',['../classtdc_1_1_builder.html',1,'tdc']]],
