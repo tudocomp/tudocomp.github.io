@@ -149,7 +149,7 @@
 <li><a href="http://pandoc.org">Pandoc</a> (1.16 or later).</li>
 </ul>
 <h2 id="command-line-application">Command-line application</h2>
-<p>The executable <code>tudocomp_driver</code> is the command-line application that bundles all registered algorithms. It provides a fast and easy way to compress and decompress a file with a specified chain of compressors.</p>
+<p>The executable <code>tdc</code> is the command-line application that bundles all registered algorithms. It provides a fast and easy way to compress and decompress a file with a specified chain of compressors.</p>
 <p>Every registered compression or encoding algorithm will be listed in the help output of the application when passing the <code>--list</code> argument.</p>
 <blockquote>
 <blockquote>
@@ -162,7 +162,7 @@
 <p><em>Note:</em> In a <em>Cygwin</em> environment, due to its nature of not allowing overrides of <code>malloc</code> and friends, the <code>malloc_count</code> module is not functional, ie. memory heap allocation cannot be measured.</p>
 </blockquote>
 <h2 id="license">License</h2>
-<p>The framework is published under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License, Version 3</a>.</p>
+<p>The framework is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0Apache License 2.0</a></p>
 <h1 id="tutorial">Tutorial</h1>
 <p>This chapter provides a guided tour through the implementation of a compressor, spanning much of the framework's functionality. The following topics will be discussed:</p>
 <ul>
@@ -175,7 +175,7 @@
 <li>Adding options to select different behavior</li>
 <li>Making a compressor modular by using sub algorithms and templated options</li>
 <li>Registering a compressor in the registry</li>
-<li>Using the <code>tudocomp_driver</code> command-line application with the newly implemented compressor</li>
+<li>Using the <code>tdc</code> command-line application with the newly implemented compressor</li>
 <li>Using the <code>compare_tool</code> for benchmarking the compressor against other compressors for different inputs</li>
 </ul>
 <p>You may also refer to an <a href="#uml-type-overview">UML overview</a> of the framework.</p>
@@ -761,9 +761,9 @@ r.register_compressor&lt;TemplatedExampleCompressor&lt;ExampleRunEmitter&gt;&gt;
 </blockquote>
 </blockquote>
 <p>After integrating a compressor into the registry, we can start using it with the command line tool.</p>
-<p>The &quot;Driver&quot; (named this way because it serves as an user interface that drives the underlying tudocomp library) can be compiled with <code>make tudocomp_driver</code>. The executable of the driver is stored in <code>build/src/tudocomp_driver/tudocomp_driver</code> (after compilation).</p>
+<p>The &quot;Driver&quot; (named this way because it serves as an user interface that drives the underlying tudocomp library) can be compiled with <code>make tudocomp_driver</code>. The executable of the driver is stored in <code>build/tdc</code> (after compilation).</p>
 <p>As a first step after building it, we can verify that the new compressors exists by listing all known algorithms:</p>
-<pre><code>.../build&gt; ./src/tudocomp_driver/tudocomp_driver --list
+<pre><code>.../build&gt; ./tdc --list
 This build supports the following algorithms:
 
   [Compression algorithms]
@@ -791,7 +791,7 @@ This build supports the following algorithms:
 
   ...</code></pre>
 <p>Next we will compress something with the tool. Since this is a quick test, we use an already existing file in the build directory, the <code>CMakeCache.txt</code>:</p>
-<pre><code>.../build&gt; ./src/tudocomp_driver/tudocomp_driver -algorithm &quot;example_compressor&quot; CMakeCache.txt -output ./cache.tdc -stats</code></pre>
+<pre><code>.../build&gt; ./tdc -algorithm &quot;example_compressor&quot; CMakeCache.txt -output ./cache.tdc -stats</code></pre>
 <p>This will create a compressed file <code>cache.tdc</code> in the current directory, and print some statistics to the command line, including the JSON data that can be pasted into the previously mentioned web visualizer.</p>
 <blockquote>
 <p><em>Note</em>: The tool will prevent accidental overwrites if a file with the output filename already exists. To bypass this security mechanism, and hence allow overwriting, the <code>-force</code> option has to be used.</p>

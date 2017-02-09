@@ -215,9 +215,7 @@ var files =
     [ "PLCPPeaksStrategy.hpp", "_p_l_c_p_peaks_strategy_8hpp.html", [
       [ "PLCPPeaksStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy" ]
     ] ],
-    [ "PLCPStrategy.hpp", "_p_l_c_p_strategy_8hpp.html", [
-      [ "PLCPStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy" ]
-    ] ],
+    [ "PLCPStrategy.hpp", "_p_l_c_p_strategy_8hpp.html", "_p_l_c_p_strategy_8hpp" ],
     [ "pre_header.hpp", "pre__header_8hpp.html", [
       [ "Factor", "structtdc_1_1lz78u_1_1_factor.html", "structtdc_1_1lz78u_1_1_factor" ]
     ] ],

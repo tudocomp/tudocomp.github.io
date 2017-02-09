@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170208-jenkins-80</span>
+   &#160;<span id="projectnumber">0.170209-jenkins-81</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -134,6 +134,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lcpcomp_1_1_eager_scan_dec.html">EagerScanDec</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lcpcomp_1_1lcp__sada.html">lcp_sada</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lcpcomp_1_1_l_c_p_forward_iterator.html">LCPForwardIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lcpcomp_1_1_max_heap_strategy.html">MaxHeapStrategy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements the original "Max LCP" selection strategy for LCPComp.  <a href="classtdc_1_1lcpcomp_1_1_max_heap_strategy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +168,20 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af571b3aa9dee5d215025e091fadf3908"><td class="memTemplParams" colspan="2">template&lt;class phi_t , class sa_t &gt; </td></tr>
+<tr class="memitem:af571b3aa9dee5d215025e091fadf3908"><td class="memTemplItemLeft" align="right" valign="top">phi_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lcpcomp.html#af571b3aa9dee5d215025e091fadf3908">construct_phi_array</a> (const sa_t &amp;sa)</td></tr>
+<tr class="memdesc:af571b3aa9dee5d215025e091fadf3908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the phi array with phi[sa[i]] = sa[i-1].  <a href="#af571b3aa9dee5d215025e091fadf3908">More...</a><br /></td></tr>
+<tr class="separator:af571b3aa9dee5d215025e091fadf3908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192c8eb9ca56593bfa63ff44ef461b7c"><td class="memTemplParams" colspan="2">template&lt;typename phi_t , typename text_t &gt; </td></tr>
+<tr class="memitem:a192c8eb9ca56593bfa63ff44ef461b7c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lcpcomp.html#a192c8eb9ca56593bfa63ff44ef461b7c">phi_algorithm</a> (phi_t &amp;phi, const text_t &amp;text)</td></tr>
+<tr class="memdesc:a192c8eb9ca56593bfa63ff44ef461b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the PLCP array.  <a href="#a192c8eb9ca56593bfa63ff44ef461b7c">More...</a><br /></td></tr>
+<tr class="separator:a192c8eb9ca56593bfa63ff44ef461b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bdde5952f3caf993b45f6f1135b5483"><td class="memTemplParams" colspan="2">template&lt;class sa_t , class text_t , class select_t  = sdsl::select_support_mcl&lt;1,1&gt;&gt; </td></tr>
+<tr class="memitem:a0bdde5952f3caf993b45f6f1135b5483"><td class="memTemplItemLeft" align="right" valign="top">sdsl::bit_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lcpcomp.html#a0bdde5952f3caf993b45f6f1135b5483">construct_plcp_bitvector</a> (<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;env, const sa_t &amp;sa, const text_t &amp;text)</td></tr>
+<tr class="separator:a0bdde5952f3caf993b45f6f1135b5483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae26b1b15241217f7df87078e8438de"><td class="memTemplParams" colspan="2">template&lt;class sa_t , class text_t , class select_t  = sdsl::select_support_mcl&lt;1,1&gt;&gt; </td></tr>
+<tr class="memitem:a7ae26b1b15241217f7df87078e8438de"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1lcpcomp_1_1lcp__sada.html">lcp_sada</a>&lt; sa_t, select_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lcpcomp.html#a7ae26b1b15241217f7df87078e8438de">construct_lcp_sada</a> (<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;env, const sa_t &amp;sa, const text_t &amp;text)</td></tr>
+<tr class="separator:a7ae26b1b15241217f7df87078e8438de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66347d1d6c1f7f902445d92d6e8b1a4f"><td class="memTemplParams" colspan="2">template&lt;typename coder_t , typename decode_buffer_t &gt; </td></tr>
 <tr class="memitem:a66347d1d6c1f7f902445d92d6e8b1a4f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lcpcomp.html#a66347d1d6c1f7f902445d92d6e8b1a4f">decode_text_internal</a> (<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;env, coder_t &amp;decoder, std::ostream &amp;outs)</td></tr>
 <tr class="separator:a66347d1d6c1f7f902445d92d6e8b1a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +192,115 @@ Variables</h2></td></tr>
 <tr class="separator:a04fca1dbf79cb14cc2b0b64b0bf5352b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a7ae26b1b15241217f7df87078e8438de"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class sa_t , class text_t , class select_t  = sdsl::select_support_mcl&lt;1,1&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtdc_1_1lcpcomp_1_1lcp__sada.html">lcp_sada</a>&lt;sa_t,select_t&gt; tdc::lcpcomp::construct_lcp_sada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sa_t &amp;&#160;</td>
+          <td class="paramname"><em>sa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const text_t &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_p_l_c_p_strategy_8hpp_source.html#l00198">198</a> of file <a class="el" href="_p_l_c_p_strategy_8hpp_source.html">PLCPStrategy.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af571b3aa9dee5d215025e091fadf3908"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class phi_t , class sa_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">phi_t tdc::lcpcomp::construct_phi_array </td>
+          <td>(</td>
+          <td class="paramtype">const sa_t &amp;&#160;</td>
+          <td class="paramname"><em>sa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the phi array with phi[sa[i]] = sa[i-1]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sa</td><td>the suffix array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the phi array </dd></dl>
+
+<p>Definition at line <a class="el" href="_p_l_c_p_strategy_8hpp_source.html#l00047">47</a> of file <a class="el" href="_p_l_c_p_strategy_8hpp_source.html">PLCPStrategy.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bdde5952f3caf993b45f6f1135b5483"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class sa_t , class text_t , class select_t  = sdsl::select_support_mcl&lt;1,1&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">sdsl::bit_vector tdc::lcpcomp::construct_plcp_bitvector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sa_t &amp;&#160;</td>
+          <td class="paramname"><em>sa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const text_t &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_p_l_c_p_strategy_8hpp_source.html#l00182">182</a> of file <a class="el" href="_p_l_c_p_strategy_8hpp_source.html">PLCPStrategy.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a66347d1d6c1f7f902445d92d6e8b1a4f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -215,6 +342,53 @@ template&lt;typename coder_t , typename decode_buffer_t &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_l_c_p_compressor_8hpp_source.html#l00019">19</a> of file <a class="el" href="_l_c_p_compressor_8hpp_source.html">LCPCompressor.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a192c8eb9ca56593bfa63ff44ef461b7c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename phi_t , typename text_t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tdc::lcpcomp::phi_algorithm </td>
+          <td>(</td>
+          <td class="paramtype">phi_t &amp;&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const text_t &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the PLCP array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phi</td><td>the phi-array. Will be overwritten with PLCP  the input text </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Kärkkäinen et. al, "Permuted Longest-Common-Prefix Array", CPM'09 </dd></dl>
+
+<p>Definition at line <a class="el" href="_p_l_c_p_strategy_8hpp_source.html#l00068">68</a> of file <a class="el" href="_p_l_c_p_strategy_8hpp_source.html">PLCPStrategy.hpp</a>.</p>
 
 </div>
 </div>

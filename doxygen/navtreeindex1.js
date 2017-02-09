@@ -6,6 +6,10 @@ var NAVTREEINDEX1 =
 "_p_l_c_p_peaks_strategy_8hpp.html":[3,0,87],
 "_p_l_c_p_peaks_strategy_8hpp_source.html":[3,0,87],
 "_p_l_c_p_strategy_8hpp.html":[3,0,88],
+"_p_l_c_p_strategy_8hpp.html#a0bdde5952f3caf993b45f6f1135b5483":[3,0,88,5],
+"_p_l_c_p_strategy_8hpp.html#a192c8eb9ca56593bfa63ff44ef461b7c":[3,0,88,6],
+"_p_l_c_p_strategy_8hpp.html#a7ae26b1b15241217f7df87078e8438de":[3,0,88,3],
+"_p_l_c_p_strategy_8hpp.html#af571b3aa9dee5d215025e091fadf3908":[3,0,88,4],
 "_p_l_c_p_strategy_8hpp_source.html":[3,0,88],
 "_phi_from_s_a_8hpp.html":[3,0,85],
 "_phi_from_s_a_8hpp_source.html":[3,0,85],
@@ -156,6 +160,7 @@ var NAVTREEINDEX1 =
 "classtdc_1_1_array_max_heap.html":[2,0,2,13],
 "classtdc_1_1_array_max_heap.html#a0042463fb6b1ec37439e4cdf5ff0bb4d":[2,0,2,13,7],
 "classtdc_1_1_array_max_heap.html#a069d1f176e55220d02dfe3a29643acea":[2,0,2,13,6],
+"classtdc_1_1_array_max_heap.html#a08208b4891a93bd50fd556c96dc88bd4":[2,0,2,13,8],
 "classtdc_1_1_array_max_heap.html#a0dff86960eb3c68e0116eab282dddbb3":[2,0,2,13,3],
 "classtdc_1_1_array_max_heap.html#a407bcb5a2be91b48052cb612c1e6b4c1":[2,0,2,13,0],
 "classtdc_1_1_array_max_heap.html#a69f23a3a5049588de1e30104e0fad513":[2,0,2,13,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX1 =
 "classtdc_1_1_const_integer_base_with64.html#a72a60006977072df2abd8e6d6c35ab5d":[2,0,2,28,27],
 "classtdc_1_1_const_integer_base_with64.html#a75b4fc2e751dd52954ca230a5ec9913d":[2,0,2,28,4],
 "classtdc_1_1_const_integer_base_with64.html#a8aa5ce9a081b04b69011102f764448fc":[2,0,2,28,25],
-"classtdc_1_1_const_integer_base_with64.html#a8cb86686028e84e5e6d8be39c36c595f":[2,0,2,28,21],
-"classtdc_1_1_const_integer_base_with64.html#a8f98e5586a8c8156928217ff907a55f8":[2,0,2,28,19],
-"classtdc_1_1_const_integer_base_with64.html#a937f9b8653861ba199fdf0fa80bc70bc":[2,0,2,28,12],
-"classtdc_1_1_const_integer_base_with64.html#a9c40f832fc0fc24ac971051d8be7c0c0":[2,0,2,28,1],
-"classtdc_1_1_const_integer_base_with64.html#aa49ba4bdf86436c4d9225c84fb3e589c":[2,0,2,28,8],
-"classtdc_1_1_const_integer_base_with64.html#aa624fad686a0507fb38f84e3422929a7":[2,0,2,28,26]
+"classtdc_1_1_const_integer_base_with64.html#a8cb86686028e84e5e6d8be39c36c595f":[2,0,2,28,21]
 };
