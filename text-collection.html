@@ -17,218 +17,218 @@
     <header>
         <h1>&ndash; The TU Dortmund Compression Framework</h1>
     </header>
-    <section id="content" class="padded">
-    <h1 id="text-collections">Text Collections</h1>
-    <p>tudocomp provides a tool that automatically downloads or generates all below described text collections. Of each collection, the tool generates prefixes of the size 1MiB, 10MiB, 50MiB, and 200MiB.</p>
-    <p>We use the following text collections from the <a href="http://acube.di.unipi.it/datasets">Lab of Advanced Algorithms and Applications Website</a>:</p>
-    <ul>
-    <li><code>tagme</code>: <a href="http://acube.di.unipi.it/tagme-dataset" class="uri">http://acube.di.unipi.it/tagme-dataset</a></li>
-    <li><code>hashtag</code>: <a href="http://acube.di.unipi.it/hashtag-datasets" class="uri">http://acube.di.unipi.it/hashtag-datasets</a></li>
-    </ul>
-    <p>Text collections with a prefix <code>pc</code> or <code>pcr</code> belong to the <a href="pizzachili.dcc.uchile.cl">Pizza&amp;Chili Corpus</a>.</p>
-    <p>Tudocomp can automatically generate the following collections:</p>
-    <ul>
-    <li><code>commoncrawl</code>: composed of a random subset of <a href="http://commoncrawl.org">common crawl</a>. this subset contains only the plain texts (i.e., without header and HTML tags) of web sites with ASCII characters.</li>
-    <li><code>wiki-all-vital</code>: consists of the plain text of about 10000 <a href="https://en.wikipedia.org/wiki/Wikipedia:Vital_articles/Expanded">most vital Wikipedia articles</a></li>
-    </ul>
-    <p>The table below shows important key figures of all datasets.</p>
-    <table>
-    <thead>
-    <tr class="header">
-    <th align="left">collection</th>
-    <th align="left">σ</th>
-    <th align="left">max lcp</th>
-    <th align="left">avg lcp</th>
-    <th align="left">bwt-runs</th>
-    <th align="left">z</th>
-    <th align="left">max LZ77 factor</th>
-    <th align="left">H_0</th>
-    <th align="left">H_1</th>
-    <th align="left">H_2</th>
-    <th align="left">H_3</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><code>hashtag</code></td>
-    <td align="left">179</td>
-    <td align="left">54075</td>
-    <td align="left">84</td>
-    <td align="left">63014K</td>
-    <td align="left">13721K</td>
-    <td align="left">54056</td>
-    <td align="left">4.59</td>
-    <td align="left">3.06</td>
-    <td align="left">2.69</td>
-    <td align="left">2.46</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><code>pc-dblp.xml</code></td>
-    <td align="left">97</td>
-    <td align="left">1084</td>
-    <td align="left">44</td>
-    <td align="left">29585K</td>
-    <td align="left">7035K</td>
-    <td align="left">1060</td>
-    <td align="left">5.26</td>
-    <td align="left">3.48</td>
-    <td align="left">2.17</td>
-    <td align="left">1.43</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><code>pc-dna</code></td>
-    <td align="left">17</td>
-    <td align="left">97979</td>
-    <td align="left">60</td>
-    <td align="left">128863K</td>
-    <td align="left">13970K</td>
-    <td align="left">97966</td>
-    <td align="left">1.97</td>
-    <td align="left">1.93</td>
-    <td align="left">1.92</td>
-    <td align="left">1.92</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><code>pc-english</code></td>
-    <td align="left">226</td>
-    <td align="left">987770</td>
-    <td align="left">9390</td>
-    <td align="left">72032K</td>
-    <td align="left">13971K</td>
-    <td align="left">987766</td>
-    <td align="left">4.52</td>
-    <td align="left">3.62</td>
-    <td align="left">2.95</td>
-    <td align="left">2.42</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><code>pc-proteins</code></td>
-    <td align="left">26</td>
-    <td align="left">45704</td>
-    <td align="left">278</td>
-    <td align="left">108459K</td>
-    <td align="left">20875K</td>
-    <td align="left">45703</td>
-    <td align="left">4.20</td>
-    <td align="left">4.18</td>
-    <td align="left">4.16</td>
-    <td align="left">4.07</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><code>pcr-cere</code></td>
-    <td align="left">6</td>
-    <td align="left">175655</td>
-    <td align="left">3541</td>
-    <td align="left">10422K</td>
-    <td align="left">1447K</td>
-    <td align="left">175643</td>
-    <td align="left">2.19</td>
-    <td align="left">1.81</td>
-    <td align="left">1.81</td>
-    <td align="left">1.80</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><code>pcr-einstein.en</code></td>
-    <td align="left">125</td>
-    <td align="left">935920</td>
-    <td align="left">45983</td>
-    <td align="left">153K</td>
-    <td align="left">496K</td>
-    <td align="left">906995</td>
-    <td align="left">4.92</td>
-    <td align="left">3.66</td>
-    <td align="left">2.61</td>
-    <td align="left">1.63</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><code>pcr-kernel</code></td>
-    <td align="left">161</td>
-    <td align="left">2755550</td>
-    <td align="left">149872</td>
-    <td align="left">2718K</td>
-    <td align="left">775K</td>
-    <td align="left">2755550</td>
-    <td align="left">5.38</td>
-    <td align="left">4.03</td>
-    <td align="left">2.93</td>
-    <td align="left">2.05</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><code>pcr-para</code></td>
-    <td align="left">6</td>
-    <td align="left">72544</td>
-    <td align="left">2268</td>
-    <td align="left">13576K</td>
-    <td align="left">1927K</td>
-    <td align="left">70680</td>
-    <td align="left">2.12</td>
-    <td align="left">1.88</td>
-    <td align="left">1.88</td>
-    <td align="left">1.87</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><code>pc-sources</code></td>
-    <td align="left">231</td>
-    <td align="left">307871</td>
-    <td align="left">373</td>
-    <td align="left">47651K</td>
-    <td align="left">11542K</td>
-    <td align="left">307871</td>
-    <td align="left">5.47</td>
-    <td align="left">4.08</td>
-    <td align="left">3.10</td>
-    <td align="left">2.34</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><code>tagme</code></td>
-    <td align="left">206</td>
-    <td align="left">1281</td>
-    <td align="left">26</td>
-    <td align="left">65195K</td>
-    <td align="left">13841K</td>
-    <td align="left">1279</td>
-    <td align="left">4.90</td>
-    <td align="left">3.77</td>
-    <td align="left">3.20</td>
-    <td align="left">2.60</td>
-    </tr>
-    <tr class="even">
-    <td align="left"><code>wiki-all-vital</code></td>
-    <td align="left">205</td>
-    <td align="left">8607</td>
-    <td align="left">15</td>
-    <td align="left">80609K</td>
-    <td align="left">16274K</td>
-    <td align="left">8607</td>
-    <td align="left">4.56</td>
-    <td align="left">3.62</td>
-    <td align="left">3.03</td>
-    <td align="left">2.45</td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><code>commoncrawl</code></td>
-    <td align="left">115</td>
-    <td align="left">246266</td>
-    <td align="left">1727</td>
-    <td align="left">45899K</td>
-    <td align="left">10791K</td>
-    <td align="left">246266</td>
-    <td align="left">5.37</td>
-    <td align="left">4.30</td>
-    <td align="left">3.55</td>
-    <td align="left">2.78</td>
-    </tr>
-    </tbody>
-    </table>
-    <p>where</p>
-    <ul>
-    <li>σ is the alphabet size</li>
-    <li>max lcp is the maximum LCP value</li>
-    <li>avg lcp is the average of all LCP values</li>
-    <li>bwt-runs is the number of runs in the BWT (counting how often BWT[i] != BWT[i-1] occurs)</li>
-    <li>z is the number of LZ77 factors (without window)</li>
-    <li>H_k is the k-th order entropy</li>
-    </ul>
+    <section id="content">
+        <div id="page"><h1 id="text-collections">Text Collections</h1>
+<p>tudocomp provides a tool that automatically downloads or generates all below described text collections. Of each collection, the tool generates prefixes of the size 1MiB, 10MiB, 50MiB, and 200MiB.</p>
+<p>We use the following text collections from the <a href="http://acube.di.unipi.it/datasets">Lab of Advanced Algorithms and Applications Website</a>:</p>
+<ul>
+<li><code>tagme</code>: <a href="http://acube.di.unipi.it/tagme-dataset" class="uri">http://acube.di.unipi.it/tagme-dataset</a></li>
+<li><code>hashtag</code>: <a href="http://acube.di.unipi.it/hashtag-datasets" class="uri">http://acube.di.unipi.it/hashtag-datasets</a></li>
+</ul>
+<p>Text collections with a prefix <code>pc</code> or <code>pcr</code> belong to the <a href="pizzachili.dcc.uchile.cl">Pizza&amp;Chili Corpus</a>.</p>
+<p>Tudocomp can automatically generate the following collections:</p>
+<ul>
+<li><code>commoncrawl</code>: composed of a random subset of <a href="http://commoncrawl.org">common crawl</a>. this subset contains only the plain texts (i.e., without header and HTML tags) of web sites with ASCII characters.</li>
+<li><code>wiki-all-vital</code>: consists of the plain text of about 10000 <a href="https://en.wikipedia.org/wiki/Wikipedia:Vital_articles/Expanded">most vital Wikipedia articles</a></li>
+</ul>
+<p>The table below shows important key figures of all datasets.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">collection</th>
+<th align="left">σ</th>
+<th align="left">max lcp</th>
+<th align="left">avg lcp</th>
+<th align="left">bwt-runs</th>
+<th align="left">z</th>
+<th align="left">max LZ77 factor</th>
+<th align="left">H_0</th>
+<th align="left">H_1</th>
+<th align="left">H_2</th>
+<th align="left">H_3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>hashtag</code></td>
+<td align="left">179</td>
+<td align="left">54075</td>
+<td align="left">84</td>
+<td align="left">63014K</td>
+<td align="left">13721K</td>
+<td align="left">54056</td>
+<td align="left">4.59</td>
+<td align="left">3.06</td>
+<td align="left">2.69</td>
+<td align="left">2.46</td>
+</tr>
+<tr class="even">
+<td align="left"><code>pc-dblp.xml</code></td>
+<td align="left">97</td>
+<td align="left">1084</td>
+<td align="left">44</td>
+<td align="left">29585K</td>
+<td align="left">7035K</td>
+<td align="left">1060</td>
+<td align="left">5.26</td>
+<td align="left">3.48</td>
+<td align="left">2.17</td>
+<td align="left">1.43</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>pc-dna</code></td>
+<td align="left">17</td>
+<td align="left">97979</td>
+<td align="left">60</td>
+<td align="left">128863K</td>
+<td align="left">13970K</td>
+<td align="left">97966</td>
+<td align="left">1.97</td>
+<td align="left">1.93</td>
+<td align="left">1.92</td>
+<td align="left">1.92</td>
+</tr>
+<tr class="even">
+<td align="left"><code>pc-english</code></td>
+<td align="left">226</td>
+<td align="left">987770</td>
+<td align="left">9390</td>
+<td align="left">72032K</td>
+<td align="left">13971K</td>
+<td align="left">987766</td>
+<td align="left">4.52</td>
+<td align="left">3.62</td>
+<td align="left">2.95</td>
+<td align="left">2.42</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>pc-proteins</code></td>
+<td align="left">26</td>
+<td align="left">45704</td>
+<td align="left">278</td>
+<td align="left">108459K</td>
+<td align="left">20875K</td>
+<td align="left">45703</td>
+<td align="left">4.20</td>
+<td align="left">4.18</td>
+<td align="left">4.16</td>
+<td align="left">4.07</td>
+</tr>
+<tr class="even">
+<td align="left"><code>pcr-cere</code></td>
+<td align="left">6</td>
+<td align="left">175655</td>
+<td align="left">3541</td>
+<td align="left">10422K</td>
+<td align="left">1447K</td>
+<td align="left">175643</td>
+<td align="left">2.19</td>
+<td align="left">1.81</td>
+<td align="left">1.81</td>
+<td align="left">1.80</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>pcr-einstein.en</code></td>
+<td align="left">125</td>
+<td align="left">935920</td>
+<td align="left">45983</td>
+<td align="left">153K</td>
+<td align="left">496K</td>
+<td align="left">906995</td>
+<td align="left">4.92</td>
+<td align="left">3.66</td>
+<td align="left">2.61</td>
+<td align="left">1.63</td>
+</tr>
+<tr class="even">
+<td align="left"><code>pcr-kernel</code></td>
+<td align="left">161</td>
+<td align="left">2755550</td>
+<td align="left">149872</td>
+<td align="left">2718K</td>
+<td align="left">775K</td>
+<td align="left">2755550</td>
+<td align="left">5.38</td>
+<td align="left">4.03</td>
+<td align="left">2.93</td>
+<td align="left">2.05</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>pcr-para</code></td>
+<td align="left">6</td>
+<td align="left">72544</td>
+<td align="left">2268</td>
+<td align="left">13576K</td>
+<td align="left">1927K</td>
+<td align="left">70680</td>
+<td align="left">2.12</td>
+<td align="left">1.88</td>
+<td align="left">1.88</td>
+<td align="left">1.87</td>
+</tr>
+<tr class="even">
+<td align="left"><code>pc-sources</code></td>
+<td align="left">231</td>
+<td align="left">307871</td>
+<td align="left">373</td>
+<td align="left">47651K</td>
+<td align="left">11542K</td>
+<td align="left">307871</td>
+<td align="left">5.47</td>
+<td align="left">4.08</td>
+<td align="left">3.10</td>
+<td align="left">2.34</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>tagme</code></td>
+<td align="left">206</td>
+<td align="left">1281</td>
+<td align="left">26</td>
+<td align="left">65195K</td>
+<td align="left">13841K</td>
+<td align="left">1279</td>
+<td align="left">4.90</td>
+<td align="left">3.77</td>
+<td align="left">3.20</td>
+<td align="left">2.60</td>
+</tr>
+<tr class="even">
+<td align="left"><code>wiki-all-vital</code></td>
+<td align="left">205</td>
+<td align="left">8607</td>
+<td align="left">15</td>
+<td align="left">80609K</td>
+<td align="left">16274K</td>
+<td align="left">8607</td>
+<td align="left">4.56</td>
+<td align="left">3.62</td>
+<td align="left">3.03</td>
+<td align="left">2.45</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>commoncrawl</code></td>
+<td align="left">115</td>
+<td align="left">246266</td>
+<td align="left">1727</td>
+<td align="left">45899K</td>
+<td align="left">10791K</td>
+<td align="left">246266</td>
+<td align="left">5.37</td>
+<td align="left">4.30</td>
+<td align="left">3.55</td>
+<td align="left">2.78</td>
+</tr>
+</tbody>
+</table>
+<p>where</p>
+<ul>
+<li>σ is the alphabet size</li>
+<li>max lcp is the maximum LCP value</li>
+<li>avg lcp is the average of all LCP values</li>
+<li>bwt-runs is the number of runs in the BWT (counting how often BWT[i] != BWT[i-1] occurs)</li>
+<li>z is the number of LZ77 factors (without window)</li>
+<li>H_k is the k-th order entropy</li>
+</ul></div>
     </section>
     <footer>
     </footer>

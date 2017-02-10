@@ -17,136 +17,178 @@
     <header>
         <h1>&ndash; The TU Dortmund Compression Framework</h1>
     </header>
-    <section id="content" class="padded">
-    <h1 id="project-ideas-list---google-summer-of-code-2017">Project Ideas List - Google Summer of Code 2017</h1>
-    <p>We maintain an up-to-date list of medium size projects at this page. The projects are self-contained, and consist of enhancements and improvements. Our project ideas range from projects targeted at nice-to-heave features to projects related to scientific research in the field of data compression. For all these projects, participating students should be interested in data compression in general, and in at least in one of the following fields in particular: low-level programming, string data structures, algorithm engineering. We welcome everybody (not just students) to take part in the tudocomp framework by participating at one of the listed projects.</p>
-    <p>Please have a look at the <a href="http://tudocomp.org">tudocomp homepage</a> to get a glimpse on what is this framework all about. Also, tudocomp's sourcecode is publicly available at <a href="https://github.com/tudocomp/tudocomp">github</a>.</p>
-    <h2 id="general-info">General Info</h2>
-    <p>For participating as a tudocomp contributor, the following steps should be made:</p>
-    <ul>
-    <li>Get familiar with git</li>
-    <li>Create your own github branch</li>
-    <li>Program, evaluate and comment your code in your branch</li>
-    <li>On an overall agreement of the tudocomp community, push your stable achievements back to the main repository by pull requests.</li>
-    </ul>
-    <p>Under <em>stable</em> we understand that the code is</p>
-    <ul>
-    <li>compilable</li>
-    <li>well commented to the extend that the code is easily understandable</li>
-    <li>compliant to our coding standards</li>
-    </ul>
-    <p>Communication during coding is necessary:</p>
-    <ul>
-    <li>the architecture may be subject to changes</li>
-    <li>there may be bugs or strange behavior in our project of which we either are unaware of, or which nobody has yet fixed</li>
-    </ul>
-    <p>For communication:</p>
-    <ul>
-    <li>use the ticket system</li>
-    <li>send an email on a regular basis for discussions</li>
-    <li>keep an up-to-date diary about the current state of your project. The dairy should show how the project evolves and progresses.</li>
-    <li>give regularly feedback to the community over the <a href="https://mailman.tu-dortmund.de/mailman/listinfo/tudocomp.cs">mailing list</a></li>
-    <li>if needed, ask your mentors about further communication channels, e.g., instant messengers like Skype.</li>
-    </ul>
-    <p>We advocate anybody to fork the project, and start their own implementation of compression algorithms.</p>
-    <h2 id="gsoc-timeline">GSoC Timeline</h2>
-    <p>The <a href="https://developers.google.com/open-source/gsoc/timeline">general GSoC 2017 timeline</a> has important <em>hard</em> deadlines for all projects.</p>
-    <h2 id="project-plan">Project Plan</h2>
-    <p>Project planning is necessary to structure how and when which parts of a project have to be done. The first step of starting a project is to set up a detailed project plan. The plan can be realized with tickets bundled in milestones, and a Gantt diagram. The project plan includes intermediate and secondary goals and deliveries with clear deadlines, as well as reasonable goals for midterm evaluation. Add slack times for the time ranges were you might not be available. While working on a project, the project plan should indicate where you are at the moment, i.e., what has (not yet) been done at any point of time. If your time management drifts apart from what you expected by the project planning, you should get in touch with your mentors. Your diary has to be updated on a regular basis (e.g., what problems have occurred / have been resolved, what is behind of schedule).</p>
-    <h2 id="gsoc-2017-ideas">GSoc 2017 Ideas</h2>
-    <p>The following collection consists of our project ideas we propose for GSoC 2017. If you have further project ideas and/or want to discuss some of our proposed projects please contact us by email (tudocomp.cs@lists.tu-dortmund.de). You can also subscribe and follow the discussions on the <a href="https://mailman.tu-dortmund.de/mailman/listinfo/tudocomp.cs">mailing list</a> to see what is going on.</p>
-    <h3 id="review-of-coding-strategies">Review of Coding Strategies</h3>
-    <p>tudocomp currently provides only a canonical Huffman coder and a customized static low entropy coder. Novel coding algorithms provide better precision than a Huffman coder, and are faster than arithmetic coding. It is interesting to integrate general codings like ASM or FSE or specialized codings like ETDC into tudocomp, and evaluate all codings with respect to their compression ratio and compression/decompression time.</p>
-    <p><em>References:</em></p>
-    <ul>
-    <li><a href="https://www.dcc.uchile.cl/~gnavarro/ps/ir06.pdf">ETDC for natural language text compression</a></li>
-    <li><a href="https://arxiv.org/pdf/1311.2540.pdf">Asymmetric Numeral Systems</a></li>
-    <li><a href="https://github.com/Cyan4973/FiniteStateEntropy">FSE Encoder</a></li>
-    </ul>
-    <p><em>Category</em>: Encodings</p>
-    <h3 id="areacomp">AreaComp</h3>
-    <p>The idea of AreaComp is to substitute frequent large substrings of a text. We search for the substring that maximizes the value of a cost function. The cost function weights the number of occurrences and the length of a substring, e.g., the multiplication of the length and the number of occurrences of a substring is a natural choice.</p>
-    <p>Given the suffix array and the longest common prefix array, we can find the number of occurrences of a substring in the text by looking at both arrays. A naive approach would store all substrings of a certain length occurring at least twice in a priority queue, with its cost function value as its key. We pop the top element (i.e., the best substring w.r.t. the cost function) off from the heap, substitute its occurrences, and update the suffix array and the longest common prefix array. There is a similar method called ``greedy off-line textual substitution'' that considers all non-overlapping occurrences.</p>
-    <p><em>Category</em>: Compressor</p>
-    <p>References</p>
-    <ul>
-    <li><a href="http://ieeexplore.ieee.org/iel5/5/19320/00892709.pdf">Off-line compression by greedy textual substitution</a></li>
-    <li><a href="http://link.springer.com/article/10.1007/BF01955046">Data structures and algorithms for the string statistics problem</a></li>
-    </ul>
-    <h3 id="clever-tie-breaking-for-lcpcomp">Clever Tie Breaking for lcpcomp</h3>
-    <p>Our compressor <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LCPCompressor.hpp">lcpcomp</a> (implemented in tudocomp) is a longest-first greedy compression algorithm. Given multiple longest substrings, there is no strict tie breaking rule that states which longest substring to choose. The focus of this project is to enhance the lcpcomp compressors with a heuristic for which substring lcpcomp should choose. The heuristic can be based on the selection of a tie breaking rule with the best expectation in terms of compression ratio or decompression speed.</p>
-    <p><em>References</em></p>
-    <ul>
-    <li>this problem is similar to a <a href="http://link.springer.com/chapter/10.1007/978-3-642-82456-2_11">semi-greedy variant of LZ77</a></li>
-    </ul>
-    <h3 id="k-maxsat-for-lcpcomp">k-maxsat for lcpcomp</h3>
-    <p>Decompressing an <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LCPCompressor.hpp">lcpcomp</a> compressed file is a heavy task with respect to time. That is because references of lcpcomp can be nested, i.e., a reference can refer to a substring that got replaced with another reference. The nesting of references can form long dependency chains that need to be resolved before the actual decompression can take place. This project focuses on a modification of the compression strategy, where we want to check whether it is possible to cirumvent the production of long dependency chaines. It can be shown that this problem is related to the k-maxsat problem. The aim of this project is to devise an approximation algorithm for the k-maxsat problem to prevent long dependency chains.</p>
-    <p><em>References</em></p>
-    <ul>
-    <li>Mayr, Ernst W., Prömel, Hans Jürgen, Steger, Angelika: &quot;Lectures on Proof Verification and Approximation Algorithms&quot;, the MaxEkSat-Problem</li>
-    </ul>
-    <h3 id="efficient-integer-coders">Efficient Integer Coders</h3>
-    <p>Aim of this project is to implement and evaluate a fast Fibonacci encoding algorithm. Fibonacci coding is a universal code that represents integers succinctly. The coding splits an integer up to summands that are Fibonacci words. Although the coding achieves a very compact representation, its decoding is slow. The aim of this project is to implement a new encoding algorithm, and to measure its speed with currently avaiable Fibonacci coders.</p>
-    <p><em>Category</em>: Encodings</p>
-    <p><em>References</em></p>
-    <ul>
-    <li><a href="http://ceur-ws.org/Vol-567/paper14.pdf">Fast Fibonacci Encoding Algorithm</a></li>
-    <li><a href="https://github.com/simongog/sdsl-lite/tree/master/include/sdsl/coder_fibonacci.hpp">Fibonacci Coder of the SDSL</a></li>
-    </ul>
-    <h3 id="lz78-with-a-compact-hash-table">LZ78 with a Compact Hash Table</h3>
-    <p>Our <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LZ78Compressor.hpp">LZ78 compressor</a> can utilize different Lempel-Ziv-78 tries like a binary trie, a ternary trie, or a trie based on a hash table. The latter is the faster, but yet heaviest trie implementation. In the light of compact hash tables, we wonder whether we can drop the memory footprint of hash table implementations while still being very fast.</p>
-    <ul>
-    <li><a href="https://arxiv.org/abs/1208.0290">Don't Thrash: How to Cache Your Hash on Flash</a></li>
-    </ul>
-    <p><em>Category</em>: Compressor, Hashing</p>
-    <h3 id="string-analyzing-tools-in-javascript">String Analyzing tools in JavaScript</h3>
-    <p>While working with lossless compression algorithms on texts, we often experience the lack of tools that visualize text index data structures. There are some tools that provide limited insight to some data structures. Yet, there is no a powerful and easy-to-use tool that covers a majority of the most frequently used data structures. The aim of this project is to produce a JavaScript written web platform that interactively visualizes the most commonly used data structures like suffix arrays, longest common prefix array, etc., with respect to text compression.</p>
-    <p><em>References</em></p>
-    <ul>
-    <li><a href="http://www.shino.ecei.tohoku.ac.jp/stringology/">Shinohara's Online Encyclopedia of Strings</a></li>
-    <li><a href="https://github.com/koeppl/strinalyze">Strinalze - Analyze a string or a sequence of generated strings</a></li>
-    </ul>
-    <p><em>Category</em>: Visualization</p>
-    <h3 id="zip-compatible-output-format">7zip compatible output format</h3>
-    <p>To improve the usability of the tudocomp framework, we want the tudocomp output format to become compatible to 7zip. The 7z format supports various compression techniques due to a versatile header describing the exact used compression technique. This project's aim is to adapt the 7z format for the tudocomp command line tool.</p>
-    <p><em>Category</em>: Usability</p>
-    <p><em>References</em></p>
-    <ul>
-    <li><a href="http://www.7-zip.org">7zip</a></li>
-    </ul>
-    <h3 id="gui-file-archiver">GUI file archiver</h3>
-    <p>The tudocomp framework provides only a command line tool as an interface to the end user. An end-user friendly GUI application can be beneficient for addressing command line antipathetic users. The GUI should provide the selection of multiple files/directories and an easy way to assemble a custom compression pipeline. The GUI can be programmed, for instance, in Qt or gtkmm.</p>
-    <p><em>Category</em>: GUI</p>
-    <!---
-    ### Try to detect text type, and use appropriate compressor.
-    Modify existing 
-    Neutronal Network Detetects 
-    *Category* Machine Learning
-    
-    Target field of application: Machine Learning
-    ### Survey implementation of different LCP/SA construction algorithms
-    
-    *Category* Algorithm Engineering
-    
-    ### Compressed Index with Repair
-    
-    Sakamoto is working on an online index data structure. Online means that characters can be appended.
-    He uses ESP as grammar.
-    The grammar tree is stored in post-order to allow new elements on the right side.
-    Since the tree is a full binary tree, it can be stored in n bits if it contains n nodes (see technical report of Sadakane).
-    The DCC paper 2016 from Kida introduces an online Re-Pair-based grammar compressor.
-    It should be feasible to exchange ESP with the online Re-Pair-variant.
-    
-    *Category*: Compressed Indices
-    
-    ### Serialization of Indices
-    A majority of compression algorithms use data structures that need a lot of time to process.
-    Add a facility to build them in a preliminary step, such that they can be loaded when the actual compression has to be done.
-    Some data structures are only needed for a linear scan such that they can be streamed from disk.
-    
-    *Category*: External Memory Algorithms
-    
-    --->
+    <section id="content">
+        <div id="page"><h1 id="project-ideas---google-summer-of-code-2017">Project Ideas - Google Summer of Code 2017</h1>
+<p>We maintain a list of medium size projects on this page.</p>
+<p>These projects are self-contained and consist of ideas for enhancements and novel compression algorithms for <em>tudocomp</em>. They range from projects targeted at &quot;nice-to-heave&quot; features to projects related to scientific research in the field of data compression.</p>
+<p>For all these projects, participating students should be interested in data compression in general, as well as in at least in one of the following fields in particular:</p>
+<ul>
+<li>low-level programming (with C++),</li>
+<li>string data structures,</li>
+<li>algorithm engineering.</li>
+</ul>
+<p>We encourage everyone (not just students) to take part in the development of the <em>tudocomp</em> framework by participating at one of the listed projects.</p>
+<p>Please have a look at the <a href="http://tudocomp.org">tudocomp homepage</a> to get a glimpse on what this framework is all about. <em>tudocomp</em>'s source code is publicly available at <a href="https://github.com/tudocomp/tudocomp">github</a>.</p>
+<h2 id="overview">Overview</h2>
+<p>Here is an overview over our project ideas with a basic categorization. If you are interested in any of the following projects, please also read the <a href="#general-information">General Information</a> section.</p>
+<ol style="list-style-type: decimal">
+<li><a href="#review-of-coding-strategies">Review of Coding Strategies</a> (Encoding)</li>
+<li><a href="#the-areacomp-compression-algorithm">The AreaComp Compression Algorithm</a> (Compression)</li>
+<li><a href="#clever-tie-breaking-for-lcpcomp">Clever Tie Breaking for lcpcomp</a> (Algorithm Engineering)</li>
+<li><a href="#k-maxsat-for-lcpcomp">k-maxsat for lcpcomp</a> (Algorithm Engineering)</li>
+<li><a href="#efficient-integer-coders">Efficient Integer Coders</a> (Encoding)</li>
+<li><a href="#lz78-with-a-compact-hash-table">LZ78 with a Compact Hash Table</a> (Compression, Hashing)</li>
+<li><a href="#web-application-for-visual-string-analysis">Web Application for Visual String Analysis</a> (Visualization, Web Development)</li>
+<li><a href="#7zip-compatible-output-format">7zip-compatible Output Format</a> (Interoperability)</li>
+<li><a href="#graphical-user-interface">Graphical User Interface</a> (GUI Development)</li>
+</ol>
+<h2 id="general-information">General Information</h2>
+<p>Participating as a <em>tudocomp</em> contributor involves the following:</p>
+<ol style="list-style-type: decimal">
+<li>Get familiar with <code>git</code> in case you are not yet.</li>
+<li>Fork <em>tudocomp</em> on github.</li>
+<li>Write, evaluate and comment your code and get back to the <em>tudocomp</em> community when you are ready.</li>
+<li>Keep a diary documenting your project's evolution and progress and what issues you faced, solved or could not solve. This will also help yourself evaluating your project plan (see below).</li>
+<li>After our green light, file a pull request of your stable achievements.</li>
+</ol>
+<p>Under <em>stable</em>, we understand that your code is</p>
+<ul>
+<li>compilable,</li>
+<li>well commented, to the extent that the code is easily understandable and</li>
+<li>compliant to our coding standards.</li>
+</ul>
+<h3 id="communication">Communication</h3>
+<p>while you are working on your project, a steady communication between you and the community is desirable. This is in order to give you the best possible support and keep you up to date about potential changes of the framework's architecture (e.g. due to new features being implemented or larger issues being fixed).</p>
+<p>We use the following forms of communication:</p>
+<ul>
+<li>Our <a href="https://mailman.tu-dortmund.de/mailman/listinfo/tudocomp.cs">mailing list</a></li>
+<li>The <a href="https://github.com/tudocomp/tudocomp/issues">issue tracker</a> at github</li>
+<li>The <code>#tudocomp</code> IRC channel at <a href="https://www.euirc.net/en/">euIRC</a></li>
+<li>Regular exchange of e-mails directly with your mentors to discuss the state of the project</li>
+<li>Further communication channels, e.g. instant messengers like Skype - ask your mentors about what suits everyone best</li>
+</ul>
+<p>In general, do not hesitate to contact the community about any ideas or concerns that you may have.</p>
+<p>We invite anybody to join and start working on their own implementation of compression algorithms.</p>
+<h3 id="gsoc-timeline">GSoC Timeline</h3>
+<p>The <a href="https://developers.google.com/open-source/gsoc/timeline">general GSoC 2017 timeline</a> has important <em>hard</em> deadlines for all projects.</p>
+<h3 id="project-plan">Project Plan</h3>
+<p>Project planning is necessary to structure how and when parts of a project have to be done. The first step of starting a project is to set up a detailed project plan. We encourage to realize this plan using issue trackers, i.e., by expressing single tasks as tickets, bundled in milestones. This can easily be transferred into a Gantt diagram.</p>
+<p>The project plan includes intermediate and secondary goals and deliveries with clear deadlines, as well as reasonable goals for mid-term evaluation. Remember to add slack times for the time ranges in which you might not be available.</p>
+<p>While working on a project, the project plan should indicate where you are at the moment, i.e., what has and has not yet been done at any point of time. In case your time management drifts apart from what you expected from the project plan, you should get in touch with your mentors.</p>
+<p>Keep a diary, documenting your project's evolution and progress and what issues you faced, solved or could not solve, as well as what tasks you were able to finish in time and what is behind schedule.</p>
+<h2 id="gsoc-2017-project-ideas">GSoC 2017 Project Ideas</h2>
+<p>The following is a collection of our project ideas that we propose for GSoC 2017. If you have further project ideas and/or want to discuss some of our proposed projects please contact us via <script type="text/javascript">
+<!--
+h='&#108;&#x69;&#x73;&#116;&#x73;&#46;&#116;&#x75;&#x2d;&#100;&#x6f;&#114;&#116;&#x6d;&#x75;&#110;&#100;&#46;&#100;&#x65;';a='&#64;';n='&#116;&#x75;&#100;&#x6f;&#x63;&#x6f;&#x6d;&#112;&#46;&#x63;&#x73;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x65;&#x2d;&#x6d;&#x61;&#x69;&#108;'+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x65;&#x2d;&#x6d;&#x61;&#x69;&#108;&#32;&#40;&#116;&#x75;&#100;&#x6f;&#x63;&#x6f;&#x6d;&#112;&#46;&#x63;&#x73;&#32;&#x61;&#116;&#32;&#108;&#x69;&#x73;&#116;&#x73;&#32;&#100;&#x6f;&#116;&#32;&#116;&#x75;&#x2d;&#100;&#x6f;&#114;&#116;&#x6d;&#x75;&#110;&#100;&#32;&#100;&#x6f;&#116;&#32;&#100;&#x65;&#x29;</noscript>. Feel free to subscribe to our <a href="https://mailman.tu-dortmund.de/mailman/listinfo/tudocomp.cs">mailing list</a> and follow the discussions to see what is going on.</p>
+<h3 id="review-of-coding-strategies">Review of Coding Strategies</h3>
+<p><em>tudocomp</em> currently provides only a canonical Huffman coder and a customized static low entropy coder.</p>
+<p>Novel coding algorithms provide better precision than a Huffman coder and are faster than arithmetic coders. It is interesting to integrate general codings like ASM or FSE or specialized codings like ETDC into <em>tudocomp</em> and evaluate all codings with respect to their compression ratio and coding/decoding time.</p>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="https://www.dcc.uchile.cl/~gnavarro/ps/ir06.pdf">ETDC for natural language text compression</a></li>
+<li><a href="https://arxiv.org/pdf/1311.2540.pdf">Asymmetric Numeral Systems</a></li>
+<li><a href="https://github.com/Cyan4973/FiniteStateEntropy">FSE Encoder</a></li>
+</ul>
+<p><em>Category</em>: Encoding</p>
+<h3 id="the-areacomp-compression-algorithm">The AreaComp Compression Algorithm</h3>
+<p>The idea of AreaComp is to substitute frequent large substrings of a text. We search for the substring that maximizes the value of a cost function. The cost function weights the number of occurrences and the length of a substring, e.g., the multiplication of the length and the number of occurrences of a substring is a natural choice.</p>
+<p>Given the suffix array and the longest common prefix array, we can find the number of occurrences of a substring in the text by looking at both arrays.</p>
+<p>A naive approach would be to store all substrings of a certain length occurring at least twice in a priority queue, with its cost function value as its key. We pop the topmost element (i.e., the best substring w.r.t. the cost function) off from the heap, substitute its occurrences, and update the suffix array and the longest common prefix array. There is a similar method called &quot;greedy off-line textual substitution&quot; that considers all non-overlapping occurrences.</p>
+<p><em>Category</em>: Compression</p>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://ieeexplore.ieee.org/iel5/5/19320/00892709.pdf">Off-line compression by greedy textual substitution</a></li>
+<li><a href="http://link.springer.com/article/10.1007/BF01955046">Data structures and algorithms for the string statistics problem</a></li>
+</ul>
+<h3 id="clever-tie-breaking-for-lcpcomp">Clever Tie Breaking for lcpcomp</h3>
+<p>Our compressor <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LCPCompressor.hpp">lcpcomp</a> (implemented in <em>tudocomp</em>) is a longest-first greedy compression algorithm.</p>
+<p>Given multiple longest substrings, there is no strict tie breaking rule that states which of the substring to select for substitution. The focus of this project is to enhance the lcpcomp compressors with a heuristic for which substring lcpcomp should choose. The heuristic can be based on the selection of a tie breaking rule with the best expectation in terms of compression ratio or decompression speed.</p>
+<p><em>Category</em>: Algorithm Engineering</p>
+<p><em>References</em>:</p>
+<ul>
+<li>This problem is similar to a <a href="http://link.springer.com/chapter/10.1007/978-3-642-82456-2_11">semi-greedy variant of LZ77</a>.</li>
+</ul>
+<h3 id="k-maxsat-for-lcpcomp">k-maxsat for lcpcomp</h3>
+<p>Decompressing an <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LCPCompressor.hpp">lcpcomp</a> compressed file is a heavy task with respect to time. That is because references of lcpcomp can be nested, i.e., a reference can refer to a substring that got replaced with another reference.</p>
+<p>The nesting of references can form long dependency chains that need to be resolved before the actual decompression can take place. This project focuses on a modification of the compression strategy, where we want to check whether it is possible to cirumvent the production of long dependency chaines.</p>
+<p>It can be shown that this problem is related to the k-maxsat problem. The aim of this project is to devise an approximation algorithm for the k-maxsat problem to prevent long dependency chains.</p>
+<p><em>Category</em>: Algorithm Engineering</p>
+<p><em>References</em>:</p>
+<ul>
+<li>Mayr, Ernst W., Prömel, Hans Jürgen, Steger, Angelika: &quot;Lectures on Proof Verification and Approximation Algorithms&quot;, the MaxEkSat-Problem</li>
+</ul>
+<h3 id="efficient-integer-coders">Efficient Integer Coders</h3>
+<p>The aim of this project is to implement and evaluate a fast Fibonacci encoding algorithm.</p>
+<p>Fibonacci coding is a universal code that represents integers succinctly. The coding splits an integer into summands that are Fibonacci words. Although the coding achieves a very compact representation, its decoding is slow. In this project, the encoding shall be implemented an benchmarked in <em>tudocomp</em>, i-e., measure its speed and compare to currently avaiable Fibonacci coders.</p>
+<p><em>Category</em>: Encodings</p>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://ceur-ws.org/Vol-567/paper14.pdf">Fast Fibonacci Encoding Algorithm</a></li>
+<li><a href="https://github.com/simongog/sdsl-lite/tree/master/include/sdsl/coder_fibonacci.hpp">Fibonacci Coder of the SDSL</a></li>
+</ul>
+<h3 id="lz78-with-a-compact-hash-table">LZ78 with a Compact Hash Table</h3>
+<p>Our <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LZ78Compressor.hpp">LZ78 compressor</a> can utilize different Lempel-Ziv-78 tries, e.g. a binary trie, a ternary trie, or a trie based on a hash table. The latter is the fastest, but heaviest trie implementation.</p>
+<p>In the light of compact hash tables, we wonder whether we can drop the memory footprint of hash table implementations while still being very fast. The goal of this project is to research on this topic and develop a new, more efficient hash table based LZ78 trie.</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1208.0290">Don't Thrash: How to Cache Your Hash on Flash</a></li>
+</ul>
+<p><em>Category</em>: Compression, Hashing</p>
+<h3 id="web-application-for-visual-string-analysis">Web Application for Visual String Analysis</h3>
+<p>While working with lossless compression algorithms on texts, we often experience the lack of tools that visualize text index data structures.</p>
+<p>There are some tools that provide limited insight to some data structures. However, there is no powerful and easy-to-use tool that covers a majority of the most frequently used data structures.</p>
+<p>The aim of this project is to produce a web application (preferably based on JavaScript) that interactively visualizes the most commonly used data structures like suffix arrays, longest common prefix arrays, etc., with respect to text compression.</p>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://www.shino.ecei.tohoku.ac.jp/stringology/">Shinohara's Online Encyclopedia of Strings</a></li>
+<li><a href="https://github.com/koeppl/strinalyze">Strinalze - Analyze a string or a sequence of generated strings</a></li>
+</ul>
+<p><em>Category</em>: Visualization, Web Development</p>
+<h3 id="zip-compatible-output-format">7zip-compatible Output Format</h3>
+<p>To improve the usability of the <em>tudocomp</em> framework, we want the tudocomp output format to become compatible to 7zip. The <code>7z</code> format supports various compression techniques due to a versatile header, describing the exact used compression technique.</p>
+<p>This project's aim is to adapt the 7z format for the <em>tudocomp</em> command line tool.</p>
+<p><em>Category</em>: Interoperability</p>
+<p><em>References</em>:</p>
+<ul>
+<li><a href="http://www.7-zip.org">7zip</a></li>
+</ul>
+<h3 id="graphical-user-interface">Graphical User Interface</h3>
+<p>The <em>tudocomp</em> framework provides only a command-line tool as an interface to the end user. An graphical user interface would benefit the project for addressing users with antipathies to command-line tools.</p>
+<p>The GUI should provide the selection of multiple files/directories and an easy way to assemble a custom compression pipeline using what is available in <em>tudocomp</em>. It should be as platform independent as possible and usable on any platform on which <em>tudocomp</em> supports.</p>
+<p>The GUI can be developed, for instance, using a framework like Qt.</p>
+<p><em>Category</em>: GUI Development</p>
+<!---
+### Try to detect text type, and use appropriate compressor.
+Modify existing 
+Neutronal Network Detetects 
+*Category* Machine Learning
+
+Target field of application: Machine Learning
+### Survey implementation of different LCP/SA construction algorithms
+
+*Category* Algorithm Engineering
+
+### Compressed Index with Repair
+
+Sakamoto is working on an online index data structure. Online means that characters can be appended.
+He uses ESP as grammar.
+The grammar tree is stored in post-order to allow new elements on the right side.
+Since the tree is a full binary tree, it can be stored in n bits if it contains n nodes (see technical report of Sadakane).
+The DCC paper 2016 from Kida introduces an online Re-Pair-based grammar compressor.
+It should be feasible to exchange ESP with the online Re-Pair-variant.
+
+*Category*: Compressed Indices
+
+### Serialization of Indices
+A majority of compression algorithms use data structures that need a lot of time to process.
+Add a facility to build them in a preliminary step, such that they can be loaded when the actual compression has to be done.
+Some data structures are only needed for a linear scan such that they can be streamed from disk.
+
+*Category*: External Memory Algorithms
+
+---></div>
     </section>
     <footer>
     </footer>
