@@ -49,8 +49,8 @@ var NAVTREEINDEX =
 "classtdc_1_1int__vector_1_1_generic_int_ref.html",
 "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#a987b05f16aa12d07a965f89e686e57e0",
 "classtdc_1_1uint__t.html#a5b76360ba6e51bc991076e102663873e",
-"namespacemembers.html",
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab5f76c52746930d342cfd40870d5553e"
+"namespacemembers_a.html",
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ac0e513691bbed40ed9bcb47a588e899d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

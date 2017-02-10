@@ -67,7 +67,6 @@ var files =
     [ "Compressor.hpp", "_compressor_8hpp.html", [
       [ "Compressor", "classtdc_1_1_compressor.html", "classtdc_1_1_compressor" ]
     ] ],
-    [ "config.h", "config_8h.html", null ],
     [ "Counter.hpp", "_counter_8hpp.html", [
       [ "Counter", "classtdc_1_1_counter.html", "classtdc_1_1_counter" ]
     ] ],
@@ -262,7 +261,6 @@ var files =
     [ "ThueMorseGenerator.hpp", "_thue_morse_generator_8hpp.html", [
       [ "ThueMorseGenerator", "classtdc_1_1_thue_morse_generator.html", "classtdc_1_1_thue_morse_generator" ]
     ] ],
-    [ "tudocomp.hpp", "tudocomp_8hpp.html", null ],
     [ "uint_t.hpp", "uint__t_8hpp.html", "uint__t_8hpp" ],
     [ "util.hpp", "util_8hpp.html", "util_8hpp" ],
     [ "VariantCoder.hpp", "_variant_coder_8hpp.html", [

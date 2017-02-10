@@ -7,7 +7,6 @@ var searchData=
   ['compactdec_2ehpp',['CompactDec.hpp',['../_compact_dec_8hpp.html',1,'']]],
   ['compressmode_2ehpp',['CompressMode.hpp',['../_compress_mode_8hpp.html',1,'']]],
   ['compressor_2ehpp',['Compressor.hpp',['../_compressor_8hpp.html',1,'']]],
-  ['config_2eh',['config.h',['../config_8h.html',1,'']]],
   ['counter_2ehpp',['Counter.hpp',['../_counter_8hpp.html',1,'']]],
   ['createalgorithm_2ehpp',['CreateAlgorithm.hpp',['../_create_algorithm_8hpp.html',1,'']]]
 ];
