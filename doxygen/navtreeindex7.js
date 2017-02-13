@@ -1,7 +1,10 @@
 var NAVTREEINDEX7 =
 {
-"namespacemembers.html":[1,1,0],
+"malloc__count_8hpp_source.html":[3,0,71],
+"namespacecedar.html":[1,0,0],
+"namespacecedar.html":[2,0,0],
 "namespacemembers.html":[1,1,0,0],
+"namespacemembers.html":[1,1,0],
 "namespacemembers_a.html":[1,1,0,1],
 "namespacemembers_b.html":[1,1,0,2],
 "namespacemembers_c.html":[1,1,0,3],
@@ -31,8 +34,8 @@ var NAVTREEINDEX7 =
 "namespaces.html":[1,0],
 "namespacestd.html":[1,0,1],
 "namespacestd.html":[2,0,1],
-"namespacetdc.html":[2,0,2],
 "namespacetdc.html":[1,0,2],
+"namespacetdc.html":[2,0,2],
 "namespacetdc_1_1bwt.html":[1,0,2,0],
 "namespacetdc_1_1huff.html":[1,0,2,1],
 "namespacetdc_1_1huff.html":[2,0,2,0],
@@ -50,8 +53,8 @@ var NAVTREEINDEX7 =
 "namespacetdc_1_1lz78.html":[1,0,2,7],
 "namespacetdc_1_1lz78u.html":[2,0,2,7],
 "namespacetdc_1_1lz78u.html":[1,0,2,8],
-"namespacetdc_1_1lzss.html":[2,0,2,8],
 "namespacetdc_1_1lzss.html":[1,0,2,9],
+"namespacetdc_1_1lzss.html":[2,0,2,8],
 "namespacetdc_1_1lzw.html":[1,0,2,10],
 "namespacetdc_1_1pattern.html":[1,0,2,11],
 "namespacetdc__algorithms.html":[1,0,3],
@@ -123,8 +126,8 @@ var NAVTREEINDEX7 =
 "structtdc_1_1___double_hashing_prober.html":[2,0,2,9],
 "structtdc_1_1_const_integer_base_trait.html":[2,0,2,23],
 "structtdc_1_1_const_integer_base_trait_1_1type.html":[2,0,2,23,0],
-"structtdc_1_1_const_integer_base_trait_1_1type.html#a83e5f0b085ea6a3e716ef1b0f8213849":[2,0,2,23,0,1],
 "structtdc_1_1_const_integer_base_trait_1_1type.html#a83e5f0b085ea6a3e716ef1b0f8213849":[2,0,2,23,0,2],
+"structtdc_1_1_const_integer_base_trait_1_1type.html#a83e5f0b085ea6a3e716ef1b0f8213849":[2,0,2,23,0,1],
 "structtdc_1_1_const_integer_base_trait_1_1type.html#aa139894af1fc470586d990c9ad09d771":[2,0,2,23,0,0],
 "structtdc_1_1_const_integer_base_trait_3_01dynamic__t_01_4.html":[2,0,2,24],
 "structtdc_1_1_const_integer_base_trait_3_01dynamic__t_01_4.html#ac54304d7bb54a07dbdde61568f4a8bd7":[2,0,2,24,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#aa89c3469a884ed41c54b6a4c8c889388":[2,0,2,1,0,47],
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#aab3a271fa1fd86868a5107603d2e2883":[2,0,2,1,0,28],
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#aae83944c330282d4c26c2b49daf3cc1a":[2,0,2,1,0,81],
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab27faebd07eaa1011228fddfeda7ce14":[2,0,2,1,0,51],
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab3a445255f97c50811abe1488054b60c":[2,0,2,1,0,57],
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab4e02fd610a5e13a208de25778c91444":[2,0,2,1,0,26],
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab5cdd07aab3668d5c0558914e2b6de93":[2,0,2,1,0,24]
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab27faebd07eaa1011228fddfeda7ce14":[2,0,2,1,0,51]
 };

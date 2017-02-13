@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab3a445255f97c50811abe1488054b60c":[2,0,2,1,0,57],
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab4e02fd610a5e13a208de25778c91444":[2,0,2,1,0,26],
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab5cdd07aab3668d5c0558914e2b6de93":[2,0,2,1,0,24],
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab5f76c52746930d342cfd40870d5553e":[2,0,2,1,0,10],
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab79f3eab288eec44a546c68af28f2b65":[2,0,2,1,0,18],
 "structtdc_1_1int__vector_1_1_bit_packing_vector.html#ac0e513691bbed40ed9bcb47a588e899d":[2,0,2,1,0,7],

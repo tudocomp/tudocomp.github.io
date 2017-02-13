@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"classtdc_1_1int__vector_1_1_generic_int_ptr.html#a5908f48cd693c815d16b8aa72aa7528c":[2,0,2,1,7,0],
+"classtdc_1_1int__vector_1_1_generic_int_ptr.html#a690c0b5070016336d4bc9f6169d5c3e3":[2,0,2,1,7,9],
+"classtdc_1_1int__vector_1_1_generic_int_ptr.html#a6faa71efa926134314f20bf4a04cfa5c":[2,0,2,1,7,1],
 "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a74f27391776099e58cb5aa41c8248136":[2,0,2,1,7,7],
 "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a8a4945721db67cf88412dff40f9bc74a":[2,0,2,1,7,29],
 "classtdc_1_1int__vector_1_1_generic_int_ptr.html#aa1b4ce042239325a00863585d6823e39":[2,0,2,1,7,18],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "classtdc_1_1json_1_1_value.html#afeb45adf173faabf0d18dc420fc824cd":[2,0,2,3,3,1],
 "classtdc_1_1lcpcomp_1_1_arrays_comp.html":[2,0,2,4,0],
 "classtdc_1_1lcpcomp_1_1_arrays_comp.html#ad780677ae293420a22a9c5091dd2a950":[2,0,2,4,0,0],
-"classtdc_1_1lcpcomp_1_1_boost_heap.html":[2,0,2,4,1],
-"classtdc_1_1lcpcomp_1_1_boost_heap.html#a0b2cb0255b82c9167d09341bf89e506c":[2,0,2,4,1,0],
-"classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html":[2,0,2,4,2],
-"classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html#a19aec69aba6cc86df850f94fcb69589f":[2,0,2,4,2,0]
+"classtdc_1_1lcpcomp_1_1_boost_heap.html":[2,0,2,4,1]
 };

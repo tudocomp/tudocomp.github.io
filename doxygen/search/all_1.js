@@ -21,6 +21,7 @@ var searchData=
   ['array',['array',['../classcedar_1_1da.html#a6319ce6dad2768f8bec36de815191939',1,'cedar::da']]],
   ['array',['Array',['../classtdc_1_1json_1_1_array.html',1,'tdc::json']]],
   ['arrayds',['ArrayDS',['../classtdc_1_1_array_d_s.html',1,'tdc']]],
+  ['arrayds',['ArrayDS',['../classtdc_1_1_array_d_s.html#a339cb157a42f1f2d9ce51d5e594f48a6',1,'tdc::ArrayDS::ArrayDS()'],['../classtdc_1_1_array_d_s.html#a4ed8d3ddf47e4e1b088f5c104055dbd2',1,'tdc::ArrayDS::ArrayDS(const ArrayDS &amp;other)=delete'],['../classtdc_1_1_array_d_s.html#a6b4c35b9d90dd59fc09785dcf56b6911',1,'tdc::ArrayDS::ArrayDS(ArrayDS &amp;&amp;other)']]],
   ['arrayds_2ehpp',['ArrayDS.hpp',['../_array_d_s_8hpp.html',1,'']]],
   ['arraymaxheap',['ArrayMaxHeap',['../classtdc_1_1_array_max_heap.html',1,'tdc']]],
   ['arraymaxheap',['ArrayMaxHeap',['../classtdc_1_1_array_max_heap.html#a407bcb5a2be91b48052cb612c1e6b4c1',1,'tdc::ArrayMaxHeap']]],

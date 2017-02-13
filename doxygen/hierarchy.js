@@ -3,13 +3,6 @@ var hierarchy =
     [ "tdc::_DoubleHashingProber< SizeManager >", "structtdc_1_1___double_hashing_prober.html", null ],
     [ "tdc::libdivsufsort::_trbudget_t", "structtdc_1_1libdivsufsort_1_1__trbudget__t.html", null ],
     [ "tdc::Algorithm", "classtdc_1_1_algorithm.html", [
-      [ "tdc::ArrayDS", "classtdc_1_1_array_d_s.html", [
-        [ "tdc::ISAFromSA", "classtdc_1_1_i_s_a_from_s_a.html", null ],
-        [ "tdc::LCPFromPLCP", "classtdc_1_1_l_c_p_from_p_l_c_p.html", null ],
-        [ "tdc::PhiFromSA", "classtdc_1_1_phi_from_s_a.html", null ],
-        [ "tdc::PLCPFromPhi", "classtdc_1_1_p_l_c_p_from_phi.html", null ],
-        [ "tdc::SADivSufSort", "classtdc_1_1_s_a_div_suf_sort.html", null ]
-      ] ],
       [ "tdc::ASCIICoder", "classtdc_1_1_a_s_c_i_i_coder.html", null ],
       [ "tdc::BitCoder", "classtdc_1_1_bit_coder.html", null ],
       [ "tdc::Compressor", "classtdc_1_1_compressor.html", [
@@ -54,6 +47,7 @@ var hierarchy =
         [ "tdc::ThueMorseGenerator", "classtdc_1_1_thue_morse_generator.html", null ]
       ] ],
       [ "tdc::HuffmanCoder", "classtdc_1_1_huffman_coder.html", null ],
+      [ "tdc::ISAFromSA", "classtdc_1_1_i_s_a_from_s_a.html", null ],
       [ "tdc::lcpcomp::ArraysComp", "classtdc_1_1lcpcomp_1_1_arrays_comp.html", null ],
       [ "tdc::lcpcomp::BoostHeap", "classtdc_1_1lcpcomp_1_1_boost_heap.html", null ],
       [ "tdc::lcpcomp::BulldozerStrategy", "classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html", null ],
@@ -67,6 +61,7 @@ var hierarchy =
       [ "tdc::lcpcomp::PLCPPeaksStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html", null ],
       [ "tdc::lcpcomp::PLCPStrategy", "classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html", null ],
       [ "tdc::lcpcomp::ScanDec", "classtdc_1_1lcpcomp_1_1_scan_dec.html", null ],
+      [ "tdc::LCPFromPLCP", "classtdc_1_1_l_c_p_from_p_l_c_p.html", null ],
       [ "tdc::lz78::BinarySortedTrie", "classtdc_1_1lz78_1_1_binary_sorted_trie.html", null ],
       [ "tdc::lz78::BinaryTrie", "classtdc_1_1lz78_1_1_binary_trie.html", null ],
       [ "tdc::lz78::CedarTrie", "classtdc_1_1lz78_1_1_cedar_trie.html", null ],
@@ -79,6 +74,9 @@ var hierarchy =
       [ "tdc::lz78u::StreamingStrategy< string_coder_t >", "classtdc_1_1lz78u_1_1_streaming_strategy.html", null ],
       [ "tdc::lz78u::StreamingStrategy< string_coder_t >::Compression< ref_coder_t >", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html", null ],
       [ "tdc::lz78u::StreamingStrategy< string_coder_t >::Decompression< ref_coder_t >", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression.html", null ],
+      [ "tdc::PhiFromSA", "classtdc_1_1_phi_from_s_a.html", null ],
+      [ "tdc::PLCPFromPhi", "classtdc_1_1_p_l_c_p_from_phi.html", null ],
+      [ "tdc::SADivSufSort", "classtdc_1_1_s_a_div_suf_sort.html", null ],
       [ "tdc::SLECoder", "classtdc_1_1_s_l_e_coder.html", null ],
       [ "tdc::TextDS< sa_t, phi_t, plcp_t, lcp_t, isa_t >", "classtdc_1_1_text_d_s.html", null ],
       [ "tdc::VariantCoder< int_coder_t, lit_coder_t >", "classtdc_1_1_variant_coder.html", null ]
@@ -194,7 +192,15 @@ var hierarchy =
     [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< uint_t< N > > >", "structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4.html", null ],
     [ "tdc::int_vector::IntPtrTrait< IntPtr< dynamic_t > >", "structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4.html", null ],
     [ "tdc::int_vector::IntPtrTrait< IntPtr< uint_t< N > > >", "structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4.html", null ],
-    [ "tdc::int_vector::IntVector< T >", "classtdc_1_1int__vector_1_1_int_vector.html", null ],
+    [ "tdc::int_vector::IntVector< T >", "classtdc_1_1int__vector_1_1_int_vector.html", [
+      [ "tdc::ArrayDS", "classtdc_1_1_array_d_s.html", [
+        [ "tdc::ISAFromSA", "classtdc_1_1_i_s_a_from_s_a.html", null ],
+        [ "tdc::LCPFromPLCP", "classtdc_1_1_l_c_p_from_p_l_c_p.html", null ],
+        [ "tdc::PhiFromSA", "classtdc_1_1_phi_from_s_a.html", null ],
+        [ "tdc::PLCPFromPhi", "classtdc_1_1_p_l_c_p_from_phi.html", null ],
+        [ "tdc::SADivSufSort", "classtdc_1_1_s_a_div_suf_sort.html", null ]
+      ] ]
+    ] ],
     [ "tdc::int_vector::IntVector< dynamic_t >", "classtdc_1_1int__vector_1_1_int_vector.html", null ],
     [ "tdc::int_vector::IntVector< uliteral_t >", "classtdc_1_1int__vector_1_1_int_vector.html", null ],
     [ "tdc::int_vector::IntVectorTrait< T, X >", "structtdc_1_1int__vector_1_1_int_vector_trait.html", null ],

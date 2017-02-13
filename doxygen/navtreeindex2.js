@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"classtdc_1_1_const_integer_base_with64.html#a7083327ac562679a232aaf4c6ff6020b":[2,0,2,28,16],
+"classtdc_1_1_const_integer_base_with64.html#a72a60006977072df2abd8e6d6c35ab5d":[2,0,2,28,27],
+"classtdc_1_1_const_integer_base_with64.html#a75b4fc2e751dd52954ca230a5ec9913d":[2,0,2,28,4],
 "classtdc_1_1_const_integer_base_with64.html#a8aa5ce9a081b04b69011102f764448fc":[2,0,2,28,25],
 "classtdc_1_1_const_integer_base_with64.html#a8cb86686028e84e5e6d8be39c36c595f":[2,0,2,28,21],
 "classtdc_1_1_const_integer_base_with64.html#a8f98e5586a8c8156928217ff907a55f8":[2,0,2,28,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "classtdc_1_1_no_literals.html#ab37d25b0b74cc780f1f78d77d06f73e9":[2,0,2,78,1],
 "classtdc_1_1_no_literals.html#ae14cf88168c6e377c9feb88801e81174":[2,0,2,78,2],
 "classtdc_1_1_noop_compressor.html":[2,0,2,79],
-"classtdc_1_1_noop_compressor.html#abd7059629e180705e15220491484e639":[2,0,2,79,1],
-"classtdc_1_1_noop_compressor.html#acb15f61fc5b5283965af842a005cecf4":[2,0,2,79,2],
-"classtdc_1_1_noop_compressor.html#ae5744f2c73c866b86e41336dbb01ef84":[2,0,2,79,0],
-"classtdc_1_1_option_value.html":[2,0,2,80]
+"classtdc_1_1_noop_compressor.html#abd7059629e180705e15220491484e639":[2,0,2,79,1]
 };

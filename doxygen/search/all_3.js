@@ -80,7 +80,7 @@ var searchData=
   ['conversion_5fhelper',['conversion_helper',['../namespacetdc_1_1int__vector.html#a398dc7fab30d3616d257d4fc2b292a36',1,'tdc::int_vector']]],
   ['conversionhelper',['ConversionHelper',['../structtdc_1_1int__vector_1_1_conversion_helper.html',1,'tdc::int_vector']]],
   ['convert',['convert',['../structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html#a49fdcce90010ba4a2a2f8042c27c1d52',1,'tdc::int_vector::ConversionHelper&lt; T, U, V, typename std::enable_if&lt;(std::is_convertible&lt; T, V &gt;::value)&gt;::type']]],
-  ['copy',['copy',['../classtdc_1_1_array_d_s.html#abb00b63cb5710ff6e732aec9a7f9e325',1,'tdc::ArrayDS']]],
+  ['copy',['copy',['../classtdc_1_1_array_d_s.html#afc04bd85da53e2b049f105ff9606778e',1,'tdc::ArrayDS']]],
   ['count',['count',['../structtdc_1_1libdivsufsort_1_1__trbudget__t.html#a1b8d21889fcd05baf00145b4216fe9cd',1,'tdc::libdivsufsort::_trbudget_t']]],
   ['count_5falphabet',['count_alphabet',['../namespacetdc_1_1huff.html#a59b6ec3f7690f0c49cb6cc83e464da77',1,'tdc::huff']]],
   ['count_5falphabet_5fliterals',['count_alphabet_literals',['../namespacetdc_1_1huff.html#a2a002fe7cc99c16ec42a6af47b380b5d',1,'tdc::huff']]],
