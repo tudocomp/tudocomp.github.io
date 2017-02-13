@@ -41,6 +41,7 @@
 <li><a href="#web-application-for-visual-string-analysis">Web Application for Visual String Analysis</a> (Visualization, Web Development)</li>
 <li><a href="#7zip-compatible-output-format">7zip-compatible Output Format</a> (Interoperability)</li>
 <li><a href="#graphical-user-interface">Graphical User Interface</a> (GUI Development)</li>
+<li><a href="#variants-of-lz78u">Variants of LZ78U</a> (Compression)</li>
 </ol>
 <h2 id="general-information">General Information</h2>
 <p>Participating as a <em>tudocomp</em> contributor involves the following:</p>
@@ -122,7 +123,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x6
 </ul>
 <h3 id="efficient-integer-coders">5. Efficient Integer Coders</h3>
 <p>The aim of this project is to implement and evaluate a fast Fibonacci encoding algorithm.</p>
-<p>Fibonacci coding is a universal code that represents integers succinctly. The coding splits an integer into summands that are Fibonacci words. Although the coding achieves a very compact representation, its decoding is slow. In this project, the encoding shall be implemented an benchmarked in <em>tudocomp</em>, i-e., measure its speed and compare to currently avaiable Fibonacci coders.</p>
+<p>Fibonacci coding is a universal code that represents integers succinctly. The coding splits an integer into summands that are Fibonacci words. Although the coding achieves a very compact representation, its decoding is slow. In this project, the encoding shall be implemented and benchmarked in <em>tudocomp</em>, i.e., the goal is to measure its speed and compare to currently avaiable Fibonacci coders.</p>
 <p><em>Category</em>: Encodings</p>
 <p><em>References</em>:</p>
 <ul>
@@ -130,8 +131,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x6
 <li><a href="https://github.com/simongog/sdsl-lite/tree/master/include/sdsl/coder_fibonacci.hpp">Fibonacci Coder of the SDSL</a></li>
 </ul>
 <h3 id="lz78-with-a-compact-hash-table">6. LZ78 with a Compact Hash Table</h3>
-<p>Our <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LZ78Compressor.hpp">LZ78 compressor</a> can utilize different Lempel-Ziv-78 tries, e.g. a binary trie, a ternary trie, or a trie based on a hash table. The latter is the fastest, but heaviest trie implementation.</p>
-<p>In the light of compact hash tables, we wonder whether we can drop the memory footprint of hash table implementations while still being very fast. The goal of this project is to research on this topic and develop a new, more efficient hash table based LZ78 trie.</p>
+<p>Our <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LZ78Compressor.hpp">LZ78 compressor</a> can utilize different Lempel-Ziv-78 tries, e.g., a binary trie, a ternary trie, or a trie based on a hash table. The latter is the fastest, but heaviest trie implementation.</p>
+<p>In the light of compact hash tables, we wonder whether we can drop the memory footprint of hash table implementations while still being very fast. The goal of this project is to research on this topic and develop a new, memory-efficient LZ78 trie based on a compact hash table.</p>
 <ul>
 <li><a href="https://arxiv.org/abs/1208.0290">Don't Thrash: How to Cache Your Hash on Flash</a></li>
 </ul>
@@ -143,7 +144,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x6
 <p><em>References</em>:</p>
 <ul>
 <li><a href="http://www.shino.ecei.tohoku.ac.jp/stringology/">Shinohara's Online Encyclopedia of Strings</a></li>
-<li><a href="https://github.com/koeppl/strinalyze">Strinalze - Analyze a string or a sequence of generated strings</a></li>
+<li><a href="https://github.com/koeppl/strinalyze">Strinalyze - Analyze a string or a sequence of generated strings</a></li>
 </ul>
 <p><em>Category</em>: Visualization, Web Development</p>
 <h3 id="zip-compatible-output-format">8. 7zip-compatible Output Format</h3>
@@ -155,10 +156,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x6
 <li><a href="http://www.7-zip.org">7zip</a></li>
 </ul>
 <h3 id="graphical-user-interface">9. Graphical User Interface</h3>
-<p>The <em>tudocomp</em> framework provides only a command-line tool as an interface to the end user. An graphical user interface would benefit the project for addressing users with antipathies to command-line tools.</p>
-<p>The GUI should provide the selection of multiple files/directories and an easy way to assemble a custom compression pipeline using what is available in <em>tudocomp</em>. It should be as platform independent as possible and usable on any platform on which <em>tudocomp</em> supports.</p>
+<p>The <em>tudocomp</em> framework provides only a command line tool as an interface to the end user. An graphical user interface would benefit the project for addressing users with antipathies to command line tools.</p>
+<p>The GUI should provide the selection of multiple files/directories and an easy way to assemble a custom compression pipeline using what is available in <em>tudocomp</em>. It should be as platform independent as possible and usable on any platform supported by <em>tudocomp</em>.</p>
 <p>The GUI can be developed, for instance, using a framework like Qt.</p>
 <p><em>Category</em>: GUI Development</p>
+<h3 id="variants-of-lz78u">10. Variants of LZ78U</h3>
+<p>Our <a href="https://github.com/tudocomp/tudocomp/blob/public/include/tudocomp/compressors/LZ78UCompressor.hpp">LZ78U compressor</a> currently uses the class <code>cst_sada</code> of the SDSL-lite library to build a suffix tree. Alternative suffix tree consruction data structures could be faster/memory friendlier.</p>
+<p>Another interesting promlem is how the factorization of the factor labels of the LZ78U should be done. Currently, we partition an LZ78U factor label in characters and former LZ78U factors, greedily chosen from left to right. The factorization of a factor label does not introduce new LZ78U factors. If it would, then there is a need for the nested/recursive factorization of factor labels created during the factorization of a factor label. It could be that this improves the compression ratio.</p>
+<p><em>Category</em>: Compression</p>
 <!---
 ### Try to detect text type, and use appropriate compressor.
 Modify existing 

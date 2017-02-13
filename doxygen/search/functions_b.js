@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['lcp_5fsada',['lcp_sada',['../classtdc_1_1lcpcomp_1_1lcp__sada.html#aa6fbde6521b68458061fafaf16b4d257',1,'tdc::lcpcomp::lcp_sada']]],
   ['lcpcompressor',['LCPCompressor',['../classtdc_1_1_l_c_p_compressor.html#a8f271ae8db7090759ce7a399e69bf2cf',1,'tdc::LCPCompressor']]],
-  ['lcpforwarditerator',['LCPForwardIterator',['../classtdc_1_1lcpcomp_1_1_l_c_p_forward_iterator.html#a3b875489fdef70cdfbbd281e1b99e6a2',1,'tdc::lcpcomp::LCPForwardIterator']]],
+  ['lcpforwarditerator',['LCPForwardIterator',['../classtdc_1_1_l_c_p_forward_iterator.html#a66cad4d47be747052dd3a65abd41a8dd',1,'tdc::LCPForwardIterator']]],
   ['lcpfromplcp',['LCPFromPLCP',['../classtdc_1_1_l_c_p_from_p_l_c_p.html#aa1999d1f54b11d3a40ca7d10f348bfd7',1,'tdc::LCPFromPLCP']]],
+  ['lcpsada',['LCPSada',['../classtdc_1_1_l_c_p_sada.html#a1cb4f459729cb67c7483d33ad9cc02ff',1,'tdc::LCPSada']]],
   ['leafrank',['leafrank',['../structtdc_1_1_suffix_tree.html#a48202872edc5a21e0900e1c401b2b274',1,'tdc::SuffixTree']]],
   ['level_5fanc',['level_anc',['../structtdc_1_1_suffix_tree.html#a4f3ec24b0ea82d5d991a1db470308de3',1,'tdc::SuffixTree']]],
   ['level_5findent',['level_indent',['../namespacetdc_1_1json.html#af2aa837ae32e91f9c67428ef22980804',1,'tdc::json']]],

@@ -6,8 +6,6 @@ var namespacetdc_1_1lcpcomp =
     [ "CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", "classtdc_1_1lcpcomp_1_1_compact_dec" ],
     [ "DecodeForwardQueueListBuffer", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html", "classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer" ],
     [ "EagerScanDec", "classtdc_1_1lcpcomp_1_1_eager_scan_dec.html", "classtdc_1_1lcpcomp_1_1_eager_scan_dec" ],
-    [ "lcp_sada", "classtdc_1_1lcpcomp_1_1lcp__sada.html", "classtdc_1_1lcpcomp_1_1lcp__sada" ],
-    [ "LCPForwardIterator", "classtdc_1_1lcpcomp_1_1_l_c_p_forward_iterator.html", "classtdc_1_1lcpcomp_1_1_l_c_p_forward_iterator" ],
     [ "MaxHeapStrategy", "classtdc_1_1lcpcomp_1_1_max_heap_strategy.html", "classtdc_1_1lcpcomp_1_1_max_heap_strategy" ],
     [ "MaxLCPStrategy", "classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html", "classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy" ],
     [ "MaxLCPSuffixList", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list" ],

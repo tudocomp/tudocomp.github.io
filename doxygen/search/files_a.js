@@ -2,6 +2,7 @@ var searchData=
 [
   ['lcpcompressor_2ehpp',['LCPCompressor.hpp',['../_l_c_p_compressor_8hpp.html',1,'']]],
   ['lcpfromplcp_2ehpp',['LCPFromPLCP.hpp',['../_l_c_p_from_p_l_c_p_8hpp.html',1,'']]],
+  ['lcpsada_2ehpp',['LCPSada.hpp',['../_l_c_p_sada_8hpp.html',1,'']]],
   ['literal_2ehpp',['Literal.hpp',['../_literal_8hpp.html',1,'']]],
   ['literalencoder_2ehpp',['LiteralEncoder.hpp',['../_literal_encoder_8hpp.html',1,'']]],
   ['lz78compressor_2ehpp',['LZ78Compressor.hpp',['../_l_z78_compressor_8hpp.html',1,'']]],

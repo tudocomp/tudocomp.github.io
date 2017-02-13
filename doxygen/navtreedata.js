@@ -43,14 +43,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_output_8hpp_source.html",
-"classtdc_1_1_const_integer_base_with64.html#a8f98e5586a8c8156928217ff907a55f8",
-"classtdc_1_1_option_value.html#ade2378f81ba5da0dae282b1b7e8573ce",
-"classtdc_1_1int__vector_1_1_generic_int_ref.html",
-"classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#a987b05f16aa12d07a965f89e686e57e0",
-"classtdc_1_1uint__t.html#a5b76360ba6e51bc991076e102663873e",
-"namespacemembers_a.html",
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ac0e513691bbed40ed9bcb47a588e899d"
+"_options_8hpp.html#a1c454c319c4abe6c6289504aa59a885b",
+"classtdc_1_1_const_integer_base_with64.html#a8aa5ce9a081b04b69011102f764448fc",
+"classtdc_1_1_option_value.html#a12a6f5b6534af35d9216b7775bc686dd",
+"classtdc_1_1int__vector_1_1_generic_int_ptr.html#a74f27391776099e58cb5aa41c8248136",
+"classtdc_1_1lcpcomp_1_1_compact_dec.html",
+"classtdc_1_1uint__t.html#a4ef0422ad65f03858cbb4a60c4246c76",
+"namespacemembers.html",
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab5f76c52746930d342cfd40870d5553e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
