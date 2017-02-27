@@ -7,6 +7,8 @@ var searchData=
   ['compression',['Compression',['../classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html',1,'tdc::lz78u::BufferingStrategy']]],
   ['compression',['Compression',['../classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html',1,'tdc::lz78u::StreamingStrategy']]],
   ['compressor',['Compressor',['../classtdc_1_1_compressor.html',1,'tdc']]],
+  ['constgenericview',['ConstGenericView',['../classtdc_1_1_const_generic_view.html',1,'tdc']]],
+  ['constgenericview_3c_20uliteral_5ft_20_3e',['ConstGenericView&lt; uliteral_t &gt;',['../classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html',1,'tdc']]],
   ['constintegerbasecombiner',['ConstIntegerBaseCombiner',['../classtdc_1_1_const_integer_base_combiner.html',1,'tdc']]],
   ['constintegerbasecombiner_3c_20constintegerbasewithself_3c_20constintref_3c_20t_20_3e_20_3e_2c_20constintegerbasewith32_3c_20constintref_3c_20t_20_3e_2c_20uint32_5ft_20_3e_2c_20constintegerbasewith32_3c_20constintref_3c_20t_20_3e_2c_20int_20_3e_2c_20constintegerbasewith64_3c_20constintref_3c_20t_20_3e_2c_20uint64_5ft_20_3e_2c_20constintegerbasewith64_3c_20constintref_3c_20t_20_3e_2c_20t_20_3e_20_3e',['ConstIntegerBaseCombiner&lt; ConstIntegerBaseWithSelf&lt; ConstIntRef&lt; T &gt; &gt;, ConstIntegerBaseWith32&lt; ConstIntRef&lt; T &gt;, uint32_t &gt;, ConstIntegerBaseWith32&lt; ConstIntRef&lt; T &gt;, int &gt;, ConstIntegerBaseWith64&lt; ConstIntRef&lt; T &gt;, uint64_t &gt;, ConstIntegerBaseWith64&lt; ConstIntRef&lt; T &gt;, T &gt; &gt;',['../classtdc_1_1_const_integer_base_combiner.html',1,'tdc']]],
   ['constintegerbasecombiner_3c_20t_20_3e',['ConstIntegerBaseCombiner&lt; T &gt;',['../classtdc_1_1_const_integer_base_combiner_3_01_t_01_4.html',1,'tdc']]],

@@ -36,12 +36,8 @@
 </ul></li>
 <li><a href="#features">Features</a></li>
 <li><a href="#usage">Usage</a><ul>
-<li><a href="#library">Library</a><ul>
-<li><a href="#dependencies">Dependencies</a></li>
-</ul></li>
+<li><a href="#library">Library</a></li>
 <li><a href="#command-line-application">Command-line application</a></li>
-<li><a href="#building-on-windows">Building on Windows</a></li>
-<li><a href="#license">License</a></li>
 </ul></li>
 <li><a href="#tutorial">Tutorial</a><ul>
 <li><a href="#building-the-framework">Building the framework</a></li>
@@ -132,22 +128,6 @@
 </blockquote>
 </blockquote>
 <p>The <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen">Doxygen documentation</a> provides an overview of the available compression and encoding implementations as well as the framework's full API.</p>
-<h3 id="dependencies">Dependencies</h3>
-<p>The framework is built using <a href="https://cmake.org">CMake</a> (2.8 or later). It is written in <code>C++11</code> with GNU extensions and has been tested with the <code>gcc</code> compiler family (version 4.9.2 or later) and <code>clang</code> (version 3.5.2 or later).</p>
-<p>It has the following external dependencies:</p>
-<ul>
-<li><a href="https://github.com/simongog/sdsl-lite">SDSL</a> (2.1 or later).</li>
-<li><a href="https://gflags.github.io/gflags">Gflags</a> (2.1.2 or later).</li>
-<li><a href="https://github.com/google/glog">Google Logging (glog)</a> (0.34 or later).</li>
-</ul>
-<p>Additionally, the tests require <a href="https://github.com/google/googletest">Google Test</a> (1.7.0 or later).</p>
-<p>The CMake build scripts will either find the external dependencies on the build system, or automatically download and build them from their official repositories in case they cannot be found.</p>
-<p>For building the documentation, the following tools are required:</p>
-<ul>
-<li>LATEX (specifically the <code>pdflatex</code> component)</li>
-<li><a href="http://doxygen.org">Doxygen</a> (1.8 or later).</li>
-<li><a href="http://pandoc.org">Pandoc</a> (1.16 or later).</li>
-</ul>
 <h2 id="command-line-application">Command-line application</h2>
 <p>The executable <code>tdc</code> is the command-line application that bundles all registered algorithms. It provides a fast and easy way to compress and decompress a file with a specified chain of compressors.</p>
 <p>Every registered compression or encoding algorithm will be listed in the help output of the application when passing the <code>--list</code> argument.</p>
@@ -156,13 +136,6 @@
 <p><em>TODO</em>: Maybe add a small example here.</p>
 </blockquote>
 </blockquote>
-<h2 id="building-on-windows">Building on Windows</h2>
-<p>On Windows, the framework can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment. <code>mingw</code> and Microsoft Visual Studio are <em>not</em> supported at this point.</p>
-<blockquote>
-<p><em>Note:</em> In a <em>Cygwin</em> environment, due to its nature of not allowing overrides of <code>malloc</code> and friends, the <code>malloc_count</code> module is not functional, ie. memory heap allocation cannot be measured.</p>
-</blockquote>
-<h2 id="license">License</h2>
-<p>The framework is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0Apache License 2.0</a></p>
 <h1 id="tutorial">Tutorial</h1>
 <p>This chapter provides a guided tour through the implementation of a compressor, spanning much of the framework's functionality. The following topics will be discussed:</p>
 <ul>
@@ -225,7 +198,7 @@ Input input_from_buffer(buffer);
 Input input_from_file(Input::Path{<span class="st">&quot;example.txt&quot;</span>});
 
 <span class="co">// Create an Input from a given std::istream</span>
-Input input_from_stream(std::cin); <span class="co">// from stdin</span></code></pre></div>
+Input input_from_stream(<span class="bu">std::</span>cin); <span class="co">// from stdin</span></code></pre></div>
 <p>The input can be accessed in two conceptually different ways:</p>
 <ol style="list-style-type: decimal">
 <li>As a <em>stream</em>, requiring bytes to be read sequentially from the input source (the concept of online algorithms) or</li>
@@ -244,7 +217,7 @@ CHECK(iview == <span class="st">&quot;foobar&quot;</span>);
 CHECK(sub_view == <span class="st">&quot;ooba&quot;</span>); <span class="co">// assertion for the sub-view&#39;s contents</span>
 
 <span class="co">// iterate over the whole view character-wise</span>
-<span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt; iview.size(); i++) {
+<span class="cf">for</span> (<span class="dt">size_t</span> i = <span class="dv">0</span>; i &lt; iview.size(); i++) {
     <span class="dt">uint8_t</span> c = iview[i];
     <span class="co">// ...</span>
 }</code></pre></div>
@@ -254,13 +227,13 @@ CHECK(sub_view == <span class="st">&quot;ooba&quot;</span>); <span class="co">//
 <span class="kw">auto</span> istream2 = istream; <span class="co">// create a second stream as a &quot;rewind&quot; position</span>
 
 <span class="co">// read the input character-wise using a C++11 range-based for loop</span>
-<span class="kw">for</span>(<span class="dt">uint8_t</span> c : istream) {
+<span class="cf">for</span>(<span class="dt">uint8_t</span> c : istream) {
     <span class="co">// ...</span>
 }
 
 <span class="co">// read the input character-wise using the std::istream interface</span>
 <span class="dt">char</span> c;
-<span class="kw">while</span>(istream2.get(c)) {
+<span class="cf">while</span>(istream2.get(c)) {
     <span class="co">// ...</span>
 }</code></pre></div>
 <p>Note how the framework uses the <code>uint8_t</code> (unsigned byte) type to represent characters. This is contrary to the <code>std</code> library, which uses C's <code>char</code> type.</p>
@@ -281,7 +254,7 @@ Output output_to_file1(<span class="st">&quot;example.txt&quot;</span>, <span cl
 Output output_to_file2(<span class="st">&quot;example.txt&quot;</span>, <span class="kw">true</span>); <span class="co">// overwrite if exists</span>
 
 <span class="co">// Create an Output to a given std::ostream</span>
-Output output_to_stream(std::cout); <span class="co">// to stdout</span></code></pre></div>
+Output output_to_stream(<span class="bu">std::</span>cout); <span class="co">// to stdout</span></code></pre></div>
 <blockquote>
 <blockquote>
 <p><em>TODO</em>: Creating an output to a file is inconsistent compared to creating an input from a file: for <code>Input</code>, there is <code>Input::Path</code>, while <code>Output</code> takes a string.</p>
@@ -292,7 +265,7 @@ Output output_to_stream(std::cout); <span class="co">// to stdout</span></code><
 <span class="kw">auto</span> ostream = output.as_stream(); <span class="co">// retrieve the output stream</span>
 
 <span class="co">// copy the input to the output character by character</span>
-<span class="kw">for</span>(<span class="dt">uint8_t</span> c : istream) {
+<span class="cf">for</span>(<span class="dt">uint8_t</span> c : istream) {
     ostream &lt;&lt; c;
 }</code></pre></div>
 <h3 id="bitwise-io">Bitwise I/O</h3>
@@ -346,23 +319,23 @@ BitIStream ibits(istream); <span class="co">// construct the bitwise input strea
 <p>The following example header (<code>/include/tudocomp/example/ExampleCompressor.hpp</code>) contains a minimal <code>Compressor</code> implementation named <code>ExampleCompressor</code>:</p>
 <div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// [/include/tudocomp/example/ExampleCompressor.hpp]</span>
 
-<span class="ot">#ifndef _INCLUDED_EXAMPLE_COMPRESSOR_HPP_</span>
-<span class="ot">#define _INCLUDED_EXAMPLE_COMPRESSOR_HPP_</span>
+<span class="pp">#ifndef _INCLUDED_EXAMPLE_COMPRESSOR_HPP_</span>
+<span class="pp">#define _INCLUDED_EXAMPLE_COMPRESSOR_HPP_</span>
 
-<span class="ot">#include &lt;tudocomp/tudocomp.hpp&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;tudocomp/tudocomp.hpp&gt;</span>
 
 <span class="kw">namespace</span> tdc {
 
 <span class="kw">class</span> ExampleCompressor : <span class="kw">public</span> Compressor {
 <span class="kw">public</span>:
-    <span class="kw">inline</span> <span class="dt">static</span> Meta meta() {
+    <span class="kw">inline</span> <span class="at">static</span> Meta meta() {
         Meta m(<span class="st">&quot;compressor&quot;</span>, <span class="st">&quot;example_compressor&quot;</span>,
                <span class="st">&quot;This is an example compressor.&quot;</span>);
 
-        <span class="kw">return</span> m;
+        <span class="cf">return</span> m;
     }
 
-    <span class="kw">inline</span> ExampleCompressor(Env&amp;&amp; env) : Compressor(std::move(env)) {
+    <span class="kw">inline</span> ExampleCompressor(Env&amp;&amp; env) : Compressor(<span class="bu">std::</span>move(env)) {
     }
 
     <span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">void</span> compress(Input&amp; input, Output&amp; output) <span class="kw">override</span> {
@@ -374,7 +347,7 @@ BitIStream ibits(istream); <span class="co">// construct the bitwise input strea
 
 }
 
-<span class="ot">#endif</span></code></pre></div>
+<span class="pp">#endif</span></code></pre></div>
 <p>The <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/namespacetdc.html"><code>tdc</code></a> namespace contains most of the core types required for implementing compressors, including the <code>Compressor</code> interface and the <code>Env</code> and <code>Meta</code> types.</p>
 <p>The <code>Meta</code> object returned by <code>meta()</code> contains the following information:</p>
 <ul>
@@ -391,29 +364,29 @@ BitIStream ibits(istream); <span class="co">// construct the bitwise input strea
 
     <span class="dt">char</span> current; <span class="co">// stores the current character read from the input</span>
     <span class="dt">char</span> last; <span class="co">//stores the character that preceded the current character</span>
-    size_t counter = <span class="dv">0</span>; <span class="co">// counts the length of the run of the current character</span>
+    <span class="dt">size_t</span> counter = <span class="dv">0</span>; <span class="co">// counts the length of the run of the current character</span>
 
     <span class="co">// writes the current run to the output stream</span>
     <span class="kw">auto</span> emit_run = [&amp;]() {
-        <span class="kw">if</span> (counter &gt; <span class="dv">3</span>) {
+        <span class="cf">if</span> (counter &gt; <span class="dv">3</span>) {
             <span class="co">// if the run exceeds 3 characters, encode the run using the %% syntax</span>
             ostream &lt;&lt; last &lt;&lt; <span class="st">&#39;%&#39;</span> &lt;&lt; counter &lt;&lt; <span class="st">&#39;%&#39;</span>;
-        } <span class="kw">else</span> {
+        } <span class="cf">else</span> {
             <span class="co">// otherwise, do not encode and emit the whole run</span>
-            <span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt;= counter; i++) {
+            <span class="cf">for</span> (<span class="dt">size_t</span> i = <span class="dv">0</span>; i &lt;= counter; i++) {
                 ostream &lt;&lt; last;
             }
         }
     };
 
     <span class="co">// retrieve the first character on the stream</span>
-    <span class="kw">if</span> (istream.get(last)) {
+    <span class="cf">if</span> (istream.get(last)) {
         <span class="co">// continue reading from the stream</span>
-        <span class="kw">while</span>(istream.get(current)) {
-            <span class="kw">if</span> (current == last) {
+        <span class="cf">while</span>(istream.get(current)) {
+            <span class="cf">if</span> (current == last) {
                 <span class="co">// increase length of the current run</span>
                 counter++;
-            } <span class="kw">else</span> {
+            } <span class="cf">else</span> {
                 <span class="co">// emit the previous run</span>
                 emit_run();
 
@@ -435,16 +408,16 @@ BitIStream ibits(istream); <span class="co">// construct the bitwise input strea
     <span class="dt">char</span> last = <span class="st">&#39;?&#39;</span>; <span class="co">// stores the last character read before a &quot;%n%&quot; pattern is encountered</span>
 
     <span class="co">// process the input</span>
-    <span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt; iview.size(); i++) {
-        <span class="kw">if</span> (iview[i] == <span class="st">&#39;%&#39;</span>) {
+    <span class="cf">for</span> (<span class="dt">size_t</span> i = <span class="dv">0</span>; i &lt; iview.size(); i++) {
+        <span class="cf">if</span> (iview[i] == <span class="st">&#39;%&#39;</span>) {
             <span class="co">// after encountering the &#39;%&#39; chracter, parse the following characters</span>
             <span class="co">// as a decimal number until the next &#39;%&#39; is encountered</span>
-            size_t counter = <span class="dv">0</span>;
-            <span class="kw">for</span> (i++; i &lt; iview.size(); i++) {
-                <span class="kw">if</span> (iview[i] == <span class="st">&#39;%&#39;</span>) {
+            <span class="dt">size_t</span> counter = <span class="dv">0</span>;
+            <span class="cf">for</span> (i++; i &lt; iview.size(); i++) {
+                <span class="cf">if</span> (iview[i] == <span class="st">&#39;%&#39;</span>) {
                     <span class="co">// conclusion of the &quot;%n%&quot; pattern</span>
-                    <span class="kw">break</span>;
-                } <span class="kw">else</span> {
+                    <span class="cf">break</span>;
+                } <span class="cf">else</span> {
                     <span class="co">// naive decimal number parser</span>
                     counter *= <span class="dv">10</span>;
                     counter += (iview[i] - <span class="st">&#39;0&#39;</span>);
@@ -452,10 +425,10 @@ BitIStream ibits(istream); <span class="co">// construct the bitwise input strea
             }
 
             <span class="co">// repeat the previous character according to the parsed length</span>
-            <span class="kw">for</span> (size_t x = <span class="dv">0</span>; x &lt; counter; x++) {
+            <span class="cf">for</span> (<span class="dt">size_t</span> x = <span class="dv">0</span>; x &lt; counter; x++) {
                 ostream &lt;&lt; last;
             }
-        } <span class="kw">else</span> {
+        } <span class="cf">else</span> {
             <span class="co">// output any character not part of a &quot;c%n%&quot; pattern and continue reading</span>
             ostream &lt;&lt; iview[i];
             last = iview[i];
@@ -478,7 +451,7 @@ BitIStream ibits(istream); <span class="co">// construct the bitwise input strea
 <p>A test suite consists of including the <em>Google Test</em> library and at least one unit test as follows, starting with an empty <code>example_tests.cpp</code></p>
 <div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// [/test/example_tests.cpp]</span>
 
-<span class="ot">#include &lt;gtest/gtest.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;gtest/gtest.h&gt;</span>
 
 TEST(example, test) {
     ASSERT_TRUE(<span class="kw">true</span>);
@@ -490,11 +463,11 @@ TEST(example, test) {
 <p>The following snippet provides a simple unit test for the <code>ExampleCompressor</code> from the previous chapter, the run-length encoder:</p>
 <div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// [/test/example_tests.cpp]</span>
 
-<span class="ot">#include &lt;gtest/gtest.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;gtest/gtest.h&gt;</span>
 
-<span class="ot">#include &lt;tudocomp/example/ExampleCompressor.hpp&gt;</span>
-<span class="ot">#include &lt;tudocomp/Algorithm.hpp&gt;</span>
-<span class="ot">#include &lt;tudocomp/Compressor.hpp&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;tudocomp/example/ExampleCompressor.hpp&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;tudocomp/Algorithm.hpp&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;tudocomp/Compressor.hpp&gt;</span>
 
 TEST(example, compress) {
     <span class="co">// instantiate the ExampleCompressor</span>
@@ -504,17 +477,17 @@ TEST(example, compress) {
     tdc::Input input(<span class="st">&quot;abcccccccde&quot;</span>);
 
     <span class="co">// create the output for the test (a buffer)</span>
-    std::vector&lt;<span class="dt">uint8_t</span>&gt; buffer;
+    <span class="bu">std::</span>vector&lt;<span class="dt">uint8_t</span>&gt; buffer;
     tdc::Output output(buffer);
 
     <span class="co">// invoke the compress method</span>
     compressor.compress(input, output);
 
     <span class="co">// retrieve the output as a string</span>
-    std::string output_str(buffer.begin(), buffer.end());
+    <span class="bu">std::</span>string output_str(buffer.begin(), buffer.end());
 
     <span class="co">// compare the expected result against the output string to determine test failure or success</span>
-    ASSERT_EQ(<span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>, output_str);
+    ASSERT_EQ(<span class="st">&quot;abc</span><span class="sc">%6%</span><span class="st">de&quot;</span>, output_str);
 }</code></pre></div>
 <p><em>tudocomp</em> provides the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/namespacetdc.html#ada13e4fa05c07c2350dca7704b5f19dd"><code>create_algo</code></a> function template that properly instantiates compressors (or more precisely: any class inheriting from <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_algorithm.html"><code>Algorithm</code></a>). In this example, the compressor's input is created from a string constant and the output is linked to a byte buffer that will be filled. After invoking <code>compress</code>, the output is tested against the expected result.</p>
 <blockquote>
@@ -528,10 +501,10 @@ TEST(example, compress) {
 </blockquote>
 </blockquote>
 <p>A typical compression test case should also test that <code>decompress</code> restores the original input when fed the output of <code>compress</code>. <em>tudocomp</em> provides a helper function that performs such a compression cycle, which is presented in the following unit test:</p>
-<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="ot">#include &quot;tudocomp_test_util.hpp&quot;</span>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="pp">#include </span><span class="im">&quot;tudocomp_test_util.hpp&quot;</span>
 
 TEST(example, roundtrip) {
-    test::roundtrip&lt;tdc::ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>);
+    test::roundtrip&lt;tdc::ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="sc">%6%</span><span class="st">de&quot;</span>);
 }</code></pre></div>
 <blockquote>
 <blockquote>
@@ -548,7 +521,7 @@ TEST(example, roundtrip) {
 </ol>
 <p>This way, it spans an entire compression cycle. Alternatively, since often the compression result is not an ASCII string, the expected compression result can be passed as a vector of bytes like so:</p>
 <div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp">TEST(example, roundtrip_bytes) {
-    std::vector&lt;<span class="dt">uint8_t</span>&gt; v { <span class="dv">97</span>, <span class="dv">98</span>, <span class="dv">99</span>, <span class="dv">37</span>, <span class="dv">54</span>, <span class="dv">37</span>, <span class="dv">100</span>, <span class="dv">101</span> };
+    <span class="bu">std::</span>vector&lt;<span class="dt">uint8_t</span>&gt; v { <span class="dv">97</span>, <span class="dv">98</span>, <span class="dv">99</span>, <span class="dv">37</span>, <span class="dv">54</span>, <span class="dv">37</span>, <span class="dv">100</span>, <span class="dv">101</span> };
     test::roundtrip&lt;tdc::ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, v);
 }</code></pre></div>
 <blockquote>
@@ -596,10 +569,10 @@ env().log_stat(<span class="st">&quot;Another statistic&quot;</span>, <span clas
 <span class="kw">auto</span>&amp; stats = compressor.env().finish_stats();
 
 <span class="co">// print JSON to a stream directly</span>
-stats.to_json(std::cout);
+stats.to_json(<span class="bu">std::</span>cout);
 
 <span class="co">// retrieve JSON as string</span>
-std::string json = stats.to_json();</code></pre></div>
+<span class="bu">std::</span>string json = stats.to_json();</code></pre></div>
 <h3 id="charter-web-application">Charter Web Application</h3>
 <p>The <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen">tudocomp Charter</a> is a JavaScript-based web application that visualizes the statistics JSON output. Based on the data, it plots a bar chart that displays the single phases of the compression run with their running time on the X axis and their peak heap memory usage on the Y axis.</p>
 <div class="figure">
@@ -619,7 +592,7 @@ std::string json = stats.to_json();</code></pre></div>
 <h3 id="dynamic-options">Dynamic Options</h3>
 <p>Dynamic options are options that accept values of any type that can be parsed from a string representation (because options passed from a command-line, for instance, are generally in string representation). For primitive types such as booleans or integers, parsers are predefined in the <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_option_value.html"><code>OptionValue</code></a> class.</p>
 <p>In the following examples, two dynamic options are introduced to the <a href="#example-run-length-encoding">run-length encoder</a> example in the <code>Compressor</code>'s meta information object. The <code>minimum_run</code> option will determine the minimum length of a run before it is encoded (3 by default), while the <code>rle_symbol</code> option defines the separation symbol used to use for encoding runs.</p>
-<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="dt">static</span> Meta meta() {
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="at">static</span> Meta meta() {
     Meta m(<span class="st">&quot;compressor&quot;</span>, <span class="st">&quot;example_compressor&quot;</span>,
            <span class="st">&quot;This is an example compressor.&quot;</span>);
 
@@ -627,7 +600,7 @@ std::string json = stats.to_json();</code></pre></div>
     m.option(<span class="st">&quot;minimum_run&quot;</span>).dynamic(<span class="st">&quot;3&quot;</span>);
     m.option(<span class="st">&quot;rle_symbol&quot;</span>).dynamic(<span class="st">&quot;%&quot;</span>);
 
-    <span class="kw">return</span> m;
+    <span class="cf">return</span> m;
 }</code></pre></div>
 <p>The <code>Meta</code>'s <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_meta.html#aa00cbc180eecd9017e247d9bbffbc01e"><code>option</code></a> method introduces a new option. Using <a href="http://dacit.cs.uni-dortmund.de/tudocomp/doxygen/classtdc_1_1_meta_1_1_option_builder.html#a41d5ef14d440fc44b6f7ba91fcd7797e"><code>dynamic</code></a>, this option is declared a dynamic option with the specified default value. The default value is used when the option's value was not explicitly passed (ie. via the command line).</p>
 <p>In the following snippet, these options are used to alter the actual run-length encoding done by the <code>emit_run</code> function:</p>
@@ -637,13 +610,13 @@ std::string json = stats.to_json();</code></pre></div>
 
 <span class="co">// writes the current run to the output stream</span>
 <span class="kw">auto</span> emit_run = [&amp;]() {
-    <span class="kw">if</span> (counter &gt;= minimum_run) {
+    <span class="cf">if</span> (counter &gt;= minimum_run) {
         <span class="co">// if the run exceeds the minimum amount of characters,</span>
         <span class="co">// encode the run using using the RLE symbol syntax</span>
         ostream &lt;&lt; last &lt;&lt; rle_symbol &lt;&lt; counter &lt;&lt; rle_symbol;
-    } <span class="kw">else</span> {
+    } <span class="cf">else</span> {
         <span class="co">// otherwise, do not encode and emit the whole run</span>
-        <span class="kw">for</span> (size_t i = <span class="dv">0</span>; i &lt;= counter; i++) {
+        <span class="cf">for</span> (<span class="dt">size_t</span> i = <span class="dv">0</span>; i &lt;= counter; i++) {
             ostream &lt;&lt; last;
         }
     }
@@ -655,17 +628,17 @@ std::string json = stats.to_json();</code></pre></div>
 <h3 id="templated-options">Templated Options</h3>
 <p>Since algorithms are meant to be modular, the framework provides functionality to pass a sub-algorithm as an option of the main algorithm, which the main algorithm then instantiates at runtime. This is done using templated options.</p>
 <p>The following example declares the main algorithm, <code>TemplatedExampleCompressor</code>, with a template parameter <code>encoder_t</code> and the corresponding templated option:</p>
-<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">template</span> &lt;<span class="kw">typename</span> encoder_t&gt;
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">template</span> &lt;<span class="kw">typename</span> <span class="dt">encoder_t</span>&gt;
 <span class="kw">class</span> TemplatedExampleCompressor : <span class="kw">public</span> Compressor {
 <span class="kw">public</span>:
-    <span class="kw">inline</span> <span class="dt">static</span> Meta meta() {
+    <span class="kw">inline</span> <span class="at">static</span> Meta meta() {
         Meta m(<span class="st">&quot;compressor&quot;</span>, <span class="st">&quot;example_compressor&quot;</span>,
                <span class="st">&quot;This is an example compressor.&quot;</span>);
 
         <span class="co">//Define options</span>
-        m.option(<span class="st">&quot;encoder&quot;</span>).templated&lt;encoder_t&gt;();
+        m.option(<span class="st">&quot;encoder&quot;</span>).templated&lt;<span class="dt">encoder_t</span>&gt;();
 
-        <span class="kw">return</span> m;
+        <span class="cf">return</span> m;
     }
 
     <span class="co">// ...</span>
@@ -677,19 +650,19 @@ std::string json = stats.to_json();</code></pre></div>
 
     <span class="dt">char</span> current; <span class="co">// stores the current character read from the input</span>
     <span class="dt">char</span> last; <span class="co">//stores the character that preceded the current character</span>
-    size_t counter = <span class="dv">0</span>; <span class="co">// counts the length of the run of the current character</span>
+    <span class="dt">size_t</span> counter = <span class="dv">0</span>; <span class="co">// counts the length of the run of the current character</span>
 
     <span class="co">// create the encoder</span>
-    encoder_t encoder(env().env_for_option(<span class="st">&quot;encoder&quot;</span>));
+    <span class="dt">encoder_t</span> encoder(env().env_for_option(<span class="st">&quot;encoder&quot;</span>));
 
     <span class="co">// retrieve the first character on the stream</span>
-    <span class="kw">if</span> (istream.get(last)) {
+    <span class="cf">if</span> (istream.get(last)) {
         <span class="co">// continue reading from the stream</span>
-        <span class="kw">while</span>(istream.get(current)) {
-            <span class="kw">if</span> (current == last) {
+        <span class="cf">while</span>(istream.get(current)) {
+            <span class="cf">if</span> (current == last) {
                 <span class="co">// increase length of the current run</span>
                 counter++;
-            } <span class="kw">else</span> {
+            } <span class="cf">else</span> {
                 <span class="co">// emit the previous run</span>
                 encoder.emit_run(last, counter);
 
@@ -730,10 +703,10 @@ std::string json = stats.to_json();</code></pre></div>
     test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abccccccde&quot;</span>,  <span class="st">&quot;abccccccde&quot;</span>, <span class="st">&quot;minimum_run = &#39;6&#39;, rle_symbol = &#39;#&#39;&quot;</span>);
 
     <span class="co">// Test defaults</span>
-    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>);
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="sc">%6%</span><span class="st">de&quot;</span>);
 
     <span class="co">// Test partially with defaults</span>
-    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="ch">%6%</span><span class="st">de&quot;</span>,  <span class="st">&quot;minimum_run = &#39;6&#39;&quot;</span>);
+    test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccccccde&quot;</span>, <span class="st">&quot;abc</span><span class="sc">%6%</span><span class="st">de&quot;</span>,  <span class="st">&quot;minimum_run = &#39;6&#39;&quot;</span>);
     test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abccccccde&quot;</span>,  <span class="st">&quot;abccccccde&quot;</span>, <span class="st">&quot;minimum_run = &#39;6&#39;&quot;</span>);
     test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abccccde&quot;</span>,    <span class="st">&quot;abc#3#de&quot;</span>,  <span class="st">&quot;rle_symbol = &#39;#&#39;&quot;</span>);
     test::roundtrip&lt;ExampleCompressor&gt;(<span class="st">&quot;abcccde&quot;</span>,     <span class="st">&quot;abcccde&quot;</span>,   <span class="st">&quot;rle_symbol = &#39;#&#39;&quot;</span>);
@@ -834,22 +807,22 @@ commands = [
 <table>
 <thead>
 <tr class="header">
-<th align="left"><code>compare_commands = true</code></th>
-<th align="left"><code>compare_commands = false</code></th>
+<th><code>compare_commands = true</code></th>
+<th><code>compare_commands = false</code></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><code>FILE1</code> run on <code>COMMAND1</code>, <code>COMMAND2</code></td>
-<td align="left"><code>COMMAND1</code> run with <code>FILE1</code>, <code>FILE2</code></td>
+<td><code>FILE1</code> run on <code>COMMAND1</code>, <code>COMMAND2</code></td>
+<td><code>COMMAND1</code> run with <code>FILE1</code>, <code>FILE2</code></td>
 </tr>
 <tr class="even">
-<td align="left"><code>FILE2</code> run on <code>COMMAND1</code>, <code>COMMAND2</code></td>
-<td align="left"><code>COMMAND2</code> run with <code>FILE1</code>, <code>FILE2</code></td>
+<td><code>FILE2</code> run on <code>COMMAND1</code>, <code>COMMAND2</code></td>
+<td><code>COMMAND2</code> run with <code>FILE1</code>, <code>FILE2</code></td>
 </tr>
 <tr class="odd">
-<td align="left">...</td>
-<td align="left">...</td>
+<td>...</td>
+<td>...</td>
 </tr>
 </tbody>
 </table>
@@ -1012,22 +985,22 @@ file | $DATASETS/download/real/dna.50MB                                 |~  1.83
 <table>
 <thead>
 <tr class="header">
-<th align="left">Name</th>
-<th align="left">Roles</th>
+<th>Name</th>
+<th>Roles</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Dinklage, Patrick</td>
-<td align="left">core development, research, documentation</td>
+<td>Dinklage, Patrick</td>
+<td>core development, research, documentation</td>
 </tr>
 <tr class="even">
-<td align="left">Köppl, Dominik</td>
-<td align="left">supervision, advice, research</td>
+<td>Köppl, Dominik</td>
+<td>supervision, advice, research</td>
 </tr>
 <tr class="odd">
-<td align="left">Löbel, Marvin</td>
-<td align="left">core development, documentation</td>
+<td>Löbel, Marvin</td>
+<td>core development, documentation</td>
 </tr>
 </tbody>
 </table>

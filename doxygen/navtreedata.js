@@ -43,14 +43,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_options_8hpp.html#a1c454c319c4abe6c6289504aa59a885b",
-"classtdc_1_1_const_integer_base_with64.html#a7083327ac562679a232aaf4c6ff6020b",
-"classtdc_1_1_noop_compressor.html#acb15f61fc5b5283965af842a005cecf4",
-"classtdc_1_1int__vector_1_1_generic_int_ptr.html#a5908f48cd693c815d16b8aa72aa7528c",
-"classtdc_1_1lcpcomp_1_1_boost_heap.html#a0b2cb0255b82c9167d09341bf89e506c",
-"classtdc_1_1uint__t.html#a411444bfd3c3bf7f8e6c69df3399c304",
-"malloc__count_8hpp_source.html",
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab3a445255f97c50811abe1488054b60c"
+"_l_z_w_decoding_8hpp.html",
+"classtdc_1_1_const_generic_view.html#a5a844c5d1d88783e85af569e3791cb65",
+"classtdc_1_1_env_root.html#af56dabff5a2264d71e5af14955d85523",
+"classtdc_1_1_noop_compressor.html#ae5744f2c73c866b86e41336dbb01ef84",
+"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#aac4696fd6cad545881d5e7a73bac0117",
+"classtdc_1_1lcpcomp_1_1_my_hash.html#a14d67e1f993316233efd6aaf31d082a9",
+"classtdc__driver_1_1_options.html#ad6b5cf030d52ada7614d062cdf1b0edc",
+"namespacetdc_1_1lcpcomp.html",
+"structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

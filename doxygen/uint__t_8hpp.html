@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170213-jenkins</span>
+   &#160;<span id="projectnumber">0.170227-jenkins</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -119,6 +119,7 @@ $(document).ready(function(){initNavTree('uint__t_8hpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_integer_base_8hpp_source.html">tudocomp/util/IntegerBase.hpp</a>&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 </div>
 <p><a href="uint__t_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -140,369 +141,287 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1uint__t.html">tdc::uint_t&lt; bits &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom integer type for storing values of arbitrary bit size <code>bits</code>.  <a href="classtdc_1_1uint__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html">std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacetdc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html">tdc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacestd"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a32a3fec20c7484e4cd6753d0224dd107"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1dynamic__t.html">tdc::dynamic_t</a> IntegerBase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a32a3fec20c7484e4cd6753d0224dd107">tdc::__attribute__</a> ((packed))</td></tr>
 <tr class="separator:a32a3fec20c7484e4cd6753d0224dd107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76bf5b42b78a2d097d91cc615751f21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a76bf5b42b78a2d097d91cc615751f21e">uint_t</a> ()</td></tr>
-<tr class="separator:a76bf5b42b78a2d097d91cc615751f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3baf77edda42b8f9e9f2ae22e720da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#afe3baf77edda42b8f9e9f2ae22e720da">uint_t</a> (uint_t &amp;&amp;i)</td></tr>
-<tr class="separator:afe3baf77edda42b8f9e9f2ae22e720da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f27e9479e44a5da10abb2a69f0ae299"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a3f27e9479e44a5da10abb2a69f0ae299">uint_t</a> (const uint_t &amp;i)</td></tr>
-<tr class="separator:a3f27e9479e44a5da10abb2a69f0ae299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59ace344a0b6bbf675456a182e794053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a59ace344a0b6bbf675456a182e794053">operator=</a> (const <a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;b)</td></tr>
+<tr class="memitem:a9affa0722c0ebac4f927722bf4ac5aae"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a9affa0722c0ebac4f927722bf4ac5aae">uint_t</a> ()</td></tr>
+<tr class="separator:a9affa0722c0ebac4f927722bf4ac5aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abacc04c41089abddac8d8b6bc0d6d721"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#abacc04c41089abddac8d8b6bc0d6d721">uint_t</a> (uint_t &amp;&amp;i)</td></tr>
+<tr class="separator:abacc04c41089abddac8d8b6bc0d6d721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f0ef51371e751aa314e4358d94e725"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a20f0ef51371e751aa314e4358d94e725">uint_t</a> (const uint_t &amp;i)</td></tr>
+<tr class="separator:a20f0ef51371e751aa314e4358d94e725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ace344a0b6bbf675456a182e794053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a59ace344a0b6bbf675456a182e794053">operator=</a> (const <a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;b)</td></tr>
 <tr class="separator:a59ace344a0b6bbf675456a182e794053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d67c24b8433934ec37ce477e6e2fee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a02d67c24b8433934ec37ce477e6e2fee">uint_t</a> (unsigned char i)</td></tr>
-<tr class="separator:a02d67c24b8433934ec37ce477e6e2fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1dce80d44a1b2d43a66548cd66fe1a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ae1dce80d44a1b2d43a66548cd66fe1a2">operator=</a> (unsigned char data)</td></tr>
+<tr class="memitem:a3c7e3376521d120a9f2f3e7c2e72e776"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a3c7e3376521d120a9f2f3e7c2e72e776">uint_t</a> (unsigned char i)</td></tr>
+<tr class="separator:a3c7e3376521d120a9f2f3e7c2e72e776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1dce80d44a1b2d43a66548cd66fe1a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ae1dce80d44a1b2d43a66548cd66fe1a2">operator=</a> (unsigned char data)</td></tr>
 <tr class="separator:ae1dce80d44a1b2d43a66548cd66fe1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5797251d48c26b9811060250b6bd8581"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a5797251d48c26b9811060250b6bd8581">operator unsigned char</a> () const </td></tr>
-<tr class="separator:a5797251d48c26b9811060250b6bd8581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe359113d08b5792c06e837ce6dd8513"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#abe359113d08b5792c06e837ce6dd8513">uint_t</a> (signed char i)</td></tr>
-<tr class="separator:abe359113d08b5792c06e837ce6dd8513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71b0bcb47326f8a61be8b28cac47807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ad71b0bcb47326f8a61be8b28cac47807">operator=</a> (signed char data)</td></tr>
+<tr class="memitem:a8e2b4678d02726a462c65defa87bc357"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a8e2b4678d02726a462c65defa87bc357">operator unsigned char</a> () const </td></tr>
+<tr class="separator:a8e2b4678d02726a462c65defa87bc357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573398faa2cb6688ff9fcbf3f52491a7"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a573398faa2cb6688ff9fcbf3f52491a7">uint_t</a> (signed char i)</td></tr>
+<tr class="separator:a573398faa2cb6688ff9fcbf3f52491a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71b0bcb47326f8a61be8b28cac47807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ad71b0bcb47326f8a61be8b28cac47807">operator=</a> (signed char data)</td></tr>
 <tr class="separator:ad71b0bcb47326f8a61be8b28cac47807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25b6e7205b44f515e3db17bda463ec31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a25b6e7205b44f515e3db17bda463ec31">operator signed char</a> () const </td></tr>
-<tr class="separator:a25b6e7205b44f515e3db17bda463ec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6be89849aae2ed17ab06d15902c4f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ad6be89849aae2ed17ab06d15902c4f47">uint_t</a> (char i)</td></tr>
-<tr class="separator:ad6be89849aae2ed17ab06d15902c4f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eebcae02022c7c5b82cbd90f46aae43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a5eebcae02022c7c5b82cbd90f46aae43">operator=</a> (char data)</td></tr>
-<tr class="separator:a5eebcae02022c7c5b82cbd90f46aae43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af04d7173c81b7db88932b48d856cee12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#af04d7173c81b7db88932b48d856cee12">operator char</a> () const </td></tr>
-<tr class="separator:af04d7173c81b7db88932b48d856cee12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fc4b25f7bf2b1231aa3bbe175b75567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a8fc4b25f7bf2b1231aa3bbe175b75567">uint_t</a> (unsigned int i)</td></tr>
-<tr class="separator:a8fc4b25f7bf2b1231aa3bbe175b75567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef974125acb9830268e56891593e649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a5ef974125acb9830268e56891593e649">operator=</a> (unsigned int data)</td></tr>
+<tr class="memitem:abae390f79516b2696eb6346aaed2907e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#abae390f79516b2696eb6346aaed2907e">operator signed char</a> () const </td></tr>
+<tr class="separator:abae390f79516b2696eb6346aaed2907e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a536fd2f8d3c794141c75de6a1b9250fe"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a536fd2f8d3c794141c75de6a1b9250fe">uint_t</a> (char i)</td></tr>
+<tr class="separator:a536fd2f8d3c794141c75de6a1b9250fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5356ced565a3c8a113ecfced5d15449"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#af5356ced565a3c8a113ecfced5d15449">operator=</a> (char data)</td></tr>
+<tr class="separator:af5356ced565a3c8a113ecfced5d15449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b839bbf2d2987178a488d8f126b9947"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a0b839bbf2d2987178a488d8f126b9947">operator char</a> () const </td></tr>
+<tr class="separator:a0b839bbf2d2987178a488d8f126b9947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b72d833d820a840c54086b114ce1f35"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a6b72d833d820a840c54086b114ce1f35">uint_t</a> (unsigned int i)</td></tr>
+<tr class="separator:a6b72d833d820a840c54086b114ce1f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef974125acb9830268e56891593e649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a5ef974125acb9830268e56891593e649">operator=</a> (unsigned int data)</td></tr>
 <tr class="separator:a5ef974125acb9830268e56891593e649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c50b3728b17642f13af2c96967e539d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a0c50b3728b17642f13af2c96967e539d">operator unsigned int</a> () const </td></tr>
-<tr class="separator:a0c50b3728b17642f13af2c96967e539d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496f7cf394061bc8b85107a5011c350e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a496f7cf394061bc8b85107a5011c350e">uint_t</a> (unsigned short int i)</td></tr>
-<tr class="separator:a496f7cf394061bc8b85107a5011c350e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03746064de68946a95b61e19c3820905"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a03746064de68946a95b61e19c3820905">operator=</a> (unsigned short int data)</td></tr>
+<tr class="memitem:a26ff1ce8d81edff83a9b7400b28c050e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a26ff1ce8d81edff83a9b7400b28c050e">operator unsigned int</a> () const </td></tr>
+<tr class="separator:a26ff1ce8d81edff83a9b7400b28c050e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea2b0fedd24f219b956d8b3ef004ba4"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a8ea2b0fedd24f219b956d8b3ef004ba4">uint_t</a> (unsigned short int i)</td></tr>
+<tr class="separator:a8ea2b0fedd24f219b956d8b3ef004ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03746064de68946a95b61e19c3820905"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a03746064de68946a95b61e19c3820905">operator=</a> (unsigned short int data)</td></tr>
 <tr class="separator:a03746064de68946a95b61e19c3820905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f20a23e5be9497a59bfed381712841"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a72f20a23e5be9497a59bfed381712841">operator unsigned short int</a> () const </td></tr>
-<tr class="separator:a72f20a23e5be9497a59bfed381712841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede1051c652cc4f410c5acf20759cc7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#aede1051c652cc4f410c5acf20759cc7a">uint_t</a> (unsigned long int i)</td></tr>
-<tr class="separator:aede1051c652cc4f410c5acf20759cc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dead0045c7ba1fe69162f557593b15f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a8dead0045c7ba1fe69162f557593b15f">operator=</a> (unsigned long int data)</td></tr>
+<tr class="memitem:a512eff560511caa8a9e310d62f4fce85"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a512eff560511caa8a9e310d62f4fce85">operator unsigned short int</a> () const </td></tr>
+<tr class="separator:a512eff560511caa8a9e310d62f4fce85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895b8ed1409949e5d575efef626d7462"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a895b8ed1409949e5d575efef626d7462">uint_t</a> (unsigned long int i)</td></tr>
+<tr class="separator:a895b8ed1409949e5d575efef626d7462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dead0045c7ba1fe69162f557593b15f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a8dead0045c7ba1fe69162f557593b15f">operator=</a> (unsigned long int data)</td></tr>
 <tr class="separator:a8dead0045c7ba1fe69162f557593b15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4488db7341f5f06c5be047d71c8bfd8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a4488db7341f5f06c5be047d71c8bfd8e">operator unsigned long int</a> () const </td></tr>
-<tr class="separator:a4488db7341f5f06c5be047d71c8bfd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac63a4cf817f3c4a99d97920897a5bb84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ac63a4cf817f3c4a99d97920897a5bb84">uint_t</a> (unsigned long long int i)</td></tr>
-<tr class="separator:ac63a4cf817f3c4a99d97920897a5bb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ea9b871f9e231ef06fbc9f16ae23da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a82ea9b871f9e231ef06fbc9f16ae23da">operator=</a> (unsigned long long int data)</td></tr>
+<tr class="memitem:aad75222a5c91f3ba341362c6839c66b2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#aad75222a5c91f3ba341362c6839c66b2">operator unsigned long int</a> () const </td></tr>
+<tr class="separator:aad75222a5c91f3ba341362c6839c66b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c024bdf0fb87eb7d1142dc749389f4"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ae9c024bdf0fb87eb7d1142dc749389f4">uint_t</a> (unsigned long long int i)</td></tr>
+<tr class="separator:ae9c024bdf0fb87eb7d1142dc749389f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ea9b871f9e231ef06fbc9f16ae23da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a82ea9b871f9e231ef06fbc9f16ae23da">operator=</a> (unsigned long long int data)</td></tr>
 <tr class="separator:a82ea9b871f9e231ef06fbc9f16ae23da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e0d62f094e47f222a660ead47c8778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a56e0d62f094e47f222a660ead47c8778">operator unsigned long long int</a> () const </td></tr>
-<tr class="separator:a56e0d62f094e47f222a660ead47c8778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa60de99240ab31371dd7b56e56bb30d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#afa60de99240ab31371dd7b56e56bb30d">uint_t</a> (int i)</td></tr>
-<tr class="separator:afa60de99240ab31371dd7b56e56bb30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65fefcb4031e8e09fbc925c8c73012e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ad65fefcb4031e8e09fbc925c8c73012e">operator=</a> (int data)</td></tr>
+<tr class="memitem:a31fc03ba2ebf8aa99ab239cbf7ed0273"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a31fc03ba2ebf8aa99ab239cbf7ed0273">operator unsigned long long int</a> () const </td></tr>
+<tr class="separator:a31fc03ba2ebf8aa99ab239cbf7ed0273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca215486a939094b2769dc31132c8d2a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#aca215486a939094b2769dc31132c8d2a">uint_t</a> (int i)</td></tr>
+<tr class="separator:aca215486a939094b2769dc31132c8d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65fefcb4031e8e09fbc925c8c73012e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ad65fefcb4031e8e09fbc925c8c73012e">operator=</a> (int data)</td></tr>
 <tr class="separator:ad65fefcb4031e8e09fbc925c8c73012e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97230a3e4361297dcbdf2426fff50b55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a97230a3e4361297dcbdf2426fff50b55">operator int</a> () const </td></tr>
-<tr class="separator:a97230a3e4361297dcbdf2426fff50b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f28d53c65b44611db02a815271cfba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a00f28d53c65b44611db02a815271cfba">uint_t</a> (short int i)</td></tr>
-<tr class="separator:a00f28d53c65b44611db02a815271cfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425fa39b3e8c2a4c0c7a5ef5576f2234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a425fa39b3e8c2a4c0c7a5ef5576f2234">operator=</a> (short int data)</td></tr>
+<tr class="memitem:a951a0204c98d19d2c3a63ef898ca451f"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a951a0204c98d19d2c3a63ef898ca451f">operator int</a> () const </td></tr>
+<tr class="separator:a951a0204c98d19d2c3a63ef898ca451f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfec94ed8a5f430e113487c4a5fac07"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a6cfec94ed8a5f430e113487c4a5fac07">uint_t</a> (short int i)</td></tr>
+<tr class="separator:a6cfec94ed8a5f430e113487c4a5fac07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425fa39b3e8c2a4c0c7a5ef5576f2234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a425fa39b3e8c2a4c0c7a5ef5576f2234">operator=</a> (short int data)</td></tr>
 <tr class="separator:a425fa39b3e8c2a4c0c7a5ef5576f2234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07b88be1d8feb7f87524ed0c7910b056"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a07b88be1d8feb7f87524ed0c7910b056">operator short int</a> () const </td></tr>
-<tr class="separator:a07b88be1d8feb7f87524ed0c7910b056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c55830da6319e29cfb56e5011172b82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a1c55830da6319e29cfb56e5011172b82">uint_t</a> (long int i)</td></tr>
-<tr class="separator:a1c55830da6319e29cfb56e5011172b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06b523ccea7e6cb08029a347456b49b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#af06b523ccea7e6cb08029a347456b49b">operator=</a> (long int data)</td></tr>
+<tr class="memitem:afd1b28af9701e34e4286f92b3b70d9ab"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#afd1b28af9701e34e4286f92b3b70d9ab">operator short int</a> () const </td></tr>
+<tr class="separator:afd1b28af9701e34e4286f92b3b70d9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc27139c2207af94bc5c60a62ed0fe0"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#aabc27139c2207af94bc5c60a62ed0fe0">uint_t</a> (long int i)</td></tr>
+<tr class="separator:aabc27139c2207af94bc5c60a62ed0fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af06b523ccea7e6cb08029a347456b49b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#af06b523ccea7e6cb08029a347456b49b">operator=</a> (long int data)</td></tr>
 <tr class="separator:af06b523ccea7e6cb08029a347456b49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a872cd6a86f74259b0ea509cf0592f39f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a872cd6a86f74259b0ea509cf0592f39f">operator long int</a> () const </td></tr>
-<tr class="separator:a872cd6a86f74259b0ea509cf0592f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864d11ead36d7a12e03d3368e54a3bf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> (long long int i)</td></tr>
-<tr class="separator:a864d11ead36d7a12e03d3368e54a3bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ee881ae91323a275709742adc040be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a8ee881ae91323a275709742adc040be0">operator=</a> (long long int data)</td></tr>
+<tr class="memitem:ab675fbcb782eeb99b87157de307ff1e3"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#ab675fbcb782eeb99b87157de307ff1e3">operator long int</a> () const </td></tr>
+<tr class="separator:ab675fbcb782eeb99b87157de307ff1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfb904f019ee8f9254eaf6b3ebe7ede"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> (long long int i)</td></tr>
+<tr class="separator:a6cfb904f019ee8f9254eaf6b3ebe7ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee881ae91323a275709742adc040be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a8ee881ae91323a275709742adc040be0">operator=</a> (long long int data)</td></tr>
 <tr class="separator:a8ee881ae91323a275709742adc040be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216990db85d95879ffc49f177c1ed5f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a216990db85d95879ffc49f177c1ed5f8">operator long long int</a> () const </td></tr>
-<tr class="separator:a216990db85d95879ffc49f177c1ed5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118ab7a7079c98777ae1d05ec1d4f76e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a118ab7a7079c98777ae1d05ec1d4f76e">operator long long int</a> () const </td></tr>
+<tr class="separator:a118ab7a7079c98777ae1d05ec1d4f76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bb4916cb92325c1bdcfdd977ff641a"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:a70bb4916cb92325c1bdcfdd977ff641a"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a70bb4916cb92325c1bdcfdd977ff641a">tdc::operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&lt; N &gt; &amp;v)</td></tr>
+<tr class="memitem:a70bb4916cb92325c1bdcfdd977ff641a"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a70bb4916cb92325c1bdcfdd977ff641a">tdc::operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&lt; N &gt; &amp;v)</td></tr>
 <tr class="separator:a70bb4916cb92325c1bdcfdd977ff641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a3f4f51e21909a8ea4f6519faf5322fe7"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uint__t_8hpp.html#a3f4f51e21909a8ea4f6519faf5322fe7">m_data</a></td></tr>
 <tr class="separator:a3f4f51e21909a8ea4f6519faf5322fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e84b4c7fe06d6f249c9e0cfe75ac3f"><td class="memItemLeft" align="right" valign="top">class std::numeric_limits&lt; <a class="el" href="classtdc_1_1uint__t.html">tdc::uint_t</a>&lt; N &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html#a84e84b4c7fe06d6f249c9e0cfe75ac3f">std::__attribute__</a></td></tr>
+<tr class="separator:a84e84b4c7fe06d6f249c9e0cfe75ac3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af04d7173c81b7db88932b48d856cee12"></a>
+<a class="anchor" id="a0b839bbf2d2987178a488d8f126b9947"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator char </td>
+          <td class="memname">constexpr __attribute__::operator char </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00323">323</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a97230a3e4361297dcbdf2426fff50b55"></a>
+<a class="anchor" id="a951a0204c98d19d2c3a63ef898ca451f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator int </td>
+          <td class="memname">constexpr __attribute__::operator int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00344">344</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a872cd6a86f74259b0ea509cf0592f39f"></a>
+<a class="anchor" id="ab675fbcb782eeb99b87157de307ff1e3"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator long int </td>
+          <td class="memname">constexpr __attribute__::operator long int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00352">352</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a216990db85d95879ffc49f177c1ed5f8"></a>
+<a class="anchor" id="a118ab7a7079c98777ae1d05ec1d4f76e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator long long int </td>
+          <td class="memname">constexpr __attribute__::operator long long int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00356">356</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a07b88be1d8feb7f87524ed0c7910b056"></a>
+<a class="anchor" id="afd1b28af9701e34e4286f92b3b70d9ab"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator short int </td>
+          <td class="memname">constexpr __attribute__::operator short int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00348">348</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a25b6e7205b44f515e3db17bda463ec31"></a>
+<a class="anchor" id="abae390f79516b2696eb6346aaed2907e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator signed char </td>
+          <td class="memname">constexpr __attribute__::operator signed char </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00319">319</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5797251d48c26b9811060250b6bd8581"></a>
+<a class="anchor" id="a8e2b4678d02726a462c65defa87bc357"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator unsigned char </td>
+          <td class="memname">constexpr __attribute__::operator unsigned char </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00315">315</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0c50b3728b17642f13af2c96967e539d"></a>
+<a class="anchor" id="a26ff1ce8d81edff83a9b7400b28c050e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator unsigned int </td>
+          <td class="memname">constexpr __attribute__::operator unsigned int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00328">328</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4488db7341f5f06c5be047d71c8bfd8e"></a>
+<a class="anchor" id="aad75222a5c91f3ba341362c6839c66b2"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator unsigned long int </td>
+          <td class="memname">constexpr __attribute__::operator unsigned long int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00336">336</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a56e0d62f094e47f222a660ead47c8778"></a>
+<a class="anchor" id="a31fc03ba2ebf8aa99ab239cbf7ed0273"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator unsigned long long int </td>
+          <td class="memname">constexpr __attribute__::operator unsigned long long int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00340">340</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a72f20a23e5be9497a59bfed381712841"></a>
+<a class="anchor" id="a512eff560511caa8a9e310d62f4fce85"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::operator unsigned short int </td>
+          <td class="memname">constexpr __attribute__::operator unsigned short int </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00332">332</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
@@ -517,9 +436,9 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em></td><td>)</td>
           <td></td>
         </tr>
@@ -543,7 +462,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">unsigned char&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -569,7 +488,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">signed char&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -587,26 +506,18 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5eebcae02022c7c5b82cbd90f46aae43"></a>
+<a class="anchor" id="af5356ced565a3c8a113ecfced5d15449"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname">constexpr <a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00322">322</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
@@ -621,7 +532,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -647,7 +558,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">unsigned short int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -673,7 +584,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">unsigned long int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -699,7 +610,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">unsigned long long int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -725,7 +636,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -751,7 +662,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">short int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -777,7 +688,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">long int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -803,7 +714,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uint__t_8hpp.html#a864d11ead36d7a12e03d3368e54a3bf6">uint_t</a>&amp; __attribute__::operator= </td>
+          <td class="memname"><a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&amp; __attribute__::operator= </td>
           <td>(</td>
           <td class="paramtype">long long int&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -821,12 +732,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a76bf5b42b78a2d097d91cc615751f21e"></a>
+<a class="anchor" id="a9affa0722c0ebac4f927722bf4ac5aae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -838,12 +749,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afe3baf77edda42b8f9e9f2ae22e720da"></a>
+<a class="anchor" id="abacc04c41089abddac8d8b6bc0d6d721"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">uint_t &amp;&amp;&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -856,312 +767,216 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3f27e9479e44a5da10abb2a69f0ae299"></a>
+<a class="anchor" id="a20f0ef51371e751aa314e4358d94e725"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">const uint_t &amp;&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00309">309</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a02d67c24b8433934ec37ce477e6e2fee"></a>
+<a class="anchor" id="a3c7e3376521d120a9f2f3e7c2e72e776"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">unsigned char&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00313">313</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abe359113d08b5792c06e837ce6dd8513"></a>
+<a class="anchor" id="a573398faa2cb6688ff9fcbf3f52491a7"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">signed char&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00317">317</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad6be89849aae2ed17ab06d15902c4f47"></a>
+<a class="anchor" id="a536fd2f8d3c794141c75de6a1b9250fe"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00321">321</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8fc4b25f7bf2b1231aa3bbe175b75567"></a>
+<a class="anchor" id="a6b72d833d820a840c54086b114ce1f35"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00326">326</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a496f7cf394061bc8b85107a5011c350e"></a>
+<a class="anchor" id="a8ea2b0fedd24f219b956d8b3ef004ba4"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">unsigned short int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00330">330</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aede1051c652cc4f410c5acf20759cc7a"></a>
+<a class="anchor" id="a895b8ed1409949e5d575efef626d7462"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">unsigned long int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00334">334</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac63a4cf817f3c4a99d97920897a5bb84"></a>
+<a class="anchor" id="ae9c024bdf0fb87eb7d1142dc749389f4"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">unsigned long long int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00338">338</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afa60de99240ab31371dd7b56e56bb30d"></a>
+<a class="anchor" id="aca215486a939094b2769dc31132c8d2a"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00342">342</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a00f28d53c65b44611db02a815271cfba"></a>
+<a class="anchor" id="a6cfec94ed8a5f430e113487c4a5fac07"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">short int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00346">346</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1c55830da6319e29cfb56e5011172b82"></a>
+<a class="anchor" id="aabc27139c2207af94bc5c60a62ed0fe0"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">long int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00350">350</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a864d11ead36d7a12e03d3368e54a3bf6"></a>
+<a class="anchor" id="a6cfb904f019ee8f9254eaf6b3ebe7ede"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">__attribute__::uint_t </td>
+          <td class="memname">constexpr __attribute__::uint_t </td>
           <td>(</td>
           <td class="paramtype">long long int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="uint__t_8hpp_source.html#l00354">354</a> of file <a class="el" href="uint__t_8hpp_source.html">uint_t.hpp</a>.</p>

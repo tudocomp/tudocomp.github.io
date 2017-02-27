@@ -127,9 +127,6 @@ var hierarchy =
     [ "tdc::Counter< sym_t >", "classtdc_1_1_counter.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >", "classcedar_1_1da.html", null ],
     [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
-    [ "tdc::int_vector::IntPtrTrait< IntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
-    [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
-    [ "tdc::int_vector::IntPtrTrait< IntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
     [ "Data", null, [
       [ "tdc::int_vector::GenericIntPtr< ConstIntPtr< T >, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html", [
         [ "tdc::int_vector::ConstIntPtr< T >", "classtdc_1_1int__vector_1_1_const_int_ptr.html", null ]
@@ -139,6 +136,9 @@ var hierarchy =
       ] ],
       [ "tdc::int_vector::GenericIntPtr< Self, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html", null ]
     ] ],
+    [ "tdc::int_vector::IntPtrTrait< IntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
+    [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
+    [ "tdc::int_vector::IntPtrTrait< IntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
     [ "tdc::lzss::DecodeBackBuffer", "classtdc_1_1lzss_1_1_decode_back_buffer.html", null ],
     [ "tdc::lz78::Decompressor", "classtdc_1_1lz78_1_1_decompressor.html", null ],
     [ "tdc::lz78u::Decompressor", "classtdc_1_1lz78u_1_1_decompressor.html", null ],
@@ -147,9 +147,9 @@ var hierarchy =
     [ "tdc::lcpcomp::EagerScanDec", "classtdc_1_1lcpcomp_1_1_eager_scan_dec.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::empty_callback", "structcedar_1_1da_1_1empty__callback.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1enable__if98931aa7cbfcd97f62e54965a157a76a.html", null ],
-    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_14a76d8821f8d9ae8e37a3d831c166c1.html", null ],
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_integer_base_trait_3_01int__vector_1_1_int_ref_3_01uint__t_3_01_n_01_4_01_4_00_01taa2794a6825e1ee94ecb0ac2b8d96652.html", null ],
+    [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html", null ],
     [ "tdc::Env", "classtdc_1_1_env.html", null ],
     [ "tdc::EnvRoot", "classtdc_1_1_env_root.html", null ],
     [ "tdc::lz78u::Factor", "structtdc_1_1lz78u_1_1_factor.html", null ],
@@ -166,6 +166,19 @@ var hierarchy =
     [ "tdc::int_vector::GenericIntRefAutocast< T >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast.html", null ],
     [ "tdc::int_vector::GenericIntRefAutocast< dynamic_t >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01dynamic__t_01_4.html", null ],
     [ "tdc::int_vector::GenericIntRefAutocast< uint_t< 1 > >", "classtdc_1_1int__vector_1_1_generic_int_ref_autocast_3_01uint__t_3_011_01_4_01_4.html", null ],
+    [ "tdc::GenericViewBase< T, P >", "classtdc_1_1_generic_view_base.html", [
+      [ "tdc::ConstGenericView< T >", "classtdc_1_1_const_generic_view.html", [
+        [ "tdc::io::InputView", "classtdc_1_1io_1_1_input_view.html", null ]
+      ] ],
+      [ "tdc::GenericView< T >", "classtdc_1_1_generic_view.html", null ]
+    ] ],
+    [ "tdc::GenericViewBase< T, const T * >", "classtdc_1_1_generic_view_base.html", null ],
+    [ "tdc::GenericViewBase< T, T * >", "classtdc_1_1_generic_view_base.html", null ],
+    [ "tdc::GenericViewBase< uliteral_t, const uliteral_t * >", "classtdc_1_1_generic_view_base.html", [
+      [ "tdc::ConstGenericView< uliteral_t >", "classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html", null ]
+    ] ],
+    [ "std::hash< tdc::ConstGenericView< T > >", "structstd_1_1hash_3_01tdc_1_1_const_generic_view_3_01_t_01_4_01_4.html", null ],
+    [ "std::hash< tdc::GenericView< T > >", "structstd_1_1hash_3_01tdc_1_1_generic_view_3_01_t_01_4_01_4.html", null ],
     [ "tdc::huff::huffmantable", "structtdc_1_1huff_1_1huffmantable.html", [
       [ "tdc::huff::extended_huffmantable", "structtdc_1_1huff_1_1extended__huffmantable.html", null ]
     ] ],
@@ -234,8 +247,8 @@ var hierarchy =
     [ "tdc::lcpcomp::MaxLCPSuffixList< lcp_t >", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html", null ],
     [ "tdc::Meta", "classtdc_1_1_meta.html", null ],
     [ "tdc::MixHasher", "classtdc_1_1_mix_hasher.html", null ],
-    [ "tdc::lcpcomp::MyHash< Key, Value, HashFcn, EqualKey, SizeManager, empty_val >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
     [ "tdc::lz78::MyHash< Key, Value, HashFcn, EqualKey, ProbeFcn, SizeManager >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
+    [ "tdc::lcpcomp::MyHash< Key, Value, HashFcn, EqualKey, SizeManager, empty_val >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
     [ "tdc::lcpcomp::MyHash< len_t, len_t, tdc::MixHasher >", "classtdc_1_1lcpcomp_1_1_my_hash.html", null ],
     [ "tdc::lz78::MyHash< squeeze_node_t, factorid_t, tdc::MixHasher, std::equal_to< squeeze_node_t >, tdc::LinearProber< squeeze_node_t > >", "classtdc_1_1lz78_1_1_my_hash.html", null ],
     [ "cedar::NaN< T >", "structcedar_1_1_na_n.html", null ],
@@ -243,6 +256,7 @@ var hierarchy =
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::ninfo", "structcedar_1_1da_1_1ninfo.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::node", "structcedar_1_1da_1_1node.html", null ],
     [ "tdc::NoLiterals", "classtdc_1_1_no_literals.html", null ],
+    [ "std::numeric_limits< tdc::uint_t< N > >", "classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html", null ],
     [ "tdc::Meta::OptionBuilder", "classtdc_1_1_meta_1_1_option_builder.html", null ],
     [ "tdc_driver::Options", "classtdc__driver_1_1_options.html", null ],
     [ "tdc::OptionValue", "classtdc_1_1_option_value.html", null ],
@@ -272,11 +286,11 @@ var hierarchy =
     [ "tdc::Registry", "classtdc_1_1_registry.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::result_pair_type", "structcedar_1_1da_1_1result__pair__type.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::result_triple_type", "structcedar_1_1da_1_1result__triple__type.html", null ],
-    [ "tdc::root_childrank_support", "classtdc_1_1root__childrank__support.html", null ],
+    [ "tdc::lz78u::root_childrank_support", "classtdc_1_1lz78u_1_1root__childrank__support.html", null ],
     [ "tdc::SizeManagerPow2", "structtdc_1_1_size_manager_pow2.html", null ],
     [ "tdc::Stat", "classtdc_1_1_stat.html", null ],
     [ "tdc::StatGuard", "classtdc_1_1_stat_guard.html", null ],
-    [ "tdc::SuffixTree", "structtdc_1_1_suffix_tree.html", null ],
+    [ "tdc::lz78u::SuffixTree", "structtdc_1_1lz78u_1_1_suffix_tree.html", null ],
     [ "T", null, [
       [ "tdc::ConstIntegerBaseCombiner< T >", "classtdc_1_1_const_integer_base_combiner_3_01_t_01_4.html", null ],
       [ "tdc::ConstIntegerBaseCombiner< T, Ts... >", "classtdc_1_1_const_integer_base_combiner_3_01_t_00_01_ts_8_8_8_01_4.html", null ],
@@ -287,16 +301,13 @@ var hierarchy =
     [ "tdc::lz78::TrieNode< search_pos_t >", "classtdc_1_1lz78_1_1_trie_node.html", null ],
     [ "tdc::lz78::TrieNode< CedarSearchPos >", "classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html", null ],
     [ "tdc::lz78::TrieNode< factorid_t >", "classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html", null ],
-    [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
     [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
+    [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
     [ "tdc::UinttDispatch< MB >", "structtdc_1_1_uintt_dispatch.html", null ],
     [ "tdc::json::Value", "classtdc_1_1json_1_1_value.html", [
       [ "tdc::json::Array", "classtdc_1_1json_1_1_array.html", null ],
       [ "tdc::json::Object", "classtdc_1_1json_1_1_object.html", null ],
       [ "tdc::json::TValue< T >", "classtdc_1_1json_1_1_t_value.html", null ]
-    ] ],
-    [ "tdc::View", "classtdc_1_1_view.html", [
-      [ "tdc::io::InputView", "classtdc_1_1io_1_1_input_view.html", null ]
     ] ],
     [ "tdc::ViewLiterals", "classtdc_1_1_view_literals.html", null ]
 ];

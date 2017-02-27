@@ -7,5 +7,5 @@ var searchData=
   ['stat',['Stat',['../classtdc_1_1_stat.html',1,'tdc']]],
   ['statguard',['StatGuard',['../classtdc_1_1_stat_guard.html',1,'tdc']]],
   ['streamingstrategy',['StreamingStrategy',['../classtdc_1_1lz78u_1_1_streaming_strategy.html',1,'tdc::lz78u']]],
-  ['suffixtree',['SuffixTree',['../structtdc_1_1_suffix_tree.html',1,'tdc']]]
+  ['suffixtree',['SuffixTree',['../structtdc_1_1lz78u_1_1_suffix_tree.html',1,'tdc::lz78u']]]
 ];

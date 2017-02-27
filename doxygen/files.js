@@ -100,6 +100,10 @@ var files =
     [ "Generator.hpp", "_generator_8hpp.html", [
       [ "Generator", "classtdc_1_1_generator.html", "classtdc_1_1_generator" ]
     ] ],
+    [ "GenericConstU8View.hpp", "_generic_const_u8_view_8hpp.html", "_generic_const_u8_view_8hpp" ],
+    [ "GenericConstView.hpp", "_generic_const_view_8hpp.html", "_generic_const_view_8hpp" ],
+    [ "GenericView.hpp", "_generic_view_8hpp.html", "_generic_view_8hpp" ],
+    [ "GenericViewBase.hpp", "_generic_view_base_8hpp.html", "_generic_view_base_8hpp" ],
     [ "Hash.hpp", "_hash_8hpp.html", [
       [ "MixHasher", "classtdc_1_1_mix_hasher.html", "classtdc_1_1_mix_hasher" ],
       [ "SizeManagerPow2", "structtdc_1_1_size_manager_pow2.html", null ],

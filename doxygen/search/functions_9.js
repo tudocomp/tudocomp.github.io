@@ -10,6 +10,7 @@ var searchData=
   ['increase',['increase',['../classtdc_1_1_counter.html#a502cdea7a9ac60dd7f26039ee70ff9a1',1,'tdc::Counter']]],
   ['indent_5flines',['indent_lines',['../namespacetdc.html#acb49ebe59c829ef1cc77a931e96a4ca3',1,'tdc']]],
   ['index',['index',['../classtdc_1_1_l_c_p_forward_iterator.html#ac1c3633df27e6877d7539b0003191cec',1,'tdc::LCPForwardIterator']]],
+  ['infinity',['infinity',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a6c1d195419ed9740fd10185ac736547c',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
   ['init',['init',['../classtdc_1_1_quadratic_prober.html#ab167d9752ea1463148b117b0d6a9f3eb',1,'tdc::QuadraticProber::init()'],['../classtdc_1_1_gauss_prober.html#a562843fa1abf5c922d76617e2500cea6',1,'tdc::GaussProber::init()'],['../classtdc_1_1_linear_prober.html#aba03d195aca343d39c8e78e34f32baee',1,'tdc::LinearProber::init()'],['../classtdc_1_1_double_hashing_prober.html#a4fca78f354260924bd7cb2849e39efdf',1,'tdc::DoubleHashingProber::init()']]],
   ['inplace_5fisa',['inplace_isa',['../classtdc_1_1_text_d_s.html#ae32cffffaff7c52598ec10980c91a64a',1,'tdc::TextDS']]],
   ['inplace_5flcp',['inplace_lcp',['../classtdc_1_1_text_d_s.html#ad979c57983ccd71303cf1018a1bbb541',1,'tdc::TextDS']]],

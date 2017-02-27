@@ -1,6 +1,6 @@
 var _suffix_tree_8hpp =
 [
-    [ "SuffixTree", "structtdc_1_1_suffix_tree.html", "structtdc_1_1_suffix_tree" ],
-    [ "root_childrank_support", "classtdc_1_1root__childrank__support.html", "classtdc_1_1root__childrank__support" ],
-    [ "reset_bitvector", "_suffix_tree_8hpp.html#a0ce88fbf3206a6954a7180b54dd3487f", null ]
+    [ "SuffixTree", "structtdc_1_1lz78u_1_1_suffix_tree.html", "structtdc_1_1lz78u_1_1_suffix_tree" ],
+    [ "root_childrank_support", "classtdc_1_1lz78u_1_1root__childrank__support.html", "classtdc_1_1lz78u_1_1root__childrank__support" ],
+    [ "reset_bitvector", "_suffix_tree_8hpp.html#a56a381f13103aa189c14360a13795b85", null ]
 ];
