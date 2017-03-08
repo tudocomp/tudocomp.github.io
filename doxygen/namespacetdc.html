@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170227-jenkins</span>
+   &#160;<span id="projectnumber">0.170308-jenkins-15</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -430,10 +430,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae237d95e0b72f861584bae69cce5788a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ae237d95e0b72f861584bae69cce5788a">BitOStream</a> = <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">io::BitOStream</a></td></tr>
 <tr class="memdesc:ae237d95e0b72f861584bae69cce5788a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience shortcut to <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">io::BitOStream</a>.  <a href="#ae237d95e0b72f861584bae69cce5788a">More...</a><br /></td></tr>
 <tr class="separator:ae237d95e0b72f861584bae69cce5788a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85556a0ec2df2b00ea0a32c186d71681"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a85556a0ec2df2b00ea0a32c186d71681">CompressorConstructor</a> = std::function&lt; std::unique_ptr&lt; <a class="el" href="classtdc_1_1_compressor.html">Compressor</a> &gt;(<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;)&gt;</td></tr>
-<tr class="separator:a85556a0ec2df2b00ea0a32c186d71681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e6ec050d321e4a1a542d72b574a4db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a86e6ec050d321e4a1a542d72b574a4db">GeneratorConstructor</a> = std::function&lt; std::unique_ptr&lt; <a class="el" href="classtdc_1_1_generator.html">Generator</a> &gt;(<a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&amp;)&gt;</td></tr>
-<tr class="separator:a86e6ec050d321e4a1a542d72b574a4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d5c7581ed3cba7312a32c14e33d906"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a03d5c7581ed3cba7312a32c14e33d906">BitRange</a> = <a class="el" href="classtdc_1_1_fixed_range.html">FixedRange</a>&lt; 0, 1 &gt;</td></tr>
 <tr class="memdesc:a03d5c7581ed3cba7312a32c14e33d906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the range of bit values, ie <code>0</code> to <code>1</code>  <a href="#a03d5c7581ed3cba7312a32c14e33d906">More...</a><br /></td></tr>
 <tr class="separator:a03d5c7581ed3cba7312a32c14e33d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,10 +484,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a45f8327d4415f6ab7bb1a607ee39c964"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a45f8327d4415f6ab7bb1a607ee39c964">rle_decode</a> (std::basic_istream&lt; char_type &gt; &amp;is, std::basic_ostream&lt; char_type &gt; &amp;os, size_t offset=0)</td></tr>
 <tr class="memdesc:a45f8327d4415f6ab7bb1a607ee39c964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a run length encoded stream.  <a href="#a45f8327d4415f6ab7bb1a607ee39c964">More...</a><br /></td></tr>
 <tr class="separator:a45f8327d4415f6ab7bb1a607ee39c964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab94ce58507af735aac35a252e4aa6f8c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab94ce58507af735aac35a252e4aa6f8c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1_builder.html">Builder</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ab94ce58507af735aac35a252e4aa6f8c">builder</a> ()</td></tr>
-<tr class="memdesc:ab94ce58507af735aac35a252e4aa6f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtdc_1_1_builder.html">Builder</a> pattern template for easy algorithm instantiation.  <a href="#ab94ce58507af735aac35a252e4aa6f8c">More...</a><br /></td></tr>
-<tr class="separator:ab94ce58507af735aac35a252e4aa6f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7e749d9e18bc4edf4e7523c2b23c85"><td class="memTemplParams" colspan="2">template&lt;typename T , typename registry_root_t  = T&gt; </td></tr>
+<tr class="memitem:ada7e749d9e18bc4edf4e7523c2b23c85"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1_builder.html">Builder</a>&lt; T, registry_root_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ada7e749d9e18bc4edf4e7523c2b23c85">builder</a> ()</td></tr>
+<tr class="memdesc:ada7e749d9e18bc4edf4e7523c2b23c85"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtdc_1_1_builder.html">Builder</a> pattern template for easy algorithm instantiation.  <a href="#ada7e749d9e18bc4edf4e7523c2b23c85">More...</a><br /></td></tr>
+<tr class="separator:ada7e749d9e18bc4edf4e7523c2b23c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69fd23d7f97c90afc49913cb3976c096"><td class="memTemplParams" colspan="2">template&lt;class T , class... Args&gt; </td></tr>
 <tr class="memitem:a69fd23d7f97c90afc49913cb3976c096"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a69fd23d7f97c90afc49913cb3976c096">create_algo</a> (const std::string &amp;options, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:a69fd23d7f97c90afc49913cb3976c096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template for easy algorithm instantiation.  <a href="#a69fd23d7f97c90afc49913cb3976c096">More...</a><br /></td></tr>
@@ -541,8 +537,6 @@ Functions</h2></td></tr>
 <tr class="separator:a510af8b339e50dce8c3a85c7d801d78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8febde4e3a8e4bdaadb1a9d7f298574"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ae8febde4e3a8e4bdaadb1a9d7f298574">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classtdc_1_1_option_value.html">OptionValue</a> &amp;ov)</td></tr>
 <tr class="separator:ae8febde4e3a8e4bdaadb1a9d7f298574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c5b72348d3b127d6987443b593ac1e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classtdc_1_1_registry.html">Registry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ad7c5b72348d3b127d6987443b593ac1e">make_ptr_copy_of_registry</a> (const <a class="el" href="classtdc_1_1_registry.html">Registry</a> &amp;registry)</td></tr>
-<tr class="separator:ad7c5b72348d3b127d6987443b593ac1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53c7e05465e19cacdfd40901175b0690"><td class="memTemplParams" colspan="2">template&lt;class T , class Q &gt; </td></tr>
 <tr class="memitem:a53c7e05465e19cacdfd40901175b0690"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a53c7e05465e19cacdfd40901175b0690">swap</a> (<a class="el" href="classtdc_1_1_generic_view_base.html">GenericViewBase</a>&lt; T, Q &gt; &amp;lhs, <a class="el" href="classtdc_1_1_generic_view_base.html">GenericViewBase</a>&lt; T, Q &gt; &amp;rhs)</td></tr>
 <tr class="separator:a53c7e05465e19cacdfd40901175b0690"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -818,20 +812,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a85556a0ec2df2b00ea0a32c186d71681"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacetdc.html#a85556a0ec2df2b00ea0a32c186d71681">tdc::CompressorConstructor</a> = typedef std::function&lt;std::unique_ptr&lt;<a class="el" href="classtdc_1_1_compressor.html">Compressor</a>&gt;(<a class="el" href="classtdc_1_1_env.html">Env</a>&amp;&amp;)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pre__header_2_registry_8hpp_source.html#l00009">9</a> of file <a class="el" href="pre__header_2_registry_8hpp_source.html">pre_header/Registry.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="aed4cb5a3ed3183acc4d5743c77bc677c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -891,20 +871,6 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_int_vector_8hpp_source.html#l00629">629</a> of file <a class="el" href="_int_vector_8hpp_source.html">IntVector.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a86e6ec050d321e4a1a542d72b574a4db"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacetdc.html#a86e6ec050d321e4a1a542d72b574a4db">tdc::GeneratorConstructor</a> = typedef std::function&lt;std::unique_ptr&lt;<a class="el" href="classtdc_1_1_generator.html">Generator</a>&gt;(<a class="el" href="classtdc_1_1_env.html">Env</a>&amp;&amp;)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="pre__header_2_registry_8hpp_source.html#l00012">12</a> of file <a class="el" href="pre__header_2_registry_8hpp_source.html">pre_header/Registry.hpp</a>.</p>
 
 </div>
 </div>
@@ -1248,14 +1214,14 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab94ce58507af735aac35a252e4aa6f8c"></a>
+<a class="anchor" id="ada7e749d9e18bc4edf4e7523c2b23c85"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename registry_root_t  = T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_builder.html">Builder</a>&lt;T&gt; tdc::builder </td>
+          <td class="memname"><a class="el" href="classtdc_1_1_builder.html">Builder</a>&lt;T, registry_root_t&gt; tdc::builder </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1274,7 +1240,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The algorithm builder instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00082">82</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00083">83</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
 
 </div>
 </div>
@@ -1546,7 +1512,7 @@ template&lt;class T , class... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The created algorithm instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00117">117</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00118">118</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1541,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The created algorithm instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00130">130</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00131">131</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
 
 </div>
 </div>
@@ -1622,7 +1588,7 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the newly created environment. </dd></dl>
 
-<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00143">143</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_create_algorithm_8hpp_source.html#l00144">144</a> of file <a class="el" href="_create_algorithm_8hpp_source.html">CreateAlgorithm.hpp</a>.</p>
 
 </div>
 </div>
@@ -1888,30 +1854,6 @@ template&lt;&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the corresponding unsigned integer value. </dd></dl>
 
 <p>Definition at line <a class="el" href="def_8hpp_source.html#l00091">91</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad7c5b72348d3b127d6987443b593ac1e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classtdc_1_1_registry.html">Registry</a> &gt; tdc::make_ptr_copy_of_registry </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtdc_1_1_registry.html">Registry</a> &amp;&#160;</td>
-          <td class="paramname"><em>registry</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

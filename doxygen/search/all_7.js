@@ -15,7 +15,6 @@ var searchData=
   ['generator',['Generator',['../classtdc_1_1_generator.html',1,'tdc']]],
   ['generator',['generator',['../classtdc__driver_1_1_options.html#aa736ec3ab82b03caac15e21e06fe96a3',1,'tdc_driver::Options']]],
   ['generator_2ehpp',['Generator.hpp',['../_generator_8hpp.html',1,'']]],
-  ['generatorconstructor',['GeneratorConstructor',['../namespacetdc.html#a86e6ec050d321e4a1a542d72b574a4db',1,'tdc']]],
   ['genericconstu8view_2ehpp',['GenericConstU8View.hpp',['../_generic_const_u8_view_8hpp.html',1,'']]],
   ['genericconstview_2ehpp',['GenericConstView.hpp',['../_generic_const_view_8hpp.html',1,'']]],
   ['genericintptr',['GenericIntPtr',['../classtdc_1_1int__vector_1_1_generic_int_ptr.html',1,'tdc::int_vector']]],

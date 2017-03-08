@@ -92,7 +92,7 @@ var hierarchy =
     [ "tdc::int_vector::BitPackingVectorBase< uint_t< N > >", "structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01uint__t_3_01_n_01_4_01_4.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::block", "structcedar_1_1da_1_1block.html", null ],
     [ "tdc::libdivsufsort::BufferWrapper< buffer_t >", "classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html", null ],
-    [ "tdc::Builder< T >", "classtdc_1_1_builder.html", null ],
+    [ "tdc::Builder< T, registry_root_t >", "classtdc_1_1_builder.html", null ],
     [ "tdc::lz78::CedarSearchPos", "structtdc_1_1lz78_1_1_cedar_search_pos.html", null ],
     [ "tdc::ConstIntegerBaseCombiner<... >", "classtdc_1_1_const_integer_base_combiner.html", null ],
     [ "tdc::ConstIntegerBaseCombiner< ConstIntegerBaseWithSelf< ConstIntRef< T > >, ConstIntegerBaseWith32< ConstIntRef< T >, uint32_t >, ConstIntegerBaseWith32< ConstIntRef< T >, int >, ConstIntegerBaseWith64< ConstIntRef< T >, uint64_t >, ConstIntegerBaseWith64< ConstIntRef< T >, T > >", "classtdc_1_1_const_integer_base_combiner.html", [
@@ -127,6 +127,7 @@ var hierarchy =
     [ "tdc::Counter< sym_t >", "classtdc_1_1_counter.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >", "classcedar_1_1da.html", null ],
     [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
+    [ "tdc::int_vector::IntPtrTrait< IntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
     [ "Data", null, [
       [ "tdc::int_vector::GenericIntPtr< ConstIntPtr< T >, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html", [
         [ "tdc::int_vector::ConstIntPtr< T >", "classtdc_1_1int__vector_1_1_const_int_ptr.html", null ]
@@ -136,7 +137,6 @@ var hierarchy =
       ] ],
       [ "tdc::int_vector::GenericIntPtr< Self, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html", null ]
     ] ],
-    [ "tdc::int_vector::IntPtrTrait< IntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
     [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
     [ "tdc::int_vector::IntPtrTrait< IntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
     [ "tdc::lzss::DecodeBackBuffer", "classtdc_1_1lzss_1_1_decode_back_buffer.html", null ],
@@ -283,7 +283,8 @@ var hierarchy =
       ] ]
     ] ],
     [ "tdc::RefDispatch< MB, For >", "structtdc_1_1_ref_dispatch.html", null ],
-    [ "tdc::Registry", "classtdc_1_1_registry.html", null ],
+    [ "tdc::Registry< algorithm_t >", "classtdc_1_1_registry.html", null ],
+    [ "tdc::Registry< registry_root_t >", "classtdc_1_1_registry.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::result_pair_type", "structcedar_1_1da_1_1result__pair__type.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::result_triple_type", "structcedar_1_1da_1_1result__triple__type.html", null ],
     [ "tdc::lz78u::root_childrank_support", "classtdc_1_1lz78u_1_1root__childrank__support.html", null ],
@@ -301,8 +302,8 @@ var hierarchy =
     [ "tdc::lz78::TrieNode< search_pos_t >", "classtdc_1_1lz78_1_1_trie_node.html", null ],
     [ "tdc::lz78::TrieNode< CedarSearchPos >", "classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html", null ],
     [ "tdc::lz78::TrieNode< factorid_t >", "classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html", null ],
-    [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
     [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
+    [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
     [ "tdc::UinttDispatch< MB >", "structtdc_1_1_uintt_dispatch.html", null ],
     [ "tdc::json::Value", "classtdc_1_1json_1_1_value.html", [
       [ "tdc::json::Array", "classtdc_1_1json_1_1_array.html", null ],

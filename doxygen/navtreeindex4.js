@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classtdc_1_1_noop_compressor.html#ae5744f2c73c866b86e41336dbb01ef84":[2,0,2,83,0],
 "classtdc_1_1_option_value.html":[2,0,2,84],
 "classtdc_1_1_option_value.html#a12a6f5b6534af35d9216b7775bc686dd":[2,0,2,84,7],
 "classtdc_1_1_option_value.html#a1455edfedff06031a3ebe3470af32c35":[2,0,2,84,14],
@@ -38,11 +37,10 @@ var NAVTREEINDEX4 =
 "classtdc_1_1_re_pair_compressor.html#a9d539af95630217e63ab5f24e5ed445b":[2,0,2,92,1],
 "classtdc_1_1_re_pair_compressor.html#afe99e75fd076ddac2973a0d04b63f87c":[2,0,2,92,0],
 "classtdc_1_1_registry.html":[2,0,2,91],
-"classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6":[2,0,2,91,0],
-"classtdc_1_1_registry.html#a56f40db87bf7ccd72721443e94d75401":[2,0,2,91,4],
-"classtdc_1_1_registry.html#a7ab0f10eb4edd412427ed59e6e30d1b3":[2,0,2,91,2],
-"classtdc_1_1_registry.html#a961b331e881e5d42335cdae7441f13f4":[2,0,2,91,1],
-"classtdc_1_1_registry.html#af0930ae3ee7a7920f812510bd2ae83a7":[2,0,2,91,3],
+"classtdc_1_1_registry.html#a037340403bb0a73daf4e1922e3180b62":[2,0,2,91,2],
+"classtdc_1_1_registry.html#a4922be53258d1a529ed90d37d5f84396":[2,0,2,91,1],
+"classtdc_1_1_registry.html#a92526a8daddb338d3c3137ef68d40398":[2,0,2,91,0],
+"classtdc_1_1_registry.html#af6fbede46dd3c485ef4e55856a48ca62":[2,0,2,91,3],
 "classtdc_1_1_run_length_encoder.html":[2,0,2,93],
 "classtdc_1_1_run_length_encoder.html#a13b71e7e628d472ba237fbf38cd26106":[2,0,2,93,1],
 "classtdc_1_1_run_length_encoder.html#a31cdd29c023f05d205f9af3aa1b47fde":[2,0,2,93,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html":[2,0,2,1,14,0],
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#a4926972817aaa5194dc64e4448e7f74b":[2,0,2,1,14,0,1],
 "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#a69bbd3b616c1b88de958f6e80ed65f7f":[2,0,2,1,14,0,4],
-"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#a8f3b10ae8c4498c5f035e8e895709866":[2,0,2,1,14,0,0]
+"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#a8f3b10ae8c4498c5f035e8e895709866":[2,0,2,1,14,0,0],
+"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#aac4696fd6cad545881d5e7a73bac0117":[2,0,2,1,14,0,2],
+"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html#abd30b307f5dd5f05e1e9091786ca81bd":[2,0,2,1,14,0,3]
 };

@@ -1,8 +1,7 @@
 var classtdc_1_1_registry =
 [
-    [ "Registry", "classtdc_1_1_registry.html#a438e948a74ce035840d3293484a20fb6", null ],
-    [ "algorithm_map", "classtdc_1_1_registry.html#a961b331e881e5d42335cdae7441f13f4", null ],
-    [ "algorithm_map", "classtdc_1_1_registry.html#a7ab0f10eb4edd412427ed59e6e30d1b3", null ],
-    [ "register_compressor", "classtdc_1_1_registry.html#af0930ae3ee7a7920f812510bd2ae83a7", null ],
-    [ "register_generator", "classtdc_1_1_registry.html#a56f40db87bf7ccd72721443e94d75401", null ]
+    [ "Registry", "classtdc_1_1_registry.html#a92526a8daddb338d3c3137ef68d40398", null ],
+    [ "algorithm_map", "classtdc_1_1_registry.html#a4922be53258d1a529ed90d37d5f84396", null ],
+    [ "algorithm_map", "classtdc_1_1_registry.html#a037340403bb0a73daf4e1922e3180b62", null ],
+    [ "register_algorithm", "classtdc_1_1_registry.html#af6fbede46dd3c485ef4e55856a48ca62", null ]
 ];

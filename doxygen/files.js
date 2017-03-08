@@ -93,7 +93,11 @@ var files =
       [ "Decoder", "classtdc_1_1_elias_gamma_coder_1_1_decoder.html", "classtdc_1_1_elias_gamma_coder_1_1_decoder" ]
     ] ],
     [ "Env.hpp", "_env_8hpp.html", null ],
-    [ "pre_header/Env.hpp", "pre__header_2_env_8hpp.html", "pre__header_2_env_8hpp" ],
+    [ "pre_header/Env.hpp", "pre__header_2_env_8hpp.html", [
+      [ "StatGuard", "classtdc_1_1_stat_guard.html", "classtdc_1_1_stat_guard" ],
+      [ "EnvRoot", "classtdc_1_1_env_root.html", "classtdc_1_1_env_root" ],
+      [ "Env", "classtdc_1_1_env.html", "classtdc_1_1_env" ]
+    ] ],
     [ "FibonacciGenerator.hpp", "_fibonacci_generator_8hpp.html", [
       [ "FibonacciGenerator", "classtdc_1_1_fibonacci_generator.html", "classtdc_1_1_fibonacci_generator" ]
     ] ],
@@ -229,9 +233,11 @@ var files =
       [ "RandomUniformGenerator", "classtdc_1_1_random_uniform_generator.html", "classtdc_1_1_random_uniform_generator" ]
     ] ],
     [ "Range.hpp", "_range_8hpp.html", "_range_8hpp" ],
-    [ "pre_header/Registry.hpp", "pre__header_2_registry_8hpp.html", "pre__header_2_registry_8hpp" ],
+    [ "pre_header/Registry.hpp", "pre__header_2_registry_8hpp.html", [
+      [ "Registry", "classtdc_1_1_registry.html", "classtdc_1_1_registry" ]
+    ] ],
     [ "Registry.hpp", "_registry_8hpp.html", null ],
-    [ "driver/Registry.hpp", "driver_2_registry_8hpp.html", "driver_2_registry_8hpp" ],
+    [ "driver/Registry.hpp", "driver_2_registry_8hpp.html", null ],
     [ "RePairCompressor.hpp", "_re_pair_compressor_8hpp.html", [
       [ "RePairCompressor", "classtdc_1_1_re_pair_compressor.html", "classtdc_1_1_re_pair_compressor" ]
     ] ],

@@ -7,7 +7,7 @@ var searchData=
   ['advance',['advance',['../classtdc_1_1_l_c_p_forward_iterator.html#a0287f039d52fe397a8f723867c283f41',1,'tdc::LCPForwardIterator']]],
   ['algo_5fvalue',['algo_value',['../classtdc_1_1_env_root.html#a4c885352c3a02f14e90b4bc9b1c8b6b9',1,'tdc::EnvRoot']]],
   ['algorithm',['Algorithm',['../classtdc_1_1_algorithm.html#a7829ccc7b55c1b5a9192cf1c92091a4d',1,'tdc::Algorithm']]],
-  ['algorithm_5fmap',['algorithm_map',['../classtdc_1_1_registry.html#a961b331e881e5d42335cdae7441f13f4',1,'tdc::Registry::algorithm_map()'],['../classtdc_1_1_registry.html#a7ab0f10eb4edd412427ed59e6e30d1b3',1,'tdc::Registry::algorithm_map() const ']]],
+  ['algorithm_5fmap',['algorithm_map',['../classtdc_1_1_registry.html#a4922be53258d1a529ed90d37d5f84396',1,'tdc::Registry::algorithm_map()'],['../classtdc_1_1_registry.html#a037340403bb0a73daf4e1922e3180b62',1,'tdc::Registry::algorithm_map() const ']]],
   ['algorithmvalue',['AlgorithmValue',['../classtdc_1_1_algorithm_value.html#a511359a3ce0259e874cc97274664b96c',1,'tdc::AlgorithmValue::AlgorithmValue(const AlgorithmValue &amp;other)'],['../classtdc_1_1_algorithm_value.html#a9cc489c842b9d397959cd5dc5ec5feee',1,'tdc::AlgorithmValue::AlgorithmValue(AlgorithmValue &amp;&amp;other)'],['../classtdc_1_1_algorithm_value.html#a8a84bd99fa346798691361904ea955e6',1,'tdc::AlgorithmValue::AlgorithmValue(std::string &amp;&amp;name, ArgumentMap &amp;&amp;arguments, std::unique_ptr&lt; pattern::Algorithm &gt; &amp;&amp;static_selection, bool needs_sentinel)']]],
   ['arguments',['arguments',['../classtdc_1_1_algorithm_value.html#ac20152879622db37db717ebec41fd764',1,'tdc::AlgorithmValue']]],
   ['arr_5fto_5fdebug_5fstring',['arr_to_debug_string',['../namespacetdc.html#ae1a7cd30a5d626de172ab914d7fb1fce',1,'tdc']]],

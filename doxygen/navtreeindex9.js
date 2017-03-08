@@ -1,12 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4.html":[2,0,2,1,14],
-"structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4.html":[2,0,2,1,15],
-"structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4.html":[2,0,2,1,16],
-"structtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4.html":[2,0,2,1,17],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html":[2,0,2,1,20],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a1492bd388041d5ea5a061a09d6df1033":[2,0,2,1,20,8],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a2048df238d60f71b3b385d2ed2d746d3":[2,0,2,1,20,1],
 "structtdc_1_1int__vector_1_1_int_vector_trait.html#a3060d4117a3799b4b05dd009dcd6fd8b":[2,0,2,1,20,2],
 "structtdc_1_1int__vector_1_1_int_vector_trait.html#a35d2d7a9e8a1786c126b1f07a61cf6d8":[2,0,2,1,20,12],
 "structtdc_1_1int__vector_1_1_int_vector_trait.html#a70267e2304ffc4421082ee2ab6ee95bd":[2,0,2,1,20,9],

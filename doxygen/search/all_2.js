@@ -63,7 +63,7 @@ var searchData=
   ['bufferwrapper',['BufferWrapper',['../classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html#abaa2184c35f08abc320b7c53dcac1f81',1,'tdc::libdivsufsort::BufferWrapper']]],
   ['build',['build',['../classcedar_1_1da.html#a626f352688bc69594e056e9d54e923e6',1,'cedar::da']]],
   ['builder',['Builder',['../classtdc_1_1_builder.html',1,'tdc']]],
-  ['builder',['Builder',['../classtdc_1_1_builder.html#a6edc671decccddbb7a54076be3c9e07c',1,'tdc::Builder::Builder()'],['../namespacetdc.html#ab94ce58507af735aac35a252e4aa6f8c',1,'tdc::builder()']]],
+  ['builder',['Builder',['../classtdc_1_1_builder.html#ac20946748ecc7ad177402a5433abb3c9',1,'tdc::Builder::Builder()'],['../namespacetdc.html#ada7e749d9e18bc4edf4e7523c2b23c85',1,'tdc::builder()']]],
   ['bulldozerstrategy',['BulldozerStrategy',['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html',1,'tdc::lcpcomp']]],
   ['bulldozerstrategy_2ehpp',['BulldozerStrategy.hpp',['../_bulldozer_strategy_8hpp.html',1,'']]],
   ['bwt',['bwt',['../namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb',1,'tdc::bwt']]],
