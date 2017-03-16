@@ -15,7 +15,7 @@ var searchData=
   ['phifromsa',['PhiFromSA',['../classtdc_1_1_phi_from_s_a.html',1,'tdc']]],
   ['phifromsa_2ehpp',['PhiFromSA.hpp',['../_phi_from_s_a_8hpp.html',1,'']]],
   ['plain',['plain',['../namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a061fd981825839067e43479a64afb4df',1,'tdc']]],
-  ['plcp',['PLCP',['../classtdc_1_1_text_d_s.html#acf4800ce7b757c6113cd50cadf2b40f7',1,'tdc::TextDS::PLCP()'],['../classtdc_1_1_l_c_p_sada.html#a7d9b5210d259211a5d4d7c4f6bfee193',1,'tdc::LCPSada::plcp()']]],
+  ['plcp',['plcp',['../classtdc_1_1_l_c_p_sada.html#a7d9b5210d259211a5d4d7c4f6bfee193',1,'tdc::LCPSada::plcp()'],['../classtdc_1_1_text_d_s.html#acf4800ce7b757c6113cd50cadf2b40f7',1,'tdc::TextDS::PLCP()']]],
   ['plcp_5ftype',['plcp_type',['../classtdc_1_1_text_d_s.html#a5f03c49fbdba8b55251ed44a68349897',1,'tdc::TextDS']]],
   ['plcpfromphi',['PLCPFromPhi',['../classtdc_1_1_p_l_c_p_from_phi.html',1,'tdc']]],
   ['plcpfromphi',['PLCPFromPhi',['../classtdc_1_1_p_l_c_p_from_phi.html#a42f99d1f3e63c1bdae8b207a09d2349e',1,'tdc::PLCPFromPhi']]],

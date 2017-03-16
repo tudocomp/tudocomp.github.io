@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['max',['MAX',['../divsufsort__private_8hpp.html#ad448d437b99a125bd9344585d4f02e9a',1,'divsufsort_private.hpp']]],
-  ['min',['MIN',['../divsufsort__private_8hpp.html#a926c1ab4f6ca8b244750377dcdea9ec1',1,'divsufsort_private.hpp']]]
+  ['null_5fphase',['NULL_PHASE',['../_stat_8hpp.html#a682fb5948f225f7be3644155d51bd1c7',1,'Stat.hpp']]]
 ];

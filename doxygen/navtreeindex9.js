@@ -1,21 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a3060d4117a3799b4b05dd009dcd6fd8b":[2,0,2,1,20,2],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a35d2d7a9e8a1786c126b1f07a61cf6d8":[2,0,2,1,20,12],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a70267e2304ffc4421082ee2ab6ee95bd":[2,0,2,1,20,9],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a840286345e386118bf4828ebb0cc76e3":[2,0,2,1,20,5],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a86541bb255808c17ca2424c8bd5a3daf":[2,0,2,1,20,4],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a89157d21343fe112a94f54c432cb9056":[2,0,2,1,20,6],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a92922fe4e5b01d60e0302d9148fc15c2":[2,0,2,1,20,0],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a955c649d4c26fb7ce66ffbde4342070c":[2,0,2,1,20,7],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#ab3067151591356419bdb8726f67ad6e0":[2,0,2,1,20,11],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#ad88e8855fa5824c3c37ab1fa320d0704":[2,0,2,1,20,10],
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#ae9d57e6fe9f2b280fcb4aa81b035f11d":[2,0,2,1,20,3],
-"structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html":[2,0,2,1,21],
-"structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a066690930a5ea7d831ea2401a7111930":[2,0,2,1,21,0],
-"structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a222f6892f1adb4895e304c7874d40c9b":[2,0,2,1,21,10],
-"structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a2f5f69fc36e7cf61f286a1477ae8c4c7":[2,0,2,1,21,6],
-"structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a32165902c5387470d175702fedef48e1":[2,0,2,1,21,1],
 "structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a3e8671f3623c20873df0ba2ad9b8bf51":[2,0,2,1,21,12],
 "structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a431daa4f2eaad6f4b3a22c193919977a":[2,0,2,1,21,5],
 "structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a4ba24dafb1e6b514aff989cc9084da4d":[2,0,2,1,21,4],
@@ -132,8 +116,8 @@ var NAVTREEINDEX9 =
 "util_8hpp.html#af07b28ed9b9e8900a620a10528cb9159":[3,0,113,1],
 "util_8hpp.html#af97ef3f2de6be62dfda7c7b6615362d5":[3,0,113,6],
 "util_8hpp_source.html":[3,0,113],
-"vbyte_8hpp.html":[3,0,115],
-"vbyte_8hpp.html#a22db311800d72b5af3428d3ff573b48e":[3,0,115,1],
-"vbyte_8hpp.html#a251cfcf83d3d49335c4bc0590a5176b8":[3,0,115,0],
-"vbyte_8hpp_source.html":[3,0,115]
+"vbyte_8hpp.html":[3,0,114],
+"vbyte_8hpp.html#a22db311800d72b5af3428d3ff573b48e":[3,0,114,1],
+"vbyte_8hpp.html#a251cfcf83d3d49335c4bc0590a5176b8":[3,0,114,0],
+"vbyte_8hpp_source.html":[3,0,114]
 };

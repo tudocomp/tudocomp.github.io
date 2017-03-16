@@ -29,8 +29,8 @@ var files =
     ] ],
     [ "BitCoder.hpp", "_bit_coder_8hpp.html", [
       [ "BitCoder", "classtdc_1_1_bit_coder.html", "classtdc_1_1_bit_coder" ],
-      [ "Encoder", "classtdc_1_1_bit_coder_1_1_encoder.html", "classtdc_1_1_bit_coder_1_1_encoder" ],
-      [ "Decoder", "classtdc_1_1_bit_coder_1_1_decoder.html", "classtdc_1_1_bit_coder_1_1_decoder" ]
+      [ "Encoder", "classtdc_1_1_bit_coder_1_1_encoder.html", null ],
+      [ "Decoder", "classtdc_1_1_bit_coder_1_1_decoder.html", null ]
     ] ],
     [ "BitIStream.hpp", "_bit_i_stream_8hpp.html", [
       [ "BitIStream", "classtdc_1_1io_1_1_bit_i_stream.html", "classtdc_1_1io_1_1_bit_i_stream" ]
@@ -144,7 +144,8 @@ var files =
     [ "LCPSada.hpp", "_l_c_p_sada_8hpp.html", "_l_c_p_sada_8hpp" ],
     [ "Literal.hpp", "_literal_8hpp.html", [
       [ "Literal", "structtdc_1_1_literal.html", "structtdc_1_1_literal" ],
-      [ "NoLiterals", "classtdc_1_1_no_literals.html", "classtdc_1_1_no_literals" ],
+      [ "LiteralIterator", "classtdc_1_1_literal_iterator.html", "classtdc_1_1_literal_iterator" ],
+      [ "NoLiterals", "classtdc_1_1_no_literals.html", null ],
       [ "ViewLiterals", "classtdc_1_1_view_literals.html", "classtdc_1_1_view_literals" ]
     ] ],
     [ "LiteralEncoder.hpp", "_literal_encoder_8hpp.html", [
@@ -276,11 +277,6 @@ var files =
     ] ],
     [ "uint_t.hpp", "uint__t_8hpp.html", "uint__t_8hpp" ],
     [ "util.hpp", "util_8hpp.html", "util_8hpp" ],
-    [ "VariantCoder.hpp", "_variant_coder_8hpp.html", [
-      [ "VariantCoder", "classtdc_1_1_variant_coder.html", "classtdc_1_1_variant_coder" ],
-      [ "Encoder", "classtdc_1_1_variant_coder_1_1_encoder.html", "classtdc_1_1_variant_coder_1_1_encoder" ],
-      [ "Decoder", "classtdc_1_1_variant_coder_1_1_decoder.html", "classtdc_1_1_variant_coder_1_1_decoder" ]
-    ] ],
     [ "vbyte.hpp", "vbyte_8hpp.html", "vbyte_8hpp" ],
     [ "VectorStreamBuffer.hpp", "_vector_stream_buffer_8hpp.html", null ],
     [ "View.hpp", "_view_8hpp.html", "_view_8hpp" ],

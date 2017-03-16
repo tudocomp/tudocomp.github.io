@@ -43,15 +43,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_l_z_w_decoding_8hpp.html",
-"classtdc_1_1_const_generic_view.html#a5a844c5d1d88783e85af569e3791cb65",
-"classtdc_1_1_fibonacci_generator.html",
-"classtdc_1_1_option_value.html",
-"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html",
-"classtdc_1_1lcpcomp_1_1_my_hash.html#a1ffaeacdceaa53279267ae4c2da72128",
-"def_8hpp.html",
-"namespacetdc_1_1lz78.html",
-"structtdc_1_1int__vector_1_1_int_vector_trait.html#a3060d4117a3799b4b05dd009dcd6fd8b"
+"_l_z_w_decoding_8hpp.html#a63f02492031620f7731905a42212729e",
+"classtdc_1_1_const_generic_view.html#a6f25fbc9b988b74da68183cfd39fe378",
+"classtdc_1_1_generator.html#a192083b153b85091c5aa3d8f9b82381a",
+"classtdc_1_1_option_value.html#a598c52f4e9a8811c7427562089fa9b9e",
+"classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html#a9f141537b94b6e48c833b4285fc154df",
+"classtdc_1_1lcpcomp_1_1_my_map_buffer.html#a1e170d8c82c959d7cac2740036aa7017",
+"divsufsort_8hpp.html",
+"pre__header_8hpp.html",
+"structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a3e8671f3623c20873df0ba2ad9b8bf51"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

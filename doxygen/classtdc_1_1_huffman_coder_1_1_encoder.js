@@ -1,6 +1,7 @@
 var classtdc_1_1_huffman_coder_1_1_encoder =
 [
-    [ "encode", "classtdc_1_1_huffman_coder_1_1_encoder.html#a900943595cd4b30030127cdbdbf4fdf3", null ],
-    [ "m_table", "classtdc_1_1_huffman_coder_1_1_encoder.html#a2759d12aab752e413049a395e3b0f657", null ],
-    [ "ordered_map_to_effective", "classtdc_1_1_huffman_coder_1_1_encoder.html#a3f8f975959182ee77971ea609cc7f8cf", null ]
+    [ "Encoder", "classtdc_1_1_huffman_coder_1_1_encoder.html#ac96e55bf5187c638b6db30d53b9bd4c8", null ],
+    [ "~Encoder", "classtdc_1_1_huffman_coder_1_1_encoder.html#a790c16c9416d1337e39ce3d3fcb33ff2", null ],
+    [ "Encoder", "classtdc_1_1_huffman_coder_1_1_encoder.html#a80942713e995e3bf75637bc2d28f2536", null ],
+    [ "encode", "classtdc_1_1_huffman_coder_1_1_encoder.html#a900943595cd4b30030127cdbdbf4fdf3", null ]
 ];

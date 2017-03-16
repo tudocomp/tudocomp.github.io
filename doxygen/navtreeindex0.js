@@ -56,7 +56,6 @@ var NAVTREEINDEX0 =
 "_chain_compressor_8hpp.html":[3,0,20],
 "_chain_compressor_8hpp_source.html":[3,0,20],
 "_coder_8hpp.html":[3,0,21],
-"_coder_8hpp.html#aa8b6a7e39ff692421c83be1299193e40":[3,0,21,3],
 "_coder_8hpp.html#af2f4723ca1c21951e76ed00d15ad3826":[3,0,21,2],
 "_coder_8hpp_source.html":[3,0,21],
 "_compact_dec_8hpp.html":[3,0,22],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "_l_z_s_s_sliding_window_compressor_8hpp.html":[3,0,71],
 "_l_z_s_s_sliding_window_compressor_8hpp_source.html":[3,0,71],
 "_l_z_w_compressor_8hpp.html":[3,0,72],
-"_l_z_w_compressor_8hpp_source.html":[3,0,72]
+"_l_z_w_compressor_8hpp_source.html":[3,0,72],
+"_l_z_w_decoding_8hpp.html":[3,0,73]
 };
