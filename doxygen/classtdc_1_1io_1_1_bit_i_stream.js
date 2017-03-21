@@ -8,5 +8,6 @@ var classtdc_1_1io_1_1_bit_i_stream =
     [ "read_elias_delta", "classtdc_1_1io_1_1_bit_i_stream.html#ac56bb4cd88cf4b278aa2703250951c4e", null ],
     [ "read_elias_gamma", "classtdc_1_1io_1_1_bit_i_stream.html#ad5676d4691f2e9545f0851d8577893ee", null ],
     [ "read_int", "classtdc_1_1io_1_1_bit_i_stream.html#ae44308574bea503056059dd915b89cfb", null ],
+    [ "read_ternary", "classtdc_1_1io_1_1_bit_i_stream.html#a4e5bdb8d88726944118908fd40f8d62d", null ],
     [ "read_unary", "classtdc_1_1io_1_1_bit_i_stream.html#a7a9509a64804ddac5f7dd27256851f8c", null ]
 ];

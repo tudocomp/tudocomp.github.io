@@ -23,9 +23,6 @@ var searchData=
   ['max_5fdigits10',['max_digits10',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a2087a9cafdb3694336cdde49b2568f11',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
   ['max_5fexponent',['max_exponent',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a31734d6d4206b1fe686f4c460da4ab87',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
   ['max_5fexponent10',['max_exponent10',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#ab554dae9529fc689e31707ea5d2bace1',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
-  ['mem_5ffinal',['mem_final',['../structtdc_1_1_stat_1_1_phase.html#a3d9758e1e18ad8d9a4f39dc1bae123d9',1,'tdc::Stat::Phase']]],
-  ['mem_5foff',['mem_off',['../structtdc_1_1_stat_1_1_phase.html#a118a5cd41da2aacbd16e88f0effb7811',1,'tdc::Stat::Phase']]],
-  ['mem_5fpeak',['mem_peak',['../structtdc_1_1_stat_1_1_phase.html#ad051f6fc99ff378119b0357b20f6089f',1,'tdc::Stat::Phase']]],
   ['min_5fexponent',['min_exponent',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a42542aa8ad6f19ba27ed18d744cb83c6',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
   ['min_5fexponent10',['min_exponent10',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#aa1cf73439b501820ec8bfa9a5747a0e3',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]]
 ];

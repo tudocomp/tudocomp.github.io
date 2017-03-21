@@ -431,8 +431,7 @@ fib.shrink_to_fit();</code></pre></div>
 </ol>
 <p>These parameters are used by the algorithm registry, which is explained further in the <a href="#the-algorithm-registry">respective section</a> below. For now, it is enough to understand that this information is later exposed to the command-line application.</p>
 <h3 id="environment">Environment</h3>
-<p>When instantiated, an algorithm receives an environment object (<a href="../doxygen/classtdc_1_1_env.html"><code>Env</code></a>) via its <a href="../doxygen/classtdc_1_1_algorithm.html#a7829ccc7b55c1b5a9192cf1c92091a4d">constructor</a>. The environment provides access to algorithm options as explained below, as well as other <em>tudocomp</em> features like the <a href="#runtime-statistics">runtime statistics</a>.</p>
-<p>The environment is retrieved using the <a href="../doxygen/classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2"><code>env</code></a> function.</p>
+<p>When instantiated, an algorithm receives an environment object (<a href="../doxygen/classtdc_1_1_env.html"><code>Env</code></a>) via its <a href="../doxygen/classtdc_1_1_algorithm.html#a7829ccc7b55c1b5a9192cf1c92091a4d">constructor</a>. The environment provides access to algorithm options as explained below. It is retrieved using the <a href="../doxygen/classtdc_1_1_algorithm.html#a57ce1a8c2d8d2c938274d61e786c33c2"><code>env</code></a> function.</p>
 <h3 id="options">Options</h3>
 <p>Algorithms can accept optional parameters, or arguments. These can be passed via the command-line or when instantiating an algorithm.</p>
 <p>Options are declared in the algorithm's <code>Meta</code> object using the <a href="../doxygen/classtdc_1_1_meta.html#aa00cbc180eecd9017e247d9bbffbc01e"><code>option</code></a> function like in the following example:</p>
@@ -753,70 +752,125 @@ test::on_string_generators(test::roundtrip&lt;MyCompressor&lt;ASCIICoder&gt;&gt;
 </blockquote>
 </blockquote>
 <h2 id="runtime-statistics">Runtime Statistics</h2>
-<p><em>tudocomp</em> provides functionality to measure the running time and the amount of dynamically allocated memory (e.h. via <code>malloc</code> or <code>new</code>) over the application lifetime. This functionality is accessible via an algorithm's environment (see <a href="#environment">Environment</a> section).</p>
+<p><em>tudocomp</em> provides functionality to measure the running time and the amount of dynamically allocated memory (e.h. via <code>malloc</code> or <code>new</code>) over the application lifetime.</p>
 <p>Recall at this point the restrictions when trying to use these features in a Windows enviroment (see <a href="#windows-support">Windows Support</a>).</p>
-<p>Runtime statistics are tracked in <em>phases</em>, ie. the running time and memory peak can be measured for individual stages during an algorithm's run. These phases may be nested, ie., a phase can consist of multiple other phases. When a top-level algorithm is instantiated (e.g. using <code>create_algo</code>) it will automatically enter a <em>root phase</em>.</p>
+<p>Runtime statistics are tracked in <em>phases</em>, ie. the running time and memory peak can be measured for individual stages during an algorithm's run. These phases may be nested, ie., a phase can consist of multiple other phases. When using the <em>tudocomp</em> command-line tool, a root phase is automatically started immediately before the selected algorithm starts.</p>
 <p>The measured data can be retrieved in a JSON representation in order to visualize it using the <a href="#charter-web-application"><em>tudocomp Charter</em></a> or to process in a third-party application.</p>
-<p>Making use of the statistics tracking functions is as easy as sorrounding single phases with calls to the <a href="../doxygen/classtdc_1_1_env.html#a8a9903fedbaae6a3563d276a9f5ba46b"><code>begin_stat_phase</code></a> and <a href="../doxygen/classtdc_1_1_env.html#aa93c26f58178f2d5aeff37bed631a171"><code>end_stat_phase</code></a> functions. Any code within a phase is subject to time and memory measurement.</p>
-<p>To that regard, in order to receive meaningful results, each phase should &quot;clean up&quot; properly, ie. it should free any memory that is no longer needed after the phase is finished. This can be easily achieved by making proper use of scopes, to name one example.</p>
-<p>The following example runs through a few different phases with different processing times (realized using sleep) and memory allocations (realized using simple allocs).</p>
-<div class="sourceCode" caption="stats.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp">    <span class="co">// Phase 1</span>
-    env.begin_stat_phase(<span class="st">&quot;Phase 1&quot;</span>);
-    {
-        <span class="dt">char</span>* alloc1 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">2048</span>];
-        <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(ms(<span class="dv">30</span>));
-        <span class="kw">delete</span>[] alloc1;
-    }
-    env.end_stat_phase();
+<p>Statistics tracking is implemented by the <a href="../doxygen/classtdc_1_1_stat_phase.html"><code>StatPhase</code></a> class. By creating a <code>StatPhase</code> object, a new phase is started. The <a href="../doxygen/classtdc_1_1_stat_phase.html#a3eb2b4d977cf20d55a2bf362ed693fb5">constructor</a> accepts the phase's title as a string. The phase ends either when the object is destroyed (e.g. when it runs out of scope) or when the phase is split (see below). Any code executed within a phase is subject to time and memory measurement.</p>
+<p>In order to receive meaningful results, each phase should &quot;clean up&quot; properly, ie., it should free any memory that is no longer needed after the phase is finished. This can be achieved using scopes, but the <code>StatPhase</code> class also offers a way to enforce clean phase-based programming using the <a href="../doxygen/classtdc_1_1_stat_phase.html#ae2ada798d47449c0e45fb4752eba179d"><code>StatPhase::wrap</code></a> functor. It receives a lambda that implements the phase and is allowed to return a result to the outer program flow.</p>
+<p>The following example runs through a few different phases with different processing times and memory allocations (for demonstration purposes, this is realized using sleeping and simply array allocations):</p>
+<div class="sourceCode" caption="stats.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp">StatPhase root(<span class="st">&quot;Root&quot;</span>);
 
-    <span class="co">// Phase 2</span>
-    env.begin_stat_phase(<span class="st">&quot;Phase 2&quot;</span>);
-    {
-        <span class="dt">char</span>* alloc2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">3072</span>];
+<span class="co">// Phase 1</span>
+StatPhase::wrap(<span class="st">&quot;Phase 1&quot;</span>, []{
+    <span class="dt">char</span>* alloc1 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">2048</span>];
+    <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">30</span>));
+    <span class="kw">delete</span>[] alloc1;
+});
 
-        <span class="co">// Phase 2.1</span>
-        env.begin_stat_phase(<span class="st">&quot;Phase 2.1&quot;</span>);
-        {
-            <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(ms(<span class="dv">30</span>));
-            env.log_stat(<span class="st">&quot;A statistic&quot;</span>, <span class="dv">147</span>);
-            env.log_stat(<span class="st">&quot;Another statistic&quot;</span>, <span class="fl">0.5</span>);
-        }
-        env.end_stat_phase();
+<span class="co">// Phase 2</span>
+StatPhase::wrap(<span class="st">&quot;Phase 2&quot;</span>, []{
+    <span class="dt">char</span>* alloc2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">3072</span>];
 
-        <span class="co">// Phase 2.2</span>
-        env.begin_stat_phase(<span class="st">&quot;Phase 2.2&quot;</span>);
-        {
-            <span class="dt">char</span>* alloc2_2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">1024</span>];
-            <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(ms(<span class="dv">40</span>));
-            <span class="kw">delete</span>[] alloc2_2;
-        }
-        env.end_stat_phase();
+    <span class="co">// Phase 2.1</span>
+    StatPhase::wrap(<span class="st">&quot;Phase 2.1&quot;</span>, []{
+        <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">30</span>));
 
-        <span class="kw">delete</span>[] alloc2;
-    }
-    env.end_stat_phase();
+        StatPhase::log(<span class="st">&quot;A statistic&quot;</span>, <span class="dv">147</span>);
+        StatPhase::log(<span class="st">&quot;Another statistic&quot;</span>, <span class="fl">0.5</span>);
+    });
 
-    <span class="co">// Conclude tracking and print JSON to stdout</span>
-    env.finish_stats().to_json().str(<span class="bu">std::</span>cout);</code></pre></div>
-<p>During any phase, custom statistics can be logged using the <a href="../doxygen/classtdc_1_1_env.html#a5a1646edacfc6464e9cd8cfd560ec29d"><code>log_stat</code></a> method.</p>
-<p>As seen in the last line, statistics tracking is concluded using the <a href="../doxygen/classtdc_1_1_env.html#a31788b1e730974811c3f597921d821d0"><code>finish_stats</code></a> function, which yields a reference to a <a href="../doxygen/classtdc_1_1_stat.html"><code>Stat</code></a> object. The JSON representation can be retrieved using its <a href="../doxygen/classtdc_1_1_stat.html#ad189cbc9ad2c2e292f74acdeaade3363"><code>to_json</code></a> function. For the above example, the following JSON output is produced:</p>
-<blockquote>
-<blockquote>
-<p>TODO: Fix <a href="https://projekte.itmc.tu-dortmund.de/issues/18315">#18315</a>, then execute example.</p>
-</blockquote>
-</blockquote>
+    <span class="co">// Phase 2.2</span>
+    StatPhase::wrap(<span class="st">&quot;Phase 2.2&quot;</span>, []{
+        <span class="dt">char</span>* alloc2_2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">1024</span>];
+        <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">40</span>));
+        <span class="kw">delete</span>[] alloc2_2;
+    });
+
+    <span class="kw">delete</span>[] alloc2;
+});
+
+<span class="co">// Print data in JSON representation to stdout</span>
+root.to_json().str(<span class="bu">std::</span>cout);</code></pre></div>
+<p>During any phase, custom statistics can be logged using the <a href="../doxygen/classtdc_1_1_stat_phase.html#a9d4036e3d03fca76b0c95c2af596068d"><code>StatPhase::log</code></a> method.</p>
+<p>As seen in the last line, the JSON representation of the measured data can be retrieved using the <a href="../doxygen/classtdc_1_1_stat_phase.html#a7e2210a96c67e6a2067df30ef86e31ff"><code>to_json</code></a> function. For the above example, the following JSON output is produced:</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+    <span class="dt">&quot;memFinal&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+    <span class="dt">&quot;memOff&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+    <span class="dt">&quot;memPeak&quot;</span><span class="fu">:</span> <span class="dv">4096</span><span class="fu">,</span>
+    <span class="dt">&quot;stats&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+    <span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span>
+        <span class="dt">&quot;memFinal&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+        <span class="dt">&quot;memOff&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+        <span class="dt">&quot;memPeak&quot;</span><span class="fu">:</span> <span class="dv">2048</span><span class="fu">,</span>
+        <span class="dt">&quot;stats&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+        <span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+        <span class="dt">&quot;timeEnd&quot;</span><span class="fu">:</span> <span class="dv">3330592</span><span class="fu">,</span>
+        <span class="dt">&quot;timeStart&quot;</span><span class="fu">:</span> <span class="dv">3330562</span><span class="fu">,</span>
+        <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Phase 1&quot;</span>
+    <span class="fu">}</span><span class="ot">,</span><span class="fu">{</span>
+        <span class="dt">&quot;memFinal&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+        <span class="dt">&quot;memOff&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+        <span class="dt">&quot;memPeak&quot;</span><span class="fu">:</span> <span class="dv">4096</span><span class="fu">,</span>
+        <span class="dt">&quot;stats&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+        <span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span>
+            <span class="dt">&quot;memFinal&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+            <span class="dt">&quot;memOff&quot;</span><span class="fu">:</span> <span class="dv">3072</span><span class="fu">,</span>
+            <span class="dt">&quot;memPeak&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+            <span class="dt">&quot;stats&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span>
+                <span class="dt">&quot;key&quot;</span><span class="fu">:</span> <span class="st">&quot;A statistic&quot;</span><span class="fu">,</span>
+                <span class="dt">&quot;value&quot;</span><span class="fu">:</span> <span class="st">&quot;147&quot;</span>
+            <span class="fu">}</span><span class="ot">,</span><span class="fu">{</span>
+                <span class="dt">&quot;key&quot;</span><span class="fu">:</span> <span class="st">&quot;Another statistic&quot;</span><span class="fu">,</span>
+                <span class="dt">&quot;value&quot;</span><span class="fu">:</span> <span class="st">&quot;0.500000&quot;</span>
+            <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span>
+            <span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+            <span class="dt">&quot;timeEnd&quot;</span><span class="fu">:</span> <span class="dv">3330623</span><span class="fu">,</span>
+            <span class="dt">&quot;timeStart&quot;</span><span class="fu">:</span> <span class="dv">3330592</span><span class="fu">,</span>
+            <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Phase 2.1&quot;</span>
+        <span class="fu">}</span><span class="ot">,</span><span class="fu">{</span>
+            <span class="dt">&quot;memFinal&quot;</span><span class="fu">:</span> <span class="dv">0</span><span class="fu">,</span>
+            <span class="dt">&quot;memOff&quot;</span><span class="fu">:</span> <span class="dv">3072</span><span class="fu">,</span>
+            <span class="dt">&quot;memPeak&quot;</span><span class="fu">:</span> <span class="dv">1024</span><span class="fu">,</span>
+            <span class="dt">&quot;stats&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+            <span class="dt">&quot;sub&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+            <span class="dt">&quot;timeEnd&quot;</span><span class="fu">:</span> <span class="dv">3330663</span><span class="fu">,</span>
+            <span class="dt">&quot;timeStart&quot;</span><span class="fu">:</span> <span class="dv">3330623</span><span class="fu">,</span>
+            <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Phase 2.2&quot;</span>
+        <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span>
+        <span class="dt">&quot;timeEnd&quot;</span><span class="fu">:</span> <span class="dv">3330663</span><span class="fu">,</span>
+        <span class="dt">&quot;timeStart&quot;</span><span class="fu">:</span> <span class="dv">3330592</span><span class="fu">,</span>
+        <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Phase 2&quot;</span>
+    <span class="fu">}</span><span class="ot">]</span><span class="fu">,</span>
+    <span class="dt">&quot;timeEnd&quot;</span><span class="fu">:</span> <span class="dv">3330663</span><span class="fu">,</span>
+    <span class="dt">&quot;timeStart&quot;</span><span class="fu">:</span> <span class="dv">3330562</span><span class="fu">,</span>
+    <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Root&quot;</span>
+<span class="fu">}</span></code></pre></div>
+<p>In some cases, phases of an algorithm compute complex results and would make it complicated to express them in a single lambda return statement. In other use cases, one may want to end a phase and begin a new phase within loop iterations in order to visualize progress.</p>
+<p>For these purposes, a phase can be &quot;split&quot; using the <a href="../doxygen/classtdc_1_1_stat_phase.html#ad07845511111415b949424aa9eb1ae23"><code>split</code></a> function. Splitting causes the current phase to end and a new phase to begin immediately. The following example demonstrates phase splitting:</p>
+<div class="sourceCode" caption="stats.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Phase 3 (splitting)</span>
+StatPhase::wrap(<span class="st">&quot;Phase 3&quot;</span>, []{
+    <span class="co">// Phase 3.1 yields a complex result</span>
+    StatPhase sub_phase(<span class="st">&quot;Phase 3.1&quot;</span>);
+    
+    <span class="dt">char</span>* result_part_1 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">1024</span>];
+    <span class="dt">char</span>* result_part_2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">2048</span>];
+    <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">40</span>));
+
+    <span class="co">// Phase 3.2 may use the result</span>
+    sub_phase.split(<span class="st">&quot;Phase 3.2&quot;</span>);
+    <span class="kw">delete</span>[] result_part_2;
+    <span class="kw">delete</span>[] result_part_1;
+    <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">60</span>));
+});</code></pre></div>
 <h3 id="charter-web-application">Charter Web Application</h3>
 <p>The <a href="../charter">tudocomp Charter</a> is a JavaScript-based web application that visualizes the statistics JSON output. Based on the data, it plots a bar chart that displays the single phases of the compression run with their running time on the X axis and their peak heap memory usage on the Y axis.</p>
+<p>The following figure shows the diagram corresponding from the JSON snippet from the previous section.</p>
 <div class="figure">
 <img src="media/charter_diagram.png" alt="A diagram plotted by the Charter." />
 <p class="caption">A diagram plotted by the Charter.</p>
 </div>
-<blockquote>
-<blockquote>
-<p>TODO: Update to match the code example</p>
-</blockquote>
-</blockquote>
-<p>The shaded area within a phase bar visualizes the <em>memory offset</em> of the phase, ie., how much memory was already allocated at the beginning of the phase. Ergo, the top border of the bar displays the global, application-wide memory peak during the phase, while the phase's local memory peak is the difference between the whole and the shaded area.</p>
+<p>Observe the bar corresponding to Phase 2.2: The shaded area within the phase bar visualizes the <em>memory offset</em> of the phase, ie., how much memory was already allocated at the beginning of the phase. Alas, the top border of the bar displays the global, application-wide memory peak during the phase, while the phase's local memory peak is the difference between the whole and the shaded area.</p>
 <p>This information is explicitly printed in table view below the diagram. This is also where custom statistics are printed. The table view of a phase will also be displayed as a tooltip when the mouse is moved over its bar in the diagram.</p>
 <p>The Charter provides several options to customize the chart, as well as exporting it as either a vector graphic (<code>svg</code>) or an image file (<code>png</code>).</p>
 <h2 id="text-corpus-collection">Text Corpus Collection</h2>

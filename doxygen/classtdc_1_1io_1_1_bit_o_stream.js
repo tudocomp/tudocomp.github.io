@@ -8,5 +8,6 @@ var classtdc_1_1io_1_1_bit_o_stream =
     [ "write_elias_delta", "classtdc_1_1io_1_1_bit_o_stream.html#ab63d2915854e6ecbb8726926e7b44119", null ],
     [ "write_elias_gamma", "classtdc_1_1io_1_1_bit_o_stream.html#a0f5036f4793a2256e280e3d6f0270186", null ],
     [ "write_int", "classtdc_1_1io_1_1_bit_o_stream.html#ac3239cf4964fd151ebd23954d63988fd", null ],
+    [ "write_ternary", "classtdc_1_1io_1_1_bit_o_stream.html#aaa8d13cca204a1e622905e53e22ed5ba", null ],
     [ "write_unary", "classtdc_1_1io_1_1_bit_o_stream.html#a49761f3046db6ad78af26ace2845e320", null ]
 ];

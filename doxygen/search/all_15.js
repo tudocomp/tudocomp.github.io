@@ -10,7 +10,6 @@ var searchData=
   ['uliteral_5fmax',['ULITERAL_MAX',['../namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52',1,'tdc']]],
   ['uliteral_5fr',['uliteral_r',['../namespacetdc.html#a012bee68b4950fc3fa1a27ecabec7473',1,'tdc']]],
   ['uliteral_5ft',['uliteral_t',['../namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486',1,'tdc']]],
-  ['ulong',['ulong',['../malloc__count_8hpp.html#a441b2f7db117201ab36246e7692a5974',1,'malloc_count.hpp']]],
   ['undef_5flen',['undef_len',['../namespacetdc_1_1lcpcomp.html#a04fca1dbf79cb14cc2b0b64b0bf5352b',1,'tdc::lcpcomp']]],
   ['unit_5fsize',['unit_size',['../classcedar_1_1da.html#af68d758159281b51a59be975675a85c6',1,'cedar::da']]],
   ['unknown_5foptions',['unknown_options',['../classtdc__driver_1_1_options.html#a769749137e236285803bd20482e77d9d',1,'tdc_driver::Options']]],

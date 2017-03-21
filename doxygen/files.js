@@ -94,7 +94,6 @@ var files =
     ] ],
     [ "Env.hpp", "_env_8hpp.html", null ],
     [ "pre_header/Env.hpp", "pre__header_2_env_8hpp.html", [
-      [ "StatGuard", "classtdc_1_1_stat_guard.html", "classtdc_1_1_stat_guard" ],
       [ "EnvRoot", "classtdc_1_1_env_root.html", "classtdc_1_1_env_root" ],
       [ "Env", "classtdc_1_1_env.html", "classtdc_1_1_env" ]
     ] ],
@@ -179,7 +178,7 @@ var files =
     ] ],
     [ "LZWDecoding.hpp", "_l_z_w_decoding_8hpp.html", "_l_z_w_decoding_8hpp" ],
     [ "LZWFactor.hpp", "_l_z_w_factor_8hpp.html", "_l_z_w_factor_8hpp" ],
-    [ "malloc_count.hpp", "malloc__count_8hpp.html", "malloc__count_8hpp" ],
+    [ "malloc.hpp", "malloc_8hpp.html", "malloc_8hpp" ],
     [ "MaxHeapStrategy.hpp", "_max_heap_strategy_8hpp.html", [
       [ "MaxHeapStrategy", "classtdc_1_1lcpcomp_1_1_max_heap_strategy.html", "classtdc_1_1lcpcomp_1_1_max_heap_strategy" ]
     ] ],
@@ -215,6 +214,7 @@ var files =
       [ "Output", "classtdc_1_1io_1_1_output.html", "classtdc_1_1io_1_1_output" ],
       [ "OutputStream", "classtdc_1_1io_1_1_output_stream.html", "classtdc_1_1io_1_1_output_stream" ]
     ] ],
+    [ "PhaseData.hpp", "_phase_data_8hpp.html", null ],
     [ "PhiFromSA.hpp", "_phi_from_s_a_8hpp.html", [
       [ "PhiFromSA", "classtdc_1_1_phi_from_s_a.html", "classtdc_1_1_phi_from_s_a" ]
     ] ],
@@ -259,13 +259,23 @@ var files =
       [ "Decoder", "classtdc_1_1_s_l_e_coder_1_1_decoder.html", "classtdc_1_1_s_l_e_coder_1_1_decoder" ]
     ] ],
     [ "squeeze_node.hpp", "squeeze__node_8hpp.html", "squeeze__node_8hpp" ],
-    [ "Stat.hpp", "_stat_8hpp.html", "_stat_8hpp" ],
+    [ "StatPhase.hpp", "_stat_phase_8hpp.html", [
+      [ "StatPhase", "classtdc_1_1_stat_phase.html", "classtdc_1_1_stat_phase" ]
+    ] ],
+    [ "StatPhaseDummy.hpp", "_stat_phase_dummy_8hpp.html", [
+      [ "StatPhaseDummy", "classtdc_1_1_stat_phase_dummy.html", "classtdc_1_1_stat_phase_dummy" ]
+    ] ],
     [ "StreamingStrategy.hpp", "_streaming_strategy_8hpp.html", [
       [ "StreamingStrategy", "classtdc_1_1lz78u_1_1_streaming_strategy.html", "classtdc_1_1lz78u_1_1_streaming_strategy" ],
       [ "Compression", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression" ],
       [ "Decompression", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression.html", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_decompression" ]
     ] ],
     [ "SuffixTree.hpp", "_suffix_tree_8hpp.html", "_suffix_tree_8hpp" ],
+    [ "TernaryCoder.hpp", "_ternary_coder_8hpp.html", [
+      [ "TernaryCoder", "classtdc_1_1_ternary_coder.html", "classtdc_1_1_ternary_coder" ],
+      [ "Encoder", "classtdc_1_1_ternary_coder_1_1_encoder.html", "classtdc_1_1_ternary_coder_1_1_encoder" ],
+      [ "Decoder", "classtdc_1_1_ternary_coder_1_1_decoder.html", "classtdc_1_1_ternary_coder_1_1_decoder" ]
+    ] ],
     [ "TernaryTrie.hpp", "_ternary_trie_8hpp.html", [
       [ "TernaryTrie", "classtdc_1_1lz78_1_1_ternary_trie.html", "classtdc_1_1lz78_1_1_ternary_trie" ]
     ] ],

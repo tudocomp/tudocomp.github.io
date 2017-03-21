@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170316-jenkins-16</span>
+   &#160;<span id="projectnumber">0.170321-jenkins-17</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -157,6 +157,9 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <li>templated()
 : <a class="el" href="classtdc_1_1_meta_1_1_option_builder.html#a24ce72265c785c2ecd100f15ca6672c5">tdc::Meta::OptionBuilder</a>
 </li>
+<li>TernaryCoder()
+: <a class="el" href="classtdc_1_1_ternary_coder.html#a6ef2fdcd7aa0e72a783e4c0e4e1c0929">tdc::TernaryCoder</a>
+</li>
 <li>TernaryTrie()
 : <a class="el" href="classtdc_1_1lz78_1_1_ternary_trie.html#ab13255aea49f0944f592b3cff08bc506">tdc::lz78::TernaryTrie</a>
 </li>
@@ -167,7 +170,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="classtdc_1_1_text_d_s.html#a54bd7b4f08d19d808de0792eb8d5e796">tdc::TextDS&lt; sa_t, phi_t, plcp_t, lcp_t, isa_t &gt;</a>
 </li>
 <li>TextDS()
-: <a class="el" href="classtdc_1_1_text_d_s.html#aa34d16cc9ad5387c7f00130bbb1afe43">tdc::TextDS&lt; sa_t, phi_t, plcp_t, lcp_t, isa_t &gt;</a>
+: <a class="el" href="classtdc_1_1_text_d_s.html#affcdd950c5122f183ff57d5d3c4e7b1c">tdc::TextDS&lt; sa_t, phi_t, plcp_t, lcp_t, isa_t &gt;</a>
 </li>
 <li>TextLiterals()
 : <a class="el" href="classtdc_1_1lzss_1_1_text_literals.html#ada0fd88fa463d2e2bb57a275d3a6c615">tdc::lzss::TextLiterals&lt; text_t &gt;</a>
@@ -175,20 +178,26 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <li>tinyness_before
 : <a class="el" href="classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a1421a122bc1c8c8ab6e82c280f13c0dc">std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;</a>
 </li>
-<li>title()
-: <a class="el" href="classtdc_1_1_stat.html#a1f420a303659451c4a6d2b44ca50a7ab">tdc::Stat</a>
-</li>
 <li>to_algorithm()
 : <a class="el" href="classtdc_1_1_option_value.html#a65e2219c61e6589dae65098faf99217a">tdc::OptionValue</a>
 </li>
 <li>to_json()
-: <a class="el" href="classtdc_1_1_stat.html#ad189cbc9ad2c2e292f74acdeaade3363">tdc::Stat</a>
+: <a class="el" href="classtdc_1_1_stat_phase.html#a7e2210a96c67e6a2067df30ef86e31ff">tdc::StatPhase</a>
+, <a class="el" href="classtdc_1_1_stat_phase_dummy.html#ad07debd9634166133d098377b57c936b">tdc::StatPhaseDummy</a>
 </li>
 <li>top()
 : <a class="el" href="classtdc_1_1_array_max_heap.html#a08208b4891a93bd50fd556c96dc88bd4">tdc::ArrayMaxHeap&lt; array_t &gt;</a>
 </li>
 <li>total_size()
 : <a class="el" href="classcedar_1_1da.html#a09210838350134b687577d3bd2f3c8cf">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
+</li>
+<li>track_alloc()
+: <a class="el" href="classtdc_1_1_stat_phase.html#af5cfed05ae45d831730fe9b2e512439f">tdc::StatPhase</a>
+, <a class="el" href="classtdc_1_1_stat_phase_dummy.html#aacc732c249be5136d2b27d3d6601cdc0">tdc::StatPhaseDummy</a>
+</li>
+<li>track_free()
+: <a class="el" href="classtdc_1_1_stat_phase.html#a9b859717026acff8bd7539ca23c83a4f">tdc::StatPhase</a>
+, <a class="el" href="classtdc_1_1_stat_phase_dummy.html#a37755d4f50de717882e361e8e34709e0">tdc::StatPhaseDummy</a>
 </li>
 <li>tracking_node
 : <a class="el" href="classcedar_1_1da.html#a2868a2ae4f92cd8c5b3997d499d92c33">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
@@ -197,17 +206,17 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a39de2c8e34d4590b069689ad8072a5af">std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;</a>
 </li>
 <li>traverse()
-: <a class="el" href="classcedar_1_1da.html#a0b724a5a86ff160087d6f67a1e14645a">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
+: <a class="el" href="classcedar_1_1da.html#ae93e1945394d8485a6aa0051e89d9426">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;</a>
 </li>
 <li>trial
 : <a class="el" href="structcedar_1_1da_1_1block.html#a15c7a574106deb693d4b475e535c0f8c">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;::block</a>
 </li>
 <li>TrieNode()
 : <a class="el" href="classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html#ad2e62c7408997e8e24ca07dde2c502aa">tdc::lz78::TrieNode&lt; CedarSearchPos &gt;</a>
-, <a class="el" href="classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#aa3962d92738721c29a76b5e6221bb123">tdc::lz78::TrieNode&lt; factorid_t &gt;</a>
+, <a class="el" href="classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#aa01a0db69649fb237bcc05dbca9f5d71">tdc::lz78::TrieNode&lt; factorid_t &gt;</a>
 </li>
 <li>TValue()
-: <a class="el" href="classtdc_1_1json_1_1_t_value.html#abbe8a193b182cac5fc60c9bf241a2b0f">tdc::json::TValue&lt; T &gt;</a>
+: <a class="el" href="classtdc_1_1json_1_1_t_value.html#aa47bbdb9c69b971fd224c14cebef9ea1">tdc::json::TValue&lt; T &gt;</a>
 </li>
 <li>type()
 : <a class="el" href="classtdc_1_1_meta.html#aeda433bf2ee43daa4f234d6deeb21465">tdc::Meta</a>

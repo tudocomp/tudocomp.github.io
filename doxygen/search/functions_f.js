@@ -2,8 +2,6 @@ var searchData=
 [
   ['parent',['parent',['../structtdc_1_1lz78u_1_1_suffix_tree.html#aee5301de4465b3003d44a35873c220a5',1,'tdc::lz78u::SuffixTree']]],
   ['parse_5fnumber_5funtil_5fother',['parse_number_until_other',['../namespacetdc.html#a171f201db5f433e36c061007e771daf7',1,'tdc']]],
-  ['pause',['pause',['../classtdc_1_1_stat.html#aa93d4dd7e64edf2ad4dc3afe24ae4708',1,'tdc::Stat']]],
-  ['phase',['phase',['../classtdc_1_1_stat.html#aa1fe5f39e5ae19a6b02d8a83f4718962',1,'tdc::Stat']]],
   ['phi_5falgorithm',['phi_algorithm',['../namespacetdc.html#a44b495724fe930d77b77d9a6ec12a2c7',1,'tdc']]],
   ['phifromsa',['PhiFromSA',['../classtdc_1_1_phi_from_s_a.html#a04c488d8bd66964f54e445e5b54d7b33',1,'tdc::PhiFromSA']]],
   ['plcp',['plcp',['../classtdc_1_1_l_c_p_sada.html#a7d9b5210d259211a5d4d7c4f6bfee193',1,'tdc::LCPSada']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html',1,'tdc']]],
   ['ternarytrie',['TernaryTrie',['../classtdc_1_1lz78_1_1_ternary_trie.html',1,'tdc::lz78']]],
   ['textds',['TextDS',['../classtdc_1_1_text_d_s.html',1,'tdc']]],
   ['textliterals',['TextLiterals',['../classtdc_1_1lzss_1_1_text_literals.html',1,'tdc::lzss']]],
