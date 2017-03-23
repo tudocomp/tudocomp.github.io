@@ -21,6 +21,7 @@ var searchData=
   ['read_5fternary',['read_ternary',['../classtdc_1_1io_1_1_bit_i_stream.html#a4e5bdb8d88726944118908fd40f8d62d',1,'tdc::io::BitIStream']]],
   ['read_5funary',['read_unary',['../classtdc_1_1io_1_1_bit_i_stream.html#a7a9509a64804ddac5f7dd27256851f8c',1,'tdc::io::BitIStream']]],
   ['read_5fvbyte',['read_vbyte',['../namespacetdc.html#a251cfcf83d3d49335c4bc0590a5176b8',1,'tdc']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['ref',['ref',['../structtdc_1_1lz78u_1_1_factor.html#a58e8233f8c4888523ff10b3e5600c997',1,'tdc::lz78u::Factor']]],
   ['ref_5fat',['ref_at',['../classtdc_1_1lz78u_1_1_decompressor.html#adfbb7cf03daac8cdeca35854c7293d90',1,'tdc::lz78u::Decompressor']]],
   ['refdispatch',['RefDispatch',['../structtdc_1_1_ref_dispatch.html',1,'tdc']]],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['bwt',['bwt',['../namespacetdc_1_1bwt.html',1,'tdc']]],
   ['huff',['huff',['../namespacetdc_1_1huff.html',1,'tdc']]],
+  ['tudocomp',['tudocomp',['../index.html',1,'']]],
   ['int_5fvector',['int_vector',['../namespacetdc_1_1int__vector.html',1,'tdc']]],
   ['io',['io',['../namespacetdc_1_1io.html',1,'tdc']]],
   ['json',['json',['../namespacetdc_1_1json.html',1,'tdc']]],

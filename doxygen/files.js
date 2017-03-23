@@ -204,6 +204,7 @@ var files =
     [ "NaiveStrategy.hpp", "_naive_strategy_8hpp.html", [
       [ "NaiveStrategy", "classtdc_1_1lcpcomp_1_1_naive_strategy.html", "classtdc_1_1lcpcomp_1_1_naive_strategy" ]
     ] ],
+    [ "namespaces.hpp", "namespaces_8hpp.html", null ],
     [ "NoopCompressor.hpp", "_noop_compressor_8hpp.html", [
       [ "NoopCompressor", "classtdc_1_1_noop_compressor.html", "classtdc_1_1_noop_compressor" ]
     ] ],

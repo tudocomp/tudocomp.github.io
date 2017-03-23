@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>tudocomp: Main Page</title>
+<title>tudocomp: tudocomp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170321-jenkins-17</span>
+   &#160;<span id="projectnumber">0.170323-jenkins-18</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -103,10 +103,41 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">tudocomp Documentation</div>  </div>
+<div class="title">tudocomp </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>The **T**echnical **U**niversity of **DO**rtmund **COMP**ression Framework (<em>tudocomp</em>) is a lossless compression framework with the aim to support and facilitate the implementation of novel compression algorithms. It already comprises a range of standard data compression and encoding algorithms. These can be mixed and parameterized with the following uses in mind:</p>
+<ul>
+<li>Baseline implementations of well-known compression schemes.</li>
+<li>Detailed benchmarking and comparison of compression and encoding algorithms.</li>
+<li>Easy integration of new algorithm implementations.</li>
+</ul>
+<p>The framework offers a solid and extensible base for new implementations. Its design is focused on modularity and interchangeability. This way, the user can combine algorithms to find the optimal compression strategy for a given input. The framework gives this opportunity while creating as little performance overhead as possible.</p>
+<h1>Dependencies</h1>
+<p>The framework is built using <a href="https://cmake.org">CMake</a> (3.0.2 or later). It is written in <code>C++11</code> with GNU extensions and has been tested with the <code>gcc</code> compiler family (version 4.9.2 or later) and <code>clang</code> (version 3.5.2 or later).</p>
+<p>It has the following external dependencies:</p>
+<ul>
+<li><a href="https://github.com/simongog/sdsl-lite">SDSL</a> (2.1 or later).</li>
+<li><a href="https://gflags.github.io/gflags">Gflags</a> (2.1.2 or later).</li>
+<li><a href="https://github.com/google/glog">Google Logging (glog)</a> (0.34 or later).</li>
+</ul>
+<p>Additionally, the tests require <a href="https://github.com/google/googletest">Google Test</a> (1.7.0 or later).</p>
+<p>The CMake build scripts will either find the external dependencies on the build system, or automatically download and build them from their official repositories in case they cannot be found.</p>
+<p>For building the documentation, the following tools are required:</p>
+<ul>
+<li>LaTeX (specifically the <code>pdflatex</code> component)</li>
+<li><a href="http://doxygen.org">Doxygen</a> (1.8 or later).</li>
+<li><a href="http://pandoc.org">Pandoc</a> (1.16 or later).</li>
+</ul>
+<h2>Building on Windows</h2>
+<p>On Windows, the framework can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment. <code>mingw</code> and Microsoft Visual Studio are <em>not</em> supported at this point.</p>
+<blockquote class="doxtable">
+<p><em>Note:</em> In a <em>Cygwin</em> environment, due to its nature of not allowing overrides </p>
+</blockquote>
+<p>of <code>malloc</code> and friends, the <code>malloc_count</code> module is not functional, i.e., memory heap allocations cannot be measured.</p>
+<h1>License</h1>
+<p>The framework is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

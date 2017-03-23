@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="tudocomp.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tudocomp
-   &#160;<span id="projectnumber">0.170321-jenkins-17</span>
+   &#160;<span id="projectnumber">0.170323-jenkins-18</span>
    </div>
    <div id="projectbrief">&ndash; The TU Dortmund Compression Framework</div>
   </td>
@@ -119,6 +119,9 @@ $(document).ready(function(){initNavTree('namespacetdc.html','');});
 <div class="title">tdc Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains the text compression and encoding framework.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -129,6 +132,7 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacetdc_1_1int__vector"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1int__vector.html">int_vector</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetdc_1_1io"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html">io</a></td></tr>
+<tr class="memdesc:namespacetdc_1_1io"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains I/O abstractions and utilities. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetdc_1_1json"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1json.html">json</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,12 +141,15 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacetdc_1_1libdivsufsort"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html">libdivsufsort</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetdc_1_1lz78"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html">lz78</a></td></tr>
+<tr class="memdesc:namespacetdc_1_1lz78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains compressors and encoders that work with Lempel-Ziv-78-like dictionaries. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetdc_1_1lz78u"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78u.html">lz78u</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetdc_1_1lzss"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lzss.html">lzss</a></td></tr>
+<tr class="memdesc:namespacetdc_1_1lzss"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains compressors and encoders that work with Lempel-Ziv-Storer-Szymansky-like factors. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetdc_1_1lzw"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lzw.html">lzw</a></td></tr>
+<tr class="memdesc:namespacetdc_1_1lzw"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains compressors and encoders that work with Lempel-Ziv-Welch-like dictionaries. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetdc_1_1pattern"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1pattern.html">pattern</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -723,7 +730,10 @@ Variables</h2></td></tr>
 <tr class="memdesc:aec12d4210d9d256411da11752a3a6943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global predefined range for <code>len_t</code>.  <a href="#aec12d4210d9d256411da11752a3a6943">More...</a><br /></td></tr>
 <tr class="separator:aec12d4210d9d256411da11752a3a6943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains the text compression and encoding framework. </p>
+<p>This is the framework's central namespace in which text compression and coding algorithms are contained, as well as utilities needed for text compression and coding (e.g. I/O). Families of compressors and encoders or utility groups are contained in the respective sub-namespaces. The namespace <code>tudocomp</code> itself contains types important for all of the framework and its communication. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ac0a13e1f5aa4e2e4767c78c7a9648eda"></a>
 <div class="memitem">
 <div class="memproto">
