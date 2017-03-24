@@ -75,7 +75,9 @@
 <li><a href="#compressor-test-helpers">Compressor Test Helpers</a></li>
 <li><a href="#magic">Magic</a></li>
 </ul></li>
-<li><a href="#string-generators">String Generators</a></li>
+<li><a href="#string-generators">String Generators</a><ul>
+<li><a href="#available-string-generators">Available String Generators</a></li>
+</ul></li>
 <li><a href="#text-data-structures">Text Data Structures</a></li>
 <li><a href="#runtime-statistics">Runtime Statistics</a><ul>
 <li><a href="#charter-web-application">Charter Web Application</a></li>
@@ -740,11 +742,40 @@ test::on_string_generators(test::roundtrip&lt;MyCompressor&lt;ASCIICoder&gt;&gt;
 <p>For decompression, it is important to identify what compressor has been used to produce a compressed output - often called a &quot;magic&quot; keyword.</p>
 <p>It is intended by <em>tudocomp</em> that this is <em>not</em> the responsibility of a compressor to prepend this information to the output, but it is the application that has to take care of this.</p>
 <h2 id="string-generators">String Generators</h2>
-<blockquote>
-<blockquote>
-<p><em>TODO</em>: Describe interface and provide usage example.</p>
-</blockquote>
-</blockquote>
+<p>String generators are used to generate input strings via the command-line (as described in the <a href="#command-line-tool">Command-line Tool</a> section) or for unit tests, to name some examples.</p>
+<p>They are based on the <a href="../doxygen/classtdc_1_1_generator.html"><code>Generator</code></a> class, which inherits from <code>Algorithm</code> (see <a href="#algorithms">Algorithms</a>) and only need to implement the <a href="../doxygen/classtdc_1_1_generator.html#a192083b153b85091c5aa3d8f9b82381a"><code>generate</code></a> function.</p>
+<p>In order to allow for convenient use within <em>tudocomp</em>, the actual generation should be implemented in a static function that receives all parameters directly instead of relying on an environment.</p>
+<p>The following class fully implements a string generator that simply repeats an optional character an optional amount of times:</p>
+<div class="sourceCode" caption="generator_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">class</span> MyGenerator : <span class="kw">public</span> Generator {
+<span class="kw">public</span>:
+    <span class="kw">inline</span> <span class="at">static</span> Meta meta() {
+        Meta m(<span class="st">&quot;generator&quot;</span>, <span class="st">&quot;my_compressor&quot;</span>, <span class="st">&quot;An example compressor&quot;</span>);
+        m.option(<span class="st">&quot;length&quot;</span>).dynamic();
+        m.option(<span class="st">&quot;char&quot;</span>).dynamic(<span class="st">&#39;a&#39;</span>);
+        <span class="cf">return</span> m;
+    }
+
+    <span class="kw">inline</span> <span class="at">static</span> <span class="bu">std::</span>string generate(<span class="dt">size_t</span> length, <span class="dt">char</span> c) {
+        <span class="cf">return</span> <span class="bu">std::</span>string(length, c);
+    }
+
+    <span class="kw">using</span> Generator::Generator;
+
+    <span class="kw">inline</span> <span class="kw">virtual</span> <span class="bu">std::</span>string generate() <span class="kw">override</span> {
+        <span class="cf">return</span> generate(
+            env().option(<span class="st">&quot;length&quot;</span>).as_integer(),
+            env().option(<span class="st">&quot;char&quot;</span>).as_integer());
+    }
+};</code></pre></div>
+<h3 id="available-string-generators">Available String Generators</h3>
+<p>Out of the box, <em>tudocomp</em> currently implements a set of string generators, including:</p>
+<ul>
+<li>Random strings with uniform character distribution</li>
+<li>Fibonacci words</li>
+<li>Thue-Morse strings</li>
+<li>Run-Rich strings (Matsubara et al.)</li>
+</ul>
+<p>A full list can be found in the inheritance diagram for the <a href="../doxygen/classtdc_1_1_generator.html"><code>Generator</code></a> class' API reference.</p>
 <h2 id="text-data-structures">Text Data Structures</h2>
 <blockquote>
 <blockquote>
