@@ -197,11 +197,7 @@ $ make</code></pre>
 <h3 id="windows-support">Windows Support</h3>
 <p>We highly recommend users of Windows 10 or later to use the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about">Bash on Ubuntu on Windows</a>.</p>
 <p>That being said, <em>tudocomp</em> has no explicit support for Windows. However, the project can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment with a limited feature set. Cygwin does not allow overrides of <code>malloc</code>, therefore the heap allocation counter cannot work and statistics tracking becomes largely nonfunctional.</p>
-<blockquote>
-<blockquote>
-<p><em>TODO</em>: Check if <code>valgrind</code> works in Ubuntu on Windows, since system memory reporting via <code>free</code> or <code>top</code> does not.</p>
-</blockquote>
-</blockquote>
+<p>Note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in the Bash on Ubuntu on Windows<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. Therefore, memory measurement in the comparison tool is unavailable in this environment.</p>
 <h2 id="command-line-tool">Command-line Tool</h2>
 <p>The executable <code>tdc</code> is the command-line application that bundles all compression, encoding and other algorithms contained in <em>tudocomp</em>. It provides a fast and easy way to compress and decompress a file with a specified compressor or chain of compressors.</p>
 <p>It contains a common help output that can be accessed by passing <code>--help</code>. Furthermore, the aforementioned set of algorithms that are available for use via the command-line can be listed by passing <code>--list</code>.</p>
@@ -252,7 +248,7 @@ $ make</code></pre>
 <li>a memory pointer (e.g. a string literal),</li>
 <li>a byte buffer (<code>std::vector&lt;uint8_t&gt;</code>),</li>
 <li>a file or</li>
-<li>an input stream(<code>std::istream</code>)<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</li>
+<li>an input stream(<code>std::istream</code>)<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</li>
 </ul>
 <p>For each type of data source, the <code>Input</code> class provides a corresponding constructor:</p>
 <div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Create an Input from a string literal</span>
@@ -663,7 +659,7 @@ algo_mul5.execute(); <span class="co">// the result is 35</span></code></pre></d
     <span class="kw">virtual</span> <span class="dt">void</span> compress(Input&amp; input, Output&amp; output) <span class="kw">override</span> {
         <span class="co">// retrieve random access on the input</span>
         <span class="kw">auto</span> view = input.as_view();
-        
+
         <span class="co">// find the lexicographically smallest and largest characters</span>
         <span class="dt">uliteral_t</span> c_min = ULITERAL_MAX;
         <span class="dt">uliteral_t</span> c_max = <span class="dv">0</span>;
@@ -885,7 +881,7 @@ root.to_json().str(<span class="bu">std::</span>cout);</code></pre></div>
 StatPhase::wrap(<span class="st">&quot;Phase 3&quot;</span>, []{
     <span class="co">// Phase 3.1 yields a complex result</span>
     StatPhase sub_phase(<span class="st">&quot;Phase 3.1&quot;</span>);
-    
+
     <span class="dt">char</span>* result_part_1 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">1024</span>];
     <span class="dt">char</span>* result_part_2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">2048</span>];
     <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">40</span>));
@@ -1118,6 +1114,7 @@ StatPhase::wrap(<span class="st">&quot;Phase 3&quot;</span>, []{
 <pre><code>$ make datasets</code></pre>
 <p>There are also targets to download specific subsets only. All of them have the prefix <code>datasets_</code> and should be offered by make's tab completion in the shell.</p>
 <h2 id="the-comparison-tool">The Comparison Tool</h2>
+<p>Recall at this point the restrictions when using the comparison tool in a Windows enviroment (see <a href="#windows-support">Windows Support</a>).</p>
 <blockquote>
 <blockquote>
 <p><em>TODO</em>: Describe usage.</p>
@@ -1126,7 +1123,8 @@ StatPhase::wrap(<span class="st">&quot;Phase 3&quot;</span>, []{
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Currently, direct streaming from an <code>std::istream</code> is not supported. When an <code>Input</code> is constructed from an <code>istream</code>, the stream is fully read and buffered in memory. This is an implementation decision that may change in the future. Note that files, on the other hand, are not buffered and will always be streamed from disk directly.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p><code>valgrind</code> reportedly fails starting in Bash on Ubuntu on Windows. The issue has been filed officially <a href="https://github.com/Microsoft/BashOnWindows/issues/1295">here</a>.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Currently, direct streaming from an <code>std::istream</code> is not supported. When an <code>Input</code> is constructed from an <code>istream</code>, the stream is fully read and buffered in memory. This is an implementation decision that may change in the future. Note that files, on the other hand, are not buffered and will always be streamed from disk directly.<a href="#fnref2">↩</a></p></li>
 </ol>
 </div>
 
