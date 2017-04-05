@@ -32,7 +32,6 @@
 <li><a href="#philosophy">Philosophy</a><ul>
 <li><a href="#compressors-and-coders">Compressors and Coders</a></li>
 <li><a href="#modularity">Modularity</a></li>
-<li><a href="#compression-chains">Compression Chains</a></li>
 <li><a href="#library-and-command-line">Library and Command-Line</a></li>
 </ul></li>
 <li><a href="#features">Features</a></li>
@@ -109,8 +108,7 @@
 <p>Algorithms shall be implemented in a <em>modular</em> way. Modules shall be interchangeable, so any task or subtask may be approached using different strategies.</p>
 <p>For instance, picture a compression algorithm that consists of more than one step to achieve its compression or decompression. If each step could be seen as a module that may solve its sub-task in different ways, it qualifies for modularization.</p>
 <p>To achieve this kind of modularity, the use of C++'s meta programming features (namely templates) is heavily encouraged. <em>tudocomp</em> is designed in a way that allows template parameters to be populated seemingly at runtime.</p>
-<h2 id="compression-chains">Compression Chains</h2>
-<p>Compressors and coders can be chained so that the output of one becomes the input of another.</p>
+<p>Furthermore, compressors and coders can be chained so that the output of one becomes the input of another.</p>
 <h2 id="library-and-command-line">Library and Command-Line</h2>
 <p>The framework consists of two major components: the compression <em>library</em> (often used synonymously with <em>tudocomp</em> in this document) and the command-line application (<code>tdc</code>).</p>
 <p>The library contains the core interfaces and provides implementations for various compression algorithms. It is fully functional for use in third-party applications.</p>
@@ -181,6 +179,12 @@
 <pre><code>$ mkdir build &amp;&amp; cd build
 $ cmake ..
 $ make</code></pre>
+<p>Note that <em>tudocomp</em> is configured for a debug build by default. The build type can be changed by passing the <code>CMAKE_BUILD_TYPE</code> corresponding parameter to CMake:</p>
+<ul>
+<li>Debug build (default): <code>cmake -DCMAKE_BUILD_TYPE=Debug ..</code></li>
+<li>Release build: <code>cmake -DCMAKE_BUILD_TYPE=Release ..</code></li>
+</ul>
+<p>For benchmarking purposes, the Release configuration is heavily recommended, as it will tell the compiler to perform numerous optimizations.</p>
 <h3 id="dependencies">Dependencies</h3>
 <p><em>tudocomp</em> has the following external dependencies:</p>
 <ul>
@@ -222,6 +226,13 @@ $ make</code></pre>
 </dd>
 <dt>Compress the 10<sup>th</sup> Fibonacci word, print to stdout without header:</dt>
 <dd><code>$ tdc -g &quot;fib(10)&quot; -a &quot;lzss(coder=ascii)&quot; --raw --usestdout</code>
+</dd>
+</dl>
+<h4 id="chaining">Chaining</h4>
+<p>Compressors and coders can be chained so that the output of one becomes the input of another.</p>
+<dl>
+<dt>Chain the Burrows-Wheeler transform of a file into run-length, move-to-front and Huffman coding:</dt>
+<dd><code>$ tdc -a &quot;bwt:rle:mtf:encode(huff)&quot; file.txt</code>
 </dd>
 </dl>
 <h2 id="library">Library</h2>
