@@ -19,7 +19,7 @@ var searchData=
   ['tdc_5fdriver',['tdc_driver',['../namespacetdc__driver.html',1,'']]],
   ['tdc_5flikely',['tdc_likely',['../def_8hpp.html#a2865b00b016adcd456b720ea5eee8063',1,'def.hpp']]],
   ['tdc_5funlikely',['tdc_unlikely',['../def_8hpp.html#aa6ca3a64684b20fecfb697c6a5bf728c',1,'def.hpp']]],
-  ['templated',['templated',['../classtdc_1_1_meta_1_1_option_builder.html#a24ce72265c785c2ecd100f15ca6672c5',1,'tdc::Meta::OptionBuilder::templated()'],['../classtdc_1_1_meta_1_1_option_builder.html#a0a69f7c7871f1f0f5e215bf9cf9d5acb',1,'tdc::Meta::OptionBuilder::templated()']]],
+  ['templated',['templated',['../classtdc_1_1_meta_1_1_option_builder.html#a161a698d22aa04f5fe18c662a2f33cb5',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)'],['../classtdc_1_1_meta_1_1_option_builder.html#acdf93b3e7cfcf8a59ae8184810f128f2',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)']]],
   ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html#a6ef2fdcd7aa0e72a783e4c0e4e1c0929',1,'tdc::TernaryCoder']]],
   ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html',1,'tdc']]],
   ['ternarycoder_2ehpp',['TernaryCoder.hpp',['../_ternary_coder_8hpp.html',1,'']]],

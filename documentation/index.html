@@ -77,7 +77,6 @@
 <li><a href="#string-generators">String Generators</a><ul>
 <li><a href="#available-string-generators">Available String Generators</a></li>
 </ul></li>
-<li><a href="#text-data-structures">Text Data Structures</a></li>
 <li><a href="#runtime-statistics">Runtime Statistics</a><ul>
 <li><a href="#charter-web-application">Charter Web Application</a></li>
 </ul></li>
@@ -463,13 +462,9 @@ fib.shrink_to_fit();</code></pre></div>
 <h3 id="strategies">Strategies</h3>
 <p>The true power of <em>tudocomp</em>'s modularity comes from the ability to declare and pass strategies (or &quot;sub algorithms&quot;) as algorithm options.</p>
 <p>Assuming the algorithm implementation has been declared with a template parameter <code>strategy_t</code>, the following declares it as an option in the <code>meta</code> function:</p>
-<div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp">m.option(<span class="st">&quot;strategy&quot;</span>).templated&lt;<span class="dt">strategy_t</span>&gt;();</code></pre></div>
+<div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp">m.option(<span class="st">&quot;strategy&quot;</span>).templated&lt;<span class="dt">strategy_t</span>&gt;(<span class="st">&quot;my_strategy_t&quot;</span>);</code></pre></div>
 <p>The function <a href="../doxygen/classtdc_1_1_meta_1_1_option_builder.html#a24ce72265c785c2ecd100f15ca6672c5"><code>templated</code></a> determines that the option named &quot;strategy&quot; can be assigned with an object of the template type. It is expected that substitued types also inherit from <code>Algorithm</code> and provide a <code>Meta</code> object.</p>
-<blockquote>
-<blockquote>
-<p><em>TODO</em>: Describe type connection once <a href="https://projekte.itmc.tu-dortmund.de/issues/18854">#18854</a> is resolved.</p>
-</blockquote>
-</blockquote>
+<p>The additional constraint, <code>&quot;my_strategy_t&quot;</code>, requires strategy algorithm to be of type &quot;my_strategy_t&quot;. This corresponds to an Algorithm's type as reported by its <code>Meta</code> object.</p>
 <p>Consider the following example function for the algorithm:</p>
 <div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">int</span> execute() <span class="kw">override</span> {
     <span class="co">// read number option as an integer</span>
@@ -516,7 +511,8 @@ fib.shrink_to_fit();</code></pre></div>
         <span class="cf">return</span> x * env().option(<span class="st">&quot;factor&quot;</span>).as_integer();
     }
 };</code></pre></div>
-<p>Note how both strategies inherit from <code>Algorithm</code> and provide a <code>Meta</code> object. <code>SquareStrategy</code> implements a simple <code>result</code> function that squares the input parameter, while <code>MultiplyStrategy</code> accepts another option named &quot;factor&quot;, that is read and multiplied by the inpt parameter to compute the result.</p>
+<p>Note how both strategies inherit from <code>Algorithm</code> and provide a <code>Meta</code> object. Both are of type <code>my_strategy_t</code> as required by the &quot;strategy&quot; option of the main algorithm.</p>
+<p><code>SquareStrategy</code> implements a simple <code>result</code> function that squares the input parameter, while <code>MultiplyStrategy</code> accepts another option named &quot;factor&quot;, that is read and multiplied by the inpt parameter to compute the result.</p>
 <p>The following example creates instances of the main algorithm from the previous section (called <code>MyAlgorithm</code>) with each of the strategies and computes the result values:</p>
 <div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Execute the algorithm with the square strategy</span>
 <span class="kw">auto</span> algo_sqr  = create_algo&lt;MyAlgorithm&lt;SquareStrategy&gt;&gt;(<span class="st">&quot;number=7&quot;</span>);
@@ -673,7 +669,7 @@ algo_mul-&gt;execute(); <span class="co">// the result is 40</span></code></pre>
 <span class="kw">public</span>:
     <span class="kw">inline</span> <span class="at">static</span> Meta meta() {
         Meta m(<span class="st">&quot;compressor&quot;</span>, <span class="st">&quot;my_compressor&quot;</span>, <span class="st">&quot;An example compressor&quot;</span>);
-        m.option(<span class="st">&quot;coder&quot;</span>).templated&lt;<span class="dt">coder_t</span>&gt;();
+        m.option(<span class="st">&quot;coder&quot;</span>).templated&lt;<span class="dt">coder_t</span>&gt;(<span class="st">&quot;coder&quot;</span>);
         <span class="cf">return</span> m;
     }
 
@@ -797,12 +793,6 @@ test::on_string_generators(test::roundtrip&lt;MyCompressor&lt;ASCIICoder&gt;&gt;
 <li>Run-Rich strings (Matsubara et al.)</li>
 </ul>
 <p>A full list can be found in the inheritance diagram for the <a href="../doxygen/classtdc_1_1_generator.html"><code>Generator</code></a> class' API reference.</p>
-<h2 id="text-data-structures">Text Data Structures</h2>
-<blockquote>
-<blockquote>
-<p><em>TODO</em>: Describe <em>NEW</em> TextDS <a href="https://projekte.itmc.tu-dortmund.de/issues/18910">#18910</a></p>
-</blockquote>
-</blockquote>
 <h2 id="runtime-statistics">Runtime Statistics</h2>
 <p><em>tudocomp</em> provides functionality to measure the running time and the amount of dynamically allocated memory (e.h. via <code>malloc</code> or <code>new</code>) over the application lifetime.</p>
 <p>Recall at this point the restrictions when trying to use these features in a Windows enviroment (see <a href="#windows-support">Windows Support</a>).</p>
