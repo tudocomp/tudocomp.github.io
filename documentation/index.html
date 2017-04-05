@@ -422,7 +422,7 @@ fib.shrink_to_fit();</code></pre></div>
 <h3 id="meta-information">Meta Information</h3>
 <p>Any <code>Algorithm</code> implementation needs to provide meta information about itself in the form of a <a href="../doxygen/classtdc_1_1_meta.html"><code>Meta</code></a> object. For this, inheriting (non-abstract) classes are expected to expose a static function called <code>meta</code>. The following is a minimal example:</p>
 <div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="at">static</span> Meta meta() {
-    Meta m(<span class="st">&quot;undisclosed&quot;</span>, <span class="st">&quot;my_algorithm&quot;</span>, <span class="st">&quot;An example algorithm&quot;</span>);
+    Meta m(<span class="st">&quot;example&quot;</span>, <span class="st">&quot;my_algorithm&quot;</span>, <span class="st">&quot;An example algorithm&quot;</span>);
     <span class="cf">return</span> m;
 }</code></pre></div>
 <p>The <a href="../doxygen/classtdc_1_1_meta.html#af920817c2c17729c65f75598284f584e">constructor</a> takes three parameters:</p>
@@ -438,7 +438,7 @@ fib.shrink_to_fit();</code></pre></div>
 <p>Algorithms can accept optional parameters, or arguments. These can be passed via the command-line or when instantiating an algorithm.</p>
 <p>Options are declared in the algorithm's <code>Meta</code> object using the <a href="../doxygen/classtdc_1_1_meta.html#aa00cbc180eecd9017e247d9bbffbc01e"><code>option</code></a> function like in the following example:</p>
 <div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="at">static</span> Meta meta() {
-    Meta m(<span class="st">&quot;undisclosed&quot;</span>, <span class="st">&quot;my_algorithm&quot;</span>, <span class="st">&quot;An example algorithm&quot;</span>);
+    Meta m(<span class="st">&quot;example&quot;</span>, <span class="st">&quot;my_algorithm&quot;</span>, <span class="st">&quot;An example algorithm&quot;</span>);
     m.option(<span class="st">&quot;param1&quot;</span>).dynamic(<span class="st">&quot;default_value&quot;</span>);
     m.option(<span class="st">&quot;number&quot;</span>).dynamic(<span class="dv">147</span>);
     <span class="cf">return</span> m;
@@ -460,7 +460,7 @@ fib.shrink_to_fit();</code></pre></div>
 </blockquote>
 </blockquote>
 <p>Consider the following example function for the algorithm:</p>
-<div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="dt">int</span> execute() {
+<div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="kw">virtual</span> <span class="dt">int</span> execute() <span class="kw">override</span> {
     <span class="co">// read number option as an integer</span>
     <span class="kw">auto</span> number = env().option(<span class="st">&quot;number&quot;</span>).as_integer();
 
@@ -519,12 +519,22 @@ algo_mul5.execute(); <span class="co">// the result is 35</span></code></pre></d
 <p>For <code>MultiplyStrategy</code>, note how the &quot;strategy&quot; option is assigned the value of <code>mul(factor=5)</code>. A recursion takes place here: <code>mul</code> is the identifier of the <code>MultiplyStrategy</code> as exposed by its <code>Meta</code> information. It accepts the &quot;factor&quot; option, which is assigned the number 5. Thus, the result of <code>execute</code> in this case will be 7 * 5 = 35.</p>
 <h3 id="the-algorithm-registry">The Algorithm Registry</h3>
 <p>The ability of passing algorithms as command-line strings becomes most interesting when a <a href="../doxygen/classtdc_1_1_registry.html"><code>Registry</code></a> for algorithms gets added to the mix. Note how in the previous section's example, <code>create_algo</code> is called with fixed template types. A registry can be used to map string identifiers to actual types to obscure fixed typing.</p>
-<p>The following example creates a <code>Registry</code> and registers the example algorithm with the two strategies. It is then used to instantiate both versions without the need of fixed typing:</p>
-<blockquote>
-<blockquote>
-<p><em>TODO</em>: <code>Registry</code> currently only allows <code>Compressor</code> or <code>Generator</code> types to be registered at the top level. This could be replaced by a template parameter - see <a href="https://projekte.itmc.tu-dortmund.de/issues/18948">#18948</a>.</p>
-</blockquote>
-</blockquote>
+<p>The following example creates a registry and registers the example algorithm with the two strategies. It is then used to instantiate both versions without the need of fixed typing:</p>
+<div class="sourceCode" caption="algorithm_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Create a registry for algorithms of type &quot;example&quot;</span>
+Registry&lt;MyAlgorithmBase&gt; registry(<span class="st">&quot;example&quot;</span>);
+
+<span class="co">// Register two specializations of the algorithm</span>
+registry.register_algorithm&lt;MyAlgorithm&lt;SquareStrategy&gt;&gt;();
+registry.register_algorithm&lt;MyAlgorithm&lt;MultiplyStrategy&gt;&gt;();
+
+<span class="co">// Execute the algorithm with the square strategy</span>
+<span class="kw">auto</span> algo_sqr = registry.select(<span class="st">&quot;my_algorithm(number=5, strategy=sqr)&quot;</span>);
+algo_sqr-&gt;execute(); <span class="co">// the result is 25</span>
+
+<span class="co">// Execute the algorithm with the multiply strategy</span>
+<span class="kw">auto</span> algo_mul = registry.select(<span class="st">&quot;my_algorithm(number=5, strategy=mul(8))&quot;</span>);
+algo_mul-&gt;execute(); <span class="co">// the result is 40</span></code></pre></div>
+<p>Note that for this example, the interface <code>MyAlgorithmBase</code> was introduced, which <code>MyAlgorithm</code> inherits from. It merely declares the virtual function <code>execute</code>. The additional layer of abstraction is necessary only for use as a template parameter for the <code>Registry</code> class in this example.</p>
 <h2 id="coders">Coders</h2>
 <p>Coders serve for encoding primitve data types into a bit sequence with limited context. This is contrary to compressors, which may have random access the entire input sequence.</p>
 <p>They only have a limited context that is determined by a controlling entity - most commonly a compressor. This context consists of <em>value ranges</em> and information on the <em>input alphabet</em>.</p>
