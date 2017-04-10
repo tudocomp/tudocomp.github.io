@@ -361,7 +361,7 @@ obits.write_int(b); <span class="co">// write the value 27 using 8*sizeof(uint8_
 <span class="dt">uint8_t</span>  a = ibits.read_int&lt;<span class="dt">uint8_t</span>&gt;(<span class="dv">5</span>); <span class="co">// read a 5-bit integer into a uint8_t</span>
 <span class="dt">uint16_t</span> b = ibits.read_int&lt;<span class="dt">uint16_t</span>&gt;(); <span class="co">// read a 16-bit integer</span></code></pre></div>
 <p>Note how <a href="../doxygen/classtdc_1_1io_1_1_bit_i_stream.html#ae44308574bea503056059dd915b89cfb"><code>read_int</code></a> requires a template parameter in order to &quot;know&quot; into which data type the read integer will be stored and perform the respective conversion. If no bit width is given, the default size of the data type will be used.</p>
-<p>Beyond writing single bits and fixed-width integers, the bit I/O features some basic integer encodings:</p>
+<p>Beyond writing single bits and fixed-width integers, the bit I/O features some universal integer encodings:</p>
 <ul>
 <li>Unary code (<a href="../doxygen/classtdc_1_1io_1_1_bit_o_stream.html#a49761f3046db6ad78af26ace2845e320"><code>write_unary</code></a> / <a href="../doxygen/classtdc_1_1io_1_1_bit_i_stream.html#a7a9509a64804ddac5f7dd27256851f8c"><code>read_unary</code></a>)</li>
 <li>Elias gamma code (<a href="../doxygen/classtdc_1_1io_1_1_bit_o_stream.html#a0f5036f4793a2256e280e3d6f0270186"><code>write_elias_gamma</code></a> / <a href="../doxygen/classtdc_1_1io_1_1_bit_i_stream.html#ad5676d4691f2e9545f0851d8577893ee"><code>read_elias_gamma</code></a>)</li>
@@ -655,7 +655,8 @@ algo_mul-&gt;execute(); <span class="co">// the result is 40</span></code></pre>
 <ul>
 <li>Human readable coding (ASCII, for debugging purposes)</li>
 <li>Binary coding</li>
-<li>Low-entropy coding, including Elias and Huffman code</li>
+<li>Universal codes (e.g. Elias codes)</li>
+<li>Statistic codes (e.g. Huffman code)</li>
 </ul>
 <p>A full list can be found in the inheritance diagram for the <a href="../doxygen/classtdc_1_1_encoder.html"><code>Encoder</code></a> class' API reference.</p>
 <h2 id="compressors">Compressors</h2>
