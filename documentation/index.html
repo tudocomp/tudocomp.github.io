@@ -796,7 +796,7 @@ test::on_string_generators(test::roundtrip&lt;MyCompressor&lt;ASCIICoder&gt;&gt;
 <p>A full list can be found in the inheritance diagram for the <a href="../doxygen/classtdc_1_1_generator.html"><code>Generator</code></a> class' API reference.</p>
 <h2 id="runtime-statistics">Runtime Statistics</h2>
 <p><em>tudocomp</em> provides functionality to measure the running time and the amount of dynamically allocated memory (e.h. via <code>malloc</code> or <code>new</code>) over the application lifetime.</p>
-<p>Recall at this point the restrictions when trying to use these features in a Windows enviroment (see <a href="#windows-support">Windows Support</a>).</p>
+<p>Recall at this point the restrictions when trying to use these features in a Windows environment (see <a href="#windows-support">Windows Support</a>).</p>
 <p>Runtime statistics are tracked in <em>phases</em>, ie. the running time and memory peak can be measured for individual stages during an algorithm's run. These phases may be nested, ie., a phase can consist of multiple other phases. When using the <em>tudocomp</em> command-line tool, a root phase is automatically started immediately before the selected algorithm starts.</p>
 <p>The measured data can be retrieved in a JSON representation in order to visualize it using the <a href="#charter-web-application"><em>tudocomp Charter</em></a> or to process in a third-party application.</p>
 <p>Statistics tracking is implemented by the <a href="../doxygen/classtdc_1_1_stat_phase.html"><code>StatPhase</code></a> class. By creating a <code>StatPhase</code> object, a new phase is started. The <a href="../doxygen/classtdc_1_1_stat_phase.html#a3eb2b4d977cf20d55a2bf362ed693fb5">constructor</a> accepts the phase's title as a string. The phase ends either when the object is destroyed (e.g. when it runs out of scope) or when the phase is split (see below). Any code executed within a phase is subject to time and memory measurement.</p>
@@ -1129,7 +1129,7 @@ StatPhase::wrap(<span class="st">&quot;Phase 3&quot;</span>, []{
 <p>There are also targets to download specific subsets only. All of them have the prefix <code>datasets_</code> and should be offered by make's tab completion in the shell.</p>
 <h2 id="the-comparison-tool">The Comparison Tool</h2>
 <p><em>tudocomp</em> contains a utility to compare running time, memory usage and compression rate for a range of compressors, called the comparison tool. It comes in the form of a Python 3 script located at <code>etc/compare.py</code>. Note that it prints a usage description when passing the <code>--help</code> parameter.</p>
-<p>The tool uses <code>valgrind</code> to measure the memory actually used by a process. Therefore, recall at this point the restrictions when using it in a Windows enviroment (see <a href="#windows-support">Windows Support</a>).</p>
+<p>The tool uses <code>valgrind</code> to measure the memory actually used by a process. Therefore, recall at this point the restrictions when using it in a Windows environment (see <a href="#windows-support">Windows Support</a>).</p>
 <p>The comparison tool will perform the following steps for each input file and each compressor defined in the comparison suite (more details on suites follows further below):</p>
 <ol style="list-style-type: decimal">
 <li>Compress the input file and measure the compressor's running time</li>
