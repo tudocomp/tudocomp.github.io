@@ -38,6 +38,7 @@
 <li><a href="#usage">Usage</a><ul>
 <li><a href="#building">Building</a><ul>
 <li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#documentation-build-requirements">Documentation Build Requirements</a></li>
 <li><a href="#windows-support">Windows Support</a></li>
 </ul></li>
 <li><a href="#command-line-tool">Command-line Tool</a></li>
@@ -185,15 +186,15 @@ $ make</code></pre>
 </ul>
 <p>For benchmarking purposes, the Release configuration is heavily recommended, as it will tell the compiler to perform numerous optimizations.</p>
 <h3 id="dependencies">Dependencies</h3>
-<p><em>tudocomp</em> has the following external dependencies:</p>
+<p><em>tudocomp</em>'s CMake build process will either find external dependencies on the system if they have been properly installed, or automatically download and build them from their official repositories in case they cannot be found. In that regard, a proper installation of the dependencies is not required.</p>
+<p>Said external dependencies are the following:</p>
 <ul>
 <li><a href="https://github.com/simongog/sdsl-lite">SDSL</a> (2.1 or later).</li>
-<li><a href="https://gflags.github.io/gflags">Gflags</a> (2.1.2 or later).</li>
 <li><a href="https://github.com/google/glog">Google Logging (glog)</a> (0.34 or later).</li>
 </ul>
 <p>Additionally, the tests require <a href="https://github.com/google/googletest">Google Test</a> (1.7.0 or later).</p>
-<p>The CMake build process will either find the external dependencies on the build system if they have been properly installed, or automatically download and build them from their official repositories in case they cannot be found.</p>
-<p>For building the documentation, the following tools are required:</p>
+<h3 id="documentation-build-requirements">Documentation Build Requirements</h3>
+<p>For building the documentation, the following tools need to be installed:</p>
 <ul>
 <li><a href="http://www.latex-project.org">LaTeX</a> (specifically the <code>pdflatex</code> component)</li>
 <li><a href="http://doxygen.org">Doxygen</a> (1.8 or later).</li>
@@ -202,7 +203,7 @@ $ make</code></pre>
 <h3 id="windows-support">Windows Support</h3>
 <p>We highly recommend users of Windows 10 or later to use the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about">Bash on Ubuntu on Windows</a>.</p>
 <p>That being said, <em>tudocomp</em> has no explicit support for Windows. However, the project can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment with a limited feature set. Cygwin does not allow overrides of <code>malloc</code>, therefore the heap allocation counter cannot work and statistics tracking becomes largely nonfunctional.</p>
-<p>Note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in the Bash on Ubuntu on Windows<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>. Therefore, memory measurement in the comparison tool is unavailable in this environment.</p>
+<p>Note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in the Bash on Ubuntu on Windows until the <a href="https://blogs.windows.com/windowsexperience/2017/04/11/whats-new-in-the-windows-10-creators-update">Windows 10 Creators Update</a> <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
 <h2 id="command-line-tool">Command-line Tool</h2>
 <p>The executable <code>tdc</code> is the command-line application that bundles all compression, encoding and other algorithms contained in <em>tudocomp</em>. It provides a fast and easy way to compress and decompress a file with a specified compressor or chain of compressors.</p>
 <p>It contains a common help output that can be accessed by passing <code>--help</code>. Furthermore, the aforementioned set of algorithms that are available for use via the command-line can be listed by passing <code>--list</code>.</p>
@@ -1199,7 +1200,7 @@ Tudocomp(name<span class="op">=</span><span class="st">&#39;tdc_lzss_lcp_huff&#3
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p><code>valgrind</code> reportedly fails starting in Bash on Ubuntu on Windows. The issue has been filed officially <a href="https://github.com/Microsoft/BashOnWindows/issues/1295">here</a>.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p><code>valgrind</code> reportedly fails starting in Bash on Ubuntu on Windows before the Creators Update. The issue had been filed officially <a href="https://github.com/Microsoft/BashOnWindows/issues/1295">here</a>.<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>Currently, direct streaming from an <code>std::istream</code> is not supported. When an <code>Input</code> is constructed from an <code>istream</code>, the stream is fully read and buffered in memory. This is an implementation decision that may change in the future. Note that files, on the other hand, are not buffered and will always be streamed from disk directly.<a href="#fnref2">↩</a></p></li>
 </ol>
 </div>

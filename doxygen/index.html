@@ -113,16 +113,15 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ul>
 <p>The framework offers a solid and extensible base for new implementations. Its design is focused on modularity and interchangeability. This way, the user can combine algorithms to find the optimal compression strategy for a given input. The framework gives this opportunity while creating as little performance overhead as possible.</p>
 <h1>Dependencies</h1>
-<p><em>tudocomp</em> is built using <a href="https://cmake.org">CMake</a> (3.0.2 or later). It is written in <code>C++11</code> with GNU extensions and has been tested with the <code>gcc</code> compiler family (version 4.9.2 or later) and <code>clang</code> (version 3.5.2 or later). The build process requires a <a href="https://www.python.org/">Python</a> interpreter (3 or later) to be installed on the system (<code>py</code> scripts are invoked directly).</p>
-<p>It has the following external dependencies:</p>
+<p><em>tudocomp</em>'s CMake build process will either find external dependencies on the system if they have been properly installed, or automatically download and build them from their official repositories in case they cannot be found. In that regard, a proper installation of the dependencies is not required.</p>
+<p>Said external dependencies are the following:</p>
 <ul>
 <li><a href="https://github.com/simongog/sdsl-lite">SDSL</a> (2.1 or later).</li>
-<li><a href="https://gflags.github.io/gflags">Gflags</a> (2.1.2 or later).</li>
 <li><a href="https://github.com/google/glog">Google Logging (glog)</a> (0.34 or later).</li>
 </ul>
 <p>Additionally, the tests require <a href="https://github.com/google/googletest">Google Test</a> (1.7.0 or later).</p>
-<p>The CMake build process will either find the external dependencies on the build system if they have been properly installed, or automatically download and build them from their official repositories in case they cannot be found.</p>
-<p>For building the documentation, the following tools are required:</p>
+<h2>Documentation Build Requirements</h2>
+<p>For building the documentation, the following tools need to be installed:</p>
 <ul>
 <li><a href="http://www.latex-project.org">LaTeX</a> (specifically the <code>pdflatex</code> component)</li>
 <li><a href="http://doxygen.org">Doxygen</a> (1.8 or later).</li>
@@ -131,6 +130,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h2>Windows Support</h2>
 <p>We highly recommend users of Windows 10 or later to use the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about">Bash on Ubuntu on Windows</a>.</p>
 <p>That being said, <em>tudocomp</em> has no explicit support for Windows. However, the project can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment with a limited feature set. Cygwin does not allow overrides of <code>malloc</code>, therefore the heap allocation counter cannot work and statistics tracking becomes largely nonfunctional.</p>
+<p>Note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in the Bash on Ubuntu on Windows until the <a href="https://blogs.windows.com/windowsexperience/2017/04/11/whats-new-in-the-windows-10-creators-update">Windows 10 Creators Update</a>.</p>
 <h1>License</h1>
 <p>The framework is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> </p>
 </div></div><!-- contents -->
