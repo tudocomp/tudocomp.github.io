@@ -42,15 +42,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_l_z_w_decoding_8hpp.html#a63f02492031620f7731905a42212729e",
-"classtdc_1_1_const_generic_view.html#a4fe0f72b3df95c223646b9ca7163fd18",
-"classtdc_1_1_generic_view.html#a239c5d3b8b43fed2ad35cbe610d6dd2b",
-"classtdc_1_1_option_value.html#ac87da2361810978ae0a3c223d082ac13",
-"classtdc_1_1int__vector_1_1_int_ref.html",
-"classtdc_1_1lcpcomp_1_1_my_map_buffer.html#a9d859c1d279852cb9a2b40dc8cf41a9d",
-"divsufsort_8hpp.html#a3b4774aed4043f7f82ce82e96f5af3ea",
-"pre__header_2_env_8hpp.html",
-"structtdc_1_1int__vector_1_1_int_vector_trait_3_01dynamic__t_01_4.html#a4ba24dafb1e6b514aff989cc9084da4d"
+"_l_z78_u_compressor_8hpp_source.html",
+"classtdc_1_1_array_max_heap.html#a407bcb5a2be91b48052cb612c1e6b4c1",
+"classtdc_1_1_elias_gamma_coder.html",
+"classtdc_1_1_m_t_f_compressor.html",
+"classtdc_1_1int__vector_1_1_generic_int_ref.html#a195f3f9bd470fad3ba33a43e874bd0e7",
+"classtdc_1_1io_1_1_restricted_i_stream_buf.html#a425c82257bae4fe7680f2391c7115a70",
+"classtdc_1_1lz78u_1_1root__childrank__support.html#adbd001de31107ad49581c6fc0b93d62e",
+"functions_func_v.html",
+"structtdc_1_1int__vector_1_1_bit_packing_vector.html#a7cedb2a90b72c715fd4254971d32ec85"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

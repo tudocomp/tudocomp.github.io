@@ -1,5 +1,6 @@
 var namespacetdc =
 [
+    [ "ds", "namespacetdc_1_1ds.html", "namespacetdc_1_1ds" ],
     [ "huff", "namespacetdc_1_1huff.html", "namespacetdc_1_1huff" ],
     [ "int_vector", "namespacetdc_1_1int__vector.html", "namespacetdc_1_1int__vector" ],
     [ "io", "namespacetdc_1_1io.html", "namespacetdc_1_1io" ],
@@ -72,12 +73,12 @@ var namespacetdc =
     [ "LCPForwardIterator", "classtdc_1_1_l_c_p_forward_iterator.html", "classtdc_1_1_l_c_p_forward_iterator" ],
     [ "LCPFromPLCP", "classtdc_1_1_l_c_p_from_p_l_c_p.html", "classtdc_1_1_l_c_p_from_p_l_c_p" ],
     [ "LCPSada", "classtdc_1_1_l_c_p_sada.html", "classtdc_1_1_l_c_p_sada" ],
-    [ "LengthRange", "classtdc_1_1_length_range.html", null ],
+    [ "LengthRange", "classtdc_1_1_length_range.html", "classtdc_1_1_length_range" ],
     [ "LinearProber", "classtdc_1_1_linear_prober.html", null ],
     [ "Literal", "structtdc_1_1_literal.html", "structtdc_1_1_literal" ],
     [ "LiteralEncoder", "classtdc_1_1_literal_encoder.html", "classtdc_1_1_literal_encoder" ],
     [ "LiteralIterator", "classtdc_1_1_literal_iterator.html", "classtdc_1_1_literal_iterator" ],
-    [ "LiteralRange", "classtdc_1_1_literal_range.html", null ],
+    [ "LiteralRange", "classtdc_1_1_literal_range.html", "classtdc_1_1_literal_range" ],
     [ "LZ78Compressor", "classtdc_1_1_l_z78_compressor.html", "classtdc_1_1_l_z78_compressor" ],
     [ "LZ78UCompressor", "classtdc_1_1_l_z78_u_compressor.html", "classtdc_1_1_l_z78_u_compressor" ],
     [ "LZSSLCPCompressor", "classtdc_1_1_l_z_s_s_l_c_p_compressor.html", "classtdc_1_1_l_z_s_s_l_c_p_compressor" ],

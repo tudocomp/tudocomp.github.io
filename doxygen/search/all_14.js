@@ -1,6 +1,7 @@
 var searchData=
 [
   ['bwt',['bwt',['../namespacetdc_1_1bwt.html',1,'tdc']]],
+  ['ds',['ds',['../namespacetdc_1_1ds.html',1,'tdc']]],
   ['huff',['huff',['../namespacetdc_1_1huff.html',1,'tdc']]],
   ['tudocomp',['tudocomp',['../index.html',1,'']]],
   ['int_5fvector',['int_vector',['../namespacetdc_1_1int__vector.html',1,'tdc']]],
@@ -20,8 +21,8 @@ var searchData=
   ['tdc_5flikely',['tdc_likely',['../def_8hpp.html#a2865b00b016adcd456b720ea5eee8063',1,'def.hpp']]],
   ['tdc_5funlikely',['tdc_unlikely',['../def_8hpp.html#aa6ca3a64684b20fecfb697c6a5bf728c',1,'def.hpp']]],
   ['templated',['templated',['../classtdc_1_1_meta_1_1_option_builder.html#a161a698d22aa04f5fe18c662a2f33cb5',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)'],['../classtdc_1_1_meta_1_1_option_builder.html#acdf93b3e7cfcf8a59ae8184810f128f2',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)']]],
-  ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html#a6ef2fdcd7aa0e72a783e4c0e4e1c0929',1,'tdc::TernaryCoder']]],
   ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html',1,'tdc']]],
+  ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html#a6ef2fdcd7aa0e72a783e4c0e4e1c0929',1,'tdc::TernaryCoder']]],
   ['ternarycoder_2ehpp',['TernaryCoder.hpp',['../_ternary_coder_8hpp.html',1,'']]],
   ['ternarytrie',['TernaryTrie',['../classtdc_1_1lz78_1_1_ternary_trie.html',1,'tdc::lz78']]],
   ['ternarytrie',['TernaryTrie',['../classtdc_1_1lz78_1_1_ternary_trie.html#ab13255aea49f0944f592b3cff08bc506',1,'tdc::lz78::TernaryTrie']]],
@@ -31,6 +32,8 @@ var searchData=
   ['textds',['TextDS',['../classtdc_1_1_text_d_s.html#affcdd950c5122f183ff57d5d3c4e7b1c',1,'tdc::TextDS::TextDS(Env &amp;&amp;env, const View &amp;text)'],['../classtdc_1_1_text_d_s.html#aa34d16cc9ad5387c7f00130bbb1afe43',1,'tdc::TextDS::TextDS(Env &amp;&amp;env, const View &amp;text, dsflags_t flags, CompressMode cm=CompressMode::select)']]],
   ['textds',['TextDS',['../classtdc_1_1_text_d_s.html',1,'tdc']]],
   ['textds_2ehpp',['TextDS.hpp',['../_text_d_s_8hpp.html',1,'']]],
+  ['textds_5fflags',['textds_flags',['../classtdc_1_1lcpcomp_1_1_arrays_comp.html#a20be0141d6523be1ebf2d90a517d98e1',1,'tdc::lcpcomp::ArraysComp::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_boost_heap.html#a9b8067b6a3edd26bf09e136cd344c099',1,'tdc::lcpcomp::BoostHeap::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html#ad05ddb2416e256446a1b4fa9acb0f96d',1,'tdc::lcpcomp::BulldozerStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_heap_strategy.html#a24264fab6ae71fa0686fab37be2fc0e5',1,'tdc::lcpcomp::MaxHeapStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html#aceb22b7902c90bf6445ad48dade4b463',1,'tdc::lcpcomp::MaxLCPStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_naive_strategy.html#af2b6467732cee29d19b3b0e5afd60ad8',1,'tdc::lcpcomp::NaiveStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html#ae916528ba0a33fe32e66061f940f9c01',1,'tdc::lcpcomp::PLCPPeaksStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html#a1b657fa7e1664bddde6da85bed4f4c5d',1,'tdc::lcpcomp::PLCPStrategy::textds_flags()'],['../classtdc_1_1_algorithm_value.html#a8dc15ea36d441cede9d2113a677a5797',1,'tdc::AlgorithmValue::textds_flags()']]],
+  ['textdsflags_2ehpp',['TextDSFlags.hpp',['../_text_d_s_flags_8hpp.html',1,'']]],
   ['textliterals',['TextLiterals',['../classtdc_1_1lzss_1_1_text_literals.html',1,'tdc::lzss']]],
   ['textliterals',['TextLiterals',['../classtdc_1_1lzss_1_1_text_literals.html#ada0fd88fa463d2e2bb57a275d3a6c615',1,'tdc::lzss::TextLiterals']]],
   ['thuemorsegenerator',['ThueMorseGenerator',['../classtdc_1_1_thue_morse_generator.html',1,'tdc']]],
@@ -73,8 +76,8 @@ var searchData=
   ['type',['type',['../classtdc_1_1_meta.html#aeda433bf2ee43daa4f234d6deeb21465',1,'tdc::Meta']]],
   ['type',['type',['../structtdc_1_1_const_integer_base_trait_1_1type.html',1,'tdc::ConstIntegerBaseTrait']]],
   ['type',['type',['../structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html',1,'tdc::int_vector']]],
-  ['typerange',['TypeRange',['../classtdc_1_1_type_range.html#a4b9c70eea58e11d007e9a23f77f922f0',1,'tdc::TypeRange']]],
   ['typerange',['TypeRange',['../classtdc_1_1_type_range.html',1,'tdc']]],
+  ['typerange',['TypeRange',['../classtdc_1_1_type_range.html#ad2e37b441ddf0a72fe760a602c4c45c0',1,'tdc::TypeRange']]],
   ['typerange_3c_20len_5ft_20_3e',['TypeRange&lt; len_t &gt;',['../classtdc_1_1_type_range.html',1,'tdc']]],
   ['typerange_3c_20uliteral_5ft_20_3e',['TypeRange&lt; uliteral_t &gt;',['../classtdc_1_1_type_range.html',1,'tdc']]]
 ];

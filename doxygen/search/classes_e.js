@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['path',['Path',['../structtdc_1_1io_1_1_input_1_1_path.html',1,'tdc::io::Input']]],
+  ['path',['Path',['../structtdc_1_1io_1_1_path.html',1,'tdc::io']]],
   ['phifromsa',['PhiFromSA',['../classtdc_1_1_phi_from_s_a.html',1,'tdc']]],
   ['plcpfromphi',['PLCPFromPhi',['../classtdc_1_1_p_l_c_p_from_phi.html',1,'tdc']]],
   ['plcppeaksstrategy',['PLCPPeaksStrategy',['../classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html',1,'tdc::lcpcomp']]],

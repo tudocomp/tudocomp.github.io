@@ -13,6 +13,8 @@ var searchData=
   ['_7ehuffmantable',['~huffmantable',['../structtdc_1_1huff_1_1huffmantable.html#ae3a0dd9ed1cf55c6ea0d6da4467421aa',1,'tdc::huff::huffmantable']]],
   ['_7emyhash',['~MyHash',['../classtdc_1_1lcpcomp_1_1_my_hash.html#a57fc31eed2a1e7d0155811c03f23ce1e',1,'tdc::lcpcomp::MyHash::~MyHash()'],['../classtdc_1_1lz78_1_1_my_hash.html#aca6e777a14cb8a77e2f6c662e38774a3',1,'tdc::lz78::MyHash::~MyHash()']]],
   ['_7eoptionvalue',['~OptionValue',['../classtdc_1_1_option_value.html#ab9510ee6f2767e2d667f24cf17da6bff',1,'tdc::OptionValue']]],
+  ['_7erestrictedistreambuf',['~RestrictedIStreamBuf',['../classtdc_1_1io_1_1_restricted_i_stream_buf.html#a9db6789e753d0df26f8625db9efb4fa3',1,'tdc::io::RestrictedIStreamBuf']]],
+  ['_7erestrictedostreambuf',['~RestrictedOStreamBuf',['../classtdc_1_1io_1_1_restricted_o_stream_buf.html#afbb8e6920eb13d7d74d7c72b71cb56c1',1,'tdc::io::RestrictedOStreamBuf']]],
   ['_7estatphase',['~StatPhase',['../classtdc_1_1_stat_phase.html#a654f91c0371ddc64a65254a348737e87',1,'tdc::StatPhase']]],
   ['_7estatphasedummy',['~StatPhaseDummy',['../classtdc_1_1_stat_phase_dummy.html#a80c740765093cc4a023378a256d342a5',1,'tdc::StatPhaseDummy']]]
 ];

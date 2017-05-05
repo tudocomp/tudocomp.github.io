@@ -12,12 +12,12 @@ var classtdc_1_1int__vector_1_1_generic_int_ptr =
     [ "operator-=", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a690c0b5070016336d4bc9f6169d5c3e3", null ],
     [ "operator=", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#acade7ab840f029dea527f6a89209b6a1", null ],
     [ "operator[]", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a114062f4fc9559301409c02ec18dfc6a", null ],
-    [ "ConstIntegerBaseTrait< ConstIntRef< T > >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a4bbe691a6bd1801b2ca3fea032fdd1d3", null ],
-    [ "ConstIntegerBaseTrait< IntRef< T > >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#ab55b749a442108199d68888ff81ca5d1", null ],
+    [ "ConstIntegerBaseTrait< ConstIntRef< T > >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a701b00c03f2b2e1e783071385edffd8e", null ],
+    [ "ConstIntegerBaseTrait< IntRef< T > >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a247064cc7add4ffc246fa1e80fb74403", null ],
     [ "ConstIntRef< T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a42cc5e956f27fd0b3c980760b555f69e", null ],
     [ "GenericIntRef< ConstIntRef< T >, ConstIntPtr< T >, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a507bc1ef6fd57c2b985168586564b5c3", null ],
     [ "GenericIntRef< IntRef< T >, IntPtr< T >, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#ae051ad2af49fb1043dddda7124af2905", null ],
-    [ "IntegerBaseTrait< IntRef< T > >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a3aeea0030d826c5dd61751669f2cc9bf", null ],
+    [ "IntegerBaseTrait< IntRef< T > >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a5b1da9f4ebb3a93ac0655e5b0c5aaefb", null ],
     [ "IntRef< T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#aa1b4ce042239325a00863585d6823e39", null ],
     [ "operator!=", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a5739fd9c0f4a7682c767c985982837bd", null ],
     [ "operator+", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a1bfdac836d834629f9c860f6a129b0b4", null ],
@@ -29,6 +29,6 @@ var classtdc_1_1int__vector_1_1_generic_int_ptr =
     [ "operator==", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a0cce7383ccd9d58701a21d900c03403e", null ],
     [ "operator>", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a51abbe1c4b4344bca832d827e4664cd4", null ],
     [ "operator>=", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a3396b7d49da1ff5fe438ac064970ed30", null ],
-    [ "RefDispatch< uint32_t, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a8a4945721db67cf88412dff40f9bc74a", null ],
-    [ "RefDispatch< uint64_t, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#ac40ac20af2b569f2c54050cc84f4134c", null ]
+    [ "RefDispatch< uint32_t, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a91760f5447f46af1a7b1efc1d4ce3e31", null ],
+    [ "RefDispatch< uint64_t, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html#a6c65fcfcba5ded9ffefe5f88bd268d11", null ]
 ];

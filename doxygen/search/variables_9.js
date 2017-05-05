@@ -11,5 +11,5 @@ var searchData=
   ['is_5fmodulo',['is_modulo',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#aa7c182eccca8d393f1f798e9f05834fc',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
   ['is_5fsigned',['is_signed',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#ab55b46edff22ae16adfdec78ed9e7e38',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
   ['is_5fspecialized',['is_specialized',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a4f9faf14fa4996f0fc8227b487755fdc',1,'std::numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;']]],
-  ['isa',['ISA',['../classtdc_1_1_text_d_s.html#a22a3457fb8fc4321a33c6adaa625dfbf',1,'tdc::TextDS']]]
+  ['isa',['ISA',['../classtdc_1_1_text_d_s.html#a22a3457fb8fc4321a33c6adaa625dfbf',1,'tdc::TextDS::ISA()'],['../namespacetdc_1_1ds.html#af9e025057f07386a597c6557750f03e2',1,'tdc::ds::ISA()']]]
 ];

@@ -1,6 +1,11 @@
 var searchData=
 [
+  ['has_5fescape_5fbytes',['has_escape_bytes',['../structtdc_1_1io_1_1_escape_map.html#a1f54a9ca2c974cb529bec2a7b4e44dce',1,'tdc::io::EscapeMap::has_escape_bytes()'],['../classtdc_1_1io_1_1_fast_unescape_map.html#a32b937ee5f30fd5497c51830555231ed',1,'tdc::io::FastUnescapeMap::has_escape_bytes()']]],
+  ['has_5fescape_5frestrictions',['has_escape_restrictions',['../classtdc_1_1io_1_1_input_restrictions.html#a541db01b6373dc80110658daba991f74',1,'tdc::io::InputRestrictions']]],
   ['has_5fnext',['has_next',['../classtdc_1_1lzss_1_1_text_literals.html#acb7e55026b5ead3093ca7f04f4166d16',1,'tdc::lzss::TextLiterals::has_next()'],['../classtdc_1_1_literal_iterator.html#a1f35c6b3ddb3a06b604f75e448d9e72b',1,'tdc::LiteralIterator::has_next()'],['../classtdc_1_1_view_literals.html#ae4032a6e18d287baaac605ac81650199',1,'tdc::ViewLiterals::has_next()']]],
+  ['has_5fno_5fescape_5frestrictions',['has_no_escape_restrictions',['../classtdc_1_1io_1_1_input_restrictions.html#ada395c29e98c397b3d395e5c463e4ba6',1,'tdc::io::InputRestrictions']]],
+  ['has_5fno_5frestrictions',['has_no_restrictions',['../classtdc_1_1io_1_1_input_restrictions.html#a8ab7894207f269b3dcf8b5fc875bca8f',1,'tdc::io::InputRestrictions']]],
+  ['has_5frestrictions',['has_restrictions',['../classtdc_1_1io_1_1_input_restrictions.html#af776f148645c744e8a503f46e41cd982',1,'tdc::io::InputRestrictions']]],
   ['hashtrie',['HashTrie',['../classtdc_1_1lz78_1_1_hash_trie.html#aab6d0c2aab6b76e4d3412d794b03de90',1,'tdc::lz78::HashTrie']]],
   ['head',['head',['../classtdc_1_1lz78u_1_1root__childrank__support.html#afec5560c522fc59c44e78870221f77c7',1,'tdc::lz78u::root_childrank_support']]],
   ['huffman_5fdecode',['huffman_decode',['../namespacetdc_1_1huff.html#a3de6cb9b28fdc4c28c4f265dda9c5f7c',1,'tdc::huff::huffman_decode(tdc::io::BitIStream &amp;is, const uliteral_t *const ordered_map_from_effective, const size_t *const prefix_sum_lengths, const size_t *const firstcodes)'],['../namespacetdc_1_1huff.html#a4373d466fc7d316a865c4c47ca781e13',1,'tdc::huff::huffman_decode(tdc::io::BitIStream &amp;is, std::basic_ostream&lt; literal_t &gt; &amp;output, const uliteral_t *const ordered_map_from_effective, const uint8_t *const ordered_codelengths, const size_t alphabet_size, const uliteral_t *const numl, const uint8_t longest)']]],

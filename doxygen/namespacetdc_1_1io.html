@@ -108,7 +108,8 @@ $(document).ready(function(){initNavTree('namespacetdc_1_1io.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">tdc::io Namespace Reference</div>  </div>
 </div><!--header-->
@@ -125,8 +126,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">BitOStream</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for output streams that provides bitwise writing functionality.  <a href="classtdc_1_1io_1_1_bit_o_stream.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtdc_1_1io_1_1_escape_map.html">EscapeMap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_fast_escape_map.html">FastEscapeMap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_fast_unescape_map.html">FastUnescapeMap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_input.html">Input</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstraction layer for algorithm input.  <a href="classtdc_1_1io_1_1_input.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes a set of restrictions placed on input data.  <a href="classtdc_1_1io_1_1_input_restrictions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_input_source.html">InputSource</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that stores the source of input data.  <a href="classtdc_1_1io_1_1_input_source.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_input_stream.html">InputStream</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a character stream of the underlying input.  <a href="classtdc_1_1io_1_1_input_stream.html#details">More...</a><br /></td></tr>
@@ -140,12 +153,335 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_output_stream.html">OutputStream</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a character stream to the underlying output.  <a href="classtdc_1_1io_1_1_output_stream.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtdc_1_1io_1_1_path.html">Path</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a file path.  <a href="structtdc_1_1io_1_1_path.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_restricted_i_stream_buf.html">RestrictedIStreamBuf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter class over a <code>std::istream</code> that escapes and null terminates the data read from it according to the provided input restrictions.  <a href="classtdc_1_1io_1_1_restricted_i_stream_buf.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_restricted_o_stream_buf.html">RestrictedOStreamBuf</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapter class over a <code>std::ostream</code> that reverse the escaping and null termination of data written to it according to the provided input restrictions.  <a href="classtdc_1_1io_1_1_restricted_o_stream_buf.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8d551ee4c08d6218d4de9962eddee898"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#a8d551ee4c08d6218d4de9962eddee898">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;v)</td></tr>
+<tr class="separator:a8d551ee4c08d6218d4de9962eddee898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd52418e23c2bc48ca08f130a91e90c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#a3bd52418e23c2bc48ca08f130a91e90c">operator|</a> (const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;a, const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;b)</td></tr>
+<tr class="memdesc:a3bd52418e23c2bc48ca08f130a91e90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges two InpuTrestrictions to a combined set of restrictions.  <a href="#a3bd52418e23c2bc48ca08f130a91e90c">More...</a><br /></td></tr>
+<tr class="separator:a3bd52418e23c2bc48ca08f130a91e90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9affa2355c5dbd6175d10bb13d554117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#a9affa2355c5dbd6175d10bb13d554117">operator|=</a> (<a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;a, const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;b)</td></tr>
+<tr class="memdesc:a9affa2355c5dbd6175d10bb13d554117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges two InpuTrestrictions to a combined set of restrictions.  <a href="#a9affa2355c5dbd6175d10bb13d554117">More...</a><br /></td></tr>
+<tr class="separator:a9affa2355c5dbd6175d10bb13d554117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae2c083cfa271d23baa1a078eee944a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#a4ae2c083cfa271d23baa1a078eee944a">operator==</a> (const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;lhs, const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;rhs)</td></tr>
+<tr class="separator:a4ae2c083cfa271d23baa1a078eee944a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d45f925f0b579bf00aa508161494379"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#a3d45f925f0b579bf00aa508161494379">operator!=</a> (const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;lhs, const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;rhs)</td></tr>
+<tr class="separator:a3d45f925f0b579bf00aa508161494379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5982d6878b901b26a3ce3184cd8120"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#ace5982d6878b901b26a3ce3184cd8120">operator==</a> (const <a class="el" href="classtdc_1_1io_1_1_input_source.html">InputSource</a> &amp;lhs, const <a class="el" href="classtdc_1_1io_1_1_input_source.html">InputSource</a> &amp;rhs)</td></tr>
+<tr class="separator:ace5982d6878b901b26a3ce3184cd8120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707791a08a4861f99a11def476f8b572"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#a707791a08a4861f99a11def476f8b572">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="classtdc_1_1io_1_1_input_source.html">InputSource</a> &amp;v)</td></tr>
+<tr class="separator:a707791a08a4861f99a11def476f8b572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acd90a7ac19d1af87a6bc564cf6fea5"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1io.html#a3acd90a7ac19d1af87a6bc564cf6fea5">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="classtdc_1_1io_1_1_input_view.html">InputView</a> &amp;iv)</td></tr>
+<tr class="separator:a3acd90a7ac19d1af87a6bc564cf6fea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains I/O abstractions and utilities. </p>
 <p>All I/O done by compressors and encoders is routed through the <a class="el" href="classtdc_1_1io_1_1_input.html">Input</a> and <a class="el" href="classtdc_1_1io_1_1_output.html">Output</a> abstractions over the underlying file, memory or stream I/O.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classtdc_1_1io_1_1_input.html">Input</a> for the input interface and <a class="el" href="classtdc_1_1io_1_1_output.html">Output</a> for the output interface. </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a3d45f925f0b579bf00aa508161494379"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tdc::io::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_input_restrictions_8hpp_source.html#l00094">94</a> of file <a class="el" href="_input_restrictions_8hpp_source.html">InputRestrictions.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3acd90a7ac19d1af87a6bc564cf6fea5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; tdc::io::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_view.html">InputView</a> &amp;&#160;</td>
+          <td class="paramname"><em>iv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_input_view_8hpp_source.html#l00054">54</a> of file <a class="el" href="_input_view_8hpp_source.html">InputView.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d551ee4c08d6218d4de9962eddee898"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; tdc::io::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_input_restrictions_8hpp_source.html#l00055">55</a> of file <a class="el" href="_input_restrictions_8hpp_source.html">InputRestrictions.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a707791a08a4861f99a11def476f8b572"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; tdc::io::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_source.html">InputSource</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_input_source_8hpp_source.html#l00066">66</a> of file <a class="el" href="_input_source_8hpp_source.html">InputSource.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace5982d6878b901b26a3ce3184cd8120"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tdc::io::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_source.html">InputSource</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_source.html">InputSource</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_input_source_8hpp_source.html#l00058">58</a> of file <a class="el" href="_input_source_8hpp_source.html">InputSource.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ae2c083cfa271d23baa1a078eee944a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool tdc::io::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_input_restrictions_8hpp_source.html#l00088">88</a> of file <a class="el" href="_input_restrictions_8hpp_source.html">InputRestrictions.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3bd52418e23c2bc48ca08f130a91e90c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> tdc::io::operator| </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Merges two InpuTrestrictions to a combined set of restrictions. </p>
+
+<p>Definition at line <a class="el" href="_input_restrictions_8hpp_source.html#l00064">64</a> of file <a class="el" href="_input_restrictions_8hpp_source.html">InputRestrictions.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9affa2355c5dbd6175d10bb13d554117"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a>&amp; tdc::io::operator|= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html">InputRestrictions</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Merges two InpuTrestrictions to a combined set of restrictions. </p>
+
+<p>Definition at line <a class="el" href="_input_restrictions_8hpp_source.html#l00083">83</a> of file <a class="el" href="_input_restrictions_8hpp_source.html">InputRestrictions.hpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

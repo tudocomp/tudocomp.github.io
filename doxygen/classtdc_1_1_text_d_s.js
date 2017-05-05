@@ -1,6 +1,6 @@
 var classtdc_1_1_text_d_s =
 [
-    [ "dsflags_t", "classtdc_1_1_text_d_s.html#af4276ac9f890003ed1e616bc38121ce9", null ],
+    [ "dsflags_t", "classtdc_1_1_text_d_s.html#ae83df367561d4912c38b49c88aabee93", null ],
     [ "isa_type", "classtdc_1_1_text_d_s.html#ac9c8c202e405f220dfd0f52003f244f0", null ],
     [ "lcp_type", "classtdc_1_1_text_d_s.html#ad03c31f2e55b32412b484666b64d49ce", null ],
     [ "phi_type", "classtdc_1_1_text_d_s.html#a08188202ad0af6a91ffe629399604fe8", null ],

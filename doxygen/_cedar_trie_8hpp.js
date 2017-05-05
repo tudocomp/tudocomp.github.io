@@ -8,5 +8,7 @@ var _cedar_trie_8hpp =
     [ "cedar_t", "_cedar_trie_8hpp.html#a154d3f149848730e73bbc64d6faa816b", null ],
     [ "CEDAR_NO_PATH", "_cedar_trie_8hpp.html#a003b9a8067600edb78f3a4466269eebb", null ],
     [ "CEDAR_NO_VALUE", "_cedar_trie_8hpp.html#aa5c559a306d70f2ea18f175233defcaa", null ],
-    [ "HIDDEN_ESCAPE_ID", "_cedar_trie_8hpp.html#a4ad2baa8c6cfd146c33211a7eaeca49e", null ]
+    [ "HIDDEN_ESCAPE_ID", "_cedar_trie_8hpp.html#a4ad2baa8c6cfd146c33211a7eaeca49e", null ],
+    [ "NULL_ESCAPE_ESCAPE_BYTE", "_cedar_trie_8hpp.html#a074c15d682cc2bdbb28746b1011d6816", null ],
+    [ "NULL_ESCAPE_REPLACEMENT_BYTE", "_cedar_trie_8hpp.html#a9ab52ddad530874dbacfecc6742fb1d3", null ]
 ];

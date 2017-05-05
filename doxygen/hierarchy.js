@@ -128,6 +128,7 @@ var hierarchy =
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >", "classcedar_1_1da.html", null ],
     [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
     [ "tdc::int_vector::IntPtrTrait< IntPtr< uint_t< N > > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01uint__t_3_01_n_01_4_01_4_01_4_1_1_data.html", null ],
+    [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
     [ "Data", null, [
       [ "tdc::int_vector::GenericIntPtr< ConstIntPtr< T >, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html", [
         [ "tdc::int_vector::ConstIntPtr< T >", "classtdc_1_1int__vector_1_1_const_int_ptr.html", null ]
@@ -137,7 +138,6 @@ var hierarchy =
       ] ],
       [ "tdc::int_vector::GenericIntPtr< Self, T >", "classtdc_1_1int__vector_1_1_generic_int_ptr.html", null ]
     ] ],
-    [ "tdc::int_vector::IntPtrTrait< ConstIntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_const_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
     [ "tdc::int_vector::IntPtrTrait< IntPtr< dynamic_t > >::Data", "classtdc_1_1int__vector_1_1_int_ptr_trait_3_01_int_ptr_3_01dynamic__t_01_4_01_4_1_1_data.html", null ],
     [ "tdc::lzss::DecodeBackBuffer", "classtdc_1_1lzss_1_1_decode_back_buffer.html", null ],
     [ "tdc::lz78::Decompressor", "classtdc_1_1lz78_1_1_decompressor.html", null ],
@@ -152,9 +152,12 @@ var hierarchy =
     [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_const_integer_base_trait_3_01int__vector_1_1_const_int_ref_3_01uint__t_3_01_n_01_40551722f2b242ac7eb00c71c10bc7e01.html", null ],
     [ "tdc::Env", "classtdc_1_1_env.html", null ],
     [ "tdc::EnvRoot", "classtdc_1_1_env_root.html", null ],
+    [ "tdc::io::EscapeMap", "structtdc_1_1io_1_1_escape_map.html", null ],
     [ "tdc::lz78u::Factor", "structtdc_1_1lz78u_1_1_factor.html", null ],
     [ "tdc::lzss::Factor", "classtdc_1_1lzss_1_1_factor.html", null ],
     [ "tdc::lzss::FactorBuffer", "classtdc_1_1lzss_1_1_factor_buffer.html", null ],
+    [ "tdc::io::FastEscapeMap", "classtdc_1_1io_1_1_fast_escape_map.html", null ],
+    [ "tdc::io::FastUnescapeMap", "classtdc_1_1io_1_1_fast_unescape_map.html", null ],
     [ "tdc::GaussProber< key_t >", "classtdc_1_1_gauss_prober.html", null ],
     [ "tdc::int_vector::GenericIntRef< Self, Ptr, T >", "classtdc_1_1int__vector_1_1_generic_int_ref.html", null ],
     [ "tdc::int_vector::GenericIntRef< ConstIntRef< T >, ConstIntPtr< T >, T >", "classtdc_1_1int__vector_1_1_generic_int_ref.html", [
@@ -183,6 +186,8 @@ var hierarchy =
       [ "tdc::huff::extended_huffmantable", "structtdc_1_1huff_1_1extended__huffmantable.html", null ]
     ] ],
     [ "tdc::io::Input", "classtdc_1_1io_1_1_input.html", null ],
+    [ "tdc::io::InputRestrictions", "classtdc_1_1io_1_1_input_restrictions.html", null ],
+    [ "tdc::io::InputSource", "classtdc_1_1io_1_1_input_source.html", null ],
     [ "InputStreamInternal", null, [
       [ "tdc::io::InputStream", "classtdc_1_1io_1_1_input_stream.html", null ]
     ] ],
@@ -271,7 +276,7 @@ var hierarchy =
     [ "OutputStreamInternal", null, [
       [ "tdc::io::OutputStream", "classtdc_1_1io_1_1_output_stream.html", null ]
     ] ],
-    [ "tdc::io::Input::Path", "structtdc_1_1io_1_1_input_1_1_path.html", null ],
+    [ "tdc::io::Path", "structtdc_1_1io_1_1_path.html", null ],
     [ "tdc::int_vector::BitPackingVector< T >::PosAndOffset", "structtdc_1_1int__vector_1_1_bit_packing_vector_1_1_pos_and_offset.html", null ],
     [ "tdc::QuadraticProber< key_t >", "classtdc_1_1_quadratic_prober.html", null ],
     [ "tdc::Range", "classtdc_1_1_range.html", [
@@ -294,6 +299,10 @@ var hierarchy =
     [ "tdc::SizeManagerPow2", "structtdc_1_1_size_manager_pow2.html", null ],
     [ "tdc::StatPhase", "classtdc_1_1_stat_phase.html", null ],
     [ "tdc::StatPhaseDummy", "classtdc_1_1_stat_phase_dummy.html", null ],
+    [ "streambuf", null, [
+      [ "tdc::io::RestrictedIStreamBuf", "classtdc_1_1io_1_1_restricted_i_stream_buf.html", null ],
+      [ "tdc::io::RestrictedOStreamBuf", "classtdc_1_1io_1_1_restricted_o_stream_buf.html", null ]
+    ] ],
     [ "tdc::lz78u::SuffixTree", "structtdc_1_1lz78u_1_1_suffix_tree.html", null ],
     [ "T", null, [
       [ "tdc::ConstIntegerBaseCombiner< T >", "classtdc_1_1_const_integer_base_combiner_3_01_t_01_4.html", null ],
@@ -304,12 +313,15 @@ var hierarchy =
     [ "tdc::lz78::TrieNode< search_pos_t >", "classtdc_1_1lz78_1_1_trie_node.html", null ],
     [ "tdc::lz78::TrieNode< CedarSearchPos >", "classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html", null ],
     [ "tdc::lz78::TrieNode< factorid_t >", "classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html", null ],
-    [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
     [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
+    [ "tdc::int_vector::type< T, U, V >", "structtdc_1_1int__vector_1_1_conversion_helper_3_01_t_00_01_u_00_01_v_00_01typename_01std_1_1ena71ae8553a19cebb4faae6e8602a979a2.html", null ],
     [ "tdc::UinttDispatch< MB >", "structtdc_1_1_uintt_dispatch.html", null ],
     [ "tdc::json::Value", "classtdc_1_1json_1_1_value.html", [
       [ "tdc::json::Array", "classtdc_1_1json_1_1_array.html", null ],
       [ "tdc::json::Object", "classtdc_1_1json_1_1_object.html", null ],
       [ "tdc::json::TValue< T >", "classtdc_1_1json_1_1_t_value.html", null ]
+    ] ],
+    [ "InputRestrictions", null, [
+      [ "tdc::ds::InputRestrictionsAndFlags", "classtdc_1_1ds_1_1_input_restrictions_and_flags.html", null ]
     ] ]
 ];

@@ -37,6 +37,6 @@ var classtdc_1_1uint__t =
     [ "operator=", "classtdc_1_1uint__t.html#ac7cf92a4f857092972558a9a25ccbe80", null ],
     [ "operator=", "classtdc_1_1uint__t.html#a313e01fe5cf9e189842d194c421430e5", null ],
     [ "operator=", "classtdc_1_1uint__t.html#a5ca906036a6df40c6606cafb45877424", null ],
-    [ "UinttDispatch< uint32_t >", "classtdc_1_1uint__t.html#afe2ba594122d28c5788a4b097201e84c", null ],
-    [ "UinttDispatch< uint64_t >", "classtdc_1_1uint__t.html#a5b76360ba6e51bc991076e102663873e", null ]
+    [ "UinttDispatch< uint32_t >", "classtdc_1_1uint__t.html#acf7ac0db08f68822c2e47e552456461f", null ],
+    [ "UinttDispatch< uint64_t >", "classtdc_1_1uint__t.html#a9b49c22e27c14ee3f177bf32991a0742", null ]
 ];

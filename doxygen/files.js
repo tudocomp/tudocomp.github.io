@@ -97,6 +97,7 @@ var files =
       [ "EnvRoot", "classtdc_1_1_env_root.html", "classtdc_1_1_env_root" ],
       [ "Env", "classtdc_1_1_env.html", "classtdc_1_1_env" ]
     ] ],
+    [ "EscapeMap.hpp", "_escape_map_8hpp.html", "_escape_map_8hpp" ],
     [ "FibonacciGenerator.hpp", "_fibonacci_generator_8hpp.html", [
       [ "FibonacciGenerator", "classtdc_1_1_fibonacci_generator.html", "classtdc_1_1_fibonacci_generator" ]
     ] ],
@@ -121,11 +122,16 @@ var files =
     ] ],
     [ "HuffmanCoder.hpp", "_huffman_coder_8hpp.html", "_huffman_coder_8hpp" ],
     [ "Input.hpp", "_input_8hpp.html", [
-      [ "Input", "classtdc_1_1io_1_1_input.html", "classtdc_1_1io_1_1_input" ],
-      [ "Path", "structtdc_1_1io_1_1_input_1_1_path.html", "structtdc_1_1io_1_1_input_1_1_path" ],
-      [ "InputView", "classtdc_1_1io_1_1_input_view.html", "classtdc_1_1io_1_1_input_view" ],
+      [ "Input", "classtdc_1_1io_1_1_input.html", "classtdc_1_1io_1_1_input" ]
+    ] ],
+    [ "InputAlloc.hpp", "_input_alloc_8hpp.html", null ],
+    [ "InputRestrictions.hpp", "_input_restrictions_8hpp.html", "_input_restrictions_8hpp" ],
+    [ "InputSize.hpp", "_input_size_8hpp.html", null ],
+    [ "InputSource.hpp", "_input_source_8hpp.html", "_input_source_8hpp" ],
+    [ "InputStream.hpp", "_input_stream_8hpp.html", [
       [ "InputStream", "classtdc_1_1io_1_1_input_stream.html", "classtdc_1_1io_1_1_input_stream" ]
     ] ],
+    [ "InputView.hpp", "_input_view_8hpp.html", "_input_view_8hpp" ],
     [ "IntegerBase.hpp", "_integer_base_8hpp.html", "_integer_base_8hpp" ],
     [ "IntPtr.hpp", "_int_ptr_8hpp.html", "_int_ptr_8hpp" ],
     [ "IntVector.hpp", "_int_vector_8hpp.html", "_int_vector_8hpp" ],
@@ -188,6 +194,7 @@ var files =
     [ "MaxLCPSuffixList.hpp", "_max_l_c_p_suffix_list_8hpp.html", [
       [ "MaxLCPSuffixList", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list" ]
     ] ],
+    [ "MMapHandle.hpp", "_m_map_handle_8hpp.html", null ],
     [ "MTFCompressor.hpp", "_m_t_f_compressor_8hpp.html", "_m_t_f_compressor_8hpp" ],
     [ "MultiMapBuffer.hpp", "_multi_map_buffer_8hpp.html", [
       [ "MultimapBuffer", "classtdc_1_1lcpcomp_1_1_multimap_buffer.html", "classtdc_1_1lcpcomp_1_1_multimap_buffer" ]
@@ -208,12 +215,16 @@ var files =
     [ "NoopCompressor.hpp", "_noop_compressor_8hpp.html", [
       [ "NoopCompressor", "classtdc_1_1_noop_compressor.html", "classtdc_1_1_noop_compressor" ]
     ] ],
-    [ "NullEscapingUtil.hpp", "_null_escaping_util_8hpp.html", null ],
     [ "Options.hpp", "_options_8hpp.html", "_options_8hpp" ],
     [ "OptionValue.hpp", "_option_value_8hpp.html", "_option_value_8hpp" ],
     [ "Output.hpp", "_output_8hpp.html", [
-      [ "Output", "classtdc_1_1io_1_1_output.html", "classtdc_1_1io_1_1_output" ],
+      [ "Output", "classtdc_1_1io_1_1_output.html", "classtdc_1_1io_1_1_output" ]
+    ] ],
+    [ "OutputStream.hpp", "_output_stream_8hpp.html", [
       [ "OutputStream", "classtdc_1_1io_1_1_output_stream.html", "classtdc_1_1io_1_1_output_stream" ]
+    ] ],
+    [ "Path.hpp", "_path_8hpp.html", [
+      [ "Path", "structtdc_1_1io_1_1_path.html", "structtdc_1_1io_1_1_path" ]
     ] ],
     [ "PhaseData.hpp", "_phase_data_8hpp.html", null ],
     [ "PhiFromSA.hpp", "_phi_from_s_a_8hpp.html", [
@@ -242,6 +253,11 @@ var files =
     [ "driver/Registry.hpp", "driver_2_registry_8hpp.html", null ],
     [ "RePairCompressor.hpp", "_re_pair_compressor_8hpp.html", [
       [ "RePairCompressor", "classtdc_1_1_re_pair_compressor.html", "classtdc_1_1_re_pair_compressor" ]
+    ] ],
+    [ "RestrictedBuffer.hpp", "_restricted_buffer_8hpp.html", null ],
+    [ "RestrictedIOStream.hpp", "_restricted_i_o_stream_8hpp.html", [
+      [ "RestrictedOStreamBuf", "classtdc_1_1io_1_1_restricted_o_stream_buf.html", "classtdc_1_1io_1_1_restricted_o_stream_buf" ],
+      [ "RestrictedIStreamBuf", "classtdc_1_1io_1_1_restricted_i_stream_buf.html", "classtdc_1_1io_1_1_restricted_i_stream_buf" ]
     ] ],
     [ "RunLengthEncoder.hpp", "_run_length_encoder_8hpp.html", "_run_length_encoder_8hpp" ],
     [ "RunRichGenerator.hpp", "_run_rich_generator_8hpp.html", [
@@ -283,6 +299,7 @@ var files =
     [ "TextDS.hpp", "_text_d_s_8hpp.html", [
       [ "TextDS", "classtdc_1_1_text_d_s.html", "classtdc_1_1_text_d_s" ]
     ] ],
+    [ "TextDSFlags.hpp", "_text_d_s_flags_8hpp.html", "_text_d_s_flags_8hpp" ],
     [ "ThueMorseGenerator.hpp", "_thue_morse_generator_8hpp.html", [
       [ "ThueMorseGenerator", "classtdc_1_1_thue_morse_generator.html", "classtdc_1_1_thue_morse_generator" ]
     ] ],

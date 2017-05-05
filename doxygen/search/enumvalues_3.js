@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['n1',['N1',['../structcedar_1_1_na_n.html#a1dae8976ca814012d8d8c50329954640ac6f5058ead0bb64a824685edff68a0d7',1,'cedar::NaN::N1()'],['../structcedar_1_1_na_n_3_01float_01_4.html#a4d357e6078e735302ac3539ed38da3e8ac4922574a8d1f2312bad7d26a9af96ba',1,'cedar::NaN&lt; float &gt;::N1()']]],
-  ['n2',['N2',['../structcedar_1_1_na_n.html#a1dae8976ca814012d8d8c50329954640a887d70f51391b5cc17cd87826f1099c2',1,'cedar::NaN::N2()'],['../structcedar_1_1_na_n_3_01float_01_4.html#a4d357e6078e735302ac3539ed38da3e8a5f6ec0db995a89cd022e8d1864a59071',1,'cedar::NaN&lt; float &gt;::N2()']]]
+  ['file',['File',['../classtdc_1_1io_1_1_input_source.html#ae7092c3edad9f91ecf66d0315092f252a0b27918290ff5323bea1e3b78a9cf04e',1,'tdc::io::InputSource']]]
 ];
