@@ -174,7 +174,7 @@
 <h1 id="usage">Usage</h1>
 <p>This section describes the usage of <em>tudocomp</em> as a <code>C++</code> library and as a command-line tool, respectively.</p>
 <h2 id="building">Building</h2>
-<p>The framework is built using <a href="https://cmake.org">CMake</a> (3.0.2 or later). It is written in <code>C++11</code> with GNU extensions and has been tested with the <code>gcc</code> compiler family (version 4.9.2 or later) and <code>clang</code> (version 3.5.2 or later). The build process requires a <a href="https://www.python.org/">Python</a> interpreter (3 or later) to be installed on the system (<code>py</code> scripts are invoked directly).</p>
+<p>The framework is built using <a href="https://cmake.org">CMake</a> (3.0.2 or later). It is written in <code>C++14</code> with GNU extensions and has been tested with the <code>gcc</code> compiler family (version 5.4 or later) and <code>clang</code> (version 3.4 or later). The build process requires a <a href="https://www.python.org/">Python</a> interpreter (3 or later) to be installed on the system (<code>py</code> scripts are invoked directly).</p>
 <p>When these requirements are met, the following chain of commands on a clean clone of the project suffices to build <em>tudocomp</em>:</p>
 <pre><code>$ mkdir build &amp;&amp; cd build
 $ cmake ..
@@ -284,7 +284,7 @@ Input input_from_stream(<span class="bu">std::</span>cin); <span class="co">// f
 <p>The following code snippet demonstrates using a given input as a stream:</p>
 <div class="sourceCode" caption="io.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">auto</span> istream = input.as_stream(); <span class="co">// retrieve an input stream</span>
 
-<span class="co">// read the input character-wise using a C++11 range-based for loop</span>
+<span class="co">// read the input character-wise using a range-based for loop</span>
 <span class="cf">for</span>(<span class="dt">uliteral_t</span> c : istream) {
     <span class="co">// ...</span>
 }</code></pre></div>
