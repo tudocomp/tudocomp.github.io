@@ -135,7 +135,7 @@
 <li><code>malloc</code> override</li>
 <li>Export of statistics to JSON</li>
 <li>Visualization of exported statistics in a web application</li>
-<li>Export of charts to <code>png</code> or <code>svg</code> (<a href="https://inkscape.org/">InkScape</a>-compatible and LaTeX-friendly)</li>
+<li>Export of charts to <code>png</code> or <code>svg</code> (<a href="https://inkscape.org/">InkScape</a>-compatible<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> and LaTeX-friendly)</li>
 </ul></li>
 <li>Implementations of text data structures, including
 <ul>
@@ -201,9 +201,7 @@ $ make</code></pre>
 <li><a href="http://pandoc.org">Pandoc</a> (1.19 or later).</li>
 </ul>
 <h3 id="windows-support">Windows Support</h3>
-<p>We highly recommend users of Windows 10 or later to use the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about">Bash on Ubuntu on Windows</a>.</p>
-<p>That being said, <em>tudocomp</em> has no explicit support for Windows. However, the project can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment with a limited feature set. Cygwin does not allow overrides of <code>malloc</code>, therefore the heap allocation counter cannot work and statistics tracking becomes largely nonfunctional.</p>
-<p>Note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in the Bash on Ubuntu on Windows until the <a href="https://blogs.windows.com/windowsexperience/2017/04/11/whats-new-in-the-windows-10-creators-update">Windows 10 Creators Update</a> <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<p>While <em>tudocomp</em> has no explicit support Windows / Microsoft Visual C++, it is possible to use the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about">Bash on Ubuntu on Windows</a> with next to no feature limitations. However, note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in this environment until the <a href="https://blogs.windows.com/windowsexperience/2017/04/11/whats-new-in-the-windows-10-creators-update">Windows 10 Creators Update</a> <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
 <h2 id="command-line-tool">Command-line Tool</h2>
 <p>The executable <code>tdc</code> is the command-line application that bundles all compression, encoding and other algorithms contained in <em>tudocomp</em>. It provides a fast and easy way to compress and decompress a file with a specified compressor or chain of compressors.</p>
 <p>It contains a common help output that can be accessed by passing <code>--help</code>. Furthermore, the aforementioned set of algorithms that are available for use via the command-line can be listed by passing <code>--list</code>.</p>
@@ -261,7 +259,7 @@ $ make</code></pre>
 <li>a memory pointer (e.g. a string literal),</li>
 <li>a byte buffer (<code>std::vector&lt;uint8_t&gt;</code>),</li>
 <li>a file or</li>
-<li>an input stream(<code>std::istream</code>)<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</li>
+<li>an input stream (<code>std::istream</code>)<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</li>
 </ul>
 <p>For each type of data source, the <code>Input</code> class provides a corresponding constructor:</p>
 <div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Create an Input from a string literal</span>
@@ -271,7 +269,7 @@ Input input_from_string(<span class="st">&quot;This is the input text&quot;</spa
 Input input_from_buffer(buffer);
 
 <span class="co">// Create an Input from a file</span>
-Input input_from_file(Input::Path{<span class="st">&quot;example.txt&quot;</span>});
+Input input_from_file(Path(<span class="st">&quot;example.txt&quot;</span>));
 
 <span class="co">// Create an Input from a given std::istream</span>
 Input input_from_stream(<span class="bu">std::</span>cin); <span class="co">// from stdin</span></code></pre></div>
@@ -280,7 +278,7 @@ Input input_from_stream(<span class="bu">std::</span>cin); <span class="co">// f
 <li>As a <em>stream</em>, so that bytes are read sequentially from the input source (the concept of online algorithms) or</li>
 <li>as a <em>view</em>, providing random access to the input source like to an array of bytes (the concept of offline algorithms).</li>
 </ol>
-<p>The choice is done by acquiring the respective handle using either the <a href="../doxygen/classtdc_1_1io_1_1_input.html#af4579b9d8cfa928fa931038579975860"><code>as_stream</code></a> or the <a href="../doxygen/classtdc_1_1io_1_1_input.html#a01b43ae61e9c5097de455407940be1ff"><code>as_view</code></a> function. The stream object returned by <code>as_stream</code> conforms to the <code>std::istream</code> interface and also provides iterator access. The object returned by <code>as_view</code> provides the indexed access <code>[]</code> operator for and the function <code>size()</code> to return the amount of bytes available on the input.</p>
+<p>The choice is done by acquiring the respective handle using either the <a href="../doxygen/classtdc_1_1io_1_1_input.html#af4579b9d8cfa928fa931038579975860"><code>as_stream</code></a> or the <a href="../doxygen/classtdc_1_1io_1_1_input.html#a01b43ae61e9c5097de455407940be1ff"><code>as_view</code></a> function. The stream object returned by <code>as_stream</code> conforms to the <code>std::istream</code> interface and also provides iterator access. The <a href="../doxygen/classtdc_1_1_const_generic_view.html"><code>View</code></a> object returned by <code>as_view</code> provides the indexed access <code>[]</code> operator for and the function <a href="../doxygen/classtdc_1_1_const_generic_view.html#aa4b22be55a0f0160e447f03cabe64e5c"><code>size</code></a> to return the amount of bytes available on the input.</p>
 <p>The following code snippet demonstrates using a given input as a stream:</p>
 <div class="sourceCode" caption="io.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">auto</span> istream = input.as_stream(); <span class="co">// retrieve an input stream</span>
 
@@ -306,6 +304,7 @@ ASSERT_EQ(<span class="st">&quot;ooba&quot;</span>, sub_view); <span class="co">
     <span class="co">// ...</span>
 }</code></pre></div>
 <p>The type <a href="../doxygen/namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408"><code>len_t</code></a> is another one of <em>tudocomp</em>'s core types and shall be used for lengths and indices.</p>
+<p>The functions <code>as_stream</code> and <code>as_view</code> can be used arbitrarily often to create multiple streams or views on the same input, e.g., in case the input is to be streamed more than once.</p>
 <h3 id="producing-an-output">Producing an Output</h3>
 <p>An <a href="../doxygen/classtdc_1_1io_1_1_output.html"><code>Output</code></a> can be created for different data sinks:</p>
 <ul>
@@ -318,8 +317,8 @@ ASSERT_EQ(<span class="st">&quot;ooba&quot;</span>, sub_view); <span class="co">
 Output output_to_buffer(buffer);
 
 <span class="co">// Create an Output to a file:</span>
-Output output_to_file1(<span class="st">&quot;example.txt&quot;</span>, <span class="kw">false</span>); <span class="co">// do not overwrite if exists (default)</span>
-Output output_to_file2(<span class="st">&quot;example.txt&quot;</span>, <span class="kw">true</span>); <span class="co">// overwrite if exists</span>
+Output output_to_file1(Path(<span class="st">&quot;example.txt&quot;</span>), <span class="kw">false</span>); <span class="co">// do not overwrite if exists (default)</span>
+Output output_to_file2(Path(<span class="st">&quot;example.txt&quot;</span>), <span class="kw">true</span>); <span class="co">// overwrite if exists</span>
 
 <span class="co">// Create an Output to a given std::ostream</span>
 Output output_to_stream(<span class="bu">std::</span>cout); <span class="co">// to stdout</span></code></pre></div>
@@ -890,6 +889,7 @@ root.to_json().str(<span class="bu">std::</span>cout);</code></pre></div>
     <span class="dt">&quot;timeStart&quot;</span><span class="fu">:</span> <span class="dv">3330562</span><span class="fu">,</span>
     <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Root&quot;</span>
 <span class="fu">}</span></code></pre></div>
+<h4 id="iterative-phases">Iterative Phases</h4>
 <p>In some cases, phases of an algorithm compute complex results and would make it complicated to express them in a single lambda return statement. In other use cases, one may want to end a phase and begin a new phase within loop iterations in order to visualize progress.</p>
 <p>For these purposes, a phase can be &quot;split&quot; using the <a href="../doxygen/classtdc_1_1_stat_phase.html#ad07845511111415b949424aa9eb1ae23"><code>split</code></a> function. Splitting causes the current phase to end and a new phase to begin immediately. The following example demonstrates phase splitting:</p>
 <div class="sourceCode" caption="stats.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Phase 3 (splitting)</span>
@@ -907,6 +907,24 @@ StatPhase::wrap(<span class="st">&quot;Phase 3&quot;</span>, []{
     <span class="kw">delete</span>[] result_part_1;
     <span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">60</span>));
 });</code></pre></div>
+<h4 id="pausing-and-resuming-memory-tracking">Pausing and Resuming Memory Tracking</h4>
+<p>There may be situations where the measurement of certain data structures is not desired, e.g., if they only serve as temporary helpers during development. Memory tracking can be paused and resumed during any phase using the <a href="../doxygen/classtdc_1_1_stat_phase.html#a61616705e4965099cb21dc0fc4cba676"><code>StatPhase::pause_tracking</code></a> and <a href="../doxygen/classtdc_1_1_stat_phase.html#a1149c160613989e7b4f3d6076ed36887"><code>StatPhase::resume_tracking</code></a> functions, as demonstrated in the following snippet:</p>
+<div class="sourceCode" caption="stats.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Allocate memory, but only track mem2</span>
+StatPhase::pause_tracking();
+<span class="dt">char</span>* mem1 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">1024</span>];
+StatPhase::resume_tracking();    
+
+<span class="dt">char</span>* mem2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">2048</span>];
+
+<span class="co">// Sleep</span>
+<span class="bu">std::</span>this_thread<span class="bu">::</span>sleep_for(<span class="bu">std::</span>chrono<span class="bu">::</span>milliseconds(<span class="dv">100</span>));
+
+<span class="co">// Free memory, but only track mem2</span>
+StatPhase::pause_tracking();
+<span class="kw">delete</span>[] mem1;
+StatPhase::resume_tracking();
+
+<span class="kw">delete</span>[] mem2;</code></pre></div>
 <h3 id="charter-web-application">Charter Web Application</h3>
 <p>The <a href="../charter">tudocomp Charter</a> is a JavaScript-based web application that visualizes the statistics JSON output. Based on the data, it plots a bar chart that displays the single phases of the compression run with their running time on the X axis and their peak heap memory usage on the Y axis.</p>
 <p>The following figure shows the diagram corresponding from the JSON snippet from the previous section.</p>
@@ -1200,8 +1218,9 @@ Tudocomp(name<span class="op">=</span><span class="st">&#39;tdc_lzss_lcp_huff&#3
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p><code>valgrind</code> reportedly fails starting in Bash on Ubuntu on Windows before the Creators Update. The issue had been filed officially <a href="https://github.com/Microsoft/BashOnWindows/issues/1295">here</a>.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>Currently, direct streaming from an <code>std::istream</code> is not supported. When an <code>Input</code> is constructed from an <code>istream</code>, the stream is fully read and buffered in memory. This is an implementation decision that may change in the future. Note that files, on the other hand, are not buffered and will always be streamed from disk directly.<a href="#fnref2">↩</a></p></li>
+<li id="fn1"><p>Note that InkScape versions prior to <a href="http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92">0.92</a> do not properly support the positioning of texts using CSS. Therefore, when older versions are used to import SVGs generated by <em>tudocomp</em>, texts will not be positioned correctly.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><code>valgrind</code> reportedly fails starting in Bash on Ubuntu on Windows before the Creators Update. The issue had been filed officially <a href="https://github.com/Microsoft/BashOnWindows/issues/1295">here</a>.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Currently, direct streaming from an <code>std::istream</code> is not supported. When an <code>Input</code> is constructed from an <code>istream</code>, the stream is fully read and buffered in memory. This is an implementation decision that may change in the future. Note that files, on the other hand, are not buffered and will always be streamed from disk directly.<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
 

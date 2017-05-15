@@ -132,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a14874111186eea19018c2b793a35700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd4d7bf8b766677b1cbc16fa281956b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html#addd4d7bf8b766677b1cbc16fa281956b">~BitOStream</a> ()</td></tr>
 <tr class="separator:addd4d7bf8b766677b1cbc16fa281956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a811b7bf099f4b2adfe47e387a9194"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html#a42a811b7bf099f4b2adfe47e387a9194">tellp</a> () -&gt; decltype(m_stream.tellp())</td></tr>
+<tr class="memdesc:a42a811b7bf099f4b2adfe47e387a9194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the output position indicator of the underlying stream, which should equal the amount of bytes written to it.  <a href="#a42a811b7bf099f4b2adfe47e387a9194">More...</a><br /></td></tr>
+<tr class="separator:a42a811b7bf099f4b2adfe47e387a9194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5528e8e10e99835223820f2e71a646bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html#a5528e8e10e99835223820f2e71a646bd">write_bit</a> (bool set)</td></tr>
 <tr class="memdesc:a5528e8e10e99835223820f2e71a646bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single bit to the output.  <a href="#a5528e8e10e99835223820f2e71a646bd">More...</a><br /></td></tr>
 <tr class="separator:a5528e8e10e99835223820f2e71a646bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +259,35 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a42a811b7bf099f4b2adfe47e387a9194"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tdc::io::BitOStream::tellp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; decltype(m_stream.tellp()) </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the output position indicator of the underlying stream, which should equal the amount of bytes written to it. </p>
+<p>Note that this value does not include bits that have not yet been flushed.</p>
+<dl class="section return"><dt>Returns</dt><dd>the output position indicator of the underlying stream </dd></dl>
+
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00073">73</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5528e8e10e99835223820f2e71a646bd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +318,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00068">68</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00079">79</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>
@@ -341,7 +373,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00140">140</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00151">151</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +401,7 @@ template&lt;typename value_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00121">121</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00132">132</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +429,7 @@ template&lt;typename value_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00115">115</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00126">126</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>
@@ -450,7 +482,7 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00087">87</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00098">98</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>
@@ -478,7 +510,7 @@ template&lt;typename value_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00103">103</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00114">114</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>
@@ -506,7 +538,7 @@ template&lt;typename value_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00094">94</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_bit_o_stream_8hpp_source.html#l00105">105</a> of file <a class="el" href="_bit_o_stream_8hpp_source.html">BitOStream.hpp</a>.</p>
 
 </div>
 </div>

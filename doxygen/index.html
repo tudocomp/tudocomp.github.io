@@ -128,9 +128,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a href="http://pandoc.org">Pandoc</a> (1.19 or later).</li>
 </ul>
 <h2>Windows Support</h2>
-<p>We highly recommend users of Windows 10 or later to use the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about">Bash on Ubuntu on Windows</a>.</p>
-<p>That being said, <em>tudocomp</em> has no explicit support for Windows. However, the project can be built in a <a href="https://www.cygwin.com/">Cygwin</a> environment with a limited feature set. Cygwin does not allow overrides of <code>malloc</code>, therefore the heap allocation counter cannot work and statistics tracking becomes largely nonfunctional.</p>
-<p>Note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in the Bash on Ubuntu on Windows until the <a href="https://blogs.windows.com/windowsexperience/2017/04/11/whats-new-in-the-windows-10-creators-update">Windows 10 Creators Update</a>.</p>
+<p>While <em>tudocomp</em> has no explicit support Windows / Microsoft Visual C++, it is possible to use the <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about">Bash on Ubuntu on Windows</a> with next to no feature limitations. However, note that <a href="#the-comparison-tool">the comparison tool</a> relies on <code>valgrind</code>, which is not functional in this environment until the <a href="https://blogs.windows.com/windowsexperience/2017/04/11/whats-new-in-the-windows-10-creators-update">Windows 10 Creators Update</a>.</p>
 <h1>License</h1>
 <p>The framework is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> </p>
 </div></div><!-- contents -->

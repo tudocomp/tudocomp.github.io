@@ -3,7 +3,7 @@ var searchData=
   ['env_2ehpp',['Env.hpp',['../pre__header_2_env_8hpp.html',1,'']]],
   ['parent',['parent',['../structtdc_1_1lz78u_1_1_suffix_tree.html#aee5301de4465b3003d44a35873c220a5',1,'tdc::lz78u::SuffixTree']]],
   ['parse_5fnumber_5funtil_5fother',['parse_number_until_other',['../namespacetdc.html#a171f201db5f433e36c061007e771daf7',1,'tdc']]],
-  ['path',['path',['../structtdc_1_1io_1_1_path.html#a8718a221aa8d7aee0d8ead48c649611b',1,'tdc::io::Path::path()'],['../structtdc_1_1io_1_1_path.html#afd18c9b40f585703c25059bb48215e55',1,'tdc::io::Path::Path(const std::string &amp;p)']]],
+  ['path',['path',['../structtdc_1_1io_1_1_path.html#a8718a221aa8d7aee0d8ead48c649611b',1,'tdc::io::Path::path()'],['../structtdc_1_1io_1_1_path.html#afd18c9b40f585703c25059bb48215e55',1,'tdc::io::Path::Path(const std::string &amp;p)'],['../namespacetdc.html#aee9d5c59c38a8d8ed953eb40f9278823',1,'tdc::Path()']]],
   ['path',['Path',['../structtdc_1_1io_1_1_path.html',1,'tdc::io']]],
   ['path_2ehpp',['Path.hpp',['../_path_8hpp.html',1,'']]],
   ['pause_5ftracking',['pause_tracking',['../classtdc_1_1_stat_phase.html#a61616705e4965099cb21dc0fc4cba676',1,'tdc::StatPhase::pause_tracking()'],['../classtdc_1_1_stat_phase_dummy.html#af93fca6ce7b5ac5dde80d89dfcf74e7a',1,'tdc::StatPhaseDummy::pause_tracking()']]],
