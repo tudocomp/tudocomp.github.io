@@ -105,7 +105,6 @@ var namespacetdc =
     [ "SizeManagerPow2", "structtdc_1_1_size_manager_pow2.html", null ],
     [ "SLECoder", "classtdc_1_1_s_l_e_coder.html", "classtdc_1_1_s_l_e_coder" ],
     [ "StatPhase", "classtdc_1_1_stat_phase.html", "classtdc_1_1_stat_phase" ],
-    [ "StatPhaseDummy", "classtdc_1_1_stat_phase_dummy.html", "classtdc_1_1_stat_phase_dummy" ],
     [ "TernaryCoder", "classtdc_1_1_ternary_coder.html", "classtdc_1_1_ternary_coder" ],
     [ "TextDS", "classtdc_1_1_text_d_s.html", "classtdc_1_1_text_d_s" ],
     [ "ThueMorseGenerator", "classtdc_1_1_thue_morse_generator.html", "classtdc_1_1_thue_morse_generator" ],

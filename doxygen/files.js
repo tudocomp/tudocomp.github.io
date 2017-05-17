@@ -140,7 +140,12 @@ var files =
     [ "ISAFromSA.hpp", "_i_s_a_from_s_a_8hpp.html", [
       [ "ISAFromSA", "classtdc_1_1_i_s_a_from_s_a.html", "classtdc_1_1_i_s_a_from_s_a" ]
     ] ],
-    [ "Json.hpp", "_json_8hpp.html", "_json_8hpp" ],
+    [ "Json.hpp", "_json_8hpp.html", [
+      [ "Value", "classtdc_1_1json_1_1_value.html", "classtdc_1_1json_1_1_value" ],
+      [ "TValue", "classtdc_1_1json_1_1_t_value.html", "classtdc_1_1json_1_1_t_value" ],
+      [ "Array", "classtdc_1_1json_1_1_array.html", "classtdc_1_1json_1_1_array" ],
+      [ "Object", "classtdc_1_1json_1_1_object.html", "classtdc_1_1json_1_1_object" ]
+    ] ],
     [ "JudyTrie.hpp", "_judy_trie_8hpp.html", null ],
     [ "LCPCompressor.hpp", "_l_c_p_compressor_8hpp.html", "_l_c_p_compressor_8hpp" ],
     [ "LCPFromPLCP.hpp", "_l_c_p_from_p_l_c_p_8hpp.html", [
@@ -279,9 +284,7 @@ var files =
     [ "StatPhase.hpp", "_stat_phase_8hpp.html", [
       [ "StatPhase", "classtdc_1_1_stat_phase.html", "classtdc_1_1_stat_phase" ]
     ] ],
-    [ "StatPhaseDummy.hpp", "_stat_phase_dummy_8hpp.html", [
-      [ "StatPhaseDummy", "classtdc_1_1_stat_phase_dummy.html", "classtdc_1_1_stat_phase_dummy" ]
-    ] ],
+    [ "StatPhaseDummy.hpp", "_stat_phase_dummy_8hpp.html", null ],
     [ "StreamingStrategy.hpp", "_streaming_strategy_8hpp.html", [
       [ "StreamingStrategy", "classtdc_1_1lz78u_1_1_streaming_strategy.html", "classtdc_1_1lz78u_1_1_streaming_strategy" ],
       [ "Compression", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html", "classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression" ],

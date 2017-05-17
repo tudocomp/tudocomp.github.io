@@ -117,6 +117,9 @@ $(document).ready(function(){initNavTree('classtdc_1_1json_1_1_value.html','');}
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a single value that can be represented as a JSON string.  
+ <a href="classtdc_1_1json_1_1_value.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_json_8hpp_source.html">Json.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for tdc::json::Value:</div>
@@ -124,22 +127,25 @@ Inheritance diagram for tdc::json::Value:</div>
  <div class="center">
   <img src="classtdc_1_1json_1_1_value.png" usemap="#tdc::json::Value_map" alt=""/>
   <map id="tdc::json::Value_map" name="tdc::json::Value_map">
-<area href="classtdc_1_1json_1_1_array.html" alt="tdc::json::Array" shape="rect" coords="0,56,135,80"/>
-<area href="classtdc_1_1json_1_1_object.html" alt="tdc::json::Object" shape="rect" coords="145,56,280,80"/>
-<area href="classtdc_1_1json_1_1_t_value.html" alt="tdc::json::TValue&lt; T &gt;" shape="rect" coords="290,56,425,80"/>
+<area href="classtdc_1_1json_1_1_array.html" title="Represents an array of values. " alt="tdc::json::Array" shape="rect" coords="0,56,135,80"/>
+<area href="classtdc_1_1json_1_1_object.html" title="Represents a JSON object that behaves like a dictionary. " alt="tdc::json::Object" shape="rect" coords="145,56,280,80"/>
+<area href="classtdc_1_1json_1_1_t_value.html" title="Template for containers of values that are supported by the std::ostream left shift operator for stri..." alt="tdc::json::TValue&lt; T &gt;" shape="rect" coords="290,56,425,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a33d8cbfabab62ec57f03185cb22f8bb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1json_1_1_value.html#a33d8cbfabab62ec57f03185cb22f8bb5">str</a> (std::ostream &amp;s, unsigned int level=0) const =0</td></tr>
+<tr class="memdesc:a33d8cbfabab62ec57f03185cb22f8bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes this value's JSON string representation into the given output stream.  <a href="#a33d8cbfabab62ec57f03185cb22f8bb5">More...</a><br /></td></tr>
 <tr class="separator:a33d8cbfabab62ec57f03185cb22f8bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb45adf173faabf0d18dc420fc824cd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1json_1_1_value.html#afeb45adf173faabf0d18dc420fc824cd">str</a> () const </td></tr>
+<tr class="memdesc:afeb45adf173faabf0d18dc420fc824cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this value's JSON string representation.  <a href="#afeb45adf173faabf0d18dc420fc824cd">More...</a><br /></td></tr>
 <tr class="separator:afeb45adf173faabf0d18dc420fc824cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_json_8hpp_source.html#l00015">15</a> of file <a class="el" href="_json_8hpp_source.html">Json.hpp</a>.</p>
+<div class="textblock"><p>Represents a single value that can be represented as a JSON string. </p>
+
+<p>Definition at line <a class="el" href="_json_8hpp_source.html#l00020">20</a> of file <a class="el" href="_json_8hpp_source.html">Json.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a33d8cbfabab62ec57f03185cb22f8bb5"></a>
 <div class="memitem">
@@ -173,7 +179,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classtdc_1_1json_1_1_object.html#a51ed9627d478f8381925a7edb922f648">tdc::json::Object</a>, <a class="el" href="classtdc_1_1json_1_1_array.html#a39bdc1a0cd2a536233f0acedb2b6d36c">tdc::json::Array</a>, <a class="el" href="classtdc_1_1json_1_1_t_value.html#a83a6277fd0663772f3c5723296d5f593">tdc::json::TValue&lt; T &gt;</a>, <a class="el" href="classtdc_1_1json_1_1_t_value.html#abca703286bd8b35cf000303fd063a834">tdc::json::TValue&lt; T &gt;</a>, and <a class="el" href="classtdc_1_1json_1_1_t_value.html#a4fd0963bea515af2b670d601b70373c2">tdc::json::TValue&lt; T &gt;</a>.</p>
+<p>Writes this value's JSON string representation into the given output stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>the output stream to write to </td></tr>
+    <tr><td class="paramname">level</td><td>the indentation level </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classtdc_1_1json_1_1_object.html#a51ed9627d478f8381925a7edb922f648">tdc::json::Object</a>, <a class="el" href="classtdc_1_1json_1_1_array.html#a39bdc1a0cd2a536233f0acedb2b6d36c">tdc::json::Array</a>, and <a class="el" href="classtdc_1_1json_1_1_t_value.html#a4fd0963bea515af2b670d601b70373c2">tdc::json::TValue&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -198,7 +213,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_json_8hpp_source.html#l00019">19</a> of file <a class="el" href="_json_8hpp_source.html">Json.hpp</a>.</p>
+<p>Returns this value's JSON string representation. </p>
+<dl class="section return"><dt>Returns</dt><dd>this value's JSON string representation </dd></dl>
+
+<p>Definition at line <a class="el" href="_json_8hpp_source.html#l00032">32</a> of file <a class="el" href="_json_8hpp_source.html">Json.hpp</a>.</p>
 
 </div>
 </div>

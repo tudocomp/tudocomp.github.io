@@ -1,8 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classtdc_1_1_array_max_heap.html#a407bcb5a2be91b48052cb612c1e6b4c1":[2,0,2,14,0],
-"classtdc_1_1_array_max_heap.html#a69f23a3a5049588de1e30104e0fad513":[2,0,2,14,5],
-"classtdc_1_1_array_max_heap.html#a852141f853097185e5c1ac8565163183":[2,0,2,14,2],
 "classtdc_1_1_array_max_heap.html#a941811d6b33f1cf29063487f6c515c3b":[2,0,2,14,4],
 "classtdc_1_1_array_max_heap.html#afcab4b9e83008a0edfe9bbecea3e6877":[2,0,2,14,1],
 "classtdc_1_1_b_w_t_compressor.html":[2,0,2,18],
@@ -249,5 +246,8 @@ var NAVTREEINDEX2 =
 "classtdc_1_1_elias_delta_coder_1_1_decoder.html":[2,0,2,38,0],
 "classtdc_1_1_elias_delta_coder_1_1_decoder.html#a8f462733e174bd4ab6ad0a478f04f813":[2,0,2,38,0,0],
 "classtdc_1_1_elias_delta_coder_1_1_encoder.html":[2,0,2,38,1],
-"classtdc_1_1_elias_delta_coder_1_1_encoder.html#a8606a49c4302fd83af387f9b1a82eda0":[2,0,2,38,1,0]
+"classtdc_1_1_elias_delta_coder_1_1_encoder.html#a8606a49c4302fd83af387f9b1a82eda0":[2,0,2,38,1,0],
+"classtdc_1_1_elias_gamma_coder.html":[2,0,2,39],
+"classtdc_1_1_elias_gamma_coder.html#a9bd5a96fe5ff0dec222119c80364683d":[2,0,2,39,2],
+"classtdc_1_1_elias_gamma_coder_1_1_decoder.html":[2,0,2,39,0]
 };

@@ -225,9 +225,6 @@ var NAVTREEINDEX0 =
 "_integer_base_8hpp.html#aed4cb5a3ed3183acc4d5743c77bc677c":[3,0,57,17],
 "_integer_base_8hpp_source.html":[3,0,57],
 "_json_8hpp.html":[3,0,63],
-"_json_8hpp.html#a1c2cdc2373606550b993b74e8e777b03":[3,0,63,6],
-"_json_8hpp.html#ad7282fc6204e6f063f9658729c170aa3":[3,0,63,5],
-"_json_8hpp.html#af2aa837ae32e91f9c67428ef22980804":[3,0,63,4],
 "_json_8hpp_source.html":[3,0,63],
 "_judy_trie_8hpp.html":[3,0,64],
 "_judy_trie_8hpp_source.html":[3,0,64],
@@ -249,5 +246,8 @@ var NAVTREEINDEX0 =
 "_l_z78_trie_8hpp.html#a98482623901d7ba270adeac84e665190":[3,0,71,4],
 "_l_z78_trie_8hpp.html#ab40dda32ca2fe3d56448663d984caec4":[3,0,71,3],
 "_l_z78_trie_8hpp_source.html":[3,0,71],
-"_l_z78_u_compressor_8hpp.html":[3,0,72]
+"_l_z78_u_compressor_8hpp.html":[3,0,72],
+"_l_z78_u_compressor_8hpp_source.html":[3,0,72],
+"_l_z_s_s_coding_8hpp.html":[3,0,73],
+"_l_z_s_s_coding_8hpp.html#a95bf7a3a8a84090beaa2d3b9bcd59f3f":[3,0,73,0]
 };

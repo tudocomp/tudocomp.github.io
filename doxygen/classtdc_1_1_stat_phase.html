@@ -118,49 +118,68 @@ $(document).ready(function(){initNavTree('classtdc_1_1_stat_phase.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Provides access to runtime and memory measurement in statistics phases.  
+ <a href="classtdc_1_1_stat_phase.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3eb2b4d977cf20d55a2bf362ed693fb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a3eb2b4d977cf20d55a2bf362ed693fb5">StatPhase</a> (const char *title)</td></tr>
+<tr class="memdesc:a3eb2b4d977cf20d55a2bf362ed693fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new statistics phase.  <a href="#a3eb2b4d977cf20d55a2bf362ed693fb5">More...</a><br /></td></tr>
 <tr class="separator:a3eb2b4d977cf20d55a2bf362ed693fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f87c964710b60dc0ca40c5dca3126df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a9f87c964710b60dc0ca40c5dca3126df">StatPhase</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a9f87c964710b60dc0ca40c5dca3126df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new statistics phase.  <a href="#a9f87c964710b60dc0ca40c5dca3126df">More...</a><br /></td></tr>
 <tr class="separator:a9f87c964710b60dc0ca40c5dca3126df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a654f91c0371ddc64a65254a348737e87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a654f91c0371ddc64a65254a348737e87">~StatPhase</a> ()</td></tr>
+<tr class="memdesc:a654f91c0371ddc64a65254a348737e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys and ends the phase.  <a href="#a654f91c0371ddc64a65254a348737e87">More...</a><br /></td></tr>
 <tr class="separator:a654f91c0371ddc64a65254a348737e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad07845511111415b949424aa9eb1ae23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#ad07845511111415b949424aa9eb1ae23">split</a> (const char *new_title)</td></tr>
+<tr class="memdesc:ad07845511111415b949424aa9eb1ae23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new phase as a sibling, reusing the same object.  <a href="#ad07845511111415b949424aa9eb1ae23">More...</a><br /></td></tr>
 <tr class="separator:ad07845511111415b949424aa9eb1ae23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a030f0e931ed68ba3ebc844940530742f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a030f0e931ed68ba3ebc844940530742f">split</a> (const std::string &amp;new_title)</td></tr>
+<tr class="memdesc:a030f0e931ed68ba3ebc844940530742f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new phase as a sibling, reusing the same object.  <a href="#a030f0e931ed68ba3ebc844940530742f">More...</a><br /></td></tr>
 <tr class="separator:a030f0e931ed68ba3ebc844940530742f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa194f7cf8098f5e48ca0885b56af7caa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa194f7cf8098f5e48ca0885b56af7caa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#aa194f7cf8098f5e48ca0885b56af7caa">log_stat</a> (const char *key, const T &amp;value)</td></tr>
+<tr class="memdesc:aa194f7cf8098f5e48ca0885b56af7caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a user statistic for this phase.  <a href="#aa194f7cf8098f5e48ca0885b56af7caa">More...</a><br /></td></tr>
 <tr class="separator:aa194f7cf8098f5e48ca0885b56af7caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e2210a96c67e6a2067df30ef86e31ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1json_1_1_object.html">json::Object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a7e2210a96c67e6a2067df30ef86e31ff">to_json</a> ()</td></tr>
+<tr class="memdesc:a7e2210a96c67e6a2067df30ef86e31ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the JSON representation of the measured data.  <a href="#a7e2210a96c67e6a2067df30ef86e31ff">More...</a><br /></td></tr>
 <tr class="separator:a7e2210a96c67e6a2067df30ef86e31ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a13ddbd33e2681155449a4716ec1ff886"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a13ddbd33e2681155449a4716ec1ff886"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a13ddbd33e2681155449a4716ec1ff886">wrap</a> (const char *title, F func) -&gt; typename std::result_of&lt; F(<a class="el" href="classtdc_1_1_stat_phase.html">StatPhase</a> &amp;)&gt;::type</td></tr>
+<tr class="memdesc:a13ddbd33e2681155449a4716ec1ff886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a lambda as a single statistics phase.  <a href="#a13ddbd33e2681155449a4716ec1ff886">More...</a><br /></td></tr>
 <tr class="separator:a13ddbd33e2681155449a4716ec1ff886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ada798d47449c0e45fb4752eba179d"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:ae2ada798d47449c0e45fb4752eba179d"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#ae2ada798d47449c0e45fb4752eba179d">wrap</a> (const char *title, F func) -&gt; typename std::result_of&lt; F()&gt;::type</td></tr>
+<tr class="memdesc:ae2ada798d47449c0e45fb4752eba179d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a lambda as a single statistics phase.  <a href="#ae2ada798d47449c0e45fb4752eba179d">More...</a><br /></td></tr>
 <tr class="separator:ae2ada798d47449c0e45fb4752eba179d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5cfed05ae45d831730fe9b2e512439f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#af5cfed05ae45d831730fe9b2e512439f">track_alloc</a> (size_t bytes)</td></tr>
+<tr class="memdesc:af5cfed05ae45d831730fe9b2e512439f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks a memory allocation of the given size for the current phase.  <a href="#af5cfed05ae45d831730fe9b2e512439f">More...</a><br /></td></tr>
 <tr class="separator:af5cfed05ae45d831730fe9b2e512439f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b859717026acff8bd7539ca23c83a4f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a9b859717026acff8bd7539ca23c83a4f">track_free</a> (size_t bytes)</td></tr>
+<tr class="memdesc:a9b859717026acff8bd7539ca23c83a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks a memory deallocation of the given size for the current phase.  <a href="#a9b859717026acff8bd7539ca23c83a4f">More...</a><br /></td></tr>
 <tr class="separator:a9b859717026acff8bd7539ca23c83a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61616705e4965099cb21dc0fc4cba676"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a61616705e4965099cb21dc0fc4cba676">pause_tracking</a> ()</td></tr>
+<tr class="memdesc:a61616705e4965099cb21dc0fc4cba676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pauses the tracking of memory allocations in the current phase.  <a href="#a61616705e4965099cb21dc0fc4cba676">More...</a><br /></td></tr>
 <tr class="separator:a61616705e4965099cb21dc0fc4cba676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1149c160613989e7b4f3d6076ed36887"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a1149c160613989e7b4f3d6076ed36887">resume_tracking</a> ()</td></tr>
+<tr class="memdesc:a1149c160613989e7b4f3d6076ed36887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes the tracking of memory allocations in the current phase.  <a href="#a1149c160613989e7b4f3d6076ed36887">More...</a><br /></td></tr>
 <tr class="separator:a1149c160613989e7b4f3d6076ed36887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d4036e3d03fca76b0c95c2af596068d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9d4036e3d03fca76b0c95c2af596068d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtdc_1_1_stat_phase.html#a9d4036e3d03fca76b0c95c2af596068d">log</a> (const char *key, const T &amp;value)</td></tr>
+<tr class="memdesc:a9d4036e3d03fca76b0c95c2af596068d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a user statistic for the current phase.  <a href="#a9d4036e3d03fca76b0c95c2af596068d">More...</a><br /></td></tr>
 <tr class="separator:a9d4036e3d03fca76b0c95c2af596068d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00015">15</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<div class="textblock"><p>Provides access to runtime and memory measurement in statistics phases. </p>
+<p>Phases are used to track runtime and memory allocations over the course of the application. The measured data can be printed as a JSON string for use in the tudocomp charter for visualization or third party applications. </p>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00021">21</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3eb2b4d977cf20d55a2bf362ed693fb5"></a>
 <div class="memitem">
@@ -184,7 +203,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00138">138</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Creates a new statistics phase. </p>
+<p>The new phase is started as a sub phase of the current phase and will immediately become the current phase.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>the phase title </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00204">204</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -210,7 +238,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00144">144</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Creates a new statistics phase. </p>
+<p>The new phase is started as a sub phase of the current phase and will immediately become the current phase.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>the phase title </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00216">216</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -235,7 +272,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00147">147</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Destroys and ends the phase. </p>
+<p>The phase's parent phase, if any, will become the current phase. </p>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00222">222</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +314,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00134">134</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Logs a user statistic for the current phase. </p>
+<p>User statistics will be stored in a special data block for a phase and is included in the JSON output.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the statistic key or name </td></tr>
+    <tr><td class="paramname">value</td><td>the value to log (will be converted to a string) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00194">194</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -312,7 +362,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00171">171</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Logs a user statistic for this phase. </p>
+<p>User statistics will be stored in a special data block for a phase and is included in the JSON output.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the statistic key or name </td></tr>
+    <tr><td class="paramname">value</td><td>the value to log (will be converted to a string) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00265">265</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +397,10 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00125">125</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Pauses the tracking of memory allocations in the current phase. </p>
+<p>Memory tracking is paused until <a class="el" href="classtdc_1_1_stat_phase.html#a61616705e4965099cb21dc0fc4cba676">pause_tracking</a> is called or the phase object is destroyed. </p>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00174">174</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -362,7 +425,10 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00129">129</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Resumes the tracking of memory allocations in the current phase. </p>
+<p>This only has an effect if tracking has previously been paused using <a class="el" href="classtdc_1_1_stat_phase.html#a61616705e4965099cb21dc0fc4cba676">pause_tracking</a>. </p>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00182">182</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -388,7 +454,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00152">152</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Starts a new phase as a sibling, reusing the same object. </p>
+<p>This function behaves exactly as if the current phase was ended and a new phases was started immediately after.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_title</td><td>the new phase title </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00233">233</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -414,7 +489,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00166">166</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Starts a new phase as a sibling, reusing the same object. </p>
+<p>This function behaves exactly as if the current phase was ended and a new phases was started immediately after.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_title</td><td>the new phase title </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00253">253</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -439,7 +523,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00177">177</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Constructs the JSON representation of the measured data. </p>
+<p>It contains the subtree of phases beneath this phase.</p>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classtdc_1_1json_1_1_object.html">json::Object</a> containing the JSON representation </dd></dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00276">276</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -465,7 +553,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00117">117</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Tracks a memory allocation of the given size for the current phase. </p>
+<p>Use this only if memory is allocated with methods that do not result in calls of <code>malloc</code> but should still be tracked (e.g., when using direct kernel allocations like memory mappings).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bytes</td><td>the amount of allocated bytes to track for the current phase </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00154">154</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -491,7 +588,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00121">121</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Tracks a memory deallocation of the given size for the current phase. </p>
+<p>Use this only if memory is allocated with methods that do not result in calls of <code>malloc</code> but should still be tracked (e.g., when using direct kernel allocations like memory mappings).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bytes</td><td>the amount of freed bytes to track for the current phase </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00166">166</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -529,7 +635,19 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00102">102</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Executes a lambda as a single statistics phase. </p>
+<p>The new phase is started as a sub phase of the current phase and will immediately become the current phase.</p>
+<p>In case the given lambda accepts a <code><a class="el" href="classtdc_1_1_stat_phase.html" title="Provides access to runtime and memory measurement in statistics phases. ">StatPhase</a></code> reference parameter, the phase object will be passed to it for use during execution.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>the phase title </td></tr>
+    <tr><td class="paramname">func</td><td>the lambda to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the return value of the lambda </dd></dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00119">119</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>
@@ -567,7 +685,19 @@ template&lt;typename F &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00110">110</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
+<p>Executes a lambda as a single statistics phase. </p>
+<p>The new phase is started as a sub phase of the current phase and will immediately become the current phase.</p>
+<p>In case the given lambda accepts a <code><a class="el" href="classtdc_1_1_stat_phase.html" title="Provides access to runtime and memory measurement in statistics phases. ">StatPhase</a></code> reference parameter, the phase object will be passed to it for use during execution.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>the phase title </td></tr>
+    <tr><td class="paramname">func</td><td>the lambda to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the return value of the lambda </dd></dl>
+
+<p>Definition at line <a class="el" href="_stat_phase_8hpp_source.html#l00138">138</a> of file <a class="el" href="_stat_phase_8hpp_source.html">StatPhase.hpp</a>.</p>
 
 </div>
 </div>

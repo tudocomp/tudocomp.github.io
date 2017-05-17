@@ -1,8 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classtdc_1_1_elias_gamma_coder.html":[2,0,2,39],
-"classtdc_1_1_elias_gamma_coder.html#a9bd5a96fe5ff0dec222119c80364683d":[2,0,2,39,2],
-"classtdc_1_1_elias_gamma_coder_1_1_decoder.html":[2,0,2,39,0],
 "classtdc_1_1_elias_gamma_coder_1_1_decoder.html#ad7f606aeaccbbfe1359a8e5723d6244a":[2,0,2,39,0,0],
 "classtdc_1_1_elias_gamma_coder_1_1_encoder.html":[2,0,2,39,1],
 "classtdc_1_1_elias_gamma_coder_1_1_encoder.html#aa4a86c9cd5c99b8064a0a88e7a17fe0e":[2,0,2,39,1,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX3 =
 "classtdc_1_1_literal_iterator.html#a1f35c6b3ddb3a06b604f75e448d9e72b":[2,0,2,73,0],
 "classtdc_1_1_literal_iterator.html#a9d011a0607038abd9530b85b52596e89":[2,0,2,73,1],
 "classtdc_1_1_literal_range.html":[2,0,2,74],
-"classtdc_1_1_literal_range.html#a6fcaf025796f7971cb841787915b4a93":[2,0,2,74,0]
+"classtdc_1_1_literal_range.html#a6fcaf025796f7971cb841787915b4a93":[2,0,2,74,0],
+"classtdc_1_1_m_t_f_compressor.html":[2,0,2,83],
+"classtdc_1_1_m_t_f_compressor.html#a092e0536c0d5b5947b0618a9d9426d79":[2,0,2,83,2],
+"classtdc_1_1_m_t_f_compressor.html#a0b0a31a5104cbb376ad971a4b451768b":[2,0,2,83,0]
 };

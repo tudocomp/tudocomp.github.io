@@ -108,104 +108,33 @@ $(document).ready(function(){initNavTree('namespacetdc_1_1json.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">tdc::json Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains a basic JSON builder implementation.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1json_1_1_array.html">Array</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an array of values.  <a href="classtdc_1_1json_1_1_array.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1json_1_1_object.html">Object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a JSON object that behaves like a dictionary.  <a href="classtdc_1_1json_1_1_object.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1json_1_1_t_value.html">TValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template for containers of values that are supported by the <code>std::ostream</code> left shift operator for string conversion.  <a href="classtdc_1_1json_1_1_t_value.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1json_1_1_value.html">Value</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a single value that can be represented as a JSON string.  <a href="classtdc_1_1json_1_1_value.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:af2aa837ae32e91f9c67428ef22980804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1json.html#af2aa837ae32e91f9c67428ef22980804">level_indent</a> (std::ostream &amp;s, unsigned int level)</td></tr>
-<tr class="separator:af2aa837ae32e91f9c67428ef22980804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ad7282fc6204e6f063f9658729c170aa3"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1json.html#ad7282fc6204e6f063f9658729c170aa3">quote_char</a> = '\&quot;'</td></tr>
-<tr class="separator:ad7282fc6204e6f063f9658729c170aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2cdc2373606550b993b74e8e777b03"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1json.html#a1c2cdc2373606550b993b74e8e777b03">quote_escape</a> = &quot;\\\&quot;&quot;</td></tr>
-<tr class="separator:a1c2cdc2373606550b993b74e8e777b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af2aa837ae32e91f9c67428ef22980804"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void tdc::json::level_indent </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_json_8hpp_source.html#l00011">11</a> of file <a class="el" href="_json_8hpp_source.html">Json.hpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ad7282fc6204e6f063f9658729c170aa3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char tdc::json::quote_char = '\&quot;'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_json_8hpp_source.html#l00041">41</a> of file <a class="el" href="_json_8hpp_source.html">Json.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1c2cdc2373606550b993b74e8e777b03"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string tdc::json::quote_escape = &quot;\\\&quot;&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_json_8hpp_source.html#l00042">42</a> of file <a class="el" href="_json_8hpp_source.html">Json.hpp</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains a basic JSON builder implementation. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

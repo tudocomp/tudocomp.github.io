@@ -1,7 +1,7 @@
 var searchData=
 [
   ['table_5fsize',['table_size',['../classtdc_1_1lz78_1_1_my_hash.html#ac5ea547f8ce7018a8c03438bd4e82586',1,'tdc::lz78::MyHash']]],
-  ['tellp',['tellp',['../classtdc_1_1io_1_1_bit_o_stream.html#a42a811b7bf099f4b2adfe47e387a9194',1,'tdc::io::BitOStream']]],
+  ['tellp',['tellp',['../classtdc_1_1io_1_1_bit_o_stream.html#a42a811b7bf099f4b2adfe47e387a9194',1,'tdc::io::BitOStream::tellp()'],['../classtdc_1_1io_1_1_output_stream.html#a6589733a261c8c5685010fa25a0b0e24',1,'tdc::io::OutputStream::tellp()']]],
   ['templated',['templated',['../classtdc_1_1_meta_1_1_option_builder.html#a161a698d22aa04f5fe18c662a2f33cb5',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)'],['../classtdc_1_1_meta_1_1_option_builder.html#acdf93b3e7cfcf8a59ae8184810f128f2',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)']]],
   ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html#a6ef2fdcd7aa0e72a783e4c0e4e1c0929',1,'tdc::TernaryCoder']]],
   ['ternarytrie',['TernaryTrie',['../classtdc_1_1lz78_1_1_ternary_trie.html#ab13255aea49f0944f592b3cff08bc506',1,'tdc::lz78::TernaryTrie']]],
@@ -11,7 +11,7 @@ var searchData=
   ['textds_5fflags',['textds_flags',['../classtdc_1_1lcpcomp_1_1_arrays_comp.html#a20be0141d6523be1ebf2d90a517d98e1',1,'tdc::lcpcomp::ArraysComp::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_boost_heap.html#a9b8067b6a3edd26bf09e136cd344c099',1,'tdc::lcpcomp::BoostHeap::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html#ad05ddb2416e256446a1b4fa9acb0f96d',1,'tdc::lcpcomp::BulldozerStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_heap_strategy.html#a24264fab6ae71fa0686fab37be2fc0e5',1,'tdc::lcpcomp::MaxHeapStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html#aceb22b7902c90bf6445ad48dade4b463',1,'tdc::lcpcomp::MaxLCPStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_naive_strategy.html#af2b6467732cee29d19b3b0e5afd60ad8',1,'tdc::lcpcomp::NaiveStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html#ae916528ba0a33fe32e66061f940f9c01',1,'tdc::lcpcomp::PLCPPeaksStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html#a1b657fa7e1664bddde6da85bed4f4c5d',1,'tdc::lcpcomp::PLCPStrategy::textds_flags()'],['../classtdc_1_1_algorithm_value.html#a8dc15ea36d441cede9d2113a677a5797',1,'tdc::AlgorithmValue::textds_flags()']]],
   ['textliterals',['TextLiterals',['../classtdc_1_1lzss_1_1_text_literals.html#ada0fd88fa463d2e2bb57a275d3a6c615',1,'tdc::lzss::TextLiterals']]],
   ['to_5falgorithm',['to_algorithm',['../classtdc_1_1_option_value.html#a65e2219c61e6589dae65098faf99217a',1,'tdc::OptionValue']]],
-  ['to_5fjson',['to_json',['../classtdc_1_1_stat_phase.html#a7e2210a96c67e6a2067df30ef86e31ff',1,'tdc::StatPhase::to_json()'],['../classtdc_1_1_stat_phase_dummy.html#ad07debd9634166133d098377b57c936b',1,'tdc::StatPhaseDummy::to_json()']]],
+  ['to_5fjson',['to_json',['../classtdc_1_1_stat_phase.html#a7e2210a96c67e6a2067df30ef86e31ff',1,'tdc::StatPhase']]],
   ['to_5fstr',['to_str',['../namespacetdc.html#aa2239ba97875cc0883cf1423a3fcc821',1,'tdc']]],
   ['top',['top',['../classtdc_1_1_array_max_heap.html#a08208b4891a93bd50fd556c96dc88bd4',1,'tdc::ArrayMaxHeap']]],
   ['total_5fsize',['total_size',['../classcedar_1_1da.html#a09210838350134b687577d3bd2f3c8cf',1,'cedar::da']]],
@@ -25,14 +25,14 @@ var searchData=
   ['tr_5fpartialcopy',['tr_partialcopy',['../namespacetdc_1_1libdivsufsort.html#aae08d41b8a0146e43ae1053312719be4',1,'tdc::libdivsufsort']]],
   ['tr_5fpartition',['tr_partition',['../namespacetdc_1_1libdivsufsort.html#a9149028c824acb291fbb9e32adc905aa',1,'tdc::libdivsufsort']]],
   ['tr_5fpivot',['tr_pivot',['../namespacetdc_1_1libdivsufsort.html#a91c76a1b78df13b5338f3f45eb6e32ed',1,'tdc::libdivsufsort']]],
-  ['track_5falloc',['track_alloc',['../classtdc_1_1_stat_phase.html#af5cfed05ae45d831730fe9b2e512439f',1,'tdc::StatPhase::track_alloc()'],['../classtdc_1_1_stat_phase_dummy.html#aacc732c249be5136d2b27d3d6601cdc0',1,'tdc::StatPhaseDummy::track_alloc()']]],
-  ['track_5ffree',['track_free',['../classtdc_1_1_stat_phase.html#a9b859717026acff8bd7539ca23c83a4f',1,'tdc::StatPhase::track_free()'],['../classtdc_1_1_stat_phase_dummy.html#a37755d4f50de717882e361e8e34709e0',1,'tdc::StatPhaseDummy::track_free()']]],
+  ['track_5falloc',['track_alloc',['../classtdc_1_1_stat_phase.html#af5cfed05ae45d831730fe9b2e512439f',1,'tdc::StatPhase']]],
+  ['track_5ffree',['track_free',['../classtdc_1_1_stat_phase.html#a9b859717026acff8bd7539ca23c83a4f',1,'tdc::StatPhase']]],
   ['traverse',['traverse',['../classcedar_1_1da.html#ae93e1945394d8485a6aa0051e89d9426',1,'cedar::da::traverse(const char *key, size_t &amp;from, size_t &amp;pos) const '],['../classcedar_1_1da.html#a0b724a5a86ff160087d6f67a1e14645a',1,'cedar::da::traverse(const char *key, size_t &amp;from, size_t &amp;pos, size_t len) const ']]],
   ['trbudget_5fcheck',['trbudget_check',['../namespacetdc_1_1libdivsufsort.html#a22b04b5d32322b4fe786a0326476b30b',1,'tdc::libdivsufsort']]],
   ['trbudget_5finit',['trbudget_init',['../namespacetdc_1_1libdivsufsort.html#a8e1a985a2750f9bb11a0e491fdd8f967',1,'tdc::libdivsufsort']]],
   ['trienode',['TrieNode',['../classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html#ad2e62c7408997e8e24ca07dde2c502aa',1,'tdc::lz78::TrieNode&lt; CedarSearchPos &gt;::TrieNode(const factorid_t &amp;id, const CedarSearchPos &amp;search_pos)'],['../classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html#ac4db5e8f645c175656b06e552b7d5a9a',1,'tdc::lz78::TrieNode&lt; CedarSearchPos &gt;::TrieNode()'],['../classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#aa3962d92738721c29a76b5e6221bb123',1,'tdc::lz78::TrieNode&lt; factorid_t &gt;::TrieNode(const factorid_t &amp;id_and_search_pos)'],['../classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#aa01a0db69649fb237bcc05dbca9f5d71',1,'tdc::lz78::TrieNode&lt; factorid_t &gt;::TrieNode()']]],
   ['trsort',['trsort',['../namespacetdc_1_1libdivsufsort.html#af4b38183dcd965bd36ba17d2af20a0e0',1,'tdc::libdivsufsort']]],
-  ['tvalue',['TValue',['../classtdc_1_1json_1_1_t_value.html#aa47bbdb9c69b971fd224c14cebef9ea1',1,'tdc::json::TValue::TValue(const T &amp;value)'],['../classtdc_1_1json_1_1_t_value.html#abbe8a193b182cac5fc60c9bf241a2b0f',1,'tdc::json::TValue::TValue(const std::string &amp;value)']]],
+  ['tvalue',['TValue',['../classtdc_1_1json_1_1_t_value.html#aa47bbdb9c69b971fd224c14cebef9ea1',1,'tdc::json::TValue']]],
   ['type',['type',['../classtdc_1_1_meta.html#aeda433bf2ee43daa4f234d6deeb21465',1,'tdc::Meta']]],
   ['typerange',['TypeRange',['../classtdc_1_1_type_range.html#ad2e37b441ddf0a72fe760a602c4c45c0',1,'tdc::TypeRange']]]
 ];

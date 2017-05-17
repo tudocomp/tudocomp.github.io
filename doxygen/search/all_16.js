@@ -9,7 +9,7 @@ var searchData=
   ['vec_5fto_5fdebug_5fstring',['vec_to_debug_string',['../namespacetdc.html#a11c8af96b81f9b7f02eced993f32d637',1,'tdc']]],
   ['vectorstreambuffer_2ehpp',['VectorStreamBuffer.hpp',['../_vector_stream_buffer_8hpp.html',1,'']]],
   ['version',['version',['../classtdc__driver_1_1_options.html#a74033751c58b452172802c6f702807e9',1,'tdc_driver::Options']]],
-  ['view',['View',['../classtdc_1_1io_1_1_input_source.html#ae7092c3edad9f91ecf66d0315092f252a4351cfebe4b61d8aa5efa1d020710005',1,'tdc::io::InputSource::View()'],['../classtdc_1_1io_1_1_input_source.html#ac9942c9e7b152ee9976f059245fda4eb',1,'tdc::io::InputSource::view() const '],['../namespacetdc.html#a475010a15fbd0ea29e5c6940b1e30d3b',1,'tdc::View()']]],
+  ['view',['view',['../classtdc_1_1io_1_1_input_source.html#ac9942c9e7b152ee9976f059245fda4eb',1,'tdc::io::InputSource::view() const '],['../classtdc_1_1io_1_1_input_source.html#ae7092c3edad9f91ecf66d0315092f252a4351cfebe4b61d8aa5efa1d020710005',1,'tdc::io::InputSource::View()'],['../namespacetdc.html#a475010a15fbd0ea29e5c6940b1e30d3b',1,'tdc::View()']]],
   ['view_2ehpp',['View.hpp',['../_view_8hpp.html',1,'']]],
   ['viewliterals',['ViewLiterals',['../classtdc_1_1_view_literals.html',1,'tdc']]],
   ['viewliterals',['ViewLiterals',['../classtdc_1_1_view_literals.html#a0e7ea3602dda6128d567ff4c7fa662fc',1,'tdc::ViewLiterals']]],

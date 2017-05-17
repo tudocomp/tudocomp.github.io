@@ -54,7 +54,10 @@
 <li><a href="#producing-an-output">Producing an Output</a></li>
 <li><a href="#bitwise-io">Bitwise I/O</a></li>
 </ul></li>
-<li><a href="#arbitrary-width-integer-vectors">Arbitrary-Width Integer Vectors</a></li>
+<li><a href="#arbitrary-width-integer-vectors">Arbitrary-Width Integer Vectors</a><ul>
+<li><a href="#static-width-integer-vectors">Static-width integer vectors</a></li>
+<li><a href="#dynamic-width-integer-vectors">Dynamic-width integer vectors</a></li>
+</ul></li>
 <li><a href="#algorithms">Algorithms</a><ul>
 <li><a href="#meta-information">Meta Information</a></li>
 <li><a href="#environment">Environment</a></li>
@@ -372,21 +375,10 @@ obits.write_int(b); <span class="co">// write the value 27 using 8*sizeof(uint8_
 <p><em>tudocomp</em> provides types and classes to allow the use of arbitrary-width integers and vectors thereof. These are not limited to a default widths of 8, 16, 32 or 64 bits, but can be stored using any amount of bits as necessary.</p>
 <p>The template class <a href="../doxygen/classtdc_1_1uint__t.html"><code>uint_t</code></a> is used to store single arbitrary-width integers. For instance, the specialization <code>uint_t&lt;40&gt;</code> can be used to represent values up to 2<sup>40</sup>-1. <code>uint_t</code> typically behaves like any other unsigned integer type, providing the respective operators and automatic casts.</p>
 <p>The true power of arbitrary-width integers feature is unleashed by using the <a href="../doxygen/classtdc_1_1int__vector_1_1_int_vector.html"><code>IntVector</code></a> class to store sequences of them. Instead of storing values in a byte-aligned way like standard vectors, <code>IntVector</code> stores them as a sequence of bits. This can dramatically reduce the size of vectors when the optimal bit width required for storing a single is not a power of two.</p>
-<p><code>IntVector</code> can be used in two different ways:</p>
-<dl>
-<dt>Static:</dt>
-<dd>The bit width of values is fixed at compile time. This is the standard behaviozr if, for example, <code>IntVector&lt;uint_t&lt;40&gt;&gt;</code> is used for vectors of 40-bit integers.
-</dd>
-<dd>A common use case for this is also the <a href="../doxygen/namespacetdc.html#a393098dfa57d20d082394cdaa8e61d96"><code>BitVector</code></a> specialization, an alias for <code>IntVector&lt;uint_t&lt;1&gt;&gt;</code>, which effectively implements bit vectors.
-</dd>
-<dt>Dynamic:</dt>
-<dd>The bit width of values can be dynamically altered at runtime.
-</dd>
-<dd>This is useful when the required width depends on previously processed input (e.g. a text length). It can also be used to bit-compress an integer vector after its initial construction.
-</dd>
-<dd>For this, the specialization <a href="../doxygen/namespacetdc.html#a52f0bacbb2e33c486c47e8f351545852"><code>DynamicIntVector</code></a> is used (which is merely an alias for <code>IntVector&lt;dynamic_t&gt;</code>).
-</dd>
-</dl>
+<p><code>IntVector</code> can be used with static or dynamic bit widths as explained in the following sections.</p>
+<h3 id="static-width-integer-vectors">Static-width integer vectors</h3>
+<p>The bit width of values in static-width integer vectors is fixed at compile time. This is the standard behaviour if, for example, <code>IntVector&lt;uint_t&lt;40&gt;&gt;</code> is used for vectors of 40-bit integers.</p>
+<p>A notable use case for this is the <a href="../doxygen/namespacetdc.html#a393098dfa57d20d082394cdaa8e61d96"><code>BitVector</code></a> specialization, an alias for <code>IntVector&lt;uint_t&lt;1&gt;&gt;</code>, which effectively implements bit vectors.</p>
 <p>The following example illustrates the use of <code>IntVector</code> in a static way:</p>
 <div class="sourceCode" caption="int_vector.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// reserve a vector of 32 4-bit integers (initialized as zero)</span>
 IntVector&lt;<span class="dt">uint_t</span>&lt;<span class="dv">4</span>&gt;&gt; iv4(<span class="dv">32</span>);
@@ -407,6 +399,9 @@ BitVector bv(<span class="dv">32</span>);
 <span class="cf">for</span>(<span class="dt">len_t</span> i = <span class="dv">0</span>; i &lt; <span class="dv">32</span>; i++) bv[i] = ((iv4[i] % <span class="dv">3</span>) == <span class="dv">0</span>);</code></pre></div>
 <p>This example also demonstrates how <code>IntVector</code> is implemented in a fully STL-compatible way.</p>
 <p>Note how arbitrary-width integers overflow in the expected fashion: <code>iv4[16]</code> (which should be 16 according to <a href="http://en.cppreference.com/w/cpp/algorithm/iota"><code>std::iota</code></a>) equals <code>iv4[0]</code> (which is zero).</p>
+<h3 id="dynamic-width-integer-vectors">Dynamic-width integer vectors</h3>
+<p>Using the specialization <a href="../doxygen/namespacetdc.html#a52f0bacbb2e33c486c47e8f351545852"><code>DynamicIntVector</code></a> (which is an alias for <code>IntVector&lt;dynamic_t&gt;</code>), the bit width of values can be dynamically altered at runtime.</p>
+<p>This is useful when the required width depends on previously processed input (e.g. a text length). It can also be used to bit-compress an integer vector after its initial construction.</p>
 <p>The following is an example for the usage of <code>DynamicIntVector</code>:</p>
 <div class="sourceCode" caption="int_vector.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// reserve a vector for 20 integer values (initialized as zero)</span>
 <span class="co">// default to a width of 32 bits per value</span>
