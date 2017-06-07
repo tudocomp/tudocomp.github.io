@@ -237,7 +237,13 @@ $ make</code></pre>
 </dd>
 </dl>
 <h2 id="library">Library</h2>
-<p>The library part of <em>tudocomp</em> is generated as the <code>libtudocomp_algorithms.a</code> artifact that can be used for static linking. Using this and the headers (located in the <code>include</code> directory tree), <em>tudocomp</em> can be used as an external library in third-party applications.</p>
+<p>In order to use <em>tudocomp</em> as an external library in another application, the following steps are necessary:</p>
+<ol style="list-style-type: decimal">
+<li>Build <em>tudocomp</em></li>
+<li>Point the compiler to the <code>include</code> directory for includes</li>
+<li>Statically link <code>&lt;build_dir&gt;/src/tudocomp_stat/libtudocomp_stat.a</code> (where <code>&lt;build_dir&gt;</code> is the location where <em>tudocomp</em> has been built in)</li>
+</ol>
+<p>Note that the aforementioned <a href="#dependencies">dependencies</a> need to be linked as well.</p>
 <p>The <a href="../doxygen">Doxygen documentation</a> provides an overview of the framework's full API, including the contained compression and encoding implementations.</p>
 <h2 id="license">License</h2>
 <p>The framework is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.</p>
