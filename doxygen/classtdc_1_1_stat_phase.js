@@ -1,5 +1,6 @@
 var classtdc_1_1_stat_phase =
 [
+    [ "StatPhase", "classtdc_1_1_stat_phase.html#aeaffeec2656051f1456ba5e967391217", null ],
     [ "StatPhase", "classtdc_1_1_stat_phase.html#a3eb2b4d977cf20d55a2bf362ed693fb5", null ],
     [ "StatPhase", "classtdc_1_1_stat_phase.html#a9f87c964710b60dc0ca40c5dca3126df", null ],
     [ "~StatPhase", "classtdc_1_1_stat_phase.html#a654f91c0371ddc64a65254a348737e87", null ],

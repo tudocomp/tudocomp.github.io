@@ -141,6 +141,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a63d3ce89a155cdaf51de371cf03e4a54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a63d3ce89a155cdaf51de371cf03e4a54">IF_DEBUG</a>(x)</td></tr>
 <tr class="memdesc:a63d3ce89a155cdaf51de371cf03e4a54"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>x</code> is compiled only in debug builds.  <a href="#a63d3ce89a155cdaf51de371cf03e4a54">More...</a><br /></td></tr>
 <tr class="separator:a63d3ce89a155cdaf51de371cf03e4a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1734b3ada3968f3601877db95fa57d76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a1734b3ada3968f3601877db95fa57d76">GOOGLE_STRIP_LOG</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a1734b3ada3968f3601877db95fa57d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846f4b36328a1617324bc504d47cd96e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a846f4b36328a1617324bc504d47cd96e">IF_PARANOID</a>(x)</td></tr>
 <tr class="memdesc:a846f4b36328a1617324bc504d47cd96e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>x</code> is compiled only in debug builds and when the <code>PARANOID</code> macro is defined.  <a href="#a846f4b36328a1617324bc504d47cd96e">More...</a><br /></td></tr>
 <tr class="separator:a846f4b36328a1617324bc504d47cd96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,40 +152,64 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">tdc::len_t</a></td></tr>
-<tr class="memdesc:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent input lengths.  <a href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">More...</a><br /></td></tr>
-<tr class="separator:aa6b4c54c0897b49bf3c9e3f9f71ec408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe7b473912ea68197e905d0a2059e0a4"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">tdc::literal_t</a></td></tr>
-<tr class="memdesc:afe7b473912ea68197e905d0a2059e0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent signed single literals.  <a href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">More...</a><br /></td></tr>
-<tr class="separator:afe7b473912ea68197e905d0a2059e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83a48cf82def7e8690fa0f1c92996486"><td class="memItemLeft" align="right" valign="top">typedef std::make_unsigned&lt; literal_t &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">tdc::uliteral_t</a></td></tr>
-<tr class="memdesc:a83a48cf82def7e8690fa0f1c92996486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent unsigned single literals.  <a href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">More...</a><br /></td></tr>
-<tr class="separator:a83a48cf82def7e8690fa0f1c92996486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb094a6e4f3d67edf3c8b4df87b51766"><td class="memTemplParams" colspan="2">template&lt;typename actual_type &gt; </td></tr>
+<tr class="memitem:aeb094a6e4f3d67edf3c8b4df87b51766"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aeb094a6e4f3d67edf3c8b4df87b51766">tdc::fast_t</a> = typename FastIntType&lt; actual_type &gt;::Type</td></tr>
+<tr class="memdesc:aeb094a6e4f3d67edf3c8b4df87b51766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent integer values in the size range of <code>actual_type</code> that may require more Bits than it, while being faster.  <a href="namespacetdc.html#aeb094a6e4f3d67edf3c8b4df87b51766">More...</a><br /></td></tr>
+<tr class="separator:aeb094a6e4f3d67edf3c8b4df87b51766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1a10af5271b25b4f66151c1d1ec066"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">tdc::len_compact_t</a> = uint32_t</td></tr>
+<tr class="memdesc:a6b1a10af5271b25b4f66151c1d1ec066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent an bit-compact length value.  <a href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">More...</a><br /></td></tr>
+<tr class="separator:a6b1a10af5271b25b4f66151c1d1ec066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c49b6168a43474b54fa7c1a780c5f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">tdc::len_t</a> = fast_t&lt; len_compact_t &gt;</td></tr>
+<tr class="memdesc:a91c49b6168a43474b54fa7c1a780c5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent an length value.  <a href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">More...</a><br /></td></tr>
+<tr class="separator:a91c49b6168a43474b54fa7c1a780c5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0561fec911b97d69536bb6e109ccea8"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">tdc::uliteral_t</a></td></tr>
+<tr class="memdesc:ac0561fec911b97d69536bb6e109ccea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type to represent signed single literals.  <a href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">More...</a><br /></td></tr>
+<tr class="separator:ac0561fec911b97d69536bb6e109ccea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a3f8e4bdf3e55a326c43e82c67a201b1a">tdc::literal2int</a> (const T &amp;c)</td></tr>
-<tr class="memdesc:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a literal to an unsigned integer value.  <a href="namespacetdc.html#a3f8e4bdf3e55a326c43e82c67a201b1a">More...</a><br /></td></tr>
-<tr class="separator:a3f8e4bdf3e55a326c43e82c67a201b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e140382dd6856ccdec03019015281e"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:aa0e140382dd6856ccdec03019015281e"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aa0e140382dd6856ccdec03019015281e">tdc::literal2int</a> (const literal_t &amp;c)</td></tr>
-<tr class="memdesc:aa0e140382dd6856ccdec03019015281e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a signed literal to an unsigned integer value.  <a href="namespacetdc.html#aa0e140382dd6856ccdec03019015281e">More...</a><br /></td></tr>
-<tr class="separator:aa0e140382dd6856ccdec03019015281e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ec22398024c076f281bb62b2695c8e"><td class="memTemplParams" colspan="2">template&lt;typename T  = size_t&gt; </td></tr>
+<tr class="memitem:a60ec22398024c076f281bb62b2695c8e"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a60ec22398024c076f281bb62b2695c8e">tdc::literal2int</a> (uliteral_t c)</td></tr>
+<tr class="memdesc:a60ec22398024c076f281bb62b2695c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a literal to an integer value as if unsigned.  <a href="namespacetdc.html#a60ec22398024c076f281bb62b2695c8e">More...</a><br /></td></tr>
+<tr class="separator:a60ec22398024c076f281bb62b2695c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87bc1d644edd87f2313159736dfafbcb"><td class="memTemplParams" colspan="2">template&lt;typename T  = size_t&gt; </td></tr>
+<tr class="memitem:a87bc1d644edd87f2313159736dfafbcb"><td class="memTemplItemLeft" align="right" valign="top">constexpr uliteral_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a87bc1d644edd87f2313159736dfafbcb">tdc::int2literal</a> (const T &amp;c)</td></tr>
+<tr class="memdesc:a87bc1d644edd87f2313159736dfafbcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an integer value to a literal as if unsigned.  <a href="namespacetdc.html#a87bc1d644edd87f2313159736dfafbcb">More...</a><br /></td></tr>
+<tr class="separator:a87bc1d644edd87f2313159736dfafbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a920f87726ac2ea33688187352607343e"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a920f87726ac2ea33688187352607343e">tdc::LEN_MAX</a> = std::numeric_limits&lt;len_t&gt;::max()</td></tr>
-<tr class="memdesc:a920f87726ac2ea33688187352607343e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>.  <a href="namespacetdc.html#a920f87726ac2ea33688187352607343e">More...</a><br /></td></tr>
-<tr class="separator:a920f87726ac2ea33688187352607343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#aafe2c20214884f91eaa4522ab68e7cb1">tdc::LEN_BITS</a> = 8 * sizeof(len_t)</td></tr>
-<tr class="memdesc:aafe2c20214884f91eaa4522ab68e7cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of bits required to store the binary representation of a value of type <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>.  <a href="namespacetdc.html#aafe2c20214884f91eaa4522ab68e7cb1">More...</a><br /></td></tr>
-<tr class="separator:aafe2c20214884f91eaa4522ab68e7cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26eb887b05d5f2f2edc706f987163d87"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a26eb887b05d5f2f2edc706f987163d87">tdc::INDEX_MAX</a> = std::numeric_limits&lt;len_compact_t&gt;::max()</td></tr>
+<tr class="memdesc:a26eb887b05d5f2f2edc706f987163d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a>.  <a href="namespacetdc.html#a26eb887b05d5f2f2edc706f987163d87">More...</a><br /></td></tr>
+<tr class="separator:a26eb887b05d5f2f2edc706f987163d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d55c66c1f952d49a1a921fabb1cca8"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a88d55c66c1f952d49a1a921fabb1cca8">tdc::INDEX_BITS</a> = 8 * sizeof(len_compact_t)</td></tr>
+<tr class="memdesc:a88d55c66c1f952d49a1a921fabb1cca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of bits required to store the binary representation of a value of type <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a>.  <a href="namespacetdc.html#a88d55c66c1f952d49a1a921fabb1cca8">More...</a><br /></td></tr>
+<tr class="separator:a88d55c66c1f952d49a1a921fabb1cca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f85e2399b98b6988defb77c6fa9fa0"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a33f85e2399b98b6988defb77c6fa9fa0">tdc::INDEX_FAST_MAX</a> = std::numeric_limits&lt;len_t&gt;::max()</td></tr>
+<tr class="memdesc:a33f85e2399b98b6988defb77c6fa9fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a>.  <a href="namespacetdc.html#a33f85e2399b98b6988defb77c6fa9fa0">More...</a><br /></td></tr>
+<tr class="separator:a33f85e2399b98b6988defb77c6fa9fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44a44d2d1c9218b4a5c067a9a1b0715"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ab44a44d2d1c9218b4a5c067a9a1b0715">tdc::INDEX_FAST_BITS</a> = 8 * sizeof(len_t)</td></tr>
+<tr class="memdesc:ab44a44d2d1c9218b4a5c067a9a1b0715"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of bits required to store the binary representation of a value of type <a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a>.  <a href="namespacetdc.html#ab44a44d2d1c9218b4a5c067a9a1b0715">More...</a><br /></td></tr>
+<tr class="separator:ab44a44d2d1c9218b4a5c067a9a1b0715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a9b7810543e309eaaa60915ff205c52"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52">tdc::ULITERAL_MAX</a> = std::numeric_limits&lt;uliteral_t&gt;::max()</td></tr>
-<tr class="memdesc:a8a9b7810543e309eaaa60915ff205c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>.  <a href="namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52">More...</a><br /></td></tr>
+<tr class="memdesc:a8a9b7810543e309eaaa60915ff205c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>.  <a href="namespacetdc.html#a8a9b7810543e309eaaa60915ff205c52">More...</a><br /></td></tr>
 <tr class="separator:a8a9b7810543e309eaaa60915ff205c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a1734b3ada3968f3601877db95fa57d76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GOOGLE_STRIP_LOG&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00038">38</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a63d3ce89a155cdaf51de371cf03e4a54"></a>
 <div class="memitem">
 <div class="memproto">
@@ -220,7 +246,7 @@ Variables</h2></td></tr>
 
 <p><code>x</code> is compiled only in debug builds and when the <code>PARANOID</code> macro is defined. </p>
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00043">43</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00049">49</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>
@@ -240,7 +266,7 @@ Variables</h2></td></tr>
 
 <p><code>x</code> is compiled only when the <code>STATS_DISABLED</code> macro is undefined. </p>
 
-<p>Definition at line <a class="el" href="def_8hpp_source.html#l00053">53</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
+<p>Definition at line <a class="el" href="def_8hpp_source.html#l00059">59</a> of file <a class="el" href="def_8hpp_source.html">def.hpp</a>.</p>
 
 </div>
 </div>

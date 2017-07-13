@@ -120,12 +120,12 @@ Functions</h2></td></tr>
 <tr class="memitem:adb93111bd48a0fc0481e0ea5e11b88bb"><td class="memTemplItemLeft" align="right" valign="top">text_t::value_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a> (const text_t &amp;text, const sa_t &amp;sa, const size_t i)</td></tr>
 <tr class="memdesc:adb93111bd48a0fc0481e0ea5e11b88bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the value BWT[i] of a text T given its suffix array SA Runs in O(1) time since BWT[i] = SA[(T[i]-1) mod |SA|].  <a href="#adb93111bd48a0fc0481e0ea5e11b88bb">More...</a><br /></td></tr>
 <tr class="separator:adb93111bd48a0fc0481e0ea5e11b88bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69fd9959c29d70088526b658b4262b13"><td class="memTemplParams" colspan="2">template&lt;typename bwt_t &gt; </td></tr>
-<tr class="memitem:a69fd9959c29d70088526b658b4262b13"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#a69fd9959c29d70088526b658b4262b13">compute_LF</a> (const bwt_t &amp;<a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a>, const size_t bwt_length)</td></tr>
-<tr class="memdesc:a69fd9959c29d70088526b658b4262b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the LF table used for decoding the BWT Input is a BWT and its length.  <a href="#a69fd9959c29d70088526b658b4262b13">More...</a><br /></td></tr>
-<tr class="separator:a69fd9959c29d70088526b658b4262b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8878eac76925045382fc0e10531d79e5"><td class="memTemplParams" colspan="2">template&lt;typename bwt_t &gt; </td></tr>
+<tr class="memitem:a8878eac76925045382fc0e10531d79e5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#a8878eac76925045382fc0e10531d79e5">compute_LF</a> (const bwt_t &amp;<a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a>, const size_t bwt_length)</td></tr>
+<tr class="memdesc:a8878eac76925045382fc0e10531d79e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the LF table used for decoding the BWT Input is a BWT and its length.  <a href="#a8878eac76925045382fc0e10531d79e5">More...</a><br /></td></tr>
+<tr class="separator:a8878eac76925045382fc0e10531d79e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="memTemplParams" colspan="2">template&lt;typename bwt_t &gt; </td></tr>
-<tr class="memitem:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#a72eb08ca65f9d69ab36d778dff30a3c5">decode_bwt</a> (const bwt_t &amp;<a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a>)</td></tr>
+<tr class="memitem:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#a72eb08ca65f9d69ab36d778dff30a3c5">decode_bwt</a> (const bwt_t &amp;<a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a>)</td></tr>
 <tr class="memdesc:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a BWT It is assumed that the BWT is stored in a container with access to operator[] and .size()  <a href="#a72eb08ca65f9d69ab36d778dff30a3c5">More...</a><br /></td></tr>
 <tr class="separator:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -176,14 +176,14 @@ template&lt;typename text_t , typename sa_t &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a69fd9959c29d70088526b658b4262b13"></a>
+<a class="anchor" id="a8878eac76925045382fc0e10531d79e5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename bwt_t &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>* tdc::bwt::compute_LF </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a>* tdc::bwt::compute_LF </td>
           <td>(</td>
           <td class="paramtype">const bwt_t &amp;&#160;</td>
           <td class="paramname"><em>bwt</em>, </td>
@@ -215,7 +215,7 @@ template&lt;typename bwt_t &gt; </div>
 template&lt;typename bwt_t &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>* tdc::bwt::decode_bwt </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>* tdc::bwt::decode_bwt </td>
           <td>(</td>
           <td class="paramtype">const bwt_t &amp;&#160;</td>
           <td class="paramname"><em>bwt</em></td><td>)</td>

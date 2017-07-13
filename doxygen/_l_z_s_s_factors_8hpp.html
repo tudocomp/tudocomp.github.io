@@ -116,7 +116,11 @@ $(document).ready(function(){initNavTree('_l_z_s_s_factors_8hpp.html','');});
 <div class="title">LZSSFactors.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;tuple&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="def_8hpp_source.html">tudocomp/def.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_int_vector_8hpp_source.html">tudocomp/ds/IntVector.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stat_phase_8hpp_source.html">tudocomp_stat/StatPhase.hpp</a>&gt;</code><br />
 </div>
 <p><a href="_l_z_s_s_factors_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -145,12 +149,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab2e914ac2e0b5d74a5079c58903ba5a9"><td class="memItemLeft" align="right" valign="top">len_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_z_s_s_factors_8hpp.html#ab2e914ac2e0b5d74a5079c58903ba5a9">pos</a></td></tr>
-<tr class="separator:ab2e914ac2e0b5d74a5079c58903ba5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ba9257e111b0340397956cc03b26148"><td class="memItemLeft" align="right" valign="top">len_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_z_s_s_factors_8hpp.html#a5ba9257e111b0340397956cc03b26148">src</a></td></tr>
-<tr class="separator:a5ba9257e111b0340397956cc03b26148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ace850f65d5318bf76fb93d5901e60b"><td class="memItemLeft" align="right" valign="top">len_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_z_s_s_factors_8hpp.html#a0ace850f65d5318bf76fb93d5901e60b">len</a></td></tr>
-<tr class="separator:a0ace850f65d5318bf76fb93d5901e60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552aece07a8f126c07875f092b663e5d"><td class="memItemLeft" align="right" valign="top">len_compact_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_z_s_s_factors_8hpp.html#a552aece07a8f126c07875f092b663e5d">pos</a></td></tr>
+<tr class="separator:a552aece07a8f126c07875f092b663e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00dd721247f210a33b702986f2f55078"><td class="memItemLeft" align="right" valign="top">len_compact_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_z_s_s_factors_8hpp.html#a00dd721247f210a33b702986f2f55078">src</a></td></tr>
+<tr class="separator:a00dd721247f210a33b702986f2f55078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416f93fab6af9e14b19cdaa40c4c3ebf"><td class="memItemLeft" align="right" valign="top">len_compact_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_z_s_s_factors_8hpp.html#a416f93fab6af9e14b19cdaa40c4c3ebf">len</a></td></tr>
+<tr class="separator:a416f93fab6af9e14b19cdaa40c4c3ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96c9ef855130c9a9fef6d8cbed024c78"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classtdc_1_1lzss_1_1_factor_buffer.html">tdc::lzss::FactorBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lzss.html#a96c9ef855130c9a9fef6d8cbed024c78">tdc::lzss::__attribute__</a></td></tr>
 <tr class="separator:a96c9ef855130c9a9fef6d8cbed024c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -198,12 +202,12 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a0ace850f65d5318bf76fb93d5901e60b"></a>
+<a class="anchor" id="a416f93fab6af9e14b19cdaa40c4c3ebf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">len_t len</td>
+          <td class="memname">len_compact_t len</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -212,12 +216,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab2e914ac2e0b5d74a5079c58903ba5a9"></a>
+<a class="anchor" id="a552aece07a8f126c07875f092b663e5d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">len_t pos</td>
+          <td class="memname">len_compact_t pos</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -226,12 +230,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ba9257e111b0340397956cc03b26148"></a>
+<a class="anchor" id="a00dd721247f210a33b702986f2f55078"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">len_t src</td>
+          <td class="memname">len_compact_t src</td>
         </tr>
       </table>
 </div><div class="memdoc">

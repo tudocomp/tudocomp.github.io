@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['value',['Value',['../classtdc_1_1json_1_1_value.html',1,'tdc::json']]],
-  ['viewliterals',['ViewLiterals',['../classtdc_1_1_view_literals.html',1,'tdc']]]
+  ['uint_5ft',['uint_t',['../classtdc_1_1uint__t.html',1,'tdc']]],
+  ['uinttdispatch',['UinttDispatch',['../structtdc_1_1_uintt_dispatch.html',1,'tdc']]]
 ];

@@ -1,11 +1,17 @@
 var files =
 [
     [ "Algorithm.hpp", "_algorithm_8hpp.html", [
-      [ "Algorithm", "classtdc_1_1_algorithm.html", "classtdc_1_1_algorithm" ],
-      [ "Meta", "classtdc_1_1_meta.html", "classtdc_1_1_meta" ],
-      [ "OptionBuilder", "classtdc_1_1_meta_1_1_option_builder.html", "classtdc_1_1_meta_1_1_option_builder" ]
+      [ "Algorithm", "classtdc_1_1_algorithm.html", "classtdc_1_1_algorithm" ]
     ] ],
+    [ "AlgorithmAST.hpp", "_algorithm_a_s_t_8hpp.html", null ],
+    [ "AlgorithmDecl.hpp", "_algorithm_decl_8hpp.html", null ],
+    [ "AlgorithmPattern.hpp", "_algorithm_pattern_8hpp.html", null ],
     [ "AlgorithmStringParser.hpp", "_algorithm_string_parser_8hpp.html", null ],
+    [ "ArithmeticCoder.hpp", "_arithmetic_coder_8hpp.html", [
+      [ "ArithmeticCoder", "classtdc_1_1_arithmetic_coder.html", "classtdc_1_1_arithmetic_coder" ],
+      [ "Encoder", "classtdc_1_1_arithmetic_coder_1_1_encoder.html", "classtdc_1_1_arithmetic_coder_1_1_encoder" ],
+      [ "Decoder", "classtdc_1_1_arithmetic_coder_1_1_decoder.html", "classtdc_1_1_arithmetic_coder_1_1_decoder" ]
+    ] ],
     [ "ArrayDS.hpp", "_array_d_s_8hpp.html", [
       [ "ArrayDS", "classtdc_1_1_array_d_s.html", "classtdc_1_1_array_d_s" ]
     ] ],
@@ -20,12 +26,13 @@ var files =
       [ "Encoder", "classtdc_1_1_a_s_c_i_i_coder_1_1_encoder.html", "classtdc_1_1_a_s_c_i_i_coder_1_1_encoder" ],
       [ "Decoder", "classtdc_1_1_a_s_c_i_i_coder_1_1_decoder.html", "classtdc_1_1_a_s_c_i_i_coder_1_1_decoder" ]
     ] ],
+    [ "ASTDef.hpp", "_a_s_t_def_8hpp.html", null ],
     [ "BackInsertStream.hpp", "_back_insert_stream_8hpp.html", null ],
     [ "BinarySortedTrie.hpp", "_binary_sorted_trie_8hpp.html", [
-      [ "BinarySortedTrie", "classtdc_1_1lz78_1_1_binary_sorted_trie.html", "classtdc_1_1lz78_1_1_binary_sorted_trie" ]
+      [ "BinarySortedTrie", "classtdc_1_1lz78_1_1_binary_sorted_trie.html", null ]
     ] ],
     [ "BinaryTrie.hpp", "_binary_trie_8hpp.html", [
-      [ "BinaryTrie", "classtdc_1_1lz78_1_1_binary_trie.html", "classtdc_1_1lz78_1_1_binary_trie" ]
+      [ "BinaryTrie", "classtdc_1_1lz78_1_1_binary_trie.html", null ]
     ] ],
     [ "BitCoder.hpp", "_bit_coder_8hpp.html", [
       [ "BitCoder", "classtdc_1_1_bit_coder.html", "classtdc_1_1_bit_coder" ],
@@ -39,6 +46,7 @@ var files =
       [ "BitOStream", "classtdc_1_1io_1_1_bit_o_stream.html", "classtdc_1_1io_1_1_bit_o_stream" ]
     ] ],
     [ "BitPackingVector.hpp", "_bit_packing_vector_8hpp.html", "_bit_packing_vector_8hpp" ],
+    [ "BitPackingVectorSlice.hpp", "_bit_packing_vector_slice_8hpp.html", "_bit_packing_vector_slice_8hpp" ],
     [ "BoostHeap.hpp", "_boost_heap_8hpp.html", [
       [ "BoostHeap", "classtdc_1_1lcpcomp_1_1_boost_heap.html", "classtdc_1_1lcpcomp_1_1_boost_heap" ]
     ] ],
@@ -59,6 +67,7 @@ var files =
     [ "ChainCompressor.hpp", "_chain_compressor_8hpp.html", [
       [ "ChainCompressor", "classtdc_1_1_chain_compressor.html", "classtdc_1_1_chain_compressor" ]
     ] ],
+    [ "characterhash.h", "characterhash_8h.html", "characterhash_8h" ],
     [ "Coder.hpp", "_coder_8hpp.html", "_coder_8hpp" ],
     [ "CompactDec.hpp", "_compact_dec_8hpp.html", [
       [ "CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", "classtdc_1_1lcpcomp_1_1_compact_dec" ]
@@ -98,6 +107,9 @@ var files =
       [ "Env", "classtdc_1_1_env.html", "classtdc_1_1_env" ]
     ] ],
     [ "EscapeMap.hpp", "_escape_map_8hpp.html", "_escape_map_8hpp" ],
+    [ "ExtHashTrie.hpp", "_ext_hash_trie_8hpp.html", [
+      [ "ExtHashTrie", "classtdc_1_1lz78_1_1_ext_hash_trie.html", "classtdc_1_1lz78_1_1_ext_hash_trie" ]
+    ] ],
     [ "FibonacciGenerator.hpp", "_fibonacci_generator_8hpp.html", [
       [ "FibonacciGenerator", "classtdc_1_1_fibonacci_generator.html", "classtdc_1_1_fibonacci_generator" ]
     ] ],
@@ -109,16 +121,30 @@ var files =
     [ "GenericView.hpp", "_generic_view_8hpp.html", "_generic_view_8hpp" ],
     [ "GenericViewBase.hpp", "_generic_view_base_8hpp.html", "_generic_view_base_8hpp" ],
     [ "Hash.hpp", "_hash_8hpp.html", [
-      [ "MixHasher", "classtdc_1_1_mix_hasher.html", "classtdc_1_1_mix_hasher" ],
-      [ "SizeManagerPow2", "structtdc_1_1_size_manager_pow2.html", null ],
-      [ "QuadraticProber", "classtdc_1_1_quadratic_prober.html", null ],
-      [ "GaussProber", "classtdc_1_1_gauss_prober.html", null ],
-      [ "LinearProber", "classtdc_1_1_linear_prober.html", null ],
+      [ "VignaHasher", "structtdc_1_1_vigna_hasher.html", "structtdc_1_1_vigna_hasher" ],
+      [ "_VignaHasher", "structtdc_1_1___vigna_hasher.html", "structtdc_1_1___vigna_hasher" ],
+      [ "KnuthHasher", "structtdc_1_1_knuth_hasher.html", "structtdc_1_1_knuth_hasher" ],
+      [ "MixHasher", "structtdc_1_1_mix_hasher.html", "structtdc_1_1_mix_hasher" ],
+      [ "NoopHasher", "structtdc_1_1_noop_hasher.html", "structtdc_1_1_noop_hasher" ],
+      [ "SizeManagerPow2", "structtdc_1_1_size_manager_pow2.html", "structtdc_1_1_size_manager_pow2" ],
+      [ "SizeManagerDirect", "structtdc_1_1_size_manager_direct.html", "structtdc_1_1_size_manager_direct" ],
+      [ "SizeManagerNoob", "structtdc_1_1_size_manager_noob.html", "structtdc_1_1_size_manager_noob" ],
+      [ "SizeManagerPrime", "structtdc_1_1_size_manager_prime.html", "structtdc_1_1_size_manager_prime" ],
+      [ "QuadraticProber", "structtdc_1_1_quadratic_prober.html", "structtdc_1_1_quadratic_prober" ],
+      [ "GaussProber", "structtdc_1_1_gauss_prober.html", "structtdc_1_1_gauss_prober" ],
+      [ "LinearProber", "structtdc_1_1_linear_prober.html", "structtdc_1_1_linear_prober" ],
       [ "_DoubleHashingProber", "structtdc_1_1___double_hashing_prober.html", null ],
-      [ "DoubleHashingProber", "classtdc_1_1_double_hashing_prober.html", "classtdc_1_1_double_hashing_prober" ]
+      [ "DoubleHashingProber", "classtdc_1_1_double_hashing_prober.html", "classtdc_1_1_double_hashing_prober" ],
+      [ "ZBackupRollingHash", "classtdc_1_1_z_backup_rolling_hash.html", "classtdc_1_1_z_backup_rolling_hash" ],
+      [ "WordpackRollingHash", "classtdc_1_1_wordpack_rolling_hash.html", "classtdc_1_1_wordpack_rolling_hash" ],
+      [ "HashMap", "classtdc_1_1_hash_map.html", "classtdc_1_1_hash_map" ],
+      [ "Iterator", "classtdc_1_1_hash_map_1_1_iterator.html", "classtdc_1_1_hash_map_1_1_iterator" ]
     ] ],
     [ "HashTrie.hpp", "_hash_trie_8hpp.html", [
       [ "HashTrie", "classtdc_1_1lz78_1_1_hash_trie.html", "classtdc_1_1lz78_1_1_hash_trie" ]
+    ] ],
+    [ "HashTriePlus.hpp", "_hash_trie_plus_8hpp.html", [
+      [ "HashTriePlus", "classtdc_1_1lz78_1_1_hash_trie_plus.html", "classtdc_1_1lz78_1_1_hash_trie_plus" ]
     ] ],
     [ "HuffmanCoder.hpp", "_huffman_coder_8hpp.html", "_huffman_coder_8hpp" ],
     [ "Input.hpp", "_input_8hpp.html", [
@@ -199,19 +225,15 @@ var files =
     [ "MaxLCPSuffixList.hpp", "_max_l_c_p_suffix_list_8hpp.html", [
       [ "MaxLCPSuffixList", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html", "classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list" ]
     ] ],
+    [ "mersennetwister.h", "mersennetwister_8h.html", "mersennetwister_8h" ],
+    [ "Meta.hpp", "_meta_8hpp.html", [
+      [ "Meta", "classtdc_1_1_meta.html", "classtdc_1_1_meta" ],
+      [ "OptionBuilder", "classtdc_1_1_meta_1_1_option_builder.html", "classtdc_1_1_meta_1_1_option_builder" ]
+    ] ],
     [ "MMapHandle.hpp", "_m_map_handle_8hpp.html", null ],
     [ "MTFCompressor.hpp", "_m_t_f_compressor_8hpp.html", "_m_t_f_compressor_8hpp" ],
     [ "MultiMapBuffer.hpp", "_multi_map_buffer_8hpp.html", [
       [ "MultimapBuffer", "classtdc_1_1lcpcomp_1_1_multimap_buffer.html", "classtdc_1_1lcpcomp_1_1_multimap_buffer" ]
-    ] ],
-    [ "MyHashTrie.hpp", "_my_hash_trie_8hpp.html", [
-      [ "MyHash", "classtdc_1_1lz78_1_1_my_hash.html", "classtdc_1_1lz78_1_1_my_hash" ],
-      [ "Iterator", "classtdc_1_1lz78_1_1_my_hash_1_1_iterator.html", "classtdc_1_1lz78_1_1_my_hash_1_1_iterator" ],
-      [ "MyHashTrie", "classtdc_1_1lz78_1_1_my_hash_trie.html", "classtdc_1_1lz78_1_1_my_hash_trie" ]
-    ] ],
-    [ "MyMapBuffer.hpp", "_my_map_buffer_8hpp.html", [
-      [ "MyHash", "classtdc_1_1lcpcomp_1_1_my_hash.html", "classtdc_1_1lcpcomp_1_1_my_hash" ],
-      [ "MyMapBuffer", "classtdc_1_1lcpcomp_1_1_my_map_buffer.html", "classtdc_1_1lcpcomp_1_1_my_map_buffer" ]
     ] ],
     [ "NaiveStrategy.hpp", "_naive_strategy_8hpp.html", [
       [ "NaiveStrategy", "classtdc_1_1lcpcomp_1_1_naive_strategy.html", "classtdc_1_1lcpcomp_1_1_naive_strategy" ]
@@ -247,12 +269,19 @@ var files =
     [ "pre_header.hpp", "pre__header_8hpp.html", [
       [ "Factor", "structtdc_1_1lz78u_1_1_factor.html", "structtdc_1_1lz78u_1_1_factor" ]
     ] ],
+    [ "rabinkarphash.h", "rabinkarphash_8h.html", [
+      [ "KarpRabinHash", "classtdc_1_1_karp_rabin_hash.html", "classtdc_1_1_karp_rabin_hash" ]
+    ] ],
+    [ "Randomizer.hpp", "_randomizer_8hpp.html", [
+      [ "Randomizer", "classtdc_1_1lz78_1_1_randomizer.html", "classtdc_1_1lz78_1_1_randomizer" ]
+    ] ],
     [ "RandomUniformGenerator.hpp", "_random_uniform_generator_8hpp.html", [
       [ "RandomUniformGenerator", "classtdc_1_1_random_uniform_generator.html", "classtdc_1_1_random_uniform_generator" ]
     ] ],
     [ "Range.hpp", "_range_8hpp.html", "_range_8hpp" ],
     [ "pre_header/Registry.hpp", "pre__header_2_registry_8hpp.html", [
-      [ "Registry", "classtdc_1_1_registry.html", "classtdc_1_1_registry" ]
+      [ "Registry", "classtdc_1_1_registry.html", "classtdc_1_1_registry" ],
+      [ "hash< typename tdc::AlreadySeenPair >", "structstd_1_1hash_3_01typename_01tdc_1_1_already_seen_pair_01_4.html", "structstd_1_1hash_3_01typename_01tdc_1_1_already_seen_pair_01_4" ]
     ] ],
     [ "Registry.hpp", "_registry_8hpp.html", null ],
     [ "driver/Registry.hpp", "driver_2_registry_8hpp.html", null ],
@@ -263,6 +292,12 @@ var files =
     [ "RestrictedIOStream.hpp", "_restricted_i_o_stream_8hpp.html", [
       [ "RestrictedOStreamBuf", "classtdc_1_1io_1_1_restricted_o_stream_buf.html", "classtdc_1_1io_1_1_restricted_o_stream_buf" ],
       [ "RestrictedIStreamBuf", "classtdc_1_1io_1_1_restricted_i_stream_buf.html", "classtdc_1_1io_1_1_restricted_i_stream_buf" ]
+    ] ],
+    [ "RollingTrie.hpp", "_rolling_trie_8hpp.html", [
+      [ "RollingTrie", "classtdc_1_1lz78_1_1_rolling_trie.html", "classtdc_1_1lz78_1_1_rolling_trie" ]
+    ] ],
+    [ "RollingTriePlus.hpp", "_rolling_trie_plus_8hpp.html", [
+      [ "RollingTriePlus", "classtdc_1_1lz78_1_1_rolling_trie_plus.html", "classtdc_1_1lz78_1_1_rolling_trie_plus" ]
     ] ],
     [ "RunLengthEncoder.hpp", "_run_length_encoder_8hpp.html", "_run_length_encoder_8hpp" ],
     [ "RunRichGenerator.hpp", "_run_rich_generator_8hpp.html", [

@@ -49,11 +49,11 @@ var _int_ptr_8hpp =
     [ "IntPtr", "_int_ptr_8hpp.html#a1f9d9326b1d40561ad0bcdaae7295753", null ],
     [ "IntRef", "_int_ptr_8hpp.html#a221d1a7a8fe62cbdff6c8a9c13b717c0", null ],
     [ "read_int", "_int_ptr_8hpp.html#a6bc7b5f9e4204b19e114cc689bfdb670", null ],
-    [ "read_int< uint_t< 1 > >", "_int_ptr_8hpp.html#ab1aa86e0b9a6f0cf7bcf05fc3a13d271", null ],
+    [ "read_int< uint_t< 1 > >", "_int_ptr_8hpp.html#adc06ee7bf0743f0c459138aa225bd26e", null ],
     [ "swap", "_int_ptr_8hpp.html#a8b0ef24c09cb80823b9732c411e55cbe", null ],
     [ "swap", "_int_ptr_8hpp.html#a1f71746c24d257124b373c88c6c16a57", null ],
     [ "swap", "_int_ptr_8hpp.html#af2a1e63e0548bd6da81d4ac70e4c4338", null ],
     [ "write_int", "_int_ptr_8hpp.html#a92da4edbbe9909a91046591f975921a3", null ],
-    [ "write_int< uint_t< 1 > >", "_int_ptr_8hpp.html#ac6ba0331ba1a101f0879ca843df2d5f3", null ],
+    [ "write_int< uint_t< 1 > >", "_int_ptr_8hpp.html#aaa6108e9e2a005bb68a15ce337a746c8", null ],
     [ "__attribute__", "_int_ptr_8hpp.html#a9e6f68308dfd41bde1f5a7caa04fe4ac", null ]
 ];

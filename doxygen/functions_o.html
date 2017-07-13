@@ -92,7 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
-      <li><a href="functions.html#index_a"><span>a</span></a></li>
+      <li><a href="functions.html#index__"><span>_</span></a></li>
+      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
       <li><a href="functions_b.html#index_b"><span>b</span></a></li>
       <li><a href="functions_c.html#index_c"><span>c</span></a></li>
       <li><a href="functions_d.html#index_d"><span>d</span></a></li>
@@ -114,6 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_u.html#index_u"><span>u</span></a></li>
       <li><a href="functions_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_w.html#index_w"><span>w</span></a></li>
+      <li><a href="functions_z.html#index_z"><span>z</span></a></li>
       <li><a href="functions_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -152,6 +154,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>offset
 : <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector_1_1_pos_and_offset.html#a38e2d5033637ac114755059b3037f35c">tdc::int_vector::BitPackingVector&lt; T &gt;::PosAndOffset</a>
+, <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector_slice_1_1_pos_and_offset.html#ab33e2a90da412a9e813d8710d7c0baa3">tdc::int_vector::BitPackingVectorSlice&lt; T &gt;::PosAndOffset</a>
 </li>
 <li>op_eq()
 : <a class="el" href="classtdc_1_1_generic_view_base.html#a7a7e352669fbeabd47a75cbfe3da9c2c">tdc::GenericViewBase&lt; T, P &gt;</a>
@@ -176,6 +179,9 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 </li>
 <li>operator autocast_type()
 : <a class="el" href="classtdc_1_1int__vector_1_1_generic_int_ref.html#a195f3f9bd470fad3ba33a43e874bd0e7">tdc::int_vector::GenericIntRef&lt; Self, Ptr, T &gt;</a>
+</li>
+<li>operator bool()
+: <a class="el" href="classtdc_1_1_move_guard.html#ac226d09b621730ae6c8b4e491ea3a0fd">tdc::MoveGuard</a>
 </li>
 <li>operator char()
 : <a class="el" href="classtdc_1_1dynamic__t.html#aa39586a80cbb809faf76613754b32b28">tdc::dynamic_t</a>
@@ -244,6 +250,9 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 : <a class="el" href="classtdc_1_1dynamic__t.html#aa07bf043eb97a840806db15ffda0353e">tdc::dynamic_t</a>
 , <a class="el" href="classtdc_1_1uint__t.html#a347aa7c44bbf91429d9a4ac17d933dae">tdc::uint_t&lt; bits &gt;</a>
 </li>
+<li>operator!()
+: <a class="el" href="classtdc_1_1_move_guard.html#a2bd9138ca9882b7538d004b68404246d">tdc::MoveGuard</a>
+</li>
 <li>operator!=
 : <a class="el" href="classtdc_1_1_const_generic_view.html#abac7772a1cda2e14fd3a250dc944f367">tdc::ConstGenericView&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#a2c40e40c1a16c7f4f6f898f9edd5947d">tdc::ConstGenericView&lt; uliteral_t &gt;</a>
@@ -264,7 +273,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 , <a class="el" href="classtdc_1_1_integer_base_with_self.html#a25003a8d4ab75b613d723411551eb47b">tdc::IntegerBaseWithSelf&lt; Self &gt;</a>
 </li>
 <li>operator&amp;
-: <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a41f7719c328ae9a43934e4db017f6a95">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
+: <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a40a3d9a0a93cb9179d4ff31fa40afb2c">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with64.html#a47c86552fbe95df57e8f6f2117342ad6">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with_self.html#a4d7997e5a17e90dd4165ed508e88be93">tdc::ConstIntegerBaseWithSelf&lt; Self &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_const_int_ref.html#a28842fc7017efaf34fc717eb99363f52">tdc::int_vector::ConstIntRef&lt; T &gt;</a>
@@ -277,10 +286,21 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 </li>
 <li>operator()()
 : <a class="el" href="structcedar_1_1da_1_1empty__callback.html#af06dd3c33e791ce90181b7917fe49585">cedar::da&lt; value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES &gt;::empty_callback</a>
+, <a class="el" href="classmersenne_r_n_g.html#a5c457a6a5c6fc1d55aa27c4934626c6a">mersenneRNG</a>
+, <a class="el" href="class_m_t_rand.html#abbb87a08d622d58fdee0eea4cb5471a0">MTRand</a>
 , <a class="el" href="structstd_1_1hash_3_01tdc_1_1_const_generic_view_3_01_t_01_4_01_4.html#aaaf6942ba77e5895eaa6450e440c3340">std::hash&lt; tdc::ConstGenericView&lt; T &gt; &gt;</a>
 , <a class="el" href="structstd_1_1hash_3_01tdc_1_1_generic_view_3_01_t_01_4_01_4.html#a6df505bb030a30fb9e066b407b9d46c1">std::hash&lt; tdc::GenericView&lt; T &gt; &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html#a83730c0d3167d8df396f1b4e18e6489c">std::hash&lt; tdc::uint_t&lt; N &gt; &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01typename_01tdc_1_1_already_seen_pair_01_4.html#aa7599b3776d2bcb275b00abba2e1e821">std::hash&lt; typename tdc::AlreadySeenPair &gt;</a>
+, <a class="el" href="structtdc_1_1___vigna_hasher.html#a231b2bce7bfd41a534c47d7ca9a4d7d7">tdc::_VignaHasher</a>
+, <a class="el" href="classtdc_1_1_karp_rabin_hash.html#a48c91e13f389c738850b1e604a0c9014">tdc::KarpRabinHash</a>
+, <a class="el" href="structtdc_1_1_knuth_hasher.html#aad1ed1e6ede0b2f8cf82fd0295452e2f">tdc::KnuthHasher</a>
 , <a class="el" href="classtdc_1_1_l_c_p_forward_iterator.html#ab339ec9d14b11de850062ebeb03e440d">tdc::LCPForwardIterator</a>
-, <a class="el" href="classtdc_1_1_mix_hasher.html#afe1a03bb327e0287c8e5477e427d83db">tdc::MixHasher</a>
+, <a class="el" href="structtdc_1_1_mix_hasher.html#a8ab40177effad2082a10832f39b4486c">tdc::MixHasher</a>
+, <a class="el" href="structtdc_1_1_noop_hasher.html#ab32cbf3a2b238f82523c8141a0477fd9">tdc::NoopHasher</a>
+, <a class="el" href="structtdc_1_1_vigna_hasher.html#a49351a2c6e3abed040d8692a7950cf6b">tdc::VignaHasher</a>
+, <a class="el" href="classtdc_1_1_wordpack_rolling_hash.html#ae115a7ea5e80186b9852d7aaa62ed1ea">tdc::WordpackRollingHash</a>
+, <a class="el" href="classtdc_1_1_z_backup_rolling_hash.html#a20bcb28b6283bfe20c1a34594fed4534">tdc::ZBackupRollingHash</a>
 </li>
 <li>operator*
 : <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a4719bb919eacf249c2b15d92e9ad63cf">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
@@ -309,6 +329,9 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 , <a class="el" href="classtdc_1_1_integer_base_with32.html#a2d5c1be8fd12ee0f83d3c41be0dc98ca">tdc::IntegerBaseWith32&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_integer_base_with64.html#ab7b24834e733a64db38332d91abd9b5d">tdc::IntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_integer_base_with_self.html#adc762c53693454322b46123bd8cb2883">tdc::IntegerBaseWithSelf&lt; Self &gt;</a>
+, <a class="el" href="classtdc_1_1_karp_rabin_hash.html#a478b85124da4afa0f22fb422e06e51e7">tdc::KarpRabinHash</a>
+, <a class="el" href="classtdc_1_1_wordpack_rolling_hash.html#aa63e537662e293c5d59d9493f371fd6e">tdc::WordpackRollingHash</a>
+, <a class="el" href="classtdc_1_1_z_backup_rolling_hash.html#a4708b162bbb5caef603f28624818d875">tdc::ZBackupRollingHash</a>
 </li>
 <li>operator-
 : <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a5f70a3552e8e80413c8c83f5abd9426d">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
@@ -340,13 +363,14 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 : <a class="el" href="classtdc_1_1_const_generic_view.html#ad723c220b7b07799c971d77a938186c0">tdc::ConstGenericView&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#aff5649dca4071a4fe638017e7666468e">tdc::ConstGenericView&lt; uliteral_t &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a7083327ac562679a232aaf4c6ff6020b">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
-, <a class="el" href="classtdc_1_1_const_integer_base_with64.html#a43216813c2b72547095fba6efc7b9d43">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
+, <a class="el" href="classtdc_1_1_const_integer_base_with64.html#a7083327ac562679a232aaf4c6ff6020b">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with_self.html#aa218a6f587740778738860aff009d956">tdc::ConstIntegerBaseWithSelf&lt; Self &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_generic_int_ptr.html#aa218a6f587740778738860aff009d956">tdc::int_vector::GenericIntPtr&lt; Self, T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a7a27b2f697aa8285c1b9d76f1c970fbc">tdc::int_vector::IntVector&lt; T &gt;</a>
 </li>
 <li>operator&lt;&lt;
-: <a class="el" href="classtdc_1_1_const_integer_base_with32.html#af088a87b0e5fe9fe2665c6dd06b4a990">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
+: <a class="el" href="class_m_t_rand.html#a059061d50a1e54ee3067d4e1dbdd7c64">MTRand</a>
+, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#af088a87b0e5fe9fe2665c6dd06b4a990">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with64.html#ac2fbc5f194af2762a2b9e73c0a8e46c0">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with_self.html#af6b1325c814595c28c903f8eacb88ea6">tdc::ConstIntegerBaseWithSelf&lt; Self &gt;</a>
 </li>
@@ -367,9 +391,12 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <li>operator=()
 : <a class="el" href="classtdc_1_1_algorithm_value.html#a3eaccd56a552071b0690217795f877c3">tdc::AlgorithmValue</a>
 , <a class="el" href="classtdc_1_1_array_d_s.html#aea13b4a9ac147945b69fd139f12da7af">tdc::ArrayDS</a>
-, <a class="el" href="classtdc_1_1dynamic__t.html#a6f1fe15c519ff8535d3d6c3bd37e0f19">tdc::dynamic_t</a>
+, <a class="el" href="classtdc_1_1dynamic__t.html#a54f1f21958cc6d89fdb3fbee8a23e953">tdc::dynamic_t</a>
 , <a class="el" href="classtdc_1_1_generic_view_base.html#ae3eddc3448809f0e6d943eb65f62192d">tdc::GenericViewBase&lt; T, P &gt;</a>
-, <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector.html#ad9323fc240f8c148f44c23b3cafef4b9">tdc::int_vector::BitPackingVector&lt; T &gt;</a>
+, <a class="el" href="classtdc_1_1_hash_map_1_1_iterator.html#a23ef78ee07eb686b8bada964ed242f10">tdc::HashMap&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::Iterator</a>
+, <a class="el" href="classtdc_1_1_hash_map.html#a7ef4fd1d9d7847877bb4180f137b215c">tdc::HashMap&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;</a>
+, <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector.html#a8f1e2b99aba79f8d14509413673d99cd">tdc::int_vector::BitPackingVector&lt; T &gt;</a>
+, <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector_slice.html#a36c9da49cb2984d6be334fde9755c719">tdc::int_vector::BitPackingVectorSlice&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_const_int_ptr.html#ab9cb8ce4a906d81c551a5fb377f1f155">tdc::int_vector::ConstIntPtr&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_generic_int_ptr.html#acade7ab840f029dea527f6a89209b6a1">tdc::int_vector::GenericIntPtr&lt; Self, T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_int_ptr.html#ac60e5c9c7ccb57d04fde1770d045f9e4">tdc::int_vector::IntPtr&lt; T &gt;</a>
@@ -377,26 +404,32 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 , <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a23a8ea0930de49b8a26dca42679afa1f">tdc::int_vector::IntVector&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1io_1_1_input.html#a15335490ded47f4b6a897a248f40b635">tdc::io::Input</a>
 , <a class="el" href="classtdc_1_1io_1_1_output.html#a6bcef376ee494b0d9e34d39f3cf55b4d">tdc::io::Output</a>
-, <a class="el" href="classtdc_1_1lz78_1_1_my_hash_1_1_iterator.html#abdb8bf68a293b05b7a2d53ce2b42d319">tdc::lz78::MyHash&lt; Key, Value, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::Iterator</a>
+, <a class="el" href="classtdc_1_1lz78_1_1_ext_hash_trie.html#a6d9283c7b615912f3c5cd0ba7eab36f2">tdc::lz78::ExtHashTrie</a>
+, <a class="el" href="classtdc_1_1lz78_1_1_hash_trie.html#aaee697dba78fb754efa5e47957e63e08">tdc::lz78::HashTrie&lt; HashFunction, HashProber, HashManager &gt;</a>
+, <a class="el" href="classtdc_1_1lz78_1_1_hash_trie_plus.html#a94ecd2ca963f7586ac48b2929e78a3fc">tdc::lz78::HashTriePlus&lt; HashFunction, HashManager &gt;</a>
+, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie.html#a310fa6cba06d9e15bb7f186e2e158621">tdc::lz78::RollingTrie&lt; HashRoller, HashProber, HashManager, HashFunction &gt;</a>
+, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie_plus.html#ae9af1561e168957322b4ebd6163d7754">tdc::lz78::RollingTriePlus&lt; HashRoller, HashManager, HashFunction &gt;</a>
+, <a class="el" href="classtdc_1_1lz78_1_1_ternary_trie.html#ad062548dd67bd7a3efdb8118921cccaf">tdc::lz78::TernaryTrie</a>
 , <a class="el" href="classtdc_1_1_option_value.html#aa80846d907c2029f4c1afe70762c6129">tdc::OptionValue</a>
 , <a class="el" href="classtdc_1_1uint__t.html#a4ef0422ad65f03858cbb4a60c4246c76">tdc::uint_t&lt; bits &gt;</a>
 </li>
 <li>operator==
 : <a class="el" href="classtdc_1_1_const_generic_view.html#a150443a415ef900a17ff5cb6a1681239">tdc::ConstGenericView&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#a54ad77faf61c7a695a8cfa4e4589441c">tdc::ConstGenericView&lt; uliteral_t &gt;</a>
-, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#af15f732767aff1d0a0e478cc3e9ce9f4">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
+, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a494685ef1bef56ec91a5c1d45326f93d">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with64.html#a494685ef1bef56ec91a5c1d45326f93d">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with_self.html#a0cce7383ccd9d58701a21d900c03403e">tdc::ConstIntegerBaseWithSelf&lt; Self &gt;</a>
+, <a class="el" href="classtdc_1_1_hash_map_1_1_iterator.html#ac6010be7ed12a787736e46cc54e271e6">tdc::HashMap&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::Iterator</a>
 , <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector.html#a3ea6ca6b0b07f1e51257106365bade5c">tdc::int_vector::BitPackingVector&lt; T &gt;</a>
+, <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector_slice.html#aca8e18c084ad343b494fe28e988afbac">tdc::int_vector::BitPackingVectorSlice&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_generic_int_ptr.html#a0cce7383ccd9d58701a21d900c03403e">tdc::int_vector::GenericIntPtr&lt; Self, T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a720653c991ecc5b1df24281108858fb4">tdc::int_vector::IntVector&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1io_1_1_input_source.html#a63ee24e86a0f58702f9bc3dbc31df65a">tdc::io::InputSource</a>
-, <a class="el" href="classtdc_1_1lz78_1_1_my_hash_1_1_iterator.html#a04f9d273ce15751daa9b9d8be24ddf80">tdc::lz78::MyHash&lt; Key, Value, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::Iterator</a>
 </li>
 <li>operator&gt;
 : <a class="el" href="classtdc_1_1_const_generic_view.html#a8de5ab0e24da7639abcf6dad895a1325">tdc::ConstGenericView&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#a6503221094e05e4b772360ad3c4ffeec">tdc::ConstGenericView&lt; uliteral_t &gt;</a>
-, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a4f8c749fc5c38f3ead4c4793fb3a5570">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
+, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a8aa5ce9a081b04b69011102f764448fc">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with64.html#a8aa5ce9a081b04b69011102f764448fc">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with_self.html#a51abbe1c4b4344bca832d827e4664cd4">tdc::ConstIntegerBaseWithSelf&lt; Self &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_generic_int_ptr.html#a51abbe1c4b4344bca832d827e4664cd4">tdc::int_vector::GenericIntPtr&lt; Self, T &gt;</a>
@@ -405,14 +438,15 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 <li>operator&gt;=
 : <a class="el" href="classtdc_1_1_const_generic_view.html#ac9cabfac80206e738e710f01098313f9">tdc::ConstGenericView&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#afd71f8730a48098de7fcbe4989343619">tdc::ConstGenericView&lt; uliteral_t &gt;</a>
-, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a72a60006977072df2abd8e6d6c35ab5d">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
-, <a class="el" href="classtdc_1_1_const_integer_base_with64.html#a72a60006977072df2abd8e6d6c35ab5d">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
+, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#aa624fad686a0507fb38f84e3422929a7">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
+, <a class="el" href="classtdc_1_1_const_integer_base_with64.html#aa624fad686a0507fb38f84e3422929a7">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with_self.html#a3396b7d49da1ff5fe438ac064970ed30">tdc::ConstIntegerBaseWithSelf&lt; Self &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_generic_int_ptr.html#a3396b7d49da1ff5fe438ac064970ed30">tdc::int_vector::GenericIntPtr&lt; Self, T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#ab9c4b18a4b8287829d2b635fe7606b76">tdc::int_vector::IntVector&lt; T &gt;</a>
 </li>
 <li>operator&gt;&gt;
-: <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a5d90c31b93c0faf92aac7359e3d27a33">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
+: <a class="el" href="class_m_t_rand.html#a45b02a702835a3be42171c5c2dc79b2d">MTRand</a>
+, <a class="el" href="classtdc_1_1_const_integer_base_with32.html#a5d90c31b93c0faf92aac7359e3d27a33">tdc::ConstIntegerBaseWith32&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with64.html#afda6273a9e87223fe0fc7a550827c293">tdc::ConstIntegerBaseWith64&lt; Self, Other &gt;</a>
 , <a class="el" href="classtdc_1_1_const_integer_base_with_self.html#a67aad5e11e033eb36364b1bc5b9f1557">tdc::ConstIntegerBaseWithSelf&lt; Self &gt;</a>
 </li>
@@ -427,12 +461,12 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 , <a class="el" href="classtdc_1_1_generic_view.html#a239c5d3b8b43fed2ad35cbe610d6dd2b">tdc::GenericView&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_generic_view_base.html#a3f2ef31f57fbd8b71ce394024a90eaf7">tdc::GenericViewBase&lt; T, P &gt;</a>
 , <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector.html#ae6716914adc213023e33ebf531aad510">tdc::int_vector::BitPackingVector&lt; T &gt;</a>
+, <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector_slice.html#a40eef158e36ef14b2a108e3dd7d36afe">tdc::int_vector::BitPackingVectorSlice&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_generic_int_ptr.html#a114062f4fc9559301409c02ec18dfc6a">tdc::int_vector::GenericIntPtr&lt; Self, T &gt;</a>
 , <a class="el" href="classtdc_1_1int__vector_1_1_int_ptr.html#a980bc6a04cd6c31f08a5a4c3d4df8c0f">tdc::int_vector::IntPtr&lt; T &gt;</a>
-, <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a6e6365d2d681593275bf85cbc3b2b4e7">tdc::int_vector::IntVector&lt; T &gt;</a>
+, <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a0b1ed0d8e52d3c3621ef02f571dcd6aa">tdc::int_vector::IntVector&lt; T &gt;</a>
 , <a class="el" href="classtdc_1_1_l_c_p_sada.html#addbc14788a5869724734492301bd3342">tdc::LCPSada&lt; sa_t, select_t &gt;</a>
 , <a class="el" href="classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html#a8db83d90b016d19a9a75798a048f7ec1">tdc::libdivsufsort::BufferWrapper&lt; buffer_t &gt;</a>
-, <a class="el" href="classtdc_1_1lzss_1_1_factor_buffer.html#a6214bd9a0113d44c0f65e8f21cb332fd">tdc::lzss::FactorBuffer</a>
 , <a class="el" href="classtdc_1_1_text_d_s.html#a74a72c033de0dec8981e5c4c8a6f2fc6">tdc::TextDS&lt; sa_t, phi_t, plcp_t, lcp_t, isa_t &gt;</a>
 </li>
 <li>operator^
@@ -470,11 +504,11 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 : <a class="el" href="classtdc_1_1_builder.html#a86e07439b54e1a745a8b2604e534112f">tdc::Builder&lt; T, registry_root_t &gt;</a>
 </li>
 <li>Options()
-: <a class="el" href="classtdc__driver_1_1_options.html#a694d2e2debdf536098237db615ed3e0b">tdc_driver::Options</a>
+: <a class="el" href="classtdc__driver_1_1_options.html#a1a3dcdc438d4a97d5e7cfa459bcee051">tdc_driver::Options</a>
 </li>
 <li>OptionValue
 : <a class="el" href="classtdc_1_1_algorithm_value.html#a205742158c1464b318432de77c65db57">tdc::AlgorithmValue</a>
-, <a class="el" href="classtdc_1_1_option_value.html#adb8b392b912bac34f1a5950230aba56e">tdc::OptionValue</a>
+, <a class="el" href="classtdc_1_1_option_value.html#ade2378f81ba5da0dae282b1b7e8573ce">tdc::OptionValue</a>
 </li>
 <li>ordered_codelengths
 : <a class="el" href="structtdc_1_1huff_1_1extended__huffmantable.html#a174c488847ea8d9c62417d0ad260a48f">tdc::huff::extended_huffmantable</a>
@@ -483,7 +517,7 @@ $(document).ready(function(){initNavTree('functions_o.html','');});
 : <a class="el" href="structtdc_1_1huff_1_1huffmantable.html#af4b4d7e24730f865c6f922dcd344bb9a">tdc::huff::huffmantable</a>
 </li>
 <li>Output()
-: <a class="el" href="classtdc_1_1io_1_1_output.html#a6fc5c031bbfdc7b4bf5d49dd33e664f1">tdc::io::Output</a>
+: <a class="el" href="classtdc_1_1io_1_1_output.html#a4b323e79726e4b0b33666fa68df0e37a">tdc::io::Output</a>
 , <a class="el" href="classtdc_1_1io_1_1_output_stream.html#a04013b3a752e3e21a62f1ea3c454bb7b">tdc::io::OutputStream</a>
 </li>
 <li>output

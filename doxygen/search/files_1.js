@@ -7,6 +7,7 @@ var searchData=
   ['bitistream_2ehpp',['BitIStream.hpp',['../_bit_i_stream_8hpp.html',1,'']]],
   ['bitostream_2ehpp',['BitOStream.hpp',['../_bit_o_stream_8hpp.html',1,'']]],
   ['bitpackingvector_2ehpp',['BitPackingVector.hpp',['../_bit_packing_vector_8hpp.html',1,'']]],
+  ['bitpackingvectorslice_2ehpp',['BitPackingVectorSlice.hpp',['../_bit_packing_vector_slice_8hpp.html',1,'']]],
   ['boostheap_2ehpp',['BoostHeap.hpp',['../_boost_heap_8hpp.html',1,'']]],
   ['bufferingstrategy_2ehpp',['BufferingStrategy.hpp',['../_buffering_strategy_8hpp.html',1,'']]],
   ['bulldozerstrategy_2ehpp',['BulldozerStrategy.hpp',['../_bulldozer_strategy_8hpp.html',1,'']]],

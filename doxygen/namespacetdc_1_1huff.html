@@ -125,29 +125,29 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a59b6ec3f7690f0c49cb6cc83e464da77"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a59b6ec3f7690f0c49cb6cc83e464da77"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a59b6ec3f7690f0c49cb6cc83e464da77">count_alphabet</a> (const T &amp;input)</td></tr>
-<tr class="memdesc:a59b6ec3f7690f0c49cb6cc83e464da77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of different elements in a sequence.  <a href="#a59b6ec3f7690f0c49cb6cc83e464da77">More...</a><br /></td></tr>
-<tr class="separator:a59b6ec3f7690f0c49cb6cc83e464da77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a002fe7cc99c16ec42a6af47b380b5d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a2a002fe7cc99c16ec42a6af47b380b5d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a2a002fe7cc99c16ec42a6af47b380b5d">count_alphabet_literals</a> (T &amp;&amp;input)</td></tr>
-<tr class="separator:a2a002fe7cc99c16ec42a6af47b380b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad50fbec7607011c23f4e5a797327bf1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#ad50fbec7607011c23f4e5a797327bf1f">effective_alphabet_size</a> (const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *C)</td></tr>
-<tr class="memdesc:ad50fbec7607011c23f4e5a797327bf1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an array that maps from the effective alphabet to the full alphabet.  <a href="#ad50fbec7607011c23f4e5a797327bf1f">More...</a><br /></td></tr>
-<tr class="separator:ad50fbec7607011c23f4e5a797327bf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e5b95ac907620c06f72d583a78ca4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a70e5b95ac907620c06f72d583a78ca4a">gen_effective_alphabet</a> (const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *const C, const size_t alphabet_size)</td></tr>
-<tr class="memdesc:a70e5b95ac907620c06f72d583a78ca4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an array that maps from the effective alphabet to the full alphabet The full alphabet is determined by the non-zero entries of the array C.  <a href="#a70e5b95ac907620c06f72d583a78ca4a">More...</a><br /></td></tr>
-<tr class="separator:a70e5b95ac907620c06f72d583a78ca4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad5d9a481af7758cda93a74c7c6bee37"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#aad5d9a481af7758cda93a74c7c6bee37">gen_codelengths</a> (const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *const C, const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const map_from_effective, const size_t alphabet_size)</td></tr>
-<tr class="memdesc:aad5d9a481af7758cda93a74c7c6bee37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array storing for each character of the effective alphabet the length of its codeword.  <a href="#aad5d9a481af7758cda93a74c7c6bee37">More...</a><br /></td></tr>
-<tr class="separator:aad5d9a481af7758cda93a74c7c6bee37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688166fb87e0985abf6c0c7a5a4251d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a688166fb87e0985abf6c0c7a5a4251d0">gen_numl</a> (const uint8_t *const ordered_codelengths, const size_t alphabet_size, const uint8_t longest)</td></tr>
+<tr class="memitem:a979cc2de3bf8c4eb305d29a52dc72b86"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a979cc2de3bf8c4eb305d29a52dc72b86"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a979cc2de3bf8c4eb305d29a52dc72b86">count_alphabet</a> (const T &amp;input)</td></tr>
+<tr class="memdesc:a979cc2de3bf8c4eb305d29a52dc72b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the number of different elements in a sequence.  <a href="#a979cc2de3bf8c4eb305d29a52dc72b86">More...</a><br /></td></tr>
+<tr class="separator:a979cc2de3bf8c4eb305d29a52dc72b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d525f7a2d4c2af64da084cde91cd7f4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a4d525f7a2d4c2af64da084cde91cd7f4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a4d525f7a2d4c2af64da084cde91cd7f4">count_alphabet_literals</a> (T &amp;&amp;input)</td></tr>
+<tr class="separator:a4d525f7a2d4c2af64da084cde91cd7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3fea8672735f66f6a6022f565d7fa1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#af3fea8672735f66f6a6022f565d7fa1e">effective_alphabet_size</a> (const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *C)</td></tr>
+<tr class="memdesc:af3fea8672735f66f6a6022f565d7fa1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an array that maps from the effective alphabet to the full alphabet.  <a href="#af3fea8672735f66f6a6022f565d7fa1e">More...</a><br /></td></tr>
+<tr class="separator:af3fea8672735f66f6a6022f565d7fa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb3926e6ed1603242990ffb34d07ebd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a9cb3926e6ed1603242990ffb34d07ebd">gen_effective_alphabet</a> (const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *const C, const size_t alphabet_size)</td></tr>
+<tr class="memdesc:a9cb3926e6ed1603242990ffb34d07ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes an array that maps from the effective alphabet to the full alphabet The full alphabet is determined by the non-zero entries of the array C.  <a href="#a9cb3926e6ed1603242990ffb34d07ebd">More...</a><br /></td></tr>
+<tr class="separator:a9cb3926e6ed1603242990ffb34d07ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805cdd5ffe0f97eb842f556ac4406a39"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a805cdd5ffe0f97eb842f556ac4406a39">gen_codelengths</a> (const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *const C, const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const map_from_effective, const size_t alphabet_size)</td></tr>
+<tr class="memdesc:a805cdd5ffe0f97eb842f556ac4406a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array storing for each character of the effective alphabet the length of its codeword.  <a href="#a805cdd5ffe0f97eb842f556ac4406a39">More...</a><br /></td></tr>
+<tr class="separator:a805cdd5ffe0f97eb842f556ac4406a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688166fb87e0985abf6c0c7a5a4251d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a688166fb87e0985abf6c0c7a5a4251d0">gen_numl</a> (const uint8_t *const ordered_codelengths, const size_t alphabet_size, const uint8_t longest)</td></tr>
 <tr class="memdesc:a688166fb87e0985abf6c0c7a5a4251d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the numl array (.  <a href="#a688166fb87e0985abf6c0c7a5a4251d0">More...</a><br /></td></tr>
 <tr class="separator:a688166fb87e0985abf6c0c7a5a4251d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e64f0f95cf67296f2289f1597fdf70"><td class="memItemLeft" align="right" valign="top">size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a70e64f0f95cf67296f2289f1597fdf70">gen_first_codes</a> (const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const numl, const size_t longest)</td></tr>
+<tr class="memitem:a70e64f0f95cf67296f2289f1597fdf70"><td class="memItemLeft" align="right" valign="top">size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a70e64f0f95cf67296f2289f1597fdf70">gen_first_codes</a> (const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const numl, const size_t longest)</td></tr>
 <tr class="memdesc:a70e64f0f95cf67296f2289f1597fdf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The returned array stores for each codeword length the smallest codeword of the respective length.  <a href="#a70e64f0f95cf67296f2289f1597fdf70">More...</a><br /></td></tr>
 <tr class="separator:a70e64f0f95cf67296f2289f1597fdf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac67c53ec352a53567128844ba387c2e6"><td class="memItemLeft" align="right" valign="top">size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#ac67c53ec352a53567128844ba387c2e6">gen_codewords</a> (const uint8_t *const ordered_codelengths, const size_t alphabet_size, const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const numl, const uint8_t longest)</td></tr>
+<tr class="memitem:ac67c53ec352a53567128844ba387c2e6"><td class="memItemLeft" align="right" valign="top">size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#ac67c53ec352a53567128844ba387c2e6">gen_codewords</a> (const uint8_t *const ordered_codelengths, const size_t alphabet_size, const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const numl, const uint8_t longest)</td></tr>
 <tr class="memdesc:ac67c53ec352a53567128844ba387c2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates all codewords.  <a href="#ac67c53ec352a53567128844ba387c2e6">More...</a><br /></td></tr>
 <tr class="separator:ac67c53ec352a53567128844ba387c2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5abd0ba06fa9d03e6033c22bdaf4605d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a5abd0ba06fa9d03e6033c22bdaf4605d">huffmantable_encode</a> (<a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const <a class="el" href="structtdc_1_1huff_1_1huffmantable.html">huffmantable</a> &amp;table)</td></tr>
@@ -159,25 +159,25 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f1692a7985778544f1ef39058dd212f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a0f1692a7985778544f1ef39058dd212f">gen_ordered_map_to_effective</a> (const uint8_t *const ordered_map_from_effective, const size_t alphabet_size)</td></tr>
 <tr class="memdesc:a0f1692a7985778544f1ef39058dd212f"><td class="mdescLeft">&#160;</td><td class="mdescRight">maps from the full alphabet to the effective alphabet  <a href="#a0f1692a7985778544f1ef39058dd212f">More...</a><br /></td></tr>
 <tr class="separator:a0f1692a7985778544f1ef39058dd212f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401f73490ae05c05dc2834156b4b5526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a401f73490ae05c05dc2834156b4b5526">huffman_encode</a> (<a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> input, <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const uint8_t *const ordered_codelengths, const uint8_t *const ordered_map_to_effective, const size_t alphabet_size, const size_t *const codewords)</td></tr>
+<tr class="memitem:a401f73490ae05c05dc2834156b4b5526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a401f73490ae05c05dc2834156b4b5526">huffman_encode</a> (<a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> input, <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const uint8_t *const ordered_codelengths, const uint8_t *const ordered_map_to_effective, const size_t alphabet_size, const size_t *const codewords)</td></tr>
 <tr class="memdesc:a401f73490ae05c05dc2834156b4b5526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a single literal.  <a href="#a401f73490ae05c05dc2834156b4b5526">More...</a><br /></td></tr>
 <tr class="separator:a401f73490ae05c05dc2834156b4b5526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d5120200654f035a181e9ccd04a282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a29d5120200654f035a181e9ccd04a282">huffman_encode</a> (std::basic_istream&lt; <a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a> &gt; &amp;input, <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const size_t input_length, const uint8_t *const ordered_map_from_effective, const uint8_t *const ordered_codelengths, const size_t alphabet_size, const size_t *const codewords)</td></tr>
-<tr class="memdesc:a29d5120200654f035a181e9ccd04a282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a stream storing input_length characters.  <a href="#a29d5120200654f035a181e9ccd04a282">More...</a><br /></td></tr>
-<tr class="separator:a29d5120200654f035a181e9ccd04a282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36576982e03ffe1ee95cf8a039f7b6a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a36576982e03ffe1ee95cf8a039f7b6a1">huffman_encode</a> (std::istream &amp;input, <a class="el" href="classtdc_1_1io_1_1_bit_o_stream.html">tdc::io::BitOStream</a> &amp;os, const size_t input_length, const uint8_t *const ordered_map_from_effective, const uint8_t *const ordered_codelengths, const size_t alphabet_size, const size_t *const codewords)</td></tr>
+<tr class="memdesc:a36576982e03ffe1ee95cf8a039f7b6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a stream storing input_length characters.  <a href="#a36576982e03ffe1ee95cf8a039f7b6a1">More...</a><br /></td></tr>
+<tr class="separator:a36576982e03ffe1ee95cf8a039f7b6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf47d70743347f21ad7aa500ffbbf0a8"><td class="memItemLeft" align="right" valign="top">size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#acf47d70743347f21ad7aa500ffbbf0a8">gen_prefix_sum_lengths</a> (const uint8_t *const ordered_codelengths, const size_t alphabet_size, const uint8_t longest)</td></tr>
 <tr class="memdesc:acf47d70743347f21ad7aa500ffbbf0a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">prefix_sum_lengths stores for each different codeword length the first entry of the codeword with this length in codewords Needed for decoding Huffman code  <a href="#acf47d70743347f21ad7aa500ffbbf0a8">More...</a><br /></td></tr>
 <tr class="separator:acf47d70743347f21ad7aa500ffbbf0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3de6cb9b28fdc4c28c4f265dda9c5f7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a3de6cb9b28fdc4c28c4f265dda9c5f7c">huffman_decode</a> (<a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">tdc::io::BitIStream</a> &amp;is, const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const ordered_map_from_effective, const size_t *const prefix_sum_lengths, const size_t *const firstcodes)</td></tr>
-<tr class="separator:a3de6cb9b28fdc4c28c4f265dda9c5f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4373d466fc7d316a865c4c47ca781e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a4373d466fc7d316a865c4c47ca781e13">huffman_decode</a> (<a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">tdc::io::BitIStream</a> &amp;is, std::basic_ostream&lt; <a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a> &gt; &amp;output, const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const ordered_map_from_effective, const uint8_t *const ordered_codelengths, const size_t alphabet_size, const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const numl, const uint8_t longest)</td></tr>
-<tr class="separator:a4373d466fc7d316a865c4c47ca781e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac18e75cb319f5ea9eaedf51c15c53be"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#aac18e75cb319f5ea9eaedf51c15c53be">gen_ordered_codelength</a> (const size_t alphabet_size, const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const numl, const size_t longest)</td></tr>
+<tr class="memitem:a57c93f17fc3243607a5b79055b83f840"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a57c93f17fc3243607a5b79055b83f840">huffman_decode</a> (<a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">tdc::io::BitIStream</a> &amp;is, const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const ordered_map_from_effective, const size_t *const prefix_sum_lengths, const size_t *const firstcodes)</td></tr>
+<tr class="separator:a57c93f17fc3243607a5b79055b83f840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8273b865a3317df069bf129be109ac6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a8273b865a3317df069bf129be109ac6d">huffman_decode</a> (<a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">tdc::io::BitIStream</a> &amp;is, std::ostream &amp;output, const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const ordered_map_from_effective, const uint8_t *const ordered_codelengths, const size_t alphabet_size, const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const numl, const uint8_t longest)</td></tr>
+<tr class="separator:a8273b865a3317df069bf129be109ac6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac18e75cb319f5ea9eaedf51c15c53be"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#aac18e75cb319f5ea9eaedf51c15c53be">gen_ordered_codelength</a> (const size_t alphabet_size, const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const numl, const size_t longest)</td></tr>
 <tr class="memdesc:aac18e75cb319f5ea9eaedf51c15c53be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the lengths of all codewords of the Huffman code.  <a href="#aac18e75cb319f5ea9eaedf51c15c53be">More...</a><br /></td></tr>
 <tr class="separator:aac18e75cb319f5ea9eaedf51c15c53be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57054a45e52ecfca0250d177128b1830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtdc_1_1huff_1_1extended__huffmantable.html">extended_huffmantable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a57054a45e52ecfca0250d177128b1830">gen_huffmantable</a> (const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *const C)</td></tr>
-<tr class="memdesc:a57054a45e52ecfca0250d177128b1830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the Huffman table based on some input text.  <a href="#a57054a45e52ecfca0250d177128b1830">More...</a><br /></td></tr>
-<tr class="separator:a57054a45e52ecfca0250d177128b1830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c98343d3b97ec3f7ed351ba7095135a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtdc_1_1huff_1_1extended__huffmantable.html">extended_huffmantable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a5c98343d3b97ec3f7ed351ba7095135a">gen_huffmantable</a> (const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *const C)</td></tr>
+<tr class="memdesc:a5c98343d3b97ec3f7ed351ba7095135a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the Huffman table based on some input text.  <a href="#a5c98343d3b97ec3f7ed351ba7095135a">More...</a><br /></td></tr>
+<tr class="separator:a5c98343d3b97ec3f7ed351ba7095135a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20e22d30b6e9626bcb86121ed3d51513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtdc_1_1huff_1_1extended__huffmantable.html">extended_huffmantable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a20e22d30b6e9626bcb86121ed3d51513">gen_huffmantable</a> (const std::string &amp;text)</td></tr>
 <tr class="separator:a20e22d30b6e9626bcb86121ed3d51513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367116060d59e1d37d45969c3ece5cea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1huff.html#a367116060d59e1d37d45969c3ece5cea">encode</a> (<a class="el" href="classtdc_1_1io_1_1_input.html">tdc::io::Input</a> &amp;input, <a class="el" href="classtdc_1_1io_1_1_output.html">tdc::io::Output</a> &amp;output)</td></tr>
@@ -186,14 +186,14 @@ Functions</h2></td></tr>
 <tr class="separator:ac331c51a5c091123954d261c7e27489c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a59b6ec3f7690f0c49cb6cc83e464da77"></a>
+<a class="anchor" id="a979cc2de3bf8c4eb305d29a52dc72b86"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>* tdc::huff::count_alphabet </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a>* tdc::huff::count_alphabet </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -215,14 +215,14 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2a002fe7cc99c16ec42a6af47b380b5d"></a>
+<a class="anchor" id="a4d525f7a2d4c2af64da084cde91cd7f4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a>* tdc::huff::count_alphabet_literals </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a>* tdc::huff::count_alphabet_literals </td>
           <td>(</td>
           <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
@@ -271,7 +271,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad50fbec7607011c23f4e5a797327bf1f"></a>
+<a class="anchor" id="af3fea8672735f66f6a6022f565d7fa1e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -279,9 +279,9 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> tdc::huff::effective_alphabet_size </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> tdc::huff::effective_alphabet_size </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *&#160;</td>
           <td class="paramname"><em>C</em></td><td>)</td>
           <td></td>
         </tr>
@@ -300,7 +300,7 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a59b6ec3f7690f0c49cb6cc83e464da77" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a979cc2de3bf8c4eb305d29a52dc72b86" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00051">51</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
 
@@ -342,7 +342,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aad5d9a481af7758cda93a74c7c6bee37"></a>
+<a class="anchor" id="a805cdd5ffe0f97eb842f556ac4406a39"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -352,13 +352,13 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">uint8_t* tdc::huff::gen_codelengths </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *const&#160;</td>
           <td class="paramname"><em>C</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const&#160;</td>
           <td class="paramname"><em>map_from_effective</em>, </td>
         </tr>
         <tr>
@@ -387,7 +387,7 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a59b6ec3f7690f0c49cb6cc83e464da77" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a979cc2de3bf8c4eb305d29a52dc72b86" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">map_from_effective</td><td>maps from the effective alphabet to the full alphabet </td></tr>
@@ -422,7 +422,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const&#160;</td>
           <td class="paramname"><em>numl</em>, </td>
         </tr>
         <tr>
@@ -451,7 +451,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a70e5b95ac907620c06f72d583a78ca4a"></a>
+<a class="anchor" id="a9cb3926e6ed1603242990ffb34d07ebd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -459,9 +459,9 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>* tdc::huff::gen_effective_alphabet </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>* tdc::huff::gen_effective_alphabet </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *const&#160;</td>
           <td class="paramname"><em>C</em>, </td>
         </tr>
         <tr>
@@ -491,7 +491,7 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a59b6ec3f7690f0c49cb6cc83e464da77" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a979cc2de3bf8c4eb305d29a52dc72b86" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_huffman_coder_8hpp_source.html#l00061">61</a> of file <a class="el" href="_huffman_coder_8hpp_source.html">HuffmanCoder.hpp</a>.</p>
 
@@ -507,7 +507,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">size_t* tdc::huff::gen_first_codes </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const&#160;</td>
           <td class="paramname"><em>numl</em>, </td>
         </tr>
         <tr>
@@ -535,7 +535,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a57054a45e52ecfca0250d177128b1830"></a>
+<a class="anchor" id="a5c98343d3b97ec3f7ed351ba7095135a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -545,7 +545,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structtdc_1_1huff_1_1extended__huffmantable.html">extended_huffmantable</a> tdc::huff::gen_huffmantable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408">len_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *const&#160;</td>
           <td class="paramname"><em>C</em></td><td>)</td>
           <td></td>
         </tr>
@@ -564,7 +564,7 @@ template&lt;class T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a59b6ec3f7690f0c49cb6cc83e464da77" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacetdc_1_1huff.html#a979cc2de3bf8c4eb305d29a52dc72b86" title="Counts the number of different elements in a sequence. ">count_alphabet</a> </dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Deletes the input array C! </dd>
 <dd>
 C must contain at least two non-zero values </dd></dl>
@@ -607,7 +607,7 @@ C must contain at least two non-zero values </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>* tdc::huff::gen_numl </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>* tdc::huff::gen_numl </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *const&#160;</td>
           <td class="paramname"><em>ordered_codelengths</em>, </td>
@@ -660,7 +660,7 @@ C must contain at least two non-zero values </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const&#160;</td>
           <td class="paramname"><em>numl</em>, </td>
         </tr>
         <tr>
@@ -771,7 +771,7 @@ C must contain at least two non-zero values </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3de6cb9b28fdc4c28c4f265dda9c5f7c"></a>
+<a class="anchor" id="a57c93f17fc3243607a5b79055b83f840"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -779,7 +779,7 @@ C must contain at least two non-zero values </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a> tdc::huff::huffman_decode </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> tdc::huff::huffman_decode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtdc_1_1io_1_1_bit_i_stream.html">tdc::io::BitIStream</a> &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
@@ -787,7 +787,7 @@ C must contain at least two non-zero values </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const&#160;</td>
           <td class="paramname"><em>ordered_map_from_effective</em>, </td>
         </tr>
         <tr>
@@ -819,7 +819,7 @@ C must contain at least two non-zero values </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a4373d466fc7d316a865c4c47ca781e13"></a>
+<a class="anchor" id="a8273b865a3317df069bf129be109ac6d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -835,13 +835,13 @@ C must contain at least two non-zero values </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::basic_ostream&lt; <a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>output</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const&#160;</td>
           <td class="paramname"><em>ordered_map_from_effective</em>, </td>
         </tr>
         <tr>
@@ -859,7 +859,7 @@ C must contain at least two non-zero values </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *const&#160;</td>
           <td class="paramname"><em>numl</em>, </td>
         </tr>
         <tr>
@@ -895,7 +895,7 @@ C must contain at least two non-zero values </dd></dl>
         <tr>
           <td class="memname">void tdc::huff::huffman_encode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacetdc.html#a83a48cf82def7e8690fa0f1c92996486">uliteral_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
@@ -947,7 +947,7 @@ C must contain at least two non-zero values </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a29d5120200654f035a181e9ccd04a282"></a>
+<a class="anchor" id="a36576982e03ffe1ee95cf8a039f7b6a1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -957,7 +957,7 @@ C must contain at least two non-zero values </dd></dl>
         <tr>
           <td class="memname">void tdc::huff::huffman_encode </td>
           <td>(</td>
-          <td class="paramtype">std::basic_istream&lt; <a class="el" href="namespacetdc.html#afe7b473912ea68197e905d0a2059e0a4">literal_t</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>

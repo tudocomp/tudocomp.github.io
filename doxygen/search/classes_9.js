@@ -33,7 +33,7 @@ var searchData=
   ['intvectortrait_3c_20uint_5ft_3c_20n_20_3e_2c_20typename_20std_3a_3aenable_5fif_3c_28n_258_29_21_3d0_20_3e_3a_3atype_20_3e',['IntVectorTrait&lt; uint_t&lt; N &gt;, typename std::enable_if&lt;(N%8)!=0 &gt;::type &gt;',['../structtdc_1_1int__vector_1_1_int_vector_trait_3_01uint__t_3_01_n_01_4_00_01typename_01std_1_1ena47163dac58dc94a7de6746c5b0aec1c4.html',1,'tdc::int_vector']]],
   ['intvectortrait_3c_20uliteral_5ft_20_3e',['IntVectorTrait&lt; uliteral_t &gt;',['../structtdc_1_1int__vector_1_1_int_vector_trait.html',1,'tdc::int_vector']]],
   ['isafromsa',['ISAFromSA',['../classtdc_1_1_i_s_a_from_s_a.html',1,'tdc']]],
-  ['iterator',['Iterator',['../classtdc_1_1lz78_1_1_my_hash_1_1_iterator.html',1,'tdc::lz78::MyHash']]],
+  ['iterator',['Iterator',['../classtdc_1_1_hash_map_1_1_iterator.html',1,'tdc::HashMap']]],
   ['iterator_5ftraits_3c_20tdc_3a_3aint_5fvector_3a_3aconstintptr_3c_20t_20_3e_20_3e',['iterator_traits&lt; tdc::int_vector::ConstIntPtr&lt; T &gt; &gt;',['../structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_const_int_ptr_3_01_t_01_4_01_4.html',1,'std']]],
   ['iterator_5ftraits_3c_20tdc_3a_3aint_5fvector_3a_3aintptr_3c_20t_20_3e_20_3e',['iterator_traits&lt; tdc::int_vector::IntPtr&lt; T &gt; &gt;',['../structstd_1_1iterator__traits_3_01tdc_1_1int__vector_1_1_int_ptr_3_01_t_01_4_01_4.html',1,'std']]]
 ];

@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['table_5fsize',['table_size',['../classtdc_1_1lz78_1_1_my_hash.html#ac5ea547f8ce7018a8c03438bd4e82586',1,'tdc::lz78::MyHash']]],
+  ['table_5fsize',['table_size',['../classtdc_1_1_hash_map.html#a00d2b18462459616746451ed22aa93c6',1,'tdc::HashMap']]],
   ['tellp',['tellp',['../classtdc_1_1io_1_1_bit_o_stream.html#a42a811b7bf099f4b2adfe47e387a9194',1,'tdc::io::BitOStream::tellp()'],['../classtdc_1_1io_1_1_output_stream.html#a6589733a261c8c5685010fa25a0b0e24',1,'tdc::io::OutputStream::tellp()']]],
   ['templated',['templated',['../classtdc_1_1_meta_1_1_option_builder.html#a161a698d22aa04f5fe18c662a2f33cb5',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)'],['../classtdc_1_1_meta_1_1_option_builder.html#acdf93b3e7cfcf8a59ae8184810f128f2',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)']]],
   ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html#a6ef2fdcd7aa0e72a783e4c0e4e1c0929',1,'tdc::TernaryCoder']]],
-  ['ternarytrie',['TernaryTrie',['../classtdc_1_1lz78_1_1_ternary_trie.html#ab13255aea49f0944f592b3cff08bc506',1,'tdc::lz78::TernaryTrie']]],
+  ['ternarytrie',['TernaryTrie',['../classtdc_1_1lz78_1_1_ternary_trie.html#a37cf796f3ba139fd596b03912791d9b9',1,'tdc::lz78::TernaryTrie::TernaryTrie(Env &amp;&amp;env, const size_t n, const size_t &amp;remaining_characters, factorid_t reserve=0)'],['../classtdc_1_1lz78_1_1_ternary_trie.html#ae979e039be27e62e2f06943fcdfb3f3f',1,'tdc::lz78::TernaryTrie::TernaryTrie(TernaryTrie &amp;&amp;other)=default']]],
   ['test',['test',['../classcedar_1_1da.html#a66c513807f074228059695ef40a2291a',1,'cedar::da']]],
   ['text',['text',['../classtdc_1_1_text_d_s.html#a54bd7b4f08d19d808de0792eb8d5e796',1,'tdc::TextDS']]],
   ['textds',['TextDS',['../classtdc_1_1_text_d_s.html#affcdd950c5122f183ff57d5d3c4e7b1c',1,'tdc::TextDS::TextDS(Env &amp;&amp;env, const View &amp;text)'],['../classtdc_1_1_text_d_s.html#aa34d16cc9ad5387c7f00130bbb1afe43',1,'tdc::TextDS::TextDS(Env &amp;&amp;env, const View &amp;text, dsflags_t flags, CompressMode cm=CompressMode::select)']]],
@@ -13,6 +13,7 @@ var searchData=
   ['to_5falgorithm',['to_algorithm',['../classtdc_1_1_option_value.html#a65e2219c61e6589dae65098faf99217a',1,'tdc::OptionValue']]],
   ['to_5fjson',['to_json',['../classtdc_1_1_stat_phase.html#a7e2210a96c67e6a2067df30ef86e31ff',1,'tdc::StatPhase']]],
   ['to_5fstr',['to_str',['../namespacetdc.html#aa2239ba97875cc0883cf1423a3fcc821',1,'tdc']]],
+  ['to_5fstring',['to_string',['../namespacestd.html#adae5fc0f0ebe4f35b0ad4e055a54abf3',1,'std']]],
   ['top',['top',['../classtdc_1_1_array_max_heap.html#a08208b4891a93bd50fd556c96dc88bd4',1,'tdc::ArrayMaxHeap']]],
   ['total_5fsize',['total_size',['../classcedar_1_1da.html#a09210838350134b687577d3bd2f3c8cf',1,'cedar::da']]],
   ['tr_5fcopy',['tr_copy',['../namespacetdc_1_1libdivsufsort.html#a7a4c01071d903aee03fe031878eb6b1c',1,'tdc::libdivsufsort']]],
@@ -33,6 +34,7 @@ var searchData=
   ['trienode',['TrieNode',['../classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html#ad2e62c7408997e8e24ca07dde2c502aa',1,'tdc::lz78::TrieNode&lt; CedarSearchPos &gt;::TrieNode(const factorid_t &amp;id, const CedarSearchPos &amp;search_pos)'],['../classtdc_1_1lz78_1_1_trie_node_3_01_cedar_search_pos_01_4.html#ac4db5e8f645c175656b06e552b7d5a9a',1,'tdc::lz78::TrieNode&lt; CedarSearchPos &gt;::TrieNode()'],['../classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#aa3962d92738721c29a76b5e6221bb123',1,'tdc::lz78::TrieNode&lt; factorid_t &gt;::TrieNode(const factorid_t &amp;id_and_search_pos)'],['../classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#aa01a0db69649fb237bcc05dbca9f5d71',1,'tdc::lz78::TrieNode&lt; factorid_t &gt;::TrieNode()']]],
   ['trsort',['trsort',['../namespacetdc_1_1libdivsufsort.html#af4b38183dcd965bd36ba17d2af20a0e0',1,'tdc::libdivsufsort']]],
   ['tvalue',['TValue',['../classtdc_1_1json_1_1_t_value.html#aa47bbdb9c69b971fd224c14cebef9ea1',1,'tdc::json::TValue']]],
+  ['twist',['twist',['../class_m_t_rand.html#af1219020248cb80b772d64e2b6151a9c',1,'MTRand']]],
   ['type',['type',['../classtdc_1_1_meta.html#aeda433bf2ee43daa4f234d6deeb21465',1,'tdc::Meta']]],
   ['typerange',['TypeRange',['../classtdc_1_1_type_range.html#ad2e37b441ddf0a72fe760a602c4c45c0',1,'tdc::TypeRange']]]
 ];

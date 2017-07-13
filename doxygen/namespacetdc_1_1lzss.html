@@ -132,9 +132,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab0b06f04a49fbe5067cc90a8d1245d28"><td class="memTemplParams" colspan="2">template&lt;typename coder_t , typename text_t &gt; </td></tr>
-<tr class="memitem:ab0b06f04a49fbe5067cc90a8d1245d28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lzss.html#ab0b06f04a49fbe5067cc90a8d1245d28">encode_text</a> (coder_t &amp;coder, const text_t &amp;text, const <a class="el" href="classtdc_1_1lzss_1_1_factor_buffer.html">FactorBuffer</a> &amp;factors)</td></tr>
-<tr class="separator:ab0b06f04a49fbe5067cc90a8d1245d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f5c192386781acf9421ad6567a8b93"><td class="memTemplParams" colspan="2">template&lt;typename coder_t , typename text_t , typename factor_t  = FactorBuffer&gt; </td></tr>
+<tr class="memitem:a77f5c192386781acf9421ad6567a8b93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lzss.html#a77f5c192386781acf9421ad6567a8b93">encode_text</a> (coder_t &amp;coder, const text_t &amp;text, const factor_t &amp;factors)</td></tr>
+<tr class="separator:a77f5c192386781acf9421ad6567a8b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95bf7a3a8a84090beaa2d3b9bcd59f3f"><td class="memTemplParams" colspan="2">template&lt;typename coder_t , typename decode_buffer_t &gt; </td></tr>
 <tr class="memitem:a95bf7a3a8a84090beaa2d3b9bcd59f3f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lzss.html#a95bf7a3a8a84090beaa2d3b9bcd59f3f">decode_text</a> (coder_t &amp;decoder, std::ostream &amp;outs)</td></tr>
 <tr class="separator:a95bf7a3a8a84090beaa2d3b9bcd59f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,11 +204,11 @@ template&lt;typename coder_t , typename decode_buffer_t &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab0b06f04a49fbe5067cc90a8d1245d28"></a>
+<a class="anchor" id="a77f5c192386781acf9421ad6567a8b93"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename coder_t , typename text_t &gt; </div>
+template&lt;typename coder_t , typename text_t , typename factor_t  = FactorBuffer&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -228,7 +228,7 @@ template&lt;typename coder_t , typename text_t &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtdc_1_1lzss_1_1_factor_buffer.html">FactorBuffer</a> &amp;&#160;</td>
+          <td class="paramtype">const factor_t &amp;&#160;</td>
           <td class="paramname"><em>factors</em>&#160;</td>
         </tr>
         <tr>
@@ -243,6 +243,8 @@ template&lt;typename coder_t , typename text_t &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>range for factor lengths</p>
+<p>current text position </p>
 
 <p>Definition at line <a class="el" href="_l_z_s_s_coding_8hpp_source.html#l00019">19</a> of file <a class="el" href="_l_z_s_s_coding_8hpp_source.html">LZSSCoding.hpp</a>.</p>
 

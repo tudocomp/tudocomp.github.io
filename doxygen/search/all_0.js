@@ -6,5 +6,7 @@ var searchData=
   ['_5f_5flibc_5frealloc',['__libc_realloc',['../malloc_8hpp.html#a5306ab4b0eb506dfb5933a167cc81011',1,'malloc.hpp']]],
   ['_5fdoublehashingprober',['_DoubleHashingProber',['../structtdc_1_1___double_hashing_prober.html',1,'tdc']]],
   ['_5fgnu_5fsource',['_GNU_SOURCE',['../malloc_8hpp.html#a369266c24eacffb87046522897a570d5',1,'malloc.hpp']]],
-  ['_5ftrbudget_5ft',['_trbudget_t',['../structtdc_1_1libdivsufsort_1_1__trbudget__t.html',1,'tdc::libdivsufsort']]]
+  ['_5fprime',['_prime',['../classtdc_1_1lz78_1_1_randomizer.html#a6d72b92c701d206cd5990213d9737a1f',1,'tdc::lz78::Randomizer']]],
+  ['_5ftrbudget_5ft',['_trbudget_t',['../structtdc_1_1libdivsufsort_1_1__trbudget__t.html',1,'tdc::libdivsufsort']]],
+  ['_5fvignahasher',['_VignaHasher',['../structtdc_1_1___vigna_hasher.html',1,'tdc']]]
 ];

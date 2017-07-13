@@ -116,7 +116,10 @@ $(document).ready(function(){initNavTree('squeeze__node_8hpp.html','');});
 <div class="title">squeeze_node.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;<a class="el" href="uint__t_8hpp_source.html">tudocomp/ds/uint_t.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="def_8hpp_source.html">tudocomp/def.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_l_z78_trie_8hpp_source.html">tudocomp/compressors/lz78/LZ78Trie.hpp</a>&gt;</code><br />
+</div>
 <p><a href="squeeze__node_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -130,22 +133,22 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af360b2c052d3ace41513bd34c70936fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squeeze__node_8hpp.html#af360b2c052d3ace41513bd34c70936fc">ALPHABET_BITS</a>&#160;&#160;&#160;(sizeof(literal_t)*8)</td></tr>
+<tr class="memitem:af360b2c052d3ace41513bd34c70936fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="squeeze__node_8hpp.html#af360b2c052d3ace41513bd34c70936fc">ALPHABET_BITS</a>&#160;&#160;&#160;(sizeof(uliteral_t)*8)</td></tr>
 <tr class="separator:af360b2c052d3ace41513bd34c70936fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0abe2bebdad8b81a2db310fa7a2b2384"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a0abe2bebdad8b81a2db310fa7a2b2384">tdc::lz78::node_t</a></td></tr>
-<tr class="separator:a0abe2bebdad8b81a2db310fa7a2b2384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63431eea0803b56d8a35508c6fc3523f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&lt; 40 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a63431eea0803b56d8a35508c6fc3523f">tdc::lz78::squeeze_node_t</a></td></tr>
+<tr class="separator:a63431eea0803b56d8a35508c6fc3523f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a22ea6f72e18165d57cffcc9cf2d8cd93"><td class="memItemLeft" align="right" valign="top">factorid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a22ea6f72e18165d57cffcc9cf2d8cd93">tdc::lz78::get_id</a> (node_t data)</td></tr>
-<tr class="separator:a22ea6f72e18165d57cffcc9cf2d8cd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd3448813f551fc94d8d110cc4572a6b"><td class="memItemLeft" align="right" valign="top">literal_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#acd3448813f551fc94d8d110cc4572a6b">tdc::lz78::get_letter</a> (node_t data)</td></tr>
-<tr class="separator:acd3448813f551fc94d8d110cc4572a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dfc3ba5cf68e8f6d001d27a891ceff0"><td class="memItemLeft" align="right" valign="top">node_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a6dfc3ba5cf68e8f6d001d27a891ceff0">tdc::lz78::create_node</a> (factorid_t id, uliteral_t c)</td></tr>
-<tr class="separator:a6dfc3ba5cf68e8f6d001d27a891ceff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7721bf1079c826e31ab7d6d092decad"><td class="memItemLeft" align="right" valign="top">factorid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#af7721bf1079c826e31ab7d6d092decad">tdc::lz78::get_id</a> (squeeze_node_t data)</td></tr>
+<tr class="separator:af7721bf1079c826e31ab7d6d092decad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55b0da5c99bc7408f6b3c9fef5cf048"><td class="memItemLeft" align="right" valign="top">uliteral_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#aa55b0da5c99bc7408f6b3c9fef5cf048">tdc::lz78::get_letter</a> (squeeze_node_t data)</td></tr>
+<tr class="separator:aa55b0da5c99bc7408f6b3c9fef5cf048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae30390a92f4ae97e1cf57d7dd4cbf5"><td class="memItemLeft" align="right" valign="top">squeeze_node_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#abae30390a92f4ae97e1cf57d7dd4cbf5">tdc::lz78::create_node</a> (factorid_t id, uliteral_t c)</td></tr>
+<tr class="separator:abae30390a92f4ae97e1cf57d7dd4cbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="af360b2c052d3ace41513bd34c70936fc"></a>
@@ -153,12 +156,12 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ALPHABET_BITS&#160;&#160;&#160;(sizeof(literal_t)*8)</td>
+          <td class="memname">#define ALPHABET_BITS&#160;&#160;&#160;(sizeof(uliteral_t)*8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="squeeze__node_8hpp_source.html#l00014">14</a> of file <a class="el" href="squeeze__node_8hpp_source.html">squeeze_node.hpp</a>.</p>
+<p>Definition at line <a class="el" href="squeeze__node_8hpp_source.html#l00019">19</a> of file <a class="el" href="squeeze__node_8hpp_source.html">squeeze_node.hpp</a>.</p>
 
 </div>
 </div>

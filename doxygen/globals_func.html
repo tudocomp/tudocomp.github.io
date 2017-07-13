@@ -82,16 +82,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>All</span></a></li>
       <li class="current"><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
       <li><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index__"><span>_</span></a></li>
-      <li><a href="#index_a"><span>a</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
-      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
       <li class="current"><a href="#index_u"><span>u</span></a></li>
     </ul>
@@ -141,16 +141,6 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
-<li>assert_permutation()
-: <a class="el" href="util_8hpp.html#af07b28ed9b9e8900a620a10528cb9159">util.hpp</a>
-</li>
-<li>assert_permutation_offset()
-: <a class="el" href="util_8hpp.html#a72a879b4a1885c13aa0c199c7de17c32">util.hpp</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>dynamic_t()
 : <a class="el" href="dynamic__t_8hpp.html#a5691a1ca52688249e79729f8b76401ae">dynamic_t.hpp</a>
@@ -165,9 +155,9 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
-<li>isqrt()
-: <a class="el" href="util_8hpp.html#aaf6d951dcab19cd167989118af44e1b5">util.hpp</a>
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>maskfnc()
+: <a class="el" href="characterhash_8h.html#aed2b8d86243b1e10c80ab8aa170bf8f4">characterhash.h</a>
 </li>
 </ul>
 
@@ -178,16 +168,16 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 , <a class="el" href="uint__t_8hpp.html#a0b839bbf2d2987178a488d8f126b9947">uint_t.hpp</a>
 </li>
 <li>operator int()
-: <a class="el" href="uint__t_8hpp.html#a951a0204c98d19d2c3a63ef898ca451f">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#a97230a3e4361297dcbdf2426fff50b55">dynamic_t.hpp</a>
+: <a class="el" href="dynamic__t_8hpp.html#a97230a3e4361297dcbdf2426fff50b55">dynamic_t.hpp</a>
+, <a class="el" href="uint__t_8hpp.html#a951a0204c98d19d2c3a63ef898ca451f">uint_t.hpp</a>
 </li>
 <li>operator long int()
 : <a class="el" href="dynamic__t_8hpp.html#a872cd6a86f74259b0ea509cf0592f39f">dynamic_t.hpp</a>
 , <a class="el" href="uint__t_8hpp.html#ab675fbcb782eeb99b87157de307ff1e3">uint_t.hpp</a>
 </li>
 <li>operator long long int()
-: <a class="el" href="uint__t_8hpp.html#a118ab7a7079c98777ae1d05ec1d4f76e">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#a216990db85d95879ffc49f177c1ed5f8">dynamic_t.hpp</a>
+: <a class="el" href="dynamic__t_8hpp.html#a216990db85d95879ffc49f177c1ed5f8">dynamic_t.hpp</a>
+, <a class="el" href="uint__t_8hpp.html#a118ab7a7079c98777ae1d05ec1d4f76e">uint_t.hpp</a>
 </li>
 <li>operator short int()
 : <a class="el" href="dynamic__t_8hpp.html#a07b88be1d8feb7f87524ed0c7910b056">dynamic_t.hpp</a>
@@ -202,8 +192,8 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 , <a class="el" href="uint__t_8hpp.html#a8e2b4678d02726a462c65defa87bc357">uint_t.hpp</a>
 </li>
 <li>operator unsigned int()
-: <a class="el" href="uint__t_8hpp.html#a26ff1ce8d81edff83a9b7400b28c050e">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#a0c50b3728b17642f13af2c96967e539d">dynamic_t.hpp</a>
+: <a class="el" href="dynamic__t_8hpp.html#a0c50b3728b17642f13af2c96967e539d">dynamic_t.hpp</a>
+, <a class="el" href="uint__t_8hpp.html#a26ff1ce8d81edff83a9b7400b28c050e">uint_t.hpp</a>
 </li>
 <li>operator unsigned long int()
 : <a class="el" href="dynamic__t_8hpp.html#a4488db7341f5f06c5be047d71c8bfd8e">dynamic_t.hpp</a>
@@ -217,21 +207,22 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="dynamic__t_8hpp.html#a72f20a23e5be9497a59bfed381712841">dynamic_t.hpp</a>
 , <a class="el" href="uint__t_8hpp.html#a512eff560511caa8a9e310d62f4fce85">uint_t.hpp</a>
 </li>
+<li>operator&lt;&lt;()
+: <a class="el" href="mersennetwister_8h.html#a059061d50a1e54ee3067d4e1dbdd7c64">mersennetwister.h</a>
+</li>
 <li>operator=()
-: <a class="el" href="dynamic__t_8hpp.html#a2b5cc63e8b52bb03dde4941cbdda7bab">dynamic_t.hpp</a>
-, <a class="el" href="uint__t_8hpp.html#a425fa39b3e8c2a4c0c7a5ef5576f2234">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#a0eba5fb667369d37353bc2e0a46273b3">dynamic_t.hpp</a>
-, <a class="el" href="uint__t_8hpp.html#a8dead0045c7ba1fe69162f557593b15f">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#aec90f1bd821c3b69a2ab4da18438e13e">dynamic_t.hpp</a>
-, <a class="el" href="uint__t_8hpp.html#a03746064de68946a95b61e19c3820905">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#ad1d1051617da90111ecdc2b5d4c8ccac">dynamic_t.hpp</a>
-, <a class="el" href="uint__t_8hpp.html#af06b523ccea7e6cb08029a347456b49b">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#aeac6d07b488c639906b12232af203bbf">dynamic_t.hpp</a>
+: <a class="el" href="dynamic__t_8hpp.html#a366db19f8a2a04d3070fff975173e72e">dynamic_t.hpp</a>
+, <a class="el" href="uint__t_8hpp.html#a8ee881ae91323a275709742adc040be0">uint_t.hpp</a>
+, <a class="el" href="dynamic__t_8hpp.html#a2fad1c8c7ed4f21e29a53561f46b03f9">dynamic_t.hpp</a>
 , <a class="el" href="uint__t_8hpp.html#a5ef974125acb9830268e56891593e649">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#af5cd28fd8ea0039bdc775236cc3a6395">dynamic_t.hpp</a>
-, <a class="el" href="uint__t_8hpp.html#ad71b0bcb47326f8a61be8b28cac47807">uint_t.hpp</a>
-, <a class="el" href="dynamic__t_8hpp.html#a8454faf1c5fbb411868d7265e860bf86">dynamic_t.hpp</a>
-, <a class="el" href="uint__t_8hpp.html#ae1dce80d44a1b2d43a66548cd66fe1a2">uint_t.hpp</a>
+, <a class="el" href="dynamic__t_8hpp.html#a016d24efafa3a853c45e00c96b5e2f88">dynamic_t.hpp</a>
+, <a class="el" href="uint__t_8hpp.html#a8dead0045c7ba1fe69162f557593b15f">uint_t.hpp</a>
+, <a class="el" href="dynamic__t_8hpp.html#a0eba5fb667369d37353bc2e0a46273b3">dynamic_t.hpp</a>
+, <a class="el" href="uint__t_8hpp.html#af06b523ccea7e6cb08029a347456b49b">uint_t.hpp</a>
+, <a class="el" href="dynamic__t_8hpp.html#ad1d1051617da90111ecdc2b5d4c8ccac">dynamic_t.hpp</a>
+</li>
+<li>operator&gt;&gt;()
+: <a class="el" href="mersennetwister_8h.html#a45b02a702835a3be42171c5c2dc79b2d">mersennetwister.h</a>
 </li>
 </ul>
 

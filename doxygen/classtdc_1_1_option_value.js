@@ -9,6 +9,7 @@ var classtdc_1_1_option_value =
     [ "as", "classtdc_1_1_option_value.html#afd3a8773306b057d21a477669341b0fd", null ],
     [ "as_algorithm", "classtdc_1_1_option_value.html#a12a6f5b6534af35d9216b7775bc686dd", null ],
     [ "as_bool", "classtdc_1_1_option_value.html#ac75ad553248a0ff612db8e6b53aa2250", null ],
+    [ "as_floating", "classtdc_1_1_option_value.html#a58bf39628335cc42c6e7261b1cd60a7b", null ],
     [ "as_integer", "classtdc_1_1_option_value.html#a57d550396d5173e0bacdd4aa006394a5", null ],
     [ "as_string", "classtdc_1_1_option_value.html#aaa1b8a55584df4676a58aa590fe8528f", null ],
     [ "is_algorithm", "classtdc_1_1_option_value.html#a598c52f4e9a8811c7427562089fa9b9e", null ],

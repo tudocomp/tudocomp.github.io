@@ -33,6 +33,7 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -42,15 +43,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_l_z_s_s_coding_8hpp.html#ab0b06f04a49fbe5067cc90a8d1245d28",
-"classtdc_1_1_array_max_heap.html#a941811d6b33f1cf29063487f6c515c3b",
-"classtdc_1_1_elias_gamma_coder_1_1_decoder.html#ad7f606aeaccbbfe1359a8e5723d6244a",
-"classtdc_1_1_m_t_f_compressor.html#a2c9b2dc23ee34225ff21cc37dc2609a2",
-"classtdc_1_1int__vector_1_1_generic_int_ref_autocast.html",
-"classtdc_1_1io_1_1_restricted_o_stream_buf.html#ab93b9f01fa7a659b05b9c8fcb0b8aba7",
-"classtdc_1_1lzss_1_1_factor.html#ae37cda43511eb499e77fed86f4adea5a",
-"functions_r.html",
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#aa312d874c3dd0f6d7158c92780bfd3c0"
+"_judy_trie_8hpp_source.html",
+"classcedar_1_1da.html#a614d7f7713abe96dfe3e6f7deadee102",
+"classtdc_1_1_const_integer_base_with32.html#acf4280e441a29f97539b5f5efbf2fd08",
+"classtdc_1_1_hash_map.html#ac5b00b570a875136aa4f18e3eae4fb5a",
+"classtdc_1_1_stat_phase.html#aa194f7cf8098f5e48ca0885b56af7caa",
+"classtdc_1_1int__vector_1_1_int_vector.html#a86a982ae78049f6a252fd9f4bd106a2e",
+"classtdc_1_1lz78_1_1_cedar_trie.html#aaa1a71934067cb85a19e5fc45a1fd6b7",
+"divsufsort__def_8hpp.html#ab2cc2462b272f3cef126f3973be7d625",
+"rabinkarphash_8h_source.html",
+"structtdc_1_1int__vector_1_1_bit_packing_vector_base_3_01uint__t_3_01_n_01_4_01_4.html#acde9155ba29539893412547d990c4b8b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

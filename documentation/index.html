@@ -319,7 +319,8 @@ ASSERT_EQ(<span class="st">&quot;ooba&quot;</span>, sub_view); <span class="co">
     <span class="dt">uliteral_t</span> c = iview[i<span class="dv">-1</span>];
     <span class="co">// ...</span>
 }</code></pre></div>
-<p>The type <a href="../doxygen/namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408"><code>len_t</code></a> is another one of <em>tudocomp</em>'s core types and shall be used for lengths and indices.</p>
+<p>The types <a href="../doxygen/namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408"><code>len_t</code></a> and <a href="../doxygen/namespacetdc.html#aa6b4c54c0897b49bf3c9e3f9f71ec408"><code>len_compact_t</code></a> are another instance of <em>tudocomp</em>'s core types. They shall be used for lengths and indices derived from the length of an input.</p>
+<p><code>len_t</code> shall be used for single variables, and <code>len_compact_t</code> for elements of an array or vector.</p>
 <p>The functions <code>as_stream</code> and <code>as_view</code> can be used arbitrarily often to create multiple streams or views on the same input, e.g., in case the input is to be streamed more than once.</p>
 <h3 id="producing-an-output">Producing an Output</h3>
 <p>An <a href="../doxygen/classtdc_1_1io_1_1_output.html"><code>Output</code></a> can be created for different data sinks:</p>
@@ -634,13 +635,13 @@ algo_mul-&gt;execute(); <span class="co">// the result is 40</span></code></pre>
 <h4 id="range-overloads">Range Overloads</h4>
 <p>In order to realize a different behavior for different types of ranges (as presented in the <a href="#ranges"><code>Ranges</code></a> section), overloads of <code>encode</code> and <code>decode</code> are used. These overloads only differ to the default signature in that they accept more specialized Range objects. The following example realizes an ASCII encoding for single bits, as identified by the <a href="../doxygen/namespacetdc.html#a03d5c7581ed3cba7312a32c14e33d906"><code>BitRange</code></a>:</p>
 <div class="sourceCode" caption="coder_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">template</span>&lt;<span class="kw">typename</span> <span class="dt">value_t</span>&gt;
-<span class="kw">inline</span> <span class="dt">void</span> encode(<span class="dt">value_t</span> v, <span class="at">const</span> BitRange&amp; r) {
+<span class="kw">inline</span> <span class="dt">void</span> encode(<span class="dt">value_t</span> v, <span class="at">const</span> BitRange&amp;) {
     <span class="co">// Encode single bits as ASCII</span>
     <span class="va">m_out</span>-&gt;write_int(v ? <span class="st">&#39;1&#39;</span> : <span class="st">&#39;0&#39;</span>);
 }</code></pre></div>
 <p>The same idea works with decoding:</p>
 <div class="sourceCode" caption="coder_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">template</span>&lt;<span class="kw">typename</span> <span class="dt">value_t</span>&gt;
-<span class="kw">inline</span> <span class="dt">value_t</span> decode(<span class="at">const</span> BitRange&amp; r) {
+<span class="kw">inline</span> <span class="dt">value_t</span> decode(<span class="at">const</span> BitRange&amp;) {
     <span class="co">// Decode an ASCII character and compare against &#39;0&#39;</span>
     <span class="dt">uint8_t</span> b = <span class="va">m_in</span>-&gt;read_int&lt;<span class="dt">uint8_t</span>&gt;();
     <span class="cf">return</span> (b != <span class="st">&#39;0&#39;</span>);
@@ -649,7 +650,7 @@ algo_mul-&gt;execute(); <span class="co">// the result is 40</span></code></pre>
 <h4 id="using-literal-iterators">Using Literal Iterators</h4>
 <p>Encoders accept a literal iterator (see <a href="#literal-iterators">Literal Iterators</a>) via their <a href="../doxygen/classtdc_1_1_encoder.html#a44b425acb795cd27f4ed300843f58fbb"><code>constructor</code></a>. The following simple example uses the literal iterator to count the amount of occurences of each possible literal (0 to 255) in the input:</p>
 <div class="sourceCode" caption="coder_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// count occurences of each literal</span>
-<span class="bu">std::</span>memset(<span class="va">m_occ</span>, <span class="dv">0</span>, <span class="dv">256</span>);
+<span class="bu">std::</span>memset(<span class="va">m_occ</span>, <span class="dv">0</span>, <span class="dv">256</span> * <span class="kw">sizeof</span>(<span class="dt">int</span>));
 
 <span class="cf">while</span>(literals.has_next()) {
     Literal l = literals.next();
@@ -920,7 +921,7 @@ StatPhase::wrap(<span class="st">&quot;Phase 3&quot;</span>, []{
 <div class="sourceCode" caption="stats.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Allocate memory, but only track mem2</span>
 StatPhase::pause_tracking();
 <span class="dt">char</span>* mem1 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">1024</span>];
-StatPhase::resume_tracking();    
+StatPhase::resume_tracking();
 
 <span class="dt">char</span>* mem2 = <span class="kw">new</span> <span class="dt">char</span>[<span class="dv">2048</span>];
 

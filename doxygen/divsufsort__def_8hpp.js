@@ -1,6 +1,6 @@
 var divsufsort__def_8hpp =
 [
-    [ "saidx_t", "divsufsort__def_8hpp.html#af9fabe65e4df9f86791f90642239305c", null ],
+    [ "saidx_t", "divsufsort__def_8hpp.html#aa5e769b661fa1bcb0cee278f64888b24", null ],
     [ "saint_t", "divsufsort__def_8hpp.html#a79636f91076aded8e46f02c1aa3e66ad", null ],
     [ "sauchar_t", "divsufsort__def_8hpp.html#a956e0c3ea97bc030ea0e2524cf4b6dea", null ],
     [ "ilg", "divsufsort__def_8hpp.html#ab2cc2462b272f3cef126f3973be7d625", null ],

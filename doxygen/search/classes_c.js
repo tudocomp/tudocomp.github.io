@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['naivestrategy',['NaiveStrategy',['../classtdc_1_1lcpcomp_1_1_naive_strategy.html',1,'tdc::lcpcomp']]],
-  ['nan',['NaN',['../structcedar_1_1_na_n.html',1,'cedar']]],
-  ['nan_3c_20float_20_3e',['NaN&lt; float &gt;',['../structcedar_1_1_na_n_3_01float_01_4.html',1,'cedar']]],
-  ['ninfo',['ninfo',['../structcedar_1_1da_1_1ninfo.html',1,'cedar::da']]],
-  ['node',['node',['../structcedar_1_1da_1_1node.html',1,'cedar::da']]],
-  ['noliterals',['NoLiterals',['../classtdc_1_1_no_literals.html',1,'tdc']]],
-  ['noopcompressor',['NoopCompressor',['../classtdc_1_1_noop_compressor.html',1,'tdc']]],
-  ['numeric_5flimits_3c_20tdc_3a_3auint_5ft_3c_20n_20_3e_20_3e',['numeric_limits&lt; tdc::uint_t&lt; N &gt; &gt;',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__t_3_01_n_01_4_01_4.html',1,'std']]]
+  ['maxheapstrategy',['MaxHeapStrategy',['../classtdc_1_1lcpcomp_1_1_max_heap_strategy.html',1,'tdc::lcpcomp']]],
+  ['maxlcpstrategy',['MaxLCPStrategy',['../classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html',1,'tdc::lcpcomp']]],
+  ['maxlcpsuffixlist',['MaxLCPSuffixList',['../classtdc_1_1lcpcomp_1_1_max_l_c_p_suffix_list.html',1,'tdc::lcpcomp']]],
+  ['mersennerng',['mersenneRNG',['../classmersenne_r_n_g.html',1,'']]],
+  ['meta',['Meta',['../classtdc_1_1_meta.html',1,'tdc']]],
+  ['mindistributedrange',['MinDistributedRange',['../classtdc_1_1_min_distributed_range.html',1,'tdc']]],
+  ['mixhasher',['MixHasher',['../structtdc_1_1_mix_hasher.html',1,'tdc']]],
+  ['moveguard',['MoveGuard',['../classtdc_1_1_move_guard.html',1,'tdc']]],
+  ['mtfcompressor',['MTFCompressor',['../classtdc_1_1_m_t_f_compressor.html',1,'tdc']]],
+  ['mtrand',['MTRand',['../class_m_t_rand.html',1,'']]],
+  ['multimapbuffer',['MultimapBuffer',['../classtdc_1_1lcpcomp_1_1_multimap_buffer.html',1,'tdc::lcpcomp']]]
 ];
