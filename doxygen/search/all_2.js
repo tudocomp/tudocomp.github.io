@@ -64,11 +64,11 @@ var searchData=
   ['bucket_5fbstar',['BUCKET_BSTAR',['../divsufsort__private_8hpp.html#a43519a7093bc1c0d5a77870a7c23fba5',1,'divsufsort_private.hpp']]],
   ['bufferingstrategy',['BufferingStrategy',['../classtdc_1_1lz78u_1_1_buffering_strategy.html',1,'tdc::lz78u']]],
   ['bufferingstrategy_2ehpp',['BufferingStrategy.hpp',['../_buffering_strategy_8hpp.html',1,'']]],
-  ['bufferwrapper',['BufferWrapper',['../classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html',1,'tdc::libdivsufsort']]],
   ['bufferwrapper',['BufferWrapper',['../classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html#abaa2184c35f08abc320b7c53dcac1f81',1,'tdc::libdivsufsort::BufferWrapper']]],
+  ['bufferwrapper',['BufferWrapper',['../classtdc_1_1libdivsufsort_1_1_buffer_wrapper.html',1,'tdc::libdivsufsort']]],
   ['build',['build',['../classcedar_1_1da.html#a626f352688bc69594e056e9d54e923e6',1,'cedar::da']]],
-  ['builder',['Builder',['../classtdc_1_1_builder.html',1,'tdc']]],
   ['builder',['Builder',['../classtdc_1_1_builder.html#ac20946748ecc7ad177402a5433abb3c9',1,'tdc::Builder::Builder()'],['../namespacetdc.html#ada7e749d9e18bc4edf4e7523c2b23c85',1,'tdc::builder()']]],
+  ['builder',['Builder',['../classtdc_1_1_builder.html',1,'tdc']]],
   ['bulldozerstrategy',['BulldozerStrategy',['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html',1,'tdc::lcpcomp']]],
   ['bulldozerstrategy_2ehpp',['BulldozerStrategy.hpp',['../_bulldozer_strategy_8hpp.html',1,'']]],
   ['bwt',['bwt',['../namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb',1,'tdc::bwt']]],
@@ -76,6 +76,7 @@ var searchData=
   ['bwtcompressor',['BWTCompressor',['../classtdc_1_1_b_w_t_compressor.html',1,'tdc']]],
   ['bwtcompressor_2ehpp',['BWTCompressor.hpp',['../_b_w_t_compressor_8hpp.html',1,'']]],
   ['byte_5fto_5fnice_5fascii_5fchar',['byte_to_nice_ascii_char',['../namespacetdc.html#ab77d853e784ceefb74b2ea91d81991f2',1,'tdc']]],
+  ['bytes',['bytes',['../structtdc_1_1test_1_1_compress_result.html#acea9b209fef55855d28c3c59010f35b4',1,'tdc::test::CompressResult']]],
   ['bytes_5ffor',['bytes_for',['../namespacetdc.html#ab1f176727558ff8de2c4ee35cfe52e3a',1,'tdc']]],
   ['byteview',['ByteView',['../namespacetdc.html#a1f638c771a82a1d15e02551664e2fc72',1,'tdc']]]
 ];

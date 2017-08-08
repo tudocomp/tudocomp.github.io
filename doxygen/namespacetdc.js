@@ -10,6 +10,7 @@ var namespacetdc =
     [ "lz78", "namespacetdc_1_1lz78.html", "namespacetdc_1_1lz78" ],
     [ "lz78u", "namespacetdc_1_1lz78u.html", "namespacetdc_1_1lz78u" ],
     [ "lzss", "namespacetdc_1_1lzss.html", "namespacetdc_1_1lzss" ],
+    [ "test", "namespacetdc_1_1test.html", "namespacetdc_1_1test" ],
     [ "_DoubleHashingProber", "structtdc_1_1___double_hashing_prober.html", null ],
     [ "_VignaHasher", "structtdc_1_1___vigna_hasher.html", "structtdc_1_1___vigna_hasher" ],
     [ "Algorithm", "classtdc_1_1_algorithm.html", "classtdc_1_1_algorithm" ],

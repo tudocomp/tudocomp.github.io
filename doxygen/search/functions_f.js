@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['pack_5fintegers',['pack_integers',['../namespacetdc_1_1test.html#a4cd0b0e5a26f1384bf7e55c193c94515',1,'tdc::test']]],
   ['parent',['parent',['../structtdc_1_1lz78u_1_1_suffix_tree.html#aee5301de4465b3003d44a35873c220a5',1,'tdc::lz78u::SuffixTree']]],
   ['parse_5fnumber_5funtil_5fother',['parse_number_until_other',['../namespacetdc.html#a171f201db5f433e36c061007e771daf7',1,'tdc']]],
   ['path',['Path',['../structtdc_1_1io_1_1_path.html#afd18c9b40f585703c25059bb48215e55',1,'tdc::io::Path']]],

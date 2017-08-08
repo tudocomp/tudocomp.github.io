@@ -342,7 +342,8 @@ var files =
       [ "ThueMorseGenerator", "classtdc_1_1_thue_morse_generator.html", "classtdc_1_1_thue_morse_generator" ]
     ] ],
     [ "uint_t.hpp", "uint__t_8hpp.html", "uint__t_8hpp" ],
-    [ "util.hpp", "util_8hpp.html", "util_8hpp" ],
+    [ "include/tudocomp/util.hpp", "include_2tudocomp_2util_8hpp.html", "include_2tudocomp_2util_8hpp" ],
+    [ "test/test/util.hpp", "test_2test_2util_8hpp.html", "test_2test_2util_8hpp" ],
     [ "vbyte.hpp", "vbyte_8hpp.html", "vbyte_8hpp" ],
     [ "VectorStreamBuffer.hpp", "_vector_stream_buffer_8hpp.html", null ],
     [ "View.hpp", "_view_8hpp.html", "_view_8hpp" ],

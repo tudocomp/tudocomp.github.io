@@ -119,6 +119,7 @@ var hierarchy =
     [ "tdc::Builder< T, registry_root_t >", "classtdc_1_1_builder.html", null ],
     [ "tdc::lz78::CedarSearchPos", "structtdc_1_1lz78_1_1_cedar_search_pos.html", null ],
     [ "CharacterHash< hashvaluetype, chartype >", "class_character_hash.html", null ],
+    [ "tdc::test::CompressResult< C >", "structtdc_1_1test_1_1_compress_result.html", null ],
     [ "tdc::ConstIntegerBaseCombiner<... >", "classtdc_1_1_const_integer_base_combiner.html", null ],
     [ "tdc::ConstIntegerBaseCombiner< ConstIntegerBaseWithSelf< ConstIntRef< T > >, ConstIntegerBaseWith32< ConstIntRef< T >, uint32_t >, ConstIntegerBaseWith32< ConstIntRef< T >, int >, ConstIntegerBaseWith64< ConstIntRef< T >, uint64_t >, ConstIntegerBaseWith64< ConstIntRef< T >, T > >", "classtdc_1_1_const_integer_base_combiner.html", [
       [ "tdc::int_vector::ConstIntRef< T >", "classtdc_1_1int__vector_1_1_const_int_ref.html", null ]
@@ -221,7 +222,9 @@ var hierarchy =
     [ "tdc::huff::huffmantable", "structtdc_1_1huff_1_1huffmantable.html", [
       [ "tdc::huff::extended_huffmantable", "structtdc_1_1huff_1_1extended__huffmantable.html", null ]
     ] ],
-    [ "tdc::io::Input", "classtdc_1_1io_1_1_input.html", null ],
+    [ "tdc::io::Input", "classtdc_1_1io_1_1_input.html", [
+      [ "tdc::test::TestInput", "classtdc_1_1test_1_1_test_input.html", null ]
+    ] ],
     [ "tdc::io::InputRestrictions", "classtdc_1_1io_1_1_input_restrictions.html", null ],
     [ "tdc::io::InputSource", "classtdc_1_1io_1_1_input_source.html", null ],
     [ "InputStreamInternal", null, [
@@ -307,7 +310,9 @@ var hierarchy =
     [ "ostream", null, [
       [ "tdc::io::OutputStream", "classtdc_1_1io_1_1_output_stream.html", null ]
     ] ],
-    [ "tdc::io::Output", "classtdc_1_1io_1_1_output.html", null ],
+    [ "tdc::io::Output", "classtdc_1_1io_1_1_output.html", [
+      [ "tdc::test::TestOutput", "classtdc_1_1test_1_1_test_output.html", null ]
+    ] ],
     [ "OutputStreamInternal", null, [
       [ "tdc::io::OutputStream", "classtdc_1_1io_1_1_output_stream.html", null ]
     ] ],
@@ -329,9 +334,11 @@ var hierarchy =
     [ "tdc::RefDispatch< MB, For >", "structtdc_1_1_ref_dispatch.html", null ],
     [ "tdc::Registry< algorithm_t >", "classtdc_1_1_registry.html", null ],
     [ "tdc::Registry< registry_root_t >", "classtdc_1_1_registry.html", null ],
+    [ "tdc::Registry< tdc::Compressor >", "classtdc_1_1_registry.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::result_pair_type", "structcedar_1_1da_1_1result__pair__type.html", null ],
     [ "cedar::da< value_type, NO_VALUE, NO_PATH, ORDERED, MAX_TRIAL, NUM_TRACKING_NODES >::result_triple_type", "structcedar_1_1da_1_1result__triple__type.html", null ],
     [ "tdc::lz78u::root_childrank_support", "classtdc_1_1lz78u_1_1root__childrank__support.html", null ],
+    [ "tdc::test::RoundTrip< C >", "classtdc_1_1test_1_1_round_trip.html", null ],
     [ "tdc::StatPhase", "classtdc_1_1_stat_phase.html", null ],
     [ "streambuf", null, [
       [ "tdc::io::RestrictedIStreamBuf", "classtdc_1_1io_1_1_restricted_i_stream_buf.html", null ],
@@ -354,6 +361,9 @@ var hierarchy =
       [ "tdc::json::Array", "classtdc_1_1json_1_1_array.html", null ],
       [ "tdc::json::Object", "classtdc_1_1json_1_1_object.html", null ],
       [ "tdc::json::TValue< T >", "classtdc_1_1json_1_1_t_value.html", null ]
+    ] ],
+    [ "vector", null, [
+      [ "tdc::test::TestOutput", "classtdc_1_1test_1_1_test_output.html", null ]
     ] ],
     [ "InputRestrictions", null, [
       [ "tdc::ds::InputRestrictionsAndFlags", "classtdc_1_1ds_1_1_input_restrictions_and_flags.html", null ]

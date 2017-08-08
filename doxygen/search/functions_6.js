@@ -10,6 +10,8 @@ var searchData=
   ['fixedrange',['FixedRange',['../classtdc_1_1_fixed_range.html#ad87649b587004c6a32a18159dff3a4c0',1,'tdc::FixedRange']]],
   ['flags',['flags',['../classtdc_1_1ds_1_1_input_restrictions_and_flags.html#a8a804ef91ee4d5f26f1e25313c5a3235',1,'tdc::ds::InputRestrictionsAndFlags']]],
   ['flatten',['flatten',['../classtdc_1_1lzss_1_1_factor_buffer.html#a3f31c6128f56cd7a9b6500e47512c430',1,'tdc::lzss::FactorBuffer']]],
+  ['format_5fdiff',['format_diff',['../namespacetdc_1_1test.html#a74818d6c0f265e3852f4611a3507a47a',1,'tdc::test']]],
+  ['format_5fdiff_5fbin',['format_diff_bin',['../namespacetdc_1_1test.html#a0799622e27de28353821d57116217e4f',1,'tdc::test']]],
   ['from_5fmemory',['from_memory',['../classtdc_1_1io_1_1_input.html#a0146115c9cf657a2540cccabb68c532b',1,'tdc::io::Input::from_memory(const std::vector&lt; uint8_t &gt; &amp;buf)'],['../classtdc_1_1io_1_1_input.html#a85c556e11847fd6516298678538cd24b',1,'tdc::io::Input::from_memory(const string_ref buf)'],['../classtdc_1_1io_1_1_output.html#aa9dbbb5105d0179e824d05d5441408f7',1,'tdc::io::Output::from_memory()']]],
   ['from_5fpath',['from_path',['../classtdc_1_1io_1_1_input.html#a4f842331b075f1c4c18710ed86f3f1fa',1,'tdc::io::Input::from_path()'],['../classtdc_1_1io_1_1_output.html#a53d34253bcf86ac7a671b97841db2ca6',1,'tdc::io::Output::from_path()']]],
   ['from_5fstream',['from_stream',['../classtdc_1_1io_1_1_output.html#ad94120570231d5cb34e37172ff99c1a3',1,'tdc::io::Output']]],

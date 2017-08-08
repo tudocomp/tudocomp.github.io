@@ -19,6 +19,5 @@ var searchData=
   ['unit_5fsize',['unit_size',['../classcedar_1_1da.html#af68d758159281b51a59be975675a85c6',1,'cedar::da']]],
   ['unknown_5foptions',['unknown_options',['../classtdc__driver_1_1_options.html#a769749137e236285803bd20482e77d9d',1,'tdc_driver::Options']]],
   ['update',['update',['../classcedar_1_1da.html#a7e457259f6df6838b63922648bc201c8',1,'cedar::da::update(const char *key)'],['../classcedar_1_1da.html#addcabd17c314ab1367a7a3ecf4b01e05',1,'cedar::da::update(const char *key, size_t len, value_type val=value_type(0))'],['../classcedar_1_1da.html#abe491a4a3f6bd6d868f93e91e01a1157',1,'cedar::da::update(const char *key, size_t &amp;from, size_t &amp;pos, size_t len, value_type val=value_type(0))'],['../classcedar_1_1da.html#a614d7f7713abe96dfe3e6f7deadee102',1,'cedar::da::update(const char *key, size_t &amp;from, size_t &amp;pos, size_t len, value_type val, T &amp;cf)'],['../classtdc_1_1_karp_rabin_hash.html#a28cfad6040ff68078d727843fd2812cf',1,'tdc::KarpRabinHash::update()']]],
-  ['uses_5ftextds',['uses_textds',['../classtdc_1_1_meta.html#ab1a31305d181897d88d6ace7d51dd342',1,'tdc::Meta']]],
-  ['util_2ehpp',['util.hpp',['../util_8hpp.html',1,'']]]
+  ['uses_5ftextds',['uses_textds',['../classtdc_1_1_meta.html#ab1a31305d181897d88d6ace7d51dd342',1,'tdc::Meta']]]
 ];

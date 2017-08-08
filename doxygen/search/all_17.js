@@ -14,6 +14,7 @@ var searchData=
   ['write_5fint',['write_int',['../classtdc_1_1io_1_1_bit_o_stream.html#ac3239cf4964fd151ebd23954d63988fd',1,'tdc::io::BitOStream::write_int()'],['../namespacetdc_1_1int__vector.html#a92da4edbbe9909a91046591f975921a3',1,'tdc::int_vector::write_int()']]],
   ['write_5fint_3c_20uint_5ft_3c_201_20_3e_20_3e',['write_int&lt; uint_t&lt; 1 &gt; &gt;',['../namespacetdc_1_1int__vector.html#aaa6108e9e2a005bb68a15ce337a746c8',1,'tdc::int_vector']]],
   ['write_5fternary',['write_ternary',['../classtdc_1_1io_1_1_bit_o_stream.html#aaa8d13cca204a1e622905e53e22ed5ba',1,'tdc::io::BitOStream']]],
+  ['write_5ftest_5ffile',['write_test_file',['../namespacetdc_1_1test.html#a722a9fca8328de44965ee2ded88efb84',1,'tdc::test']]],
   ['write_5fto',['write_to',['../classtdc_1_1lcpcomp_1_1_decode_forward_queue_list_buffer.html#ab361e365f8ab96dfe6f9e65c13ff25d6',1,'tdc::lcpcomp::DecodeForwardQueueListBuffer::write_to()'],['../classtdc_1_1lcpcomp_1_1_multimap_buffer.html#a3d67ef0a6213a338c86ee66883226fce',1,'tdc::lcpcomp::MultimapBuffer::write_to()'],['../classtdc_1_1lzss_1_1_decode_back_buffer.html#ae08cea77ab1b90c2dd96bf652d735468',1,'tdc::lzss::DecodeBackBuffer::write_to()']]],
   ['write_5funary',['write_unary',['../classtdc_1_1io_1_1_bit_o_stream.html#a49761f3046db6ad78af26ace2845e320',1,'tdc::io::BitOStream']]],
   ['write_5fvbyte',['write_vbyte',['../namespacetdc.html#a22db311800d72b5af3428d3ff573b48e',1,'tdc']]]

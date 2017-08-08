@@ -8,6 +8,7 @@ var searchData=
   ['compression',['Compression',['../classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html',1,'tdc::lz78u::BufferingStrategy']]],
   ['compression',['Compression',['../classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html',1,'tdc::lz78u::StreamingStrategy']]],
   ['compressor',['Compressor',['../classtdc_1_1_compressor.html',1,'tdc']]],
+  ['compressresult',['CompressResult',['../structtdc_1_1test_1_1_compress_result.html',1,'tdc::test']]],
   ['constgenericview',['ConstGenericView',['../classtdc_1_1_const_generic_view.html',1,'tdc']]],
   ['constgenericview_3c_20internal_5fdata_5ftype_20_3e',['ConstGenericView&lt; internal_data_type &gt;',['../classtdc_1_1_const_generic_view.html',1,'tdc']]],
   ['constgenericview_3c_20uliteral_5ft_20_3e',['ConstGenericView&lt; uliteral_t &gt;',['../classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html',1,'tdc']]],

@@ -15,5 +15,6 @@ var searchData=
   ['pattern',['pattern',['../namespacetdc_1_1pattern.html',1,'tdc']]],
   ['tdc',['tdc',['../namespacetdc.html',1,'']]],
   ['tdc_5falgorithms',['tdc_algorithms',['../namespacetdc__algorithms.html',1,'']]],
-  ['tdc_5fdriver',['tdc_driver',['../namespacetdc__driver.html',1,'']]]
+  ['tdc_5fdriver',['tdc_driver',['../namespacetdc__driver.html',1,'']]],
+  ['test',['test',['../namespacetdc_1_1test.html',1,'tdc']]]
 ];
