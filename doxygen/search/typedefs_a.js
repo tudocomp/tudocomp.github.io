@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output',['Output',['../namespacetdc.html#aecc3518e34a04f8156c6c14ed45d8d22',1,'tdc']]]
+  ['mapfromeffective',['MapFromEffective',['../namespacetdc_1_1esp_1_1huff2.html#ab24f42825700fd29d3d45b92c727e664',1,'tdc::esp::huff2']]]
 ];

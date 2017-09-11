@@ -1,5 +1,10 @@
 var include_2tudocomp_2util_8hpp =
 [
+    [ "msbf", "structtdc_1_1msbf.html", null ],
+    [ "msbf< uint8_t >", "structtdc_1_1msbf_3_01uint8__t_01_4.html", null ],
+    [ "msbf< uint16_t >", "structtdc_1_1msbf_3_01uint16__t_01_4.html", null ],
+    [ "msbf< uint32_t >", "structtdc_1_1msbf_3_01uint32__t_01_4.html", null ],
+    [ "msbf< uint64_t >", "structtdc_1_1msbf_3_01uint64__t_01_4.html", null ],
     [ "MoveGuard", "classtdc_1_1_move_guard.html", "classtdc_1_1_move_guard" ],
     [ "arr_to_debug_string", "include_2tudocomp_2util_8hpp.html#ae1a7cd30a5d626de172ab914d7fb1fce", null ],
     [ "assert_permutation", "include_2tudocomp_2util_8hpp.html#a852d7d47cfaaeb2dba8dd5241ab2d10b", null ],

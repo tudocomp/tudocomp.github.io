@@ -5,7 +5,6 @@ var searchData=
   ['algorithmdecl_2ehpp',['AlgorithmDecl.hpp',['../_algorithm_decl_8hpp.html',1,'']]],
   ['algorithmpattern_2ehpp',['AlgorithmPattern.hpp',['../_algorithm_pattern_8hpp.html',1,'']]],
   ['algorithmstringparser_2ehpp',['AlgorithmStringParser.hpp',['../_algorithm_string_parser_8hpp.html',1,'']]],
-  ['arithmeticcoder_2ehpp',['ArithmeticCoder.hpp',['../_arithmetic_coder_8hpp.html',1,'']]],
   ['arrayds_2ehpp',['ArrayDS.hpp',['../_array_d_s_8hpp.html',1,'']]],
   ['arraymaxheap_2ehpp',['ArrayMaxHeap.hpp',['../_array_max_heap_8hpp.html',1,'']]],
   ['arrayscomp_2ehpp',['ArraysComp.hpp',['../_arrays_comp_8hpp.html',1,'']]],

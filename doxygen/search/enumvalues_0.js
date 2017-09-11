@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['bitpacked',['BitPacked',['../namespacetdc_1_1int__vector.html#a82e15434fe47208470d21ebabd952a24a70e6177ae9dc4b1b91cad1513c7dcc17',1,'tdc::int_vector']]]
+  ['coherent_5fdelayed',['coherent_delayed',['../namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a31a3788ce68cb8101f63c3e76579c531',1,'tdc']]],
+  ['compressed',['compressed',['../namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a4aec3b21c2b68dc1b839010afe8d14ca',1,'tdc']]]
 ];

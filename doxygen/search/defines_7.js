@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max',['MAX',['../divsufsort__private_8hpp.html#ad448d437b99a125bd9344585d4f02e9a',1,'divsufsort_private.hpp']]],
-  ['min',['MIN',['../divsufsort__private_8hpp.html#a926c1ab4f6ca8b244750377dcdea9ec1',1,'divsufsort_private.hpp']]]
+  ['tdc_5flikely',['tdc_likely',['../def_8hpp.html#a2865b00b016adcd456b720ea5eee8063',1,'def.hpp']]],
+  ['tdc_5funlikely',['tdc_unlikely',['../def_8hpp.html#aa6ca3a64684b20fecfb697c6a5bf728c',1,'def.hpp']]]
 ];

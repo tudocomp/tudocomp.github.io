@@ -8,7 +8,5 @@ var searchData=
   ['hasher',['hasher',['../classtdc_1_1_karp_rabin_hash.html#ae8a336e0b4c84337676cab5cbecdb568',1,'tdc::KarpRabinHash']]],
   ['hashmask',['HASHMASK',['../classtdc_1_1_karp_rabin_hash.html#acdac2c4c796535826242a895a92806b2',1,'tdc::KarpRabinHash']]],
   ['hashvalue',['hashvalue',['../classtdc_1_1_karp_rabin_hash.html#abe614080cff2124feb621f11416ddbc2',1,'tdc::KarpRabinHash']]],
-  ['hashvalues',['hashvalues',['../class_character_hash.html#a595a78f3f4f87aa597a8aa26a32f3e9b',1,'CharacterHash']]],
-  ['help',['help',['../classtdc__driver_1_1_options.html#a67db04228eecc33d0e31906f5045136f',1,'tdc_driver::Options']]],
   ['hidden_5fescape_5fid',['HIDDEN_ESCAPE_ID',['../namespacetdc_1_1lz78.html#a4ad2baa8c6cfd146c33211a7eaeca49e',1,'tdc::lz78']]]
 ];

@@ -60,6 +60,9 @@
 <li><a href="#static-width-integer-vectors">Static-width integer vectors</a></li>
 <li><a href="#dynamic-width-integer-vectors">Dynamic-width integer vectors</a></li>
 </ul></li>
+<li><a href="#bit-vectors">Bit Vectors</a><ul>
+<li><a href="#rank-and-select">Rank and Select</a></li>
+</ul></li>
 <li><a href="#algorithms">Algorithms</a><ul>
 <li><a href="#meta-information">Meta Information</a></li>
 <li><a href="#environment">Environment</a></li>
@@ -453,6 +456,45 @@ fib.width(max_bits);
 fib.shrink_to_fit();</code></pre></div>
 <p>Upon termination of this example, the vector will have a bit width of 13, which is the amount of bits required to store the 20<sup>th</sup> Fibonacci number (6,765).</p>
 <p>The <a href="../doxygen/namespacetdc.html#a405c60e1a5ca678359687ce198b5036b"><code>bits_for</code></a> function is used to determine the amount of bits by computing the rounded-up binary logarithm. In the <a href="../doxygen/classtdc_1_1int__vector_1_1_int_vector.html#a4801e2d63351264c768a9e5ffd0fe05b">constructor</a> and using <a href="../doxygen/classtdc_1_1int__vector_1_1_int_vector.html#ad6c5d92faaf526f19576243c2b8a4bcd"><code>width</code></a>, the bit width of values within the <code>DynamicIntVector</code> can be altered at runtime. In order to achieve bit-compression, because the integer vector is internally backed by an array of 64-bit integers, a call to <a href="../doxygen/classtdc_1_1int__vector_1_1_int_vector.html#ac25b4515b1106354a765f430cfd8d0c2"><code>shrink_to_fit</code></a> is necessary in order to actually shrink the vector's capacity.</p>
+<h2 id="bit-vectors">Bit Vectors</h2>
+<p>As mentioned previously, the <a href="../doxygen/namespacetdc.html#a393098dfa57d20d082394cdaa8e61d96"><code>BitVector</code></a> class (technically an alias for <code>IntVector&lt;uint_t&lt;1&gt;&gt;</code>) provides an implementation of bit vectors.</p>
+<p>This section introduces some additional data structures on bit vectors that are available in <em>tudocomp</em>.</p>
+<h3 id="rank-and-select">Rank and Select</h3>
+<p>The classes <a href="../doxygen/classtdc_1_1_rank.html"><code>Rank</code></a> and <a href="../doxygen/classtdc_1_1_select.html"><code>Select</code></a> implement data structures for these widely used operations on bit vectors. Both are succinct, meaning that they allow constant-time queries with relatively low memory overhead. While <code>Rank</code> answers rank queries for 1-bits as well as 0-bits, <code>Select</code> has the two variants <a href="../doxygen/namespacetdc.html#a9b2d30796902b9f09049737ee8e8c781"><code>Select1</code></a> and <a href="../doxygen/namespacetdc.html#adadddfa06f38baad73961e6347612881"><code>Select0</code></a> (which work analogously).</p>
+<p>The following example showcases the usage of these data structures:</p>
+<div class="sourceCode" caption="bit_vector.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// Construct a bit vector where every second bit is set</span>
+BitVector bv(<span class="dv">128</span>);
+<span class="cf">for</span>(<span class="dt">len_t</span> i = <span class="dv">1</span>; i &lt; <span class="dv">128</span>; i += <span class="dv">2</span>) bv[i] = <span class="dv">1</span>;
+
+<span class="co">// Construct Rank and Select1 data structures</span>
+Rank    rank(bv);
+Select1 select1(bv);
+
+<span class="co">// Query the amount of 1-bits in the whole bit vector</span>
+ASSERT_EQ(<span class="dv">64</span>, rank.rank1(<span class="dv">127</span>));
+
+<span class="co">// Query the amount of 0-bits in the whole bit vector</span>
+ASSERT_EQ(<span class="dv">64</span>, rank.rank0(<span class="dv">127</span>));
+
+<span class="co">// Query the amount of 1-bits in the second half of the bit vector</span>
+ASSERT_EQ(<span class="dv">32</span>, rank.rank0(<span class="dv">64</span>, <span class="dv">127</span>));
+
+<span class="co">// Find the position of the first 1-bit</span>
+ASSERT_EQ(<span class="dv">1</span>,  select1(<span class="dv">1</span>));
+
+<span class="co">// Find the position of the 32nd 1-bit</span>
+ASSERT_EQ(<span class="dv">63</span>, select1(<span class="dv">32</span>));
+
+<span class="co">// Find the position of the 1000th 1-bit (which does not exist)</span>
+ASSERT_EQ(bv.size(), select1(<span class="dv">1000</span>));
+
+<span class="co">// rank1(select1(i)) = i holds</span>
+<span class="cf">for</span>(<span class="dt">len_t</span> i = <span class="dv">1</span>; i &lt;= <span class="dv">64</span>; i++) {
+    ASSERT_EQ(i, rank(select1(i)));
+}</code></pre></div>
+<p>For <code>Rank</code>, the functions <a href="../doxygen/classtdc_1_1_rank.html#a27beae27f12e572c07c9c9762481f3ef"><code>rank1</code></a> and <a href="../doxygen/classtdc_1_1_rank.html#a4ef82f5f98ad6397e700e82799ca69f6"><code>rank0</code></a> invoke the respective queries, while for <code>Select</code>, the <a href="../doxygen/classtdc_1_1_select.html#aa9c771aa5c6cc8ce65b37dd70caf0f5d"><code>operator()</code></a> can be used as a shortcut. Note that <code>Rank</code> also provides the shortcut <a href="../doxygen/classtdc_1_1_rank.html#ab8054b2ad7cc7ec41863779f9353e3aa"><code>operator()</code></a>, which is equal to calling <code>rank1</code>.</p>
+<p>All operations expect zero-based indices, i.e., the position of the first bit in a bit vector is 0. Orders, on the other hand, are intuitively one-based i.e. the order of the 1<sup>st</sup> occurence of a bit is 1 (e.g. as the return value of rank or the input parameter of select). That said, select does not accept an input order of 0.</p>
+<p>If for a parameter <code>k</code>, the <code>k</code><sup>th</sup> occurence of a bit does not exist in the bit vector, select will return the bit vector's length instead, as a means of saying &quot;out of scope&quot;.</p>
 <h2 id="algorithms">Algorithms</h2>
 <p>The <a href="../doxygen/classtdc_1_1_algorithm.html"><code>Algorithm</code></a> class plays a central role in <em>tudocomp</em> as it provides the base for the modular system of compressors, coders and other classes - they all inherit from <code>Algorithm</code>.</p>
 <p>This section introduces the core mechanisms one needs to understand in order to properly implement algorithms.</p>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['decoder_5fctor',['DECODER_CTOR',['../_coder_8hpp.html#af2f4723ca1c21951e76ed00d15ad3826',1,'Coder.hpp']]]
+  ['google_5fstrip_5flog',['GOOGLE_STRIP_LOG',['../def_8hpp.html#a1734b3ada3968f3601877db95fa57d76',1,'def.hpp']]]
 ];

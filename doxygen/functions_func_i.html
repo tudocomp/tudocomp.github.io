@@ -86,7 +86,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_type.html"><span>Typedefs</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
-      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_rela.html"><span>Related&#160;Functions</span></a></li>
     </ul>
   </div>
@@ -159,7 +158,8 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="classtdc_1_1_array_d_s.html#ad1928549968c1d4b9582ccac59b75183">tdc::ArrayDS</a>
 </li>
 <li>IF_STATS()
-: <a class="el" href="classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a5d9b13df76ef721a5d2c022a2c14ad0d">tdc::lcpcomp::EagerScanDec</a>
+: <a class="el" href="classtdc_1_1_hash_map.html#aa58e6ef3273846f4da5da46bd44664a3">tdc::HashMap&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;</a>
+, <a class="el" href="classtdc_1_1lcpcomp_1_1_eager_scan_dec.html#a5d9b13df76ef721a5d2c022a2c14ad0d">tdc::lcpcomp::EagerScanDec</a>
 , <a class="el" href="classtdc_1_1lz78_1_1_ext_hash_trie.html#a9d9cf82b594d1cc8ab1834508a95eb33">tdc::lz78::ExtHashTrie</a>
 , <a class="el" href="classtdc_1_1lz78_1_1_hash_trie.html#a79c2f23ee967dfd5057e39e3e3fbac9e">tdc::lz78::HashTrie&lt; HashFunction, HashProber, HashManager &gt;</a>
 , <a class="el" href="classtdc_1_1lz78_1_1_hash_trie_plus.html#aecfd0723ee8d05adbe2ee5d5b848aa00">tdc::lz78::HashTriePlus&lt; HashFunction, HashManager &gt;</a>
@@ -181,12 +181,14 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 </li>
 <li>init()
 : <a class="el" href="classtdc_1_1_double_hashing_prober.html#a4fca78f354260924bd7cb2849e39efdf">tdc::DoubleHashingProber&lt; key_t, HashFcn &gt;</a>
+, <a class="el" href="classtdc_1_1esp_1_1_debug_metablock_context.html#ad73c5b216c5304643e65d1788afd49a0">tdc::esp::DebugMetablockContext</a>
+, <a class="el" href="classtdc_1_1esp_1_1_debug_round_context.html#aad8ec230ced3eb7e9857c7f23862f9b7">tdc::esp::DebugRoundContext</a>
 , <a class="el" href="structtdc_1_1_gauss_prober.html#a4884e0adfbfa7d37a32c4950dcee9920">tdc::GaussProber</a>
 , <a class="el" href="structtdc_1_1_linear_prober.html#a61eb1b35948f5e1af363dc068830fb51">tdc::LinearProber</a>
 , <a class="el" href="structtdc_1_1_quadratic_prober.html#a1dcb481fdc9cdc94e93b04b0381fb11c">tdc::QuadraticProber</a>
 </li>
-<li>initialize()
-: <a class="el" href="class_m_t_rand.html#a9b9a20998f5c805af6301ce5c37dcfc3">MTRand</a>
+<li>initial_counter()
+: <a class="el" href="classtdc_1_1esp_1_1_grammar_rules.html#a0e0c6f8bd86b01efab5ba207ccb26594">tdc::esp::GrammarRules&lt; ipd_t &gt;</a>
 </li>
 <li>inplace_isa()
 : <a class="el" href="classtdc_1_1_text_d_s.html#ae32cffffaff7c52598ec10980c91a64a">tdc::TextDS&lt; sa_t, phi_t, plcp_t, lcp_t, isa_t &gt;</a>
@@ -204,10 +206,13 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="classtdc_1_1_text_d_s.html#ad12590047f77d3323eb6bce53cd50199">tdc::TextDS&lt; sa_t, phi_t, plcp_t, lcp_t, isa_t &gt;</a>
 </li>
 <li>Input()
-: <a class="el" href="classtdc_1_1io_1_1_input.html#a6fb6662b8560c5cb8b9089bb870e85e0">tdc::io::Input</a>
+: <a class="el" href="classtdc_1_1io_1_1_input.html#aaf349189da26cbd6c1f43e5235ccae65">tdc::io::Input</a>
 </li>
 <li>input_restrictions()
 : <a class="el" href="classtdc_1_1_meta.html#a3b5882325955c7d6124bce9d4b18b9fd">tdc::Meta</a>
+</li>
+<li>input_string()
+: <a class="el" href="classtdc_1_1esp_1_1_debug_context.html#ad4125925bc429e360e43647430431f45">tdc::esp::DebugContext</a>
 </li>
 <li>InputRestrictions()
 : <a class="el" href="classtdc_1_1io_1_1_input_restrictions.html#af0eb51053ad835108ac9491f00e84d54">tdc::io::InputRestrictions</a>
@@ -222,34 +227,35 @@ $(document).ready(function(){initNavTree('functions_func_i.html','');});
 : <a class="el" href="classtdc_1_1io_1_1_input_stream.html#a65d981fa26d2a7b0b44f1c5c242a9d72">tdc::io::InputStream</a>
 </li>
 <li>InputView()
-: <a class="el" href="classtdc_1_1io_1_1_input_view.html#a369e938f034fa3c0ac5d28f44adb292a">tdc::io::InputView</a>
+: <a class="el" href="classtdc_1_1io_1_1_input_view.html#a00fca52259671bb9b6e900dd6c13b220">tdc::io::InputView</a>
 </li>
 <li>insert()
 : <a class="el" href="classtdc_1_1_array_max_heap.html#a941811d6b33f1cf29063487f6c515c3b">tdc::ArrayMaxHeap&lt; array_t &gt;</a>
 , <a class="el" href="classtdc_1_1_hash_map.html#a73b58fbf07794a491cb8af5825a67b67">tdc::HashMap&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;</a>
-, <a class="el" href="structtdc_1_1int__vector_1_1_bit_packing_vector.html#ac37815757d43d7545d3d4e254dbcb2be">tdc::int_vector::BitPackingVector&lt; T &gt;</a>
-, <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a0cbe47e4f834c1d3793ba98bc776fb5c">tdc::int_vector::IntVector&lt; T &gt;</a>
+, <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a5cbc0c65d9ffd12e9168c543eb4e7864">tdc::int_vector::IntVector&lt; T &gt;</a>
 </li>
 <li>instance()
 : <a class="el" href="classtdc_1_1_builder.html#ae4b85743f526690ff7ad18aacef94f20">tdc::Builder&lt; T, registry_root_t &gt;</a>
 </li>
-<li>IntPtr()
-: <a class="el" href="classtdc_1_1int__vector_1_1_int_ptr.html#a0771f10792ff49dcb2a8762347922279">tdc::int_vector::IntPtr&lt; T &gt;</a>
-</li>
-<li>IntRef()
-: <a class="el" href="classtdc_1_1int__vector_1_1_int_ref.html#a5c8a1b7f9c02615b6ababe536709ec2f">tdc::int_vector::IntRef&lt; T &gt;</a>
-</li>
 <li>IntVector()
-: <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#a548bbe668018c8a38423f77b9c9b177b">tdc::int_vector::IntVector&lt; T &gt;</a>
+: <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html#ac6e30f35d271b148549508666dc680db">tdc::int_vector::IntVector&lt; T &gt;</a>
 </li>
 <li>invertHash()
 : <a class="el" href="classtdc_1_1lz78_1_1_randomizer.html#ab1d78ebf95456fa5e1dcab623204007d">tdc::lz78::Randomizer</a>
+</li>
+<li>IPDMap()
+: <a class="el" href="classtdc_1_1esp_1_1_dynamic_size_i_p_d_1_1_i_p_d_map.html#ae86dfd0bfead40d3e7847012ed590d75">tdc::esp::DynamicSizeIPD&lt; ipd_t &gt;::IPDMap&lt; N, K, V &gt;</a>
+, <a class="el" href="classtdc_1_1esp_1_1_hash_map_i_p_d_1_1_i_p_d_map.html#a3248cba6bae86c3965e0e13511ac0250">tdc::esp::HashMapIPD::IPDMap&lt; N, T, U &gt;</a>
+, <a class="el" href="classtdc_1_1esp_1_1_std_unordered_map_i_p_d_1_1_i_p_d_map.html#a44b479abf7e1c7096930e981a0d17c09">tdc::esp::StdUnorderedMapIPD::IPDMap&lt; N, T, U &gt;</a>
 </li>
 <li>is_algorithm()
 : <a class="el" href="classtdc_1_1_option_value.html#a598c52f4e9a8811c7427562089fa9b9e">tdc::OptionValue</a>
 </li>
 <li>is_file()
 : <a class="el" href="classtdc_1_1io_1_1_input_source.html#a015886726ba004d1837fa1f5a2130ae4">tdc::io::InputSource</a>
+</li>
+<li>is_leaf()
+: <a class="el" href="classtdc_1_1_naiv_s_t.html#a4534f7e880c1ef383c78f83d67f77ece">tdc::NaivST&lt; size_type &gt;</a>
 </li>
 <li>is_moved()
 : <a class="el" href="classtdc_1_1_move_guard.html#aea159bc51c9ca22f00ee8f5ca2e745d8">tdc::MoveGuard</a>

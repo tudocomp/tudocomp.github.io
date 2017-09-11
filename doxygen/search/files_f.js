@@ -4,6 +4,8 @@ var searchData=
   ['randomizer_2ehpp',['Randomizer.hpp',['../_randomizer_8hpp.html',1,'']]],
   ['randomuniformgenerator_2ehpp',['RandomUniformGenerator.hpp',['../_random_uniform_generator_8hpp.html',1,'']]],
   ['range_2ehpp',['Range.hpp',['../_range_8hpp.html',1,'']]],
+  ['rank_2ehpp',['Rank.hpp',['../_rank_8hpp.html',1,'']]],
+  ['rank_5f64bit_2ehpp',['rank_64bit.hpp',['../rank__64bit_8hpp.html',1,'']]],
   ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['registry_2ehpp',['Registry.hpp',['../_registry_8hpp.html',1,'']]],
   ['repaircompressor_2ehpp',['RePairCompressor.hpp',['../_re_pair_compressor_8hpp.html',1,'']]],
@@ -11,6 +13,9 @@ var searchData=
   ['restrictediostream_2ehpp',['RestrictedIOStream.hpp',['../_restricted_i_o_stream_8hpp.html',1,'']]],
   ['rollingtrie_2ehpp',['RollingTrie.hpp',['../_rolling_trie_8hpp.html',1,'']]],
   ['rollingtrieplus_2ehpp',['RollingTriePlus.hpp',['../_rolling_trie_plus_8hpp.html',1,'']]],
+  ['roundcontext_2ehpp',['RoundContext.hpp',['../_round_context_8hpp.html',1,'']]],
+  ['roundcontextimpl_2ehpp',['RoundContextImpl.hpp',['../_round_context_impl_8hpp.html',1,'']]],
+  ['rounds_2ehpp',['Rounds.hpp',['../_rounds_8hpp.html',1,'']]],
   ['runlengthencoder_2ehpp',['RunLengthEncoder.hpp',['../_run_length_encoder_8hpp.html',1,'']]],
   ['runrichgenerator_2ehpp',['RunRichGenerator.hpp',['../_run_rich_generator_8hpp.html',1,'']]]
 ];

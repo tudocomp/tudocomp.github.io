@@ -164,9 +164,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Runs a number of scans of the factors. </p>
 <p>Finishes the process of decoding started by It allocates an array for all not-yet decoded positions such that it can store in that positions all positions still waiting of that position to get decompressed.</p>
-<p>Decodes lcpcomp compressed data as described in the paper.</p>
 <p>In each scan, it tries to decode all factors. Factors that got fully decoded are dropped.</p>
-<p>It creates an array of dynamic arrays. Each dynamic array stores in the first element its size. On appending a new element, the dynamic array gets resized by one (instead of doubling). This helps to keep the memory footprint low. It can be faster than "scans"-value too small.</p>
 <p>The not-yet decoded positions are marked in a bit vector with rank-support such that we can map from text position to positions in the array. </p>
 
 <p>Definition at line <a class="el" href="_scan_dec_8hpp_source.html#l00146">146</a> of file <a class="el" href="_scan_dec_8hpp_source.html">ScanDec.hpp</a>.</p>

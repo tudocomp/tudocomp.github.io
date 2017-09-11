@@ -1,5 +1,4 @@
 var structtdc_1_1_integer_base_trait_1_1type =
 [
-    [ "Dispatch", "structtdc_1_1_integer_base_trait_1_1type.html#abbbb294e082195dc7b8b3b31019763b9", null ],
-    [ "Dispatch", "structtdc_1_1_integer_base_trait_1_1type.html#aead0bfef43135b151b7566c9fa76908a", null ]
+    [ "Dispatch", "structtdc_1_1_integer_base_trait_1_1type.html#abbbb294e082195dc7b8b3b31019763b9", null ]
 ];

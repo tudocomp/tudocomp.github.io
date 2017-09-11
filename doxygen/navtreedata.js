@@ -6,7 +6,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
-        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
+        [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
@@ -23,7 +23,6 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
@@ -43,17 +42,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_judy_trie_8hpp_source.html",
-"classcedar_1_1da.html#a614d7f7713abe96dfe3e6f7deadee102",
-"classtdc_1_1_const_integer_base_with32.html#acf4280e441a29f97539b5f5efbf2fd08",
-"classtdc_1_1_hash_map.html#ac5b00b570a875136aa4f18e3eae4fb5a",
-"classtdc_1_1_stat_phase.html#aa194f7cf8098f5e48ca0885b56af7caa",
-"classtdc_1_1int__vector_1_1_int_vector.html#a86a982ae78049f6a252fd9f4bd106a2e",
-"classtdc_1_1lz78_1_1_cedar_trie.html#aaa1a71934067cb85a19e5fc45a1fd6b7",
-"divsufsort_8hpp_source.html",
-"namespacemembers_p.html",
-"structtdc_1_1int__vector_1_1_bit_packing_vector.html#ab4e02fd610a5e13a208de25778c91444",
-"uint__t_8hpp.html#a3f4f51e21909a8ea4f6519faf5322fe7"
+"_l_f_s2_b_s_t_compressor_8hpp.html",
+"classtdc_1_1_algorithm_value.html#a3a334556101693e54e0ce3136eff43b0",
+"classtdc_1_1_const_integer_base_with64.html#a8f98e5586a8c8156928217ff907a55f8",
+"classtdc_1_1_i_s_a_from_s_a.html",
+"classtdc_1_1_s_l_e_coder_1_1_encoder.html#a9cd3f16d6d10a0c98d09e69c07f5069c",
+"classtdc_1_1esp_1_1_grammar_rules.html#a93b1e148d0f668c3db356728749d63e6",
+"classtdc_1_1io_1_1_restricted_i_stream_buf.html#a8283312030ae5c0a4a28ea28e406cc95",
+"classtdc_1_1lzss_1_1_decode_back_buffer.html#a71b37aacbdcfe37e75e34f843b56af7d",
+"include_2tudocomp_2util_8hpp.html#a73c1223b1b18959f190ceced8714c17a",
+"structtdc_1_1esp_1_1_dpi__and__b.html#a929d5311c4acf55088eb41c263848504"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

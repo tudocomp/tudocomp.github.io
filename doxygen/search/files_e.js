@@ -4,6 +4,7 @@ var searchData=
   ['path_2ehpp',['Path.hpp',['../_path_8hpp.html',1,'']]],
   ['phasedata_2ehpp',['PhaseData.hpp',['../_phase_data_8hpp.html',1,'']]],
   ['phifromsa_2ehpp',['PhiFromSA.hpp',['../_phi_from_s_a_8hpp.html',1,'']]],
+  ['plainslpcoder_2ehpp',['PlainSLPCoder.hpp',['../_plain_s_l_p_coder_8hpp.html',1,'']]],
   ['plcpfromphi_2ehpp',['PLCPFromPhi.hpp',['../_p_l_c_p_from_phi_8hpp.html',1,'']]],
   ['plcppeaksstrategy_2ehpp',['PLCPPeaksStrategy.hpp',['../_p_l_c_p_peaks_strategy_8hpp.html',1,'']]],
   ['plcpstrategy_2ehpp',['PLCPStrategy.hpp',['../_p_l_c_p_strategy_8hpp.html',1,'']]],

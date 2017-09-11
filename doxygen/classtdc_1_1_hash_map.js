@@ -9,6 +9,7 @@ var classtdc_1_1_hash_map =
     [ "HashMap", "classtdc_1_1_hash_map.html#a184c9661bbf34cd8ede49743965572c3", null ],
     [ "empty", "classtdc_1_1_hash_map.html#a148b65bee586d925a1a641d5f24dfad8", null ],
     [ "entries", "classtdc_1_1_hash_map.html#ad85f2352a4a592da1472bd8598f51b0c", null ],
+    [ "IF_STATS", "classtdc_1_1_hash_map.html#aa58e6ef3273846f4da5da46bd44664a3", null ],
     [ "incorporate", "classtdc_1_1_hash_map.html#af114e8f8a8ca7d99377a0f732ca6b145", null ],
     [ "insert", "classtdc_1_1_hash_map.html#a73b58fbf07794a491cb8af5825a67b67", null ],
     [ "max_load_factor", "classtdc_1_1_hash_map.html#a345b39e1f9ca38f2f542384a31782e00", null ],

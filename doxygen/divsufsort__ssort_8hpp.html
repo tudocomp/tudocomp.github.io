@@ -107,10 +107,6 @@ $(document).ready(function(){initNavTree('divsufsort__ssort_8hpp.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">divsufsort_ssort.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -119,66 +115,6 @@ $(document).ready(function(){initNavTree('divsufsort__ssort_8hpp.html','');});
 <code>#include &lt;<a class="el" href="divsufsort__private_8hpp_source.html">tudocomp/util/divsufsort/divsufsort_private.hpp</a>&gt;</code><br />
 </div>
 <p><a href="divsufsort__ssort_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacetdc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html">tdc</a></td></tr>
-<tr class="memdesc:namespacetdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the text compression and encoding framework. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacetdc_1_1libdivsufsort"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html">tdc::libdivsufsort</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a6423a880df59733d2d9b509c7718d3a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="divsufsort__ssort_8hpp.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>&#160;&#160;&#160;<a class="el" href="divsufsort__private_8hpp.html#a81ff4283b0f558f524273900e3eaac08">SS_MISORT_STACKSIZE</a></td></tr>
-<tr class="separator:a6423a880df59733d2d9b509c7718d3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a05dcff9f1053aa7b4338119988aab3c3"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t1 , typename buffer_t2 &gt; </td></tr>
-<tr class="memitem:a05dcff9f1053aa7b4338119988aab3c3"><td class="memTemplItemLeft" align="right" valign="top">saint_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#a05dcff9f1053aa7b4338119988aab3c3">tdc::libdivsufsort::ss_compare</a> (const sauchar_t *T, buffer_t1 &amp;B1, saidx_t p1, buffer_t2 &amp;B2, saidx_t p2, saidx_t depth)</td></tr>
-<tr class="separator:a05dcff9f1053aa7b4338119988aab3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9312b3784db6496fbe15b8e588c355f6"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:a9312b3784db6496fbe15b8e588c355f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#a9312b3784db6496fbe15b8e588c355f6">tdc::libdivsufsort::ss_insertionsort</a> (const sauchar_t *T, buffer_t &amp;B, const saidx_t PA, saidx_t first, saidx_t last, saidx_t depth)</td></tr>
-<tr class="separator:a9312b3784db6496fbe15b8e588c355f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acefed9d38d8fe0ad0109adb5c389a063"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:acefed9d38d8fe0ad0109adb5c389a063"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#acefed9d38d8fe0ad0109adb5c389a063">tdc::libdivsufsort::ss_fixdown</a> (const sauchar_t *Td, buffer_t &amp;B, const saidx_t PA, saidx_t SA, saidx_t i, saidx_t size)</td></tr>
-<tr class="separator:acefed9d38d8fe0ad0109adb5c389a063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef89479493b4b96eeb64d8bcddc564d8"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:aef89479493b4b96eeb64d8bcddc564d8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#aef89479493b4b96eeb64d8bcddc564d8">tdc::libdivsufsort::ss_heapsort</a> (const sauchar_t *Td, buffer_t &amp;B, const saidx_t PA, saidx_t SA, saidx_t size)</td></tr>
-<tr class="separator:aef89479493b4b96eeb64d8bcddc564d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb50c6b73572883fc14a153ce96e2e2e"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:aeb50c6b73572883fc14a153ce96e2e2e"><td class="memTemplItemLeft" align="right" valign="top">saidx_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#aeb50c6b73572883fc14a153ce96e2e2e">tdc::libdivsufsort::ss_median3</a> (const sauchar_t *Td, buffer_t &amp;B, const saidx_t PA, saidx_t v1, saidx_t v2, saidx_t v3)</td></tr>
-<tr class="separator:aeb50c6b73572883fc14a153ce96e2e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad6923fc1d3fbdb966d76bed72ce12ad"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:aad6923fc1d3fbdb966d76bed72ce12ad"><td class="memTemplItemLeft" align="right" valign="top">saidx_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#aad6923fc1d3fbdb966d76bed72ce12ad">tdc::libdivsufsort::ss_median5</a> (const sauchar_t *Td, buffer_t &amp;B, const saidx_t PA, saidx_t v1, saidx_t v2, saidx_t v3, saidx_t v4, saidx_t v5)</td></tr>
-<tr class="separator:aad6923fc1d3fbdb966d76bed72ce12ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02594bb23daa140157e642183fbaf4d"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:af02594bb23daa140157e642183fbaf4d"><td class="memTemplItemLeft" align="right" valign="top">saidx_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#af02594bb23daa140157e642183fbaf4d">tdc::libdivsufsort::ss_pivot</a> (const sauchar_t *Td, buffer_t &amp;B, const saidx_t PA, saidx_t first, saidx_t last)</td></tr>
-<tr class="separator:af02594bb23daa140157e642183fbaf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673d0323afdfccc046f9d5140aac9710"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:a673d0323afdfccc046f9d5140aac9710"><td class="memTemplItemLeft" align="right" valign="top">saidx_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#a673d0323afdfccc046f9d5140aac9710">tdc::libdivsufsort::ss_partition</a> (buffer_t &amp;B, const saidx_t PA, saidx_t first, saidx_t last, saidx_t depth)</td></tr>
-<tr class="separator:a673d0323afdfccc046f9d5140aac9710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f296fdc858ae236c6bb8d873b80b10d"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:a6f296fdc858ae236c6bb8d873b80b10d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#a6f296fdc858ae236c6bb8d873b80b10d">tdc::libdivsufsort::ss_mintrosort</a> (const sauchar_t *T, buffer_t &amp;B, const saidx_t PA, saidx_t first, saidx_t last, saidx_t depth)</td></tr>
-<tr class="separator:a6f296fdc858ae236c6bb8d873b80b10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1262395d6cb22c1f15e2e8263038eed5"><td class="memTemplParams" colspan="2">template&lt;typename buffer_t &gt; </td></tr>
-<tr class="memitem:a1262395d6cb22c1f15e2e8263038eed5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1libdivsufsort.html#a1262395d6cb22c1f15e2e8263038eed5">tdc::libdivsufsort::sssort</a> (const sauchar_t *T, buffer_t &amp;B, saidx_t PA, saidx_t first, saidx_t last, saidx_t buf, saidx_t bufsize, saidx_t depth, saidx_t n, saint_t lastsuffix)</td></tr>
-<tr class="separator:a1262395d6cb22c1f15e2e8263038eed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a6423a880df59733d2d9b509c7718d3a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define STACK_SIZE&#160;&#160;&#160;<a class="el" href="divsufsort__private_8hpp.html#a81ff4283b0f558f524273900e3eaac08">SS_MISORT_STACKSIZE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

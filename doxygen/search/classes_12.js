@@ -2,12 +2,27 @@ var searchData=
 [
   ['sadivsufsort',['SADivSufSort',['../classtdc_1_1_s_a_div_suf_sort.html',1,'tdc']]],
   ['scandec',['ScanDec',['../classtdc_1_1lcpcomp_1_1_scan_dec.html',1,'tdc::lcpcomp']]],
+  ['select',['Select',['../classtdc_1_1_select.html',1,'tdc']]],
+  ['select_3c_201_20_3e',['Select&lt; 1 &gt;',['../classtdc_1_1_select.html',1,'tdc']]],
+  ['simststrategy',['SimSTStrategy',['../classtdc_1_1lfs_1_1_sim_s_t_strategy.html',1,'tdc::lfs']]],
   ['sizemanagerdirect',['SizeManagerDirect',['../structtdc_1_1_size_manager_direct.html',1,'tdc']]],
   ['sizemanagernoob',['SizeManagerNoob',['../structtdc_1_1_size_manager_noob.html',1,'tdc']]],
   ['sizemanagerpow2',['SizeManagerPow2',['../structtdc_1_1_size_manager_pow2.html',1,'tdc']]],
   ['sizemanagerprime',['SizeManagerPrime',['../structtdc_1_1_size_manager_prime.html',1,'tdc']]],
   ['slecoder',['SLECoder',['../classtdc_1_1_s_l_e_coder.html',1,'tdc']]],
+  ['slp',['SLP',['../structtdc_1_1esp_1_1_s_l_p.html',1,'tdc::esp']]],
+  ['slprhsadapter',['SLPRhsAdapter',['../structtdc_1_1esp_1_1_s_l_p_rhs_adapter.html',1,'tdc::esp']]],
+  ['sortedslpcoder',['SortedSLPCoder',['../classtdc_1_1esp_1_1_sorted_s_l_p_coder.html',1,'tdc::esp']]],
+  ['sparseisa',['SparseISA',['../classtdc_1_1_sparse_i_s_a.html',1,'tdc']]],
   ['statphase',['StatPhase',['../classtdc_1_1_stat_phase.html',1,'tdc']]],
+  ['stdunorderedmapipd',['StdUnorderedMapIPD',['../classtdc_1_1esp_1_1_std_unordered_map_i_p_d.html',1,'tdc::esp']]],
+  ['stinnernode',['STInnerNode',['../structtdc_1_1_suffix_tree_1_1_s_t_inner_node.html',1,'tdc::SuffixTree']]],
+  ['stleaf',['STLeaf',['../structtdc_1_1_suffix_tree_1_1_s_t_leaf.html',1,'tdc::SuffixTree']]],
+  ['stnode',['STNode',['../structtdc_1_1_suffix_tree_1_1_s_t_node.html',1,'tdc::SuffixTree']]],
   ['streamingstrategy',['StreamingStrategy',['../classtdc_1_1lz78u_1_1_streaming_strategy.html',1,'tdc::lz78u']]],
-  ['suffixtree',['SuffixTree',['../structtdc_1_1lz78u_1_1_suffix_tree.html',1,'tdc::lz78u']]]
+  ['ststrategy',['STStrategy',['../classtdc_1_1lfs_1_1_s_t_strategy.html',1,'tdc::lfs']]],
+  ['subseqgreedy',['SubSeqGreedy',['../classtdc_1_1esp_1_1_sub_seq_greedy.html',1,'tdc::esp']]],
+  ['subseqoptimal',['SubSeqOptimal',['../classtdc_1_1esp_1_1_sub_seq_optimal.html',1,'tdc::esp']]],
+  ['suffixtree',['SuffixTree',['../structtdc_1_1lz78u_1_1_suffix_tree.html',1,'tdc::lz78u']]],
+  ['suffixtree',['SuffixTree',['../classtdc_1_1_suffix_tree.html',1,'tdc']]]
 ];

@@ -1,4 +1,4 @@
 var classtdc_1_1lcpcomp_1_1_naive_strategy =
 [
-    [ "factorize", "classtdc_1_1lcpcomp_1_1_naive_strategy.html#a513cd52768b74f247f14b6caf1baa1c6", null ]
+    [ "factorize", "classtdc_1_1lcpcomp_1_1_naive_strategy.html#a7692d55f0013237f0411fef76df43bf7", null ]
 ];

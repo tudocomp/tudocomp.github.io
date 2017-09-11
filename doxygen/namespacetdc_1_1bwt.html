@@ -113,6 +113,9 @@ $(document).ready(function(){initNavTree('namespacetdc_1_1bwt.html','');});
 <div class="title">tdc::bwt Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains functionality for computing and decoding the Burrows-Wheeler transform (BWT) of a text.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -124,12 +127,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a8878eac76925045382fc0e10531d79e5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#a6b1a10af5271b25b4f66151c1d1ec066">len_compact_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#a8878eac76925045382fc0e10531d79e5">compute_LF</a> (const bwt_t &amp;<a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a>, const size_t bwt_length)</td></tr>
 <tr class="memdesc:a8878eac76925045382fc0e10531d79e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the LF table used for decoding the BWT Input is a BWT and its length.  <a href="#a8878eac76925045382fc0e10531d79e5">More...</a><br /></td></tr>
 <tr class="separator:a8878eac76925045382fc0e10531d79e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="memTemplParams" colspan="2">template&lt;typename bwt_t &gt; </td></tr>
-<tr class="memitem:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#a72eb08ca65f9d69ab36d778dff30a3c5">decode_bwt</a> (const bwt_t &amp;<a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a>)</td></tr>
-<tr class="memdesc:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a BWT It is assumed that the BWT is stored in a container with access to operator[] and .size()  <a href="#a72eb08ca65f9d69ab36d778dff30a3c5">More...</a><br /></td></tr>
-<tr class="separator:a72eb08ca65f9d69ab36d778dff30a3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf17d8073fda5dd4cb5363e0555957e3"><td class="memTemplParams" colspan="2">template&lt;typename bwt_t &gt; </td></tr>
+<tr class="memitem:acf17d8073fda5dd4cb5363e0555957e3"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1bwt.html#acf17d8073fda5dd4cb5363e0555957e3">decode_bwt</a> (const bwt_t &amp;<a class="el" href="namespacetdc_1_1bwt.html#adb93111bd48a0fc0481e0ea5e11b88bb">bwt</a>)</td></tr>
+<tr class="memdesc:acf17d8073fda5dd4cb5363e0555957e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes a BWT It is assumed that the BWT is stored in a container with access to operator[] and .size()  <a href="#acf17d8073fda5dd4cb5363e0555957e3">More...</a><br /></td></tr>
+<tr class="separator:acf17d8073fda5dd4cb5363e0555957e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains functionality for computing and decoding the Burrows-Wheeler transform (BWT) of a text. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="adb93111bd48a0fc0481e0ea5e11b88bb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +177,7 @@ template&lt;typename text_t , typename sa_t &gt; </div>
 
 <p>Computes the value BWT[i] of a text T given its suffix array SA Runs in O(1) time since BWT[i] = SA[(T[i]-1) mod |SA|]. </p>
 
-<p>Definition at line <a class="el" href="bwt_8hpp_source.html#l00018">18</a> of file <a class="el" href="bwt_8hpp_source.html">bwt.hpp</a>.</p>
+<p>Definition at line <a class="el" href="bwt_8hpp_source.html#l00020">20</a> of file <a class="el" href="bwt_8hpp_source.html">bwt.hpp</a>.</p>
 
 </div>
 </div>
@@ -204,18 +209,18 @@ template&lt;typename bwt_t &gt; </div>
 
 <p>Computes the LF table used for decoding the BWT Input is a BWT and its length. </p>
 
-<p>Definition at line <a class="el" href="bwt_8hpp_source.html#l00027">27</a> of file <a class="el" href="bwt_8hpp_source.html">bwt.hpp</a>.</p>
+<p>Definition at line <a class="el" href="bwt_8hpp_source.html#l00029">29</a> of file <a class="el" href="bwt_8hpp_source.html">bwt.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a72eb08ca65f9d69ab36d778dff30a3c5"></a>
+<a class="anchor" id="acf17d8073fda5dd4cb5363e0555957e3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename bwt_t &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>* tdc::bwt::decode_bwt </td>
+          <td class="memname">std::string tdc::bwt::decode_bwt </td>
           <td>(</td>
           <td class="paramtype">const bwt_t &amp;&#160;</td>
           <td class="paramname"><em>bwt</em></td><td>)</td>
@@ -226,7 +231,7 @@ template&lt;typename bwt_t &gt; </div>
 
 <p>Decodes a BWT It is assumed that the BWT is stored in a container with access to operator[] and .size() </p>
 
-<p>Definition at line <a class="el" href="bwt_8hpp_source.html#l00072">72</a> of file <a class="el" href="bwt_8hpp_source.html">bwt.hpp</a>.</p>
+<p>Definition at line <a class="el" href="bwt_8hpp_source.html#l00077">77</a> of file <a class="el" href="bwt_8hpp_source.html">bwt.hpp</a>.</p>
 
 </div>
 </div>
