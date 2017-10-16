@@ -126,13 +126,10 @@ $(document).ready(function(){initNavTree('_l_z78_trie_8hpp.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_trie_node.html">tdc::lz78::TrieNode&lt; search_pos_t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type of find_or_insert.  <a href="classtdc_1_1lz78_1_1_trie_node.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie_node.html">tdc::lz78::LZ78TrieNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default return type of find_or_insert.  <a href="classtdc_1_1lz78_1_1_l_z78_trie_node.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html">tdc::lz78::TrieNode&lt; factorid_t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type of find_or_insert.  <a href="classtdc_1_1lz78_1_1_trie_node_3_01factorid__t_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie&lt; search_pos &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie&lt; _node_t &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -151,14 +148,18 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a98482623901d7ba270adeac84e665190"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a98482623901d7ba270adeac84e665190">tdc::lz78::factorid_t</a> = std::uint32_t</td></tr>
-<tr class="separator:a98482623901d7ba270adeac84e665190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b89b8fda3de8ecf99d0f594629beae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a67b89b8fda3de8ecf99d0f594629beae">tdc::lz78::factorid_t</a> = uint32_t</td></tr>
+<tr class="memdesc:a67b89b8fda3de8ecf99d0f594629beae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the factor indices, bounded by the number of LZ78 trie nodes.  <a href="namespacetdc_1_1lz78.html#a67b89b8fda3de8ecf99d0f594629beae">More...</a><br /></td></tr>
+<tr class="separator:a67b89b8fda3de8ecf99d0f594629beae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4f819c2bc5bb03bba8e03b3ddfb7267f"><td class="memItemLeft" align="right" valign="top">const factorid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a4f819c2bc5bb03bba8e03b3ddfb7267f">tdc::lz78::DMS_MAX</a> = std::numeric_limits&lt;factorid_t&gt;::max()</td></tr>
-<tr class="memdesc:a4f819c2bc5bb03bba8e03b3ddfb7267f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum legal dictionary size.  <a href="namespacetdc_1_1lz78.html#a4f819c2bc5bb03bba8e03b3ddfb7267f">More...</a><br /></td></tr>
-<tr class="separator:a4f819c2bc5bb03bba8e03b3ddfb7267f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e6bbb35bd3e6f4bb659ee9b5204dfd"><td class="memItemLeft" align="right" valign="top">constexpr factorid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#ad3e6bbb35bd3e6f4bb659ee9b5204dfd">tdc::lz78::undef_id</a> = std::numeric_limits&lt;factorid_t&gt;::max()</td></tr>
+<tr class="memdesc:ad3e6bbb35bd3e6f4bb659ee9b5204dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id that can be used for a non-existing factor.  <a href="namespacetdc_1_1lz78.html#ad3e6bbb35bd3e6f4bb659ee9b5204dfd">More...</a><br /></td></tr>
+<tr class="separator:ad3e6bbb35bd3e6f4bb659ee9b5204dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53398cd4ff8cb9ca06e22ee05e1fd18d"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1lz78.html#a53398cd4ff8cb9ca06e22ee05e1fd18d">tdc::lz78::DMS_MAX</a> = std::numeric_limits&lt;factorid_t&gt;::max()</td></tr>
+<tr class="memdesc:a53398cd4ff8cb9ca06e22ee05e1fd18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum legal dictionary size.  <a href="namespacetdc_1_1lz78.html#a53398cd4ff8cb9ca06e22ee05e1fd18d">More...</a><br /></td></tr>
+<tr class="separator:a53398cd4ff8cb9ca06e22ee05e1fd18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ab40dda32ca2fe3d56448663d984caec4"></a>

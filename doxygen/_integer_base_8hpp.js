@@ -21,6 +21,6 @@ var _integer_base_8hpp =
     [ "IntegerBaseCombiner", "classtdc_1_1_integer_base_combiner.html", null ],
     [ "IntegerBaseCombiner< T, Ts... >", "classtdc_1_1_integer_base_combiner_3_01_t_00_01_ts_8_8_8_01_4.html", null ],
     [ "IntegerBaseCombiner< T >", "classtdc_1_1_integer_base_combiner_3_01_t_01_4.html", null ],
-    [ "ConstIntegerBase", "_integer_base_8hpp.html#aed4cb5a3ed3183acc4d5743c77bc677c", null ],
-    [ "IntegerBase", "_integer_base_8hpp.html#a7fe10f5c59563727fe5114e6eb71ea08", null ]
+    [ "ConstIntegerBase", "_integer_base_8hpp.html#a90bc241e0c8ae10e71b54090c55ba4ea", null ],
+    [ "IntegerBase", "_integer_base_8hpp.html#a5635516e43fa43be546359ccc0672247", null ]
 ];

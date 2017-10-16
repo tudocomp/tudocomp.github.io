@@ -10,6 +10,5 @@ var _int_vector_8hpp =
     [ "operator==", "_int_vector_8hpp.html#acef7f0de2ebfe02268cbe7d1e6448636", null ],
     [ "operator>", "_int_vector_8hpp.html#a092b3618054ac738a0537f40fa3033ee", null ],
     [ "operator>=", "_int_vector_8hpp.html#a97465a5271eb7fbeb95e3e26f093ff5a", null ],
-    [ "swap", "_int_vector_8hpp.html#a333c374221dccae195338ee29e11110b", null ],
-    [ "__attribute__", "_int_vector_8hpp.html#a9e607666ab8d8cbd1a7d676fe8d96f49", null ]
+    [ "swap", "_int_vector_8hpp.html#a333c374221dccae195338ee29e11110b", null ]
 ];

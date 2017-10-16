@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['input',['Input',['../classtdc_1_1io_1_1_input_stream.html#a9732a2f3b51c8d069f54b1a13fb64c68',1,'tdc::io::InputStream::Input()'],['../classtdc_1_1io_1_1_input_view.html#a9732a2f3b51c8d069f54b1a13fb64c68',1,'tdc::io::InputView::Input()']]],
-  ['inputstream',['InputStream',['../classtdc_1_1io_1_1_input.html#a99b65a1c51e16375dc3e7b8347df084b',1,'tdc::io::Input']]],
-  ['inputstreaminternal',['InputStreamInternal',['../classtdc_1_1io_1_1_input.html#a5994f796065cc97280994e58faf85b9b',1,'tdc::io::Input']]],
-  ['inputview',['InputView',['../classtdc_1_1io_1_1_input.html#a5f1551985fd26e941a17c0448c418d88',1,'tdc::io::Input']]],
-  ['integerbasewith32_3c_20self_2c_20other_20_3e',['IntegerBaseWith32&lt; Self, Other &gt;',['../classtdc_1_1_const_integer_base_with32.html#a4187d6fca6d664affba8701f1cc66188',1,'tdc::ConstIntegerBaseWith32']]],
-  ['integerbasewith64_3c_20self_2c_20other_20_3e',['IntegerBaseWith64&lt; Self, Other &gt;',['../classtdc_1_1_const_integer_base_with64.html#a9c40f832fc0fc24ac971051d8be7c0c0',1,'tdc::ConstIntegerBaseWith64']]],
-  ['integerbasewithself_3c_20self_20_3e',['IntegerBaseWithSelf&lt; Self &gt;',['../classtdc_1_1_const_integer_base_with_self.html#a4947c687107d94c94daac07147123652',1,'tdc::ConstIntegerBaseWithSelf']]]
+  ['gather_5ftypes',['gather_types',['../classtdc_1_1_meta.html#a3223b3dd49d4ee9954bf2e654da95d7f',1,'tdc::Meta']]],
+  ['genericview_3c_20t_20_3e',['GenericView&lt; T &gt;',['../classtdc_1_1_const_generic_view.html#a722f990b859cb95c2c40d4e3a77b43dc',1,'tdc::ConstGenericView']]],
+  ['genericview_3c_20uliteral_5ft_20_3e',['GenericView&lt; uliteral_t &gt;',['../classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#a2ec110d056da1e591f86109a52aa5025',1,'tdc::ConstGenericView&lt; uliteral_t &gt;']]],
+  ['genericviewbase_3c_20t_2c_20const_20t_20_2a_20_3e',['GenericViewBase&lt; T, const T * &gt;',['../classtdc_1_1_generic_view_base.html#a44bd84da1c90c65b1d7504d081391018',1,'tdc::GenericViewBase']]],
+  ['genericviewbase_3c_20t_2c_20t_20_2a_20_3e',['GenericViewBase&lt; T, T * &gt;',['../classtdc_1_1_generic_view_base.html#a550d1a91927fa0915a4b04a22307e838',1,'tdc::GenericViewBase']]]
 ];

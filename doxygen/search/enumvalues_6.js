@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['plain',['plain',['../namespacetdc.html#a991729ddcd7e56176b9203c9ac8f3514a061fd981825839067e43479a64afb4df',1,'tdc']]]
+  ['view',['View',['../classtdc_1_1io_1_1_input_source.html#ae7092c3edad9f91ecf66d0315092f252a4351cfebe4b61d8aa5efa1d020710005',1,'tdc::io::InputSource']]]
 ];

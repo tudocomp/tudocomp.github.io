@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['parent',['parent',['../structtdc_1_1_suffix_tree_1_1_s_t_inner_node.html#aba2e44e8749d706a287dd689e286beb4',1,'tdc::SuffixTree::STInnerNode']]],
-  ['path',['path',['../structtdc_1_1io_1_1_path.html#a8718a221aa8d7aee0d8ead48c649611b',1,'tdc::io::Path']]],
-  ['phi',['PHI',['../classtdc_1_1_text_d_s.html#acf28ecd5f8d48a53e71b40d27a28bece',1,'tdc::TextDS::PHI()'],['../namespacetdc_1_1ds.html#afa667ee3287cf964633fb95869469725',1,'tdc::ds::PHI()']]],
-  ['plcp',['PLCP',['../classtdc_1_1_text_d_s.html#acf4800ce7b757c6113cd50cadf2b40f7',1,'tdc::TextDS::PLCP()'],['../namespacetdc_1_1ds.html#a4aba61688724ff44657e1d53a0f66ecd',1,'tdc::ds::PLCP()']]],
-  ['pos',['pos',['../classtdc_1_1lzss_1_1_factor.html#a27f2fec48a58bcec3295f58639fbe18d',1,'tdc::lzss::Factor::pos()'],['../structtdc_1_1_literal.html#aa66a1f0d9712f0a1447a93edcc082fee',1,'tdc::Literal::pos()'],['../structtdc_1_1msbf_3_01uint8__t_01_4.html#ad536a764c2bbdfd2c63ece217d1f9aaf',1,'tdc::msbf&lt; uint8_t &gt;::pos()'],['../structtdc_1_1msbf_3_01uint16__t_01_4.html#a7f03d5a0a07da09386be4e10ee8ffa53',1,'tdc::msbf&lt; uint16_t &gt;::pos()'],['../structtdc_1_1msbf_3_01uint32__t_01_4.html#a291990a0769cbb3e53dda77628368aa9',1,'tdc::msbf&lt; uint32_t &gt;::pos()'],['../structtdc_1_1msbf_3_01uint64__t_01_4.html#a3ac81fc1f807c1f95496611ac58ce320',1,'tdc::msbf&lt; uint64_t &gt;::pos()'],['../_l_z_s_s_factors_8hpp.html#a552aece07a8f126c07875f092b663e5d',1,'pos():&#160;LZSSFactors.hpp']]]
+  ['radix',['radix',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__impl__t_3_01_n_01_4_01_4.html#aca6b287e913c2de8ae8f325f18a51e18',1,'std::numeric_limits&lt; tdc::uint_impl_t&lt; N &gt; &gt;']]],
+  ['rank1_5f8bit',['rank1_8bit',['../namespacetdc.html#a3651c3b390369e981a5714a775f34e5d',1,'tdc']]],
+  ['ref',['ref',['../structtdc_1_1lz78u_1_1_factor.html#a58e8233f8c4888523ff10b3e5600c997',1,'tdc::lz78u::Factor']]],
+  ['root',['root',['../structtdc_1_1lz78u_1_1_suffix_tree.html#a158ddece822277a0ff3c6b4886f96887',1,'tdc::lz78u::SuffixTree']]],
+  ['root_5fnode',['root_node',['../structtdc_1_1esp_1_1_debug_round_context_data.html#a85f72d4da03528e80841a2711eaa2bcb',1,'tdc::esp::DebugRoundContextData::root_node()'],['../structtdc_1_1esp_1_1_debug_context_data.html#ae1892458c3625d9084633b793020f9d5',1,'tdc::esp::DebugContextData::root_node()']]],
+  ['root_5frule',['root_rule',['../structtdc_1_1esp_1_1_s_l_p.html#a8052c3cc9e826a1f8bd6a917bd05a8c9',1,'tdc::esp::SLP']]],
+  ['round_5fstyle',['round_style',['../classstd_1_1numeric__limits_3_01tdc_1_1uint__impl__t_3_01_n_01_4_01_4.html#a5962ba36d64f6e51ef2e3b589366c490',1,'std::numeric_limits&lt; tdc::uint_impl_t&lt; N &gt; &gt;']]],
+  ['rounds',['rounds',['../structtdc_1_1esp_1_1_debug_context_data.html#a1bfe172421154e28fdffa8b654fd2acd',1,'tdc::esp::DebugContextData']]],
+  ['rules',['rules',['../structtdc_1_1esp_1_1_s_l_p.html#a40c1c9c6661f407ae979d9188852d838',1,'tdc::esp::SLP']]]
 ];

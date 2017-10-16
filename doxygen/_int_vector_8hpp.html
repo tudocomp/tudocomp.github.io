@@ -111,8 +111,7 @@ $(document).ready(function(){initNavTree('_int_vector_8hpp.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">IntVector.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -131,6 +130,7 @@ $(document).ready(function(){initNavTree('_int_vector_8hpp.html','');});
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;climits&gt;</code><br />
+<code>#include &lt;<a class="el" href="_int_repr_8hpp_source.html">tudocomp/ds/IntRepr.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_int_ptr_8hpp_source.html">tudocomp/ds/IntPtr.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bit_packing_vector_8hpp_source.html">tudocomp/ds/BitPackingVector.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="uint__t_8hpp_source.html">tudocomp/ds/uint_t.hpp</a>&gt;</code><br />
@@ -161,10 +161,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab6a5da736ccdb00077e52495123953d3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc.html#ab6a5da736ccdb00077e52495123953d3">tdc::IntVector</a> = int_vector::IntVector&lt; T &gt;</td></tr>
 <tr class="memdesc:ab6a5da736ccdb00077e52495123953d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A vector over arbitrary unsigned integer types.  <a href="namespacetdc.html#ab6a5da736ccdb00077e52495123953d3">More...</a><br /></td></tr>
 <tr class="separator:ab6a5da736ccdb00077e52495123953d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393098dfa57d20d082394cdaa8e61d96"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a393098dfa57d20d082394cdaa8e61d96">tdc::BitVector</a> = IntVector&lt; <a class="el" href="uint__t_8hpp.html#a6cfb904f019ee8f9254eaf6b3ebe7ede">uint_t</a>&lt; 1 &gt;&gt;</td></tr>
+<tr class="memitem:a393098dfa57d20d082394cdaa8e61d96"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a393098dfa57d20d082394cdaa8e61d96">tdc::BitVector</a> = IntVector&lt; uint_t&lt; 1 &gt;&gt;</td></tr>
 <tr class="memdesc:a393098dfa57d20d082394cdaa8e61d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a bit vector, alias for <a class="el" href="namespacetdc.html#ab6a5da736ccdb00077e52495123953d3">IntVector</a> with a fixed bit width of 1.  <a href="namespacetdc.html#a393098dfa57d20d082394cdaa8e61d96">More...</a><br /></td></tr>
 <tr class="separator:a393098dfa57d20d082394cdaa8e61d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52f0bacbb2e33c486c47e8f351545852"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a52f0bacbb2e33c486c47e8f351545852">tdc::DynamicIntVector</a> = IntVector&lt; <a class="el" href="dynamic__t_8hpp.html#a6b1981a73ff99019d1c57be6a895c74c">dynamic_t</a> &gt;</td></tr>
+<tr class="memitem:a52f0bacbb2e33c486c47e8f351545852"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc.html#a52f0bacbb2e33c486c47e8f351545852">tdc::DynamicIntVector</a> = IntVector&lt; dynamic_t &gt;</td></tr>
 <tr class="memdesc:a52f0bacbb2e33c486c47e8f351545852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an integer vector with unspecified (dynamic) bit width.  <a href="namespacetdc.html#a52f0bacbb2e33c486c47e8f351545852">More...</a><br /></td></tr>
 <tr class="separator:a52f0bacbb2e33c486c47e8f351545852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -191,11 +191,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a333c374221dccae195338ee29e11110b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a333c374221dccae195338ee29e11110b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1int__vector.html#a333c374221dccae195338ee29e11110b">tdc::int_vector::swap</a> (IntVector&lt; T &gt; &amp;lhs, IntVector&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="separator:a333c374221dccae195338ee29e11110b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a9e607666ab8d8cbd1a7d676fe8d96f49"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classtdc_1_1int__vector_1_1_int_vector.html">tdc::int_vector::IntVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetdc_1_1int__vector.html#a9e607666ab8d8cbd1a7d676fe8d96f49">tdc::int_vector::__attribute__</a></td></tr>
-<tr class="separator:a9e607666ab8d8cbd1a7d676fe8d96f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

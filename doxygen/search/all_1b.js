@@ -1,10 +1,14 @@
 var searchData=
 [
+  ['_7ealgorithm',['~Algorithm',['../classtdc_1_1_algorithm.html#ae4f3c844d8881983fcf4b6f53840bdc3',1,'tdc::Algorithm']]],
   ['_7ealgorithmvalue',['~AlgorithmValue',['../classtdc_1_1_algorithm_value.html#a4e964b389c6f737e8abad365b052d917',1,'tdc::AlgorithmValue']]],
   ['_7ebinarysuffixtree',['~BinarySuffixTree',['../classtdc_1_1_binary_suffix_tree.html#ab7f1eb9f7082874eccd12af663c2c8f7',1,'tdc::BinarySuffixTree']]],
   ['_7ebitostream',['~BitOStream',['../classtdc_1_1io_1_1_bit_o_stream.html#addd4d7bf8b766677b1cbc16fa281956b',1,'tdc::io::BitOStream']]],
+  ['_7ebucket',['~Bucket',['../classtdc_1_1_bucket.html#a8a3b71ce19390d341906dfdfbf12780e',1,'tdc::Bucket']]],
+  ['_7ecompact_5fhash',['~compact_hash',['../classtdc_1_1compact__hash.html#ad39a322e762dbd5e3c8c3c6a6e0e7476',1,'tdc::compact_hash']]],
   ['_7ecompactdec',['~CompactDec',['../classtdc_1_1lcpcomp_1_1_compact_dec.html#a9b466185898d49dba084b7033f86c684',1,'tdc::lcpcomp::CompactDec']]],
   ['_7ecompression',['~Compression',['../classtdc_1_1lz78u_1_1_buffering_strategy_1_1_compression.html#a69243032374b7fda60323f74b2779810',1,'tdc::lz78u::BufferingStrategy::Compression']]],
+  ['_7ecompressor',['~Compressor',['../classtdc_1_1_compressor.html#a33b0332487fd495d7b9920bb50f27f1d',1,'tdc::Compressor']]],
   ['_7edecoder',['~Decoder',['../classtdc_1_1_huffman_coder_1_1_decoder.html#a7c65922aa69344b3348da00389d1246c',1,'tdc::HuffmanCoder::Decoder::~Decoder()'],['../classtdc_1_1_s_l_e_coder_1_1_decoder.html#aaa8de9201de2bc54268d3a95939042c4',1,'tdc::SLECoder::Decoder::~Decoder()']]],
   ['_7eencoder',['~Encoder',['../classtdc_1_1_huffman_coder_1_1_encoder.html#a790c16c9416d1337e39ce3d3fcb33ff2',1,'tdc::HuffmanCoder::Encoder::~Encoder()'],['../classtdc_1_1_s_l_e_coder_1_1_encoder.html#a3ff6e61e97c1d46383e90bbcbd2c8671',1,'tdc::SLECoder::Encoder::~Encoder()']]],
   ['_7eenv',['~Env',['../classtdc_1_1_env.html#a70bcb7e3b69ef88b3e87d807a562959c',1,'tdc::Env']]],

@@ -42,16 +42,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_s_c_i_i_coder_8hpp.html",
-"_l_f_s2_b_s_t_compressor_8hpp.html",
-"classtdc_1_1_algorithm_value.html#a3a334556101693e54e0ce3136eff43b0",
-"classtdc_1_1_const_integer_base_with64.html#a8f98e5586a8c8156928217ff907a55f8",
-"classtdc_1_1_i_s_a_from_s_a.html",
-"classtdc_1_1_s_l_e_coder_1_1_encoder.html#a9cd3f16d6d10a0c98d09e69c07f5069c",
-"classtdc_1_1esp_1_1_grammar_rules.html#a93b1e148d0f668c3db356728749d63e6",
-"classtdc_1_1io_1_1_restricted_i_stream_buf.html#a8283312030ae5c0a4a28ea28e406cc95",
-"classtdc_1_1lzss_1_1_decode_back_buffer.html#a71b37aacbdcfe37e75e34f843b56af7d",
-"include_2tudocomp_2util_8hpp.html#a73c1223b1b18959f190ceced8714c17a",
-"structtdc_1_1esp_1_1_dpi__and__b.html#a929d5311c4acf55088eb41c263848504"
+"_l_f_s2_b_s_t_compressor_8hpp_source.html",
+"classtdc_1_1_algorithm.html#a9dfafac3ed4a80b391acc4bb95c1d8d0",
+"classtdc_1_1_const_integer_base_with32.html#a7083327ac562679a232aaf4c6ff6020b",
+"classtdc_1_1_hash_map.html#a5a7caf29c63835fc652543e89feefa37",
+"classtdc_1_1_re_pair_compressor.html#a9d539af95630217e63ab5f24e5ed445b",
+"classtdc_1_1esp_1_1_esp_context.html#ad4a491517025b5067aa726e6ece3720f",
+"classtdc_1_1io_1_1_output.html#a6bcef376ee494b0d9e34d39f3cf55b4d",
+"classtdc_1_1lz78u_1_1_streaming_strategy_1_1_compression.html#a5d55c6819789b1668a1efe7aa9281069",
+"include_2tudocomp_2util_8hpp.html#af60ce4acf6188f3bc78bfddc72126219",
+"structtdc_1_1esp_1_1_round.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

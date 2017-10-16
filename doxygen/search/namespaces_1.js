@@ -1,6 +1,7 @@
 var searchData=
 [
   ['bwt',['bwt',['../namespacetdc_1_1bwt.html',1,'tdc']]],
+  ['cedar',['cedar',['../namespacetdc_1_1lz78_1_1cedar.html',1,'tdc::lz78']]],
   ['ds',['ds',['../namespacetdc_1_1ds.html',1,'tdc']]],
   ['esp',['esp',['../namespacetdc_1_1esp.html',1,'tdc']]],
   ['huff2',['huff2',['../namespacetdc_1_1esp_1_1huff2.html',1,'tdc::esp']]],

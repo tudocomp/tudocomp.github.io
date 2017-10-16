@@ -74,14 +74,21 @@ var files =
       [ "BWTCompressor", "classtdc_1_1_b_w_t_compressor.html", "classtdc_1_1_b_w_t_compressor" ]
     ] ],
     [ "cedar.hpp", "cedar_8hpp.html", "cedar_8hpp" ],
-    [ "CedarTrie.hpp", "_cedar_trie_8hpp.html", "_cedar_trie_8hpp" ],
+    [ "CedarTrie.hpp", "_cedar_trie_8hpp.html", [
+      [ "CedarTrieNode", "classtdc_1_1lz78_1_1cedar_1_1_cedar_trie_node.html", "classtdc_1_1lz78_1_1cedar_1_1_cedar_trie_node" ],
+      [ "CedarTrie", "classtdc_1_1lz78_1_1_cedar_trie.html", "classtdc_1_1lz78_1_1_cedar_trie" ]
+    ] ],
     [ "ChainCompressor.hpp", "_chain_compressor_8hpp.html", [
       [ "ChainCompressor", "classtdc_1_1_chain_compressor.html", "classtdc_1_1_chain_compressor" ]
     ] ],
     [ "characterhash.h", "characterhash_8h.html", "characterhash_8h" ],
     [ "Coder.hpp", "_coder_8hpp.html", "_coder_8hpp" ],
+    [ "compact_sparse_hash.hpp", "compact__sparse__hash_8hpp.html", "compact__sparse__hash_8hpp" ],
     [ "CompactDec.hpp", "_compact_dec_8hpp.html", [
       [ "CompactDec", "classtdc_1_1lcpcomp_1_1_compact_dec.html", "classtdc_1_1lcpcomp_1_1_compact_dec" ]
+    ] ],
+    [ "CompactSparseHashTrie.hpp", "_compact_sparse_hash_trie_8hpp.html", [
+      [ "CompactSparseHashTrie", "classtdc_1_1lz78_1_1_compact_sparse_hash_trie.html", "classtdc_1_1lz78_1_1_compact_sparse_hash_trie" ]
     ] ],
     [ "CompressedLCP.hpp", "_compressed_l_c_p_8hpp.html", [
       [ "CompressedLCP", "classtdc_1_1_compressed_l_c_p.html", "classtdc_1_1_compressed_l_c_p" ]
@@ -113,7 +120,9 @@ var files =
     [ "divsufsort_ssort.hpp", "divsufsort__ssort_8hpp.html", null ],
     [ "divsufsort_trsort.hpp", "divsufsort__trsort_8hpp.html", null ],
     [ "DRCoder.hpp", "_d_r_coder_8hpp.html", "_d_r_coder_8hpp" ],
-    [ "dynamic_t.hpp", "dynamic__t_8hpp.html", "dynamic__t_8hpp" ],
+    [ "dynamic_t.hpp", "dynamic__t_8hpp.html", [
+      [ "dynamic_t", "classtdc_1_1dynamic__t.html", null ]
+    ] ],
     [ "DynamicSizeIPD.hpp", "_dynamic_size_i_p_d_8hpp.html", [
       [ "DynamicSizeIPD", "classtdc_1_1esp_1_1_dynamic_size_i_p_d.html", "classtdc_1_1esp_1_1_dynamic_size_i_p_d" ],
       [ "IPDMap", "classtdc_1_1esp_1_1_dynamic_size_i_p_d_1_1_i_p_d_map.html", "classtdc_1_1esp_1_1_dynamic_size_i_p_d_1_1_i_p_d_map" ]
@@ -219,6 +228,7 @@ var files =
     [ "InputView.hpp", "_input_view_8hpp.html", "_input_view_8hpp" ],
     [ "IntegerBase.hpp", "_integer_base_8hpp.html", "_integer_base_8hpp" ],
     [ "IntPtr.hpp", "_int_ptr_8hpp.html", null ],
+    [ "IntRepr.hpp", "_int_repr_8hpp.html", "_int_repr_8hpp" ],
     [ "IntVector.hpp", "_int_vector_8hpp.html", "_int_vector_8hpp" ],
     [ "io.hpp", "io_8hpp.html", "io_8hpp" ],
     [ "IOUtil.hpp", "_i_o_util_8hpp.html", "_i_o_util_8hpp" ],
@@ -419,9 +429,7 @@ var files =
       [ "SparseISA", "classtdc_1_1_sparse_i_s_a.html", "classtdc_1_1_sparse_i_s_a" ]
     ] ],
     [ "squeeze_node.hpp", "squeeze__node_8hpp.html", "squeeze__node_8hpp" ],
-    [ "StatPhase.hpp", "_stat_phase_8hpp.html", [
-      [ "StatPhase", "classtdc_1_1_stat_phase.html", "classtdc_1_1_stat_phase" ]
-    ] ],
+    [ "StatPhase.hpp", "_stat_phase_8hpp.html", "_stat_phase_8hpp" ],
     [ "StatPhaseDummy.hpp", "_stat_phase_dummy_8hpp.html", null ],
     [ "StdUnorderedMapIPD.hpp", "_std_unordered_map_i_p_d_8hpp.html", [
       [ "StdUnorderedMapIPD", "classtdc_1_1esp_1_1_std_unordered_map_i_p_d.html", "classtdc_1_1esp_1_1_std_unordered_map_i_p_d" ],

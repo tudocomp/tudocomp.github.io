@@ -179,7 +179,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3bf10fb34871d30b37543a5806ca0d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00cb277f177605648cb254b3bbe98026"><td class="memItemLeft" align="right" valign="top">ProbeFcn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_hash_map.html#a00cb277f177605648cb254b3bbe98026">m_probe</a></td></tr>
 <tr class="separator:a00cb277f177605648cb254b3bbe98026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5b00b570a875136aa4f18e3eae4fb5a"><td class="memItemLeft" align="right" valign="top">SizeManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_hash_map.html#ac5b00b570a875136aa4f18e3eae4fb5a">m_sizeman</a></td></tr>
+<tr class="memitem:ac5b00b570a875136aa4f18e3eae4fb5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_hash_map.html#ac5b00b570a875136aa4f18e3eae4fb5a">m_sizeman</a></td></tr>
 <tr class="separator:ac5b00b570a875136aa4f18e3eae4fb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38cc59fcc799f9af1a17f0b498dcf16e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1_hash_map.html#a38cc59fcc799f9af1a17f0b498dcf16e">m_size</a></td></tr>
 <tr class="separator:a38cc59fcc799f9af1a17f0b498dcf16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,7 +219,7 @@ class tdc::HashMap&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeMa
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Key <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::<a class="el" href="classtdc_1_1_hash_map.html#aa8b8116d2ab8d889f991197b83d7ab7c">key_t</a></td>
+          <td class="memname">typedef Key <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::<a class="el" href="classtdc_1_1_hash_map.html#aa8b8116d2ab8d889f991197b83d7ab7c">key_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -235,7 +235,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::pair&lt;<a class="el" href="classtdc_1_1_hash_map.html#aa8b8116d2ab8d889f991197b83d7ab7c">key_t</a>,<a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a>&gt; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::<a class="el" href="classtdc_1_1_hash_map.html#a5a7caf29c63835fc652543e89feefa37">store_t</a></td>
+          <td class="memname">typedef std::pair&lt;<a class="el" href="classtdc_1_1_hash_map.html#aa8b8116d2ab8d889f991197b83d7ab7c">key_t</a>,<a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a>&gt; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::<a class="el" href="classtdc_1_1_hash_map.html#a5a7caf29c63835fc652543e89feefa37">store_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,7 +251,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Value <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::<a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a></td>
+          <td class="memname">typedef Value <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::<a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -271,7 +271,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::<a class="el" href="classtdc_1_1_hash_map.html">HashMap</a> </td>
+          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::<a class="el" href="classtdc_1_1_hash_map.html">HashMap</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtdc_1_1_env.html">Env</a> &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -315,7 +315,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::~<a class="el" href="classtdc_1_1_hash_map.html">HashMap</a> </td>
+          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::~<a class="el" href="classtdc_1_1_hash_map.html">HashMap</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -342,9 +342,9 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::<a class="el" href="classtdc_1_1_hash_map.html">HashMap</a> </td>
+          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::<a class="el" href="classtdc_1_1_hash_map.html">HashMap</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtdc_1_1_hash_map.html">HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtdc_1_1_hash_map.html">HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -369,34 +369,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::empty </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_hash_8hpp_source.html#l00518">518</a> of file <a class="el" href="_hash_8hpp_source.html">Hash.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad85f2352a4a592da1472bd8598f51b0c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::entries </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -413,6 +386,33 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 
 </div>
 </div>
+<a class="anchor" id="ad85f2352a4a592da1472bd8598f51b0c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::entries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_hash_8hpp_source.html#l00514">514</a> of file <a class="el" href="_hash_8hpp_source.html">Hash.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa58e6ef3273846f4da5da46bd44664a3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +423,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::IF_STATS </td>
+          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::IF_STATS </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>m_collisions</em> = <code>0;&#160;size_t&#160;m_old_size&#160;=&#160;0;&#160;size_t&#160;m_resizes&#160;=&#160;0;&#160;size_t&#160;m_specialresizes&#160;=&#160;0;</code></td><td>)</td>
@@ -453,7 +453,7 @@ template&lt;class T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::incorporate </td>
+          <td class="memname">void <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::incorporate </td>
           <td>(</td>
           <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>o</em>, </td>
@@ -491,7 +491,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;<a class="el" href="classtdc_1_1_hash_map_1_1_iterator.html">Iterator</a>,bool&gt; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::insert </td>
+          <td class="memname">std::pair&lt;<a class="el" href="classtdc_1_1_hash_map_1_1_iterator.html">Iterator</a>,bool&gt; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::insert </td>
           <td>(</td>
           <td class="paramtype">std::pair&lt; <a class="el" href="classtdc_1_1_hash_map.html#aa8b8116d2ab8d889f991197b83d7ab7c">key_t</a>, <a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a> &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -505,7 +505,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_hash_8hpp_source.html#l00520">520</a> of file <a class="el" href="_hash_8hpp_source.html">Hash.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_hash_8hpp_source.html#l00518">518</a> of file <a class="el" href="_hash_8hpp_source.html">Hash.hpp</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::max_load_factor </td>
+          <td class="memname">float <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::max_load_factor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -546,7 +546,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classtdc_1_1_meta.html">Meta</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::meta </td>
+          <td class="memname">static <a class="el" href="classtdc_1_1_meta.html">Meta</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::meta </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -573,9 +573,9 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">HashMap</a>&amp; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html">HashMap</a>&amp; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtdc_1_1_hash_map.html">HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtdc_1_1_hash_map.html">HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -599,7 +599,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::reserve </td>
+          <td class="memname">void <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::reserve </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a>&#160;</td>
           <td class="paramname"><em>hint</em></td><td>)</td>
@@ -627,7 +627,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::table_size </td>
+          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::table_size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -640,7 +640,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_hash_8hpp_source.html#l00517">517</a> of file <a class="el" href="_hash_8hpp_source.html">Hash.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_hash_8hpp_source.html#l00515">515</a> of file <a class="el" href="_hash_8hpp_source.html">Hash.hpp</a>.</p>
 
 </div>
 </div>
@@ -655,7 +655,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::empty_val = undef_id</td>
+          <td class="memname">constexpr <a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::empty_val = undef_id</td>
         </tr>
       </table>
   </td>
@@ -679,7 +679,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::initial_size = 4</td>
+          <td class="memname">constexpr <a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::initial_size = 4</td>
         </tr>
       </table>
   </td>
@@ -700,7 +700,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_entries = 0</td>
+          <td class="memname"><a class="el" href="namespacetdc.html#a91c49b6168a43474b54fa7c1a780c5f8">len_t</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_entries = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -716,7 +716,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">EqualKey <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_eq</td>
+          <td class="memname">EqualKey <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_eq</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -732,7 +732,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_move_guard.html">MoveGuard</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_guard</td>
+          <td class="memname"><a class="el" href="classtdc_1_1_move_guard.html">MoveGuard</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_guard</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -748,7 +748,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">HashFcn <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_h</td>
+          <td class="memname">HashFcn <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_h</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -764,7 +764,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html#aa8b8116d2ab8d889f991197b83d7ab7c">key_t</a>* <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_keys</td>
+          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html#aa8b8116d2ab8d889f991197b83d7ab7c">key_t</a>* <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_keys</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -780,7 +780,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">float <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_load_factor = 0.3f</td>
+          <td class="memname">float <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_load_factor = 0.3f</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -796,7 +796,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const size_t <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_n</td>
+          <td class="memname">const size_t <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_n</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -812,7 +812,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">ProbeFcn <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_probe</td>
+          <td class="memname">ProbeFcn <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_probe</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -828,7 +828,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const size_t&amp; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_remaining_characters</td>
+          <td class="memname">const size_t&amp; <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_remaining_characters</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -844,7 +844,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_size</td>
+          <td class="memname">size_t <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -860,7 +860,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">SizeManager <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_sizeman</td>
+          <td class="memname"><a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_sizeman</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -876,7 +876,7 @@ template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, c
 template&lt;class Key, class Value, Value undef_id, class HashFcn = MixHasher, class EqualKey = std::equal_to&lt;Key&gt;, class ProbeFcn = QuadraticProber, class SizeManager = SizeManagerPow2&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a>* <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, SizeManager &gt;::m_values</td>
+          <td class="memname"><a class="el" href="classtdc_1_1_hash_map.html#a117dc06b7fd7b42e1be259b24e58c9c1">value_t</a>* <a class="el" href="classtdc_1_1_hash_map.html">tdc::HashMap</a>&lt; Key, Value, undef_id, HashFcn, EqualKey, ProbeFcn, <a class="el" href="classtdc_1_1_size_manager.html">SizeManager</a> &gt;::m_values</td>
         </tr>
       </table>
 </div><div class="memdoc">

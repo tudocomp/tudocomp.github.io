@@ -1,0 +1,4 @@
+var structtdc_1_1_integer_base_trait_3_01uint__impl__t_3_01_n_01_4_00_01typename_01std_1_1enable__if7b932aef18cc061bf82ebd67f955ecb2 =
+[
+    [ "Dispatch", "structtdc_1_1_integer_base_trait_3_01uint__impl__t_3_01_n_01_4_00_01typename_01std_1_1enable__if7b932aef18cc061bf82ebd67f955ecb2.html#ac3a74e0394da38960aa7bd83998ac7e8", null ]
+];

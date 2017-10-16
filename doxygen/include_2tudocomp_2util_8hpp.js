@@ -25,5 +25,6 @@ var include_2tudocomp_2util_8hpp =
     [ "split_lines", "include_2tudocomp_2util_8hpp.html#a73c1223b1b18959f190ceced8714c17a", null ],
     [ "to_str", "include_2tudocomp_2util_8hpp.html#aa2239ba97875cc0883cf1423a3fcc821", null ],
     [ "vec_as_lossy_string", "include_2tudocomp_2util_8hpp.html#a771e16ce84612405ce15071783a40b9b", null ],
-    [ "vec_to_debug_string", "include_2tudocomp_2util_8hpp.html#a11c8af96b81f9b7f02eced993f32d637", null ]
+    [ "vec_to_debug_string", "include_2tudocomp_2util_8hpp.html#a11c8af96b81f9b7f02eced993f32d637", null ],
+    [ "zero_or_next_power_of_two", "include_2tudocomp_2util_8hpp.html#a880b5bcd01e24fbf775af57d5367a0e0", null ]
 ];

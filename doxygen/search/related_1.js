@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['debugcontextbase',['DebugContextBase',['../classtdc_1_1esp_1_1_debug_context_base.html#a0ec2c1002da6baa09f8d29ff2cdb92a5',1,'tdc::esp::DebugContextBase']]],
-  ['dyntdispatch',['DyntDispatch',['../classtdc_1_1dynamic__t.html#a9cd135c7397f748e37c4be0f1a57b9eb',1,'tdc::dynamic_t']]]
+  ['bucket_3c_20val_5ft_20_3e',['Bucket&lt; val_t &gt;',['../classtdc_1_1_bucket_elem.html#ad6c7764e2f1aa589f9e7cba366795c6a',1,'tdc::BucketElem']]]
 ];

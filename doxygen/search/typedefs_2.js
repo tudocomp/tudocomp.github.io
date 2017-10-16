@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['cedar_5ffactorid_5ft',['cedar_factorid_t',['../namespacetdc_1_1lz78.html#a9c5852e37076ed028a5ec8a2bbb974f2',1,'tdc::lz78']]],
-  ['cedar_5ft',['cedar_t',['../namespacetdc_1_1lz78.html#a154d3f149848730e73bbc64d6faa816b',1,'tdc::lz78']]],
   ['chartype',['chartype',['../classtdc_1_1_karp_rabin_hash.html#a66fd5d0cb1f33975a53ce5a789e59e08',1,'tdc::KarpRabinHash']]],
   ['codelengths',['Codelengths',['../namespacetdc_1_1esp_1_1huff2.html#a2a66917c98f268ab9d89c38e1b7bccc6',1,'tdc::esp::huff2']]],
   ['codetype',['CodeType',['../namespacetdc_1_1lzw.html#af1fbe7a1db4867d09cdcf1f19dcdb12c',1,'tdc::lzw']]],
@@ -10,7 +8,7 @@ var searchData=
   ['const_5fpointer',['const_pointer',['../classtdc_1_1int__vector_1_1_int_vector.html#adaed94b62254d381c76286a6d429219a',1,'tdc::int_vector::IntVector::const_pointer()'],['../classtdc_1_1_generic_view_base.html#a6c64c1418994626db2f85053bca8cabc',1,'tdc::GenericViewBase::const_pointer()'],['../classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#af2e246be520e7ebd8d39dd89a07b4461',1,'tdc::ConstGenericView&lt; uliteral_t &gt;::const_pointer()'],['../classtdc_1_1_const_generic_view.html#a7f624a968c273a7bd35efc009df27aa4',1,'tdc::ConstGenericView::const_pointer()'],['../classtdc_1_1_generic_view.html#a791101e6864dfd23cc4d8af4fe54623e',1,'tdc::GenericView::const_pointer()']]],
   ['const_5freference',['const_reference',['../classtdc_1_1int__vector_1_1_int_vector.html#a870a7bd67c4bb92b0c00972303e8a6b9',1,'tdc::int_vector::IntVector::const_reference()'],['../classtdc_1_1_generic_view_base.html#a7377c59a07d43f8975fc49b8a789739d',1,'tdc::GenericViewBase::const_reference()'],['../classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#a47f4624cbf87c111b2c24e101cd19b76',1,'tdc::ConstGenericView&lt; uliteral_t &gt;::const_reference()'],['../classtdc_1_1_const_generic_view.html#a0f2d11b1bb6c7dd788929dee5cf4ecf3',1,'tdc::ConstGenericView::const_reference()'],['../classtdc_1_1_generic_view.html#adee00984f50595ed3808b8d51b41dd75',1,'tdc::GenericView::const_reference()']]],
   ['const_5freverse_5fiterator',['const_reverse_iterator',['../classtdc_1_1int__vector_1_1_int_vector.html#a08cae767c0821acf27504f1c8ef0c04c',1,'tdc::int_vector::IntVector::const_reverse_iterator()'],['../classtdc_1_1_generic_view_base.html#afdd0176f7df7061041df610f8daefb34',1,'tdc::GenericViewBase::const_reverse_iterator()'],['../classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html#adf58ed57170f2d7617034aa7070dc5ae',1,'tdc::ConstGenericView&lt; uliteral_t &gt;::const_reverse_iterator()'],['../classtdc_1_1_const_generic_view.html#af46959260fa1f889c5c73770ff0d4f74',1,'tdc::ConstGenericView::const_reverse_iterator()'],['../classtdc_1_1_generic_view.html#ad917a6c255acbddab23730f851bea448',1,'tdc::GenericView::const_reverse_iterator()']]],
-  ['constintegerbase',['ConstIntegerBase',['../namespacetdc.html#aed4cb5a3ed3183acc4d5743c77bc677c',1,'tdc']]],
+  ['constintegerbase',['ConstIntegerBase',['../namespacetdc.html#a90bc241e0c8ae10e71b54090c55ba4ea',1,'tdc']]],
   ['counts',['Counts',['../namespacetdc_1_1esp_1_1huff2.html#aa7fa53fc8b1c0393f0e2e8e327d03694',1,'tdc::esp::huff2']]],
   ['cst_5ft',['cst_t',['../structtdc_1_1lz78u_1_1_suffix_tree.html#ac874b737e8ac056300d623f52f35ec1a',1,'tdc::lz78u::SuffixTree']]]
 ];

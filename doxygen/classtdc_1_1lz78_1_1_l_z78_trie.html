@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>tudocomp: tdc::lz78::LZ78Trie&lt; search_pos &gt; Class Template Reference</title>
+<title>tudocomp: tdc::lz78::LZ78Trie&lt; _node_t &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -112,10 +112,9 @@ $(document).ready(function(){initNavTree('classtdc_1_1lz78_1_1_l_z78_trie.html',
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classtdc_1_1lz78_1_1_l_z78_trie-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">tdc::lz78::LZ78Trie&lt; search_pos &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">tdc::lz78::LZ78Trie&lt; _node_t &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -123,51 +122,46 @@ $(document).ready(function(){initNavTree('classtdc_1_1lz78_1_1_l_z78_trie.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aeef6595ea17a7bbace77b2272f262fdf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a> = <a class="el" href="classtdc_1_1lz78_1_1_trie_node.html">TrieNode</a>&lt; search_pos &gt;</td></tr>
-<tr class="separator:aeef6595ea17a7bbace77b2272f262fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56242b32fa576696451fa415347a3049"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a> = _node_t</td></tr>
+<tr class="separator:a56242b32fa576696451fa415347a3049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a26c5761c2bfcbc8ebaac71165f281bd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a26c5761c2bfcbc8ebaac71165f281bd8">LZ78Trie</a> (const size_t n, const size_t &amp;remaining_characters)</td></tr>
-<tr class="separator:a26c5761c2bfcbc8ebaac71165f281bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1a220082380884444e8794452d86956"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#ad1a220082380884444e8794452d86956">add_rootnode</a> (<a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> c)=0</td></tr>
-<tr class="memdesc:ad1a220082380884444e8794452d86956"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dictionary can store multiple root nodes For LZ78, we use a root node with the id = c = 0.  <a href="#ad1a220082380884444e8794452d86956">More...</a><br /></td></tr>
-<tr class="separator:ad1a220082380884444e8794452d86956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e5af5534c56a023457d856ed8bb6a7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#ad4e5af5534c56a023457d856ed8bb6a7">get_rootnode</a> (<a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> c)=0</td></tr>
-<tr class="memdesc:ad4e5af5534c56a023457d856ed8bb6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the root node corresponding to literal c.  <a href="#ad4e5af5534c56a023457d856ed8bb6a7">More...</a><br /></td></tr>
-<tr class="separator:ad4e5af5534c56a023457d856ed8bb6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1072438e6a7922771ed2b67c505bcd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#ae1072438e6a7922771ed2b67c505bcd1">clear</a> ()=0</td></tr>
-<tr class="memdesc:ae1072438e6a7922771ed2b67c505bcd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases the contents of the dictionary.  <a href="#ae1072438e6a7922771ed2b67c505bcd1">More...</a><br /></td></tr>
-<tr class="separator:ae1072438e6a7922771ed2b67c505bcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acee6081e88007b3094e94c6dec2eb07f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#acee6081e88007b3094e94c6dec2eb07f">find_or_insert</a> (const <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a> &amp;parent, <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> c)=0</td></tr>
-<tr class="memdesc:acee6081e88007b3094e94c6dec2eb07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches a pair (<code>parent</code>, <code>c</code>).  <a href="#acee6081e88007b3094e94c6dec2eb07f">More...</a><br /></td></tr>
-<tr class="separator:acee6081e88007b3094e94c6dec2eb07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3038fb0e152f4eef9310955d1e7c7491"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacetdc_1_1lz78.html#a98482623901d7ba270adeac84e665190">factorid_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a3038fb0e152f4eef9310955d1e7c7491">size</a> () const =0</td></tr>
-<tr class="memdesc:a3038fb0e152f4eef9310955d1e7c7491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of entries, plus the number of rootnodes.  <a href="#a3038fb0e152f4eef9310955d1e7c7491">More...</a><br /></td></tr>
-<tr class="separator:a3038fb0e152f4eef9310955d1e7c7491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a13a4526b2570c9fe503de048afe74f94"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a13a4526b2570c9fe503de048afe74f94">m_n</a></td></tr>
-<tr class="separator:a13a4526b2570c9fe503de048afe74f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5dc47a161fb9e6e70c42fdd87c54f51"><td class="memItemLeft" align="right" valign="top">const size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#ab5dc47a161fb9e6e70c42fdd87c54f51">m_remaining_characters</a></td></tr>
-<tr class="separator:ab5dc47a161fb9e6e70c42fdd87c54f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c757c144329b7ec11a7a1856ad9bbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a96c757c144329b7ec11a7a1856ad9bbf">LZ78Trie</a> (const size_t n, const size_t &amp;remaining_characters)</td></tr>
+<tr class="separator:a96c757c144329b7ec11a7a1856ad9bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6c3b5af164612c8d502919ab2c5e46"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aca6c3b5af164612c8d502919ab2c5e46">expected_number_of_remaining_elements</a> (const size_t z) const </td></tr>
+<tr class="separator:aca6c3b5af164612c8d502919ab2c5e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21076c8bb40e1d041109aca4982fc80f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a21076c8bb40e1d041109aca4982fc80f">add_rootnode</a> (<a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> c)</td></tr>
+<tr class="memdesc:a21076c8bb40e1d041109aca4982fc80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dictionary can store multiple root nodes For LZ78, we use a root node with the id = c = 0.  <a href="#a21076c8bb40e1d041109aca4982fc80f">More...</a><br /></td></tr>
+<tr class="separator:a21076c8bb40e1d041109aca4982fc80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458eb62a7989ad07d78b46371a0361f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a458eb62a7989ad07d78b46371a0361f2">get_rootnode</a> (<a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> c) const </td></tr>
+<tr class="memdesc:a458eb62a7989ad07d78b46371a0361f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the root node corresponding to literal c.  <a href="#a458eb62a7989ad07d78b46371a0361f2">More...</a><br /></td></tr>
+<tr class="separator:a458eb62a7989ad07d78b46371a0361f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac699386457ebd9999db8afc2bc010a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#adac699386457ebd9999db8afc2bc010a">clear</a> ()</td></tr>
+<tr class="memdesc:adac699386457ebd9999db8afc2bc010a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases the contents of the dictionary.  <a href="#adac699386457ebd9999db8afc2bc010a">More...</a><br /></td></tr>
+<tr class="separator:adac699386457ebd9999db8afc2bc010a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107be972fea404bfc6fa5c7cadc6dc70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a107be972fea404bfc6fa5c7cadc6dc70">find_or_insert</a> (const <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a> &amp;parent, <a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a> c)</td></tr>
+<tr class="memdesc:a107be972fea404bfc6fa5c7cadc6dc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches a pair (<code>parent</code>, <code>c</code>).  <a href="#a107be972fea404bfc6fa5c7cadc6dc70">More...</a><br /></td></tr>
+<tr class="separator:a107be972fea404bfc6fa5c7cadc6dc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe0426ff65995bbc451382ba84d083b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a5fe0426ff65995bbc451382ba84d083b">size</a> () const </td></tr>
+<tr class="memdesc:a5fe0426ff65995bbc451382ba84d083b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of entries, plus the number of rootnodes.  <a href="#a5fe0426ff65995bbc451382ba84d083b">More...</a><br /></td></tr>
+<tr class="separator:a5fe0426ff65995bbc451382ba84d083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename search_pos&gt;<br />
-class tdc::lz78::LZ78Trie&lt; search_pos &gt;</h3>
+<div class="textblock"><h3>template&lt;typename _node_t = LZ78TrieNode&gt;<br />
+class tdc::lz78::LZ78Trie&lt; _node_t &gt;</h3>
 
 
 <p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00041">41</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aeef6595ea17a7bbace77b2272f262fdf"></a>
+<a class="anchor" id="a56242b32fa576696451fa415347a3049"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::<a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a> =  <a class="el" href="classtdc_1_1lz78_1_1_trie_node.html">TrieNode</a>&lt;search_pos&gt;</td>
+          <td class="memname">using <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::<a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a> =  _node_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -177,17 +171,17 @@ template&lt;typename search_pos&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a26c5761c2bfcbc8ebaac71165f281bd8"></a>
+<a class="anchor" id="a96c757c144329b7ec11a7a1856ad9bbf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::<a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">LZ78Trie</a> </td>
+          <td class="memname"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::<a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">LZ78Trie</a> </td>
           <td>(</td>
           <td class="paramtype">const size_t&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -211,22 +205,22 @@ template&lt;typename search_pos&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00047">47</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00048">48</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad1a220082380884444e8794452d86956"></a>
+<a class="anchor" id="a21076c8bb40e1d041109aca4982fc80f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a> <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::add_rootnode </td>
+          <td class="memname"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a> <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::add_rootnode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -235,7 +229,7 @@ template&lt;typename search_pos&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -243,21 +237,21 @@ template&lt;typename search_pos&gt; </div>
 <p>The dictionary can store multiple root nodes For LZ78, we use a root node with the id = c = 0. </p>
 <p>For LZW, we add for each possible literal value a root node. The compressor has to add these nodes. </p>
 
-<p>Implemented in <a class="el" href="classtdc_1_1lz78_1_1_cedar_trie.html#a0718ba7fc7911346eedbc6cbd2de1f89">tdc::lz78::CedarTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie_plus.html#a7d68c121004e563444b0f4e7f7916d4a">tdc::lz78::RollingTriePlus&lt; HashRoller, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_ternary_trie.html#aaa1baa9cb8a146e5191508339fc4a3c2">tdc::lz78::TernaryTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_ext_hash_trie.html#a32502ffa7b93798e13ed9be701ac7a33">tdc::lz78::ExtHashTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie.html#a7aa69d85f21cc125623e0c3b64b3d71c">tdc::lz78::RollingTrie&lt; HashRoller, HashProber, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_hash_trie_plus.html#a100e86e3e466ee26301310749662301c">tdc::lz78::HashTriePlus&lt; HashFunction, HashManager &gt;</a>, and <a class="el" href="classtdc_1_1lz78_1_1_hash_trie.html#a8203ee2050767dfc630c013dc134bb6a">tdc::lz78::HashTrie&lt; HashFunction, HashProber, HashManager &gt;</a>.</p>
+<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00061">61</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae1072438e6a7922771ed2b67c505bcd1"></a>
+<a class="anchor" id="adac699386457ebd9999db8afc2bc010a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::clear </td>
+          <td class="memname">void <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -265,7 +259,7 @@ template&lt;typename search_pos&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -273,23 +267,51 @@ template&lt;typename search_pos&gt; </div>
 <p>Erases the contents of the dictionary. </p>
 <p>Used by compressors with limited dictionary size. </p>
 
-<p>Implemented in <a class="el" href="classtdc_1_1lz78_1_1_cedar_trie.html#aaa01c216a19a6eb583c930e852a46e24">tdc::lz78::CedarTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_ternary_trie.html#ac18ba9aa55176a8a435ec3ffd4945330">tdc::lz78::TernaryTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie_plus.html#ad4b71343b6d1f860a8015dcb7a90f6df">tdc::lz78::RollingTriePlus&lt; HashRoller, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_ext_hash_trie.html#af59a3da88b5506c4ea5b5a8d2e9a6f6f">tdc::lz78::ExtHashTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie.html#a9449debb69cb489c5ec61b04d078797d">tdc::lz78::RollingTrie&lt; HashRoller, HashProber, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_hash_trie_plus.html#a9f4bfc3c6424acacb04da473f8e60d27">tdc::lz78::HashTriePlus&lt; HashFunction, HashManager &gt;</a>, and <a class="el" href="classtdc_1_1lz78_1_1_hash_trie.html#a3a761917b268fd1f6ed49acbfbda1021">tdc::lz78::HashTrie&lt; HashFunction, HashProber, HashManager &gt;</a>.</p>
+<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00078">78</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acee6081e88007b3094e94c6dec2eb07f"></a>
+<a class="anchor" id="aca6c3b5af164612c8d502919ab2c5e46"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a> <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::find_or_insert </td>
+          <td class="memname">size_t <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::expected_number_of_remaining_elements </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a> &amp;&#160;</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>z</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00051">51</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a107be972fea404bfc6fa5c7cadc6dc70"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a> <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::find_or_insert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a> &amp;&#160;</td>
           <td class="paramname"><em>parent</em>, </td>
         </tr>
         <tr>
@@ -306,7 +328,7 @@ template&lt;typename search_pos&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -319,59 +341,53 @@ template&lt;typename search_pos&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the index of the respective child, if it was found. </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">undef_id</td><td>if a new leaf was inserted </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>the new or found child node </dd></dl>
 
-<p>Implemented in <a class="el" href="classtdc_1_1lz78_1_1_cedar_trie.html#a3c389494b0d0d172b74564becca53c7c">tdc::lz78::CedarTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_ternary_trie.html#a0cd54a8864069ebe6ec18f73f871c0ca">tdc::lz78::TernaryTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie_plus.html#a56fce8e1c1e71768f0eee1fa55becf86">tdc::lz78::RollingTriePlus&lt; HashRoller, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_ext_hash_trie.html#a5dadd616d21f9c9c2e8d53a45628569f">tdc::lz78::ExtHashTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie.html#a62d661d2b8f5ab175affa3462b7cb81a">tdc::lz78::RollingTrie&lt; HashRoller, HashProber, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_hash_trie_plus.html#a612ad140238a93784f6d10eea785987a">tdc::lz78::HashTriePlus&lt; HashFunction, HashManager &gt;</a>, and <a class="el" href="classtdc_1_1lz78_1_1_hash_trie.html#a521d5d68406a33f1d616c1fe4fa20a39">tdc::lz78::HashTrie&lt; HashFunction, HashProber, HashManager &gt;</a>.</p>
+<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00087">87</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad4e5af5534c56a023457d856ed8bb6a7"></a>
+<a class="anchor" id="a458eb62a7989ad07d78b46371a0361f2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#aeef6595ea17a7bbace77b2272f262fdf">node_t</a> <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::get_rootnode </td>
+          <td class="memname"><a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html#a56242b32fa576696451fa415347a3049">node_t</a> <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::get_rootnode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacetdc.html#ac0561fec911b97d69536bb6e109ccea8">uliteral_t</a>&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Returns the root node corresponding to literal c. </p>
 
-<p>Implemented in <a class="el" href="classtdc_1_1lz78_1_1_cedar_trie.html#aaa1a71934067cb85a19e5fc45a1fd6b7">tdc::lz78::CedarTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_ternary_trie.html#ad92876ec4fcb25f4e4fc2308632f7fff">tdc::lz78::TernaryTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie_plus.html#a4f49a58a04ffab3e4169a46751d63afa">tdc::lz78::RollingTriePlus&lt; HashRoller, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_ext_hash_trie.html#a2dc20e0087c53a654234afdd70e1a22e">tdc::lz78::ExtHashTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie.html#a74c48c32d1069da1bdceeb3016776d5b">tdc::lz78::RollingTrie&lt; HashRoller, HashProber, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_hash_trie_plus.html#a7d875f58076951e7bc51b8ccc9a294bc">tdc::lz78::HashTriePlus&lt; HashFunction, HashManager &gt;</a>, and <a class="el" href="classtdc_1_1lz78_1_1_hash_trie.html#a7f59b36e81f29394d77a3ed2e0ee2f56">tdc::lz78::HashTrie&lt; HashFunction, HashProber, HashManager &gt;</a>.</p>
+<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00069">69</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3038fb0e152f4eef9310955d1e7c7491"></a>
+<a class="anchor" id="a5fe0426ff65995bbc451382ba84d083b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
+template&lt;typename _node_t = LZ78TrieNode&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespacetdc_1_1lz78.html#a98482623901d7ba270adeac84e665190">factorid_t</a> <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::size </td>
+          <td class="memname">size_t <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; _node_t &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -379,63 +395,14 @@ template&lt;typename search_pos&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Returns the number of entries, plus the number of rootnodes. </p>
 
-<p>Implemented in <a class="el" href="classtdc_1_1lz78_1_1_cedar_trie.html#ac10d11a356409fc8f8e1cad2e9caad34">tdc::lz78::CedarTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_ternary_trie.html#a5c007739a14502d467fece1140f73319">tdc::lz78::TernaryTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie_plus.html#a397e4047f09b446f59fe1db508dfab75">tdc::lz78::RollingTriePlus&lt; HashRoller, HashManager, HashFunction &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_ext_hash_trie.html#af68aad3c08eb04544cd0e254c59e5d4a">tdc::lz78::ExtHashTrie</a>, <a class="el" href="classtdc_1_1lz78_1_1_hash_trie_plus.html#a41b606af77fb329db9f9d2ad7fc55eb0">tdc::lz78::HashTriePlus&lt; HashFunction, HashManager &gt;</a>, <a class="el" href="classtdc_1_1lz78_1_1_rolling_trie.html#a93fc5d040fd14f49f953a4e7437ba0f5">tdc::lz78::RollingTrie&lt; HashRoller, HashProber, HashManager, HashFunction &gt;</a>, and <a class="el" href="classtdc_1_1lz78_1_1_hash_trie.html#a7744fadfeb2911abdb9bd7cd21259cd1">tdc::lz78::HashTrie&lt; HashFunction, HashProber, HashManager &gt;</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a13a4526b2570c9fe503de048afe74f94"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::m_n</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00045">45</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab5dc47a161fb9e6e70c42fdd87c54f51"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename search_pos&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t&amp; <a class="el" href="classtdc_1_1lz78_1_1_l_z78_trie.html">tdc::lz78::LZ78Trie</a>&lt; search_pos &gt;::m_remaining_characters</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00046">46</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_l_z78_trie_8hpp_source.html#l00095">95</a> of file <a class="el" href="_l_z78_trie_8hpp_source.html">LZ78Trie.hpp</a>.</p>
 
 </div>
 </div>

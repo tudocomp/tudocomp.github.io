@@ -96,6 +96,13 @@
 <li><a href="#comparison-suites">Comparison Suites</a></li>
 </ul></li>
 </ul></li>
+<li><a href="#manual">Manual</a><ul>
+<li><a href="#the-lz78lzw-implementation">The LZ78/LZW Implementation</a><ul>
+<li><a href="#algorithm-api">Algorithm API</a></li>
+<li><a href="#source-location">Source Location</a></li>
+<li><a href="#the-lz78trie-interface.">The LZ78Trie interface.</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
 <h1 id="abstract">Abstract</h1>
@@ -666,7 +673,7 @@ algo_mul-&gt;execute(); <span class="co">// the result is 40</span></code></pre>
 <p>For some scenarios, especially during development, the <a href="../doxygen/classtdc_1_1_no_literals.html"><code>NoLiterals</code></a> iterator can be used to give no input alphabet information to the coder at all. Note that low-entropy encoders, which may rely on this information, may not be compatible with this.</p>
 <h3 id="the-coder-interface">The Coder Interface</h3>
 <p><em>tudocomp</em> does not provide a central base for coders, but separates their functionality by providing an <a href="../doxygen/classtdc_1_1_encoder.html"><code>Encoder</code></a> and a <a href="../doxygen/classtdc_1_1_decoder.html"><code>Decoder</code></a> class.</p>
-<p>It is expected that for any encoder, there is a corresponding decoder that restores the original output. In order to enforce this, encoder and decoder implementations are typically encapsulated in an outer <code>Coder</code> class that inheirty from <code>Algorithm</code>. This design pattern allows for separation of encoding and decoding functionality while retaining the ability to instantiate both from a template type (ie. the outer class).</p>
+<p>It is expected that for any encoder, there is a corresponding decoder that restores the original output. In order to enforce this, encoder and decoder implementations are typically encapsulated in an outer <code>Coder</code> class that inherit from <code>Algorithm</code>. This design pattern allows for separation of encoding and decoding functionality while retaining the ability to instantiate both from a template type (ie. the outer class).</p>
 <p>Apart from this concept, encoders and decoders are simple classes that declare the function templates <a href="../doxygen/classtdc_1_1_encoder.html#a8c5bb8464e2156db884ad99fa5e5ce55"><code>encode</code></a> and <a href="../doxygen/classtdc_1_1_encoder.html#a9a38f2ce545994adea94ec109e7b77df"><code>decode</code></a>, respectively. Their template parameters are generally expected to be numeric types.</p>
 <p>Both <code>encode</code> and <code>decode</code> accept a <code>Range</code> as an argument. As discussed in the <a href="#ranges"><code>Ranges</code></a> section above, the range information can be used to encode a given value in a more efficient manner. The following example uses the range in order to perform a binary encoding of the given value:</p>
 <div class="sourceCode" caption="coder_impl.cpp"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">template</span>&lt;<span class="kw">typename</span> <span class="dt">value_t</span>&gt;
@@ -1288,6 +1295,79 @@ Tudocomp(name<span class="op">=</span><span class="st">&#39;tdc_lzss_lcp_huff&#3
     algorithm<span class="op">=</span><span class="st">&#39;lzss_lcp(threshold=20,coder=huff)&#39;</span>),
 ]</code></pre></div>
 <p>Note that by default, the <em>tudocomp</em> binary is expected at <code>./tdc</code>, therefore the comparison tool should be run from a build directory.</p>
+<h1 id="manual">Manual</h1>
+<h2 id="the-lz78lzw-implementation">The LZ78/LZW Implementation</h2>
+<p>Tudocomp contains an implementation of both Lz78 and Lzw. Both are implemented according to their basic definitions: A sequence of characters is being read from a input stream, and a dictionary is searched for a longest previously-seen prefix of characters. The dictionary is updated as needed, and lz factors containing references to the found prefixes are being output.</p>
+<p>The Algorithms are defined in terms of two abstract interfaces, implemented as C++ concepts:</p>
+<ul>
+<li><code>LZ78Trie</code>. It abstracts over a concrete dictionary data structure with a trie-like interface and search API, and is used by both Lz78 and Lzw, despite its name.</li>
+<li><code>Coder</code>. It abstracts over the concrete encoding of a sequence of integer values, in this case the references and characters in a lz factor.</li>
+</ul>
+<p>The trie interface is explained in more details below. For details to the <code>Coder</code> interface, see the Tutorial section above.</p>
+<p>Both algorithms also support limiting the dictionary to a certain maximum size, to reduce memory consumption and search overhead at the cost of compression rate. Concretely, this is defined by clearing the dictionary once it reaches a specific size, leading to multiple rebuilds of the data structure during a Lz78/Lzw run.</p>
+<blockquote>
+<p>Note: The dictionary-limiting option is currently disabled due to bugs with a few of the existing dictionary implementations.</p>
+</blockquote>
+<h3 id="algorithm-api">Algorithm API</h3>
+<p>Both the compressors and the different dictionaries are registered as Algorithms in Tudocomps registry. The full list of existing implementations can bee seen with <code>./tdc --list</code>. For example:</p>
+<p>To compress <code>input.txt</code> with Lz78 using the <code>BinaryTrie</code>:</p>
+<pre><code>./tdc -a &quot;lz78(lz78trie = binary)&quot; input.txt</code></pre>
+<p>To compress <code>input.txt</code> with Lzw using a limited dictionary size of 1024 entries:</p>
+<pre><code>./tdc -a &quot;lzw(dict_size = 1024)&quot; input.txt</code></pre>
+<h3 id="source-location">Source Location</h3>
+<p>The Lz78 and Lzw implementations can be found in <code>include/tudocomp/compressors/LZ78Compressor.hpp</code> and <code>include/tudocomp/compressors/LZWCompressor.hpp</code>, respectively.</p>
+<p>Support definitions and the Trie base class can be found in <code>include/tudocomp/compressors/lz78/LZ78Trie.hpp</code>. The same directory also contains all existing LZ78Trie implementations.</p>
+<h3 id="the-lz78trie-interface.">The LZ78Trie interface.</h3>
+<p>In order to fulfill the LZ78Trie interface, a class <code class="sourceCode cpp">T</code> needs to:</p>
+<ul>
+<li>Implement Tudocomps <code>Algorithm</code> concept, for which it needs to:
+<ul>
+<li>Public inherit from <code class="sourceCode cpp">Algorithm</code>.</li>
+<li>Call the <code class="sourceCode cpp">Algorithm(Env&amp;&amp;)</code> constructor.</li>
+<li>Be movable and move-assignable.</li>
+<li>Implement a <code class="sourceCode cpp"><span class="kw">inline</span> <span class="at">static</span> Meta meta();</code> describing the Algorithm.</li>
+</ul></li>
+<li>Public inherit from <code class="sourceCode cpp">LZ78Trie&lt;&gt;</code>.
+<ul>
+<li><em>Optionally</em>, instead inherit from <code class="sourceCode cpp">LZ78Trie&lt;<span class="dt">my_node_type_t</span>&gt;</code> with a custom node type <code class="sourceCode cpp"><span class="dt">my_node_type_t</span></code> (see below).</li>
+</ul></li>
+<li>Call the <code class="sourceCode cpp">LZ78Trie(<span class="at">const</span> <span class="dt">size_t</span> n, <span class="at">const</span> <span class="dt">size_t</span>&amp; remaining_characters)</code> constructor.</li>
+<li><p>Implement the following constructor and methods:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> T(Env&amp;&amp; env, <span class="at">const</span> <span class="dt">size_t</span> n, <span class="at">const</span> <span class="dt">size_t</span>&amp; remaining_characters, <span class="dt">size_t</span> reserve = <span class="dv">0</span>);
+<span class="kw">inline</span> <span class="dt">node_t</span> add_rootnode(<span class="dt">uliteral_t</span> c);
+<span class="kw">inline</span> <span class="dt">node_t</span> get_rootnode(<span class="dt">uliteral_t</span> c) <span class="at">const</span>;
+<span class="kw">inline</span> <span class="dt">node_t</span> find_or_insert(<span class="at">const</span> <span class="dt">node_t</span>&amp; parent, <span class="dt">uliteral_t</span> c);
+<span class="kw">inline</span> <span class="dt">void</span> clear();
+<span class="kw">inline</span> <span class="dt">size_t</span> size() <span class="at">const</span>;</code></pre></div>
+<p>where <code class="sourceCode cpp"><span class="dt">node_t</span></code> is a type member provided by the parent <code class="sourceCode cpp">LZ78Trie&lt;X&gt;</code> that describes a node in the trie, and is equal to <code>X</code>. It defaults to <code>LZ78TrieNode</code>, see below for more details.</p></li>
+</ul>
+<p>These members should have the following semantics:</p>
+<ul>
+<li>The constructor should delegate its arguments to the two base constructors mentioned above, and try to reserve memory for <code class="sourceCode cpp">reserve</code>-many dictionary entries.</li>
+<li><code class="sourceCode cpp">add_rootnode(x)</code> should create a root node in the trie that corresponds to the lz node with label <code>x</code>. For Lz78, this will be called once with argument 0. For Lzw, this will be called for all possible character values (the byte values 0 to 255). An implementation may choose how it maps these logical root nodes to the actual data structure. A common approach is to have a hidden single real root node, with the logical root nodes living on the first layer below it. See the graphic below.</li>
+<li><code class="sourceCode cpp">get_rootnode(x)</code> should return the same node as created by the corresponding <code class="sourceCode cpp">add_rootnode(x)</code> call.</li>
+<li><code class="sourceCode cpp">find_or_insert(parent, c)</code> should search the node <code class="sourceCode cpp">parent</code> for a child with edge label <code class="sourceCode cpp">c</code>, create one if it doesn't exist, and then return it.</li>
+<li><code class="sourceCode cpp">clear()</code> should reset the data structure entirely, including root nodes.</li>
+<li><code class="sourceCode cpp">size()</code> should return the number of nodes in the data structure, including root nodes.</li>
+</ul>
+<div class="figure">
+<img src="media/lz78_trie.png" alt="LZ78 and LZW Trie for the string &quot;bacacb&quot;" />
+<p class="caption">LZ78 and LZW Trie for the string &quot;bacacb&quot;</p>
+</div>
+<h4 id="node_t-and-custom-node-types"><code class="sourceCode cpp"><span class="dt">node_t</span></code> and custom node types</h4>
+<p><code class="sourceCode cpp"><span class="dt">node_t</span></code> is per default identical to <code>LZ78TrieNode</code>, and behaves like a <code>(integer, bool)</code> tuple with the following API:</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="kw">inline</span> <span class="dt">node_t</span>(<span class="dt">factorid_t</span> id, <span class="dt">bool</span> is_new);
+<span class="kw">inline</span> <span class="dt">node_t</span>();
+<span class="kw">inline</span> <span class="dt">factorid_t</span> id() <span class="at">const</span>;
+<span class="kw">inline</span> <span class="dt">bool</span> is_new() <span class="at">const</span>;</code></pre></div>
+<p><code class="sourceCode cpp">id()</code> returns the node label, and <code class="sourceCode cpp">is_new()</code> is true if this node has been freshly created by <code class="sourceCode cpp">find_or_insert()</code>.</p>
+<p>Usually, just having the node label is enough for a <code>LZ78Trie</code> implementation to locate a node in its internal data structure. In cases where that is not possible though, say if you need the internal address of an node, you can replace the default <code class="sourceCode cpp"><span class="dt">node_t</span></code> type with a custom one by passing it to the template argument of the <code>LZ78Trie&lt;...&gt;</code> parent class.</p>
+<p>Such a type needs to provide the same API as <code>LZ78TrieNode</code>, but may:</p>
+<ul>
+<li>Have a custom constructor.</li>
+<li>Have additional members (for example, storing an internal node address).</li>
+</ul>
+<p>The easiest way to do this is by inheriting from <code>LZ78TrieNode</code>. See <code>include/tudocomp/compressors/lz78/CedarTrie.hpp</code> for an example of how this is done.</p>
 <div class="footnotes">
 <hr />
 <ol>

@@ -1,9 +1,9 @@
 var classtdc_1_1lz78_1_1_cedar_trie =
 [
     [ "CedarTrie", "classtdc_1_1lz78_1_1_cedar_trie.html#a1cf7bd41820c0f85a2ceecfacc9de81d", null ],
-    [ "add_rootnode", "classtdc_1_1lz78_1_1_cedar_trie.html#a0718ba7fc7911346eedbc6cbd2de1f89", null ],
-    [ "clear", "classtdc_1_1lz78_1_1_cedar_trie.html#aaa01c216a19a6eb583c930e852a46e24", null ],
-    [ "find_or_insert", "classtdc_1_1lz78_1_1_cedar_trie.html#a3c389494b0d0d172b74564becca53c7c", null ],
-    [ "get_rootnode", "classtdc_1_1lz78_1_1_cedar_trie.html#aaa1a71934067cb85a19e5fc45a1fd6b7", null ],
-    [ "size", "classtdc_1_1lz78_1_1_cedar_trie.html#ac10d11a356409fc8f8e1cad2e9caad34", null ]
+    [ "add_rootnode", "classtdc_1_1lz78_1_1_cedar_trie.html#a71c25688ce1ed51bb851f2cd0a6854f7", null ],
+    [ "clear", "classtdc_1_1lz78_1_1_cedar_trie.html#a3c95ade68f8edab36099591e8a75158b", null ],
+    [ "find_or_insert", "classtdc_1_1lz78_1_1_cedar_trie.html#a216d8f24964c6feba0306e6008995211", null ],
+    [ "get_rootnode", "classtdc_1_1lz78_1_1_cedar_trie.html#a8d97e925110972891ca59514b83441e4", null ],
+    [ "size", "classtdc_1_1lz78_1_1_cedar_trie.html#af3f65d47bdd31d6310aeb1985bcdbd7b", null ]
 ];

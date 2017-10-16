@@ -5,6 +5,7 @@ var searchData=
   ['select',['Select',['../classtdc_1_1_select.html',1,'tdc']]],
   ['select_3c_201_20_3e',['Select&lt; 1 &gt;',['../classtdc_1_1_select.html',1,'tdc']]],
   ['simststrategy',['SimSTStrategy',['../classtdc_1_1lfs_1_1_sim_s_t_strategy.html',1,'tdc::lfs']]],
+  ['sizemanager',['SizeManager',['../classtdc_1_1_size_manager.html',1,'tdc']]],
   ['sizemanagerdirect',['SizeManagerDirect',['../structtdc_1_1_size_manager_direct.html',1,'tdc']]],
   ['sizemanagernoob',['SizeManagerNoob',['../structtdc_1_1_size_manager_noob.html',1,'tdc']]],
   ['sizemanagerpow2',['SizeManagerPow2',['../structtdc_1_1_size_manager_pow2.html',1,'tdc']]],

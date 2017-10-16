@@ -1,7 +1,6 @@
 var classtdc_1_1_binary_suffix_tree =
 [
     [ "~BinarySuffixTree", "classtdc_1_1_binary_suffix_tree.html#ab7f1eb9f7082874eccd12af663c2c8f7", null ],
-    [ "BinarySuffixTree", "classtdc_1_1_binary_suffix_tree.html#ad1ac4fde4ebd4ec91920e2c8832e6242", null ],
     [ "BinarySuffixTree", "classtdc_1_1_binary_suffix_tree.html#a3eb46b9ca1908df7b4a2f55621724eca", null ],
     [ "edge_length", "classtdc_1_1_binary_suffix_tree.html#abcfc66fc4b7ef87383ba2098b13d3776", null ],
     [ "get_edge_length", "classtdc_1_1_binary_suffix_tree.html#afe5ebf43ac4c22969ff9aaa605a3da99", null ],

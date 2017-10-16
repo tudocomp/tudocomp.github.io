@@ -8,6 +8,8 @@ var searchData=
   ['bitostream',['BitOStream',['../classtdc_1_1io_1_1_bit_o_stream.html',1,'tdc::io']]],
   ['boostheap',['BoostHeap',['../classtdc_1_1lcpcomp_1_1_boost_heap.html',1,'tdc::lcpcomp']]],
   ['bststrategy',['BSTStrategy',['../classtdc_1_1lfs_1_1_b_s_t_strategy.html',1,'tdc::lfs']]],
+  ['bucket',['Bucket',['../classtdc_1_1_bucket.html',1,'tdc']]],
+  ['bucketelem',['BucketElem',['../classtdc_1_1_bucket_elem.html',1,'tdc']]],
   ['bufferingstrategy',['BufferingStrategy',['../classtdc_1_1lz78u_1_1_buffering_strategy.html',1,'tdc::lz78u']]],
   ['builder',['Builder',['../classtdc_1_1_builder.html',1,'tdc']]],
   ['bulldozerstrategy',['BulldozerStrategy',['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html',1,'tdc::lcpcomp']]],
