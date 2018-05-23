@@ -1,10 +1,10 @@
 var _integer_base_8hpp =
 [
     [ "ConstIntegerBaseTrait", "structtdc_1_1_const_integer_base_trait.html", [
-      [ "type", "structtdc_1_1_const_integer_base_trait_1_1type.html", "structtdc_1_1_const_integer_base_trait_1_1type" ]
+      [ "type >", "structtdc_1_1_const_integer_base_trait_1_1type_01_4.html", "structtdc_1_1_const_integer_base_trait_1_1type_01_4" ]
     ] ],
     [ "IntegerBaseTrait", "structtdc_1_1_integer_base_trait.html", [
-      [ "type", "structtdc_1_1_integer_base_trait_1_1type.html", "structtdc_1_1_integer_base_trait_1_1type" ]
+      [ "type >", "structtdc_1_1_integer_base_trait_1_1type_01_4.html", "structtdc_1_1_integer_base_trait_1_1type_01_4" ]
     ] ],
     [ "IntegerBaseWithSelf", "classtdc_1_1_integer_base_with_self.html", "classtdc_1_1_integer_base_with_self" ],
     [ "IntegerBaseWith32", "classtdc_1_1_integer_base_with32.html", "classtdc_1_1_integer_base_with32" ],

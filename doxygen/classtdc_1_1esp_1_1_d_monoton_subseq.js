@@ -1,5 +1,5 @@
 var classtdc_1_1esp_1_1_d_monoton_subseq =
 [
-    [ "decode", "classtdc_1_1esp_1_1_d_monoton_subseq.html#a9453ce5fe37d7a002521641b60084515", null ],
-    [ "encode", "classtdc_1_1esp_1_1_d_monoton_subseq.html#a3a81096acf6c03cb923b733dace27725", null ]
+    [ "decode", "classtdc_1_1esp_1_1_d_monoton_subseq.html#a9b3583725c67cd9e0a44df4ba8e792d3", null ],
+    [ "encode", "classtdc_1_1esp_1_1_d_monoton_subseq.html#a58dd8762e82b0a33035555e907f3f046", null ]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['table_5fsize',['table_size',['../classtdc_1_1_hash_map.html#a00d2b18462459616746451ed22aa93c6',1,'tdc::HashMap']]],
+  ['table_5fsize',['table_size',['../classtdc_1_1_hash_map.html#a38e6b3b621d6f9b0a63ba03b249a9fd0',1,'tdc::HashMap']]],
   ['tellp',['tellp',['../classtdc_1_1io_1_1_bit_o_stream.html#a42a811b7bf099f4b2adfe47e387a9194',1,'tdc::io::BitOStream::tellp()'],['../classtdc_1_1io_1_1_output_stream.html#a6589733a261c8c5685010fa25a0b0e24',1,'tdc::io::OutputStream::tellp()']]],
   ['templated',['templated',['../classtdc_1_1_meta_1_1_option_builder.html#a161a698d22aa04f5fe18c662a2f33cb5',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)'],['../classtdc_1_1_meta_1_1_option_builder.html#acdf93b3e7cfcf8a59ae8184810f128f2',1,'tdc::Meta::OptionBuilder::templated(const std::string &amp;accepted_type)']]],
   ['ternarycoder',['TernaryCoder',['../classtdc_1_1_ternary_coder.html#a6ef2fdcd7aa0e72a783e4c0e4e1c0929',1,'tdc::TernaryCoder']]],
@@ -10,19 +10,19 @@ var searchData=
   ['test_5ffile_5fpath',['test_file_path',['../namespacetdc_1_1test.html#a125c44c84d40186f1fff3616d9b82abd',1,'tdc::test']]],
   ['testinput',['TestInput',['../classtdc_1_1test_1_1_test_input.html#ae6a9228e464cc25fba4b4b273eec0266',1,'tdc::test::TestInput::TestInput(string_ref text, bool sentinel)'],['../classtdc_1_1test_1_1_test_input.html#a0d47bc562637fde9985fd58765dd285f',1,'tdc::test::TestInput::TestInput(io::Path &amp;&amp;path, bool sentinel)']]],
   ['testoutput',['TestOutput',['../classtdc_1_1test_1_1_test_output.html#a322db0ad80655b0427e6c9fe304cb424',1,'tdc::test::TestOutput']]],
-  ['text',['text',['../classtdc_1_1_text_d_s.html#a54bd7b4f08d19d808de0792eb8d5e796',1,'tdc::TextDS']]],
+  ['text',['text',['../classtdc_1_1_text_d_s.html#a01181ee0f5f97b5d2b56973182b8440a',1,'tdc::TextDS']]],
   ['textds',['TextDS',['../classtdc_1_1_text_d_s.html#affcdd950c5122f183ff57d5d3c4e7b1c',1,'tdc::TextDS::TextDS(Env &amp;&amp;env, const View &amp;text)'],['../classtdc_1_1_text_d_s.html#aa34d16cc9ad5387c7f00130bbb1afe43',1,'tdc::TextDS::TextDS(Env &amp;&amp;env, const View &amp;text, dsflags_t flags, CompressMode cm=CompressMode::select)']]],
-  ['textds_5fflags',['textds_flags',['../classtdc_1_1lcpcomp_1_1_arrays_comp.html#a20be0141d6523be1ebf2d90a517d98e1',1,'tdc::lcpcomp::ArraysComp::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_boost_heap.html#a9b8067b6a3edd26bf09e136cd344c099',1,'tdc::lcpcomp::BoostHeap::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html#ad05ddb2416e256446a1b4fa9acb0f96d',1,'tdc::lcpcomp::BulldozerStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_heap_strategy.html#a24264fab6ae71fa0686fab37be2fc0e5',1,'tdc::lcpcomp::MaxHeapStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html#aceb22b7902c90bf6445ad48dade4b463',1,'tdc::lcpcomp::MaxLCPStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_naive_strategy.html#af2b6467732cee29d19b3b0e5afd60ad8',1,'tdc::lcpcomp::NaiveStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html#ae916528ba0a33fe32e66061f940f9c01',1,'tdc::lcpcomp::PLCPPeaksStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html#a1b657fa7e1664bddde6da85bed4f4c5d',1,'tdc::lcpcomp::PLCPStrategy::textds_flags()'],['../classtdc_1_1_algorithm_value.html#a8dc15ea36d441cede9d2113a677a5797',1,'tdc::AlgorithmValue::textds_flags()']]],
+  ['textds_5fflags',['textds_flags',['../classtdc_1_1lcpcomp_1_1_arrays_comp.html#a20be0141d6523be1ebf2d90a517d98e1',1,'tdc::lcpcomp::ArraysComp::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_boost_heap.html#a9b8067b6a3edd26bf09e136cd344c099',1,'tdc::lcpcomp::BoostHeap::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_bulldozer_strategy.html#ad05ddb2416e256446a1b4fa9acb0f96d',1,'tdc::lcpcomp::BulldozerStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_heap_strategy.html#a24264fab6ae71fa0686fab37be2fc0e5',1,'tdc::lcpcomp::MaxHeapStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_max_l_c_p_strategy.html#aceb22b7902c90bf6445ad48dade4b463',1,'tdc::lcpcomp::MaxLCPStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_naive_strategy.html#af2b6467732cee29d19b3b0e5afd60ad8',1,'tdc::lcpcomp::NaiveStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_peaks_strategy.html#ae916528ba0a33fe32e66061f940f9c01',1,'tdc::lcpcomp::PLCPPeaksStrategy::textds_flags()'],['../classtdc_1_1lcpcomp_1_1_p_l_c_p_strategy.html#a1b657fa7e1664bddde6da85bed4f4c5d',1,'tdc::lcpcomp::PLCPStrategy::textds_flags()'],['../classtdc_1_1_algorithm_value.html#aba97d532222491854476b023ea528295',1,'tdc::AlgorithmValue::textds_flags()']]],
   ['textliterals',['TextLiterals',['../classtdc_1_1lzss_1_1_text_literals.html#ada0fd88fa463d2e2bb57a275d3a6c615',1,'tdc::lzss::TextLiterals']]],
-  ['to_5falgorithm',['to_algorithm',['../classtdc_1_1_option_value.html#a65e2219c61e6589dae65098faf99217a',1,'tdc::OptionValue']]],
+  ['to_5falgorithm',['to_algorithm',['../classtdc_1_1_option_value.html#a9c10df047d85bcdd0ca1808655199b88',1,'tdc::OptionValue']]],
   ['to_5fdebug_5flayer_5fpoints',['to_debug_layer_points',['../classtdc_1_1esp_1_1_l.html#afed3082eb445d58b912bbafb9a870df9',1,'tdc::esp::L']]],
   ['to_5fjson',['to_json',['../classtdc_1_1_stat_phase.html#a7e2210a96c67e6a2067df30ef86e31ff',1,'tdc::StatPhase']]],
   ['to_5fstr',['to_str',['../namespacetdc.html#aa2239ba97875cc0883cf1423a3fcc821',1,'tdc']]],
   ['to_5fstring',['to_string',['../namespacestd.html#ae0ce18ec6ecbe582e31e468b48edbd28',1,'std']]],
-  ['top',['top',['../classtdc_1_1_array_max_heap.html#a08208b4891a93bd50fd556c96dc88bd4',1,'tdc::ArrayMaxHeap']]],
+  ['top',['top',['../classtdc_1_1_array_max_heap.html#afca92b87edc08a418752d8c13a285c24',1,'tdc::ArrayMaxHeap']]],
   ['track_5falloc',['track_alloc',['../classtdc_1_1_stat_phase.html#af5cfed05ae45d831730fe9b2e512439f',1,'tdc::StatPhase']]],
   ['track_5ffree',['track_free',['../classtdc_1_1_stat_phase.html#a9b859717026acff8bd7539ca23c83a4f',1,'tdc::StatPhase']]],
   ['tvalue',['TValue',['../classtdc_1_1json_1_1_t_value.html#aa47bbdb9c69b971fd224c14cebef9ea1',1,'tdc::json::TValue']]],
-  ['type',['type',['../classtdc_1_1_meta.html#aeda433bf2ee43daa4f234d6deeb21465',1,'tdc::Meta']]],
+  ['type',['type',['../classtdc_1_1_meta.html#ac11646b86fdb5d61a85ad6655e716ea8',1,'tdc::Meta']]],
   ['typerange',['TypeRange',['../classtdc_1_1_type_range.html#ad2e37b441ddf0a72fe760a602c4c45c0',1,'tdc::TypeRange']]]
 ];

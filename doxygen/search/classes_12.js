@@ -24,6 +24,5 @@ var searchData=
   ['ststrategy',['STStrategy',['../classtdc_1_1lfs_1_1_s_t_strategy.html',1,'tdc::lfs']]],
   ['subseqgreedy',['SubSeqGreedy',['../classtdc_1_1esp_1_1_sub_seq_greedy.html',1,'tdc::esp']]],
   ['subseqoptimal',['SubSeqOptimal',['../classtdc_1_1esp_1_1_sub_seq_optimal.html',1,'tdc::esp']]],
-  ['suffixtree',['SuffixTree',['../structtdc_1_1lz78u_1_1_suffix_tree.html',1,'tdc::lz78u']]],
-  ['suffixtree',['SuffixTree',['../classtdc_1_1_suffix_tree.html',1,'tdc']]]
+  ['suffixtree',['SuffixTree',['../classtdc_1_1_suffix_tree.html',1,'tdc::SuffixTree'],['../structtdc_1_1lz78u_1_1_suffix_tree.html',1,'tdc::lz78u::SuffixTree']]]
 ];

@@ -4,8 +4,8 @@ var classtdc_1_1lz78_1_1_hash_trie_plus =
     [ "add_rootnode", "classtdc_1_1lz78_1_1_hash_trie_plus.html#aec472acb2c43b349708509e006a2271f", null ],
     [ "clear", "classtdc_1_1lz78_1_1_hash_trie_plus.html#a21cc0f5661a8bd5bd93c0054166b2584", null ],
     [ "find_or_insert", "classtdc_1_1lz78_1_1_hash_trie_plus.html#a648d9ce2dfe4dab4f49b5a78ad4546d2", null ],
-    [ "get_rootnode", "classtdc_1_1lz78_1_1_hash_trie_plus.html#a6f8f023b335cd5ddef4649a3457411c0", null ],
-    [ "IF_STATS", "classtdc_1_1lz78_1_1_hash_trie_plus.html#a09877bc202496a4ca5ca46ea4079689d", null ],
+    [ "get_rootnode", "classtdc_1_1lz78_1_1_hash_trie_plus.html#ac99283beca4dbbc785048e726282a687", null ],
+    [ "IF_STATS", "classtdc_1_1lz78_1_1_hash_trie_plus.html#a9d98926094eabf90d1f794589a43d8e2", null ],
     [ "operator=", "classtdc_1_1lz78_1_1_hash_trie_plus.html#a94ecd2ca963f7586ac48b2929e78a3fc", null ],
-    [ "size", "classtdc_1_1lz78_1_1_hash_trie_plus.html#a7fd2af1dfbdf5c3853b6a35e04755533", null ]
+    [ "size", "classtdc_1_1lz78_1_1_hash_trie_plus.html#ab2af3c076686ac82a865579799f9df1e", null ]
 ];

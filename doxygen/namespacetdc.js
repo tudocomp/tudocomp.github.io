@@ -35,7 +35,7 @@ var namespacetdc =
     [ "ConstIntegerBaseCombiner< T >", "classtdc_1_1_const_integer_base_combiner_3_01_t_01_4.html", null ],
     [ "ConstIntegerBaseCombiner< T, Ts... >", "classtdc_1_1_const_integer_base_combiner_3_01_t_00_01_ts_8_8_8_01_4.html", null ],
     [ "ConstIntegerBaseTrait", "structtdc_1_1_const_integer_base_trait.html", [
-      [ "type", "structtdc_1_1_const_integer_base_trait_1_1type.html", "structtdc_1_1_const_integer_base_trait_1_1type" ]
+      [ "type >", "structtdc_1_1_const_integer_base_trait_1_1type_01_4.html", "structtdc_1_1_const_integer_base_trait_1_1type_01_4" ]
     ] ],
     [ "ConstIntegerBaseTrait< bool >", "structtdc_1_1_const_integer_base_trait_3_01bool_01_4.html", "structtdc_1_1_const_integer_base_trait_3_01bool_01_4" ],
     [ "ConstIntegerBaseWith32", "classtdc_1_1_const_integer_base_with32.html", "classtdc_1_1_const_integer_base_with32" ],
@@ -65,7 +65,7 @@ var namespacetdc =
     [ "IntegerBaseCombiner< T >", "classtdc_1_1_integer_base_combiner_3_01_t_01_4.html", null ],
     [ "IntegerBaseCombiner< T, Ts... >", "classtdc_1_1_integer_base_combiner_3_01_t_00_01_ts_8_8_8_01_4.html", null ],
     [ "IntegerBaseTrait", "structtdc_1_1_integer_base_trait.html", [
-      [ "type", "structtdc_1_1_integer_base_trait_1_1type.html", "structtdc_1_1_integer_base_trait_1_1type" ]
+      [ "type >", "structtdc_1_1_integer_base_trait_1_1type_01_4.html", "structtdc_1_1_integer_base_trait_1_1type_01_4" ]
     ] ],
     [ "IntegerBaseTrait< bool >", "structtdc_1_1_integer_base_trait_3_01bool_01_4.html", "structtdc_1_1_integer_base_trait_3_01bool_01_4" ],
     [ "IntegerBaseWith32", "classtdc_1_1_integer_base_with32.html", "classtdc_1_1_integer_base_with32" ],

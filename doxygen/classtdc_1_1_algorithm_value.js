@@ -6,10 +6,10 @@ var classtdc_1_1_algorithm_value =
     [ "AlgorithmValue", "classtdc_1_1_algorithm_value.html#a511359a3ce0259e874cc97274664b96c", null ],
     [ "AlgorithmValue", "classtdc_1_1_algorithm_value.html#a9cc489c842b9d397959cd5dc5ec5feee", null ],
     [ "AlgorithmValue", "classtdc_1_1_algorithm_value.html#ac35d39573968aa27f8deff0b16ec635f", null ],
-    [ "arguments", "classtdc_1_1_algorithm_value.html#ac20152879622db37db717ebec41fd764", null ],
-    [ "name", "classtdc_1_1_algorithm_value.html#a8dd2b3c30d42519f81ad2eed7891add1", null ],
+    [ "arguments", "classtdc_1_1_algorithm_value.html#a088b0ea7e1302ffe17ff990c180f77d2", null ],
+    [ "name", "classtdc_1_1_algorithm_value.html#a0e23073d7ef3a8746cbeacfe072ea59c", null ],
     [ "operator=", "classtdc_1_1_algorithm_value.html#a3eaccd56a552071b0690217795f877c3", null ],
-    [ "static_selection", "classtdc_1_1_algorithm_value.html#a65d8683396fbb3d4eef5298145b6b7ec", null ],
-    [ "textds_flags", "classtdc_1_1_algorithm_value.html#a8dc15ea36d441cede9d2113a677a5797", null ],
+    [ "static_selection", "classtdc_1_1_algorithm_value.html#a81daba41abdfdbdae7317a291a7775b2", null ],
+    [ "textds_flags", "classtdc_1_1_algorithm_value.html#aba97d532222491854476b023ea528295", null ],
     [ "OptionValue", "classtdc_1_1_algorithm_value.html#a205742158c1464b318432de77c65db57", null ]
 ];

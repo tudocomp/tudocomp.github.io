@@ -10,5 +10,5 @@ var classtdc_1_1compact__hash =
     [ "insert", "classtdc_1_1compact__hash.html#ae1a046614e41ae85b7af648d29c8a85e", null ],
     [ "operator=", "classtdc_1_1compact__hash.html#a55f60a14cda30cc1d1c0e08fa858909f", null ],
     [ "operator[]", "classtdc_1_1compact__hash.html#ab2a3e2f3c067c943a0c62b0294102a1a", null ],
-    [ "size", "classtdc_1_1compact__hash.html#a15cc9b75cd5f05a886e995177c2fa0b8", null ]
+    [ "size", "classtdc_1_1compact__hash.html#a19b6a25b285255d2db935adbffaaa90d", null ]
 ];

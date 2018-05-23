@@ -153,7 +153,7 @@ var hierarchy =
       [ "tdc::IntegerBaseTrait< bool >", "structtdc_1_1_integer_base_trait_3_01bool_01_4.html", null ]
     ] ],
     [ "tdc::ConstIntegerBaseTrait< uint_impl_t< N > >", "structtdc_1_1_const_integer_base_trait.html", [
-      [ "tdc::IntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_integer_base_trait_1_1type.html", null ],
+      [ "tdc::IntegerBaseTrait< T, X >::type >< N >", "structtdc_1_1_integer_base_trait_1_1type_01_4.html", null ],
       [ "tdc::enable_if<(N<=32)>::type >", "structtdc_1_1_integer_base_trait_3_01uint__impl__t_3_01_n_01_4_00_01typename_01std_1_1enable__if7b932aef18cc061bf82ebd67f955ecb2.html", null ]
     ] ],
     [ "tdc::ConstIntegerBaseWith32< Self, Other >", "classtdc_1_1_const_integer_base_with32.html", [
@@ -200,18 +200,17 @@ var hierarchy =
     [ "tdc::io::FastUnescapeMap", "classtdc_1_1io_1_1_fast_unescape_map.html", null ],
     [ "tdc::esp::FixedVector< T, N >", "classtdc_1_1esp_1_1_fixed_vector.html", null ],
     [ "tdc::GenericViewBase< T, P >", "classtdc_1_1_generic_view_base.html", [
-      [ "tdc::GenericView< T >", "classtdc_1_1_generic_view.html", null ]
-    ] ],
-    [ "tdc::GenericViewBase< Sindex, const Sindex * >", "classtdc_1_1_generic_view_base.html", [
-      [ "tdc::ConstGenericView< Sindex >", "classtdc_1_1_const_generic_view.html", null ]
-    ] ],
-    [ "tdc::GenericViewBase< T, const T * >", "classtdc_1_1_generic_view_base.html", [
       [ "tdc::ConstGenericView< T >", "classtdc_1_1_const_generic_view.html", [
         [ "tdc::io::InputView", "classtdc_1_1io_1_1_input_view.html", null ]
-      ] ]
+      ] ],
+      [ "tdc::GenericView< T >", "classtdc_1_1_generic_view.html", null ]
     ] ],
-    [ "tdc::GenericViewBase< T, T * >", "classtdc_1_1_generic_view_base.html", null ],
-    [ "tdc::GenericViewBase< uliteral_t, const uliteral_t * >", "classtdc_1_1_generic_view_base.html", [
+    [ "tdc::GenericViewBase< Sindex, const Sindex *>", "classtdc_1_1_generic_view_base.html", [
+      [ "tdc::ConstGenericView< Sindex >", "classtdc_1_1_const_generic_view.html", null ]
+    ] ],
+    [ "tdc::GenericViewBase< T, const T *>", "classtdc_1_1_generic_view_base.html", null ],
+    [ "tdc::GenericViewBase< T, T *>", "classtdc_1_1_generic_view_base.html", null ],
+    [ "tdc::GenericViewBase< uliteral_t, const uliteral_t *>", "classtdc_1_1_generic_view_base.html", [
       [ "tdc::ConstGenericView< uliteral_t >", "classtdc_1_1_const_generic_view_3_01uliteral__t_01_4.html", null ]
     ] ],
     [ "tdc::esp::GrammarRules< ipd_t >", "classtdc_1_1esp_1_1_grammar_rules.html", null ],
@@ -235,7 +234,9 @@ var hierarchy =
     [ "tdc::io::Input", "classtdc_1_1io_1_1_input.html", [
       [ "tdc::test::TestInput", "classtdc_1_1test_1_1_test_input.html", null ]
     ] ],
-    [ "tdc::io::InputRestrictions", "classtdc_1_1io_1_1_input_restrictions.html", null ],
+    [ "tdc::io::InputRestrictions", "classtdc_1_1io_1_1_input_restrictions.html", [
+      [ "tdc::ds::InputRestrictionsAndFlags", "classtdc_1_1ds_1_1_input_restrictions_and_flags.html", null ]
+    ] ],
     [ "tdc::io::InputSource", "classtdc_1_1io_1_1_input_source.html", null ],
     [ "InputStreamInternal", null, [
       [ "tdc::io::InputStream", "classtdc_1_1io_1_1_input_stream.html", null ]
@@ -362,15 +363,15 @@ var hierarchy =
       [ "tdc::io::RestrictedIStreamBuf", "classtdc_1_1io_1_1_restricted_i_stream_buf.html", null ],
       [ "tdc::io::RestrictedOStreamBuf", "classtdc_1_1io_1_1_restricted_o_stream_buf.html", null ]
     ] ],
-    [ "tdc::lz78u::SuffixTree", "structtdc_1_1lz78u_1_1_suffix_tree.html", null ],
     [ "tdc::SuffixTree", "classtdc_1_1_suffix_tree.html", null ],
+    [ "tdc::lz78u::SuffixTree", "structtdc_1_1lz78u_1_1_suffix_tree.html", null ],
     [ "T", null, [
       [ "tdc::ConstIntegerBaseCombiner< T >", "classtdc_1_1_const_integer_base_combiner_3_01_t_01_4.html", null ],
       [ "tdc::ConstIntegerBaseCombiner< T, Ts... >", "classtdc_1_1_const_integer_base_combiner_3_01_t_00_01_ts_8_8_8_01_4.html", null ],
       [ "tdc::IntegerBaseCombiner< T >", "classtdc_1_1_integer_base_combiner_3_01_t_01_4.html", null ],
       [ "tdc::IntegerBaseCombiner< T, Ts... >", "classtdc_1_1_integer_base_combiner_3_01_t_00_01_ts_8_8_8_01_4.html", null ]
     ] ],
-    [ "tdc::ConstIntegerBaseTrait< T, X >::type< N >", "structtdc_1_1_const_integer_base_trait_1_1type.html", null ],
+    [ "tdc::ConstIntegerBaseTrait< T, X >::type >< N >", "structtdc_1_1_const_integer_base_trait_1_1type_01_4.html", null ],
     [ "tdc::esp::TypedBlock", "structtdc_1_1esp_1_1_typed_block.html", null ],
     [ "tdc::uint_dispatch_t< N >", "structtdc_1_1uint__dispatch__t.html", null ],
     [ "tdc::uint_dispatch_t< 1 >", "structtdc_1_1uint__dispatch__t_3_011_01_4.html", null ],
@@ -384,8 +385,5 @@ var hierarchy =
     [ "vector", null, [
       [ "tdc::test::TestOutput", "classtdc_1_1test_1_1_test_output.html", null ]
     ] ],
-    [ "tdc::esp::WTIter", "structtdc_1_1esp_1_1_w_t_iter.html", null ],
-    [ "InputRestrictions", null, [
-      [ "tdc::ds::InputRestrictionsAndFlags", "classtdc_1_1ds_1_1_input_restrictions_and_flags.html", null ]
-    ] ]
+    [ "tdc::esp::WTIter", "structtdc_1_1esp_1_1_w_t_iter.html", null ]
 ];

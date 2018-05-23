@@ -1,7 +1,7 @@
 var _int_vector_8hpp =
 [
     [ "IntVector", "classtdc_1_1int__vector_1_1_int_vector.html", "classtdc_1_1int__vector_1_1_int_vector" ],
-    [ "BitVector", "_int_vector_8hpp.html#a393098dfa57d20d082394cdaa8e61d96", null ],
+    [ "BitVector", "_int_vector_8hpp.html#aa9a5df715b81efdf43e2aaf79d756f88", null ],
     [ "DynamicIntVector", "_int_vector_8hpp.html#a52f0bacbb2e33c486c47e8f351545852", null ],
     [ "IntVector", "_int_vector_8hpp.html#ab6a5da736ccdb00077e52495123953d3", null ],
     [ "operator!=", "_int_vector_8hpp.html#abc41afa10a9645333886c22ef6380a51", null ],

@@ -8,6 +8,6 @@ var classtdc_1_1_bucket_elem =
     [ "set_quotient", "classtdc_1_1_bucket_elem.html#a7a4cb3652187b1589d20da392435a2b6", null ],
     [ "swap_quotient", "classtdc_1_1_bucket_elem.html#a49f4208b2172c686a177167ff3e0b7bc", null ],
     [ "val", "classtdc_1_1_bucket_elem.html#a7e10623554b41e2e090a749e5b1fa2c7", null ],
-    [ "val", "classtdc_1_1_bucket_elem.html#aa6aebafa1fc4fe4b15ccf8c6fc2c6d94", null ],
+    [ "val", "classtdc_1_1_bucket_elem.html#ac08b9eb49cfb7b494fce3d81c2d87fb7", null ],
     [ "Bucket< val_t >", "classtdc_1_1_bucket_elem.html#ad6c7764e2f1aa589f9e7cba366795c6a", null ]
 ];

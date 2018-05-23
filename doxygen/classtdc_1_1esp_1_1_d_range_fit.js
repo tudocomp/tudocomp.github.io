@@ -1,7 +1,7 @@
 var classtdc_1_1esp_1_1_d_range_fit =
 [
-    [ "decode", "classtdc_1_1esp_1_1_d_range_fit.html#a76f7e5e18e649b0239d33bd6b46b1964", null ],
-    [ "decode", "classtdc_1_1esp_1_1_d_range_fit.html#a99c8bee607bf5d3c66ca411c6b9e0d5a", null ],
-    [ "encode", "classtdc_1_1esp_1_1_d_range_fit.html#ab0d58922e972fcec52c3451c2677511d", null ],
-    [ "encode", "classtdc_1_1esp_1_1_d_range_fit.html#a3bc6b585550bd8e434845b0334129d87", null ]
+    [ "decode", "classtdc_1_1esp_1_1_d_range_fit.html#a68a2c3ebbfcc209b310566429f85e67f", null ],
+    [ "decode", "classtdc_1_1esp_1_1_d_range_fit.html#a4bcae9b4b7550efa9b52fce72ac1f8d5", null ],
+    [ "encode", "classtdc_1_1esp_1_1_d_range_fit.html#a3617c932d5b3c50c117275d790fad0c2", null ],
+    [ "encode", "classtdc_1_1esp_1_1_d_range_fit.html#a74e632ba458d1f345962a4ed5e683052", null ]
 ];

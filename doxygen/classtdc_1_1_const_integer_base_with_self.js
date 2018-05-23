@@ -2,9 +2,9 @@ var classtdc_1_1_const_integer_base_with_self =
 [
     [ "SelfMaxBit", "classtdc_1_1_const_integer_base_with_self.html#a80c6fcddd56fc9f4eea8a38c9b3e87d1", null ],
     [ "IntegerBaseWithSelf< Self >", "classtdc_1_1_const_integer_base_with_self.html#a4947c687107d94c94daac07147123652", null ],
+    [ "operator &", "classtdc_1_1_const_integer_base_with_self.html#a4fa788b5990200954d87304e336aebdd", null ],
     [ "operator!=", "classtdc_1_1_const_integer_base_with_self.html#a5739fd9c0f4a7682c767c985982837bd", null ],
     [ "operator%", "classtdc_1_1_const_integer_base_with_self.html#a3d5a7462eed435232d878a38253f8bb4", null ],
-    [ "operator&", "classtdc_1_1_const_integer_base_with_self.html#a4d7997e5a17e90dd4165ed508e88be93", null ],
     [ "operator*", "classtdc_1_1_const_integer_base_with_self.html#a934a3c5f90182aaa9e7d3ba65f82b230", null ],
     [ "operator+", "classtdc_1_1_const_integer_base_with_self.html#a274c03440a7c9140e4a6855534fc28a1", null ],
     [ "operator-", "classtdc_1_1_const_integer_base_with_self.html#a0d0f55026817da56bb85abaefb94d1c8", null ],
