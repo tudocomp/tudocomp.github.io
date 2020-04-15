@@ -38,6 +38,7 @@
                 <div class="qa-structure" data-ds="LCP">LCP Array</div>
                 <div class="qa-structure" data-ds="PLCP">PLCP Array</div>
                 <div class="qa-structure" data-ds="PSI">&Psi; Array</div>
+                <div class="qa-structure" data-ds="Rota">Sorted Rotations</div>
                 <div class="qa-structure qa-structure-text" data-ds="F">Front Row</div>
                 <div class="qa-structure qa-structure-text" data-ds="BWT">BWT</div>
                 <div class="qa-structure" data-ds="LF">LF Mapping</div>
@@ -50,10 +51,9 @@
         <div class="qa-options">
             <label class="qa-option"><input class="qa-option-cbx" data-opt="dollar" type="checkbox" checked>Append '$'</label>
             <label class="qa-option"><input class="qa-option-cbx" data-opt="baseone" type="checkbox" checked>Base Indices on '1'</label>
-            <label class="qa-option"><input class="qa-option-cbx" data-opt="space" type="checkbox" checked>Space-Separated</label>
-            <label class="qa-option"><input class="qa-option-cbx" data-opt="comma" type="checkbox">Comma-Separated</label>
             <label class="qa-option"><input class="qa-option-cbx" data-opt="whitespace" type="checkbox" checked>Whitespaces as &bbrk; and &crarr;</label>
             <label class="qa-option"><input class="qa-option-cbx" data-opt="facttext" type="checkbox" checked>Factorization as Bars</label>
+            <label class="qa-option">Separator:&nbsp;&nbsp;<input id="separatorSource" type="text" class="qa-separator"></label>
         </div>
         <div class="qa-description">We have built the following array data structures and factorizations for you:</div>
         <textarea class="qa-textarea" style="flex-grow:1;line-height:175%;" id="arraysDestination" readonly></textarea>
