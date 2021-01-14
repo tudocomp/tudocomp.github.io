@@ -27,6 +27,41 @@ function lyndonFact(string, isa, base = 0) {
     return result;
 }
 
+function nssArray(string, isa, base = 0) {
+    var n = string.length;
+    result = [];
+    for(var i = 0; i < n; ++i) {
+        var nss = i + 1;
+        while (nss < n && isa[nss] > isa[i]) ++nss;
+        if (nss >= n) result.push('-');
+        else result.push(nss + base);
+    }
+    return result;
+}
+
+function pssArray(string, isa, base = 0) {
+    var n = string.length;
+    result = [];
+    for(var i = 0; i < n; ++i) {
+        var pss = i - 1;
+        while (pss >= 0 && isa[pss] > isa[i]) --pss;
+        if (pss < 0) result.push('-');
+        else result.push(pss + base);
+    }
+    return result;
+}
+
+
+function lyndonArray(string, nssArray, base = 0) {
+    var n = string.length;
+    result = [];
+    for(var i = 0; i < n; ++i) {
+        if (nssArray[i] == '-') result.push(n - i);
+        else result.push(nssArray[i] - (i + base));
+    }
+    return result;
+}
+
 function lpfArray(string, base = 0) {
     var n = string.length;
     var result = [];

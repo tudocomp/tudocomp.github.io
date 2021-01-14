@@ -114,10 +114,18 @@ function updateArrays() {
         varLPF = lpfArray(varText, varBase);
         varSAIS = slArray(varText, varBase);
         varLZ77 = LZ77Fact(varText, varBase);
-        varLyndon = lyndonFact(varText, varISA, varBase);
+        varLyndonFactorization = lyndonFact(varText, varISA, varBase);
+        varNSS = nssArray(varText, varISA, varBase);
+        varPSS = pssArray(varText, varISA, varBase);
+        varLyndonArray = lyndonArray(varText, varNSS, varBase);
     }
     
     var sep = decodeWhitespaces(separatorField.value);
+    
+    var pad = 0;
+    dataStructures.forEachEnabled(function(dsName) {
+        if (dsName.length > pad) pad = dsName.length;
+    });
     
     var result = "";
     dataStructures.forEachEnabled(function(dsName) {
@@ -131,7 +139,7 @@ function updateArrays() {
             varDs = factorizationToText(options.enabled("whitespace") ? encodeWhitespaces(varText) : varText, varDs, sep, varBase);
             } else { varDs = arrayToString(varDs, sep, varBase); }
         } else { varDs = arrayToString(varDs, sep, varBase); }
-        result += padRight(dsName + ":", ' ', 8) + varDs + "\n";
+        result += padRight(dsName + ":", ' ', pad + 2) + varDs + "\n";
     });
     outField.value = result.substr(0, result.length - 1);
 
