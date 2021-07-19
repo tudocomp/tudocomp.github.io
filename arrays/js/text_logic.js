@@ -27,6 +27,40 @@ function lyndonFact(string, isa, base = 0) {
     return result;
 }
 
+function bbwt(string, lyndonfact, base = 0) {
+    var n = string.length;
+    var result = new Array(n).fill(2);
+    var conjugates = []
+    var next_starting_pos = 0;
+    lyndonfact[n] = 1;
+    for(var i = 0; i <= n; ++i) {
+        if(lyndonfact[i] == 1) {
+            var conjugate = string.substring(next_starting_pos, i+1);
+            for(var conj_it = 0; conj_it < conjugate.length; ++conj_it) {
+                conjugates.push(conjugate);
+                conjugate = conjugate.substring(1, conjugate.length) + conjugate[0];
+            }
+            next_starting_pos = i+1;
+        }
+        if(i == n) { break;}
+    }
+    conjugates.sort(function omegaOrder(strA, strB) { 
+        if(strA.startsWith(strB) || strB.startsWith(strA)) {
+            return 0;
+        }
+        for(var i = 0; ; ++i) {
+            if(strA[i % strA.length] < strB[i % strB.length]) { return -1; }
+            if(strA[i % strA.length] > strB[i % strB.length]) { return +1; }
+        }
+    });
+    for(var i = 0; i < conjugates.length; ++i) {
+        var conjugate = conjugates[i];
+        result[i] = conjugate[conjugate.length-1];
+        if(result[i] == '\0') { result[i] = '$'; }
+    }
+    return result;
+}
+
 function nssArray(string, isa, base = 0) {
     var n = string.length;
     result = [];
