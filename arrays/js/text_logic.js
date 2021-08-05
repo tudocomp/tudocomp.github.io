@@ -45,7 +45,7 @@ function bbwt(string, lyndonfact, base = 0) {
         if(i == n) { break;}
     }
     conjugates.sort(function omegaOrder(strA, strB) { 
-        if(strA.startsWith(strB) || strB.startsWith(strA)) {
+        if(strA == strB) {
             return 0;
         }
         for(var i = 0; ; ++i) {
