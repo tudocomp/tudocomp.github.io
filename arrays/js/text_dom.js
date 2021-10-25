@@ -84,7 +84,7 @@ function updateWhitespaces() {
     }
 }
 
-var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varLyndon, varRota;
+var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varLexParse, varLyndon, varRota;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
     updateWhitespaces();
@@ -114,6 +114,7 @@ function updateArrays() {
         varLPF = lpfArray(varText, varBase);
         varSAIS = slArray(varText, varBase);
         varLZ77 = LZ77Fact(varText, varBase);
+        varLexParse = lexParse(varText, varPLCP, varBase);
         varLyndonFactorization = lyndonFact(varText, varISA, varBase);
         varBBWT = bbwt(varText, varLyndonFactorization, varBase);
         varNSS = nssArray(varText, varISA, varBase);

@@ -96,6 +96,19 @@ function lyndonArray(string, nssArray, base = 0) {
     return result;
 }
 
+function lexParse(string, plcp, base = 0) {
+    var n = string.length;
+    var result = new Array(n).fill(0);
+    var boundary = plcp[0];
+    for(var i = 0; i < n; i++) {
+        if(boundary == i) {
+            result[i-1] = 1;
+            boundary += plcp[i] == 0 ? 1 : plcp[i];
+        }
+    }
+    return result;
+}
+
 function lpfArray(string, base = 0) {
     var n = string.length;
     var result = [];
