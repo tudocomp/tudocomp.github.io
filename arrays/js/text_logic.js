@@ -58,7 +58,11 @@ function bbwt(string, lyndonfact, base = 0) {
         result[i] = conjugate[conjugate.length-1];
         if(result[i] == '\0') { result[i] = '$'; }
     }
-    return result;
+    var str = "";
+    for(var i = 0; i < n; ++i) {
+        str += result[i].toString();
+    }
+    return str;
 }
 
 function nssArray(string, isa, base = 0) {
