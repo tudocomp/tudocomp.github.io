@@ -84,6 +84,18 @@ function updateWhitespaces() {
     }
 }
 
+function number_of_runs(text) {
+	var runs = 1;
+	var runchar = text[0];
+	for(var i = 1; i < text.length; ++i) {
+		if(text[i] != runchar) {
+			++runs;
+			runchar = text[i];
+		}
+	}
+	return runs;
+}
+
 var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varLexParse, varLyndon, varRota;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
@@ -120,6 +132,8 @@ function updateArrays() {
         varNSS = nssArray(varText, varISA, varBase);
         varPSS = pssArray(varText, varISA, varBase);
         varLyndonArray = lyndonArray(varText, varNSS, varBase);
+		document.getElementById('bbwtruns').innerHTML = number_of_runs(varBBWT);
+		document.getElementById('bwtruns').innerHTML = number_of_runs(varBWT);
     }
     
     var sep = decodeWhitespaces(separatorField.value);
