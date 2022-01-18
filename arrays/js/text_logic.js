@@ -62,6 +62,7 @@ function bbwt(string, lyndonfact, base = 0) {
     for(var i = 0; i < n; ++i) {
         str += result[i].toString();
     }
+    lyndonfact[n] = 0; //restore!
     return str;
 }
 

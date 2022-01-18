@@ -96,6 +96,17 @@ function number_of_runs(text) {
 	return runs;
 }
 
+function number_of_ones(text) {
+	var count = 0;
+	for(var i = 0; i < text.length; ++i) {
+		if(text[i] == 1) {
+			++count;
+		}
+	}
+	return count;
+}
+
+
 var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varLexParse, varLyndon, varRota;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
@@ -134,6 +145,10 @@ function updateArrays() {
         varLyndonArray = lyndonArray(varText, varNSS, varBase);
 		document.getElementById('bbwtruns').innerHTML = number_of_runs(varBBWT);
 		document.getElementById('bwtruns').innerHTML = number_of_runs(varBWT);
+		document.getElementById('textruns').innerHTML = number_of_runs(varText);
+		document.getElementById('lz77factors').innerHTML = number_of_ones(varLZ77)+1;
+		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization)+1;
+		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
     }
     
     var sep = decodeWhitespaces(separatorField.value);
