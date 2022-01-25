@@ -107,7 +107,7 @@ function number_of_ones(text) {
 }
 
 
-var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varLexParse, varLyndon, varRota;
+var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
     updateWhitespaces();
@@ -123,7 +123,8 @@ function updateArrays() {
     if(options.enabled("dollar")) varText += '\0';
 
     if(varText.length > 0) {
-        varIndex = indexArray(varText.length, varBase)
+        varIndex = indexArray(varText.length, varBase);
+		varBorderArray = borderArray(varText);
         varSA = suffixArray(varText, varBase);
         varISA = inverseSuffixArray(varSA, varBase);
         varPHI = phiArray(varSA, varISA, varBase);
@@ -149,6 +150,20 @@ function updateArrays() {
 		document.getElementById('lz77factors').innerHTML = number_of_ones(varLZ77)+1;
 		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization)+1;
 		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
+		var n = varBorderArray.length;
+		var lastborder =  varBorderArray[n-1];
+		var period = n-lastborder;
+		var exponent = n/period;
+		document.getElementById('exponent').innerHTML = exponent;
+		document.getElementById('period').innerHTML = period;
+		if(exponent > 1 && n % (n-lastborder) == 0) {
+			document.getElementById('regularity').innerHTML = '<b>non-primitive</b>';
+			if(exponent % 2 == 0) {
+				document.getElementById('regularity').innerHTML = '<b>square</b>';
+			}
+		} else {
+			document.getElementById('regularity').innerHTML = '<i>primitive</i>';
+		}
     }
     
     var sep = decodeWhitespaces(separatorField.value);

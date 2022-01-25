@@ -90,6 +90,20 @@ function pssArray(string, isa, base = 0) {
     return result;
 }
 
+function borderArray(string) {
+    var n = string.length;
+    result = [-1];
+    for(var i = 0; i < n; ++i) {
+		var length = result[i];
+		while(length >= 0 && string[length] != string[i]) {
+			length = result[length]
+		}
+		result.push(length+1);
+    }
+	result.shift();
+    return result;
+}
+
 
 function lyndonArray(string, nssArray, base = 0) {
     var n = string.length;
