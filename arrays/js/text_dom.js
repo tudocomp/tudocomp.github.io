@@ -150,19 +150,22 @@ function updateArrays() {
 		document.getElementById('lz77factors').innerHTML = number_of_ones(varLZ77)+1;
 		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization)+1;
 		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
-		var n = varBorderArray.length;
-		var lastborder =  varBorderArray[n-1];
-		var period = n-lastborder;
-		var exponent = n/period;
+		var textlength = varBorderArray.length;
+		var lastborder = varBorderArray[textlength-1];
+		var period = textlength-lastborder;
+		var exponent = textlength/period;
 		document.getElementById('exponent').innerHTML = exponent;
 		document.getElementById('period').innerHTML = period;
-		if(exponent > 1 && n % (n-lastborder) == 0) {
+		if(exponent > 1 && textlength % period == 0) {
 			document.getElementById('regularity').innerHTML = '<b>non-primitive</b>';
 			if(exponent % 2 == 0) {
 				document.getElementById('regularity').innerHTML = '<b>square</b>';
 			}
 		} else {
 			document.getElementById('regularity').innerHTML = '<i>primitive</i>';
+			if(lastborder == 0) {
+				document.getElementById('regularity').innerHTML += ', <b>unbordered</b>';
+			}
 		}
     }
     
