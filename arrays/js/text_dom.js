@@ -107,7 +107,7 @@ function number_of_ones(text) {
 }
 
 
-var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota;
+var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
     updateWhitespaces();
@@ -141,6 +141,8 @@ function updateArrays() {
         varLexParse = lexParse(varText, varPLCP, varBase);
         varLyndonFactorization = lyndonFact(varText, varISA, varBase);
         varBBWT = bbwt(varText, varLyndonFactorization, varBase);
+		varCircularSA = ciruclar_sa(varText, varLyndonFactorization, varBase);
+		varCircularISA =inverseSuffixArray(varCircularSA, varBase);
         varNSS = nssArray(varText, varISA, varBase);
         varPSS = pssArray(varText, varISA, varBase);
         varLyndonArray = lyndonArray(varText, varNSS, varBase);
