@@ -150,7 +150,7 @@ function updateArrays() {
 		document.getElementById('bwtruns').innerHTML = number_of_runs(varBWT);
 		document.getElementById('textruns').innerHTML = number_of_runs(varText);
 		document.getElementById('lz77factors').innerHTML = number_of_ones(varLZ77)+1;
-		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization)+1;
+		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization);
 		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
 		var textlength = varBorderArray.length;
 		var lastborder = varBorderArray[textlength-1];
