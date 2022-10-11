@@ -107,7 +107,7 @@ function number_of_ones(text) {
 }
 
 
-var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA;
+var varText, varIndex, varSA, varISA, varPHI, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
     updateWhitespaces();
@@ -140,12 +140,15 @@ function updateArrays() {
         varLZ77 = LZ77Fact(varText, varBase);
         varLexParse = lexParse(varText, varPLCP, varBase);
         varLyndonFactorization = lyndonFact(varText, varISA, varBase);
-        varBBWT = bbwt(varText, varLyndonFactorization, varBase);
-		varCircularSA = ciruclar_sa(varText, varLyndonFactorization, varBase);
-		varCircularISA =inverseSuffixArray(varCircularSA, varBase);
+        var varBBWTObject =  bbwt(varText, varLyndonFactorization, varBase);
+        varBBWT = varBBWTObject.str;
+        varBBWTCycles = varBBWTObject.ids;
+        varCircularSA = ciruclar_sa(varText, varLyndonFactorization, varBase);
+        varCircularISA =inverseSuffixArray(varCircularSA, varBase);
         varNSS = nssArray(varText, varISA, varBase);
         varPSS = pssArray(varText, varISA, varBase);
         varLyndonArray = lyndonArray(varText, varNSS, varBase);
+
 		document.getElementById('bbwtruns').innerHTML = number_of_runs(varBBWT);
 		document.getElementById('bwtruns').innerHTML = number_of_runs(varBWT);
 		document.getElementById('textruns').innerHTML = number_of_runs(varText);

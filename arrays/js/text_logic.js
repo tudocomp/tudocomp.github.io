@@ -33,18 +33,22 @@ function bbwt(string, lyndonfact, base = 0) {
     var conjugates = []
     var next_starting_pos = 0;
     lyndonfact[n] = 1;
+    var conjugate_counter = 0;
     for(var i = 0; i <= n; ++i) {
         if(lyndonfact[i] == 1) {
             var conjugate = string.substring(next_starting_pos, i+1);
             for(var conj_it = 0; conj_it < conjugate.length; ++conj_it) {
-                conjugates.push(conjugate);
+                conjugates.push({str : conjugate, id : conjugate_counter});
                 conjugate = conjugate.substring(1, conjugate.length) + conjugate[0];
             }
             next_starting_pos = i+1;
+            ++conjugate_counter;
         }
         if(i == n) { break;}
     }
-    conjugates.sort(function omegaOrder(strA, strB) { 
+    conjugates.sort(function omegaOrder(stroA, stroB) { 
+        let strA = stroA.str;
+        let strB = stroB.str;
         if(strA == strB) {
             return 0;
         }
@@ -54,16 +58,20 @@ function bbwt(string, lyndonfact, base = 0) {
         }
     });
     for(var i = 0; i < conjugates.length; ++i) {
-        var conjugate = conjugates[i];
-        result[i] = conjugate[conjugate.length-1];
-        if(result[i] == '\0') { result[i] = '$'; }
+        var conjugate = conjugates[i].str;
+        var letter = conjugate[conjugate.length-1];
+        if(letter == '\0') { letter = '$'; }
+        result[i] = {letter : letter, id : conjugates[i].id };
     }
+
+    var ids = [];
     var str = "";
     for(var i = 0; i < n; ++i) {
-        str += result[i].toString();
+        str += result[i].letter.toString();
+        ids += result[i].id;
     }
     lyndonfact[n] = 0; //restore!
-    return str;
+    return { str : str, ids : ids};
 }
 
 function ciruclar_sa(string, lyndonfact, base = 0) {
