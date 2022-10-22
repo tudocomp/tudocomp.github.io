@@ -267,6 +267,15 @@ function phiArray(suffixArray, inverseSuffixArray, base = 0) {
             result[i] = "-";
     return result;
 }
+function phiArrayInverse(suffixArray, inverseSuffixArray, base = 0) {
+    result = [];
+    for(var i = 0; i < suffixArray.length; i++)
+        if(inverseSuffixArray[i] - base + 1 != suffixArray.length)
+            result[i] = suffixArray[inverseSuffixArray[i] - base + 1];
+        else
+            result[i] = "-";
+    return result;
+}
 
 function lcp(string, pos1, pos2) {
     result = 0;
