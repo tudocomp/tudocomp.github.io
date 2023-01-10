@@ -107,7 +107,8 @@ function number_of_ones(text) {
 }
 
 
-var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles;
+var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles; 
+var varBBWTInv;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
     updateWhitespaces();
@@ -141,6 +142,7 @@ function updateArrays() {
         varLZ77 = LZ77Fact(varText, varBase);
         varLexParse = lexParse(varText, varPLCP, varBase);
         varLyndonFactorization = lyndonFact(varText, varISA, varBase);
+        varBBWTInv = bbwt_inverse(varText);
         var varBBWTObject =  bbwt(varText, varLyndonFactorization, varBase);
         varBBWT = varBBWTObject.str;
         varBBWTCycles = varBBWTObject.ids;

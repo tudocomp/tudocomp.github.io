@@ -27,6 +27,66 @@ function lyndonFact(string, isa, base = 0) {
     return result;
 }
 
+function kth_element(bbwt, c, k) {
+	let n = bbwt.length;
+	let char_counter = 0;
+	for(let i = 0; i < n; ++i){
+		if(bbwt[i] == c) {
+			++char_counter;
+			if(char_counter == k) {
+				return i;
+			}
+		}
+	}
+	throw false;
+}
+function lyndonConjugate(text) {
+	const n = text.length;
+	let best_conj = text;
+	for(let i = 0; i < n; ++i) {
+		let conj = text.substring(i,n) + text.substring(0,i);
+		if(conj < best_conj) {
+			best_conj = conj;
+		}
+	}
+	return best_conj;
+}
+
+function bbwt_inverse(bbwt) {
+	let n = bbwt.length;
+	var farray = bbwt.split("").sort(); //.join("");
+	// console.log(farray);
+	var marking = new Array(n).fill(0);
+	var conjugates = [];
+	for(let bbwt_init_position = 0; bbwt_init_position < n; ++bbwt_init_position) {
+		let conjugate = []
+		if(marking[bbwt_init_position] == 1) {
+			continue;
+		}
+		var pos = bbwt_init_position;
+		while(marking[pos] == 0) {
+			// console.log(pos);
+			marking[pos] = 1;
+			conjugate.push(bbwt[pos]);
+			let cur_char = farray[pos];
+			let character_number = farray.slice(0,pos+1).filter(x => x == cur_char).length;
+			console.assert(character_number > 0, 'character_number is zero');
+			console.assert(bbwt.split(cur_char).length + 1 > character_number, 'bbwt mismatch');
+
+			// console.log(character_number);
+			pos = kth_element(bbwt, cur_char, character_number);
+		}
+		// finalConjugate = lyndonConjugate(conjugate.reverse().join(''))
+		finalConjugate = lyndonConjugate(conjugate.join(''))
+		conjugates.push(finalConjugate);
+		// console.log(finalConjugate);
+	}
+	conjugates.sort();
+	conjugates.reverse();
+	return conjugates.join('');
+}
+
+
 function bbwt(string, lyndonfact, base = 0) {
     var n = string.length;
     var result = new Array(n).fill(2);
@@ -189,6 +249,7 @@ function lpfArray(string, base = 0) {
     }
     return result;
 }
+
 function LZ77Fact(string, base = 0) {
     var n = string.length;
     var lpfarray = lpfArray(string,base);
