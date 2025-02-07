@@ -370,12 +370,8 @@ function psiArray(suffixArray, inverseSuffixArray, base = 0) {
     return result;
 }
 
-function firstRow(string, suffixArray, base = 0) {
-    var n = string.length;
-    var result = "";
-    for(var i = 0; i < n; i++)
-        result += string[suffixArray[i] - base];
-    return result;
+function firstRow(string) {
+    return string.split('').sort().join('');
 }
 
 function bwt(string, rotationArray, base = 0) {
@@ -386,12 +382,30 @@ function bwt(string, rotationArray, base = 0) {
     return result;
 }
 
-function lfArray(suffixArray, inverseSuffixArray, base = 0) {
-    var n = suffixArray.length;
+function select(string, subString, nth) {
+    let pos = string.indexOf(subString, 0);
+    for(let k = 1; k <= nth; k += 1) {
+	if(pos !== -1) {
+	    pos = string.indexOf(subString, pos + 1);
+	}
+    }
+    return pos
+}
+function rank(string, subString, index) {
+    var prefix = string.substring(0, index);
+    return prefix.split(subString).length - 1;
+}
+
+function lfArray(string, base = 0) {
+    var farr = firstRow(string);
+    var larr = bwt(string, rotationArray(string, base), base);
+    var n = string.length;
     var result = [];
     for(var i = 0; i < n; i++) {
-        var sa = (suffixArray[i] - base + n - 1) % n;
-        result[i] = inverseSuffixArray[sa];
+	var c = larr[i]
+	var crank = rank(larr, c, i+1)-1;
+	console.log(larr[i] + ' -> ' + i + ' -> ' + crank);
+	result.push(select(farr, c, crank) + base);
     }
     return result;
 }

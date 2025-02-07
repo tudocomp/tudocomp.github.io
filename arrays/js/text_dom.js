@@ -133,10 +133,10 @@ function updateArrays() {
         varLCP = lcpArray(varText, varSA, varBase);
         varPLCP = plcpArray(varISA, varLCP, varBase);
         varPSI = psiArray(varSA, varISA, varBase);
-        varF = firstRow(varText, varSA, varBase);
+        varF = firstRow(varText);
         varRota = rotationArray(varText, varBase);
         varBWT = bwt(varText, varRota, varBase);
-        varLF = lfArray(varSA, varISA, varBase);
+        varLF = lfArray(varText, varBase);
         varLPF = lpfArray(varText, varBase);
         varSAIS = slArray(varText, varBase);
         varLZ77 = LZ77Fact(varText, varBase);
