@@ -429,9 +429,12 @@ function arrayToString(array, sep = " ", base = 0) {
     return result;
 }
 
-function stringToString(string, sep = " ", base = 0) {
+function stringToString(string, sep = " ", base = 0, doTabularize = true) {
     string = string.replace("\0", "$");
-    var width = ("" + (string.length + base - 1).toString()).length
+    var width =  doTabularize ? ("" + (string.length + base - 1).toString()).length : 0
+		if(!doTabularize) {
+			sep = '';
+		}
     var result = "";
     for(var i = 0; i < string.length - 1; i++) 
         result += padLeft("" + string[i], ' ', width) + sep;

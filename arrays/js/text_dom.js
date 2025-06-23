@@ -106,6 +106,26 @@ function number_of_ones(text) {
 	return count;
 }
 
+function substring_complexity(lcp) {
+	var n = lcp.length;
+	const c = {};
+	lcp.forEach(ele => {
+		  c[ele] = (c[ele] || 0) + 1;
+	});
+	var rest = n;
+	var bestlength = n;
+	var bestval = 1;
+	for(var i = n; i >= 0; --i) {
+		if(i in c) {
+			rest -= c[i];
+		}
+		if((1.0*rest)/i > bestval) {
+			bestval = (1.0*rest)/i;
+		}
+	}
+	return bestval;
+}
+
 
 var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles; 
 var varBBWTInv;
@@ -158,6 +178,7 @@ function updateArrays() {
 		document.getElementById('lz77factors').innerHTML = number_of_ones(varLZ77)+1;
 		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization);
 		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
+		document.getElementById('substring_complexity').innerHTML = substring_complexity(varLCP);
 		var textlength = varBorderArray.length;
 		var lastborder = varBorderArray[textlength-1];
 		var period = textlength-lastborder;
@@ -188,9 +209,10 @@ function updateArrays() {
     dataStructures.forEachEnabled(function(dsName) {
         var varDs = window["var" + dsName];
         if(dataStructures.isString(dsName)) {
-            if(options.enabled("whitespace"))
+            if(options.enabled("whitespace")) {
                 varDs = encodeWhitespaces(varDs);
-            varDs = stringToString(varDs, sep, varBase);
+						}
+						varDs = stringToString(varDs, sep, varBase, options.enabled("tabularize"));
         } else if(dataStructures.isFactorization(dsName)) {
             if(options.enabled("facttext")) {
             varDs = factorizationToText(options.enabled("whitespace") ? encodeWhitespaces(varText) : varText, varDs, sep, varBase);
