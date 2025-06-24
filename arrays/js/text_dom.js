@@ -112,18 +112,20 @@ function substring_complexity(lcp) {
 	lcp.forEach(ele => {
 		  c[ele] = (c[ele] || 0) + 1;
 	});
-	var rest = n;
+	var count = 0;
 	var bestlength = n;
 	var bestval = 1;
-	for(var i = n; i >= 0; --i) {
+	for(var i = n; i >= 1; --i) {
+		count += 1;
 		if(i in c) {
-			rest -= c[i];
+			count -= c[i];
 		}
-		if((1.0*rest)/i > bestval) {
-			bestval = (1.0*rest)/i;
+		if((1.0*count)/i > bestval) {
+			bestval = (1.0*count)/i;
+			bestlength = i;
 		}
 	}
-	return bestval;
+	return [bestlength, bestval];
 }
 
 
@@ -178,7 +180,9 @@ function updateArrays() {
 		document.getElementById('lz77factors').innerHTML = number_of_ones(varLZ77)+1;
 		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization);
 		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
-		document.getElementById('substring_complexity').innerHTML = substring_complexity(varLCP);
+
+		var substringComplexity = substring_complexity(varLCP);
+		document.getElementById('substring_complexity').innerHTML = '&delta;(k=' + substringComplexity[0] + ') = ' + substringComplexity[1];
 		var textlength = varBorderArray.length;
 		var lastborder = varBorderArray[textlength-1];
 		var period = textlength-lastborder;
