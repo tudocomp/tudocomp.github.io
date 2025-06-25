@@ -106,30 +106,8 @@ function number_of_ones(text) {
 	return count;
 }
 
-function substring_complexity(lcp) {
-	var n = lcp.length;
-	const c = {};
-	lcp.forEach(ele => {
-		  c[ele] = (c[ele] || 0) + 1;
-	});
-	var count = 0;
-	var bestlength = n;
-	var bestval = 1;
-	for(var i = n; i >= 1; --i) {
-		count += 1;
-		if(i in c) {
-			count -= c[i];
-		}
-		if((1.0*count)/i > bestval) {
-			bestval = (1.0*count)/i;
-			bestlength = i;
-		}
-	}
-	return [bestlength, bestval];
-}
 
-
-var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles; 
+var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles, varSC; 
 var varBBWTInv;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
@@ -153,6 +131,7 @@ function updateArrays() {
         varPHI = phiArray(varSA, varISA, varBase);
         varPHIInv = phiArrayInverse(varSA, varISA, varBase);
         varLCP = lcpArray(varText, varSA, varBase);
+				varSC = substring_complexity(varLCP);
         varPLCP = plcpArray(varISA, varLCP, varBase);
         varPSI = psiArray(varSA, varISA, varBase);
         varF = firstRow(varText);
@@ -181,8 +160,8 @@ function updateArrays() {
 		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization);
 		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
 
-		var substringComplexity = substring_complexity(varLCP);
-		document.getElementById('substring_complexity').innerHTML = '&delta;(k=' + substringComplexity[0] + ') = ' + substringComplexity[1];
+		var delta = compute_delta(varSC);
+		document.getElementById('substring_complexity').innerHTML = '&delta; = ' + delta[1] + '(index=' + delta[0] + ')';
 		var textlength = varBorderArray.length;
 		var lastborder = varBorderArray[textlength-1];
 		var period = textlength-lastborder;
@@ -214,14 +193,18 @@ function updateArrays() {
         var varDs = window["var" + dsName];
         if(dataStructures.isString(dsName)) {
             if(options.enabled("whitespace")) {
-                varDs = encodeWhitespaces(varDs);
+                // varDs = encodeWhitespaces(varDs);
 						}
 						varDs = stringToString(varDs, sep, varBase, options.enabled("tabularize"));
         } else if(dataStructures.isFactorization(dsName)) {
             if(options.enabled("facttext")) {
             varDs = factorizationToText(options.enabled("whitespace") ? encodeWhitespaces(varText) : varText, varDs, sep, varBase);
-            } else { varDs = arrayToString(varDs, sep, varBase); }
-        } else { varDs = arrayToString(varDs, sep, varBase); }
+            } else { 
+							varDs = arrayToString(varDs, sep, varBase); 
+						}
+        } else { 
+					varDs = arrayToString(varDs, sep, varBase); 
+				}
         result += padRight(dsName + ":", ' ', pad + 2) + varDs + "\n";
     });
     outField.value = result.substr(0, result.length - 1);

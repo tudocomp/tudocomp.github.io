@@ -128,9 +128,10 @@ function bbwt(string, lyndonfact, base = 0) {
     var str = "";
     for(var i = 0; i < n; ++i) {
         str += result[i].letter.toString();
-        ids += result[i].id;
+        ids.push(result[i].id);
     }
     lyndonfact[n] = 0; //restore!
+		
     return { str : str, ids : ids};
 }
 
@@ -404,7 +405,7 @@ function lfArray(string, base = 0) {
     for(var i = 0; i < n; i++) {
 	var c = larr[i]
 	var crank = rank(larr, c, i+1)-1;
-	console.log(larr[i] + ' -> ' + i + ' -> ' + crank);
+	// console.log(larr[i] + ' -> ' + i + ' -> ' + crank);
 	result.push(select(farr, c, crank) + base);
     }
     return result;
@@ -440,4 +441,35 @@ function stringToString(string, sep = " ", base = 0, doTabularize = true) {
         result += padLeft("" + string[i], ' ', width) + sep;
     result += padLeft("" + string[string.length - 1], ' ', width);
     return result;
+}
+
+function substring_complexity(lcp) {
+	var n = lcp.length;
+  var ret = new Array(n);
+
+	const c = {};
+	lcp.forEach(ele => {
+		  c[ele] = (c[ele] || 0) + 1;
+	});
+	var count = 0;
+	for(var i = n; i >= 1; --i) {
+		count += 1;
+		if(i in c) {
+			count -= c[i];
+		}
+		ret[i-1] = count;
+	}
+	return ret;
+}
+
+function compute_delta(sc) {
+	var bestlength = 1;
+	var bestval = sc[0];
+	for(var i = 1; i < sc.length; ++i) {
+		if((1.0*sc[i])/(i+1) > bestval) {
+			bestlength = i+1;
+			bestval = (1.0*sc[i])/bestlength;
+		}
+	}
+	return [bestlength, bestval];
 }
