@@ -107,7 +107,7 @@ function number_of_ones(text) {
 }
 
 
-var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles, varSC; 
+var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles, varSC, varRevLZ; 
 var varBBWTInv;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
@@ -125,13 +125,13 @@ function updateArrays() {
 
     if(varText.length > 0) {
         varIndex = indexArray(varText.length, varBase);
-		varBorderArray = borderArray(varText);
+        varBorderArray = borderArray(varText);
         varSA = suffixArray(varText, varBase);
         varISA = inverseSuffixArray(varSA, varBase);
         varPHI = phiArray(varSA, varISA, varBase);
         varPHIInv = phiArrayInverse(varSA, varISA, varBase);
         varLCP = lcpArray(varText, varSA, varBase);
-				varSC = substring_complexity(varLCP);
+        varSC = substring_complexity(varLCP);
         varPLCP = plcpArray(varISA, varLCP, varBase);
         varPSI = psiArray(varSA, varISA, varBase);
         varF = firstRow(varText);
@@ -141,6 +141,7 @@ function updateArrays() {
         varLPF = lpfArray(varText, varBase);
         varSAIS = slArray(varText, varBase);
         varLZ77 = LZ77Fact(varText, varBase);
+        varRevLZ77 = revLZ77Fact(varText, varBase);
         varLexParse = lexParse(varText, varPLCP, varBase);
         varLyndonFactorization = lyndonFact(varText, varISA, varBase);
         varBBWTInv = bbwt_inverse(varText);

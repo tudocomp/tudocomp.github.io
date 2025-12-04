@@ -264,6 +264,23 @@ function LZ77Fact(string, base = 0) {
     }
     return result;
 }
+
+function revLZ77Fact(text, base = 0) {
+    var n = text.length;
+    var revtext = text.split('').reverse().join('');
+    var lpfarray = lpfArray(revtext,base);
+    var result = new Array(n).fill(0);
+    var boundary = 1;
+    for(var i = 0; i < n; i++) {
+        if(boundary == i) {
+            result[n-i-1] = 1;
+            boundary += lpfarray[i] == 0 ? 1 : lpfarray[i];
+        }
+    }
+
+    return result;
+}
+
 function slArray(string, base = 0) {
     var n = string.length;
     var result = new Array(n);
