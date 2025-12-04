@@ -27,6 +27,7 @@
         You can use drag and drop to reorder your selection!</div>
         <div class="qa-structures">
             <div id="qa-structures-enabled">
+                <input type="checkbox" id="qa-structures-enabled-visible" value="1" checked="checked"></input>
                 <div class="qa-structures-header">Enabled: </div>
                 <div class="qa-structure qa-structure-text" data-ds="Text">Input Text</div>
                 <div class="qa-structure" data-ds="Index">Index Array</div>
@@ -34,6 +35,7 @@
                 <div class="qa-structure" data-ds="ISA">Inverse Suffix Array</div>
             </div>
             <div id="qa-structures-disabled">
+                <input type="checkbox" id="qa-structures-disabled-visible" value="1" checked="checked"></input>
                 <div class="qa-structures-header">Disabled: </div>
                 <div class="qa-structure" data-ds="PHI">&Phi; Array</div>
                 <div class="qa-structure" data-ds="PHIInv">&Phi;-1 Array</div>
@@ -57,6 +59,7 @@
                     <span class="qa-tooltiptext">the inverse permutation of CSA</span>
                 </div>
                 <div class="qa-structure" data-ds="LF">LF Mapping</div>
+                <div class="qa-structure" data-ds="LNF">LNF Array</div>
                 <div class="qa-structure" data-ds="LPF">LPF Array</div>
                 <div class="qa-structure" data-ds="SAIS">SAIS Array</div>
                 <div class="qa-structure qa-structure-factorization" data-ds="LZ77">LZ77 Fact</div>
@@ -101,6 +104,10 @@
 			LZ77:
 			<span id="lz77factors">
 			</span>
+                        ,
+			revLZ77:
+			<span id="revlz77factors">
+			</span>
 			,
 			Lyndon:
 			<span id="lyndonfactors">
@@ -121,7 +128,7 @@
 			<span id="period">
 			</span>
 			;
-			Typ:
+			Type:
 			<span id="regularity">
 			</span>
 

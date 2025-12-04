@@ -1,3 +1,21 @@
+function toggleVisibility(parent_id, state) {
+    var structs = document.getElementById(parent_id);
+    for(var i = 0; i < structs.children.length; i++) {
+        if (structs.children[i].classList.contains('qa-structure')) {
+            structs.children[i].style.display = state ? 'block' : 'none';
+        }
+    }
+}
+
+
+
+document.getElementById('qa-structures-disabled-visible').addEventListener('change', function() {
+    toggleVisibility('qa-structures-disabled', this.checked);
+});
+document.getElementById('qa-structures-enabled-visible').addEventListener('change', function() {
+    toggleVisibility('qa-structures-enabled', this.checked);
+});
+
 var inField;
 var outField;
 var separatorField;
@@ -107,7 +125,7 @@ function number_of_ones(text) {
 }
 
 
-var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles, varSC, varRevLZ; 
+var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varLNF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles, varSC, varRevLZ; 
 var varBBWTInv;
 function updateArrays() {
     separatorField.value = encodeWhitespaces(separatorField.value);
@@ -138,6 +156,7 @@ function updateArrays() {
         varRota = rotationArray(varText, varBase);
         varBWT = bwt(varText, varRota, varBase);
         varLF = lfArray(varText, varBase);
+        varLNF = lnfArray(varText, varBase);
         varLPF = lpfArray(varText, varBase);
         varSAIS = slArray(varText, varBase);
         varLZ77 = LZ77Fact(varText, varBase);
@@ -158,6 +177,7 @@ function updateArrays() {
 		document.getElementById('bwtruns').innerHTML = number_of_runs(varBWT);
 		document.getElementById('textruns').innerHTML = number_of_runs(varText);
 		document.getElementById('lz77factors').innerHTML = number_of_ones(varLZ77)+1;
+		document.getElementById('revlz77factors').innerHTML = number_of_ones(varRevLZ77)+1;
 		document.getElementById('lyndonfactors').innerHTML = number_of_ones(varLyndonFactorization);
 		document.getElementById('lexparsefactors').innerHTML = number_of_ones(varLexParse)+1;
 

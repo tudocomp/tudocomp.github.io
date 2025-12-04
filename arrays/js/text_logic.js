@@ -251,6 +251,18 @@ function lpfArray(string, base = 0) {
     return result;
 }
 
+function lnfArray(text, base = 0) {
+    var revtext = text.split('').reverse().join('');
+    var lpfarray = lpfArray(revtext, base);
+    var lnfarray = new Array(lpfarray.length);
+    for (var i = 0; i < lpfarray.length; ++i) {
+	lnfarray[n-i-1] = lpfarray[i];
+    }
+    return lnfarray;
+}
+
+
+
 function LZ77Fact(string, base = 0) {
     var n = string.length;
     var lpfarray = lpfArray(string,base);
