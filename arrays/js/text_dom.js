@@ -7,13 +7,21 @@ function toggleVisibility(parent_id, state) {
     }
 }
 
-
+document.getElementById('qa-structures-enabled-transform').addEventListener('change', function() {
+    ['textTransform', 'qa-structures-active-span'].forEach((elementId) => {
+        document.getElementById(elementId).style.display = this.checked ? 'block' : 'none';
+    });
+});
 
 document.getElementById('qa-structures-disabled-visible').addEventListener('change', function() {
     toggleVisibility('qa-structures-disabled', this.checked);
 });
 document.getElementById('qa-structures-enabled-visible').addEventListener('change', function() {
     toggleVisibility('qa-structures-enabled', this.checked);
+});
+
+document.getElementById('qa-structures-active-transform').addEventListener('change', function() {
+    updateArrays();
 });
 
 var inField;
@@ -124,6 +132,20 @@ function number_of_ones(text) {
 	return count;
 }
 
+function transformText(text) {
+    const transform = document.getElementById('textTransform').value;
+    var ret = '';
+    for(var i = 0; i < text.length; i++) {
+        const newchar = eval(transform);
+        if (newchar != undefined)
+            ret += newchar;
+        else
+            ret += text[i];
+    }
+    return ret;
+}
+
+
 
 var varText, varIndex, varSA, varISA, varPHI, varPhiInv, varLCP, varPLCP, varPSI, varF, varBWT, varBBWT, varLF, varLPF, varLNF, varSAIS, varLZ77, varBorderArray, varLexParse, varLyndon, varRota, varCircularSA, varCircularISA, varBBWTCycles, varSC, varRevLZ; 
 var varBBWTInv;
@@ -136,6 +158,9 @@ function updateArrays() {
         varText = inField.value;
 
     if(!varText) varText = inField.placeholder;
+    if(document.getElementById('qa-structures-enabled-transform').checked && document.getElementById('qa-structures-active-transform').checked) {
+        varText = transformText(varText);
+    }
 
     var varBase = 0;
     if(options.enabled("baseone")) varBase = 1;
