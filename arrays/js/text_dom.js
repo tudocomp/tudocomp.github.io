@@ -20,6 +20,10 @@ document.getElementById('qa-structures-enabled-visible').addEventListener('chang
     toggleVisibility('qa-structures-enabled', this.checked);
 });
 
+document.getElementById('textTransform').addEventListener('input', function() {
+    document.getElementById('qa-structures-active-transform').checked = false;
+});
+
 document.getElementById('qa-structures-active-transform').addEventListener('change', function() {
     updateArrays();
 });
@@ -136,11 +140,15 @@ function transformText(text) {
     const transform = document.getElementById('textTransform').value;
     var ret = '';
     for(var i = 0; i < text.length; i++) {
-        const newchar = eval(transform);
-        if (newchar != undefined)
-            ret += newchar;
-        else
-            ret += text[i];
+        try {
+            const newchar = eval(transform);
+            ret += newchar !== undefined ? newchar : text[i];
+        }
+        catch (error) {
+            alert("Error in transformation: " + error.message);
+            document.getElementById('qa-structures-active-transform').checked = false;
+            return text;
+        }
     }
     return ret;
 }
